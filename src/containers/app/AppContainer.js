@@ -16,7 +16,6 @@ import Technology from '../technology/Technology';
 const AppWrapper = styled.div`
   display: flex;
   flex-direction: column;
-  height: 100%;
   min-width: 800px;
   position: relative;
 `;
