@@ -9,6 +9,7 @@ import Intro from '../intro/Intro';
 import Services from '../services/Services';
 import Technology from '../technology/Technology';
 import Connect from '../connect/Connect';
+import Footer from '../footer/Footer';
 
 /*
  * styled components
@@ -59,6 +60,7 @@ const AppContainer = () => (
     <Services />
     <Technology />
     <Connect />
+    <Footer />
   </AppWrapper>
 );
 
