@@ -14,8 +14,32 @@ const StyledContentBlock = styled.div`
   max-width: 550px;
 `;
 
+const StyledTitleIntro = StyledTitleLg.extend`
+  width: 548px;
+  height: 96px;
+  font-family: Chivo;
+  font-size: 40px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: left;
+  color: #ffffff;
+`;
+
 const StyledContentBody = StyledBody.extend`
-  max-width: 400px;
+  width: 465px;
+  height: 48px;
+  font-family: Roboto;
+  font-size: 18px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.33;
+  letter-spacing: normal;
+  text-align: left;
+  color: #ffffff;
   margin-bottom: 40px;
 `;
 
@@ -25,7 +49,7 @@ const Intro = () => (
     <Header />
     <StyledContentBlock>
       <StyledTitleLg color='#F1F1F1'>
-        Modern data infrastructure for core societal institutions.
+        Modern data infrastructure for core societal institutions
       </StyledTitleLg>
       <StyledContentBody color='#F1F1F1'>
         {`
