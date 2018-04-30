@@ -3,10 +3,8 @@
  */
 
 import React from 'react';
-
 import styled from 'styled-components';
 
-import OpenLatticeLogo from '../../assets/images/logo_and_name.png';
 import Intro from '../intro/Intro';
 
 /*
@@ -52,14 +50,9 @@ const Logo = styled.img`
   left: 50px;
 `;
 
+
 const AppContainer = () => (
   <AppWrapper>
-    <AppHeaderOuterWrapper>
-      <AppHeaderInnerWrapper>
-        <Logo src={OpenLatticeLogo} height="50" />
-        <Title>OpenLattice</Title>
-      </AppHeaderInnerWrapper>
-    </AppHeaderOuterWrapper>
     <Intro />
   </AppWrapper>
 );

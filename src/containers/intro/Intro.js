@@ -3,8 +3,7 @@ import styled from 'styled-components';
 
 import StyledIntroContainer from './components/StyledIntroContainer';
 import HomepageSection from '../../components/layout/HomepageSection';
-import StyledButton from '../../components/buttons/StyledButton';
-import StyledButtonPrimary from '../../components/buttons/StyledButtonPrimary';
+import Header from '../header/Header';
 import StyledButtonCallToAction from '../../components/buttons/StyledButtonCallToAction';
 import { StyledTitleLg, StyledBody } from '../../utils/Styles';
 
@@ -23,6 +22,7 @@ const StyledContentBody = StyledBody.extend`
 
 const Intro = () => (
   <HomepageSection background='#5E4BD6' paddingBottom='190px'>
+    <Header />
     <StyledContentBlock>
       <StyledTitleLg color='#F1F1F1'>
         Modern data infrastructure for core societal institutions.
