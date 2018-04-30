@@ -6,6 +6,7 @@ import React from 'react';
 
 import styled from 'styled-components';
 import { Redirect, Route, Switch } from 'react-router';
+import StyledContainerVertical from '../../components/layout/StyledContainerVertical';
 
 import OpenLatticeLogo from '../../assets/images/logo_and_name.png';
 import * as Routes from '../../core/router/Routes';
@@ -62,7 +63,7 @@ const AppContainer = () => (
       </AppHeaderInnerWrapper>
     </AppHeaderOuterWrapper>
     <Switch>
-      <Route path={Routes.ROOT} component={null} />
+      <Route path={Routes.ROOT} component={StyledContainerVertical} />
       <Redirect to={Routes.ROOT} />
     </Switch>
   </AppWrapper>
