@@ -1,9 +1,9 @@
 import React from 'react';
 import styled from 'styled-components';
 
-import StyledIntroContainer from './components/StyledIntroContainer';
 import HomepageSection from '../../components/layout/HomepageSection';
 import Header from '../header/Header';
+import Splash from '../../assets/images/splash_01.jpg';
 import StyledButtonCallToAction from '../../components/buttons/StyledButtonCallToAction';
 import { StyledTitleLg, StyledBody } from '../../utils/Styles';
 
@@ -21,7 +21,7 @@ const StyledContentBody = StyledBody.extend`
 
 
 const Intro = () => (
-  <HomepageSection background='#5E4BD6' paddingBottom='190px'>
+  <HomepageSection image={Splash} paddingBottom='190px'>
     <Header />
     <StyledContentBlock>
       <StyledTitleLg color='#F1F1F1'>
