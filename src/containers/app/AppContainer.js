@@ -7,6 +7,7 @@ import styled from 'styled-components';
 
 import Intro from '../intro/Intro';
 import Services from '../services/Services';
+import Technology from '../technology/Technology';
 
 /*
  * styled components
@@ -56,6 +57,7 @@ const AppContainer = () => (
   <AppWrapper>
     <Intro />
     <Services />
+    <Technology />
   </AppWrapper>
 );
 
