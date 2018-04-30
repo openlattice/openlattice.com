@@ -2,6 +2,8 @@ import React from 'react';
 import styled from 'styled-components';
 
 import HomepageSection from '../../components/layout/HomepageSection';
+import InfoTile from './components/InfoTile';
+import * as TechConsts from './Consts';
 import { StyledTitleMd, StyledBody } from '../../utils/Styles';
 
 const StyledContentBlock = styled.div`
@@ -37,9 +39,8 @@ const StyledContentBody = StyledBody.extend`
   letter-spacing: normal;
   text-align: left;
   color: #6f788a;
-  margin-bottom: 40px;
+  margin-bottom: 70px;
 `;
-
 
 const Technology = () => (
   <HomepageSection background='#ffffff' paddingBottom='190px'>
@@ -56,6 +57,10 @@ const Technology = () => (
           more tailored products to governmental workflows, described below. 
         `}
       </StyledContentBody>
+      <InfoTile
+          title={TechConsts.title1}
+          body={TechConsts.body1}
+          image={TechConsts.image1} />
     </StyledContentBlock>
   </HomepageSection>
 );
