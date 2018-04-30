@@ -3,6 +3,9 @@ import styled from 'styled-components';
 
 import StyledIntroContainer from './components/StyledIntroContainer';
 import HomepageSection from '../../components/layout/HomepageSection';
+import StyledButton from '../../components/buttons/StyledButton';
+import StyledButtonPrimary from '../../components/buttons/StyledButtonPrimary';
+import StyledButtonCallToAction from '../../components/buttons/StyledButtonCallToAction';
 import { StyledTitleLg, StyledBody } from '../../utils/Styles';
 
 const StyledContentBlock = styled.div`
@@ -14,6 +17,7 @@ const StyledContentBlock = styled.div`
 
 const StyledContentBody = StyledBody.extend`
   max-width: 400px;
+  margin-bottom: 40px;
 `;
 
 
@@ -29,6 +33,9 @@ const Intro = () => (
           to better serve all citizens.
         `}
       </StyledContentBody>
+      <StyledButtonCallToAction>
+        Schedule a call on calendly
+      </StyledButtonCallToAction>
     </StyledContentBlock>
   </HomepageSection>
 );
