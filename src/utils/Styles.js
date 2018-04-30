@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 const StyledTitle = styled.div`
   color: ${props => props.color || inherit};
-  font-family: Futura;
+  font-family: Chivo, 'Open Sans';
   line-height: 1.4;
 `;
 
@@ -16,6 +16,7 @@ export const StyledTitleMd = StyledTitle.extend`
 
 export const StyledBody = styled.div`
   color: ${props => props.color || inherit};
-  font-family: 'Open Sans';
-  line-height: 1.4;
+  font-family: Roboto, 'Open Sans';
+  font-size: 18px
+  line-height: 1.5;
 `;
