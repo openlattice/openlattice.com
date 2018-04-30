@@ -6,6 +6,7 @@ import React from 'react';
 import styled from 'styled-components';
 
 import Intro from '../intro/Intro';
+import Services from '../services/Services';
 
 /*
  * styled components
@@ -54,6 +55,7 @@ const Logo = styled.img`
 const AppContainer = () => (
   <AppWrapper>
     <Intro />
+    <Services />
   </AppWrapper>
 );
 

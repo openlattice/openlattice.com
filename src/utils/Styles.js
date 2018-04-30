@@ -12,6 +12,7 @@ export const StyledTitleLg = StyledTitle.extend`
 
 export const StyledTitleMd = StyledTitle.extend`
   font-size: 32px;
+  margin-bottom: 30px;
 `;
 
 export const StyledBody = styled.div`
