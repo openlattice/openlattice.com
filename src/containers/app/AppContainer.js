@@ -5,10 +5,8 @@
 import React from 'react';
 
 import styled from 'styled-components';
-import { Redirect, Route, Switch } from 'react-router';
 
 import OpenLatticeLogo from '../../assets/images/logo_and_name.png';
-import * as Routes from '../../core/router/Routes';
 import Intro from '../intro/Intro';
 
 /*
@@ -62,10 +60,7 @@ const AppContainer = () => (
         <Title>OpenLattice</Title>
       </AppHeaderInnerWrapper>
     </AppHeaderOuterWrapper>
-    <Switch>
-      <Route path={Routes.ROOT} component={Intro} />
-      <Redirect to={Routes.ROOT} />
-    </Switch>
+    <Intro />
   </AppWrapper>
 );
 
