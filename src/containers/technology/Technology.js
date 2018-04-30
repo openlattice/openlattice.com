@@ -4,6 +4,7 @@ import styled from 'styled-components';
 import HomepageSection from '../../components/layout/HomepageSection';
 import StyledContainerHorizontal from '../../components/layout/StyledContainerHorizontal';
 import InfoTile from './components/InfoTile';
+import FooterTile from './components/FooterTile';
 import * as TechConsts from './Consts';
 import { StyledTitleMd, StyledBody } from '../../utils/Styles';
 
@@ -91,6 +92,10 @@ const Technology = () => (
           title={TechConsts.title6}
           body={TechConsts.body6}
           image={TechConsts.image6} />
+    </TilesRow>
+    <TilesRow>
+      <FooterTile body={TechConsts.footerBody1} image={TechConsts.footerImage1} /> 
+      <FooterTile body={TechConsts.footerBody2} image={TechConsts.footerImage2} /> 
     </TilesRow>
   </HomepageSection>
 );

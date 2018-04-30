@@ -4,6 +4,8 @@ import ShareIcon from '../../assets/images/share-manage-icon@3x.png';
 import DiscoverIcon from '../../assets/images/discover-icon@3x.png';
 import ComplianceIcon from '../../assets/images/compliance-icon@3x.png';
 import DeidentificationIcon from '../../assets/images/deidentification-icon@3x.png';
+import OpenSourceIcon from '../../assets/images/open-source-icon@3x.png';
+import EncryptionIcon from '../../assets/images/encryption-icon@3x.png';
 
 
 export const title1 = `Standard Data Integration Model`;
@@ -44,3 +46,9 @@ export const body6 = `
   Manage sharing of de-identified datasets with researchers or the public.
 `;
 export const image6 = DeidentificationIcon;
+
+export const footerBody1 = `All of our code is available open source on github.`;
+export const footerImage1 = OpenSourceIcon;
+
+export const footerBody2 = `All data is stored securely at rest encrypted with AES-256.`;
+export const footerImage2 = EncryptionIcon;
