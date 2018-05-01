@@ -39,7 +39,7 @@ const Intro = () => (
     <Header />
     <StyledContentBlock>
       <StyledTitleLg color="#F1F1F1">
-        Modern data infrastructure for core societal institutions
+        Foundational tools to better serve all citizens
       </StyledTitleLg>
       <StyledContentBody color="#F1F1F1">
         {`
