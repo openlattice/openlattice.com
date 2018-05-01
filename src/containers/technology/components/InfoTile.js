@@ -19,7 +19,7 @@ const StyledImage = styled.img`
 const StyledTitle = styled.div`
   width: 220px;
   height: 48px;
-  font-family: Chivo;
+  font-family: Chivo, 'Open Sans';
   font-size: 20px;
   font-weight: normal;
   font-style: normal;
@@ -34,7 +34,7 @@ const StyledTitle = styled.div`
 const StyledBody = styled.div`
   width: 220px;
   height: 72px;
-  font-family: Roboto;
+  font-family: Roboto, 'Open Sans';
   font-size: 14px;
   font-weight: normal;
   font-style: normal;

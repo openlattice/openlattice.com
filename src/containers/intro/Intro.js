@@ -17,7 +17,7 @@ const StyledContentBlock = styled.div`
 const StyledContentBody = StyledBody.extend`
   width: 465px;
   height: 48px;
-  font-family: Roboto;
+  font-family: Roboto, 'Open Sans';
   font-size: 18px;
   font-weight: normal;
   font-style: normal;

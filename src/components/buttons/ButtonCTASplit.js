@@ -10,7 +10,7 @@ const StyledButtonLeft = styled.div`
   border-radius: 2px 0 0 2px;
   color: #838383;
   display: flex;
-  font-family: Roboto;
+  font-family: Roboto, 'Open Sans';
   font-size: 15px;
   height: 45px;
   padding-left: 30px;

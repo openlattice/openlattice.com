@@ -4,10 +4,10 @@ import styled from 'styled-components';
 import HomepageSection from '../../components/layout/HomepageSection';
 import { StyledTitleMd, StyledBody } from '../../utils/Styles';
 
-import emsPathSvg from '../../assets/images/ems-data-path.svg';
+import psPathSvg from '../../assets/images/ems-data-path.svg';
 import healthPathSvg from '../../assets/images/health-clinic-data-path.svg';
 import personPng from '../../assets/images/person-grp@3x.png';
-import policePathSvg from '../../assets/images/police-data-path.svg';
+import ssPathSvg from '../../assets/images/police-data-path.svg';
 
 const StyledContentBlock = styled.div`
   display: flex;
@@ -18,7 +18,7 @@ const StyledContentBlock = styled.div`
 const StyledContentBody = StyledBody.extend`
   width: 465px;
   height: 88px;
-  font-family: Roboto;
+  font-family: Roboto, 'Open Sans';
   font-size: 16px;
   font-weight: normal;
   font-style: normal;
@@ -48,7 +48,7 @@ const PersonImg = styled.img`
   z-index: 1000;
 `;
 
-const EmsPath = styled.img`
+const PublicSafetyPath = styled.img`
   position: absolute;
   right: -200px;
   top: -100px;
@@ -60,7 +60,7 @@ const HealthPath = styled.img`
   position: absolute;
 `;
 
-const PolicePath = styled.img`
+const SocialServicesPath = styled.img`
   bottom: 50px;
   position: absolute;
   right: -195px;
@@ -76,20 +76,20 @@ const Badge = styled.div`
 const HealthBadge = Badge.extend`
   background-color: #9359ff;
   bottom: 100px;
-  left: 50px;
+  left: 80px;
   position: absolute;
 `;
 
-const EmsBadge = Badge.extend`
+const PublicSafetyBadge = Badge.extend`
   background-color: #c881ff;
   position: absolute;
-  right: 50px;
+  right: 40px;
   top: -50px;
 `;
 
-const PoliceBadge = Badge.extend`
+const SocialServicesBadge = Badge.extend`
   background-color: #6124e2;
-  bottom: 110px;
+  bottom: 120px;
   position: absolute;
   right: 50px;
 `;
@@ -99,25 +99,23 @@ const Services = () => (
     <InnerWrapper>
       <StyledContentBlock>
         <StyledTitleMd>
-          Better understand how services are delivered and consumed
+          Understand how services are delivered and consumed
         </StyledTitleMd>
         <StyledContentBody color="#6f788a">
           {`
-            Bring together data across public safety, health systems,
-            and social services to enable technologies that streamline
-            operations, identify those most in need of help, test
-            appropriate interventions, and improve human outcomes.
-            `}
+            Leverage data across public safety, healthcare systems, and social services to streamline operations,
+            test interventions, and improve human outcomes.
+          `}
         </StyledContentBody>
       </StyledContentBlock>
       <ArtWrapper>
         <PersonImg src={personPng} />
         <HealthPath src={healthPathSvg} />
-        <HealthBadge>HEALTH CLINIC DATA</HealthBadge>
-        <EmsPath src={emsPathSvg} />
-        <EmsBadge>EMS DATA</EmsBadge>
-        <PolicePath src={policePathSvg} />
-        <PoliceBadge>POLICE DATA</PoliceBadge>
+        <HealthBadge>HEALTHCARE</HealthBadge>
+        <PublicSafetyPath src={psPathSvg} />
+        <PublicSafetyBadge>PUBLIC SAFETY</PublicSafetyBadge>
+        <SocialServicesPath src={ssPathSvg} />
+        <SocialServicesBadge>SOCIAL SERVICES</SocialServicesBadge>
       </ArtWrapper>
     </InnerWrapper>
   </HomepageSection>
