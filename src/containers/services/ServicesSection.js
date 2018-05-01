@@ -46,6 +46,36 @@ const ArtSectionOuterWrapper = styled.div`
   position: relative;
 `;
 
+const Badge = styled.div`
+  border-radius: 2px;
+  color: #fff;
+  display: inline;
+  font-size: 14px;
+  font-weight: 500;
+  padding: 6px 10px;
+`;
+
+const HealthBadge = Badge.extend`
+  background-color: #9359ff;
+  left: calc(50% - 100px);
+  position: absolute;
+  top: calc(50%);
+`;
+
+const PublicSafetyBadge = Badge.extend`
+  background-color: #c881ff;
+  left: calc(10% + 20px);
+  position: absolute;
+  top: calc(50% - 10px);
+`;
+
+const SocialServicesBadge = Badge.extend`
+  background-color: #6124e2;
+  left: calc(50% - 50px);
+  position: absolute;
+  top: calc(20%);
+`;
+
 const PersonImg = styled.img`
   height: 375px;
   margin-left: 400px;
@@ -77,6 +107,7 @@ const RightTopPathWrapper = styled.div`
 
 const LeftPath = () => (
   <LeftPathWrapper>
+    <HealthBadge>HEALTHCARE</HealthBadge>
     <svg
         xmlns="http://www.w3.org/2000/svg"
         preserveAspectRatio="none"
@@ -94,8 +125,11 @@ const LeftPath = () => (
   </LeftPathWrapper>
 );
 
+/* eslint-enable */
+
 const RightBottomPath = () => (
   <RightBottomPathWrapper>
+    <SocialServicesBadge>SOCIAL SERVICES</SocialServicesBadge>
     <svg
         xmlns="http://www.w3.org/2000/svg"
         preserveAspectRatio="none"
@@ -114,6 +148,7 @@ const RightBottomPath = () => (
 
 const RightTopPath = () => (
   <RightTopPathWrapper>
+    <PublicSafetyBadge>PUBLIC SAFETY</PublicSafetyBadge>
     <svg
         xmlns="http://www.w3.org/2000/svg"
         preserveAspectRatio="none"
@@ -129,8 +164,6 @@ const RightTopPath = () => (
     </svg>
   </RightTopPathWrapper>
 );
-
-/* eslint-enable */
 
 const IntroSection = () => (
   <Fragment>
