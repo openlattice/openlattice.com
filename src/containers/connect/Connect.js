@@ -5,28 +5,16 @@ import HomepageSection from '../../components/layout/HomepageSection';
 import StyledContainerHorizontal from '../../components/layout/StyledContainerHorizontal';
 import StyledContainerVertical from '../../components/layout/StyledContainerVertical';
 import ButtonCTASplit from '../../components/buttons/ButtonCTASplit';
+import CallIcon from '../../assets/images/call-icon.svg';
+import EmailIcon from '../../assets/images/email-icon.svg';
 import HandshakeIcon from '../../assets/images/handshake-icon@3x.png';
 import { StyledTitleMd, StyledBody } from '../../utils/Styles';
 
 const StyledContentBlock = styled.div`
   display: flex;
   flex-direction: column;
-  margin: 140px 0 40px 0;
+  padding: 150px 0;
   max-width: 550px;
-`;
-
-const StyledTitleServices = StyledTitleMd.extend`
-  width: 279px;
-  height: 36px;
-  font-family: Chivo;
-  font-size: 30px;
-  font-weight: normal;
-  font-style: normal;
-  font-stretch: normal;
-  line-height: normal;
-  letter-spacing: normal;
-  text-align: left;
-  color: #ffffff;
 `;
 
 const StyledContentBody = StyledBody.extend`
@@ -50,33 +38,40 @@ const StyledImage = styled.img`
   object-fit: contain;
 `;
 
-const StyledConnectContainerHorizontal = StyledContainerHorizontal.extend`
-  justify-content: space-between;
-`;
-
 const StyledCTAWrapper = StyledContainerVertical.extend`
   align-content: flex-end;
   align-items: center;
   height: 110px;
   justify-content: space-between;
+  padding: 0;
   width: 465px;
 `;
 
 const Connect = () => (
-  <HomepageSection background='#6124e2' paddingBottom='190px'>
+  <HomepageSection background="#6124e2">
     <StyledContainerHorizontal>
       <StyledContentBlock>
         <StyledImage src={HandshakeIcon} />
-        <StyledTitleMd color='#000000'>
-          {`Let's work together.`}
+        <StyledTitleMd color="#fff">
+          { 'Let\'s work together.' }
         </StyledTitleMd>
-        <StyledContentBody color='#6f788a'>
-          {`Have a project in mind or want to learn more?`}
+        <StyledContentBody color="#6f788a">
+          { 'Have a project in mind or want to learn more?' }
         </StyledContentBody>
       </StyledContentBlock>
       <StyledCTAWrapper>
-        <ButtonCTASplit background='#ff58b4' color='#ffffff' copy='Find a date on Calendly' cta='Schedule a Call' />
-        <ButtonCTASplit background='#361876' color='#ffffff' copy='info@openlattice.com' cta='Write an Email' />
+        <ButtonCTASplit
+            background="#ff58b4"
+            icon={CallIcon}
+            copy="Find a date on Calendly"
+            cta="Schedule a Call"
+            link="https://calendly.com/openlattice/openlattice-website-request/04-30-2018" />
+        <ButtonCTASplit
+            background="#361876"
+            icon={EmailIcon}
+            copy="info@openlattice.com"
+            cta="Write an Email"
+            email="info@openlattice.com" />
       </StyledCTAWrapper>
     </StyledContainerHorizontal>
   </HomepageSection>

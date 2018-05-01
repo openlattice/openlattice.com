@@ -52,16 +52,16 @@ const TilesRow = StyledContainerHorizontal.extend`
 const Technology = () => (
   <HomepageSection background='#ffffff' paddingBottom='190px'>
     <StyledContentBlock>
-      <StyledTitleMd color='#000000'>
+      <StyledTitleMd>
         Our Technology
       </StyledTitleMd>
       <StyledContentBody color='#6f788a'>
         {`
-          OpenLattice, Inc. provides a perpetually free tier of core 
-          services to all interested parties. Ultimately, these tools 
-          help build cross-sector data partnerships, powered by secure 
-          and accurate data linkage technology.  These tools also enable 
-          more tailored products to governmental workflows, described below. 
+          OpenLattice, Inc. provides a perpetually free tier of core
+          services to all interested parties. Ultimately, these tools
+          help build cross-sector data partnerships, powered by secure
+          and accurate data linkage technology.  These tools also enable
+          more tailored products to governmental workflows, described below.
         `}
       </StyledContentBody>
     </StyledContentBlock>
@@ -94,8 +94,8 @@ const Technology = () => (
           image={TechConsts.image6} />
     </TilesRow>
     <TilesRow>
-      <FooterTile body={TechConsts.footerBody1} image={TechConsts.footerImage1} /> 
-      <FooterTile body={TechConsts.footerBody2} image={TechConsts.footerImage2} /> 
+      <FooterTile body={TechConsts.footerBody1} image={TechConsts.footerImage1} />
+      <FooterTile body={TechConsts.footerBody2} image={TechConsts.footerImage2} />
     </TilesRow>
   </HomepageSection>
 );

@@ -47,13 +47,10 @@ const StyledCopyright = styled.span`
 `;
 
 const Footer = () => (
-  <HomepageSection>
+  <HomepageSection background="#f9f9fd">
     <StyledFooterContainer>
       <StyledNavWrapper>
         <Logo src={OpenLatticeLogo} height="43" />
-        <Link>Privacy Policy</Link>
-        <Link>Terms of Use</Link>
-        <Link>Careers</Link>
       </StyledNavWrapper>
       <StyledCopyright>Copyright © 2018 OpenLattice</StyledCopyright>
     </StyledFooterContainer>

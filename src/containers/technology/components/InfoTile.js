@@ -6,7 +6,7 @@ const StyledTile = styled.div`
   height: 263px;
   border-radius: 2px;
   background-color: #eeeef9;
-  padding: 40px 0 0 40px;
+  padding: 40px;
 `;
 
 const StyledImage = styled.img`
@@ -27,7 +27,7 @@ const StyledTitle = styled.div`
   line-height: normal;
   letter-spacing: normal;
   text-align: left;
-  color: #000000;
+  color: #4d4d4d;
   margin-bottom: 15px;
 `;
 

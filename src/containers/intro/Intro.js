@@ -10,22 +10,8 @@ import { StyledTitleLg, StyledBody } from '../../utils/Styles';
 const StyledContentBlock = styled.div`
   display: flex;
   flex-direction: column;
-  margin: 140px 0 40px 80px;
+  margin: 140px 0 0 80px;
   max-width: 550px;
-`;
-
-const StyledTitleIntro = StyledTitleLg.extend`
-  width: 548px;
-  height: 96px;
-  font-family: Chivo;
-  font-size: 40px;
-  font-weight: normal;
-  font-style: normal;
-  font-stretch: normal;
-  line-height: normal;
-  letter-spacing: normal;
-  text-align: left;
-  color: #ffffff;
 `;
 
 const StyledContentBody = StyledBody.extend`
@@ -43,23 +29,27 @@ const StyledContentBody = StyledBody.extend`
   margin-bottom: 40px;
 `;
 
+const Link = StyledButtonCallToAction.withComponent('a');
+const ScheduleLink = Link.extend`
+  text-decoration: none;
+`;
 
 const Intro = () => (
-  <HomepageSection image={Splash} paddingBottom='190px'>
+  <HomepageSection image={Splash} paddingBottom="190px">
     <Header />
     <StyledContentBlock>
-      <StyledTitleLg color='#F1F1F1'>
+      <StyledTitleLg color="#F1F1F1">
         Modern data infrastructure for core societal institutions
       </StyledTitleLg>
-      <StyledContentBody color='#F1F1F1'>
+      <StyledContentBody color="#F1F1F1">
         {`
-          We believe core societal institutions should have modern data tools 
+          We believe core societal institutions should have modern data tools
           to better serve all citizens.
         `}
       </StyledContentBody>
-      <StyledButtonCallToAction>
+      <ScheduleLink href="https://calendly.com/openlattice/openlattice-website-request/04-30-2018">
         Schedule a call on calendly
-      </StyledButtonCallToAction>
+      </ScheduleLink>
     </StyledContentBlock>
   </HomepageSection>
 );

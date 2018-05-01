@@ -18,41 +18,9 @@ import Footer from '../footer/Footer';
 const AppWrapper = styled.div`
   display: flex;
   flex-direction: column;
-  min-width: 800px;
+  min-width: 960px;
   position: relative;
 `;
-
-const AppHeaderOuterWrapper = styled.header`
-  display: flex;
-  flex: 0 0 auto;
-  flex-direction: row;
-  min-width: 800px;
-  position: relative;
-`;
-
-const AppHeaderInnerWrapper = styled.div`
-  align-items: center;
-  background-color: #fefefe;
-  border-bottom: 1px solid #c5d5e5;
-  display: flex;
-  flex: 1 0 auto;
-  flex-direction: row;
-  height: 100px;
-  justify-content: center;
-  position: relative;
-`;
-
-const Title = styled.h1`
-  font-size: 28px;
-  font-weight: normal;
-  margin: 0;
-`;
-
-const Logo = styled.img`
-  position: absolute;
-  left: 50px;
-`;
-
 
 const AppContainer = () => (
   <AppWrapper>

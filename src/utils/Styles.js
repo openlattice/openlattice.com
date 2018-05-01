@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 const StyledTitle = styled.div`
-  color: ${props => props.color || inherit};
+  color: ${props => props.color || '#4d4d4d'};
   font-family: Chivo, 'Open Sans';
   line-height: 1.4;
 `;
