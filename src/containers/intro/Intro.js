@@ -44,7 +44,7 @@ const Intro = () => (
       <StyledContentBody color="#F1F1F1">
         Foundational tools to better serve all citizens
       </StyledContentBody>
-      <ScheduleLink href="https://calendly.com/openlattice/openlattice-website-request/04-30-2018">
+      <ScheduleLink href="https://calendly.com/openlattice/openlattice-website-request">
         Schedule a call to learn more
       </ScheduleLink>
     </StyledContentBlock>
