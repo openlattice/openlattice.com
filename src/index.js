@@ -24,11 +24,13 @@ injectGlobal`${normalize()}`;
 injectGlobal`
   html,
   body {
-    background-color: #f9fcff;
-    color: #135;
-    font-family: 'Open Sans', sans-serif;
+    background-color: #fff;
+    color: #4d4d4d;
+    font-family: 'Roboto', sans-serif;
     height: 100%;
     width: 100%;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
   }
 
   * {
