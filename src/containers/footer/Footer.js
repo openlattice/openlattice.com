@@ -1,15 +1,18 @@
 import React from 'react';
 import styled from 'styled-components';
 
+import HomepageSection from '../../components/layout/HomepageSection';
 import StyledContainerHorizontal from '../../components/layout/StyledContainerHorizontal';
 import OpenLatticeLogo from '../../assets/images/logo-original@3x.png';
 
+const StyledWrapper = styled.div
 
 const StyledFooterContainer = StyledContainerHorizontal.extend`
   background: #f9f9fd;
   height: 87px;
   justify-content: space-between;
-  padding: 22px 170px;
+  padding-top: 22px;
+  padding-bottom: 22px;
 `;
 
 const StyledNavWrapper = styled.span`
@@ -44,15 +47,17 @@ const StyledCopyright = styled.span`
 `;
 
 const Footer = () => (
-  <StyledFooterContainer>
-    <StyledNavWrapper>
-      <Logo src={OpenLatticeLogo} height="43" />
-      <Link>Privacy Policy</Link>
-      <Link>Terms of Use</Link>
-      <Link>Careers</Link>
-    </StyledNavWrapper>
-    <StyledCopyright>Copyright © 2018 OpenLattice</StyledCopyright>
-  </StyledFooterContainer>
+  <HomepageSection>
+    <StyledFooterContainer>
+      <StyledNavWrapper>
+        <Logo src={OpenLatticeLogo} height="43" />
+        <Link>Privacy Policy</Link>
+        <Link>Terms of Use</Link>
+        <Link>Careers</Link>
+      </StyledNavWrapper>
+      <StyledCopyright>Copyright © 2018 OpenLattice</StyledCopyright>
+    </StyledFooterContainer>
+  </HomepageSection>
 );
 
 export default Footer;
