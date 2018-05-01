@@ -27,7 +27,7 @@ const PageSectionOuterWrapper = styled.section`
     else if (props.bgColor) {
       return css`background-color: ${props.bgColor};`;
     }
-    return css`background-color: #fff`;
+    return css`background: none`;
   }}
 `;
 
