@@ -15,7 +15,6 @@ const StyledImage = styled.img`
   width: 39px;
   height: 24px;
   object-fit: contain;
-  background-color: #000000;
   margin-right: 15px;
 `;
 

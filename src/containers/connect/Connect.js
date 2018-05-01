@@ -48,7 +48,6 @@ const StyledImage = styled.img`
   width: 76px;
   height: 46px;
   object-fit: contain;
-  background-color: #000000;
 `;
 
 const StyledConnectContainerHorizontal = StyledContainerHorizontal.extend`
