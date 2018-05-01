@@ -39,7 +39,7 @@ const ButtonCTASplit = ({ background, icon, copy, cta, link, email }) => (
       { copy }
     </StyledButtonLeft>
     { link && <Link href={link} background={background}>{ cta }</Link> }
-    { email && <Link href={`mailto:${link}`} background={background}>{ cta }</Link> }
+    { email && <Link href={`mailto:${email}`} background={background}>{ cta }</Link> }
   </StyledContainerHorizontal>
 );
 
