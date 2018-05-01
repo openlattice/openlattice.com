@@ -65,7 +65,7 @@ const Connect = () => (
             icon={CallIcon}
             copy="Find a date on Calendly"
             cta="Schedule a Call"
-            link="https://calendly.com/openlattice/openlattice-website-request/04-30-2018" />
+            link="https://calendly.com/openlattice/openlattice-website-request" />
         <ButtonCTASplit
             background="#361876"
             icon={EmailIcon}
