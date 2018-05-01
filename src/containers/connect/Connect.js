@@ -21,7 +21,7 @@ const StyledContentBody = StyledBody.extend`
   width: 465px;
   height: 21px;
   opacity: 0.9;
-  font-family: Roboto;
+  font-family: Roboto, 'Open Sans';
   font-size: 18px;
   font-weight: normal;
   font-style: normal;

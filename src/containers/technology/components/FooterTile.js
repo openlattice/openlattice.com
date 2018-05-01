@@ -21,7 +21,7 @@ const StyledImage = styled.img`
 const StyledBody = styled.div`
   width: 312px;
   height: 18px;
-  font-family: Roboto;
+  font-family: Roboto, 'Open Sans';
   font-size: 14px;
   font-weight: normal;
   font-style: normal;

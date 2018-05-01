@@ -15,24 +15,10 @@ const StyledContentBlock = styled.div`
   max-width: 550px;
 `;
 
-const StyledTitleServices = StyledTitleMd.extend`
-  width: 465px;
-  height: 72px;
-  font-family: Chivo;
-  font-size: 30px;
-  font-weight: normal;
-  font-style: normal;
-  font-stretch: normal;
-  line-height: normal;
-  letter-spacing: normal;
-  text-align: left;
-  color: #000000;
-`;
-
 const StyledContentBody = StyledBody.extend`
   width: 465px;
   height: 88px;
-  font-family: Roboto;
+  font-family: Roboto, 'Open Sans';
   font-size: 16px;
   font-weight: normal;
   font-style: normal;
@@ -41,7 +27,6 @@ const StyledContentBody = StyledBody.extend`
   letter-spacing: normal;
   text-align: left;
   color: #6f788a;
-  margin-bottom: 70px;
 `;
 
 const TilesRow = StyledContainerHorizontal.extend`
@@ -50,18 +35,14 @@ const TilesRow = StyledContainerHorizontal.extend`
 `;
 
 const Technology = () => (
-  <HomepageSection background='#ffffff' paddingBottom='190px'>
+  <HomepageSection background="#ffffff" paddingBottom="190px">
     <StyledContentBlock>
       <StyledTitleMd>
         Our Technology
       </StyledTitleMd>
-      <StyledContentBody color='#6f788a'>
+      <StyledContentBody color="#6f788a">
         {`
-          OpenLattice, Inc. provides a perpetually free tier of core
-          services to all interested parties. Ultimately, these tools
-          help build cross-sector data partnerships, powered by secure
-          and accurate data linkage technology.  These tools also enable
-          more tailored products to governmental workflows, described below.
+          Our no-cost tier of core services help address the most common challenges in cross-sector data partnerships.
         `}
       </StyledContentBody>
     </StyledContentBlock>

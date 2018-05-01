@@ -35,7 +35,7 @@ const Link = styled.span`
 const StyledCopyright = styled.span`
   width: 190px;
   height: 16px;
-  font-family: Roboto;
+  font-family: Roboto, 'Open Sans';
   font-size: 14px;
   font-weight: normal;
   font-style: normal;
