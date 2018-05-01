@@ -39,13 +39,10 @@ const Intro = () => (
     <Header />
     <StyledContentBlock>
       <StyledTitleLg color="#F1F1F1">
-        Foundational tools to better serve all citizens
+        Modern data infrastructure for core societal institutions
       </StyledTitleLg>
       <StyledContentBody color="#F1F1F1">
-        {`
-          We believe core societal institutions should have modern data tools
-          to better serve all citizens.
-        `}
+        Foundational tools to better serve all citizens
       </StyledContentBody>
       <ScheduleLink href="https://calendly.com/openlattice/openlattice-website-request/04-30-2018">
         Schedule a call on calendly
