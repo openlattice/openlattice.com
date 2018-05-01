@@ -49,5 +49,5 @@ export const image6 = DeidentificationIcon;
 export const footerBody1 = `All of our code is available open source on github.`;
 export const footerImage1 = OpenSourceIcon;
 
-export const footerBody2 = `All data is stored securely at rest encrypted with AES-256.`;
+export const footerBody2 = `All data is protected at rest and in transit following industry best practices.`;
 export const footerImage2 = EncryptionIcon;
