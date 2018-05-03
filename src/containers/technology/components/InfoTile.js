@@ -1,56 +1,52 @@
+/*
+ * @flow
+ */
+
 import React from 'react';
+
 import styled from 'styled-components';
 
-const StyledTile = styled.div`
-  width: 300px;
-  height: 263px;
+import { GRAY_TXT_COLOR_2, TILE_BG_COLOR_1 } from '../../../core/style/Constants';
+
+const TileWrapper = styled.div`
+  align-items: flex-start;
+  background-color: ${TILE_BG_COLOR_1};
   border-radius: 2px;
-  background-color: #eeeef9;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  margin-bottom: 30px;
+  min-height: 250px;
   padding: 40px;
+  width: 300px;
 `;
 
-const StyledImage = styled.img`
-  width: 38px;
-  height: 27px;
-  object-fit: contain;
-  margin-bottom: 21px;
+const Icon = styled.img`
+  margin-bottom: 20px;
 `;
 
-const StyledTitle = styled.div`
-  width: 220px;
-  height: 48px;
-  font-family: Chivo, 'Open Sans';
+const Title = styled.span`
   font-size: 20px;
-  font-weight: normal;
-  font-style: normal;
-  font-stretch: normal;
-  line-height: normal;
-  letter-spacing: normal;
-  text-align: left;
-  color: #4d4d4d;
   margin-bottom: 15px;
 `;
 
-const StyledBody = styled.div`
-  width: 220px;
-  height: 72px;
-  font-family: Roboto, 'Open Sans';
+const Body = styled.span`
+  color: ${GRAY_TXT_COLOR_2};
   font-size: 14px;
-  font-weight: normal;
-  font-style: normal;
-  font-stretch: normal;
-  line-height: 1.29;
-  letter-spacing: normal;
-  text-align: left;
-  color: #6f788a;
 `;
 
-const InfoTile = ({ title, body, image }) => (
-  <StyledTile>
-    <StyledImage src={ image } />
-    <StyledTitle>{ title }</StyledTitle>
-    <StyledBody>{ body }</StyledBody>
-  </StyledTile>
+type Props = {
+  body :string;
+  icon :string;
+  title :string;
+}
+
+const InfoTile = (props :Props) => (
+  <TileWrapper>
+    <Icon src={props.icon} />
+    <Title>{props.title}</Title>
+    <Body>{props.body}</Body>
+  </TileWrapper>
 );
 
 export default InfoTile;

@@ -10,12 +10,14 @@ import logoImg from '../../assets/images/logo-white@3x.png';
 import splashImg1 from '../../assets/images/splash_01.jpg';
 
 import PageSection from '../../components/layout/PageSection';
-import { BTN_BG_COLOR_1 } from '../../core/style/Constants';
+import StyledSectionSubTitle from '../../components/headers/StyledSectionSubTitle';
+import StyledSectionTitle from '../../components/headers/StyledSectionTitle';
+import { BTN_BG_COLOR_1, WINDOW_EDGE_PADDING } from '../../core/style/Constants';
 
 const Header = styled.div`
   display: flex;
   flex: 1 0 auto;
-  margin-top: 50px;
+  margin-top: ${WINDOW_EDGE_PADDING}px;
 `;
 
 const Content = styled.div`
@@ -23,17 +25,17 @@ const Content = styled.div`
   display: block;
   margin-bottom: 150px;
   margin-left: 80px;
-  margin-top: 150px;
+  margin-top: 100px;
   max-width: 550px;
 `;
 
-const Title = styled.div`
-  font-family: 'Chivo', sans-serif;
+const Title = StyledSectionTitle.extend`
+  color: #fff;
   font-size: 40px;
-  margin-bottom: 30px;
 `;
 
-const SubTitle = styled.div`
+const SubTitle = StyledSectionSubTitle.extend`
+  color: #fff;
   font-size: 20px;
   margin-bottom: 50px;
 `;

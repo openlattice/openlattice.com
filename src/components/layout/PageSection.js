@@ -6,8 +6,13 @@ import React, { type Node } from 'react';
 
 import styled, { css } from 'styled-components';
 
-import { PAGE_SECTION_MIN_WIDTH } from '../../core/style/Constants';
+import { PAGE_SECTION_MIN_WIDTH, WINDOW_EDGE_PADDING } from '../../core/style/Constants';
 
+/*
+ * styled components
+ */
+
+// "min-width" because this container needs to stretch to 100% of the width of the window
 const PageSectionOuterWrapper = styled.section`
   display: flex;
   flex: 0 0 auto;
@@ -31,13 +36,14 @@ const PageSectionOuterWrapper = styled.section`
   }}
 `;
 
+// "padding" adds space between the window edge and the content when the window size is really small
 const PageSectionInnerWrapper = styled.div`
   align-items: flex-start;
   display: flex;
   flex: 0 0 auto;
   flex-direction: column;
-  min-width: ${PAGE_SECTION_MIN_WIDTH}px;
-  padding: 0 50px;
+  width: ${PAGE_SECTION_MIN_WIDTH}px;
+  padding: 0 ${WINDOW_EDGE_PADDING}px;
   position: relative;
 `;
 

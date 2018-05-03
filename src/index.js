@@ -17,6 +17,7 @@ import AppContainer from './containers/app/AppContainer';
 import initializeReduxStore from './core/redux/ReduxStore';
 import initializeRouterHistory from './core/router/RouterHistory';
 import * as Routes from './core/router/Routes';
+import { GRAY_TXT_COLOR_1 } from './core/style/Constants';
 
 /* eslint-disable */
 injectGlobal`${normalize()}`;
@@ -25,7 +26,7 @@ injectGlobal`
   html,
   body {
     background-color: #fff;
-    color: #4d4d4d;
+    color: ${GRAY_TXT_COLOR_1};
     font-family: 'Roboto', sans-serif;
     height: 100%;
     width: 100%;

@@ -9,6 +9,8 @@ import styled from 'styled-components';
 import personPng from '../../assets/images/person-grp@3x.png';
 
 import PageSection from '../../components/layout/PageSection';
+import StyledSectionSubTitle from '../../components/headers/StyledSectionSubTitle';
+import StyledSectionTitle from '../../components/headers/StyledSectionTitle';
 
 import {
   GRAY_BG_COLOR_1,
@@ -23,16 +25,6 @@ const Content = styled.div`
   margin-bottom: 350px;
   margin-top: 150px;
   max-width: 500px;
-`;
-
-const Title = styled.div`
-  font-family: 'Chivo', sans-serif;
-  font-size: 30px;
-  margin-bottom: 30px;
-`;
-
-const SubTitle = styled.div`
-  font-size: 16px;
 `;
 
 const ArtSectionOuterWrapper = styled.div`
@@ -169,13 +161,13 @@ const IntroSection = () => (
   <Fragment>
     <PageSection bgColor={GRAY_BG_COLOR_1}>
       <Content>
-        <Title>Understand how services are delivered and consumed</Title>
-        <SubTitle>
+        <StyledSectionTitle>Understand how services are delivered and consumed</StyledSectionTitle>
+        <StyledSectionSubTitle>
           {
             `Leverage data across public safety, healthcare systems, and social services to streamline operations,
             test interventions, and improve human outcomes.`
           }
-        </SubTitle>
+        </StyledSectionSubTitle>
       </Content>
     </PageSection>
     <ArtSectionOuterWrapper>
