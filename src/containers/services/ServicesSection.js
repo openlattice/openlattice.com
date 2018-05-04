@@ -11,6 +11,7 @@ import personPng from '../../assets/images/person-grp@3x.png';
 import PageSection from '../../components/layout/PageSection';
 import StyledSectionSubTitle from '../../components/headers/StyledSectionSubTitle';
 import StyledSectionTitle from '../../components/headers/StyledSectionTitle';
+import { PAGE_SECTION_MIN_WIDTH } from '../../core/style/Sizes';
 
 import {
   N1,
@@ -18,10 +19,6 @@ import {
   PP3,
   PP4
 } from '../../core/style/Colors';
-
-import {
-  PAGE_SECTION_MIN_WIDTH
-} from '../../core/style/Sizes';
 
 const Content = styled.div`
   display: block;
