@@ -6,11 +6,11 @@ import React from 'react';
 
 import styled from 'styled-components';
 
-import { GRAY_TXT_COLOR_2, TILE_BG_COLOR_1 } from '../../core/style/Constants';
+import { N2, PP1 } from '../../core/style/Colors';
 
 const TileWrapper = styled.div`
   align-items: flex-start;
-  background-color: ${TILE_BG_COLOR_1};
+  background-color: ${PP1};
   border-radius: 2px;
   display: flex;
   flex-direction: column;
@@ -31,7 +31,7 @@ const Title = styled.span`
 `;
 
 const Body = styled.span`
-  color: ${GRAY_TXT_COLOR_2};
+  color: ${N2};
   font-size: 14px;
 `;
 

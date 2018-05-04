@@ -6,14 +6,14 @@ import React from 'react';
 
 import styled, { css } from 'styled-components';
 
-import { GRAY_TXT_COLOR_2 } from '../../core/style/Constants';
+import { N2 } from '../../core/style/Colors';
 
 /*
  * styled components
  */
 
 const CTAWrapper = styled.div`
-  color: ${GRAY_TXT_COLOR_2};
+  color: ${N2};
   display: flex;
   flex: 0 0 auto;
   font-size: 15px;

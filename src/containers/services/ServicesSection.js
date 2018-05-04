@@ -13,12 +13,15 @@ import StyledSectionSubTitle from '../../components/headers/StyledSectionSubTitl
 import StyledSectionTitle from '../../components/headers/StyledSectionTitle';
 
 import {
-  GRAY_BG_COLOR_1,
-  PAGE_SECTION_MIN_WIDTH,
-  PURPLE_BG_COLOR_1,
-  PURPLE_PATH_COLOR_1,
-  PURPLE_PATH_COLOR_2
-} from '../../core/style/Constants';
+  N1,
+  PP2,
+  PP3,
+  PP4
+} from '../../core/style/Colors';
+
+import {
+  PAGE_SECTION_MIN_WIDTH
+} from '../../core/style/Sizes';
 
 const Content = styled.div`
   display: block;
@@ -109,7 +112,7 @@ const LeftPath = () => (
       <path
           fill="none"
           fillRule="evenodd"
-          stroke={PURPLE_PATH_COLOR_1}
+          stroke={PP3}
           strokeWidth="2"
           vectorEffect="non-scaling-stroke"
           d="M-152.38 33.147C-63.027-1.367 26.603-8.061 116.51 13.065 251.37 44.753 386.15 176.098 511.266 217.168c83.41 27.38 174.656 31.08 273.735 11.1" />
@@ -131,7 +134,7 @@ const RightBottomPath = () => (
       <path
           fill="none"
           fillRule="evenodd"
-          stroke={PURPLE_BG_COLOR_1}
+          stroke={PP4}
           strokeWidth="2"
           d="M958.576-81.579C904.796 5.88 787.47 61.375 606.6 84.908 335.295 120.207 237.057-21.178 1 4.346" />
     </svg>
@@ -150,7 +153,7 @@ const RightTopPath = () => (
       <path
           fill="none"
           fillRule="evenodd"
-          stroke={PURPLE_PATH_COLOR_2}
+          stroke={PP2}
           strokeWidth="2"
           d="M1 131.9C8.696 128.555 190.364-17.495 474.106 3.544" />
     </svg>
@@ -159,7 +162,7 @@ const RightTopPath = () => (
 
 const IntroSection = () => (
   <Fragment>
-    <PageSection bgColor={GRAY_BG_COLOR_1}>
+    <PageSection bgColor={N1}>
       <Content>
         <StyledSectionTitle>Understand how services are delivered and consumed</StyledSectionTitle>
         <StyledSectionSubTitle>

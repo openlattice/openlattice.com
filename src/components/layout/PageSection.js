@@ -6,7 +6,7 @@ import React, { type Node } from 'react';
 
 import styled, { css } from 'styled-components';
 
-import { PAGE_SECTION_MIN_WIDTH, WINDOW_EDGE_PADDING } from '../../core/style/Constants';
+import { PAGE_SECTION_MIN_WIDTH, WINDOW_EDGE_PADDING } from '../../core/style/Sizes';
 
 /*
  * styled components

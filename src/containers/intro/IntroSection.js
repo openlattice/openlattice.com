@@ -12,7 +12,8 @@ import splashImg1 from '../../assets/images/splash_01.jpg';
 import PageSection from '../../components/layout/PageSection';
 import StyledSectionSubTitle from '../../components/headers/StyledSectionSubTitle';
 import StyledSectionTitle from '../../components/headers/StyledSectionTitle';
-import { BTN_BG_COLOR_1, WINDOW_EDGE_PADDING } from '../../core/style/Constants';
+import { PK0 } from '../../core/style/Colors';
+import { WINDOW_EDGE_PADDING } from '../../core/style/Sizes';
 
 const Header = styled.div`
   display: flex;
@@ -41,7 +42,7 @@ const SubTitle = StyledSectionSubTitle.extend`
 `;
 
 const ScheduleLink = styled.a`
-  background-color: ${BTN_BG_COLOR_1};
+  background-color: ${PK0};
   border: none;
   border-radius: 20px;
   color: #fff;

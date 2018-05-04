@@ -1,9 +1,9 @@
 import styled from 'styled-components';
 
-import { GRAY_TXT_COLOR_2 } from '../../core/style/Constants';
+import { N2 } from '../../core/style/Colors';
 
 const StyledSectionSubTitle = styled.h2`
-  color: ${GRAY_TXT_COLOR_2};
+  color: ${N2};
   font-size: 16px;
   font-weight: normal;
 `;

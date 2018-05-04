@@ -9,7 +9,7 @@ import styled from 'styled-components';
 import logoImg from '../../assets/images/logo-original@3x.png';
 
 import PageSection from '../../components/layout/PageSection';
-import { GRAY_BG_COLOR_1, GRAY_TXT_COLOR_2 } from '../../core/style/Constants';
+import { N1, N2 } from '../../core/style/Colors';
 
 /*
  * styled components
@@ -17,7 +17,7 @@ import { GRAY_BG_COLOR_1, GRAY_TXT_COLOR_2 } from '../../core/style/Constants';
 
 const Content = styled.div`
   align-items: center;
-  color: ${GRAY_TXT_COLOR_2};
+  color: ${N2};
   display: flex;
   justify-content: space-between;
   margin-bottom: 22px;
@@ -29,7 +29,7 @@ const Copyright = styled.span`
 `;
 
 const FooterSection = () => (
-  <PageSection bgColor={GRAY_BG_COLOR_1}>
+  <PageSection bgColor={N1}>
     <Content>
       <img src={logoImg} alt="OpenLattice Logo" height={50} />
       <Copyright>Copyright © 2018 OpenLattice</Copyright>

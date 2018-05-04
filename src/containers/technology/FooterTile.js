@@ -3,13 +3,14 @@
  */
 
 import React from 'react';
+
 import styled from 'styled-components';
 
-import { GRAY_TXT_COLOR_2, TILE_BG_COLOR_2 } from '../../core/style/Constants';
+import { N2, PP0 } from '../../core/style/Colors';
 
 const TileWrapper = styled.div`
   align-items: center;
-  background-color: ${TILE_BG_COLOR_2};
+  background-color: ${PP0};
   border-radius: 2px;
   display: flex;
   justify-content: flex-start;
@@ -23,7 +24,7 @@ const Icon = styled.img`
 `;
 
 const Body = styled.span`
-  color: ${GRAY_TXT_COLOR_2};
+  color: ${N2};
   font-size: 14px;
 `;
 

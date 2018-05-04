@@ -14,7 +14,7 @@ import ConnectCTA from './ConnectCTA';
 import PageSection from '../../components/layout/PageSection';
 import StyledSectionSubTitle from '../../components/headers/StyledSectionSubTitle';
 import StyledSectionTitle from '../../components/headers/StyledSectionTitle';
-import { PURPLE_BG_COLOR_1, BTN_BG_COLOR_1, BTN_BG_COLOR_2 } from '../../core/style/Constants';
+import { PK0, PP4, PP5 } from '../../core/style/Colors';
 
 /*
  * constants
@@ -50,7 +50,7 @@ const SubTitle = StyledSectionSubTitle.extend`
 `;
 
 const ConnectSection = () => (
-  <PageSection bgColor={PURPLE_BG_COLOR_1}>
+  <PageSection bgColor={PP4}>
     <Content>
       <LeftWrapper>
         <img src={handshakeIcon} alt="handshake icon" />
@@ -59,13 +59,13 @@ const ConnectSection = () => (
       </LeftWrapper>
       <RightWrapper>
         <ConnectCTA
-            bgColor={BTN_BG_COLOR_1}
+            bgColor={PK0}
             copyLeft="Find a date on Calendly"
             copyRight="Schedule a call"
             icon={callIcon}
             target="https://calendly.com/openlattice/openlattice-website-request" />
         <ConnectCTA
-            bgColor={BTN_BG_COLOR_2}
+            bgColor={PP5}
             copyLeft={EMAIL}
             copyRight="Write an Email"
             icon={emailIcon}
