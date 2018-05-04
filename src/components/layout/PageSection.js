@@ -38,7 +38,6 @@ const PageSectionOuterWrapper = styled.section`
 
 // "padding" adds space between the window edge and the content when the window size is really small
 const PageSectionInnerWrapper = styled.div`
-  align-items: flex-start;
   display: flex;
   flex: 0 0 auto;
   flex-direction: column;
@@ -56,6 +55,10 @@ type Props = {
   bgImage ? :string;
   children :Node;
 }
+
+/*
+ * components
+ */
 
 const PageSection = (props :Props) => (
   <PageSectionOuterWrapper bgColor={props.bgColor} bgImage={props.bgImage}>

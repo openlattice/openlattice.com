@@ -6,8 +6,8 @@ import React from 'react';
 
 import styled from 'styled-components';
 
-import FooterTile from './components/FooterTile';
-import InfoTile from './components/InfoTile';
+import FooterTile from './FooterTile';
+import InfoTile from './InfoTile';
 import PageSection from '../../components/layout/PageSection';
 import StyledSectionSubTitle from '../../components/headers/StyledSectionSubTitle';
 import StyledSectionTitle from '../../components/headers/StyledSectionTitle';

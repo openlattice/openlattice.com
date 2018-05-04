@@ -5,7 +5,7 @@
 import React from 'react';
 import styled from 'styled-components';
 
-import { GRAY_TXT_COLOR_2, TILE_BG_COLOR_2 } from '../../../core/style/Constants';
+import { GRAY_TXT_COLOR_2, TILE_BG_COLOR_2 } from '../../core/style/Constants';
 
 const TileWrapper = styled.div`
   align-items: center;
