@@ -2,34 +2,22 @@
  * @flow
  */
 
-import React from 'react';
-import styled from 'styled-components';
+import React, { Fragment } from 'react';
 
-import Intro from '../intro/Intro';
-import Services from '../services/Services';
-import Technology from '../technology/Technology';
-import Connect from '../connect/Connect';
-import Footer from '../footer/Footer';
-
-/*
- * styled components
- */
-
-const AppWrapper = styled.div`
-  display: flex;
-  flex-direction: column;
-  min-width: 960px;
-  position: relative;
-`;
+import IntroSection from '../intro/IntroSection';
+import ServicesSection from '../services/ServicesSection';
+import TechnologySection from '../technology/TechnologySection';
+import ConnectSection from '../connect/ConnectSection';
+import FooterSection from '../footer/FooterSection';
 
 const AppContainer = () => (
-  <AppWrapper>
-    <Intro />
-    <Services />
-    <Technology />
-    <Connect />
-    <Footer />
-  </AppWrapper>
+  <Fragment>
+    <IntroSection />
+    <ServicesSection />
+    <TechnologySection />
+    <ConnectSection />
+    <FooterSection />
+  </Fragment>
 );
 
 export default AppContainer;
