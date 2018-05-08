@@ -62,7 +62,7 @@ const PageSectionBackgroundWrapper = styled.div`
  * types
  */
 
-type PageSectionProps = {
+type Props = {
   bgColor ? :string;
   bgComponent ? :Node;
   bgImage ? :string;
@@ -73,8 +73,7 @@ type PageSectionProps = {
  * components
  */
 
-const PageSection = (props :PageSectionProps) => (
-  // <PageSectionOuterWrapper bgColor={props.bgColor} bgImage={props.bgImage}>
+const PageSection = (props :Props) => (
   <PageSectionOuterWrapper>
     <PageSectionBackgroundWrapper bgColor={props.bgColor} bgImage={props.bgImage}>
       { props.bgComponent }
