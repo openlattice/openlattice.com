@@ -81,7 +81,7 @@ class BackgroundCarousel extends Component<Props, State> {
   render() {
 
     const imageComponents = this.state.images.map((image, index) => (
-      <FadeIn isVisible={this.state.currIndex === index}>
+      <FadeIn isVisible={this.state.currIndex === index} key={image}>
         <BackgroundImage bgImage={this.state.images[this.state.currIndex]} />
       </FadeIn>
     ));
