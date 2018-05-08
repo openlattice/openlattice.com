@@ -39,7 +39,6 @@ const PageSectionOuterWrapper = styled.section`
   justify-content: center;
   min-width: ${PAGE_SECTION_MIN_WIDTH}px;
   position: relative;
-  ${props => bgImageMixin(props)}
 `;
 
 // "padding" adds space between the window edge and the content when the window size is really small
@@ -52,12 +51,20 @@ const PageSectionInnerWrapper = styled.div`
   position: relative;
 `;
 
+const PageSectionBackgroundWrapper = styled.div`
+  height: 100%;
+  position: absolute;
+  width: 100%;
+  ${props => bgImageMixin(props)}
+`;
+
 /*
  * types
  */
 
-type Props = {
+type PageSectionProps = {
   bgColor ? :string;
+  bgComponent ? :Node;
   bgImage ? :string;
   children :Node;
 }
@@ -66,8 +73,12 @@ type Props = {
  * components
  */
 
-const PageSection = (props :Props) => (
-  <PageSectionOuterWrapper bgColor={props.bgColor} bgImage={props.bgImage}>
+const PageSection = (props :PageSectionProps) => (
+  // <PageSectionOuterWrapper bgColor={props.bgColor} bgImage={props.bgImage}>
+  <PageSectionOuterWrapper>
+    <PageSectionBackgroundWrapper bgColor={props.bgColor} bgImage={props.bgImage}>
+      { props.bgComponent }
+    </PageSectionBackgroundWrapper>
     <PageSectionInnerWrapper>
       { props.children }
     </PageSectionInnerWrapper>
@@ -76,6 +87,7 @@ const PageSection = (props :Props) => (
 
 PageSection.defaultProps = {
   bgColor: undefined,
+  bgComponent: undefined,
   bgImage: undefined
 };
 

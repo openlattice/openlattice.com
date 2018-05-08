@@ -7,8 +7,8 @@ import React from 'react';
 import styled from 'styled-components';
 
 import logoImg from '../../assets/images/logo-white@3x.png';
-import splashImg1 from '../../assets/images/splash_01.jpg';
 
+import BackgroundCarousel from './BackgroundCarousel';
 import PageSection from '../../components/layout/PageSection';
 import StyledSectionSubTitle from '../../components/headers/StyledSectionSubTitle';
 import StyledSectionTitle from '../../components/headers/StyledSectionTitle';
@@ -59,9 +59,12 @@ const ScheduleLink = styled.a`
   white-space: nowrap;
 `;
 
+const BackgroundComponent = (
+  <BackgroundCarousel interval={5000} />
+);
 
 const IntroSection = () => (
-  <PageSection bgImage={splashImg1}>
+  <PageSection bgComponent={BackgroundComponent}>
     <Header>
       <img src={logoImg} alt="OpenLattice Logo" height={50} />
     </Header>
