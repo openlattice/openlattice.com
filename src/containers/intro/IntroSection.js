@@ -24,14 +24,12 @@ const Header = styled.div`
 const Content = styled.div`
   color: #fff;
   display: block;
-  margin-bottom: 150px;
-  margin-left: 0;
-  margin-top: 100px;
+  margin: 50px 0 100px 0;
   max-width: 100%;
   text-align: center;
 
   @media only screen and (min-width: 1020px) {
-    margin-left: 80px;
+    margin-left: 100px 0 150px 80px;
     max-width: 60%;
     text-align: left;
   }

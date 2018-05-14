@@ -31,12 +31,12 @@ const Content = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: center;
-  margin-bottom: 120px;
-  margin-top: 120px;
+  margin: 80px 0 100px 0;
   text-align: center;
 
   @media only screen and (min-width: 1020px) {
     flex-direction: row;
+    margin: 120px 0;
     text-align: left;
   }
 `;

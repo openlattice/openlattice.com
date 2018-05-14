@@ -22,13 +22,11 @@ import {
 
 const Content = styled.div`
   display: block;
-  margin-bottom: 150px;
-  margin-top: 150px;
+  margin: 80px 0 100px 0;
   max-width: 100%;
 
   @media only screen and (min-width: 1020px) {
-    margin-bottom: 350px;
-    margin-top: 150px;
+    margin: 150px 0 350px 0;
     max-width: 50%;
   }
 `;
