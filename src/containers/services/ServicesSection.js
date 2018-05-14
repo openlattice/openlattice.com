@@ -24,7 +24,7 @@ const Content = styled.div`
   display: block;
   margin-bottom: 350px;
   margin-top: 150px;
-  max-width: 500px;
+  max-width: 50%;
 `;
 
 const ArtSectionOuterWrapper = styled.div`

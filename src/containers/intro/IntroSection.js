@@ -27,7 +27,7 @@ const Content = styled.div`
   margin-bottom: 150px;
   margin-left: 80px;
   margin-top: 100px;
-  max-width: 550px;
+  max-width: 60%;
 `;
 
 const Title = StyledSectionTitle.extend`

@@ -12,6 +12,7 @@ import PageSection from '../../components/layout/PageSection';
 import StyledSectionSubTitle from '../../components/headers/StyledSectionSubTitle';
 import StyledSectionTitle from '../../components/headers/StyledSectionTitle';
 import * as Constants from './Constants';
+import { PAGE_SECTION_MIN_WIDTH, WINDOW_EDGE_PADDING } from '../../core/style/Sizes';
 
 /*
  * styled components
@@ -23,7 +24,7 @@ const Content = styled.div`
 `;
 
 const SectionHeaderWrapper = styled.div`
-  width: 500px;
+  width: 50%;
 `;
 
 const TechTilesWrapper = styled.div`
