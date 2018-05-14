@@ -20,11 +20,11 @@ import { PAGE_SECTION_MIN_WIDTH, WINDOW_EDGE_PADDING } from '../../core/style/Si
 
 const Content = styled.div`
   margin: 80px 0 100px 0;
+  width: 100%;
 
   @media only screen and (min-width: 1020px) {
     margin: 150px 0;
   }
-
 `;
 
 const SectionHeaderWrapper = styled.div`
