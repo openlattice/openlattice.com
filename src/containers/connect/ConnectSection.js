@@ -29,20 +29,34 @@ const EMAIL :string = 'info@openlattice.com';
 const Content = styled.div`
   color: #fff;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   margin-bottom: 120px;
   margin-top: 120px;
+
+  @media only screen and (min-width: 1020px) {
+    flex-direction: row;
+  }
 `;
 
 const LeftWrapper = styled.div`
   flex: 1;
+  margin: 0 0 30px 0;
+
+  @media only screen and (min-width: 1020px) {
+    margin: 0;
+  }
 `;
 
 const RightWrapper = styled.div`
   display: flex;
   flex: 1;
   flex-direction: column;
-  justify-content: space-around;
+  justify-content: center;
+
+  @media only screen and (min-width: 1020px) {
+    justify-content: space-around;
+  }
 `;
 
 const SubTitle = StyledSectionSubTitle.extend`

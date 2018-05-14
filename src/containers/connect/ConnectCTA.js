@@ -17,16 +17,26 @@ const CTAWrapper = styled.div`
   display: flex;
   flex: 0 0 auto;
   font-size: 15px;
+  justify-content: center;
   line-height: 18px;
+  margin: 0 0 30px 0;
+
+  @media only screen and (min-width: 1020px) {
+    margin: 0;
+  }
 `;
 
 const LeftWrapper = styled.div`
   align-items: center;
   background-color: #fff;
   border-radius: 2px 0 0 2px;
-  display: flex;
+  display: none;
   flex: 1;
   padding: 15px 30px;
+
+  @media only screen and (min-width: 1020px) {
+    display: flex;
+  }
 `;
 
 const RightWrapper = styled.div`
