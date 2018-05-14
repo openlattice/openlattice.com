@@ -25,9 +25,12 @@ const Content = styled.div`
   margin: 80px 0 100px 0;
   max-width: 100%;
 
+  @media only screen and (min-width: 768px) {
+    max-width: 50%;
+  }
+
   @media only screen and (min-width: 1020px) {
     margin: 150px 0 350px 0;
-    max-width: 50%;
   }
 `;
 

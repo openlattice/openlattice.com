@@ -28,8 +28,8 @@ const Content = styled.div`
   max-width: 100%;
   text-align: center;
 
-  @media only screen and (min-width: 1020px) {
-    margin-left: 100px 0 150px 80px;
+  @media only screen and (min-width: 768px) {
+    margin: 100px 0 150px 80px;
     max-width: 60%;
     text-align: left;
   }

@@ -34,7 +34,7 @@ const Content = styled.div`
   margin: 80px 0 100px 0;
   text-align: center;
 
-  @media only screen and (min-width: 1020px) {
+  @media only screen and (min-width: 768px) {
     flex-direction: row;
     margin: 120px 0;
     text-align: left;
@@ -45,7 +45,7 @@ const LeftWrapper = styled.div`
   flex: 1;
   margin: 0 0 30px 0;
 
-  @media only screen and (min-width: 1020px) {
+  @media only screen and (min-width: 768px) {
     margin: 0;
   }
 `;
@@ -56,7 +56,7 @@ const RightWrapper = styled.div`
   flex-direction: column;
   justify-content: center;
 
-  @media only screen and (min-width: 1020px) {
+  @media only screen and (min-width: 768px) {
     justify-content: space-around;
   }
 `;

@@ -40,7 +40,7 @@ const PageSectionOuterWrapper = styled.section`
   min-width: 100%;
   position: relative;
 
-  @media only screen and (min-width: 1020px) {
+  @media only screen and (min-width: 768px) {
     min-width: ${PAGE_SECTION_MIN_WIDTH}px;
   }
 `;
@@ -55,7 +55,7 @@ const PageSectionInnerWrapper = styled.div`
   padding: 0 ${WINDOW_EDGE_PADDING}px;
   position: relative;
 
-  @media only screen and (min-width: 1020px) {
+  @media only screen and (min-width: 768px) {
     align-items: stretch;
     width: ${PAGE_SECTION_MIN_WIDTH}px;
   }
