@@ -36,8 +36,12 @@ const TechTilesWrapper = styled.div`
   flex: 1 0 auto;
   flex-direction: row;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: center;
   max-width: 1020px;
+
+  @media only screen and (min-width: 1020px) {
+    justify-content: space-between;
+  }
 `;
 
 const TechnologySection = () => (
