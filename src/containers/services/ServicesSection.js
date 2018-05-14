@@ -22,20 +22,30 @@ import {
 
 const Content = styled.div`
   display: block;
-  margin-bottom: 350px;
+  margin-bottom: 150px;
   margin-top: 150px;
-  max-width: 50%;
+  max-width: 100%;
+
+  @media only screen and (min-width: 1020px) {
+    margin-bottom: 350px;
+    margin-top: 150px;
+    max-width: 50%;
+  }
 `;
 
 const ArtSectionOuterWrapper = styled.div`
-  display: flex;
-  flex: 0 0 auto;
-  flex-direction: row;
-  height: 375px;
-  justify-content: center;
-  margin-top: -375px;
-  min-width: ${PAGE_SECTION_MIN_WIDTH}px;
-  position: relative;
+  display: none;
+
+  @media only screen and (min-width: 1020px) {
+    display: flex;
+    flex: 0 0 auto;
+    flex-direction: row;
+    height: 375px;
+    justify-content: center;
+    margin-top: -375px;
+    min-width: ${PAGE_SECTION_MIN_WIDTH}px;
+    position: relative;
+  }
 `;
 
 const Badge = styled.div`
