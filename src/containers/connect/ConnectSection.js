@@ -33,9 +33,11 @@ const Content = styled.div`
   justify-content: center;
   margin-bottom: 120px;
   margin-top: 120px;
+  text-align: center;
 
   @media only screen and (min-width: 1020px) {
     flex-direction: row;
+    text-align: left;
   }
 `;
 
