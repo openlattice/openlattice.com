@@ -24,7 +24,11 @@ const Content = styled.div`
 `;
 
 const SectionHeaderWrapper = styled.div`
-  width: 50%;
+  width: 100%;
+
+  @media only screen and (min-width: 1020px) {
+    width: 50%;
+  }
 `;
 
 const TechTilesWrapper = styled.div`
@@ -33,6 +37,7 @@ const TechTilesWrapper = styled.div`
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-between;
+  max-width: 1020px;
 `;
 
 const TechnologySection = () => (
