@@ -47,6 +47,7 @@ const PageSectionOuterWrapper = styled.section`
 
 // "padding" adds space between the window edge and the content when the window size is really small
 const PageSectionInnerWrapper = styled.div`
+  align-items: center;
   display: flex;
   flex: 0 0 auto;
   flex-direction: column;
@@ -55,6 +56,7 @@ const PageSectionInnerWrapper = styled.div`
   position: relative;
 
   @media only screen and (min-width: 1020px) {
+    align-items: flex-start;
     width: ${PAGE_SECTION_MIN_WIDTH}px;
   }
 `;
