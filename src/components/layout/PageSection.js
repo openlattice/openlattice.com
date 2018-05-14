@@ -56,7 +56,7 @@ const PageSectionInnerWrapper = styled.div`
   position: relative;
 
   @media only screen and (min-width: 1020px) {
-    align-items: flex-start;
+    align-items: stretch;
     width: ${PAGE_SECTION_MIN_WIDTH}px;
   }
 `;
