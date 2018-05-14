@@ -37,8 +37,12 @@ const PageSectionOuterWrapper = styled.section`
   flex: 0 0 auto;
   flex-direction: row;
   justify-content: center;
-  min-width: ${PAGE_SECTION_MIN_WIDTH}px;
+  min-width: 100%;
   position: relative;
+
+  @media only screen and (min-width: 1020px) {
+    min-width: ${PAGE_SECTION_MIN_WIDTH}px;
+  }
 `;
 
 // "padding" adds space between the window edge and the content when the window size is really small
@@ -46,9 +50,13 @@ const PageSectionInnerWrapper = styled.div`
   display: flex;
   flex: 0 0 auto;
   flex-direction: column;
-  width: ${PAGE_SECTION_MIN_WIDTH}px;
+  width: 100%;
   padding: 0 ${WINDOW_EDGE_PADDING}px;
   position: relative;
+
+  @media only screen and (min-width: 1020px) {
+    width: ${PAGE_SECTION_MIN_WIDTH}px;
+  }
 `;
 
 const PageSectionBackgroundWrapper = styled.div`
