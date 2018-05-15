@@ -7,7 +7,7 @@ import React from 'react';
 import styled, { css } from 'styled-components';
 
 import { N2 } from '../../core/style/Colors';
-import { MEDIA_QUERY_MD } from '../../core/style/Sizes';
+import { MEDIA_QUERY_MD, MEDIA_QUERY_SM } from '../../core/style/Sizes';
 
 /*
  * styled components
@@ -31,12 +31,12 @@ const LeftWrapper = styled.div`
   align-items: center;
   background-color: #fff;
   border-radius: 2px 0 0 2px;
-  display: none;
+  display: flex;
   flex: 1;
-  padding: 15px 30px;
+  padding: 15px 15px;
 
   @media only screen and (min-width: ${MEDIA_QUERY_MD}px) {
-    display: flex;
+    padding: 15px 30px;
   }
 `;
 
@@ -63,7 +63,11 @@ const ActionLink = styled.a`
 `;
 
 const Icon = styled.img`
-  margin-right: 20px;
+  margin-right: 10px;
+
+  @media only screen and (min-width: ${MEDIA_QUERY_SM}) {
+    margin-right: 20px;
+  }
 `;
 
 /*
