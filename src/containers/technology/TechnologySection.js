@@ -12,6 +12,7 @@ import PageSection from '../../components/layout/PageSection';
 import StyledSectionSubTitle from '../../components/headers/StyledSectionSubTitle';
 import StyledSectionTitle from '../../components/headers/StyledSectionTitle';
 import * as Constants from './Constants';
+import { MEDIA_QUERY_SM } from '../../core/style/Sizes';
 
 /*
  * styled components
@@ -21,7 +22,7 @@ const Content = styled.div`
   margin: 80px 0 100px 0;
   width: 100%;
 
-  @media only screen and (min-width: 768px) {
+  @media only screen and (min-width: ${MEDIA_QUERY_SM}px) {
     margin: 150px 0;
   }
 `;
@@ -29,7 +30,7 @@ const Content = styled.div`
 const SectionHeaderWrapper = styled.div`
   width: 100%;
 
-  @media only screen and (min-width: 768px) {
+  @media only screen and (min-width: ${MEDIA_QUERY_SM}px) {
     width: 50%;
   }
 `;
@@ -42,7 +43,7 @@ const TechTilesWrapper = styled.div`
   justify-content: center;
   max-width: 1020px;
 
-  @media only screen and (min-width: 768px) {
+  @media only screen and (min-width: ${MEDIA_QUERY_SM}px) {
     justify-content: space-between;
   }
 `;

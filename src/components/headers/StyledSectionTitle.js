@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import { MEDIA_QUERY_SM } from '../../core/style/Sizes';
 
 const StyledSectionTitle = styled.h1`
   font-family: 'Chivo', sans-serif;
@@ -6,7 +7,7 @@ const StyledSectionTitle = styled.h1`
   font-weight: normal;
   text-align: center;
 
-  @media only screen and (min-width: 768px) {
+  @media only screen and (min-width: ${MEDIA_QUERY_SM}px) {
     text-align: left
   }
 `;

@@ -13,7 +13,7 @@ import PageSection from '../../components/layout/PageSection';
 import StyledSectionSubTitle from '../../components/headers/StyledSectionSubTitle';
 import StyledSectionTitle from '../../components/headers/StyledSectionTitle';
 import { PK0 } from '../../core/style/Colors';
-import { WINDOW_EDGE_PADDING } from '../../core/style/Sizes';
+import { WINDOW_EDGE_PADDING, MEDIA_QUERY_SM } from '../../core/style/Sizes';
 
 const Header = styled.div`
   display: flex;
@@ -28,7 +28,7 @@ const Content = styled.div`
   max-width: 100%;
   text-align: center;
 
-  @media only screen and (min-width: 768px) {
+  @media only screen and (min-width: ${MEDIA_QUERY_SM}px) {
     margin: 100px 0 150px 80px;
     max-width: 60%;
     text-align: left;

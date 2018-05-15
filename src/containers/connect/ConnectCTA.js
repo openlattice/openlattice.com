@@ -7,6 +7,7 @@ import React from 'react';
 import styled, { css } from 'styled-components';
 
 import { N2 } from '../../core/style/Colors';
+import { MEDIA_QUERY_MD } from '../../core/style/Sizes';
 
 /*
  * styled components
@@ -21,7 +22,7 @@ const CTAWrapper = styled.div`
   line-height: 18px;
   margin: 0 0 30px 0;
 
-  @media only screen and (min-width: 1020px) {
+  @media only screen and (min-width: ${MEDIA_QUERY_MD}px) {
     margin: 0;
   }
 `;
@@ -34,7 +35,7 @@ const LeftWrapper = styled.div`
   flex: 1;
   padding: 15px 30px;
 
-  @media only screen and (min-width: 1020px) {
+  @media only screen and (min-width: ${MEDIA_QUERY_MD}px) {
     display: flex;
   }
 `;

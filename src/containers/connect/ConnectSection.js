@@ -15,6 +15,7 @@ import PageSection from '../../components/layout/PageSection';
 import StyledSectionSubTitle from '../../components/headers/StyledSectionSubTitle';
 import StyledSectionTitle from '../../components/headers/StyledSectionTitle';
 import { PK0, PP4, PP5 } from '../../core/style/Colors';
+import { MEDIA_QUERY_SM } from '../../core/style/Sizes';
 
 /*
  * constants
@@ -34,7 +35,7 @@ const Content = styled.div`
   margin: 80px 0 100px 0;
   text-align: center;
 
-  @media only screen and (min-width: 768px) {
+  @media only screen and (min-width: ${MEDIA_QUERY_SM}px) {
     flex-direction: row;
     margin: 120px 0;
     text-align: left;
@@ -45,7 +46,7 @@ const LeftWrapper = styled.div`
   flex: 1;
   margin: 0 0 30px 0;
 
-  @media only screen and (min-width: 768px) {
+  @media only screen and (min-width: ${MEDIA_QUERY_SM}px) {
     margin: 0;
   }
 `;
@@ -56,7 +57,7 @@ const RightWrapper = styled.div`
   flex-direction: column;
   justify-content: center;
 
-  @media only screen and (min-width: 768px) {
+  @media only screen and (min-width: ${MEDIA_QUERY_SM}px) {
     justify-content: space-around;
   }
 `;

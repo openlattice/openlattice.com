@@ -6,7 +6,7 @@ import React, { type Node } from 'react';
 
 import styled, { css } from 'styled-components';
 
-import { PAGE_SECTION_MIN_WIDTH, WINDOW_EDGE_PADDING } from '../../core/style/Sizes';
+import { PAGE_SECTION_MIN_WIDTH, WINDOW_EDGE_PADDING, MEDIA_QUERY_SM } from '../../core/style/Sizes';
 
 /*
  * styled components
@@ -40,7 +40,7 @@ const PageSectionOuterWrapper = styled.section`
   min-width: 100%;
   position: relative;
 
-  @media only screen and (min-width: 768px) {
+  @media only screen and (min-width: ${MEDIA_QUERY_SM}px) {
     min-width: ${PAGE_SECTION_MIN_WIDTH}px;
   }
 `;
@@ -55,7 +55,7 @@ const PageSectionInnerWrapper = styled.div`
   padding: 0 ${WINDOW_EDGE_PADDING}px;
   position: relative;
 
-  @media only screen and (min-width: 768px) {
+  @media only screen and (min-width: ${MEDIA_QUERY_SM}px) {
     align-items: stretch;
     width: ${PAGE_SECTION_MIN_WIDTH}px;
   }
