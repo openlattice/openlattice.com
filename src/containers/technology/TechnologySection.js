@@ -12,7 +12,7 @@ import PageSection from '../../components/layout/PageSection';
 import StyledSectionSubTitle from '../../components/headers/StyledSectionSubTitle';
 import StyledSectionTitle from '../../components/headers/StyledSectionTitle';
 import * as Constants from './Constants';
-import { MEDIA_QUERY_SM } from '../../core/style/Sizes';
+import { CONTENT_GRID_WIDTH, MEDIA_QUERY_SM } from '../../core/style/Sizes';
 
 /*
  * styled components
@@ -41,7 +41,7 @@ const TechTilesWrapper = styled.div`
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
-  max-width: 1020px;
+  max-width:${CONTENT_GRID_WIDTH}px;
 
   @media only screen and (min-width: ${MEDIA_QUERY_SM}px) {
     justify-content: space-between;
