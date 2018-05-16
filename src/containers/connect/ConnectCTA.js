@@ -32,7 +32,7 @@ const LeftWrapper = styled.div`
   background-color: #fff;
   border-radius: 2px 0 0 2px;
   display: flex;
-  flex: 1;
+  flex: none;
   padding: 15px 15px;
 
   @media only screen and (min-width: ${MEDIA_QUERY_MD}px) {
