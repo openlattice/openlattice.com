@@ -18,7 +18,7 @@ const TileWrapper = styled.div`
   margin: 15px;
   min-height: 100px;
   padding: 0 40px;
-  width: 465px;
+  max-width: 465px;
 
   @media only screen and (min-width: ${MEDIA_QUERY_MD}px) {
     margin-bottom: 0;

@@ -33,6 +33,7 @@ const Content = styled.div`
   flex-direction: column;
   justify-content: center;
   margin: 80px 0 100px 0;
+  max-width: 100%;
   text-align: center;
 
   @media only screen and (min-width: ${MEDIA_QUERY_SM}px) {

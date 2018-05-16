@@ -34,26 +34,19 @@ const bgImageMixin = (props) => {
 // "min-width" because this container needs to stretch to 100% of the width of the window
 const PageSectionOuterWrapper = styled.section`
   display: flex;
-  flex: 0 0 auto;
-  flex-direction: row;
   justify-content: center;
   min-width: 100%;
   position: relative;
-
-  @media only screen and (min-width: ${MEDIA_QUERY_SM}px) {
-    min-width: ${PAGE_SECTION_MIN_WIDTH}px;
-  }
 `;
 
 // "padding" adds space between the window edge and the content when the window size is really small
 const PageSectionInnerWrapper = styled.div`
   align-items: center;
   display: flex;
-  flex: 0 0 auto;
   flex-direction: column;
-  width: 100%;
   padding: 0 ${WINDOW_EDGE_PADDING}px;
   position: relative;
+  width: 100%;
 
   @media only screen and (min-width: ${MEDIA_QUERY_SM}px) {
     align-items: stretch;
