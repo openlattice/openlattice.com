@@ -14,6 +14,7 @@ const TileWrapper = styled.div`
   border-radius: 2px;
   display: flex;
   justify-content: flex-start;
+  margin: 15px;
   min-height: 100px;
   padding: 0 40px;
   width: 465px;

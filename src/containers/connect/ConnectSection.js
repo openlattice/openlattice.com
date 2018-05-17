@@ -15,6 +15,7 @@ import PageSection from '../../components/layout/PageSection';
 import StyledSectionSubTitle from '../../components/headers/StyledSectionSubTitle';
 import StyledSectionTitle from '../../components/headers/StyledSectionTitle';
 import { PK0, PP4, PP5 } from '../../core/style/Colors';
+import { MEDIA_QUERY_SM } from '../../core/style/Sizes';
 
 /*
  * constants
@@ -29,20 +30,37 @@ const EMAIL :string = 'info@openlattice.com';
 const Content = styled.div`
   color: #fff;
   display: flex;
+  flex-direction: column;
   justify-content: center;
-  margin-bottom: 120px;
-  margin-top: 120px;
+  margin: 80px 0 100px 0;
+  max-width: 100%;
+  text-align: center;
+
+  @media only screen and (min-width: ${MEDIA_QUERY_SM}px) {
+    flex-direction: row;
+    margin: 120px 0;
+    text-align: left;
+  }
 `;
 
 const LeftWrapper = styled.div`
   flex: 1;
+  margin: 0 0 30px 0;
+
+  @media only screen and (min-width: ${MEDIA_QUERY_SM}px) {
+    margin: 0;
+  }
 `;
 
 const RightWrapper = styled.div`
   display: flex;
   flex: 1;
   flex-direction: column;
-  justify-content: space-around;
+  justify-content: center;
+
+  @media only screen and (min-width: ${MEDIA_QUERY_SM}px) {
+    justify-content: space-around;
+  }
 `;
 
 const SubTitle = StyledSectionSubTitle.extend`

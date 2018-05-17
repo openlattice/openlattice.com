@@ -10,6 +10,7 @@ import logoImg from '../../assets/images/logo-original@3x.png';
 
 import PageSection from '../../components/layout/PageSection';
 import { N1, N2 } from '../../core/style/Colors';
+import { MEDIA_QUERY_SM } from '../../core/style/Sizes';
 
 /*
  * styled components
@@ -19,9 +20,22 @@ const Content = styled.div`
   align-items: center;
   color: ${N2};
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
   margin-bottom: 22px;
   margin-top: 22px;
+
+  @media only screen and (min-width: ${MEDIA_QUERY_SM}px) {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+`;
+
+const Logo = styled.img`
+  margin: 0 0 30px 0;
+
+  @media only screen and (min-width: ${MEDIA_QUERY_SM}px) {
+    margin: 0;
+  }
 `;
 
 const Copyright = styled.span`
@@ -31,7 +45,7 @@ const Copyright = styled.span`
 const FooterSection = () => (
   <PageSection bgColor={N1}>
     <Content>
-      <img src={logoImg} alt="OpenLattice Logo" height={50} />
+      <Logo src={logoImg} alt="OpenLattice Logo" height={50} />
       <Copyright>Copyright © 2018 OpenLattice</Copyright>
     </Content>
   </PageSection>
