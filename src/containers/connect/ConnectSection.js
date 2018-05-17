@@ -49,6 +49,7 @@ const LeftWrapper = styled.div`
 
   @media only screen and (min-width: ${MEDIA_QUERY_SM}px) {
     margin: 0;
+    margin-right: 30px;
   }
 `;
 
