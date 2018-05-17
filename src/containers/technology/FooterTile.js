@@ -7,7 +7,6 @@ import React from 'react';
 import styled from 'styled-components';
 
 import { N2, PP0 } from '../../core/style/Colors';
-import { MEDIA_QUERY_MD } from '../../core/style/Sizes';
 
 const TileWrapper = styled.div`
   align-items: center;
@@ -18,11 +17,7 @@ const TileWrapper = styled.div`
   margin: 15px;
   min-height: 100px;
   padding: 0 40px;
-  max-width: 465px;
-
-  @media only screen and (min-width: ${MEDIA_QUERY_MD}px) {
-    margin-bottom: 0;
-  }
+  width: 465px;
 `;
 
 const Icon = styled.img`

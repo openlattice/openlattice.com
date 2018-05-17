@@ -40,12 +40,8 @@ const TechTilesOuterWrapper = styled.div`
   flex: 1 0 auto;
   flex-direction: row;
   justify-content: center;
-  max-width:${CONTENT_GRID_WIDTH}px;
   margin: 0 0 30px 0;
-
-  @media only screen and (min-width: ${MEDIA_QUERY_SM}px) {
-    justify-content: space-between;
-  }
+  max-width:${CONTENT_GRID_WIDTH}px;
 `;
 
 const TechTilesInnerWrapper = styled.div`
