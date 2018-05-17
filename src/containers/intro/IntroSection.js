@@ -13,7 +13,7 @@ import PageSection from '../../components/layout/PageSection';
 import StyledSectionSubTitle from '../../components/headers/StyledSectionSubTitle';
 import StyledSectionTitle from '../../components/headers/StyledSectionTitle';
 import { PK0 } from '../../core/style/Colors';
-import { WINDOW_EDGE_PADDING } from '../../core/style/Sizes';
+import { WINDOW_EDGE_PADDING, MEDIA_QUERY_SM } from '../../core/style/Sizes';
 
 const Header = styled.div`
   display: flex;
@@ -24,10 +24,15 @@ const Header = styled.div`
 const Content = styled.div`
   color: #fff;
   display: block;
-  margin-bottom: 150px;
-  margin-left: 80px;
-  margin-top: 100px;
-  max-width: 550px;
+  margin: 50px 0 100px 0;
+  max-width: 100%;
+  text-align: center;
+
+  @media only screen and (min-width: ${MEDIA_QUERY_SM}px) {
+    margin: 100px 0 150px 80px;
+    max-width: 60%;
+    text-align: left;
+  }
 `;
 
 const Title = StyledSectionTitle.extend`

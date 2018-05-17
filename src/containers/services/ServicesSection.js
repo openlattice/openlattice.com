@@ -11,7 +11,7 @@ import personPng from '../../assets/images/person-grp@3x.png';
 import PageSection from '../../components/layout/PageSection';
 import StyledSectionSubTitle from '../../components/headers/StyledSectionSubTitle';
 import StyledSectionTitle from '../../components/headers/StyledSectionTitle';
-import { PAGE_SECTION_MIN_WIDTH } from '../../core/style/Sizes';
+import { PAGE_SECTION_MIN_WIDTH, MEDIA_QUERY_SM, MEDIA_QUERY_MD } from '../../core/style/Sizes';
 
 import {
   N1,
@@ -22,9 +22,17 @@ import {
 
 const Content = styled.div`
   display: block;
-  margin-bottom: 350px;
-  margin-top: 150px;
-  max-width: 500px;
+  margin: 80px 0 100px 0;
+  max-width: 100%;
+  height: 530px;
+
+  @media only screen and (min-width: ${MEDIA_QUERY_SM}px) {
+    max-width: 50%;
+  }
+
+  @media only screen and (min-width: ${MEDIA_QUERY_MD}px) {
+    height: 375px;
+  }
 `;
 
 const ArtSectionOuterWrapper = styled.div`
@@ -34,8 +42,12 @@ const ArtSectionOuterWrapper = styled.div`
   height: 375px;
   justify-content: center;
   margin-top: -375px;
-  min-width: ${PAGE_SECTION_MIN_WIDTH}px;
+  min-width: 100%;
   position: relative;
+
+  @media only screen and (min-width: ${MEDIA_QUERY_MD}px) {
+    min-width: ${PAGE_SECTION_MIN_WIDTH}px;
+  }
 `;
 
 const Badge = styled.div`
@@ -45,54 +57,86 @@ const Badge = styled.div`
   font-size: 14px;
   font-weight: 500;
   padding: 6px 10px;
+  z-index: 2000;
 `;
 
 const HealthBadge = Badge.extend`
   background-color: #9359ff;
-  left: calc(50% - 100px);
+  left: calc(50% - 90px);
   position: absolute;
   top: calc(50%);
+
+  @media only screen and (min-width: ${MEDIA_QUERY_MD}px) {
+    left: calc(50% - 100px);
+  }
 `;
 
 const PublicSafetyBadge = Badge.extend`
   background-color: #c881ff;
-  left: calc(10% + 20px);
+  left: calc(10% + 50px);
   position: absolute;
-  top: calc(50% - 10px);
+  top: calc(50% - 50px);
+
+  @media only screen and (min-width: ${MEDIA_QUERY_MD}px) {
+    left: calc(10% + 20px);
+    top: calc(50% - 10px);
+  }
 `;
 
 const SocialServicesBadge = Badge.extend`
   background-color: #6124e2;
-  left: calc(50% - 50px);
+  left: calc(50% - 40px);
   position: absolute;
   top: calc(20%);
+
+  @media only screen and (min-width: ${MEDIA_QUERY_MD}px) {
+    left: calc(50% - 50px);
+  }
 `;
 
 const PersonImg = styled.img`
   height: 375px;
-  margin-left: 400px;
+  margin-left: 0;
   z-index: 1000;
+
+  @media only screen and (min-width: ${MEDIA_QUERY_MD}px) {
+    margin-left: 400px;
+  }
 `;
 
 const LeftPathWrapper = styled.div`
-  bottom: 50px;
+  bottom: 0;
   left: 0;
   position: absolute;
-  width: calc(50% + 150px);
+  width: 50%;
+
+  @media only screen and (min-width: ${MEDIA_QUERY_MD}px) {
+    bottom: 50px;
+    width: calc(50% + 150px);
+  }
 `;
 
 const RightBottomPathWrapper = styled.div`
   bottom: 40px;
   position: absolute;
   right: 0;
-  width: calc(50% - 200px);
+  width: 50%;
+
+  @media only screen and (min-width: ${MEDIA_QUERY_MD}px) {
+    width: calc(50% - 200px);
+  }
 `;
 
 const RightTopPathWrapper = styled.div`
   position: absolute;
   right: 0;
-  top: -80px;
-  width: calc(50% - 250px);
+  top: -20px;
+  width: 50%;
+
+  @media only screen and (min-width: ${MEDIA_QUERY_MD}px) {
+    top: -80px;
+    width: calc(50% - 250px);
+  }
 `;
 
 /* eslint-disable max-len */
