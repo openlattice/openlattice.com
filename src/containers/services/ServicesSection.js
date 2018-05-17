@@ -139,14 +139,6 @@ const RightTopPathWrapper = styled.div`
   }
 `;
 
-const StyledPath = styled.path`
-  display: none;
-
-  @media only screen and (min-width: ${MEDIA_QUERY_MD}px) {
-    display: block;
-  }
-`;
-
 /* eslint-disable max-len */
 
 const LeftPath = () => (
