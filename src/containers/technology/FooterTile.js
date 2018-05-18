@@ -13,11 +13,13 @@ const TileWrapper = styled.div`
   background-color: ${PP0};
   border-radius: 2px;
   display: flex;
+  flex: 1;
   justify-content: flex-start;
   margin: 15px;
+  max-width: 465px;
   min-height: 100px;
+  min-width: 300px;
   padding: 0 40px;
-  width: 465px;
 `;
 
 const Icon = styled.img`

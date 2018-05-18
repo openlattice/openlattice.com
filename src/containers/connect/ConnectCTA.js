@@ -36,6 +36,10 @@ const LeftWrapper = styled.div`
   min-width: 250px;
   padding: 15px 15px;
 
+  @media only screen and (max-width: 500px) {
+    display: none;
+  }
+
   @media only screen and (min-width: ${MEDIA_QUERY_MD}px) {
     padding: 15px 30px;
   }
