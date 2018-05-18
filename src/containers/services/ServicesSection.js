@@ -33,6 +33,10 @@ const Content = styled.div`
   @media only screen and (min-width: ${MEDIA_QUERY_MD}px) {
     height: 375px;
   }
+
+  @media only screen and (max-width: 500px) {
+    height: 450px;
+  }
 `;
 
 const ArtSectionOuterWrapper = styled.div`
@@ -44,9 +48,12 @@ const ArtSectionOuterWrapper = styled.div`
   margin-top: -375px;
   min-width: 100%;
   position: relative;
-
   @media only screen and (min-width: ${MEDIA_QUERY_MD}px) {
     min-width: ${PAGE_SECTION_MIN_WIDTH}px;
+  }
+  @media only screen and (max-width: 500px) {
+    height: 250px;
+    margin-top: -250px;
   }
 `;
 
@@ -58,6 +65,11 @@ const Badge = styled.div`
   font-weight: 500;
   padding: 6px 10px;
   z-index: 2000;
+  @media only screen and (max-width: 500px) {
+    font-size: 12px;
+    line-height: 1;
+    padding: 5px 8px;
+  }
 `;
 
 const HealthBadge = Badge.extend`
@@ -65,9 +77,11 @@ const HealthBadge = Badge.extend`
   left: calc(50% - 90px);
   position: absolute;
   top: calc(50%);
-
   @media only screen and (min-width: ${MEDIA_QUERY_MD}px) {
     left: calc(50% - 100px);
+  }
+  @media only screen and (max-width: 500px) {
+    top: 20px;
   }
 `;
 
@@ -76,10 +90,13 @@ const PublicSafetyBadge = Badge.extend`
   left: calc(10% + 50px);
   position: absolute;
   top: calc(50% - 50px);
-
   @media only screen and (min-width: ${MEDIA_QUERY_MD}px) {
     left: calc(10% + 20px);
     top: calc(50% - 10px);
+  }
+  @media only screen and (max-width: 500px) {
+    left: calc(10% + 20px);
+    top: 10px;
   }
 `;
 
@@ -98,9 +115,11 @@ const PersonImg = styled.img`
   height: 375px;
   margin-left: 0;
   z-index: 1000;
-
   @media only screen and (min-width: ${MEDIA_QUERY_MD}px) {
     margin-left: 400px;
+  }
+  @media only screen and (max-width: 500px) {
+    height: 250px;
   }
 `;
 
@@ -116,14 +135,31 @@ const LeftPathWrapper = styled.div`
   }
 `;
 
+const LeftPathSvg = styled.svg`
+  height: 242px;
+  @media only screen and (max-width: 500px) {
+    height: 100px;
+  }
+`;
+
 const RightBottomPathWrapper = styled.div`
   bottom: 40px;
   position: absolute;
   right: 0;
   width: 50%;
-
   @media only screen and (min-width: ${MEDIA_QUERY_MD}px) {
     width: calc(50% - 200px);
+  }
+  @media only screen and (max-width: 500px) {
+    bottom: 5px;
+    height: 70px;
+  }
+`;
+
+const RightBottomPathSvg = styled.svg`
+  height: 88px;
+  @media only screen and (max-width: 500px) {
+    height: 70px;
   }
 `;
 
@@ -132,7 +168,6 @@ const RightTopPathWrapper = styled.div`
   right: 0;
   top: -20px;
   width: 50%;
-
   @media only screen and (min-width: ${MEDIA_QUERY_MD}px) {
     top: -80px;
     width: calc(50% - 250px);
@@ -144,10 +179,9 @@ const RightTopPathWrapper = styled.div`
 const LeftPath = () => (
   <LeftPathWrapper>
     <HealthBadge>HEALTHCARE</HealthBadge>
-    <svg
+    <LeftPathSvg
         xmlns="http://www.w3.org/2000/svg"
         preserveAspectRatio="none"
-        height="242"
         width="100%"
         viewBox="0 0 786 242">
       <path
@@ -157,7 +191,7 @@ const LeftPath = () => (
           strokeWidth="2"
           vectorEffect="non-scaling-stroke"
           d="M-152.38 33.147C-63.027-1.367 26.603-8.061 116.51 13.065 251.37 44.753 386.15 176.098 511.266 217.168c83.41 27.38 174.656 31.08 273.735 11.1" />
-    </svg>
+    </LeftPathSvg>
   </LeftPathWrapper>
 );
 
@@ -166,11 +200,10 @@ const LeftPath = () => (
 const RightBottomPath = () => (
   <RightBottomPathWrapper>
     <SocialServicesBadge>SOCIAL SERVICES</SocialServicesBadge>
-    <svg
+    <RightBottomPathSvg
         xmlns="http://www.w3.org/2000/svg"
         preserveAspectRatio="none"
         width="100%"
-        height="88"
         viewBox="0 0 455 88">
       <path
           fill="none"
@@ -178,7 +211,7 @@ const RightBottomPath = () => (
           stroke={PP4}
           strokeWidth="2"
           d="M958.576-81.579C904.796 5.88 787.47 61.375 606.6 84.908 335.295 120.207 237.057-21.178 1 4.346" />
-    </svg>
+    </RightBottomPathSvg>
   </RightBottomPathWrapper>
 );
 
