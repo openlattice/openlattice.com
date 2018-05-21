@@ -23,27 +23,36 @@ const Header = styled.div`
 
 const Content = styled.div`
   color: #fff;
+  align-items: center;
   display: block;
-  margin: 50px 0 100px 0;
+  flex-direction: column;
+  margin: 50px auto 100px auto;
   max-width: 100%;
   text-align: center;
 
   @media only screen and (min-width: ${MEDIA_QUERY_SM}px) {
-    margin: 100px 0 150px 80px;
     max-width: 60%;
-    text-align: left;
   }
 `;
 
 const Title = StyledSectionTitle.extend`
   color: #fff;
   font-size: 40px;
+  text-align: center;
+
+  @media only screen and (min-width: ${MEDIA_QUERY_SM}px) {
+    text-align: center;
+  }
 `;
 
 const SubTitle = StyledSectionSubTitle.extend`
   color: #fff;
   font-size: 20px;
   margin-bottom: 50px;
+
+  @media only screen and (min-width: ${MEDIA_QUERY_SM}px) {
+    text-align: center;
+  }
 `;
 
 const ScheduleLink = styled.a`
