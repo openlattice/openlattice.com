@@ -27,8 +27,9 @@ injectGlobal`
   body {
     background-color: ${N0};
     color: ${N3};
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Open Sans', sans-serif;
     height: 100%;
+    line-height: normal;
     width: 100%;
     -moz-osx-font-smoothing: grayscale;
     -webkit-font-smoothing: antialiased;
