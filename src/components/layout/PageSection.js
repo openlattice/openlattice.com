@@ -27,7 +27,7 @@ const bgImageMixin = (props) => {
     `;
   }
   return css`
-    background: none
+    background: none;
   `;
 };
 

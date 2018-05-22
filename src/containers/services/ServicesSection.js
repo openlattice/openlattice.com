@@ -25,9 +25,11 @@ const Content = styled.div`
   margin: 80px 0 100px 0;
   max-width: 100%;
   height: 450px;
+
   @media only screen and (min-width: ${MEDIA_QUERY_SM}px) {
     max-width: 50%;
   }
+
   @media only screen and (min-width: ${MEDIA_QUERY_MD}px) {
     height: 375px;
   }
@@ -42,10 +44,12 @@ const ArtSectionOuterWrapper = styled.div`
   margin-top: -250px;
   min-width: 100%;
   position: relative;
+
   @media only screen and (min-width: ${MEDIA_QUERY_SM}px) {
     height: 300px;
     margin-top: -300px;
   }
+
   @media only screen and (min-width: ${MEDIA_QUERY_MD}px) {
     height: 375px;
     margin-top: -375px;
@@ -57,9 +61,11 @@ const PersonImg = styled.img`
   height: 250px;
   margin-left: 0;
   z-index: 1000;
+
   @media only screen and (min-width: ${MEDIA_QUERY_SM}px) {
     height: 300px;
   }
+
   @media only screen and (min-width: ${MEDIA_QUERY_MD}px) {
     height: 375px;
     margin-left: 400px;
@@ -75,6 +81,7 @@ const Badge = styled.div`
   font-weight: 500;
   padding: 5px 8px;
   z-index: 2000;
+
   @media only screen and (min-width: ${MEDIA_QUERY_SM}px) {
     font-size: 14px;
     padding: 6px 10px;
@@ -90,9 +97,11 @@ const HealthWrapper = styled.div`
   left: 0;
   position: absolute;
   width: 50%;
+
   @media only screen and (min-width: ${MEDIA_QUERY_SM}px) {
     bottom: 20px;
   }
+
   @media only screen and (min-width: ${MEDIA_QUERY_MD}px) {
     bottom: 50px;
     width: calc(50% + 150px);
@@ -101,9 +110,11 @@ const HealthWrapper = styled.div`
 
 const HealthSvg = styled.svg`
   height: 110px;
+
   @media only screen and (min-width: ${MEDIA_QUERY_SM}px) {
     height: 200px;
   }
+
   @media only screen and (min-width: ${MEDIA_QUERY_MD}px) {
     height: 242px;
   }
@@ -114,6 +125,7 @@ const HealthBadge = Badge.extend`
   left: calc(30% - 20px);
   position: absolute;
   top: calc(30%);
+
   @media only screen and (min-width: ${MEDIA_QUERY_SM}px) {
     left: calc(50% - 90px);
     top: calc(50%);
@@ -129,9 +141,11 @@ const PublicSafetyWrapper = styled.div`
   right: 0;
   top: -30px;
   width: 50%;
+
   @media only screen and (min-width: ${MEDIA_QUERY_SM}px) {
     top: -80px;
   }
+
   @media only screen and (min-width: ${MEDIA_QUERY_MD}px) {
     top: -80px;
     width: calc(50% - 250px);
@@ -147,6 +161,7 @@ const PublicSafetyBadge = Badge.extend`
   left: calc(30%);
   position: absolute;
   top: calc(10%);
+
   @media only screen and (min-width: ${MEDIA_QUERY_SM}px) {
     left: calc(40%);
   }
@@ -161,9 +176,11 @@ const SocialServicesWrapper = styled.div`
   position: absolute;
   right: 0;
   width: 50%;
+
   @media only screen and (min-width: ${MEDIA_QUERY_SM}px) {
     bottom: 20px;
   }
+
   @media only screen and (min-width: ${MEDIA_QUERY_MD}px) {
     bottom: 30px;
     width: calc(50% - 200px);
@@ -172,9 +189,11 @@ const SocialServicesWrapper = styled.div`
 
 const SocialServicesSvg = styled.svg`
   height: 60px;
+
   @media only screen and (min-width: ${MEDIA_QUERY_SM}px) {
     height: 70px;
   }
+
   @media only screen and (min-width: ${MEDIA_QUERY_MD}px) {
     height: 88px;
   }
@@ -185,10 +204,12 @@ const SocialServicesBadge = Badge.extend`
   left: calc(30%);
   position: absolute;
   top: calc(20%);
+
   @media only screen and (min-width: ${MEDIA_QUERY_SM}px) {
     left: calc(40%);
     top: calc(30%);
   }
+
   @media only screen and (min-width: ${MEDIA_QUERY_MD}px) {
     left: calc(50%);
   }

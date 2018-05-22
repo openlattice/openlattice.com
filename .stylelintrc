@@ -5,6 +5,5 @@
   ],
   "processors": [
     "stylelint-processor-styled-components"
-  ],
-  "syntax": "scss"
+  ]
 }
