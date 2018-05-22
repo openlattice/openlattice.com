@@ -41,7 +41,7 @@ const TechTilesOuterWrapper = styled.div`
   flex-direction: row;
   justify-content: center;
   margin: 0 0 30px 0;
-  max-width:${CONTENT_GRID_WIDTH}px;
+  max-width: ${CONTENT_GRID_WIDTH}px;
 `;
 
 const TechTilesInnerWrapper = styled.div`
