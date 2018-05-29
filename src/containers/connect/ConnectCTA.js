@@ -18,6 +18,7 @@ const CTAWrapper = styled.div`
   display: flex;
   flex: 0 0 auto;
   font-size: 15px;
+  height: 45px;
   justify-content: center;
   line-height: 18px;
   margin: 0 0 30px 0;
@@ -32,8 +33,7 @@ const LeftWrapper = styled.div`
   background-color: #fff;
   border-radius: 2px 0 0 2px;
   display: flex;
-  flex: 1;
-  min-width: 250px;
+  width: 304px;
   padding: 15px 15px;
 
   @media only screen and (max-width: 500px) {
@@ -51,8 +51,8 @@ const RightWrapper = styled.div`
   border-radius: 0 2px 2px 0;
   display: flex;
   justify-content: center;
-  padding: 15px 30px;
-  width: 180px;
+  padding: 12px 24px;
+  width: 161px;
   ${(props) => {
     if (props.bgColor) {
       return css`background-color: ${props.bgColor};`;
@@ -63,12 +63,12 @@ const RightWrapper = styled.div`
 
 const ActionLink = styled.a`
   color: #fff;
-  font-weight: 500;
+  font-weight: bold;
   text-decoration: none;
 `;
 
 const Icon = styled.img`
-  margin-right: 10px;
+  margin-right: 20px;
 
   @media only screen and (min-width: ${MEDIA_QUERY_SM}) {
     margin-right: 20px;

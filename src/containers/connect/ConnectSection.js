@@ -28,6 +28,7 @@ const EMAIL :string = 'info@openlattice.com';
  */
 
 const Content = styled.div`
+  align-items: center;
   color: #fff;
   display: flex;
   flex-direction: column;
@@ -57,10 +58,11 @@ const RightWrapper = styled.div`
   display: flex;
   flex: 1;
   flex-direction: column;
+  height: 110px;
   justify-content: center;
 
   @media only screen and (min-width: ${MEDIA_QUERY_SM}px) {
-    justify-content: space-around;
+    justify-content: space-between;
   }
 `;
 
