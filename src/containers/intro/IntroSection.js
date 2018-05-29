@@ -42,6 +42,7 @@ const Content = styled.div`
 const Title = StyledSectionTitle.extend`
   color: #fff;
   font-size: 40px;
+  margin-bottom: 20px;
   text-align: center;
 
   @media only screen and (min-width: ${MEDIA_QUERY_SM}px) {

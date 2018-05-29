@@ -5,7 +5,7 @@ const StyledSectionTitle = styled.h1`
   font-family: 'Chivo', sans-serif;
   font-size: 32px;
   font-weight: normal;
-  margin-bottom: 20px;
+  margin-bottom: 30px;
   margin-top: 0;
   text-align: center;
 
