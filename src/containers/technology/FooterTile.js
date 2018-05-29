@@ -7,19 +7,23 @@ import React from 'react';
 import styled from 'styled-components';
 
 import { N2, PP0 } from '../../core/style/Colors';
+import { MEDIA_QUERY_MD } from '../../core/style/Sizes';
+
 
 const TileWrapper = styled.div`
-  align-items: center;
+  align-items: flex-start;
   background-color: ${PP0};
   border-radius: 2px;
   display: flex;
-  flex: 1;
   justify-content: flex-start;
-  margin: 15px;
-  max-width: 465px;
+  margin: 15px 15px 0 15px;
   min-height: 100px;
-  min-width: 300px;
-  padding: 0 40px;
+  width: 300px;
+  padding: 40px;
+
+  @media only screen and (min-width: ${MEDIA_QUERY_MD}px) {
+    width: 465px;
+  }
 `;
 
 const Icon = styled.img`
