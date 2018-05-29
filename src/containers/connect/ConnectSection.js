@@ -38,7 +38,7 @@ const Content = styled.div`
 
   @media only screen and (min-width: ${MEDIA_QUERY_SM}px) {
     flex-direction: row;
-    margin: 120px 0;
+    margin: 110px 0;
     text-align: left;
   }
 `;
