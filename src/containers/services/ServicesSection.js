@@ -25,7 +25,7 @@ const Content = styled.div`
   margin: 80px 0 100px 0;
   max-width: 100%;
   height: 425px;
-  
+
   @media only screen and (min-width: ${MEDIA_QUERY_SM}px) {
     max-width: 50%;
   }
