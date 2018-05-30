@@ -7,6 +7,7 @@ import React, { Fragment } from 'react';
 import IntroSection from '../intro/IntroSection';
 import ServicesSection from '../services/ServicesSection';
 import TechnologySection from '../technology/TechnologySection';
+import OrgsSection from '../orgs/OrgsSection';
 import ConnectSection from '../connect/ConnectSection';
 import FooterSection from '../footer/FooterSection';
 
@@ -15,6 +16,7 @@ const AppContainer = () => (
     <IntroSection />
     <ServicesSection />
     <TechnologySection />
+    <OrgsSection />
     <ConnectSection />
     <FooterSection />
   </Fragment>
