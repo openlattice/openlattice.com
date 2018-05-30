@@ -1,7 +1,9 @@
 import styled from 'styled-components';
 import { MEDIA_QUERY_SM } from '../../core/style/Sizes';
+import { N4 } from '../../core/style/Colors';
 
 const StyledSectionTitle = styled.h1`
+  color: ${N4};
   font-family: 'Chivo', sans-serif;
   font-size: 32px;
   font-weight: normal;

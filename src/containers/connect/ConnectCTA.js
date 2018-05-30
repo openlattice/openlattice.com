@@ -6,7 +6,7 @@ import React from 'react';
 
 import styled, { css } from 'styled-components';
 
-import { N2 } from '../../core/style/Colors';
+import { N1, N2, } from '../../core/style/Colors';
 import { MEDIA_QUERY_MD, MEDIA_QUERY_SM } from '../../core/style/Sizes';
 
 /*
@@ -30,7 +30,7 @@ const CTAWrapper = styled.div`
 
 const LeftWrapper = styled.div`
   align-items: center;
-  background-color: #fff;
+  background-color: ${N1};
   border-radius: 2px 0 0 2px;
   display: flex;
   width: 304px;
@@ -47,7 +47,7 @@ const LeftWrapper = styled.div`
 
 const RightWrapper = styled.div`
   align-items: center;
-  background-color: #fff;
+  background-color: ${N1};
   border-radius: 0 2px 2px 0;
   display: flex;
   justify-content: center;
@@ -62,7 +62,7 @@ const RightWrapper = styled.div`
 `;
 
 const ActionLink = styled.a`
-  color: #fff;
+  color: ${N1};
   font-weight: bold;
   text-decoration: none;
 `;

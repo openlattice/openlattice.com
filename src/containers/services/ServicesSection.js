@@ -75,7 +75,7 @@ const PersonImg = styled.img`
 
 const Badge = styled.div`
   border-radius: 2px;
-  color: #fff;
+  color: ${N1};
   display: inline;
   font-size: 12px;
   line-height: 1;

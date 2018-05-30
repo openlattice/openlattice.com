@@ -7,6 +7,7 @@ const StyledSectionSubTitle = styled.h2`
   color: ${N2};
   font-size: 16px;
   font-weight: normal;
+  line-height: 1.4;
   text-align: center;
   margin-top: 0;
 

@@ -14,7 +14,7 @@ import ConnectCTA from './ConnectCTA';
 import PageSection from '../../components/layout/PageSection';
 import StyledSectionSubTitle from '../../components/headers/StyledSectionSubTitle';
 import StyledSectionTitle from '../../components/headers/StyledSectionTitle';
-import { PK0, PP4, PP5 } from '../../core/style/Colors';
+import { N1, N4, PK0, PP4, PP5 } from '../../core/style/Colors';
 import { MEDIA_QUERY_SM } from '../../core/style/Sizes';
 
 /*
@@ -29,7 +29,7 @@ const EMAIL :string = 'info@openlattice.com';
 
 const Content = styled.div`
   align-items: center;
-  color: #fff;
+  color: ${N1};
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -66,8 +66,14 @@ const RightWrapper = styled.div`
   }
 `;
 
+
+const Title = StyledSectionTitle.extend`
+  color: ${N1};
+  margin-bottom: 10px;
+`;
+
 const SubTitle = StyledSectionSubTitle.extend`
-  color: #fff;
+  color: ${N1};
 `;
 
 const ConnectSection = () => (
@@ -75,7 +81,7 @@ const ConnectSection = () => (
     <Content>
       <LeftWrapper>
         <img src={handshakeIcon} alt="handshake icon" />
-        <StyledSectionTitle>{'Let\'s work together.'}</StyledSectionTitle>
+        <Title>{'Let\'s work together.'}</Title>
         <SubTitle>Have a project in mind or want to learn more?</SubTitle>
       </LeftWrapper>
       <RightWrapper>
