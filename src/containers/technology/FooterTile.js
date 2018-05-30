@@ -11,7 +11,7 @@ import { MEDIA_QUERY_MD } from '../../core/style/Sizes';
 
 
 const TileWrapper = styled.div`
-  align-items: flex-start;
+  align-items: center;
   background-color: ${PP0};
   border-radius: 2px;
   display: flex;
