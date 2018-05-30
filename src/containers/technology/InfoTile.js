@@ -6,7 +6,7 @@ import React from 'react';
 
 import styled from 'styled-components';
 
-import { N2, PP1 } from '../../core/style/Colors';
+import { N2, N4, PP1 } from '../../core/style/Colors';
 
 const TileWrapper = styled.div`
   background-color: ${PP1};
@@ -23,6 +23,7 @@ const Icon = styled.img`
 `;
 
 const Title = styled.div`
+  color: ${N4};
   font-size: 20px;
   margin-bottom: 15px;
   top: 88px;
