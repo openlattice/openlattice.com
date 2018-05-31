@@ -12,7 +12,7 @@ const StyledSectionTitle = styled.h1`
   text-align: center;
 
   @media only screen and (min-width: ${MEDIA_QUERY_SM}px) {
-    text-align: left
+    text-align: left;
   }
 `;
 

@@ -12,7 +12,7 @@ const StyledSectionSubTitle = styled.h2`
   margin-top: 0;
 
   @media only screen and (min-width: ${MEDIA_QUERY_SM}px) {
-    text-align: left
+    text-align: left;
   }
 `;
 
