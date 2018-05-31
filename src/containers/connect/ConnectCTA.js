@@ -6,7 +6,7 @@ import React from 'react';
 
 import styled, { css } from 'styled-components';
 
-import { N1, N2, } from '../../core/style/Colors';
+import { N1, N2 } from '../../core/style/Colors';
 import { MEDIA_QUERY_MD, MEDIA_QUERY_SM } from '../../core/style/Sizes';
 
 /*
