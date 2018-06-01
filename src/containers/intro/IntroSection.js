@@ -33,9 +33,8 @@ const Content = styled.div`
   @media only screen and (min-width: ${MEDIA_QUERY_SM}px) {
     max-width: 60%;
   }
-
   @media only screen and (min-width: ${MEDIA_QUERY_MD}px) {
-    margin: 158px auto 204px auto;
+    margin: 210px auto 211px auto;
   }
 `;
 
