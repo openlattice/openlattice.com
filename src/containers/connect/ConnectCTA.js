@@ -6,7 +6,7 @@ import React from 'react';
 
 import styled, { css } from 'styled-components';
 
-import { N2 } from '../../core/style/Colors';
+import { N1, N2 } from '../../core/style/Colors';
 import { MEDIA_QUERY_MD, MEDIA_QUERY_SM } from '../../core/style/Sizes';
 
 /*
@@ -29,6 +29,7 @@ const CTAWrapper = styled.div`
   display: flex;
   flex: 0 0 auto;
   font-size: 15px;
+  height: 45px;
   justify-content: center;
   line-height: 18px;
   margin: 0 0 30px 0;
@@ -40,11 +41,10 @@ const CTAWrapper = styled.div`
 
 const LeftWrapper = styled.div`
   align-items: center;
-  background-color: #fff;
+  background-color: ${N1};
   border-radius: 2px 0 0 2px;
   display: flex;
-  flex: 1;
-  min-width: 250px;
+  width: 304px;
   padding: 15px 15px;
 
   @media only screen and (max-width: 500px) {
@@ -58,23 +58,23 @@ const LeftWrapper = styled.div`
 
 const RightWrapper = styled.div`
   align-items: center;
-  background-color: #fff;
+  background-color: ${N1};
   border-radius: 0 2px 2px 0;
   display: flex;
   justify-content: center;
-  padding: 15px 30px;
-  width: 180px;
+  padding: 12px 24px;
+  width: 161px;
   ${props => bgColorMixin(props)}
 `;
 
 const ActionLink = styled.a`
-  color: #fff;
-  font-weight: 500;
+  color: ${N1};
+  font-weight: bold;
   text-decoration: none;
 `;
 
 const Icon = styled.img`
-  margin-right: 10px;
+  margin-right: 20px;
 
   @media only screen and (min-width: ${MEDIA_QUERY_SM}) {
     margin-right: 20px;

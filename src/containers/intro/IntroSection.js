@@ -12,8 +12,8 @@ import BackgroundCarousel from './BackgroundCarousel';
 import PageSection from '../../components/layout/PageSection';
 import StyledSectionSubTitle from '../../components/headers/StyledSectionSubTitle';
 import StyledSectionTitle from '../../components/headers/StyledSectionTitle';
-import { PK0 } from '../../core/style/Colors';
-import { WINDOW_EDGE_PADDING, MEDIA_QUERY_SM } from '../../core/style/Sizes';
+import { N0, PK0 } from '../../core/style/Colors';
+import { WINDOW_EDGE_PADDING, MEDIA_QUERY_SM, MEDIA_QUERY_MD } from '../../core/style/Sizes';
 
 const Header = styled.div`
   display: flex;
@@ -22,35 +22,48 @@ const Header = styled.div`
 `;
 
 const Content = styled.div`
-  color: #fff;
+  color: ${N0};
+  align-items: center;
   display: block;
-  margin: 50px 0 100px 0;
+  flex-direction: column;
+  margin: 50px auto 100px auto;
   max-width: 100%;
   text-align: center;
 
   @media only screen and (min-width: ${MEDIA_QUERY_SM}px) {
-    margin: 100px 0 150px 80px;
     max-width: 60%;
-    text-align: left;
+  }
+  @media only screen and (min-width: ${MEDIA_QUERY_MD}px) {
+    margin: 210px auto 211px auto;
   }
 `;
 
 const Title = StyledSectionTitle.extend`
-  color: #fff;
+  color: ${N0};
   font-size: 40px;
+  margin-bottom: 20px;
+  text-align: center;
+
+  @media only screen and (min-width: ${MEDIA_QUERY_SM}px) {
+    text-align: center;
+  }
 `;
 
 const SubTitle = StyledSectionSubTitle.extend`
-  color: #fff;
+  color: ${N0};
   font-size: 20px;
-  margin-bottom: 50px;
+  margin-bottom: 60px;
+
+  @media only screen and (min-width: ${MEDIA_QUERY_SM}px) {
+    text-align: center;
+  }
 `;
 
 const ScheduleLink = styled.a`
   background-color: ${PK0};
   border: none;
   border-radius: 20px;
-  color: #fff;
+  color: ${N0};
   cursor: pointer;
   display: inline-block;
   font-family: 'Roboto', sans-serif;

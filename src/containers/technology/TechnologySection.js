@@ -23,7 +23,7 @@ const Content = styled.div`
   width: 100%;
 
   @media only screen and (min-width: ${MEDIA_QUERY_SM}px) {
-    margin: 150px 0;
+    margin: 140px 0;
   }
 `;
 
@@ -41,7 +41,7 @@ const TechTilesOuterWrapper = styled.div`
   flex-direction: row;
   justify-content: center;
   margin: 0 0 30px 0;
-  max-width: ${CONTENT_GRID_WIDTH}px;
+  max-width: ${CONTENT_GRID_WIDTH - 15}px;
 `;
 
 const TechTilesInnerWrapper = styled.div`

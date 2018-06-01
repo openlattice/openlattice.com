@@ -24,14 +24,15 @@ const Content = styled.div`
   display: block;
   margin: 80px 0 100px 0;
   max-width: 100%;
-  height: 450px;
+  height: 425px;
 
   @media only screen and (min-width: ${MEDIA_QUERY_SM}px) {
     max-width: 50%;
   }
 
   @media only screen and (min-width: ${MEDIA_QUERY_MD}px) {
-    height: 375px;
+    height: 525px;
+    margin: 140px 0 0 0;
   }
 `;
 
@@ -74,7 +75,7 @@ const PersonImg = styled.img`
 
 const Badge = styled.div`
   border-radius: 2px;
-  color: #fff;
+  color: ${N1};
   display: inline;
   font-size: 12px;
   line-height: 1;

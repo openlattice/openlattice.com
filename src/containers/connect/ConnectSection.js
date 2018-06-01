@@ -14,7 +14,7 @@ import ConnectCTA from './ConnectCTA';
 import PageSection from '../../components/layout/PageSection';
 import StyledSectionSubTitle from '../../components/headers/StyledSectionSubTitle';
 import StyledSectionTitle from '../../components/headers/StyledSectionTitle';
-import { PK0, PP4, PP5 } from '../../core/style/Colors';
+import { N1, PK0, PP4, PP5 } from '../../core/style/Colors';
 import { MEDIA_QUERY_SM } from '../../core/style/Sizes';
 
 /*
@@ -28,7 +28,8 @@ const EMAIL :string = 'info@openlattice.com';
  */
 
 const Content = styled.div`
-  color: #fff;
+  align-items: center;
+  color: ${N1};
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -38,7 +39,7 @@ const Content = styled.div`
 
   @media only screen and (min-width: ${MEDIA_QUERY_SM}px) {
     flex-direction: row;
-    margin: 120px 0;
+    margin: 110px 0;
     text-align: left;
   }
 `;
@@ -57,15 +58,22 @@ const RightWrapper = styled.div`
   display: flex;
   flex: 1;
   flex-direction: column;
+  height: 110px;
   justify-content: center;
 
   @media only screen and (min-width: ${MEDIA_QUERY_SM}px) {
-    justify-content: space-around;
+    justify-content: space-between;
   }
 `;
 
+
+const Title = StyledSectionTitle.extend`
+  color: ${N1};
+  margin-bottom: 10px;
+`;
+
 const SubTitle = StyledSectionSubTitle.extend`
-  color: #fff;
+  color: ${N1};
 `;
 
 const ConnectSection = () => (
@@ -73,7 +81,7 @@ const ConnectSection = () => (
     <Content>
       <LeftWrapper>
         <img src={handshakeIcon} alt="handshake icon" />
-        <StyledSectionTitle>{'Let\'s work together.'}</StyledSectionTitle>
+        <Title>{'Let\'s work together.'}</Title>
         <SubTitle>Have a project in mind or want to learn more?</SubTitle>
       </LeftWrapper>
       <RightWrapper>
