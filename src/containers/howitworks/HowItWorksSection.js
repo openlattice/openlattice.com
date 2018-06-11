@@ -160,6 +160,10 @@ class HowItWorksSection extends React.Component {
     };
   }
 
+  handleTabClick = (e) => {
+    this.setState({ tab: parseInt(e.target.dataset.name) });
+  }
+
   render() {
     return (
       <Fragment>
@@ -176,16 +180,16 @@ class HowItWorksSection extends React.Component {
             </StyledCroppedSubtitle>
             <TabDisplayWrapper>
               <TabDisplayNavigation>
-                <TabItem>
+                <TabItem data-name='1' onClick={this.handleTabClick}>
                   01 Problem Definition
                 </TabItem>
-                <TabItem>
+                <TabItem data-name='2' onClick={this.handleTabClick}>
                   02 Data Sharing Agreements
                 </TabItem>
-                <TabItem>
+                <TabItem data-name='3' onClick={this.handleTabClick}>
                   03 Establishing Data Access
                 </TabItem>
-                <TabItem>
+                <TabItem data-name='4' onClick={this.handleTabClick}>
                   04 Specific Services
                 </TabItem>
               </TabDisplayNavigation>
