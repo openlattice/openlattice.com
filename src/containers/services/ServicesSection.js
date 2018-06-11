@@ -275,7 +275,7 @@ const SocialServices = () => (
   </SocialServicesWrapper>
 );
 
-const IntroSection = () => (
+const ServicesSection = () => (
   <Fragment>
     <PageSection bgColor={N1}>
       <Content>
@@ -297,4 +297,4 @@ const IntroSection = () => (
   </Fragment>
 );
 
-export default IntroSection;
+export default ServicesSection;
