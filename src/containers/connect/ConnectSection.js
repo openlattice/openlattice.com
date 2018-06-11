@@ -14,7 +14,7 @@ import ConnectCTA from './ConnectCTA';
 import PageSection from '../../components/layout/PageSection';
 import StyledSectionSubTitle from '../../components/headers/StyledSectionSubTitle';
 import StyledSectionTitle from '../../components/headers/StyledSectionTitle';
-import { N1, N4, PK0, PP4, PP5 } from '../../core/style/Colors';
+import { N1, PK0, PP4, PP5 } from '../../core/style/Colors';
 import { MEDIA_QUERY_SM } from '../../core/style/Sizes';
 
 /*

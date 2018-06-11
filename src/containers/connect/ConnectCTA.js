@@ -6,12 +6,23 @@ import React from 'react';
 
 import styled, { css } from 'styled-components';
 
-import { N1, N2, } from '../../core/style/Colors';
+import { N1, N2 } from '../../core/style/Colors';
 import { MEDIA_QUERY_MD, MEDIA_QUERY_SM } from '../../core/style/Sizes';
 
 /*
  * styled components
  */
+const bgColorMixin = (props) => {
+  if (props.bgColor) {
+    return css`
+      background-color: ${props.bgColor};
+    `;
+  }
+  return css`
+    background: none;
+  `;
+};
+
 
 const CTAWrapper = styled.div`
   color: ${N2};
@@ -53,12 +64,7 @@ const RightWrapper = styled.div`
   justify-content: center;
   padding: 12px 24px;
   width: 161px;
-  ${(props) => {
-    if (props.bgColor) {
-      return css`background-color: ${props.bgColor};`;
-    }
-    return css`background: none`;
-  }}
+  ${props => bgColorMixin(props)}
 `;
 
 const ActionLink = styled.a`
