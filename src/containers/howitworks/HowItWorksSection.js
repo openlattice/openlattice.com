@@ -79,6 +79,39 @@ const bgImageMixin = (props) => {
   `;
 };
 
+const TabDisplayBody = styled.div`
+  color: ${N4};
+  font-size: 16px;
+  line-height: 1.4;
+  margin-bottom: 50px;
+`;
+
+const TabDisplayListItem = styled.div`
+  display: flex;
+  margin-bottom: 30px;
+`;
+
+const TabDisplayListItemNumber = styled.div`
+  color: ${N2};
+  font-size: 18px;
+  font-weight: 600;
+  margin-right: 10px;
+`;
+
+const TabDisplayListItemText = styled.div`
+  color: ${N2};
+  font-size: 14px;
+  line-height: 1.4;
+`;
+
+const TabDisplayListItemTitle = TabDisplayListItemText.extend`
+  font-weight: 600;
+`;
+
+const TabDisplaySectionItem = styled.div`
+  margin-bottom: 30px;
+`;
+
 const TabDisplayContentLeft01 = styled.div`
   height: 100%;
   min-width: 435px;
@@ -94,30 +127,6 @@ const TabDisplayContentRight01 = styled.div`
   width: 100%;
 `;
 
-const TabDisplayBody = styled.div`
-  color: ${N4};
-  font-size: 16px;
-  line-height: 1.4;
-  margin-bottom: 50px;
-`;
-
-const TabDisplayListItem = styled.div`
-  display: flex;
-  margin-bottom: 30px;
-`;
-
-const TabDisplayListItemNumber = styled.span`
-  color: ${N2};
-  font-size: 18px;
-  font-weight: 600;
-  margin-right: 10px;
-`;
-
-const TabDisplayListItemText = styled.span`
-  color: ${N2};
-  font-size: 14px;
-  line-heigth: 1.4;
-`;
 
 const TabDisplayContentLeft02 = styled.div`
   height: 100%;
@@ -217,8 +226,69 @@ const render01 = () => (
 
 const render02 = () => (
   <Fragment>
-    <TabDisplayContentLeft02 />
-    <TabDisplayContentRight02 />
+    <TabDisplayContentLeft01 bgImage={Image02} />
+    <TabDisplayContentRight01>
+      <TabDisplayBody>
+        {
+          `OpenLattice, Inc. recognizes the institutional, legal, and technical challenges of 
+          establishing data sharing agreements among stakeholders, adhering to various laws and 
+          regulations, and navigating homegrown or legacy data infrastructure. Our approach has 
+          been to gather data sharing agreements in progressive and piecemeal fashion, using a 
+          "Hub-Spoke-Wheel" model.`
+        }
+      </TabDisplayBody>
+      <TabDisplaySectionItem>
+        <TabDisplayListItemTitle>
+          Hub
+        </TabDisplayListItemTitle>
+        <TabDisplayListItemText>
+          {
+            `OpenLattice establishes 1:1 agreements with each agency.`
+          }
+        </TabDisplayListItemText>
+      </TabDisplaySectionItem>
+      <TabDisplaySectionItem>
+        <TabDisplayListItemTitle>
+          Spokes
+        </TabDisplayListItemTitle>
+        <TabDisplayListItemText>
+          {
+            `BAA for HIPAA covered entities`
+          }
+        </TabDisplayListItemText>
+        <TabDisplayListItemText>
+          {
+            `BAA + QSOA for 42 CFR Part 2 covered providers`
+          }
+        </TabDisplayListItemText>
+        <TabDisplayListItemText>
+          {
+            `CJIS for Criminal Justice data`
+          }
+        </TabDisplayListItemText>
+        <TabDisplayListItemText>
+          {
+            `FERPA for student data`
+          }
+        </TabDisplayListItemText>
+        <TabDisplayListItemText>
+          {
+            `Standard OpenLattice Terms of Service for other organizations`
+          }
+        </TabDisplayListItemText>
+      </TabDisplaySectionItem>
+      <TabDisplaySectionItem>
+        <TabDisplayListItemTitle>
+          Wheel
+        </TabDisplayListItemTitle>
+        <TabDisplayListItemText>
+          {
+            `An agreement governs data use across entire collaborative. The OpenLattice platform 
+            is the mechanism for implementing agreement.`
+          }
+        </TabDisplayListItemText>
+      </TabDisplaySectionItem>
+    </TabDisplayContentRight01>
   </Fragment>
 );
 
