@@ -9,6 +9,7 @@ import { PAGE_SECTION_MIN_WIDTH, MEDIA_QUERY_SM, MEDIA_QUERY_MD } from '../../co
 
 import {
   N1,
+  PP1,
   PP2,
   PP3,
   PP4
@@ -18,17 +19,46 @@ const Content = styled.div`
   display: block;
   margin: 80px 0 100px 0;
   max-width: 100%;
-  height: 425px;
 
   @media only screen and (min-width: ${MEDIA_QUERY_SM}px) {
-    max-width: 50%;
   }
 
   @media only screen and (min-width: ${MEDIA_QUERY_MD}px) {
-    height: 525px;
-    margin: 140px 0 0 0;
+    margin: 140px 0 140px 0;
   }
 `;
+
+const StyledCroppedSubtitle = StyledSectionSubTitle.extend`
+  width: 46%;
+  margin-bottom: 60px;
+`;
+
+const TabDisplayWrapper = styled.div`
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+`;
+
+const TabDisplayNavigation = styled.div`
+  display: flex;
+  justify-content: center;
+  width: 100%;
+`;
+
+const TabItem = styled.span`
+  border-bottom: 5px solid #b4add1;
+  padding: 10px 0;
+  text-align: center;
+  width: 25%;
+`;
+
+const TabDisplayContentWrapper = styled.div`
+  background: blue;
+  display: flex;
+  height: 500px;
+  width: 100%;
+`;
+
 
 const HowItWorksSection = () => (
   <Fragment>
@@ -37,12 +67,29 @@ const HowItWorksSection = () => (
         <StyledSectionTitle>
           How It Works
         </StyledSectionTitle>
-        <StyledSectionSubTitle>
+        <StyledCroppedSubtitle>
           {
             `As a public benefit corporation, OpenLattice enables precision government by linking individual-level data 
             across currently siloed criminal justice, healthcare, and social services information at little or no cost.`
           }
-        </StyledSectionSubTitle>
+        </StyledCroppedSubtitle>
+        <TabDisplayWrapper>
+          <TabDisplayNavigation>
+            <TabItem>
+              01 Problem Definition
+            </TabItem>
+            <TabItem>
+              02 Data Sharing Agreements
+            </TabItem>
+            <TabItem>
+              03 Establishing Data Access
+            </TabItem>
+            <TabItem>
+              04 Specific Services
+            </TabItem>
+          </TabDisplayNavigation>
+          <TabDisplayContentWrapper />
+        </TabDisplayWrapper>
       </Content>
     </PageSection>
   </Fragment>
