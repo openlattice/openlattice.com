@@ -1,14 +1,21 @@
 import React, { Fragment } from 'react';
 
-import styled from 'styled-components';
+import styled, { css } from 'styled-components';
 
 import PageSection from '../../components/layout/PageSection';
 import StyledSectionSubTitle from '../../components/headers/StyledSectionSubTitle';
 import StyledSectionTitle from '../../components/headers/StyledSectionTitle';
 import { PAGE_SECTION_MIN_WIDTH, MEDIA_QUERY_SM, MEDIA_QUERY_MD } from '../../core/style/Sizes';
+import Image01 from '../../assets/images/01_problem_definition.png';
+import Image02 from '../../assets/images/02_data_sharing_agreements.png';
+import Image03 from '../../assets/images/03_establishing_data_access.png';
+import Image04 from '../../assets/images/04_specific_services.png';
 
 import {
+  N0,
   N1,
+  N2,
+  N4,
   PP1,
   PP2,
   PP3,
@@ -58,22 +65,64 @@ const TabDisplayContentWrapper = styled.div`
   width: 100%;
 `;
 
+const bgImageMixin = (props) => {
+  if (props.bgImage) {
+    return css`
+      background-image: url(${props.bgImage});
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+    `;
+  }
+  return css`
+    background: none;
+  `;
+};
+
 const TabDisplayContentLeft01 = styled.div`
-  background: blue;
   height: 100%;
   min-width: 435px;
+  ${props => bgImageMixin(props)}
 `;
 
 const TabDisplayContentRight01 = styled.div`
-  background: pink;
+  background: ${N0};
+  display: flex;
+  flex-direction: column;
   height: 100%;
+  padding: 50px;
   width: 100%;
 `;
 
+const TabDisplayBody = styled.div`
+  color: ${N4};
+  font-size: 16px;
+  line-height: 1.4;
+  margin-bottom: 50px;
+`;
+
+const TabDisplayListItem = styled.div`
+  display: flex;
+  margin-bottom: 30px;
+`;
+
+const TabDisplayListItemNumber = styled.span`
+  color: ${N2};
+  font-size: 18px;
+  font-weight: 600;
+  margin-right: 10px;
+`;
+
+const TabDisplayListItemText = styled.span`
+  color: ${N2};
+  font-size: 14px;
+  line-heigth: 1.4;
+`;
+
 const TabDisplayContentLeft02 = styled.div`
-  background: red;
   height: 100%;
   min-width: 435px;
+  ${props => bgImageMixin(props)}
 `;
 
 const TabDisplayContentRight02 = styled.div`
@@ -83,9 +132,9 @@ const TabDisplayContentRight02 = styled.div`
 `;
 
 const TabDisplayContentLeft03 = styled.div`
-  background: yellow;
   height: 100%;
   min-width: 435px;
+  ${props => bgImageMixin(props)}
 `;
 
 const TabDisplayContentRight03 = styled.div`
@@ -95,9 +144,9 @@ const TabDisplayContentRight03 = styled.div`
 `;
 
 const TabDisplayContentLeft04 = styled.div`
-  background: green;
   height: 100%;
   min-width: 435px;
+  ${props => bgImageMixin(props)}
 `;
 
 const TabDisplayContentRight04 = styled.div`
@@ -109,8 +158,60 @@ const TabDisplayContentRight04 = styled.div`
 
 const render01 = () => (
   <Fragment>
-    <TabDisplayContentLeft01 />
-    <TabDisplayContentRight01 />
+    <TabDisplayContentLeft01 bgImage={Image01} />
+    <TabDisplayContentRight01>
+      <TabDisplayBody>
+        {
+          `Identify a clear problem and who your stakeholders are. The problem may be a rise in
+           drug overdoses in recent years, overcrowding in county jails, or the need for a 
+           shared case management interface across related behavioral health agencies. Some 
+           common problems jurisdictions are tackling with OpenLattice:`
+        }
+      </TabDisplayBody>
+      <TabDisplayListItem>
+        <TabDisplayListItemNumber>
+          01
+        </TabDisplayListItemNumber>
+        <TabDisplayListItemText>
+          {
+            `Identify and assist people who repeatedly cycle through county services, consuming a 
+            disproportionate amount of social resources.`
+          }
+        </TabDisplayListItemText>
+      </TabDisplayListItem>
+      <TabDisplayListItem>
+        <TabDisplayListItemNumber>
+          02
+        </TabDisplayListItemNumber>
+        <TabDisplayListItemText>
+          {
+            `Inform policy decisions based on how government services are delivered and consumed.`
+          }
+        </TabDisplayListItemText>
+      </TabDisplayListItem>
+      <TabDisplayListItem>
+        <TabDisplayListItemNumber>
+          03
+        </TabDisplayListItemNumber>
+        <TabDisplayListItemText>
+          {
+            `Collaborate with academic researchers while protecting privacy.`
+          }
+        </TabDisplayListItemText>
+      </TabDisplayListItem>
+      <TabDisplayListItem>
+        <TabDisplayListItemNumber>
+          04
+        </TabDisplayListItemNumber>
+        <TabDisplayListItemText>
+          {
+            `Increase interagency coordination, and therefore strengthen the continuum of care 
+            for citizens with mental health histories who might now be served by a variety of 
+            community health and public safety organizations in fragmented ways.`
+          }
+        </TabDisplayListItemText>
+      </TabDisplayListItem>
+    </TabDisplayContentRight01>
   </Fragment>
 );
 
