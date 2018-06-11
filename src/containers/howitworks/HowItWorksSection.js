@@ -306,8 +306,51 @@ const render03 = () => (
 
 const render04 = () => (
   <Fragment>
-    <TabDisplayContentLeft04 />
-    <TabDisplayContentRight04 />
+    <TabDisplayContentLeft bgImage={Image04} />
+    <TabDisplayContentRight>
+      <TabDisplayBody>
+        {
+          `Once data is integrated, we match individuals using deep learning across data sets from criminal 
+          justice, health care, and social services.
+
+          Customers can leverage existing OpenLattice solutions or develop their own against unified individual 
+          profiles that respect applicable access control rules. Exisiting usecases:`
+        }
+      </TabDisplayBody>
+      <TabDisplayListItem>
+        <TabDisplayListItemNumber>
+          01
+        </TabDisplayListItemNumber>
+        <TabDisplayListItemText>
+          {
+            `Portland (Maine) is assessing, monitoring, and managing opioid-impacted individuals across police, 
+            hospitals, clinics, and jail.`
+          }
+        </TabDisplayListItemText>
+      </TabDisplayListItem>
+      <TabDisplayListItem>
+        <TabDisplayListItemNumber>
+          02
+        </TabDisplayListItemNumber>
+        <TabDisplayListItemText>
+          {
+            `Minnehaha & Pennington County, SD automated risk assessments for pre-trial release decisions and 
+            monitors released individuals.`
+          }
+        </TabDisplayListItemText>
+      </TabDisplayListItem>
+      <TabDisplayListItem>
+        <TabDisplayListItemNumber>
+          03
+        </TabDisplayListItemNumber>
+        <TabDisplayListItemText>
+          {
+            `Baltimore, Portland (Maine), and Johnson County (Iowa) are monitoring behavioral health associated 
+            criminal justice incidents.`
+          }
+        </TabDisplayListItemText>
+      </TabDisplayListItem>
+    </TabDisplayContentRight>
   </Fragment>
 );
 
