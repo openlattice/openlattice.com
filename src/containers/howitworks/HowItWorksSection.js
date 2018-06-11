@@ -112,13 +112,13 @@ const TabDisplaySectionItem = styled.div`
   margin-bottom: 30px;
 `;
 
-const TabDisplayContentLeft01 = styled.div`
+const TabDisplayContentLeft = styled.div`
   height: 100%;
   min-width: 435px;
   ${props => bgImageMixin(props)}
 `;
 
-const TabDisplayContentRight01 = styled.div`
+const TabDisplayContentRight = styled.div`
   background: ${N0};
   display: flex;
   flex-direction: column;
@@ -128,47 +128,10 @@ const TabDisplayContentRight01 = styled.div`
 `;
 
 
-const TabDisplayContentLeft02 = styled.div`
-  height: 100%;
-  min-width: 435px;
-  ${props => bgImageMixin(props)}
-`;
-
-const TabDisplayContentRight02 = styled.div`
-  background: pink;
-  height: 100%;
-  width: 100%;
-`;
-
-const TabDisplayContentLeft03 = styled.div`
-  height: 100%;
-  min-width: 435px;
-  ${props => bgImageMixin(props)}
-`;
-
-const TabDisplayContentRight03 = styled.div`
-  background: pink;
-  height: 100%;
-  width: 100%;
-`;
-
-const TabDisplayContentLeft04 = styled.div`
-  height: 100%;
-  min-width: 435px;
-  ${props => bgImageMixin(props)}
-`;
-
-const TabDisplayContentRight04 = styled.div`
-  background: pink;
-  height: 100%;
-  width: 100%;
-`;
-
-
 const render01 = () => (
   <Fragment>
-    <TabDisplayContentLeft01 bgImage={Image01} />
-    <TabDisplayContentRight01>
+    <TabDisplayContentLeft bgImage={Image01} />
+    <TabDisplayContentRight>
       <TabDisplayBody>
         {
           `Identify a clear problem and who your stakeholders are. The problem may be a rise in
@@ -220,14 +183,14 @@ const render01 = () => (
           }
         </TabDisplayListItemText>
       </TabDisplayListItem>
-    </TabDisplayContentRight01>
+    </TabDisplayContentRight>
   </Fragment>
 );
 
 const render02 = () => (
   <Fragment>
-    <TabDisplayContentLeft01 bgImage={Image02} />
-    <TabDisplayContentRight01>
+    <TabDisplayContentLeft bgImage={Image02} />
+    <TabDisplayContentRight>
       <TabDisplayBody>
         {
           `OpenLattice, Inc. recognizes the institutional, legal, and technical challenges of 
@@ -288,14 +251,56 @@ const render02 = () => (
           }
         </TabDisplayListItemText>
       </TabDisplaySectionItem>
-    </TabDisplayContentRight01>
+    </TabDisplayContentRight>
   </Fragment>
 );
 
 const render03 = () => (
   <Fragment>
-    <TabDisplayContentLeft03 />
-    <TabDisplayContentRight03 />
+    <TabDisplayContentLeft bgImage={Image03} />
+    <TabDisplayContentRight>
+      <TabDisplayBody>
+        {
+          `We have created standardized data models for key database types (e.g., Records Management 
+          Systems) to alleviate the challenges of bespoke data integrations. Users can simply map 
+          fields from source systems onto the OpenLattice schema.
+
+          This greatly reduces costs and complexity such that OpenLattice is able to offer deeply 
+          discounted or free data integration services for qualifying customers.`
+        }
+      </TabDisplayBody>
+      <TabDisplaySectionItem>
+        <TabDisplayListItemTitle>
+          Key Decisions
+        </TabDisplayListItemTitle>
+        <TabDisplayListItemText>
+          {
+            `Frequency of updates, data model elements, and mechanism of transport (direct vs. indirect).`
+          }
+        </TabDisplayListItemText>
+      </TabDisplaySectionItem>
+      <TabDisplaySectionItem>
+        <TabDisplayListItemTitle>
+          Common Issues
+        </TabDisplayListItemTitle>
+        <TabDisplayListItemText>
+          {
+            `Security concerns, privacy concerns, performance concerns, licensing & insurance when 
+            dealing with 3rd party vendors, and data access when dealing with proprietary interfaces or formats.`
+          }
+        </TabDisplayListItemText>
+      </TabDisplaySectionItem>
+      <TabDisplaySectionItem>
+        <TabDisplayListItemTitle>
+          Breaking Through
+        </TabDisplayListItemTitle>
+        <TabDisplayListItemText>
+          {
+            `Persistence and properly incentivize third parties.`
+          }
+        </TabDisplayListItemText>
+      </TabDisplaySectionItem>
+    </TabDisplayContentRight>
   </Fragment>
 );
 
