@@ -91,7 +91,11 @@ const TabDisplayBody = styled.div`
   color: ${N4};
   font-size: 16px;
   line-height: 1.4;
-  margin-bottom: 50px;
+  margin-bottom: 20px;
+`;
+
+const TabDisplayBodyWrapper = styled.div`
+  margin-bottom: 30px;
 `;
 
 const TabDisplayListItem = styled.div`
@@ -140,14 +144,16 @@ const render01 = () => (
   <Fragment>
     <TabDisplayContentLeft bgImage={Image01} />
     <TabDisplayContentRight>
-      <TabDisplayBody>
-        {
-          `Identify a clear problem and who your stakeholders are. The problem may be a rise in
-           drug overdoses in recent years, overcrowding in county jails, or the need for a 
-           shared case management interface across related behavioral health agencies. Some 
-           common problems jurisdictions are tackling with OpenLattice:`
-        }
-      </TabDisplayBody>
+      <TabDisplayBodyWrapper>
+        <TabDisplayBody>
+          {
+            `Identify a clear problem and who your stakeholders are. The problem may be a rise in
+             drug overdoses in recent years, overcrowding in county jails, or the need for a 
+             shared case management interface across related behavioral health agencies. Some 
+             common problems jurisdictions are tackling with OpenLattice:`
+          }
+        </TabDisplayBody>
+      </TabDisplayBodyWrapper>
       <TabDisplayListItem>
         <TabDisplayListItemNumber>
           01
@@ -199,15 +205,17 @@ const render02 = () => (
   <Fragment>
     <TabDisplayContentLeft bgImage={Image02} />
     <TabDisplayContentRight>
-      <TabDisplayBody>
-        {
-          `OpenLattice, Inc. recognizes the institutional, legal, and technical challenges of 
-          establishing data sharing agreements among stakeholders, adhering to various laws and 
-          regulations, and navigating homegrown or legacy data infrastructure. Our approach has 
-          been to gather data sharing agreements in progressive and piecemeal fashion, using a 
-          "Hub-Spoke-Wheel" model.`
-        }
-      </TabDisplayBody>
+      <TabDisplayBodyWrapper>
+        <TabDisplayBody>
+          {
+            `OpenLattice, Inc. recognizes the institutional, legal, and technical challenges of 
+            establishing data sharing agreements among stakeholders, adhering to various laws and 
+            regulations, and navigating homegrown or legacy data infrastructure. Our approach has 
+            been to gather data sharing agreements in progressive and piecemeal fashion, using a 
+            "Hub-Spoke-Wheel" model.`
+          }
+        </TabDisplayBody>
+      </TabDisplayBodyWrapper>
       <TabDisplaySectionItem>
         <TabDisplayListItemTitle>
           Hub
@@ -267,16 +275,21 @@ const render03 = () => (
   <Fragment>
     <TabDisplayContentLeft bgImage={Image03} />
     <TabDisplayContentRight>
-      <TabDisplayBody>
-        {
-          `We have created standardized data models for key database types (e.g., Records Management 
-          Systems) to alleviate the challenges of bespoke data integrations. Users can simply map 
-          fields from source systems onto the OpenLattice schema.
-
-          This greatly reduces costs and complexity such that OpenLattice is able to offer deeply 
-          discounted or free data integration services for qualifying customers.`
-        }
-      </TabDisplayBody>
+      <TabDisplayBodyWrapper>
+        <TabDisplayBody>
+          {
+            `We have created standardized data models for key database types (e.g., Records Management 
+            Systems) to alleviate the challenges of bespoke data integrations. Users can simply map 
+            fields from source systems onto the OpenLattice schema.`
+          }
+        </TabDisplayBody>
+        <TabDisplayBody>
+          {
+            `This greatly reduces costs and complexity such that OpenLattice is able to offer deeply 
+            discounted or free data integration services for qualifying customers.`
+          }
+        </TabDisplayBody>
+      </TabDisplayBodyWrapper>
       <TabDisplaySectionItem>
         <TabDisplayListItemTitle>
           Key Decisions
@@ -316,15 +329,20 @@ const render04 = () => (
   <Fragment>
     <TabDisplayContentLeft bgImage={Image04} />
     <TabDisplayContentRight>
-      <TabDisplayBody>
-        {
-          `Once data is integrated, we match individuals using deep learning across data sets from criminal 
-          justice, health care, and social services.
-
-          Customers can leverage existing OpenLattice solutions or develop their own against unified individual 
-          profiles that respect applicable access control rules. Exisiting usecases:`
-        }
-      </TabDisplayBody>
+      <TabDisplayBodyWrapper>
+        <TabDisplayBody>
+          {
+            `Once data is integrated, we match individuals using deep learning across data sets from criminal 
+            justice, health care, and social services.`
+          }
+        </TabDisplayBody>
+        <TabDisplayBody>
+          {
+            `Customers can leverage existing OpenLattice solutions or develop their own against unified individual 
+            profiles that respect applicable access control rules. Exisiting usecases:`
+          }
+        </TabDisplayBody>
+      </TabDisplayBodyWrapper>
       <TabDisplayListItem>
         <TabDisplayListItemNumber>
           01
