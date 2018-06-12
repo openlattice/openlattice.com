@@ -16,6 +16,7 @@ import {
   N1,
   N2,
   N4,
+  PP0,
   PP1,
   PP2,
   PP3,
@@ -54,9 +55,21 @@ const TabDisplayNavigation = styled.div`
 
 const TabItem = styled.span`
   border-bottom: 5px solid #b4add1;
+  color: #b4add1;
+  cursor: pointer;
   padding: 10px 0;
   text-align: center;
   width: 25%;
+
+  &:hover {
+    color: ${PP4};
+    border-bottom: 5px solid ${PP4};
+  }
+
+  &:.data-name {
+    color: ${PP4};
+    border-bottom: 5px solid ${PP4};
+  }
 `;
 
 const TabDisplayContentWrapper = styled.div`
