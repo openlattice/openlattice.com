@@ -2,6 +2,8 @@ import React, { Fragment } from 'react';
 
 import Image04 from '../../assets/images/04_specific_services.png';
 
+import { CONTENT_04 } from './Constants';
+
 import {
   ContentLeft,
   ContentRight,
@@ -19,49 +21,34 @@ const Content04 = () => (
     <ContentRight>
       <BodyWrapper>
         <Body>
-          {
-            `Once data is integrated, we match individuals using deep learning across data sets from criminal 
-            justice, health care, and social services.`
-          }
+          { CONTENT_04.BODY_01 }
         </Body>
         <Body>
-          {
-            `Customers can leverage existing OpenLattice solutions or develop their own against unified individual 
-            profiles that respect applicable access control rules. Exisiting usecases:`
-          }
+          { CONTENT_04.BODY_02 }
         </Body>
       </BodyWrapper>
       <ListItem>
         <ListItemNumber>
-          01
+          { CONTENT_04.LIST_ITEM_01.TITLE }
         </ListItemNumber>
         <ListItemText>
-          {
-            `Portland (Maine) is assessing, monitoring, and managing opioid-impacted individuals across police, 
-            hospitals, clinics, and jail.`
-          }
+          { CONTENT_04.LIST_ITEM_01.TEXT }
         </ListItemText>
       </ListItem>
       <ListItem>
         <ListItemNumber>
-          02
+          { CONTENT_04.LIST_ITEM_02.TITLE }
         </ListItemNumber>
         <ListItemText>
-          {
-            `Minnehaha & Pennington County, SD automated risk assessments for pre-trial release decisions and 
-            monitors released individuals.`
-          }
+          { CONTENT_04.LIST_ITEM_02.TEXT }
         </ListItemText>
       </ListItem>
       <ListItem>
         <ListItemNumber>
-          03
+          { CONTENT_04.LIST_ITEM_03.TITLE }
         </ListItemNumber>
         <ListItemText>
-          {
-            `Baltimore, Portland (Maine), and Johnson County (Iowa) are monitoring behavioral health associated 
-            criminal justice incidents.`
-          }
+          { CONTENT_04.LIST_ITEM_03.TEXT }
         </ListItemText>
       </ListItem>
     </ContentRight>

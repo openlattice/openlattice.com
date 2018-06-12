@@ -2,6 +2,8 @@ import React, { Fragment } from 'react';
 
 import Image02 from '../../assets/images/02_data_sharing_agreements.png';
 
+import { CONTENT_02 } from './Constants';
+
 import {
   ContentLeft,
   ContentRight,
@@ -19,64 +21,43 @@ const Content02 = () => (
     <ContentRight>
       <BodyWrapper>
         <Body>
-          {
-            `OpenLattice, Inc. recognizes the institutional, legal, and technical challenges of 
-            establishing data sharing agreements among stakeholders, adhering to various laws and 
-            regulations, and navigating homegrown or legacy data infrastructure. Our approach has 
-            been to gather data sharing agreements in progressive and piecemeal fashion, using a 
-            "Hub-Spoke-Wheel" model.`
-          }
+          { CONTENT_02.BODY }
         </Body>
       </BodyWrapper>
       <SectionItem>
         <ListItemTitle>
-          Hub
+          { CONTENT_02.LIST_ITEM_01.TITLE }
         </ListItemTitle>
         <ListItemText>
-          {
-            `OpenLattice establishes 1:1 agreements with each agency.`
-          }
+          { CONTENT_02.LIST_ITEM_01.TEXT }
         </ListItemText>
       </SectionItem>
       <SectionItem>
         <ListItemTitle>
-          Spokes
+          { CONTENT_02.LIST_ITEM_02.TITLE }
         </ListItemTitle>
         <ListItemText>
-          {
-            `BAA for HIPAA covered entities`
-          }
+          { CONTENT_02.LIST_ITEM_02.TEXT }
         </ListItemText>
         <ListItemText>
-          {
-            `BAA + QSOA for 42 CFR Part 2 covered providers`
-          }
+          { CONTENT_02.LIST_ITEM_03.TITLE }
         </ListItemText>
         <ListItemText>
-          {
-            `CJIS for Criminal Justice data`
-          }
+          { CONTENT_02.LIST_ITEM_03.TEXT }
         </ListItemText>
         <ListItemText>
-          {
-            `FERPA for student data`
-          }
+          { CONTENT_02.LIST_ITEM_04.TITLE }
         </ListItemText>
         <ListItemText>
-          {
-            `Standard OpenLattice Terms of Service for other organizations`
-          }
+          { CONTENT_02.LIST_ITEM_04.TEXT }
         </ListItemText>
       </SectionItem>
       <SectionItem>
         <ListItemTitle>
-          Wheel
+          { CONTENT_02.LIST_ITEM_05.TITLE }
         </ListItemTitle>
         <ListItemText>
-          {
-            `An agreement governs data use across entire collaborative. The OpenLattice platform 
-            is the mechanism for implementing agreement.`
-          }
+          { CONTENT_02.LIST_ITEM_05.TEXT }
         </ListItemText>
       </SectionItem>
     </ContentRight>

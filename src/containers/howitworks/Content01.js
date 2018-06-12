@@ -1,6 +1,9 @@
 import React, { Fragment } from 'react';
 
 import Image01 from '../../assets/images/01_problem_definition.png';
+
+import { CONTENT_01 } from './Constants';
+
 import {
   ContentLeft,
   ContentRight,
@@ -18,55 +21,39 @@ const Content01 = () => (
     <ContentRight>
       <BodyWrapper>
         <Body>
-          {
-            `Identify a clear problem and who your stakeholders are. The problem may be a rise in
-             drug overdoses in recent years, overcrowding in county jails, or the need for a 
-             shared case management interface across related behavioral health agencies. Some 
-             common problems jurisdictions are tackling with OpenLattice:`
-          }
+          { CONTENT_01.BODY }
         </Body>
       </BodyWrapper>
       <ListItem>
         <ListItemNumber>
-          01
+          { CONTENT_01.LIST_ITEM_01.TITLE }
         </ListItemNumber>
         <ListItemText>
-          {
-            `Identify and assist people who repeatedly cycle through county services, consuming a 
-            disproportionate amount of social resources.`
-          }
+          { CONTENT_01.LIST_ITEM_01.TEXT }
         </ListItemText>
       </ListItem>
       <ListItem>
         <ListItemNumber>
-          02
+          { CONTENT_01.LIST_ITEM_02.TITLE }
         </ListItemNumber>
         <ListItemText>
-          {
-            'Inform policy decisions based on how government services are delivered and consumed.'
-          }
+          { CONTENT_01.LIST_ITEM_02.TEXT }
         </ListItemText>
       </ListItem>
       <ListItem>
         <ListItemNumber>
-          03
+          { CONTENT_01.LIST_ITEM_03.TITLE }
         </ListItemNumber>
         <ListItemText>
-          {
-            'Collaborate with academic researchers while protecting privacy.'
-          }
+          { CONTENT_01.LIST_ITEM_03.TEXT }
         </ListItemText>
       </ListItem>
       <ListItem>
         <ListItemNumber>
-          04
+          { CONTENT_01.LIST_ITEM_04.TITLE }
         </ListItemNumber>
         <ListItemText>
-          {
-            `Increase interagency coordination, and therefore strengthen the continuum of care 
-            for citizens with mental health histories who might now be served by a variety of 
-            community health and public safety organizations in fragmented ways.`
-          }
+          { CONTENT_01.LIST_ITEM_04.TEXT }
         </ListItemText>
       </ListItem>
     </ContentRight>

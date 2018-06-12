@@ -2,6 +2,8 @@ import React, { Fragment } from 'react';
 
 import Image03 from '../../assets/images/03_establishing_data_access.png';
 
+import { CONTENT_03 } from './Constants';
+
 import {
   ContentLeft,
   ContentRight,
@@ -19,48 +21,34 @@ const Content03 = () => (
     <ContentRight>
       <BodyWrapper>
         <Body>
-          {
-            `We have created standardized data models for key database types (e.g., Records Management 
-            Systems) to alleviate the challenges of bespoke data integrations. Users can simply map 
-            fields from source systems onto the OpenLattice schema.`
-          }
+          { CONTENT_03.BODY_01 }
         </Body>
         <Body>
-          {
-            `This greatly reduces costs and complexity such that OpenLattice is able to offer deeply 
-            discounted or free data integration services for qualifying customers.`
-          }
+          { CONTENT_03.BODY_02 }
         </Body>
       </BodyWrapper>
       <SectionItem>
         <ListItemTitle>
-          Key Decisions
+          { CONTENT_03.LIST_ITEM_01.TITLE }
         </ListItemTitle>
         <ListItemText>
-          {
-            `Frequency of updates, data model elements, and mechanism of transport (direct vs. indirect).`
-          }
+          { CONTENT_03.LIST_ITEM_01.TEXT }
         </ListItemText>
       </SectionItem>
       <SectionItem>
         <ListItemTitle>
-          Common Issues
+          { CONTENT_03.LIST_ITEM_02.TITLE }
         </ListItemTitle>
         <ListItemText>
-          {
-            `Security concerns, privacy concerns, performance concerns, licensing & insurance when 
-            dealing with 3rd party vendors, and data access when dealing with proprietary interfaces or formats.`
-          }
+          { CONTENT_03.LIST_ITEM_02.TEXT }
         </ListItemText>
       </SectionItem>
       <SectionItem>
         <ListItemTitle>
-          Breaking Through
+          { CONTENT_03.LIST_ITEM_03.TITLE }
         </ListItemTitle>
         <ListItemText>
-          {
-            `Persistence and properly incentivize third parties.`
-          }
+          { CONTENT_03.LIST_ITEM_03.TEXT }
         </ListItemText>
       </SectionItem>
     </ContentRight>

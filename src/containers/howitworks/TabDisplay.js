@@ -5,6 +5,8 @@ import Content02 from './Content02';
 import Content03 from './Content03';
 import Content04 from './Content04';
 
+import { TABS } from './Constants';
+
 import {
   Wrapper,
   Navigation,
@@ -55,16 +57,16 @@ class TabDisplay extends React.Component {
       <Wrapper>
         <Navigation>
           <TabItem data-name="1" onClick={this.handleTabClick} className={this.getActiveStatus(1)}>
-            01 Problem Definition
+            { TABS[1] }
           </TabItem>
           <TabItem data-name="2" onClick={this.handleTabClick} className={this.getActiveStatus(2)}>
-            02 Data Sharing Agreements
+            { TABS[2] }
           </TabItem>
           <TabItem data-name="3" onClick={this.handleTabClick} className={this.getActiveStatus(3)}>
-            03 Establishing Data Access
+            { TABS[3] }
           </TabItem>
           <TabItem data-name="4" onClick={this.handleTabClick} className={this.getActiveStatus(4)}>
-            04 Specific Services
+            { TABS[4] }
           </TabItem>
         </Navigation>
         <ContentWrapper>
