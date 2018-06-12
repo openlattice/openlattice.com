@@ -61,12 +61,7 @@ const TabItem = styled.span`
   text-align: center;
   width: 25%;
 
-  &:hover {
-    color: ${PP4};
-    border-bottom: 5px solid ${PP4};
-  }
-
-  &:.data-name {
+  &:hover, &.active {
     color: ${PP4};
     border-bottom: 5px solid ${PP4};
   }
@@ -393,7 +388,16 @@ class HowItWorksSection extends React.Component {
   }
 
   handleTabClick = (e) => {
-    this.setState({ tab: parseInt(e.target.dataset.name) });
+    let tab = parseInt(e.target.dataset.name)
+    this.setState({ tab });
+  }
+
+  getActiveStatus = (tab) => {
+    if (this.state.tab === tab) {
+      return 'active';
+    }
+
+    return null;
   }
 
   render() {
@@ -412,16 +416,16 @@ class HowItWorksSection extends React.Component {
             </StyledCroppedSubtitle>
             <TabDisplayWrapper>
               <TabDisplayNavigation>
-                <TabItem data-name='1' onClick={this.handleTabClick}>
+                <TabItem data-name='1' onClick={this.handleTabClick} className={this.getActiveStatus(1)}>
                   01 Problem Definition
                 </TabItem>
-                <TabItem data-name='2' onClick={this.handleTabClick}>
+                <TabItem data-name='2' onClick={this.handleTabClick} className={this.getActiveStatus(2)}>
                   02 Data Sharing Agreements
                 </TabItem>
-                <TabItem data-name='3' onClick={this.handleTabClick}>
+                <TabItem data-name='3' onClick={this.handleTabClick} className={this.getActiveStatus(3)}>
                   03 Establishing Data Access
                 </TabItem>
-                <TabItem data-name='4' onClick={this.handleTabClick}>
+                <TabItem data-name='4' onClick={this.handleTabClick} className={this.getActiveStatus(4)}>
                   04 Specific Services
                 </TabItem>
               </TabDisplayNavigation>
