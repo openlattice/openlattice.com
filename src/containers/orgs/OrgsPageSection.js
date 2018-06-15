@@ -7,6 +7,7 @@ import React, { type Node } from 'react';
 import styled, { css } from 'styled-components';
 
 import JurisdictionLabel from './JurisdictionLabel';
+import JurisdictionLine from './JurisdictionLine';
 import JurisdictionTarget from './JurisdictionTarget';
 
 import { PAGE_SECTION_MIN_WIDTH, WINDOW_EDGE_PADDING, MEDIA_QUERY_SM } from '../../core/style/Sizes';
@@ -118,18 +119,26 @@ const OrgsPageSection = (props :Props) => (
             y={DANE_COUNTY.Y_LABEL}
             location={DANE_COUNTY.LOCATION}
             population={DANE_COUNTY.POPULATION} />
-        <DaneCountyPath>
-          <line x1="0" y1="0" x2="75" y2="104" stroke={PP4} />
-        </DaneCountyPath>
+        <JurisdictionLine
+            x={DANE_COUNTY.X_LINE}
+            y={DANE_COUNTY.Y_LINE}
+            x1={DANE_COUNTY.X1_LINE}
+            y1={DANE_COUNTY.Y1_LINE}
+            x2={DANE_COUNTY.X2_LINE}
+            y2={DANE_COUNTY.Y2_LINE} />
         <JurisdictionTarget x={DANE_COUNTY.X_TARGET} y={DANE_COUNTY.Y_TARGET} />
         <JurisdictionLabel
             x={FRANKLIN_COUNTY.X_LABEL}
             y={FRANKLIN_COUNTY.Y_LABEL}
             location={FRANKLIN_COUNTY.LOCATION}
             population={FRANKLIN_COUNTY.POPULATION} />
-        <FranklinCountyPath>
-          <line x1="42" y1="0" x2="0" y2="142" stroke={PP4} />
-        </FranklinCountyPath>
+        <JurisdictionLine
+            x={FRANKLIN_COUNTY.X_LINE}
+            y={FRANKLIN_COUNTY.Y_LINE}
+            x1={FRANKLIN_COUNTY.X1_LINE}
+            y1={FRANKLIN_COUNTY.Y1_LINE}
+            x2={FRANKLIN_COUNTY.X2_LINE}
+            y2={FRANKLIN_COUNTY.Y2_LINE} />
         <JurisdictionTarget x={FRANKLIN_COUNTY.X_TARGET} y={FRANKLIN_COUNTY.Y_TARGET} />
       </SVGWrapper>
     </PageSectionBackgroundWrapper>
