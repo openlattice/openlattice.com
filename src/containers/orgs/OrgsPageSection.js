@@ -6,6 +6,7 @@ import React, { type Node } from 'react';
 
 import styled, { css } from 'styled-components';
 
+import JurisdictionLabelSet from './JurisdictionLabelSet';
 import JurisdictionLabel from './JurisdictionLabel';
 import JurisdictionLine from './JurisdictionLine';
 import JurisdictionTarget from './JurisdictionTarget';
@@ -17,6 +18,17 @@ import {
   DANE_COUNTY,
   FRANKLIN_COUNTY
 } from './Constants';
+
+
+/*
+ * constants
+ */
+
+const jurisdictions = [
+  DANE_COUNTY,
+  FRANKLIN_COUNTY
+];
+
 
 /*
  * styled components
@@ -80,20 +92,6 @@ const SVGWrapper = styled.div`
   width: 100%;
 `;
 
-const Path = styled.svg`
-  position: absolute;
-`;
-
-const DaneCountyPath = Path.extend`
-  top: 326px;
-  left: 656px;
-`;
-
-const FranklinCountyPath = Path.extend`
-  top: 328px;
-  left: 807px;
-`;
-
 
 /*
  * types
@@ -110,36 +108,15 @@ type Props = {
  * components
  */
 
+const renderLabelSets = () => {
+  return jurisdictions.map(jurisdiction => <JurisdictionLabelSet jurisdiction={jurisdiction} />);
+};
+
 const OrgsPageSection = (props :Props) => (
   <PageSectionOuterWrapper>
     <PageSectionBackgroundWrapper bgColor={props.bgColor} bgImage={props.bgImage}>
       <SVGWrapper>
-        <JurisdictionLabel
-            x={DANE_COUNTY.X_LABEL}
-            y={DANE_COUNTY.Y_LABEL}
-            location={DANE_COUNTY.LOCATION}
-            population={DANE_COUNTY.POPULATION} />
-        <JurisdictionLine
-            x={DANE_COUNTY.X_LINE}
-            y={DANE_COUNTY.Y_LINE}
-            x1={DANE_COUNTY.X1_LINE}
-            y1={DANE_COUNTY.Y1_LINE}
-            x2={DANE_COUNTY.X2_LINE}
-            y2={DANE_COUNTY.Y2_LINE} />
-        <JurisdictionTarget x={DANE_COUNTY.X_TARGET} y={DANE_COUNTY.Y_TARGET} />
-        <JurisdictionLabel
-            x={FRANKLIN_COUNTY.X_LABEL}
-            y={FRANKLIN_COUNTY.Y_LABEL}
-            location={FRANKLIN_COUNTY.LOCATION}
-            population={FRANKLIN_COUNTY.POPULATION} />
-        <JurisdictionLine
-            x={FRANKLIN_COUNTY.X_LINE}
-            y={FRANKLIN_COUNTY.Y_LINE}
-            x1={FRANKLIN_COUNTY.X1_LINE}
-            y1={FRANKLIN_COUNTY.Y1_LINE}
-            x2={FRANKLIN_COUNTY.X2_LINE}
-            y2={FRANKLIN_COUNTY.Y2_LINE} />
-        <JurisdictionTarget x={FRANKLIN_COUNTY.X_TARGET} y={FRANKLIN_COUNTY.Y_TARGET} />
+        { renderLabelSets() }
       </SVGWrapper>
     </PageSectionBackgroundWrapper>
     <PageSectionInnerWrapper>
