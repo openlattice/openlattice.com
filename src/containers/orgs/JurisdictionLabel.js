@@ -23,8 +23,8 @@ const PopulationLabel = styled.span`
 `;
 
 const CountyLabel = LabelWrapper.extend`
-  left: ${props => props.x || null};
-  top: ${props => props.y || null};
+  left: ${props => `${props.x}px` || null};
+  top: ${props => `${props.y}px` || null};
 `;
 
 
