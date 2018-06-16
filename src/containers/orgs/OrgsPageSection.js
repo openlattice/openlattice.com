@@ -15,8 +15,19 @@ import { PAGE_SECTION_MIN_WIDTH, WINDOW_EDGE_PADDING, MEDIA_QUERY_SM } from '../
 import { N0, N2, PP4 } from '../../core/style/Colors';
 
 import {
-  DANE_COUNTY,
-  FRANKLIN_COUNTY
+  DANE,
+  FRANKLIN,
+  PORTLAND,
+  MIDDLESEX,
+  HUDSON,
+  BERKS,
+  BALTIMORE,
+  LAKE,
+  JOHNSON,
+  POLK,
+  CALIFORNIA,
+  PENNINGTON,
+  MINNEHAHA
 } from './Constants';
 
 
@@ -25,8 +36,19 @@ import {
  */
 
 const jurisdictions = [
-  DANE_COUNTY,
-  FRANKLIN_COUNTY
+  DANE,
+  FRANKLIN,
+  PORTLAND,
+  MIDDLESEX,
+  HUDSON,
+  BERKS,
+  BALTIMORE,
+  LAKE,
+  JOHNSON,
+  POLK,
+  CALIFORNIA,
+  PENNINGTON,
+  MINNEHAHA
 ];
 
 
