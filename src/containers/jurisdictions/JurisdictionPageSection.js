@@ -109,7 +109,7 @@ type Props = {
  */
 
 const renderLabelSets = () => (
-  jurisdictions.map(jurisdiction => <JurisdictionLabelSet jurisdiction={jurisdiction} />)
+  jurisdictions.map((jurisdiction, i) => <JurisdictionLabelSet jurisdiction={jurisdiction} key={i} />)
 );
 
 const OrgsPageSection = (props :Props) => (
