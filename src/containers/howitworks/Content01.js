@@ -1,10 +1,11 @@
-import React, { Fragment } from 'react';
+import React from 'react';
 
 import Image01 from '../../assets/images/01_problem_definition.png';
 
 import { CONTENT_01 } from './Constants';
 
 import {
+  ContentWrapper,
   ContentLeft,
   ContentRight,
   BodyWrapper,
@@ -16,8 +17,8 @@ import {
 
 
 const Content01 = () => (
-  <Fragment>
-    <ContentLeft bgImage={Image01} />
+  <ContentWrapper>
+    <ContentLeft src={Image01} />
     <ContentRight>
       <BodyWrapper>
         <Body>
@@ -57,7 +58,7 @@ const Content01 = () => (
         </ListItemText>
       </ListItem>
     </ContentRight>
-  </Fragment>
+  </ContentWrapper>
 );
 
 export default Content01;

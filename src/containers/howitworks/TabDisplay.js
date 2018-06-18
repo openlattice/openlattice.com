@@ -1,4 +1,5 @@
 import React from 'react';
+import styled, { css } from 'styled-components';
 
 import Content01 from './Content01';
 import Content02 from './Content02';
@@ -7,12 +8,34 @@ import Content04 from './Content04';
 
 import { TABS } from './Constants';
 
-import {
-  Wrapper,
-  Navigation,
-  TabItem,
-  ContentWrapper
-} from './style';
+import { PP4 } from '../../core/style/Colors';
+import { MEDIA_QUERY_SM, MEDIA_QUERY_MD } from '../../core/style/Sizes';
+
+const Wrapper = styled.div`
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+`;
+
+const Navigation = styled.div`
+  display: flex;
+  justify-content: center;
+  width: 100%;
+`;
+
+const TabItem = styled.span`
+  border-bottom: 5px solid #b4add1;
+  color: #b4add1;
+  cursor: pointer;
+  padding: 10px 0;
+  text-align: center;
+  width: 25%;
+
+  &:hover, &.active {
+    color: ${PP4};
+    border-bottom: 5px solid ${PP4};
+  }
+`;
 
 
 class TabDisplay extends React.Component {
@@ -69,11 +92,7 @@ class TabDisplay extends React.Component {
             { TABS[4] }
           </TabItem>
         </Navigation>
-        <ContentWrapper>
-          {
-            this.renderContent(this.state.tab)
-          }
-        </ContentWrapper>
+          { this.renderContent(this.state.tab) }
       </Wrapper>
     );
   }

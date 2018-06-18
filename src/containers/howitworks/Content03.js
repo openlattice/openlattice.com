@@ -5,6 +5,7 @@ import Image03 from '../../assets/images/03_establishing_data_access.png';
 import { CONTENT_03 } from './Constants';
 
 import {
+  ContentWrapper,
   ContentLeft,
   ContentRight,
   BodyWrapper,
@@ -16,8 +17,8 @@ import {
 
 
 const Content03 = () => (
-  <Fragment>
-    <ContentLeft bgImage={Image03} />
+  <ContentWrapper>
+    <ContentLeft src={Image03} />
     <ContentRight>
       <BodyWrapper>
         <Body>
@@ -52,7 +53,7 @@ const Content03 = () => (
         </ListItemText>
       </SectionItem>
     </ContentRight>
-  </Fragment>
+  </ContentWrapper>
 );
 
 export default Content03;

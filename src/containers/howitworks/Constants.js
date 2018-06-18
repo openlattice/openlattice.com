@@ -1,3 +1,9 @@
+export const TITLE = 'How It Works';
+
+export const SUBTITLE = `As a public benefit corporation, OpenLattice enables precision 
+  government by linking individual-level data across currently siloed criminal justice, 
+  healthcare, and social services information at little or no cost.`;
+
 export const TABS = {
   1: '01 Problem Definition',
   2: '02 Data Sharing Agreements',

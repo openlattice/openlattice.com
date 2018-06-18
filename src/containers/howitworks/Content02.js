@@ -5,6 +5,7 @@ import Image02 from '../../assets/images/02_data_sharing_agreements.png';
 import { CONTENT_02 } from './Constants';
 
 import {
+  ContentWrapper,
   ContentLeft,
   ContentRight,
   BodyWrapper,
@@ -16,8 +17,8 @@ import {
 
 
 const Content02 = () => (
-  <Fragment>
-    <ContentLeft bgImage={Image02} />
+  <ContentWrapper>
+    <ContentLeft src={Image02} />
     <ContentRight>
       <BodyWrapper>
         <Body>
@@ -61,7 +62,7 @@ const Content02 = () => (
         </ListItemText>
       </SectionItem>
     </ContentRight>
-  </Fragment>
+  </ContentWrapper>
 );
 
 export default Content02;

@@ -6,26 +6,27 @@ import PageSection from '../../components/layout/PageSection';
 import StyledSectionSubTitle from '../../components/headers/StyledSectionSubTitle';
 import StyledSectionTitle from '../../components/headers/StyledSectionTitle';
 import { MEDIA_QUERY_SM, MEDIA_QUERY_MD } from '../../core/style/Sizes';
+import { TITLE, SUBTITLE } from './Constants';
 import TabDisplay from './TabDisplay';
 
 import { N1 } from '../../core/style/Colors';
 
 const Content = styled.div`
-  display: block;
   margin: 80px 0 100px 0;
   max-width: 100%;
 
-  @media only screen and (min-width: ${MEDIA_QUERY_SM}px) {
-  }
-
   @media only screen and (min-width: ${MEDIA_QUERY_MD}px) {
+    display: block;
     margin: 140px 0 140px 0;
   }
 `;
 
 const StyledCroppedSubtitle = StyledSectionSubTitle.extend`
-  width: 46%;
   margin-bottom: 60px;
+
+  @media only screen and (min-width: ${MEDIA_QUERY_MD}px) {
+    width: 46%;
+  }
 `;
 
 const HowItWorksSection = () => (
@@ -33,13 +34,10 @@ const HowItWorksSection = () => (
     <PageSection bgColor={N1}>
       <Content>
         <StyledSectionTitle>
-          How It Works
+          { TITLE }
         </StyledSectionTitle>
         <StyledCroppedSubtitle>
-          {
-            `As a public benefit corporation, OpenLattice enables precision government by linking individual-level data 
-            across currently siloed criminal justice, healthcare, and social services information at little or no cost.`
-          }
+          { SUBTITLE }
         </StyledCroppedSubtitle>
         <TabDisplay />
       </Content>

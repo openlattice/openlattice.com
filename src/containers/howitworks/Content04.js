@@ -5,6 +5,7 @@ import Image04 from '../../assets/images/04_specific_services.png';
 import { CONTENT_04 } from './Constants';
 
 import {
+  ContentWrapper,
   ContentLeft,
   ContentRight,
   BodyWrapper,
@@ -16,8 +17,8 @@ import {
 
 
 const Content04 = () => (
-  <Fragment>
-    <ContentLeft bgImage={Image04} />
+  <ContentWrapper>
+    <ContentLeft src={Image04} />
     <ContentRight>
       <BodyWrapper>
         <Body>
@@ -52,7 +53,7 @@ const Content04 = () => (
         </ListItemText>
       </ListItem>
     </ContentRight>
-  </Fragment>
+  </ContentWrapper>
 );
 
 export default Content04;
