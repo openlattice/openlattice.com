@@ -1,3 +1,5 @@
+export const TITLE = 'Leading innovation with organizations and jurisdictions nationwide.';
+
 export const DANE = {
   X_LABEL: '601',
   Y_LABEL: '286',

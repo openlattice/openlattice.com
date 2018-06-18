@@ -6,13 +6,11 @@ import React from 'react';
 
 import styled from 'styled-components';
 
-import OrgsPageSection from './OrgsPageSection';
+import JurisdictionPageSection from './JurisdictionPageSection';
 import StyledSectionTitle from '../../components/headers/StyledSectionTitle';
-import { PK0 } from '../../core/style/Colors';
-import { MEDIA_QUERY_SM, MEDIA_QUERY_MD } from '../../core/style/Sizes';
+import { MEDIA_QUERY_SM } from '../../core/style/Sizes';
 import { N3 } from '../../core/style/Colors';
-import mapImage from '../../assets/images/map.png';
-
+import { TITLE } from './Constants';
 
 const Content = styled.div`
   color: #fff;
@@ -32,16 +30,15 @@ const Title = StyledSectionTitle.extend`
   }
 `;
 
-const OrgsSection = () => (
-  <OrgsPageSection bgImage={mapImage}>
+
+const JurisdictionSection = () => (
+  <JurisdictionPageSection>
     <Content>
       <Title>
-        {
-          `Leading innovation with organizations and jurisdictions nationwide.`
-        }
+        { TITLE }
       </Title>
     </Content>
-  </OrgsPageSection>
+  </JurisdictionPageSection>
 );
 
-export default OrgsSection;
+export default JurisdictionSection;

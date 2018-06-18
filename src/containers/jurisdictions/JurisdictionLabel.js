@@ -1,4 +1,5 @@
-import React, { type Node } from 'react';
+import React from 'react';
+import PropTypes from 'prop-types';
 
 import styled from 'styled-components';
 
@@ -28,7 +29,9 @@ const CountyLabel = LabelWrapper.extend`
 `;
 
 
-const JurisdictionLabel = ({ x, y, location, population }) => (
+const JurisdictionLabel = ({
+  x, y, location, population
+}) => (
   <CountyLabel x={x} y={y}>
     <LocationLabel>
       { location }
@@ -38,5 +41,12 @@ const JurisdictionLabel = ({ x, y, location, population }) => (
     </PopulationLabel>
   </CountyLabel>
 );
+
+JurisdictionLabel.propTypes = {
+  x: PropTypes.string.isRequired,
+  y: PropTypes.string.isRequired,
+  location: PropTypes.string.isRequired,
+  population: PropTypes.string.isRequired
+};
 
 export default JurisdictionLabel;

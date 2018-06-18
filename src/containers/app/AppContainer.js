@@ -8,7 +8,7 @@ import IntroSection from '../intro/IntroSection';
 import ServicesSection from '../services/ServicesSection';
 import TechnologySection from '../technology/TechnologySection';
 import HowItWorksSection from '../howitworks/HowItWorksSection';
-import OrgsSection from '../orgs/OrgsSection';
+import JurisdictionSection from '../jurisdictions/JurisdictionSection';
 import ConnectSection from '../connect/ConnectSection';
 import FooterSection from '../footer/FooterSection';
 
@@ -18,7 +18,7 @@ const AppContainer = () => (
     <ServicesSection />
     <TechnologySection />
     <HowItWorksSection />
-    <OrgsSection />
+    <JurisdictionSection />
     <ConnectSection />
     <FooterSection />
   </Fragment>

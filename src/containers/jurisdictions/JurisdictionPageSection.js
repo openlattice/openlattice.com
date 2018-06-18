@@ -4,15 +4,12 @@
 
 import React, { type Node } from 'react';
 
-import styled, { css } from 'styled-components';
+import styled from 'styled-components';
 
 import JurisdictionLabelSet from './JurisdictionLabelSet';
-import JurisdictionLabel from './JurisdictionLabel';
-import JurisdictionLine from './JurisdictionLine';
-import JurisdictionTarget from './JurisdictionTarget';
+import mapImage from '../../assets/images/map.png';
 
 import { PAGE_SECTION_MIN_WIDTH, WINDOW_EDGE_PADDING, MEDIA_QUERY_SM } from '../../core/style/Sizes';
-import { N0, N2, PP4 } from '../../core/style/Colors';
 
 import {
   DANE,
@@ -56,24 +53,6 @@ const jurisdictions = [
  * styled components
  */
 
-const bgImageMixin = (props) => {
-  if (props.bgImage) {
-    return css`
-      background-image: url(${props.bgImage});
-      background-position: center;
-      background-repeat: no-repeat;
-    `;
-  }
-  else if (props.bgColor) {
-    return css`
-      background-color: ${props.bgColor};
-    `;
-  }
-  return css`
-    background: none;
-  `;
-};
-
 // "min-width" because this container needs to stretch to 100% of the width of the window
 const PageSectionOuterWrapper = styled.section`
   display: flex;
@@ -98,12 +77,14 @@ const PageSectionInnerWrapper = styled.div`
 `;
 
 const PageSectionBackgroundWrapper = styled.div`
+  background-image: url(${mapImage});
+  background-position: center;
+  background-repeat: no-repeat;
   height: 100%;
   display: flex;
   justify-content: center;
   position: absolute;
   width: 100%;
-  ${props => bgImageMixin(props)}
 `;
 
 const SVGWrapper = styled.div`
@@ -120,9 +101,6 @@ const SVGWrapper = styled.div`
  */
 
 type Props = {
-  bgColor ? :string;
-  bgComponent ? :Node;
-  bgImage ? :string;
   children :Node;
 }
 
@@ -130,13 +108,13 @@ type Props = {
  * components
  */
 
-const renderLabelSets = () => {
-  return jurisdictions.map(jurisdiction => <JurisdictionLabelSet jurisdiction={jurisdiction} />);
-};
+const renderLabelSets = () => (
+  jurisdictions.map(jurisdiction => <JurisdictionLabelSet jurisdiction={jurisdiction} />)
+);
 
 const OrgsPageSection = (props :Props) => (
   <PageSectionOuterWrapper>
-    <PageSectionBackgroundWrapper bgColor={props.bgColor} bgImage={props.bgImage}>
+    <PageSectionBackgroundWrapper>
       <SVGWrapper>
         { renderLabelSets() }
       </SVGWrapper>
@@ -146,11 +124,5 @@ const OrgsPageSection = (props :Props) => (
     </PageSectionInnerWrapper>
   </PageSectionOuterWrapper>
 );
-
-OrgsPageSection.defaultProps = {
-  bgColor: undefined,
-  bgComponent: undefined,
-  bgImage: undefined
-};
 
 export default OrgsPageSection;

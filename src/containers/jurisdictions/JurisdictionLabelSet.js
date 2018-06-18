@@ -1,8 +1,5 @@
-import React, { type Node, Fragment } from 'react';
-
-import styled from 'styled-components';
-
-import { N0, N2, PP4 } from '../../core/style/Colors';
+import React, { Fragment } from 'react';
+import PropTypes from 'prop-types';
 
 import JurisdictionLabel from './JurisdictionLabel';
 import JurisdictionLine from './JurisdictionLine';
@@ -28,5 +25,22 @@ const JurisdictionLabelSet = ({ jurisdiction }) => (
         y={jurisdiction.Y_TARGET} />
   </Fragment>
 );
+
+JurisdictionLabelSet.propTypes = {
+  jurisdiction: PropTypes.shape({
+    X_LABEL: PropTypes.string.isRequired,
+    Y_LABEL: PropTypes.string.isRequired,
+    X_LINE: PropTypes.string.isRequired,
+    Y_LINE: PropTypes.string.isRequired,
+    X1_LINE: PropTypes.string.isRequired,
+    Y1_LINE: PropTypes.string.isRequired,
+    X2_LINE: PropTypes.string.isRequired,
+    Y2_LINE: PropTypes.string.isRequired,
+    X_TARGET: PropTypes.string.isRequired,
+    Y_TARGET: PropTypes.string.isRequired,
+    LOCATION: PropTypes.string.isRequired,
+    POPULATION: PropTypes.string.isRequired
+  }).isRequired
+};
 
 export default JurisdictionLabelSet;
