@@ -94,7 +94,7 @@ const PageSectionBackgroundWrapper = styled.div`
   }
 `;
 
-const SVGWrapper = styled.div`
+const LabelSets = styled.div`
   display: none;
   height: 100%;
   position: relative;
@@ -119,32 +119,17 @@ type Props = {
  * components
  */
 
-// Renders full label sets at large browser
+// Renders full label sets only at large browser size
 const renderLabelSets = () => (
   jurisdictions.map((jurisdiction, i) => <JurisdictionLabelSet jurisdiction={jurisdiction} key={i} />)
 );
 
-const renderLabels = () => {
-  return jurisdictions.map((jurisdiction, i) => {
-    return (
-      <LabelWrapper>
-        <LocationLabel>
-          { jurisdiction.LOCATION }
-        </LocationLabel>
-        <PopulationLabel>
-          { jurisdiction.POPULATION }
-        </PopulationLabel>
-      </LabelWrapper>
-    );
-  });
-};
-
 const JurisdictionPageSection = (props :Props) => (
   <PageSectionOuterWrapper>
     <PageSectionBackgroundWrapper>
-      <SVGWrapper>
+      <LabelSets>
         { renderLabelSets() }
-      </SVGWrapper>
+      </LabelSets>
     </PageSectionBackgroundWrapper>
     <PageSectionInnerWrapper>
       { props.children }

@@ -7,6 +7,7 @@ import React from 'react';
 import styled from 'styled-components';
 
 import JurisdictionPageSection from './JurisdictionPageSection';
+import JurisdictionLabel from './JurisdictionLabel';
 import StyledSectionTitle from '../../components/headers/StyledSectionTitle';
 import { MEDIA_QUERY_SM } from '../../core/style/Sizes';
 import { N2, N3, PP4 } from '../../core/style/Colors';
@@ -71,7 +72,7 @@ const Title = StyledSectionTitle.extend`
   }
 `;
 
-const JurisdictionLabels = styled.div`
+const Labels = styled.div`
   align-items: center;
   display: flex;
   flex-direction: column;
@@ -90,56 +91,12 @@ const JurisdictionLabels = styled.div`
   }
 `;
 
-const LabelWrapper = styled.span`
-  display: flex;
-  flex-basis: 4%;
-  flex-direction: column;
-  font-size: 12px;
-  margin: 0 10px 20px 10px;
 
-  @media only screen and (min-width: 530px) {
-    flex-basis: 10%;
-    font-size: 14px;
-  }
-
-  @media only screen and (min-width: 900px) {
-    flex-basis: 20%;
-  }
-`;
-
-const LocationLabel = styled.span`
-  color: ${PP4};
-  font-weight: normal;
-  margin-bottom: 4px;
-
-  @media only screen and (min-width: 900px) {
-    font-weight: 600;
-  }
-`;
-
-const PopulationLabel = styled.span`
-  color: ${N2};
-  display: none;
-  font-weight: normal;
-
-  @media only screen and (min-width: 900px) {
-    display: block;
-  }
-`;
-
-
-// Renders simple labels at smaller browser size
+// Renders simple labels at < large browser size
 const renderLabels = () => {
   return jurisdictions.map((jurisdiction, i) => {
     return (
-      <LabelWrapper>
-        <LocationLabel>
-          { jurisdiction.LOCATION }
-        </LocationLabel>
-        <PopulationLabel>
-          { jurisdiction.POPULATION }
-        </PopulationLabel>
-      </LabelWrapper>
+      <JurisdictionLabel location={jurisdiction.LOCATION} population={jurisdiction.POPULATION} key={i} />
     );
   });
 };
@@ -151,9 +108,9 @@ const JurisdictionSection = () => (
       <Title>
         { TITLE }
       </Title>
-      <JurisdictionLabels>
+      <Labels>
         { renderLabels() }
-      </JurisdictionLabels>
+      </Labels>
     </Content>
   </JurisdictionPageSection>
 );
