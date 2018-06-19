@@ -10,6 +10,8 @@ const LabelWrapper = styled.span`
   flex-direction: column;
   font-size: 14px;
   position: absolute;
+  left: ${props => `${props.x}px` || null};
+  top: ${props => `${props.y}px` || null};
 `;
 
 const LocationLabel = styled.span`
@@ -23,23 +25,18 @@ const PopulationLabel = styled.span`
   font-weight: normal;
 `;
 
-const CountyLabel = LabelWrapper.extend`
-  left: ${props => `${props.x}px` || null};
-  top: ${props => `${props.y}px` || null};
-`;
-
 
 const JurisdictionLabel = ({
   x, y, location, population
 }) => (
-  <CountyLabel x={x} y={y}>
+  <LabelWrapper x={x} y={y}>
     <LocationLabel>
       { location }
     </LocationLabel>
     <PopulationLabel>
       { population }
     </PopulationLabel>
-  </CountyLabel>
+  </LabelWrapper>
 );
 
 JurisdictionLabel.propTypes = {

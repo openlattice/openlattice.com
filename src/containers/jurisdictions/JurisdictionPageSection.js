@@ -7,9 +7,11 @@ import React, { type Node } from 'react';
 import styled from 'styled-components';
 
 import JurisdictionLabelSet from './JurisdictionLabelSet';
+import JurisdictionLabel from './JurisdictionLabel';
 import mapImage from '../../assets/images/map.png';
 
 import { PAGE_SECTION_MIN_WIDTH, WINDOW_EDGE_PADDING, MEDIA_QUERY_SM } from '../../core/style/Sizes';
+import { N2, PP4 } from '../../core/style/Colors';
 
 import {
   DANE,
@@ -80,19 +82,28 @@ const PageSectionBackgroundWrapper = styled.div`
   background-image: url(${mapImage});
   background-position: center;
   background-repeat: no-repeat;
+  background-size: 900px;
   height: 100%;
   display: flex;
   justify-content: center;
   position: absolute;
   width: 100%;
+
+  @media only screen and (min-width: 1300px) {
+    background-size: auto;
+  }
 `;
 
 const SVGWrapper = styled.div`
+  display: none;
   height: 100%;
   position: relative;
-  text-align: left;
   max-width: 1300px;
   width: 100%;
+
+  @media only screen and (min-width: 1300px) {
+    display: block;
+  }
 `;
 
 
@@ -108,11 +119,27 @@ type Props = {
  * components
  */
 
+// Renders full label sets at large browser
 const renderLabelSets = () => (
   jurisdictions.map((jurisdiction, i) => <JurisdictionLabelSet jurisdiction={jurisdiction} key={i} />)
 );
 
-const OrgsPageSection = (props :Props) => (
+const renderLabels = () => {
+  return jurisdictions.map((jurisdiction, i) => {
+    return (
+      <LabelWrapper>
+        <LocationLabel>
+          { jurisdiction.LOCATION }
+        </LocationLabel>
+        <PopulationLabel>
+          { jurisdiction.POPULATION }
+        </PopulationLabel>
+      </LabelWrapper>
+    );
+  });
+};
+
+const JurisdictionPageSection = (props :Props) => (
   <PageSectionOuterWrapper>
     <PageSectionBackgroundWrapper>
       <SVGWrapper>
@@ -125,4 +152,4 @@ const OrgsPageSection = (props :Props) => (
   </PageSectionOuterWrapper>
 );
 
-export default OrgsPageSection;
+export default JurisdictionPageSection;
