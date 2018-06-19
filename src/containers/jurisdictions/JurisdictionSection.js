@@ -9,7 +9,7 @@ import styled from 'styled-components';
 import JurisdictionPageSection from './JurisdictionPageSection';
 import JurisdictionLabel from './JurisdictionLabel';
 import StyledSectionTitle from '../../components/headers/StyledSectionTitle';
-import { MEDIA_QUERY_SM, MEDIA_QUERY_JUR_SM, MEDIA_QUERY_JUR_LG } from '../../core/style/Sizes';
+import { MEDIA_QUERY_MD, MEDIA_QUERY_JUR_SM, MEDIA_QUERY_JUR_LG } from '../../core/style/Sizes';
 import { N2, N3, PP4 } from '../../core/style/Colors';
 import { TITLE } from './Constants';
 
@@ -67,7 +67,7 @@ const Content = styled.div`
 const Title = StyledSectionTitle.extend`
   color: ${N3};
 
-  @media only screen and (min-width: ${MEDIA_QUERY_SM}px) {
+  @media only screen and (min-width: ${MEDIA_QUERY_MD}px) {
     max-width: 60%;
   }
 `;

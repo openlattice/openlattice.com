@@ -8,8 +8,8 @@ export const WINDOW_EDGE_PADDING :number = 22;
 export const CONTENT_GRID_WIDTH :number = PAGE_SECTION_MIN_WIDTH - (WINDOW_EDGE_PADDING * 2);
 
 // Common Media Queries
-export const MEDIA_QUERY_SM :number = 768;
-export const MEDIA_QUERY_MD :number = PAGE_SECTION_MIN_WIDTH;
+export const MEDIA_QUERY_MD :number = 768;
+export const MEDIA_QUERY_LG :number = PAGE_SECTION_MIN_WIDTH;
 
 // Jurisdictions Media Queries
 export const MEDIA_QUERY_JUR_SM :number = 530;

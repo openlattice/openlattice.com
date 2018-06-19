@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import { MEDIA_QUERY_SM } from '../../core/style/Sizes';
+import { MEDIA_QUERY_MD } from '../../core/style/Sizes';
 
 import { N2 } from '../../core/style/Colors';
 
@@ -11,7 +11,7 @@ const StyledSectionSubTitle = styled.h2`
   text-align: center;
   margin-top: 0;
 
-  @media only screen and (min-width: ${MEDIA_QUERY_SM}px) {
+  @media only screen and (min-width: ${MEDIA_QUERY_MD}px) {
     text-align: left;
   }
 `;

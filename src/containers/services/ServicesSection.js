@@ -11,7 +11,7 @@ import personPng from '../../assets/images/person-grp@3x.png';
 import PageSection from '../../components/layout/PageSection';
 import StyledSectionSubTitle from '../../components/headers/StyledSectionSubTitle';
 import StyledSectionTitle from '../../components/headers/StyledSectionTitle';
-import { PAGE_SECTION_MIN_WIDTH, MEDIA_QUERY_SM, MEDIA_QUERY_MD } from '../../core/style/Sizes';
+import { PAGE_SECTION_MIN_WIDTH, MEDIA_QUERY_MD, MEDIA_QUERY_LG } from '../../core/style/Sizes';
 
 import {
   N1,
@@ -26,11 +26,11 @@ const Content = styled.div`
   max-width: 100%;
   height: 425px;
 
-  @media only screen and (min-width: ${MEDIA_QUERY_SM}px) {
+  @media only screen and (min-width: ${MEDIA_QUERY_MD}px) {
     max-width: 50%;
   }
 
-  @media only screen and (min-width: ${MEDIA_QUERY_MD}px) {
+  @media only screen and (min-width: ${MEDIA_QUERY_LG}px) {
     height: 525px;
     margin: 140px 0 0 0;
   }
@@ -46,12 +46,12 @@ const ArtSectionOuterWrapper = styled.div`
   min-width: 100%;
   position: relative;
 
-  @media only screen and (min-width: ${MEDIA_QUERY_SM}px) {
+  @media only screen and (min-width: ${MEDIA_QUERY_MD}px) {
     height: 300px;
     margin-top: -300px;
   }
 
-  @media only screen and (min-width: ${MEDIA_QUERY_MD}px) {
+  @media only screen and (min-width: ${MEDIA_QUERY_LG}px) {
     height: 375px;
     margin-top: -375px;
     min-width: ${PAGE_SECTION_MIN_WIDTH}px;
@@ -63,11 +63,11 @@ const PersonImg = styled.img`
   margin-left: 0;
   z-index: 1000;
 
-  @media only screen and (min-width: ${MEDIA_QUERY_SM}px) {
+  @media only screen and (min-width: ${MEDIA_QUERY_MD}px) {
     height: 300px;
   }
 
-  @media only screen and (min-width: ${MEDIA_QUERY_MD}px) {
+  @media only screen and (min-width: ${MEDIA_QUERY_LG}px) {
     height: 375px;
     margin-left: 400px;
   }
@@ -83,7 +83,7 @@ const Badge = styled.div`
   padding: 5px 8px;
   z-index: 2000;
 
-  @media only screen and (min-width: ${MEDIA_QUERY_SM}px) {
+  @media only screen and (min-width: ${MEDIA_QUERY_MD}px) {
     font-size: 14px;
     padding: 6px 10px;
   }
@@ -99,11 +99,11 @@ const HealthWrapper = styled.div`
   position: absolute;
   width: 50%;
 
-  @media only screen and (min-width: ${MEDIA_QUERY_SM}px) {
+  @media only screen and (min-width: ${MEDIA_QUERY_MD}px) {
     bottom: 20px;
   }
 
-  @media only screen and (min-width: ${MEDIA_QUERY_MD}px) {
+  @media only screen and (min-width: ${MEDIA_QUERY_LG}px) {
     bottom: 50px;
     width: calc(50% + 150px);
   }
@@ -112,11 +112,11 @@ const HealthWrapper = styled.div`
 const HealthSvg = styled.svg`
   height: 110px;
 
-  @media only screen and (min-width: ${MEDIA_QUERY_SM}px) {
+  @media only screen and (min-width: ${MEDIA_QUERY_MD}px) {
     height: 200px;
   }
 
-  @media only screen and (min-width: ${MEDIA_QUERY_MD}px) {
+  @media only screen and (min-width: ${MEDIA_QUERY_LG}px) {
     height: 242px;
   }
 `;
@@ -127,7 +127,7 @@ const HealthBadge = Badge.extend`
   position: absolute;
   top: calc(30%);
 
-  @media only screen and (min-width: ${MEDIA_QUERY_SM}px) {
+  @media only screen and (min-width: ${MEDIA_QUERY_MD}px) {
     left: calc(50% - 90px);
     top: calc(50%);
   }
@@ -143,11 +143,11 @@ const PublicSafetyWrapper = styled.div`
   top: -30px;
   width: 50%;
 
-  @media only screen and (min-width: ${MEDIA_QUERY_SM}px) {
+  @media only screen and (min-width: ${MEDIA_QUERY_MD}px) {
     top: -80px;
   }
 
-  @media only screen and (min-width: ${MEDIA_QUERY_MD}px) {
+  @media only screen and (min-width: ${MEDIA_QUERY_LG}px) {
     top: -80px;
     width: calc(50% - 250px);
   }
@@ -163,7 +163,7 @@ const PublicSafetyBadge = Badge.extend`
   position: absolute;
   top: calc(10%);
 
-  @media only screen and (min-width: ${MEDIA_QUERY_SM}px) {
+  @media only screen and (min-width: ${MEDIA_QUERY_MD}px) {
     left: calc(40%);
   }
 `;
@@ -178,11 +178,11 @@ const SocialServicesWrapper = styled.div`
   right: 0;
   width: 50%;
 
-  @media only screen and (min-width: ${MEDIA_QUERY_SM}px) {
+  @media only screen and (min-width: ${MEDIA_QUERY_MD}px) {
     bottom: 20px;
   }
 
-  @media only screen and (min-width: ${MEDIA_QUERY_MD}px) {
+  @media only screen and (min-width: ${MEDIA_QUERY_LG}px) {
     bottom: 30px;
     width: calc(50% - 200px);
   }
@@ -191,11 +191,11 @@ const SocialServicesWrapper = styled.div`
 const SocialServicesSvg = styled.svg`
   height: 60px;
 
-  @media only screen and (min-width: ${MEDIA_QUERY_SM}px) {
+  @media only screen and (min-width: ${MEDIA_QUERY_MD}px) {
     height: 70px;
   }
 
-  @media only screen and (min-width: ${MEDIA_QUERY_MD}px) {
+  @media only screen and (min-width: ${MEDIA_QUERY_LG}px) {
     height: 88px;
   }
 `;
@@ -206,12 +206,12 @@ const SocialServicesBadge = Badge.extend`
   position: absolute;
   top: calc(20%);
 
-  @media only screen and (min-width: ${MEDIA_QUERY_SM}px) {
+  @media only screen and (min-width: ${MEDIA_QUERY_MD}px) {
     left: calc(40%);
     top: calc(30%);
   }
 
-  @media only screen and (min-width: ${MEDIA_QUERY_MD}px) {
+  @media only screen and (min-width: ${MEDIA_QUERY_LG}px) {
     left: calc(50%);
   }
 `;

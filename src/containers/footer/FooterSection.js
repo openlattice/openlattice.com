@@ -10,7 +10,7 @@ import logoImg from '../../assets/images/logo-original@3x.png';
 
 import PageSection from '../../components/layout/PageSection';
 import { N1, N2 } from '../../core/style/Colors';
-import { MEDIA_QUERY_SM } from '../../core/style/Sizes';
+import { MEDIA_QUERY_MD } from '../../core/style/Sizes';
 
 /*
  * styled components
@@ -24,7 +24,7 @@ const Content = styled.div`
   margin-bottom: 22px;
   margin-top: 22px;
 
-  @media only screen and (min-width: ${MEDIA_QUERY_SM}px) {
+  @media only screen and (min-width: ${MEDIA_QUERY_MD}px) {
     flex-direction: row;
     justify-content: space-between;
   }
@@ -33,7 +33,7 @@ const Content = styled.div`
 const Logo = styled.img`
   margin: 0 0 30px 0;
 
-  @media only screen and (min-width: ${MEDIA_QUERY_SM}px) {
+  @media only screen and (min-width: ${MEDIA_QUERY_MD}px) {
     margin: 0;
   }
 `;

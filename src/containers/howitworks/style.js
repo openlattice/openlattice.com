@@ -6,7 +6,7 @@ import {
   N4
 } from '../../core/style/Colors';
 
-import { MEDIA_QUERY_SM, MEDIA_QUERY_MD } from '../../core/style/Sizes';
+import { MEDIA_QUERY_MD, MEDIA_QUERY_LG } from '../../core/style/Sizes';
 
 
 export const ContentWrapper = styled.div`
@@ -14,7 +14,7 @@ export const ContentWrapper = styled.div`
   flex-direction: column;
   width: 100%;
 
-  @media only screen and (min-width: ${MEDIA_QUERY_MD}px) {
+  @media only screen and (min-width: ${MEDIA_QUERY_LG}px) {
     flex-direction: row;
   }
 `;

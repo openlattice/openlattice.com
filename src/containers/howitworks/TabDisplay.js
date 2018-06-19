@@ -9,7 +9,7 @@ import Content04 from './Content04';
 import { TABS } from './Constants';
 
 import { PP4 } from '../../core/style/Colors';
-import { MEDIA_QUERY_SM, MEDIA_QUERY_MD } from '../../core/style/Sizes';
+import { MEDIA_QUERY_MD, MEDIA_QUERY_LG } from '../../core/style/Sizes';
 
 const Wrapper = styled.div`
   align-items: center;
@@ -38,7 +38,7 @@ const TabItem = styled.span`
     border-bottom: 5px solid ${PP4};
   }
 
-  @media only screen and (min-width: ${MEDIA_QUERY_MD}px) {
+  @media only screen and (min-width: ${MEDIA_QUERY_LG}px) {
     font-size: 16px;
   }
 `;
