@@ -7,6 +7,11 @@ export const PAGE_SECTION_MIN_WIDTH :number = 1020;
 export const WINDOW_EDGE_PADDING :number = 22;
 export const CONTENT_GRID_WIDTH :number = PAGE_SECTION_MIN_WIDTH - (WINDOW_EDGE_PADDING * 2);
 
-// Media Queries
+// Common Media Queries
 export const MEDIA_QUERY_SM :number = 768;
 export const MEDIA_QUERY_MD :number = PAGE_SECTION_MIN_WIDTH;
+
+// Jurisdictions Media Queries
+export const MEDIA_QUERY_JUR_SM :number = 530;
+export const MEDIA_QUERY_JUR_MD :number = 900;
+export const MEDIA_QUERY_JUR_LG :number = 1300;

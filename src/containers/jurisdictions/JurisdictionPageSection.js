@@ -10,7 +10,12 @@ import JurisdictionLabelSet from './JurisdictionLabelSet';
 import JurisdictionLabel from './JurisdictionLabel';
 import mapImage from '../../assets/images/map.png';
 
-import { PAGE_SECTION_MIN_WIDTH, WINDOW_EDGE_PADDING, MEDIA_QUERY_SM } from '../../core/style/Sizes';
+import {
+  PAGE_SECTION_MIN_WIDTH,
+  WINDOW_EDGE_PADDING,
+  MEDIA_QUERY_SM,
+  MEDIA_QUERY_JUR_LG
+} from '../../core/style/Sizes';
 import { N2, PP4 } from '../../core/style/Colors';
 
 import {
@@ -89,7 +94,7 @@ const PageSectionBackgroundWrapper = styled.div`
   position: absolute;
   width: 100%;
 
-  @media only screen and (min-width: 1300px) {
+  @media only screen and (min-width: ${MEDIA_QUERY_JUR_LG}px) {
     background-size: auto;
   }
 `;
@@ -101,7 +106,7 @@ const LabelSets = styled.div`
   max-width: 1300px;
   width: 100%;
 
-  @media only screen and (min-width: 1300px) {
+  @media only screen and (min-width: ${MEDIA_QUERY_JUR_LG}px) {
     display: block;
   }
 `;

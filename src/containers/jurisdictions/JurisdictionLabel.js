@@ -4,6 +4,11 @@ import PropTypes from 'prop-types';
 import styled from 'styled-components';
 
 import { N2, PP4 } from '../../core/style/Colors';
+import {
+  MEDIA_QUERY_JUR_SM,
+  MEDIA_QUERY_JUR_MD,
+  MEDIA_QUERY_JUR_LG
+} from '../../core/style/Sizes';
 
 const LabelWrapper = styled.span`
   display: flex;
@@ -12,16 +17,16 @@ const LabelWrapper = styled.span`
   font-size: 12px;
   margin: 0 10px 20px 10px;
 
-  @media only screen and (min-width: 530px) {
+  @media only screen and (min-width: ${MEDIA_QUERY_JUR_SM}px) {
     flex-basis: 10%;
     font-size: 14px;
   }
 
-  @media only screen and (min-width: 900px) {
+  @media only screen and (min-width: ${MEDIA_QUERY_JUR_MD}px) {
     flex-basis: 20%;
   }
 
-  @media only screen and (min-width: 1300px) {
+  @media only screen and (min-width: ${MEDIA_QUERY_JUR_LG}px) {
     position: absolute;
     left: ${props => `${props.x}px`};
     margin: 0;
@@ -34,7 +39,7 @@ const LocationLabel = styled.span`
   font-weight: normal;
   margin-bottom: 4px;
 
-  @media only screen and (min-width: 900px) {
+  @media only screen and (min-width: ${MEDIA_QUERY_JUR_MD}px) {
     font-weight: 600;
   }
 `;
@@ -44,7 +49,7 @@ const PopulationLabel = styled.span`
   display: none;
   font-weight: normal;
 
-  @media only screen and (min-width: 900px) {
+  @media only screen and (min-width: ${MEDIA_QUERY_JUR_MD}px) {
     display: block;
   }
 `;

@@ -9,7 +9,7 @@ import styled from 'styled-components';
 import JurisdictionPageSection from './JurisdictionPageSection';
 import JurisdictionLabel from './JurisdictionLabel';
 import StyledSectionTitle from '../../components/headers/StyledSectionTitle';
-import { MEDIA_QUERY_SM } from '../../core/style/Sizes';
+import { MEDIA_QUERY_SM, MEDIA_QUERY_JUR_SM, MEDIA_QUERY_JUR_LG } from '../../core/style/Sizes';
 import { N2, N3, PP4 } from '../../core/style/Colors';
 import { TITLE } from './Constants';
 
@@ -59,7 +59,7 @@ const Content = styled.div`
   max-width: 100%;
   text-align: center;
 
-  @media only screen and (min-width: 1300px) {
+  @media only screen and (min-width: ${MEDIA_QUERY_JUR_LG}px) {
     height: 729px;
   }
 `;
@@ -82,11 +82,11 @@ const Labels = styled.div`
   margin: 0 0 30px 0;
   width: 100%;
 
-  @media only screen and (min-width: ${MEDIA_QUERY_SM}px) {
+  @media only screen and (min-width: ${MEDIA_QUERY_JUR_SM}px) {
     margin: 30px 0 30px 0;
   }
 
-  @media only screen and (min-width: 1300px) {
+  @media only screen and (min-width: ${MEDIA_QUERY_JUR_LG}px) {
     display: none;
   }
 `;
