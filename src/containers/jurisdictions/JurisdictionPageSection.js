@@ -7,7 +7,6 @@ import React, { type Node } from 'react';
 import styled from 'styled-components';
 
 import JurisdictionLabelSet from './JurisdictionLabelSet';
-import JurisdictionLabel from './JurisdictionLabel';
 import mapImage from '../../assets/images/map.png';
 
 import {
@@ -16,7 +15,6 @@ import {
   MEDIA_QUERY_MD,
   MEDIA_QUERY_JUR_LG
 } from '../../core/style/Sizes';
-import { N2, PP4 } from '../../core/style/Colors';
 
 import {
   DANE,
@@ -126,7 +124,11 @@ type Props = {
 
 // Renders full label sets only at large browser size
 const renderLabelSets = () => (
-  jurisdictions.map((jurisdiction, i) => <JurisdictionLabelSet jurisdiction={jurisdiction} key={i} />)
+  jurisdictions.map(jurisdiction => (
+    <JurisdictionLabelSet
+        jurisdiction={jurisdiction}
+        key={jurisdiction.LOCATION} />
+  ))
 );
 
 const JurisdictionPageSection = (props :Props) => (

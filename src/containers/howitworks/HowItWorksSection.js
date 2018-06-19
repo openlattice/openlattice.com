@@ -5,7 +5,7 @@ import styled from 'styled-components';
 import PageSection from '../../components/layout/PageSection';
 import StyledSectionSubTitle from '../../components/headers/StyledSectionSubTitle';
 import StyledSectionTitle from '../../components/headers/StyledSectionTitle';
-import { MEDIA_QUERY_MD, MEDIA_QUERY_LG } from '../../core/style/Sizes';
+import { MEDIA_QUERY_LG } from '../../core/style/Sizes';
 import { TITLE, SUBTITLE } from './Constants';
 import TabDisplay from './TabDisplay';
 

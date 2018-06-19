@@ -1,4 +1,4 @@
-import React, { Fragment } from 'react';
+import React from 'react';
 
 import Image04 from '../../assets/images/04_specific_services.png';
 

@@ -1,5 +1,5 @@
 import React from 'react';
-import styled, { css } from 'styled-components';
+import styled from 'styled-components';
 
 import Content01 from './Content01';
 import Content02 from './Content02';
@@ -9,7 +9,7 @@ import Content04 from './Content04';
 import { TABS } from './Constants';
 
 import { PP4 } from '../../core/style/Colors';
-import { MEDIA_QUERY_MD, MEDIA_QUERY_LG } from '../../core/style/Sizes';
+import { MEDIA_QUERY_LG } from '../../core/style/Sizes';
 
 const Wrapper = styled.div`
   align-items: center;
@@ -98,7 +98,7 @@ class TabDisplay extends React.Component {
             { TABS[4] }
           </TabItem>
         </Navigation>
-          { this.renderContent(this.state.tab) }
+        { this.renderContent(this.state.tab) }
       </Wrapper>
     );
   }

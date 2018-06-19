@@ -1,4 +1,4 @@
-import React, { Fragment } from 'react';
+import React from 'react';
 
 import Image03 from '../../assets/images/03_establishing_data_access.png';
 

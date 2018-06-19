@@ -1,4 +1,4 @@
-import styled, { css } from 'styled-components';
+import styled from 'styled-components';
 
 import {
   N0,
@@ -6,7 +6,7 @@ import {
   N4
 } from '../../core/style/Colors';
 
-import { MEDIA_QUERY_MD, MEDIA_QUERY_LG } from '../../core/style/Sizes';
+import { MEDIA_QUERY_LG } from '../../core/style/Sizes';
 
 
 export const ContentWrapper = styled.div`

@@ -10,10 +10,10 @@ import JurisdictionPageSection from './JurisdictionPageSection';
 import JurisdictionLabel from './JurisdictionLabel';
 import StyledSectionTitle from '../../components/headers/StyledSectionTitle';
 import { MEDIA_QUERY_MD, MEDIA_QUERY_JUR_SM, MEDIA_QUERY_JUR_LG } from '../../core/style/Sizes';
-import { N2, N3, PP4 } from '../../core/style/Colors';
-import { TITLE } from './Constants';
+import { N3 } from '../../core/style/Colors';
 
 import {
+  TITLE,
   DANE,
   FRANKLIN,
   PORTLAND,
@@ -93,13 +93,14 @@ const Labels = styled.div`
 
 
 // Renders simple labels at < large browser size
-const renderLabels = () => {
-  return jurisdictions.map((jurisdiction, i) => {
-    return (
-      <JurisdictionLabel location={jurisdiction.LOCATION} population={jurisdiction.POPULATION} key={i} />
-    );
-  });
-};
+const renderLabels = () => (
+  jurisdictions.map(jurisdiction => (
+    <JurisdictionLabel
+        location={jurisdiction.LOCATION}
+        population={jurisdiction.POPULATION}
+        key={jurisdiction.LOCATION} />
+  ))
+);
 
 
 const JurisdictionSection = () => (
