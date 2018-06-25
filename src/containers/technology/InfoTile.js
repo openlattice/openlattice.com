@@ -41,11 +41,15 @@ type Props = {
   title :string;
 }
 
-const InfoTile = (props :Props) => (
+const InfoTile = ({ body, icon, title } :Props) => (
   <TileWrapper>
-    <Icon src={props.icon} />
-    <Title>{props.title}</Title>
-    <Body>{props.body}</Body>
+    <Icon src={icon} />
+    <Title>
+      { title }
+    </Title>
+    <Body>
+      { body }
+    </Body>
   </TileWrapper>
 );
 
