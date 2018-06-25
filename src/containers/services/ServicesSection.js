@@ -220,7 +220,9 @@ const SocialServicesBadge = Badge.extend`
 
 const Health = () => (
   <HealthWrapper>
-    <HealthBadge>HEALTHCARE</HealthBadge>
+    <HealthBadge>
+      HEALTHCARE
+    </HealthBadge>
     <HealthSvg
         xmlns="http://www.w3.org/2000/svg"
         preserveAspectRatio="none"
@@ -241,7 +243,9 @@ const Health = () => (
 
 const PublicSafety = () => (
   <PublicSafetyWrapper>
-    <PublicSafetyBadge>PUBLIC SAFETY</PublicSafetyBadge>
+    <PublicSafetyBadge>
+      PUBLIC SAFETY
+    </PublicSafetyBadge>
     <PublicSafetySvg
         xmlns="http://www.w3.org/2000/svg"
         preserveAspectRatio="none"
@@ -259,7 +263,9 @@ const PublicSafety = () => (
 
 const SocialServices = () => (
   <SocialServicesWrapper>
-    <SocialServicesBadge>SOCIAL SERVICES</SocialServicesBadge>
+    <SocialServicesBadge>
+      SOCIAL SERVICES
+    </SocialServicesBadge>
     <SocialServicesSvg
         xmlns="http://www.w3.org/2000/svg"
         preserveAspectRatio="none"
@@ -279,7 +285,9 @@ const IntroSection = () => (
   <Fragment>
     <PageSection bgColor={N1}>
       <Content>
-        <StyledSectionTitle>Understand how services are delivered and consumed</StyledSectionTitle>
+        <StyledSectionTitle>
+          Understand how services are delivered and consumed
+        </StyledSectionTitle>
         <StyledSectionSubTitle>
           {
             `Leverage data across public safety, healthcare systems, and social services to streamline operations,

@@ -14,8 +14,14 @@ import ConnectCTA from './ConnectCTA';
 import PageSection from '../../components/layout/PageSection';
 import StyledSectionSubTitle from '../../components/headers/StyledSectionSubTitle';
 import StyledSectionTitle from '../../components/headers/StyledSectionTitle';
-import { N1, PK0, PP4, PP5 } from '../../core/style/Colors';
 import { MEDIA_QUERY_SM } from '../../core/style/Sizes';
+
+import {
+  N1,
+  PK0,
+  PP4,
+  PP5
+} from '../../core/style/Colors';
 
 /*
  * constants
@@ -81,8 +87,12 @@ const ConnectSection = () => (
     <Content>
       <LeftWrapper>
         <img src={handshakeIcon} alt="handshake icon" />
-        <Title>{'Let\'s work together.'}</Title>
-        <SubTitle>Have a project in mind or want to learn more?</SubTitle>
+        <Title>
+          {'Let\'s work together.'}
+        </Title>
+        <SubTitle>
+          Have a project in mind or want to learn more?
+        </SubTitle>
       </LeftWrapper>
       <RightWrapper>
         <ConnectCTA

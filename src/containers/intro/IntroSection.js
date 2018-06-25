@@ -33,6 +33,7 @@ const Content = styled.div`
   @media only screen and (min-width: ${MEDIA_QUERY_SM}px) {
     max-width: 60%;
   }
+
   @media only screen and (min-width: ${MEDIA_QUERY_MD}px) {
     margin: 210px auto 211px auto;
   }
@@ -87,8 +88,12 @@ const IntroSection = () => (
       <img src={logoImg} alt="OpenLattice Logo" height={50} />
     </Header>
     <Content>
-      <Title>Modern data infrastructure for core societal institutions</Title>
-      <SubTitle>Foundational tools to better serve all citizens</SubTitle>
+      <Title>
+        Modern data infrastructure for core societal institutions
+      </Title>
+      <SubTitle>
+        Foundational tools to better serve all citizens
+      </SubTitle>
       <ScheduleLink href="https://calendly.com/openlattice/openlattice-website-request">
         Schedule a call to learn more
       </ScheduleLink>

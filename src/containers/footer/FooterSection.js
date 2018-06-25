@@ -46,7 +46,9 @@ const FooterSection = () => (
   <PageSection bgColor={N1}>
     <Content>
       <Logo src={logoImg} alt="OpenLattice Logo" height={50} />
-      <Copyright>Copyright © 2018 OpenLattice</Copyright>
+      <Copyright>
+        Copyright © 2018 OpenLattice
+      </Copyright>
     </Content>
   </PageSection>
 );
