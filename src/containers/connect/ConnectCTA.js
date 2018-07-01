@@ -31,7 +31,7 @@ const CTAWrapper = styled.div`
   font-size: 15px;
   height: 45px;
   justify-content: center;
-  line-height: 18px;
+  line-height: 20px;
   margin: 0 0 30px 0;
 
   @media only screen and (min-width: ${MEDIA_QUERY_LG}px) {

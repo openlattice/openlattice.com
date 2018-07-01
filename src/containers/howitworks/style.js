@@ -23,7 +23,7 @@ export const ContentWrapper = styled.div`
 export const Body = styled.div`
   color: ${N4};
   font-size: 16px;
-  line-height: 1.4;
+  line-height: 22px;
   margin-bottom: 20px;
 `;
 
@@ -40,20 +40,21 @@ export const ListItemNumber = styled.div`
   color: ${N2};
   font-size: 18px;
   font-weight: 600;
+  line-height: 24px;
   margin-right: 10px;
 `;
 
 export const ListItemText = styled.span`
   color: ${N2};
   font-size: 14px;
-  line-height: 1.4;
+  line-height: 19px;
 `;
 
 export const ListItemLink = styled.a`
   color: ${PP4}
   cursor: pointer;
   font-size: 14px;
-  line-height: 1.4;
+  line-height: 19px;
   text-decoration: none;
 
   &:visited {
@@ -65,7 +66,7 @@ export const ListItemTitle = styled.div`
   color: ${N2};
   font-size: 14px;
   font-weight: 600;
-  line-height: 1.4;
+  line-height: 19px;
 `;
 
 export const SectionItem = styled.div`

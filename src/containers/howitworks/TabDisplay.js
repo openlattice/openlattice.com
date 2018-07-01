@@ -25,21 +25,24 @@ const Navigation = styled.div`
 `;
 
 const TabItem = styled.span`
-  border-bottom: 5px solid #b4add1;
+  border-bottom: 2px solid #b4add1;
   color: #b4add1;
   cursor: pointer;
-  font-size: 12px;
+  font-family: Chivo;
+  font-size: 16px;
+  line-height: 1.2;
   padding: 10px 4px;
   text-align: center;
   width: 25%;
 
   &:hover, &.active {
     color: ${PP4};
-    border-bottom: 5px solid ${PP4};
+    border-bottom: 2px solid ${PP4};
   }
 
   @media only screen and (min-width: ${MEDIA_QUERY_LG}px) {
     font-size: 16px;
+    line-height: 22px;
   }
 `;
 

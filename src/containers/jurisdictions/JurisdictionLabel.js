@@ -15,11 +15,13 @@ const LabelWrapper = styled.span`
   flex-basis: 4%;
   flex-direction: column;
   font-size: 12px;
+  line-height: 17px;
   margin: 0 10px 20px 10px;
 
   @media only screen and (min-width: ${MEDIA_QUERY_JUR_SM}px) {
     flex-basis: 10%;
     font-size: 14px;
+    line-height: 19px;
   }
 
   @media only screen and (min-width: ${MEDIA_QUERY_JUR_MD}px) {

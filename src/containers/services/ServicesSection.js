@@ -78,13 +78,14 @@ const Badge = styled.div`
   color: ${N1};
   display: inline;
   font-size: 12px;
-  line-height: 1;
+  line-height: 17px;
   font-weight: 500;
   padding: 5px 8px;
   z-index: 2000;
 
   @media only screen and (min-width: ${MEDIA_QUERY_MD}px) {
     font-size: 14px;
+    line-height: 19px;
     padding: 6px 10px;
   }
 `;

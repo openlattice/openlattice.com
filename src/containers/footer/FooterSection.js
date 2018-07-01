@@ -40,6 +40,7 @@ const Logo = styled.img`
 
 const Copyright = styled.span`
   font-size: 14px;
+  line-height: 1.35;
 `;
 
 const FooterSection = () => (

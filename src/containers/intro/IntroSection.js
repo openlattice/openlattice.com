@@ -52,6 +52,7 @@ const Title = StyledSectionTitle.extend`
 const SubTitle = StyledSectionSubTitle.extend`
   color: ${N0};
   font-size: 20px;
+  line-height: 27px;
   margin-bottom: 60px;
 
   @media only screen and (min-width: ${MEDIA_QUERY_MD}px) {

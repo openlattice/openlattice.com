@@ -33,6 +33,7 @@ const Icon = styled.img`
 const Body = styled.span`
   color: ${N2};
   font-size: 14px;
+  line-height: 19px;
 `;
 
 type Props = {
