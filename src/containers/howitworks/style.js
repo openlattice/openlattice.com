@@ -3,7 +3,8 @@ import styled from 'styled-components';
 import {
   N0,
   N2,
-  N4
+  N4,
+  PP4
 } from '../../core/style/Colors';
 
 import { MEDIA_QUERY_LG } from '../../core/style/Sizes';
@@ -42,14 +43,29 @@ export const ListItemNumber = styled.div`
   margin-right: 10px;
 `;
 
-export const ListItemText = styled.div`
+export const ListItemText = styled.span`
   color: ${N2};
   font-size: 14px;
   line-height: 1.4;
 `;
 
-export const ListItemTitle = ListItemText.extend`
+export const ListItemLink = styled.a`
+  color: ${PP4}
+  cursor: pointer;
+  font-size: 14px;
+  line-height: 1.4;
+  text-decoration: none;
+
+  &:visited {
+    color: ${PP4};
+  }
+`;
+
+export const ListItemTitle = styled.div`
+  color: ${N2};
+  font-size: 14px;
   font-weight: 600;
+  line-height: 1.4;
 `;
 
 export const SectionItem = styled.div`

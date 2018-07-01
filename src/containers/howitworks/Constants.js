@@ -54,20 +54,15 @@ export const CONTENT_02 = {
 
   LIST_ITEM_02: {
     TITLE: 'Spokes',
-    TEXT: 'BAA for HIPAA covered entities'
+    BAA_LINK: 'https://www.hhs.gov/hipaa/for-professionals/covered-entities/sample-business-associate-agreement-provisions/index.html',
+    HIPAA_LINK: 'https://www.hhs.gov/hipaa/for-professionals/index.html',
+    QSOA_LINK: 'https://www.samhsa.gov/sites/default/files/faqs-applying-confidentiality-regulations-to-hie.pdf',
+    CFR_LINK: 'https://www.samhsa.gov/health-information-technology/laws-regulations-guidelines',
+    CJIS_LINK: 'https://www.fbi.gov/services/cjis/cjis-security-policy-resource-center/view',
+    FERPA_LINK: 'https://www2.ed.gov/policy/gen/guid/fpco/ferpa/index.html'
   },
 
   LIST_ITEM_03: {
-    TITLE: 'BAA + QSOA for 42 CFR Part 2 covered providers',
-    TEXT: 'CJIS for Criminal Justice data'
-  },
-
-  LIST_ITEM_04: {
-    TITLE: 'FERPA for student data',
-    TEXT: 'Standard OpenLattice Terms of Service for other organizations'
-  },
-
-  LIST_ITEM_05: {
     TITLE: 'Wheel',
     TEXT: `An agreement governs data use across entire collaborative. The OpenLattice platform is the 
       mechanism for implementing agreement.`
