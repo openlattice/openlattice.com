@@ -13,6 +13,7 @@ import { MEDIA_QUERY_LG } from '../../core/style/Sizes';
 export const ContentWrapper = styled.div`
   display: flex;
   flex-direction: column;
+  margin-top: 40px;
   width: 100%;
 
   @media only screen and (min-width: ${MEDIA_QUERY_LG}px) {
