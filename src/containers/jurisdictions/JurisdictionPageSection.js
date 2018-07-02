@@ -2,7 +2,8 @@
  * @flow
  */
 
-import React, { type Node } from 'react';
+import React from 'react';
+import PropTypes from 'prop-types';
 
 import styled from 'styled-components';
 
@@ -111,14 +112,6 @@ const LabelSets = styled.div`
 
 
 /*
- * types
- */
-
-type Props = {
-  children :Node;
-}
-
-/*
  * components
  */
 
@@ -131,7 +124,7 @@ const renderLabelSets = () => (
   ))
 );
 
-const JurisdictionPageSection = (props :Props) => (
+const JurisdictionPageSection = ({ children }) => (
   <PageSectionOuterWrapper>
     <PageSectionBackgroundWrapper>
       <LabelSets>
@@ -139,9 +132,13 @@ const JurisdictionPageSection = (props :Props) => (
       </LabelSets>
     </PageSectionBackgroundWrapper>
     <PageSectionInnerWrapper>
-      { props.children }
+      { children }
     </PageSectionInnerWrapper>
   </PageSectionOuterWrapper>
 );
+
+JurisdictionPageSection.propTypes = {
+  children: PropTypes.node.isRequired
+};
 
 export default JurisdictionPageSection;

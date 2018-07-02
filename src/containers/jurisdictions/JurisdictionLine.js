@@ -6,9 +6,9 @@ import styled from 'styled-components';
 import { PP4 } from '../../core/style/Colors';
 
 const Line = styled.svg`
-  left: ${props => props.x || null}px;
+  left: ${({ x }) => x || null}px;
   position: absolute;
-  top: ${props => props.y || null}px;
+  top: ${({ y }) => y || null}px;
 `;
 
 

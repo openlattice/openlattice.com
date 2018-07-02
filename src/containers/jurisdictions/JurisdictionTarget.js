@@ -6,9 +6,9 @@ import styled from 'styled-components';
 import { N0, PP4 } from '../../core/style/Colors';
 
 const TargetSVG = styled.svg`
-  left: ${props => `${props.x}px` || null};
+  left: ${({ x }) => `${x}px` || null};
   position: absolute;
-  top: ${props => `${props.y}px` || null};
+  top: ${({ y }) => `${y}px` || null};
 `;
 
 const JurisdictionTarget = ({

@@ -40,75 +40,75 @@ const Content02 = () => (
         </ListItemTitle>
         <div>
           <ListItemLink
-              href={ CONTENT_02.LIST_ITEM_02.BAA_LINK }
+              href={CONTENT_02.LIST_ITEM_02.BAA_LINK}
               target="_blank">
-            { `BAA` }
+            { 'BAA' }
           </ListItemLink>
           <ListItemText>
-            { ` for ` }
+            { ' for ' }
           </ListItemText>
           <ListItemLink
-              href={ CONTENT_02.LIST_ITEM_02.HIPAA_LINK }
+              href={CONTENT_02.LIST_ITEM_02.HIPAA_LINK}
               target="_blank">
-            { `HIPAA` }
+            { 'HIPAA' }
           </ListItemLink>
           <ListItemText>
-            { ` covered entities` }
+            { ' covered entities' }
           </ListItemText>
         </div>
         <div>
           <ListItemText>
-            { `BAA + ` }
+            { 'BAA + ' }
           </ListItemText>
           <ListItemLink
-              href={ CONTENT_02.LIST_ITEM_02.QSOA_LINK }
+              href={CONTENT_02.LIST_ITEM_02.QSOA_LINK}
               target="_blank">
-              { `QSOA` }
+            { 'QSOA' }
           </ListItemLink>
           <ListItemText>
-            { ` for ` }
+            { ' for ' }
           </ListItemText>
           <ListItemLink
-              href={ CONTENT_02.LIST_ITEM_02.CFR_LINK }
+              href={CONTENT_02.LIST_ITEM_02.CFR_LINK}
               target="_blank">
-            { `42 CFR Part 2` }
+            { '42 CFR Part 2' }
           </ListItemLink>
           <ListItemText>
-            { ` covered providers` }
+            { ' covered providers' }
           </ListItemText>
         </div>
         <div>
           <ListItemLink
-              href={ CONTENT_02.LIST_ITEM_02.CJIS_LINK }
+              href={CONTENT_02.LIST_ITEM_02.CJIS_LINK}
               target="_blank">
-            { `CJIS` }
+            { 'CJIS' }
           </ListItemLink>
           <ListItemText>
-            { ` for Criminal Justice data`}
+            { ' for Criminal Justice data' }
           </ListItemText>
         </div>
         <div>
           <ListItemLink
-              href={ CONTENT_02.LIST_ITEM_02.FERPA_LINK }
+              href={CONTENT_02.LIST_ITEM_02.FERPA_LINK}
               target="_blank">
-            { `FERPA` }
+            { 'FERPA' }
           </ListItemLink>
           <ListItemText>
-            { ` for student data` }
+            { ' for student data' }
           </ListItemText>
         </div>
         <div>
           <ListItemText>
-            { `Standard OpenLattice Terms of Service for other organizations` }
+            { 'Standard OpenLattice Terms of Service for other organizations' }
           </ListItemText>
         </div>
       </SectionItem>
       <SectionItem>
         <ListItemTitle>
-          { CONTENT_02.LIST_ITEM_03.TITLE }
+          {CONTENT_02.LIST_ITEM_03.TITLE}
         </ListItemTitle>
         <ListItemText>
-          { CONTENT_02.LIST_ITEM_03.TEXT }
+          {CONTENT_02.LIST_ITEM_03.TEXT}
         </ListItemText>
       </SectionItem>
     </ContentRight>

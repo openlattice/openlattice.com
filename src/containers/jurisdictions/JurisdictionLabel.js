@@ -31,9 +31,9 @@ const LabelWrapper = styled.span`
 
   @media only screen and (min-width: ${MEDIA_QUERY_JUR_LG}px) {
     position: absolute;
-    left: ${props => props.x ? `${props.x}px` : 0};
+    left: ${({ x }) => (x ? `${x}px` : 0)};
     margin: 0;
-    top: ${props => props.y ? `${props.y}px` : 0};
+    top: ${({ y }) => (y ? `${y}px` : 0)};
   }
 `;
 

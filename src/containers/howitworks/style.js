@@ -7,7 +7,7 @@ import {
   PP4
 } from '../../core/style/Colors';
 
-import { MEDIA_QUERY_JUR_SM, MEDIA_QUERY_MD, MEDIA_QUERY_LG } from '../../core/style/Sizes';
+import { MEDIA_QUERY_JUR_SM, MEDIA_QUERY_LG } from '../../core/style/Sizes';
 
 
 export const ContentWrapper = styled.div`
@@ -88,7 +88,7 @@ export const ListItemText = styled.span`
 `;
 
 export const ListItemLink = styled.a`
-  color: ${PP4}
+  color: ${PP4};
   cursor: pointer;
   font-size: 14px;
   line-height: 19px;

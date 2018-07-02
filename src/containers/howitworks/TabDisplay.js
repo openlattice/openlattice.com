@@ -28,14 +28,15 @@ const TabItem = styled.span`
   border-bottom: 2px solid #b4add1;
   color: #b4add1;
   cursor: pointer;
-  font-family: Chivo;
+  font-family: Chivo, sans-serif;
   font-size: 12px;
   line-height: 1.2;
   padding: 10px 4px;
   text-align: center;
   width: 25%;
 
-  &:hover, &.active {
+  &:hover,
+  &.active {
     color: ${PP4};
     border-bottom: 2px solid ${PP4};
   }
@@ -55,17 +56,18 @@ class TabDisplay extends React.Component {
     super(props);
 
     this.state = {
-      tab: 1
+      selectedTab: 1
     };
   }
 
   handleTabClick = (e) => {
-    const tab = parseInt(e.target.dataset.name, 10);
-    this.setState({ tab });
+    const selectedTab = parseInt(e.target.dataset.name, 10);
+    this.setState({ selectedTab });
   }
 
   getActiveStatus = (tab) => {
-    if (this.state.tab === tab) {
+    const { selectedTab } = this.state;
+    if (selectedTab === tab) {
       return 'active';
     }
 
@@ -88,6 +90,7 @@ class TabDisplay extends React.Component {
   }
 
   render() {
+    const { selectedTab } = this.state;
     return (
       <Wrapper>
         <Navigation>
@@ -104,7 +107,7 @@ class TabDisplay extends React.Component {
             { TABS[4] }
           </TabItem>
         </Navigation>
-        { this.renderContent(this.state.tab) }
+        { this.renderContent(selectedTab) }
       </Wrapper>
     );
   }
