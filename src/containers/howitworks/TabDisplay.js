@@ -9,7 +9,7 @@ import Content04 from './Content04';
 import { TABS } from './Constants';
 
 import { PP4 } from '../../core/style/Colors';
-import { MEDIA_QUERY_LG } from '../../core/style/Sizes';
+import { MEDIA_QUERY_JUR_SM, MEDIA_QUERY_LG } from '../../core/style/Sizes';
 
 const Wrapper = styled.div`
   align-items: center;
@@ -29,7 +29,7 @@ const TabItem = styled.span`
   color: #b4add1;
   cursor: pointer;
   font-family: Chivo;
-  font-size: 16px;
+  font-size: 12px;
   line-height: 1.2;
   padding: 10px 4px;
   text-align: center;
@@ -40,8 +40,11 @@ const TabItem = styled.span`
     border-bottom: 2px solid ${PP4};
   }
 
-  @media only screen and (min-width: ${MEDIA_QUERY_LG}px) {
+  @media only screen and (min-width: ${MEDIA_QUERY_JUR_SM}px) {
     font-size: 16px;
+  }
+
+  @media only screen and (min-width: ${MEDIA_QUERY_LG}px) {
     line-height: 22px;
   }
 `;
