@@ -7,7 +7,7 @@ import {
   PP4
 } from '../../core/style/Colors';
 
-import { MEDIA_QUERY_LG } from '../../core/style/Sizes';
+import { MEDIA_QUERY_MD, MEDIA_QUERY_LG } from '../../core/style/Sizes';
 
 
 export const ContentWrapper = styled.div`
@@ -18,6 +18,40 @@ export const ContentWrapper = styled.div`
 
   @media only screen and (min-width: ${MEDIA_QUERY_LG}px) {
     flex-direction: row;
+  }
+`;
+
+
+export const ContentLeft = styled.img`
+  width: 100%;
+  height: auto;
+
+  @media only screen and (min-width: 530px) {
+    width: auto;
+    height: auto;
+    margin: auto;
+    padding: 0 calc((100% - 435px) / 2) 0 calc((100% - 435px) / 2);
+    background: white;
+  }
+
+  @media only screen and (min-width: ${MEDIA_QUERY_LG}px) {
+    width: auto;
+    height: auto;
+    padding: 0;
+    background: none;
+  }
+`;
+
+export const ContentRight = styled.div`
+  background: ${N0};
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  padding: 50px;
+  width: 100%;
+
+  @media only screen and (min-width: ${MEDIA_QUERY_LG}px) {
+    height: 602px;
   }
 `;
 
@@ -72,18 +106,4 @@ export const ListItemTitle = styled.div`
 
 export const SectionItem = styled.div`
   margin-bottom: 30px;
-`;
-
-export const ContentLeft = styled.img`
-  width: 100%;
-  height: auto;
-`;
-
-export const ContentRight = styled.div`
-  background: ${N0};
-  display: flex;
-  flex-direction: column;
-  height: 100%;
-  padding: 50px;
-  width: 100%;
 `;
