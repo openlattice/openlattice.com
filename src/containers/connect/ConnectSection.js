@@ -81,8 +81,12 @@ const ConnectSection = () => (
     <Content>
       <LeftWrapper>
         <img src={handshakeIcon} alt="handshake icon" />
-        <Title>{'Let\'s work together.'}</Title>
-        <SubTitle>Have a project in mind or want to learn more?</SubTitle>
+        <Title>
+          {'Let\'s work together.'}
+        </Title>
+        <SubTitle>
+          Have a project in mind or want to learn more?
+        </SubTitle>
       </LeftWrapper>
       <RightWrapper>
         <ConnectCTA

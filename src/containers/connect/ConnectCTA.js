@@ -12,10 +12,10 @@ import { MEDIA_QUERY_LG, MEDIA_QUERY_MD } from '../../core/style/Sizes';
 /*
  * styled components
  */
-const bgColorMixin = (props) => {
-  if (props.bgColor) {
+const bgColorMixin = ({ bgColor }) => {
+  if (bgColor) {
     return css`
-      background-color: ${props.bgColor};
+      background-color: ${bgColor};
     `;
   }
   return css`
@@ -97,14 +97,24 @@ type Props = {
  * components
  */
 
-const ConnectCTA = (props :Props) => (
+const ConnectCTA = ({
+  bgColor,
+  copyLeft,
+  copyRight,
+  icon,
+  target
+} :Props) => (
   <CTAWrapper>
     <LeftWrapper>
-      <Icon src={props.icon} alt="icon" />
-      <span>{props.copyLeft}</span>
+      <Icon src={icon} alt="icon" />
+      <span>
+        { copyLeft }
+      </span>
     </LeftWrapper>
-    <RightWrapper bgColor={props.bgColor}>
-      <ActionLink href={props.target}>{ props.copyRight }</ActionLink>
+    <RightWrapper bgColor={bgColor}>
+      <ActionLink href={target}>
+        { copyRight }
+      </ActionLink>
     </RightWrapper>
   </CTAWrapper>
 );

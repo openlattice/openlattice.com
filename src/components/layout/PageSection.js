@@ -12,18 +12,18 @@ import { PAGE_SECTION_MIN_WIDTH, WINDOW_EDGE_PADDING, MEDIA_QUERY_MD } from '../
  * styled components
  */
 
-const bgImageMixin = (props) => {
-  if (props.bgImage) {
+const bgImageMixin = ({ bgColor, bgImage }) => {
+  if (bgImage) {
     return css`
-      background-image: url(${props.bgImage});
+      background-image: url(${bgImage});
       background-position: center;
       background-repeat: no-repeat;
       background-size: cover;
     `;
   }
-  else if (props.bgColor) {
+  if (bgColor) {
     return css`
-      background-color: ${props.bgColor};
+      background-color: ${bgColor};
     `;
   }
   return css`
@@ -76,13 +76,18 @@ type Props = {
  * components
  */
 
-const PageSection = (props :Props) => (
+const PageSection = ({
+  bgColor,
+  bgComponent,
+  bgImage,
+  children
+} :Props) => (
   <PageSectionOuterWrapper>
-    <PageSectionBackgroundWrapper bgColor={props.bgColor} bgImage={props.bgImage}>
-      { props.bgComponent }
+    <PageSectionBackgroundWrapper bgColor={bgColor} bgImage={bgImage}>
+      { bgComponent }
     </PageSectionBackgroundWrapper>
     <PageSectionInnerWrapper>
-      { props.children }
+      { children }
     </PageSectionInnerWrapper>
   </PageSectionOuterWrapper>
 );

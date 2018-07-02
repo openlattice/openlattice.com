@@ -41,10 +41,12 @@ type Props = {
   icon :string;
 }
 
-const FooterTile = (props :Props) => (
+const FooterTile = ({ body, icon } :Props) => (
   <TileWrapper>
-    <Icon src={props.icon} />
-    <Body>{props.body}</Body>
+    <Icon src={icon} />
+    <Body>
+      { body }
+    </Body>
   </TileWrapper>
 );
 

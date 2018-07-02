@@ -59,7 +59,9 @@ const TechnologySection = () => (
   <PageSection>
     <Content>
       <SectionHeaderWrapper>
-        <StyledSectionTitle>Our Technology</StyledSectionTitle>
+        <StyledSectionTitle>
+          Our Technology
+        </StyledSectionTitle>
         <StyledSectionSubTitle>
           Our no-cost tier of core services helps address the most common challenges in cross-sector data partnerships.
         </StyledSectionSubTitle>
