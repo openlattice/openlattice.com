@@ -85,7 +85,7 @@ const PageSectionBackgroundWrapper = styled.div`
   background-image: url(${mapImage});
   background-position: center;
   background-repeat: no-repeat;
-  background-size: 900px;
+  background-size: 1100px;
   height: 100%;
   display: flex;
   justify-content: center;

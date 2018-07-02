@@ -54,7 +54,7 @@ const Content = styled.div`
   color: #fff;
   display: flex;
   flex-direction: column;
-  height: 446.5px;
+  height: 598.4px;
   margin: 120px 0 0 0;
   max-width: 100%;
   text-align: center;

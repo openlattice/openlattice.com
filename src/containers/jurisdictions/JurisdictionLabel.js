@@ -17,6 +17,7 @@ const LabelWrapper = styled.span`
   font-size: 12px;
   line-height: 17px;
   margin: 0 10px 20px 10px;
+  padding-bottom: 30px;
 
   @media only screen and (min-width: ${MEDIA_QUERY_JUR_SM}px) {
     flex-basis: 10%;
@@ -38,22 +39,13 @@ const LabelWrapper = styled.span`
 
 const LocationLabel = styled.span`
   color: ${PP4};
-  font-weight: normal;
+  font-weight: 600;
   margin-bottom: 4px;
-
-  @media only screen and (min-width: ${MEDIA_QUERY_JUR_MD}px) {
-    font-weight: 600;
-  }
 `;
 
 const PopulationLabel = styled.span`
   color: ${N2};
-  display: none;
   font-weight: normal;
-
-  @media only screen and (min-width: ${MEDIA_QUERY_JUR_MD}px) {
-    display: block;
-  }
 `;
 
 
