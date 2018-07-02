@@ -1,6 +1,6 @@
 import React from 'react';
 
-import Image03 from '../../assets/images/03_establishing_data_access.png';
+import DataAccessImage from '../../assets/images/03_establishing_data_access.png';
 
 import { CONTENT_03 } from './Constants';
 
@@ -18,7 +18,7 @@ import {
 
 const Content03 = () => (
   <ContentWrapper>
-    <ContentLeft src={Image03} />
+    <ContentLeft src={DataAccessImage} />
     <ContentRight>
       <BodyWrapper>
         <Body>

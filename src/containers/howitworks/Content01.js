@@ -1,6 +1,6 @@
 import React from 'react';
 
-import Image01 from '../../assets/images/01_problem_definition.png';
+import ProblemDefinitionImage from '../../assets/images/01_problem_definition.png';
 
 import { CONTENT_01 } from './Constants';
 
@@ -18,7 +18,7 @@ import {
 
 const Content01 = () => (
   <ContentWrapper>
-    <ContentLeft src={Image01} />
+    <ContentLeft src={ProblemDefinitionImage} />
     <ContentRight>
       <BodyWrapper>
         <Body>

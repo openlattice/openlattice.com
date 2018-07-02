@@ -1,6 +1,6 @@
 import React from 'react';
 
-import Image02 from '../../assets/images/02_data_sharing_agreements.png';
+import DataSharingImage from '../../assets/images/02_data_sharing_agreements.png';
 
 import { CONTENT_02 } from './Constants';
 
@@ -19,7 +19,7 @@ import {
 
 const Content02 = () => (
   <ContentWrapper>
-    <ContentLeft src={Image02} />
+    <ContentLeft src={DataSharingImage} />
     <ContentRight>
       <BodyWrapper>
         <Body>
