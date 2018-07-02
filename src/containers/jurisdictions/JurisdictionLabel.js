@@ -17,7 +17,7 @@ const LabelWrapper = styled.span`
   font-size: 12px;
   line-height: 17px;
   margin: 0 10px 20px 10px;
-  padding-bottom: 30px;
+  padding-bottom: 20px;
 
   @media only screen and (min-width: ${MEDIA_QUERY_JUR_SM}px) {
     flex-basis: 10%;
