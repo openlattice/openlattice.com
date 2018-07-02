@@ -7,7 +7,7 @@ import {
   PP4
 } from '../../core/style/Colors';
 
-import { MEDIA_QUERY_MD, MEDIA_QUERY_LG } from '../../core/style/Sizes';
+import { MEDIA_QUERY_JUR_SM, MEDIA_QUERY_MD, MEDIA_QUERY_LG } from '../../core/style/Sizes';
 
 
 export const ContentWrapper = styled.div`
@@ -16,22 +16,24 @@ export const ContentWrapper = styled.div`
   margin-top: 40px;
   width: 100%;
 
+  @media only screen and (min-width: ${MEDIA_QUERY_JUR_SM}px) {
+    background: white;
+  }
+
   @media only screen and (min-width: ${MEDIA_QUERY_LG}px) {
     flex-direction: row;
   }
 `;
 
-
 export const ContentLeft = styled.img`
   width: 100%;
   height: auto;
 
-  @media only screen and (min-width: 530px) {
+  @media only screen and (min-width: ${MEDIA_QUERY_JUR_SM}px) {
     width: auto;
     height: auto;
     margin: auto;
-    padding: 0 calc((100% - 435px) / 2) 0 calc((100% - 435px) / 2);
-    background: white;
+    padding-top: 50px;
   }
 
   @media only screen and (min-width: ${MEDIA_QUERY_LG}px) {
