@@ -13,7 +13,7 @@ import {
   ListItem,
   ListItemNumber,
   ListItemText
-} from './style';
+} from './Style';
 
 
 const Content04 = () => (

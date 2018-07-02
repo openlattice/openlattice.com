@@ -13,7 +13,7 @@ import {
   ListItemText,
   SectionItem,
   ListItemTitle
-} from './style';
+} from './Style';
 
 
 const Content03 = () => (

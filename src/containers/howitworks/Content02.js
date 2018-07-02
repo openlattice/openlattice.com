@@ -14,7 +14,7 @@ import {
   ListItemLink,
   SectionItem,
   ListItemTitle
-} from './style';
+} from './Style';
 
 
 const Content02 = () => (
