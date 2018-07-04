@@ -25,6 +25,7 @@ const Icon = styled.img`
 const Title = styled.div`
   color: ${N4};
   font-size: 20px;
+  line-height: 24px;
   margin-bottom: 15px;
   top: 88px;
 `;
@@ -32,6 +33,7 @@ const Title = styled.div`
 const Body = styled.div`
   color: ${N2};
   font-size: 14px;
+  line-height: 19px;
   top: 151px;
 `;
 

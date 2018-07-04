@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import { MEDIA_QUERY_SM } from '../../core/style/Sizes';
+import { MEDIA_QUERY_MD } from '../../core/style/Sizes';
 import { N4 } from '../../core/style/Colors';
 
 const StyledSectionTitle = styled.h1`
@@ -7,11 +7,12 @@ const StyledSectionTitle = styled.h1`
   font-family: 'Chivo', sans-serif;
   font-size: 32px;
   font-weight: normal;
+  line-height: 1.2;
   margin-bottom: 30px;
   margin-top: 0;
   text-align: center;
 
-  @media only screen and (min-width: ${MEDIA_QUERY_SM}px) {
+  @media only screen and (min-width: ${MEDIA_QUERY_MD}px) {
     text-align: left;
   }
 `;

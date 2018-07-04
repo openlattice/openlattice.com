@@ -7,7 +7,7 @@ import React from 'react';
 import styled from 'styled-components';
 
 import { N2, PP0 } from '../../core/style/Colors';
-import { MEDIA_QUERY_MD } from '../../core/style/Sizes';
+import { MEDIA_QUERY_LG } from '../../core/style/Sizes';
 
 
 const TileWrapper = styled.div`
@@ -21,7 +21,7 @@ const TileWrapper = styled.div`
   width: 300px;
   padding: 40px;
 
-  @media only screen and (min-width: ${MEDIA_QUERY_MD}px) {
+  @media only screen and (min-width: ${MEDIA_QUERY_LG}px) {
     width: 465px;
   }
 `;
@@ -33,6 +33,7 @@ const Icon = styled.img`
 const Body = styled.span`
   color: ${N2};
   font-size: 14px;
+  line-height: 19px;
 `;
 
 type Props = {

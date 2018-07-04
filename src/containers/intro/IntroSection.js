@@ -13,7 +13,7 @@ import PageSection from '../../components/layout/PageSection';
 import StyledSectionSubTitle from '../../components/headers/StyledSectionSubTitle';
 import StyledSectionTitle from '../../components/headers/StyledSectionTitle';
 import { N0, PK0 } from '../../core/style/Colors';
-import { WINDOW_EDGE_PADDING, MEDIA_QUERY_SM, MEDIA_QUERY_MD } from '../../core/style/Sizes';
+import { WINDOW_EDGE_PADDING, MEDIA_QUERY_MD, MEDIA_QUERY_LG } from '../../core/style/Sizes';
 
 const Header = styled.div`
   display: flex;
@@ -30,11 +30,11 @@ const Content = styled.div`
   max-width: 100%;
   text-align: center;
 
-  @media only screen and (min-width: ${MEDIA_QUERY_SM}px) {
+  @media only screen and (min-width: ${MEDIA_QUERY_MD}px) {
     max-width: 60%;
   }
 
-  @media only screen and (min-width: ${MEDIA_QUERY_MD}px) {
+  @media only screen and (min-width: ${MEDIA_QUERY_LG}px) {
     margin: 210px auto 211px auto;
   }
 `;
@@ -45,7 +45,7 @@ const Title = StyledSectionTitle.extend`
   margin-bottom: 20px;
   text-align: center;
 
-  @media only screen and (min-width: ${MEDIA_QUERY_SM}px) {
+  @media only screen and (min-width: ${MEDIA_QUERY_MD}px) {
     text-align: center;
   }
 `;
@@ -53,9 +53,10 @@ const Title = StyledSectionTitle.extend`
 const SubTitle = StyledSectionSubTitle.extend`
   color: ${N0};
   font-size: 20px;
+  line-height: 27px;
   margin-bottom: 60px;
 
-  @media only screen and (min-width: ${MEDIA_QUERY_SM}px) {
+  @media only screen and (min-width: ${MEDIA_QUERY_MD}px) {
     text-align: center;
   }
 `;

@@ -7,7 +7,7 @@ import React from 'react';
 import styled, { css } from 'styled-components';
 
 import { N1, N2 } from '../../core/style/Colors';
-import { MEDIA_QUERY_MD, MEDIA_QUERY_SM } from '../../core/style/Sizes';
+import { MEDIA_QUERY_LG, MEDIA_QUERY_MD } from '../../core/style/Sizes';
 
 /*
  * styled components
@@ -31,10 +31,10 @@ const CTAWrapper = styled.div`
   font-size: 15px;
   height: 45px;
   justify-content: center;
-  line-height: 18px;
+  line-height: 20px;
   margin: 0 0 30px 0;
 
-  @media only screen and (min-width: ${MEDIA_QUERY_MD}px) {
+  @media only screen and (min-width: ${MEDIA_QUERY_LG}px) {
     margin: 0;
   }
 `;
@@ -51,7 +51,7 @@ const LeftWrapper = styled.div`
     display: none;
   }
 
-  @media only screen and (min-width: ${MEDIA_QUERY_MD}px) {
+  @media only screen and (min-width: ${MEDIA_QUERY_LG}px) {
     padding: 15px 30px;
   }
 `;
@@ -76,7 +76,7 @@ const ActionLink = styled.a`
 const Icon = styled.img`
   margin-right: 20px;
 
-  @media only screen and (min-width: ${MEDIA_QUERY_SM}) {
+  @media only screen and (min-width: ${MEDIA_QUERY_MD}) {
     margin-right: 20px;
   }
 `;
