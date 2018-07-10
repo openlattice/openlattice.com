@@ -124,7 +124,7 @@ const HealthSvg = styled.svg`
 
 const HealthBadge = Badge.extend`
   background-color: #9359ff;
-  left: calc(6%);
+  left: calc(30% - 20px);
   position: absolute;
   top: calc(46%);
 
