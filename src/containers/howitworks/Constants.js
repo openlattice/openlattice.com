@@ -42,7 +42,7 @@ export const CONTENT_01 = {
 };
 
 export const CONTENT_02 = {
-  BODY: `OpenLattice, Inc. recognizes the institutional, legal, and technical challenges of 
+  BODY: `OpenLattice recognizes the institutional, legal, and technical challenges of 
     establishing data sharing agreements among stakeholders, adhering to various laws and regulations, 
     and navigating homegrown or legacy data infrastructure. Our approach has been to gather data 
     sharing agreements in progressive and piecemeal fashion, using a "Hub-Spoke-Wheel" model.`,
@@ -90,16 +90,16 @@ export const CONTENT_03 = {
 
   LIST_ITEM_03: {
     TITLE: 'Breaking Through',
-    TEXT: 'Persistence and properly incentivize third parties.'
+    TEXT: 'Persistence and properly incentivizing third parties.'
   }
 };
 
 export const CONTENT_04 = {
-  BODY_01: `Once data is integrated, we match individuals using deep learning across data sets from 
+  BODY_01: `Once data is integrated, we match individuals using deep learning across datasets from 
     criminal justice, health care, and social services.`,
 
   BODY_02: `Customers can leverage existing OpenLattice solutions or develop their own against unified 
-    individual profiles that respect applicable access control rules. Exisiting usecases:`,
+    individual profiles that respect applicable access control rules. Existing use cases:`,
 
   LIST_ITEM_01: {
     TITLE: '01',
@@ -115,7 +115,7 @@ export const CONTENT_04 = {
 
   LIST_ITEM_03: {
     TITLE: '03',
-    TEXT: `Baltimore, Portland (Maine), and Johnson County (Iowa) are monitoring behavioral health 
+    TEXT: `Baltimore (Maryland), Portland (Maine), and Johnson County (Iowa) are monitoring behavioral health 
       associated criminal justice incidents.`
   }
 };
