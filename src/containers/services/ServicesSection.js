@@ -27,6 +27,7 @@ const Content = styled.div`
   height: 375px;
 
   @media only screen and (min-width: ${MEDIA_QUERY_MD}px) {
+    height: 450px;
     max-width: 50%;
   }
 

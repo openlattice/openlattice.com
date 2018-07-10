@@ -3,19 +3,13 @@
  */
 
 import React from 'react';
-import PropTypes from 'prop-types';
 
 import styled from 'styled-components';
 
 import JurisdictionLabelSet from './JurisdictionLabelSet';
 import mapImage from '../../assets/images/map.png';
-
-import {
-  PAGE_SECTION_MIN_WIDTH,
-  WINDOW_EDGE_PADDING,
-  MEDIA_QUERY_MD,
-  MEDIA_QUERY_JUR_LG
-} from '../../core/style/Sizes';
+import { PageSectionInnerWrapper, PageSectionOuterWrapper } from '../../components/layout/PageSection';
+import { MEDIA_QUERY_JUR_LG } from '../../core/style/Sizes';
 
 import {
   DANE,
@@ -59,29 +53,6 @@ const jurisdictions = [
  * styled components
  */
 
-// "min-width" because this container needs to stretch to 100% of the width of the window
-const PageSectionOuterWrapper = styled.section`
-  display: flex;
-  justify-content: center;
-  min-width: 100%;
-  position: relative;
-`;
-
-// "padding" adds space between the window edge and the content when the window size is really small
-const PageSectionInnerWrapper = styled.div`
-  align-items: center;
-  display: flex;
-  flex-direction: column;
-  padding: 0 ${WINDOW_EDGE_PADDING}px;
-  position: relative;
-  width: 100%;
-
-  @media only screen and (min-width: ${MEDIA_QUERY_MD}px) {
-    align-items: stretch;
-    width: ${PAGE_SECTION_MIN_WIDTH}px;
-  }
-`;
-
 const PageSectionBackgroundWrapper = styled.div`
   background-image: url(${mapImage});
   background-position: center;
@@ -124,7 +95,11 @@ const renderLabelSets = () => (
   ))
 );
 
-const JurisdictionPageSection = ({ children }) => (
+type Props = {
+  children :Node;
+}
+
+const JurisdictionPageSection = ({ children } :Props) => (
   <PageSectionOuterWrapper>
     <PageSectionBackgroundWrapper>
       <LabelSets>
@@ -136,9 +111,5 @@ const JurisdictionPageSection = ({ children }) => (
     </PageSectionInnerWrapper>
   </PageSectionOuterWrapper>
 );
-
-JurisdictionPageSection.propTypes = {
-  children: PropTypes.node.isRequired
-};
 
 export default JurisdictionPageSection;
