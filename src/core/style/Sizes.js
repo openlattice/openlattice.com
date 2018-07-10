@@ -11,6 +11,9 @@ export const CONTENT_GRID_WIDTH :number = PAGE_SECTION_MIN_WIDTH - (WINDOW_EDGE_
 export const MEDIA_QUERY_MD :number = 768;
 export const MEDIA_QUERY_LG :number = PAGE_SECTION_MIN_WIDTH;
 
+// Technology Media Queries
+export const MEDIA_QUERY_TECH_SM :number = 420;
+
 // Jurisdictions Media Queries
 export const MEDIA_QUERY_JUR_SM :number = 530;
 export const MEDIA_QUERY_JUR_MD :number = 900;
