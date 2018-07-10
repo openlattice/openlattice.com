@@ -55,10 +55,11 @@ const SubTitle = StyledSectionSubTitle.extend`
   font-size: 15px;
   line-height: 27px;
   margin-bottom: 60px;
-  text-align: center;
+  text-align: left;
 
   @media only screen and (min-width: ${MEDIA_QUERY_MD}px) {
     font-size: 20px;
+    text-align: center;
   }
 `;
 
