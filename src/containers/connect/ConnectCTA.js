@@ -63,8 +63,12 @@ const RightWrapper = styled.div`
   display: flex;
   justify-content: center;
   padding: 12px 24px;
-  width: 161px;
+  width: 200px;
   ${props => bgColorMixin(props)}
+
+  @media only screen and (min-width: ${MEDIA_QUERY_MD}px) {
+    width: 161px;
+  }
 `;
 
 const ActionLink = styled.a`
