@@ -25,7 +25,7 @@ const bgImageMixin = ({ bgColor, bgImage, bgSize }) => {
   if (bgColor) {
     return css`
       background-color: ${bgColor};
-      ${'' /* background-size: ${bgSize || 'auto'}; */}
+      background-size: ${bgSize || 'auto'};
     `;
   }
   return css`
