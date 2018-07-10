@@ -44,12 +44,13 @@ const PageSectionInnerWrapper = styled.div`
   align-items: center;
   display: flex;
   flex-direction: column;
-  padding: 0 ${WINDOW_EDGE_PADDING}px;
+  padding: 0 30px;
   position: relative;
   width: 100%;
 
   @media only screen and (min-width: ${MEDIA_QUERY_MD}px) {
     align-items: stretch;
+    padding: 0 ${WINDOW_EDGE_PADDING}px;
     width: ${PAGE_SECTION_MIN_WIDTH}px;
   }
 `;
