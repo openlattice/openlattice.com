@@ -52,12 +52,13 @@ const Title = StyledSectionTitle.extend`
 
 const SubTitle = StyledSectionSubTitle.extend`
   color: ${N0};
-  font-size: 20px;
+  font-size: 15px;
   line-height: 27px;
   margin-bottom: 60px;
+  text-align: center;
 
   @media only screen and (min-width: ${MEDIA_QUERY_MD}px) {
-    text-align: center;
+    font-size: 20px;
   }
 `;
 

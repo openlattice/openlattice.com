@@ -5,14 +5,14 @@ import { N2 } from '../../core/style/Colors';
 
 const StyledSectionSubTitle = styled.h2`
   color: ${N2};
-  font-size: 16px;
+  font-size: 15px;
   font-weight: normal;
   line-height: 22px;
-  text-align: center;
+  text-align: left;
   margin-top: 0;
 
   @media only screen and (min-width: ${MEDIA_QUERY_MD}px) {
-    text-align: left;
+    font-size: 16px;
   }
 `;
 
