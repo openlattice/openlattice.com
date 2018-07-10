@@ -12,18 +12,20 @@ import { PAGE_SECTION_MIN_WIDTH, WINDOW_EDGE_PADDING, MEDIA_QUERY_MD } from '../
  * styled components
  */
 
-const bgImageMixin = ({ bgColor, bgImage }) => {
+// TODO: bgSize is a quick add, we can probably handle this much better
+const bgImageMixin = ({ bgColor, bgImage, bgSize }) => {
   if (bgImage) {
     return css`
       background-image: url(${bgImage});
       background-position: center;
       background-repeat: no-repeat;
-      background-size: cover;
+      background-size: ${bgSize || 'cover'};
     `;
   }
   if (bgColor) {
     return css`
       background-color: ${bgColor};
+      background-size: ${bgSize || 'auto'};
     `;
   }
   return css`
@@ -32,7 +34,7 @@ const bgImageMixin = ({ bgColor, bgImage }) => {
 };
 
 // "min-width" because this container needs to stretch to 100% of the width of the window
-const PageSectionOuterWrapper = styled.section`
+export const PageSectionOuterWrapper = styled.section`
   display: flex;
   justify-content: center;
   min-width: 100%;
@@ -40,7 +42,7 @@ const PageSectionOuterWrapper = styled.section`
 `;
 
 // "padding" adds space between the window edge and the content when the window size is really small
-const PageSectionInnerWrapper = styled.div`
+export const PageSectionInnerWrapper = styled.div`
   align-items: center;
   display: flex;
   flex-direction: column;
@@ -69,6 +71,7 @@ type Props = {
   bgColor ? :string;
   bgComponent ? :Node;
   bgImage ? :string;
+  bgSize ? :string;
   children :Node;
 }
 
@@ -76,14 +79,16 @@ type Props = {
  * components
  */
 
+// TODO: PageSection needs to support responsive layouts
 const PageSection = ({
   bgColor,
   bgComponent,
   bgImage,
+  bgSize,
   children
 } :Props) => (
   <PageSectionOuterWrapper>
-    <PageSectionBackgroundWrapper bgColor={bgColor} bgImage={bgImage}>
+    <PageSectionBackgroundWrapper bgColor={bgColor} bgImage={bgImage} bgSize={bgSize}>
       { bgComponent }
     </PageSectionBackgroundWrapper>
     <PageSectionInnerWrapper>
@@ -95,7 +100,8 @@ const PageSection = ({
 PageSection.defaultProps = {
   bgColor: undefined,
   bgComponent: undefined,
-  bgImage: undefined
+  bgImage: undefined,
+  bgSize: undefined
 };
 
 export default PageSection;

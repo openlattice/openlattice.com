@@ -24,9 +24,10 @@ const Content = styled.div`
   display: block;
   margin: 80px 0 100px 0;
   max-width: 100%;
-  height: 425px;
+  height: 375px;
 
   @media only screen and (min-width: ${MEDIA_QUERY_MD}px) {
+    height: 450px;
     max-width: 50%;
   }
 
@@ -40,9 +41,9 @@ const ArtSectionOuterWrapper = styled.div`
   display: flex;
   flex: 0 0 auto;
   flex-direction: row;
-  height: 250px;
+  height: 200px;
   justify-content: center;
-  margin-top: -250px;
+  margin-top: -200px;
   min-width: 100%;
   position: relative;
 
@@ -59,7 +60,7 @@ const ArtSectionOuterWrapper = styled.div`
 `;
 
 const PersonImg = styled.img`
-  height: 250px;
+  height: 200px;
   margin-left: 0;
   z-index: 1000;
 
@@ -126,7 +127,7 @@ const HealthBadge = Badge.extend`
   background-color: #9359ff;
   left: calc(30% - 20px);
   position: absolute;
-  top: calc(30%);
+  top: calc(46%);
 
   @media only screen and (min-width: ${MEDIA_QUERY_MD}px) {
     left: calc(50% - 90px);
@@ -174,7 +175,7 @@ const PublicSafetyBadge = Badge.extend`
  */
 
 const SocialServicesWrapper = styled.div`
-  bottom: 10px;
+  bottom: 16px;
   position: absolute;
   right: 0;
   width: 50%;
@@ -203,9 +204,8 @@ const SocialServicesSvg = styled.svg`
 
 const SocialServicesBadge = Badge.extend`
   background-color: #6124e2;
-  left: calc(30%);
+  left: calc(26%);
   position: absolute;
-  top: calc(20%);
 
   @media only screen and (min-width: ${MEDIA_QUERY_MD}px) {
     left: calc(40%);

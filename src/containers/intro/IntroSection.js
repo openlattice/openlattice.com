@@ -41,22 +41,24 @@ const Content = styled.div`
 
 const Title = StyledSectionTitle.extend`
   color: ${N0};
-  font-size: 40px;
   margin-bottom: 20px;
   text-align: center;
 
   @media only screen and (min-width: ${MEDIA_QUERY_MD}px) {
+    font-size: 40px;
     text-align: center;
   }
 `;
 
 const SubTitle = StyledSectionSubTitle.extend`
   color: ${N0};
-  font-size: 20px;
+  font-size: 15px;
   line-height: 27px;
   margin-bottom: 60px;
+  text-align: left;
 
   @media only screen and (min-width: ${MEDIA_QUERY_MD}px) {
+    font-size: 20px;
     text-align: center;
   }
 `;

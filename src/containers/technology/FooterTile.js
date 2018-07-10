@@ -7,7 +7,7 @@ import React from 'react';
 import styled from 'styled-components';
 
 import { N2, PP0 } from '../../core/style/Colors';
-import { MEDIA_QUERY_LG } from '../../core/style/Sizes';
+import { MEDIA_QUERY_TECH_SM, MEDIA_QUERY_LG } from '../../core/style/Sizes';
 
 
 const TileWrapper = styled.div`
@@ -16,10 +16,14 @@ const TileWrapper = styled.div`
   border-radius: 2px;
   display: flex;
   justify-content: flex-start;
-  margin: 15px 15px 0 15px;
+  margin: 15px;
   min-height: 100px;
-  width: 300px;
+  width: 100%;
   padding: 40px;
+
+  @media only screen and (min-width: ${MEDIA_QUERY_TECH_SM}px) {
+    width: 300px;
+  }
 
   @media only screen and (min-width: ${MEDIA_QUERY_LG}px) {
     width: 465px;
