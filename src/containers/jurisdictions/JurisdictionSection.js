@@ -6,9 +6,11 @@ import React from 'react';
 
 import styled from 'styled-components';
 
-import JurisdictionPageSection from './JurisdictionPageSection';
 import JurisdictionLabel from './JurisdictionLabel';
+import JurisdictionLabelSet from './JurisdictionLabelSet';
+import PageSection from '../../components/layout/PageSection';
 import StyledSectionTitle from '../../components/headers/StyledSectionTitle';
+import mapImage from '../../assets/images/map.png';
 import { MEDIA_QUERY_MD, MEDIA_QUERY_JUR_SM, MEDIA_QUERY_JUR_LG } from '../../core/style/Sizes';
 import { N3 } from '../../core/style/Colors';
 
@@ -91,6 +93,18 @@ const Labels = styled.div`
   }
 `;
 
+const LabelSets = styled.div`
+  display: none;
+  height: 100%;
+  margin: auto;
+  max-width: 1300px;
+  position: relative;
+  width: 100%;
+
+  @media only screen and (min-width: ${MEDIA_QUERY_JUR_LG}px) {
+    display: block;
+  }
+`;
 
 // Renders simple labels at < large browser size
 const renderLabels = () => (
@@ -102,9 +116,24 @@ const renderLabels = () => (
   ))
 );
 
+// Renders full label sets only at large browser size
+const renderLabelSets = () => (
+  jurisdictions.map(jurisdiction => (
+    <JurisdictionLabelSet
+        jurisdiction={jurisdiction}
+        key={jurisdiction.LOCATION} />
+  ))
+);
 
+const LabelsWithTargets = (
+  <LabelSets>
+    { renderLabelSets() }
+  </LabelSets>
+);
+
+// TODO: bgSize="auto" works well enough for now, but it can be improved
 const JurisdictionSection = () => (
-  <JurisdictionPageSection>
+  <PageSection bgComponent={LabelsWithTargets} bgImage={mapImage} bgSize="auto">
     <Content>
       <Title>
         { TITLE }
@@ -113,7 +142,7 @@ const JurisdictionSection = () => (
         { renderLabels() }
       </Labels>
     </Content>
-  </JurisdictionPageSection>
+  </PageSection>
 );
 
 export default JurisdictionSection;
