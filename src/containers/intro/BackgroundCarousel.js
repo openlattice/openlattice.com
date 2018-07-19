@@ -6,9 +6,9 @@ import React, { Component, Fragment } from 'react';
 
 import styled, { keyframes } from 'styled-components';
 
-import splashImg1 from '../../assets/images/splash_01.jpg';
-import splashImg2 from '../../assets/images/splash_02.jpg';
-import splashImg3 from '../../assets/images/splash_03.jpg';
+import splashImg1 from '../../assets/images/splash_01.png';
+import splashImg2 from '../../assets/images/splash_02.png';
+import splashImg3 from '../../assets/images/splash_03.png';
 
 const fadeInAnimation = keyframes`
   from {

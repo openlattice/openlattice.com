@@ -1,6 +1,6 @@
 import React from 'react';
 
-import DataSharingImage from '../../assets/images/02_data_sharing_agreements.png';
+import DataSharingImage from '../../assets/images/how_02.png';
 
 import { CONTENT_02 } from './Constants';
 
