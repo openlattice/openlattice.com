@@ -1,6 +1,6 @@
 import React from 'react';
 
-import DataAccessImage from '../../assets/images/03_establishing_data_access.png';
+import DataAccessImage from '../../assets/images/how_03.png';
 
 import { CONTENT_03 } from './Constants';
 

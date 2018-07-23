@@ -1,6 +1,6 @@
 import React from 'react';
 
-import SpecificServicesImage from '../../assets/images/04_specific_services.png';
+import SpecificServicesImage from '../../assets/images/how_04.png';
 
 import { CONTENT_04 } from './Constants';
 

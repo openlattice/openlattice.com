@@ -26,21 +26,23 @@ export const ContentWrapper = styled.div`
 `;
 
 export const ContentLeft = styled.img`
-  width: 100%;
   height: auto;
+  width: 100%;
 
   @media only screen and (min-width: ${MEDIA_QUERY_JUR_SM}px) {
-    width: auto;
     height: auto;
     margin: auto;
+    max-width: 435px;
+    max-height: 602px;
     padding-top: 50px;
+    width: auto;
   }
 
   @media only screen and (min-width: ${MEDIA_QUERY_LG}px) {
-    width: auto;
+    background: none;
     height: auto;
     padding: 0;
-    background: none;
+    width: auto;
   }
 `;
 

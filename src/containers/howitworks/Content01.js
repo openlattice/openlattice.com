@@ -1,6 +1,6 @@
 import React from 'react';
 
-import ProblemDefinitionImage from '../../assets/images/01_problem_definition.png';
+import ProblemDefinitionImage from '../../assets/images/how_01.png';
 
 import { CONTENT_01 } from './Constants';
 
