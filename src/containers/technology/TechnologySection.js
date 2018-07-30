@@ -13,6 +13,7 @@ import StyledSectionSubTitle from '../../components/headers/StyledSectionSubTitl
 import StyledSectionTitle from '../../components/headers/StyledSectionTitle';
 import * as Constants from './Constants';
 import { CONTENT_GRID_WIDTH, MEDIA_QUERY_MD, MEDIA_QUERY_LG } from '../../core/style/Sizes';
+import { N2, N4 } from '../../core/style/Colors';
 
 /*
  * styled components
@@ -55,6 +56,16 @@ const TechTilesInnerWrapper = styled.div`
   }
 `;
 
+const FooterBody = styled.span`
+  color: ${N2};
+  font-size: 14px;
+  line-height: 19px;
+`;
+
+const FooterBodyEmpasized = FooterBody.extend`
+  color: ${N4};
+`;
+
 const TechnologySection = () => (
   <PageSection>
     <Content>
@@ -78,8 +89,24 @@ const TechnologySection = () => (
       </TechTilesOuterWrapper>
       <TechTilesOuterWrapper>
         <TechTilesInnerWrapper>
-          <FooterTile body={Constants.body7} icon={Constants.icon7} />
-          <FooterTile body={Constants.body8} icon={Constants.icon8} />
+          <FooterTile icon={Constants.icon7}>
+            <FooterBody>
+              All of our code is available
+              <FooterBodyEmpasized>
+                {` open source `}
+              </FooterBodyEmpasized>
+              on github.
+            </FooterBody>
+          </FooterTile>
+          <FooterTile icon={Constants.icon8}>
+            <FooterBody>
+              All data is
+              <FooterBodyEmpasized>
+                {` encrypted `}
+              </FooterBodyEmpasized>
+              at rest and in transit following industry best practices.
+            </FooterBody>
+          </FooterTile>
         </TechTilesInnerWrapper>
       </TechTilesOuterWrapper>
     </Content>

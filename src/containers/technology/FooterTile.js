@@ -34,23 +34,15 @@ const Icon = styled.img`
   margin-right: 15px;
 `;
 
-const Body = styled.span`
-  color: ${N2};
-  font-size: 14px;
-  line-height: 19px;
-`;
-
 type Props = {
-  body :string;
+  children :any;
   icon :string;
 }
 
-const FooterTile = ({ body, icon } :Props) => (
+const FooterTile = ({ icon, children } :Props) => (
   <TileWrapper>
     <Icon src={icon} />
-    <Body>
-      { body }
-    </Body>
+    { children }
   </TileWrapper>
 );
 

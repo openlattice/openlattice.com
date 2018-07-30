@@ -1,5 +1,8 @@
 /* eslint-disable max-len */
 
+import React from 'react';
+import styled from 'styled-components';
+
 import IntegrationModelIcon from '../../assets/images/standard-data-icon.svg';
 import LinkIcon from '../../assets/images/link-across-icon.svg';
 import ShareIcon from '../../assets/images/share-manage-icon.svg';
@@ -8,6 +11,10 @@ import ComplianceIcon from '../../assets/images/compliance-icon.svg';
 import DeidentificationIcon from '../../assets/images/deidentification-icon.svg';
 import EncryptionIcon from '../../assets/images/encryption-icon.svg';
 import OpenSourceIcon from '../../assets/images/open-source-icon.svg';
+
+const StyledEmphasizedText = styled.span`
+  color: #000;
+`;
 
 export const title1 = 'Standardized Data Integrations';
 export const body1 = 'Standardized models streamline sharing of data and analyses across organizations.';
@@ -33,8 +40,6 @@ export const title6 = 'De-identification';
 export const body6 = 'Manage sharing of de-identified datasets with researchers or the public.';
 export const icon6 = DeidentificationIcon;
 
-export const body7 = 'All of our code is available open source on github.';
 export const icon7 = OpenSourceIcon;
 
-export const body8 = 'All data is encrypted at rest and in transit following industry best practices.';
 export const icon8 = EncryptionIcon;
