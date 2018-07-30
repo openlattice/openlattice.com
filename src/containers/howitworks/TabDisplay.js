@@ -28,8 +28,9 @@ const TabItem = styled.span`
   border-bottom: 2px solid #b4add1;
   color: #b4add1;
   cursor: pointer;
-  font-family: Chivo, sans-serif;
+  font-family: 'Open Sans', sans-serif;
   font-size: 12px;
+  font-weight: semi-bold;
   line-height: 1.2;
   padding: 10px 4px;
   text-align: center;

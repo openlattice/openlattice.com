@@ -4,9 +4,9 @@ import { N4 } from '../../core/style/Colors';
 
 const StyledSectionTitle = styled.h1`
   color: ${N4};
-  font-family: 'Chivo', sans-serif;
+  font-family: 'Open Sans', sans-serif;
   font-size: 25px;
-  font-weight: normal;
+  font-weight: semi-bold;
   line-height: 1.2;
   margin-bottom: 30px;
   margin-top: 0;
