@@ -27,4 +27,5 @@ export const PP1 :string = '#eeeef9';
 export const PP2 :string = '#c881ff';
 export const PP3 :string = '#9359ff';
 export const PP4 :string = '#6124e2';
-export const PP5 :string = '#7c7791';
+export const PP5 :string = '#31275c';
+export const PP6 :string = '#7c7791';
