@@ -28,7 +28,9 @@ const CTAWrapper = styled.div`
   color: ${N2};
   display: flex;
   flex: 0 0 auto;
+  font-family: 'Open Sans', sans-serif;
   font-size: 15px;
+  font-weight: semi-bold;
   height: 45px;
   justify-content: center;
   line-height: 20px;

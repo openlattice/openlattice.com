@@ -80,7 +80,7 @@ const Badge = styled.div`
   display: inline;
   font-size: 12px;
   line-height: 17px;
-  font-weight: 500;
+  font-weight: bold;
   padding: 5px 8px;
   z-index: 2000;
 

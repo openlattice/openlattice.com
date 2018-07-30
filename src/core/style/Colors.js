@@ -16,7 +16,7 @@ export const N4 :string = '#000000';
 * pinks
 */
 
-export const PK0 :string = '#ff58b4';
+export const PK0 :string = '#ff5e95';
 
 /*
  * purples
@@ -27,4 +27,4 @@ export const PP1 :string = '#eeeef9';
 export const PP2 :string = '#c881ff';
 export const PP3 :string = '#9359ff';
 export const PP4 :string = '#6124e2';
-export const PP5 :string = '#361876';
+export const PP5 :string = '#7c7791';
