@@ -12,8 +12,10 @@ import DeidentificationIcon from '../../assets/images/deidentification-icon.svg'
 import EncryptionIcon from '../../assets/images/encryption-icon.svg';
 import OpenSourceIcon from '../../assets/images/open-source-icon.svg';
 
+import { N4 } from '../../core/style/Colors';
+
 const StyledEmphasizedText = styled.span`
-  color: #000;
+  color: ${N4};
 `;
 
 export const title1 = 'Standardized Data Integrations';
