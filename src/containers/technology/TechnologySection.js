@@ -93,7 +93,7 @@ const TechnologySection = () => (
             <FooterBody>
               All of our code is available
               <FooterBodyEmpasized>
-                {` open source `}
+                {' open source '}
               </FooterBodyEmpasized>
               on github.
             </FooterBody>
@@ -102,7 +102,7 @@ const TechnologySection = () => (
             <FooterBody>
               All data is
               <FooterBodyEmpasized>
-                {` encrypted `}
+                {' encrypted '}
               </FooterBodyEmpasized>
               at rest and in transit following industry best practices.
             </FooterBody>

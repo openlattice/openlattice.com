@@ -6,7 +6,7 @@ import React, { Node } from 'react';
 
 import styled from 'styled-components';
 
-import { N2, PP0 } from '../../core/style/Colors';
+import { PP0 } from '../../core/style/Colors';
 import { MEDIA_QUERY_TECH_SM, MEDIA_QUERY_LG } from '../../core/style/Sizes';
 
 

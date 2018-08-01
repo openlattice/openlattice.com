@@ -1,8 +1,5 @@
 /* eslint-disable max-len */
 
-import React from 'react';
-import styled from 'styled-components';
-
 import IntegrationModelIcon from '../../assets/images/standard-data-icon.svg';
 import LinkIcon from '../../assets/images/link-across-icon.svg';
 import ShareIcon from '../../assets/images/share-manage-icon.svg';
@@ -12,11 +9,6 @@ import DeidentificationIcon from '../../assets/images/deidentification-icon.svg'
 import EncryptionIcon from '../../assets/images/encryption-icon.svg';
 import OpenSourceIcon from '../../assets/images/open-source-icon.svg';
 
-import { N4 } from '../../core/style/Colors';
-
-const StyledEmphasizedText = styled.span`
-  color: ${N4};
-`;
 
 export const title1 = 'Standardized Data Integrations';
 export const body1 = 'Standardized models streamline sharing of data and analyses across organizations.';
