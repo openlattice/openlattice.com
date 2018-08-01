@@ -72,7 +72,7 @@ const ScheduleLink = styled.a`
   display: inline-block;
   font-family: 'Roboto', sans-serif;
   font-size: 15px;
-  font-weight: 500;
+  font-weight: semi-bold;
   line-height: 20px;
   outline: none;
   padding: 10px 20px;

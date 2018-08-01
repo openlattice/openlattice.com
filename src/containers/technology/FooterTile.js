@@ -2,11 +2,11 @@
  * @flow
  */
 
-import React from 'react';
+import React, { Node } from 'react';
 
 import styled from 'styled-components';
 
-import { N2, PP0 } from '../../core/style/Colors';
+import { PP0 } from '../../core/style/Colors';
 import { MEDIA_QUERY_TECH_SM, MEDIA_QUERY_LG } from '../../core/style/Sizes';
 
 
@@ -34,23 +34,15 @@ const Icon = styled.img`
   margin-right: 15px;
 `;
 
-const Body = styled.span`
-  color: ${N2};
-  font-size: 14px;
-  line-height: 19px;
-`;
-
 type Props = {
-  body :string;
+  children :Node;
   icon :string;
 }
 
-const FooterTile = ({ body, icon } :Props) => (
+const FooterTile = ({ icon, children } :Props) => (
   <TileWrapper>
     <Icon src={icon} />
-    <Body>
-      { body }
-    </Body>
+    { children }
   </TileWrapper>
 );
 

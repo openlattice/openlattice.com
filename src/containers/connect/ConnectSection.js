@@ -17,8 +17,8 @@ import StyledSectionTitle from '../../components/headers/StyledSectionTitle';
 import {
   N1,
   PK0,
-  PP4,
-  PP5
+  PP5,
+  PP6
 } from '../../core/style/Colors';
 import { MEDIA_QUERY_MD } from '../../core/style/Sizes';
 
@@ -82,7 +82,7 @@ const SubTitle = StyledSectionSubTitle.extend`
 `;
 
 const ConnectSection = () => (
-  <PageSection bgColor={PP4}>
+  <PageSection bgColor={PP5}>
     <Content>
       <LeftWrapper>
         <img src={handshakeIcon} alt="handshake icon" />
@@ -101,7 +101,7 @@ const ConnectSection = () => (
             icon={callIcon}
             target="https://calendly.com/openlattice/openlattice-website-request" />
         <ConnectCTA
-            bgColor={PP5}
+            bgColor={PP6}
             copyLeft={EMAIL}
             copyRight="Write an Email"
             icon={emailIcon}
