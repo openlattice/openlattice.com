@@ -2,7 +2,7 @@
  * @flow
  */
 
-import React from 'react';
+import React, { Node } from 'react';
 
 import styled from 'styled-components';
 
@@ -35,7 +35,7 @@ const Icon = styled.img`
 `;
 
 type Props = {
-  children :any;
+  children :Node;
   icon :string;
 }
 
