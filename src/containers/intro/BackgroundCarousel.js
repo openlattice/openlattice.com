@@ -6,14 +6,15 @@ import React, { Component, Fragment } from 'react';
 
 import styled, { keyframes } from 'styled-components';
 
-import splashImg1 from '../../assets/images/splash_01.jpg';
-import splashImg2 from '../../assets/images/splash_02.jpg';
-import splashImg3 from '../../assets/images/splash_03.jpg';
+import splashImg1 from '../../assets/images/splash_01.png';
+import splashImg2 from '../../assets/images/splash_02.png';
+import splashImg3 from '../../assets/images/splash_03.png';
 
 const fadeInAnimation = keyframes`
   from {
     opacity: 0;
   }
+
   to {
     opacity: 1;
   }
@@ -24,14 +25,14 @@ const FadeIn = styled.div`
   animation-iteration-count: 1;
   animation-name: ${fadeInAnimation};
   animation-timing-function: ease-in;
-  display: ${props => (props.isVisible ? 'block' : 'none')};
+  display: ${({ isVisible }) => (isVisible ? 'block' : 'none')};
   height: 100%;
   position: absolute;
   width: 100%;
 `;
 
 const BackgroundImage = styled.div`
-  background-image: url(${props => props.bgImage});
+  background-image: url(${({ bgImage }) => bgImage});
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -65,31 +66,37 @@ class BackgroundCarousel extends Component<Props, State> {
   }
 
   componentDidMount() {
-    setInterval(this.cycleImages, this.props.interval);
+
+    const { interval } = this.props;
+    setInterval(this.cycleImages, interval);
   }
 
   cycleImages = () => {
 
-    if (this.state.currIndex >= (this.state.images.length - 1)) {
-      this.setState({ currIndex: 0, prevIndex: (this.state.images.length - 1) });
+    const { currIndex, images } = this.state;
+
+    if (currIndex >= (images.length - 1)) {
+      this.setState({ currIndex: 0, prevIndex: (images.length - 1) });
     }
     else {
-      this.setState({ currIndex: (this.state.currIndex + 1), prevIndex: this.state.currIndex });
+      this.setState({ currIndex: (currIndex + 1), prevIndex: currIndex });
     }
   }
 
   render() {
 
-    const imageComponents = this.state.images.map((image, index) => (
-      <FadeIn isVisible={this.state.currIndex === index} key={image}>
-        <BackgroundImage bgImage={this.state.images[this.state.currIndex]} />
+    const { currIndex, images, prevIndex } = this.state;
+
+    const imageComponents = images.map((image, index) => (
+      <FadeIn isVisible={currIndex === index} key={image}>
+        <BackgroundImage bgImage={images[currIndex]} />
       </FadeIn>
     ));
 
     return (
       <Fragment>
         { imageComponents }
-        <BackgroundImage bgImage={this.state.images[this.state.prevIndex]} />
+        <BackgroundImage bgImage={images[prevIndex]} />
       </Fragment>
     );
   }

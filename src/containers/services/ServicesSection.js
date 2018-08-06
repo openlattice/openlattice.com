@@ -11,7 +11,7 @@ import personPng from '../../assets/images/person-grp@3x.png';
 import PageSection from '../../components/layout/PageSection';
 import StyledSectionSubTitle from '../../components/headers/StyledSectionSubTitle';
 import StyledSectionTitle from '../../components/headers/StyledSectionTitle';
-import { PAGE_SECTION_MIN_WIDTH, MEDIA_QUERY_SM, MEDIA_QUERY_MD } from '../../core/style/Sizes';
+import { PAGE_SECTION_MIN_WIDTH, MEDIA_QUERY_MD, MEDIA_QUERY_LG } from '../../core/style/Sizes';
 
 import {
   N1,
@@ -24,12 +24,16 @@ const Content = styled.div`
   display: block;
   margin: 80px 0 100px 0;
   max-width: 100%;
-  height: 450px;
-  @media only screen and (min-width: ${MEDIA_QUERY_SM}px) {
+  height: 375px;
+
+  @media only screen and (min-width: ${MEDIA_QUERY_MD}px) {
+    height: 450px;
     max-width: 50%;
   }
-  @media only screen and (min-width: ${MEDIA_QUERY_MD}px) {
-    height: 375px;
+
+  @media only screen and (min-width: ${MEDIA_QUERY_LG}px) {
+    height: 525px;
+    margin: 140px 0 0 0;
   }
 `;
 
@@ -37,16 +41,18 @@ const ArtSectionOuterWrapper = styled.div`
   display: flex;
   flex: 0 0 auto;
   flex-direction: row;
-  height: 250px;
+  height: 200px;
   justify-content: center;
-  margin-top: -250px;
+  margin-top: -200px;
   min-width: 100%;
   position: relative;
-  @media only screen and (min-width: ${MEDIA_QUERY_SM}px) {
+
+  @media only screen and (min-width: ${MEDIA_QUERY_MD}px) {
     height: 300px;
     margin-top: -300px;
   }
-  @media only screen and (min-width: ${MEDIA_QUERY_MD}px) {
+
+  @media only screen and (min-width: ${MEDIA_QUERY_LG}px) {
     height: 375px;
     margin-top: -375px;
     min-width: ${PAGE_SECTION_MIN_WIDTH}px;
@@ -54,13 +60,15 @@ const ArtSectionOuterWrapper = styled.div`
 `;
 
 const PersonImg = styled.img`
-  height: 250px;
+  height: 200px;
   margin-left: 0;
   z-index: 1000;
-  @media only screen and (min-width: ${MEDIA_QUERY_SM}px) {
+
+  @media only screen and (min-width: ${MEDIA_QUERY_MD}px) {
     height: 300px;
   }
-  @media only screen and (min-width: ${MEDIA_QUERY_MD}px) {
+
+  @media only screen and (min-width: ${MEDIA_QUERY_LG}px) {
     height: 375px;
     margin-left: 400px;
   }
@@ -68,15 +76,17 @@ const PersonImg = styled.img`
 
 const Badge = styled.div`
   border-radius: 2px;
-  color: #fff;
+  color: ${N1};
   display: inline;
   font-size: 12px;
-  line-height: 1;
-  font-weight: 500;
+  line-height: 17px;
+  font-weight: bold;
   padding: 5px 8px;
   z-index: 2000;
-  @media only screen and (min-width: ${MEDIA_QUERY_SM}px) {
+
+  @media only screen and (min-width: ${MEDIA_QUERY_MD}px) {
     font-size: 14px;
+    line-height: 19px;
     padding: 6px 10px;
   }
 `;
@@ -90,10 +100,12 @@ const HealthWrapper = styled.div`
   left: 0;
   position: absolute;
   width: 50%;
-  @media only screen and (min-width: ${MEDIA_QUERY_SM}px) {
+
+  @media only screen and (min-width: ${MEDIA_QUERY_MD}px) {
     bottom: 20px;
   }
-  @media only screen and (min-width: ${MEDIA_QUERY_MD}px) {
+
+  @media only screen and (min-width: ${MEDIA_QUERY_LG}px) {
     bottom: 50px;
     width: calc(50% + 150px);
   }
@@ -101,10 +113,12 @@ const HealthWrapper = styled.div`
 
 const HealthSvg = styled.svg`
   height: 110px;
-  @media only screen and (min-width: ${MEDIA_QUERY_SM}px) {
+
+  @media only screen and (min-width: ${MEDIA_QUERY_MD}px) {
     height: 200px;
   }
-  @media only screen and (min-width: ${MEDIA_QUERY_MD}px) {
+
+  @media only screen and (min-width: ${MEDIA_QUERY_LG}px) {
     height: 242px;
   }
 `;
@@ -113,8 +127,9 @@ const HealthBadge = Badge.extend`
   background-color: #9359ff;
   left: calc(30% - 20px);
   position: absolute;
-  top: calc(30%);
-  @media only screen and (min-width: ${MEDIA_QUERY_SM}px) {
+  top: calc(46%);
+
+  @media only screen and (min-width: ${MEDIA_QUERY_MD}px) {
     left: calc(50% - 90px);
     top: calc(50%);
   }
@@ -129,10 +144,12 @@ const PublicSafetyWrapper = styled.div`
   right: 0;
   top: -30px;
   width: 50%;
-  @media only screen and (min-width: ${MEDIA_QUERY_SM}px) {
+
+  @media only screen and (min-width: ${MEDIA_QUERY_MD}px) {
     top: -80px;
   }
-  @media only screen and (min-width: ${MEDIA_QUERY_MD}px) {
+
+  @media only screen and (min-width: ${MEDIA_QUERY_LG}px) {
     top: -80px;
     width: calc(50% - 250px);
   }
@@ -147,7 +164,8 @@ const PublicSafetyBadge = Badge.extend`
   left: calc(30%);
   position: absolute;
   top: calc(10%);
-  @media only screen and (min-width: ${MEDIA_QUERY_SM}px) {
+
+  @media only screen and (min-width: ${MEDIA_QUERY_MD}px) {
     left: calc(40%);
   }
 `;
@@ -157,14 +175,16 @@ const PublicSafetyBadge = Badge.extend`
  */
 
 const SocialServicesWrapper = styled.div`
-  bottom: 10px;
+  bottom: 16px;
   position: absolute;
   right: 0;
   width: 50%;
-  @media only screen and (min-width: ${MEDIA_QUERY_SM}px) {
+
+  @media only screen and (min-width: ${MEDIA_QUERY_MD}px) {
     bottom: 20px;
   }
-  @media only screen and (min-width: ${MEDIA_QUERY_MD}px) {
+
+  @media only screen and (min-width: ${MEDIA_QUERY_LG}px) {
     bottom: 30px;
     width: calc(50% - 200px);
   }
@@ -172,24 +192,27 @@ const SocialServicesWrapper = styled.div`
 
 const SocialServicesSvg = styled.svg`
   height: 60px;
-  @media only screen and (min-width: ${MEDIA_QUERY_SM}px) {
+
+  @media only screen and (min-width: ${MEDIA_QUERY_MD}px) {
     height: 70px;
   }
-  @media only screen and (min-width: ${MEDIA_QUERY_MD}px) {
+
+  @media only screen and (min-width: ${MEDIA_QUERY_LG}px) {
     height: 88px;
   }
 `;
 
 const SocialServicesBadge = Badge.extend`
   background-color: #6124e2;
-  left: calc(30%);
+  left: calc(26%);
   position: absolute;
-  top: calc(20%);
-  @media only screen and (min-width: ${MEDIA_QUERY_SM}px) {
+
+  @media only screen and (min-width: ${MEDIA_QUERY_MD}px) {
     left: calc(40%);
     top: calc(30%);
   }
-  @media only screen and (min-width: ${MEDIA_QUERY_MD}px) {
+
+  @media only screen and (min-width: ${MEDIA_QUERY_LG}px) {
     left: calc(50%);
   }
 `;
@@ -198,7 +221,9 @@ const SocialServicesBadge = Badge.extend`
 
 const Health = () => (
   <HealthWrapper>
-    <HealthBadge>HEALTHCARE</HealthBadge>
+    <HealthBadge>
+      HEALTHCARE
+    </HealthBadge>
     <HealthSvg
         xmlns="http://www.w3.org/2000/svg"
         preserveAspectRatio="none"
@@ -219,7 +244,9 @@ const Health = () => (
 
 const PublicSafety = () => (
   <PublicSafetyWrapper>
-    <PublicSafetyBadge>PUBLIC SAFETY</PublicSafetyBadge>
+    <PublicSafetyBadge>
+      PUBLIC SAFETY
+    </PublicSafetyBadge>
     <PublicSafetySvg
         xmlns="http://www.w3.org/2000/svg"
         preserveAspectRatio="none"
@@ -237,7 +264,9 @@ const PublicSafety = () => (
 
 const SocialServices = () => (
   <SocialServicesWrapper>
-    <SocialServicesBadge>SOCIAL SERVICES</SocialServicesBadge>
+    <SocialServicesBadge>
+      SOCIAL SERVICES
+    </SocialServicesBadge>
     <SocialServicesSvg
         xmlns="http://www.w3.org/2000/svg"
         preserveAspectRatio="none"
@@ -253,11 +282,13 @@ const SocialServices = () => (
   </SocialServicesWrapper>
 );
 
-const IntroSection = () => (
+const ServicesSection = () => (
   <Fragment>
     <PageSection bgColor={N1}>
       <Content>
-        <StyledSectionTitle>Understand how services are delivered and consumed</StyledSectionTitle>
+        <StyledSectionTitle>
+          Understand how services are delivered and consumed
+        </StyledSectionTitle>
         <StyledSectionSubTitle>
           {
             `Leverage data across public safety, healthcare systems, and social services to streamline operations,
@@ -275,4 +306,4 @@ const IntroSection = () => (
   </Fragment>
 );
 
-export default IntroSection;
+export default ServicesSection;

@@ -12,7 +12,8 @@ import PageSection from '../../components/layout/PageSection';
 import StyledSectionSubTitle from '../../components/headers/StyledSectionSubTitle';
 import StyledSectionTitle from '../../components/headers/StyledSectionTitle';
 import * as Constants from './Constants';
-import { CONTENT_GRID_WIDTH, MEDIA_QUERY_SM, MEDIA_QUERY_MD } from '../../core/style/Sizes';
+import { CONTENT_GRID_WIDTH, MEDIA_QUERY_MD, MEDIA_QUERY_LG } from '../../core/style/Sizes';
+import { N2, N4 } from '../../core/style/Colors';
 
 /*
  * styled components
@@ -22,15 +23,15 @@ const Content = styled.div`
   margin: 80px 0 70px 0;
   width: 100%;
 
-  @media only screen and (min-width: ${MEDIA_QUERY_SM}px) {
-    margin: 150px 0;
+  @media only screen and (min-width: ${MEDIA_QUERY_MD}px) {
+    margin: 140px 0;
   }
 `;
 
 const SectionHeaderWrapper = styled.div`
   width: 100%;
 
-  @media only screen and (min-width: ${MEDIA_QUERY_SM}px) {
+  @media only screen and (min-width: ${MEDIA_QUERY_MD}px) {
     width: 50%;
   }
 `;
@@ -41,7 +42,7 @@ const TechTilesOuterWrapper = styled.div`
   flex-direction: row;
   justify-content: center;
   margin: 0 0 30px 0;
-  max-width:${CONTENT_GRID_WIDTH}px;
+  max-width: ${CONTENT_GRID_WIDTH}px;
 `;
 
 const TechTilesInnerWrapper = styled.div`
@@ -50,16 +51,28 @@ const TechTilesInnerWrapper = styled.div`
   justify-content: center;
   margin: -15px;
 
-  @media only screen and (min-width: ${MEDIA_QUERY_MD}px) {
+  @media only screen and (min-width: ${MEDIA_QUERY_LG}px) {
     justify-content: space-between;
   }
+`;
+
+const FooterBody = styled.span`
+  color: ${N2};
+  font-size: 14px;
+  line-height: 19px;
+`;
+
+const FooterBodyEmpasized = FooterBody.extend`
+  color: ${N4};
 `;
 
 const TechnologySection = () => (
   <PageSection>
     <Content>
       <SectionHeaderWrapper>
-        <StyledSectionTitle>Our Technology</StyledSectionTitle>
+        <StyledSectionTitle>
+          Our Technology
+        </StyledSectionTitle>
         <StyledSectionSubTitle>
           Our no-cost tier of core services helps address the most common challenges in cross-sector data partnerships.
         </StyledSectionSubTitle>
@@ -76,8 +89,24 @@ const TechnologySection = () => (
       </TechTilesOuterWrapper>
       <TechTilesOuterWrapper>
         <TechTilesInnerWrapper>
-          <FooterTile body={Constants.body7} icon={Constants.icon7} />
-          <FooterTile body={Constants.body8} icon={Constants.icon8} />
+          <FooterTile icon={Constants.icon7}>
+            <FooterBody>
+              All of our code is available
+              <FooterBodyEmpasized>
+                {' open source '}
+              </FooterBodyEmpasized>
+              on github.
+            </FooterBody>
+          </FooterTile>
+          <FooterTile icon={Constants.icon8}>
+            <FooterBody>
+              All data is
+              <FooterBodyEmpasized>
+                {' encrypted '}
+              </FooterBodyEmpasized>
+              at rest and in transit following industry best practices.
+            </FooterBody>
+          </FooterTile>
         </TechTilesInnerWrapper>
       </TechTilesOuterWrapper>
     </Content>

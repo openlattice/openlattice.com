@@ -6,33 +6,35 @@ import React, { type Node } from 'react';
 
 import styled, { css } from 'styled-components';
 
-import { PAGE_SECTION_MIN_WIDTH, WINDOW_EDGE_PADDING, MEDIA_QUERY_SM } from '../../core/style/Sizes';
+import { PAGE_SECTION_MIN_WIDTH, WINDOW_EDGE_PADDING, MEDIA_QUERY_MD } from '../../core/style/Sizes';
 
 /*
  * styled components
  */
 
-const bgImageMixin = (props) => {
-  if (props.bgImage) {
+// TODO: bgSize is a quick add, we can probably handle this much better
+const bgImageMixin = ({ bgColor, bgImage, bgSize }) => {
+  if (bgImage) {
     return css`
-      background-image: url(${props.bgImage});
+      background-image: url(${bgImage});
       background-position: center;
       background-repeat: no-repeat;
-      background-size: cover;
+      background-size: ${bgSize || 'cover'};
     `;
   }
-  else if (props.bgColor) {
+  if (bgColor) {
     return css`
-      background-color: ${props.bgColor};
+      background-color: ${bgColor};
+      background-size: ${bgSize || 'auto'};
     `;
   }
   return css`
-    background: none
+    background: none;
   `;
 };
 
 // "min-width" because this container needs to stretch to 100% of the width of the window
-const PageSectionOuterWrapper = styled.section`
+export const PageSectionOuterWrapper = styled.section`
   display: flex;
   justify-content: center;
   min-width: 100%;
@@ -40,7 +42,7 @@ const PageSectionOuterWrapper = styled.section`
 `;
 
 // "padding" adds space between the window edge and the content when the window size is really small
-const PageSectionInnerWrapper = styled.div`
+export const PageSectionInnerWrapper = styled.div`
   align-items: center;
   display: flex;
   flex-direction: column;
@@ -48,7 +50,7 @@ const PageSectionInnerWrapper = styled.div`
   position: relative;
   width: 100%;
 
-  @media only screen and (min-width: ${MEDIA_QUERY_SM}px) {
+  @media only screen and (min-width: ${MEDIA_QUERY_MD}px) {
     align-items: stretch;
     width: ${PAGE_SECTION_MIN_WIDTH}px;
   }
@@ -69,6 +71,7 @@ type Props = {
   bgColor ? :string;
   bgComponent ? :Node;
   bgImage ? :string;
+  bgSize ? :string;
   children :Node;
 }
 
@@ -76,13 +79,20 @@ type Props = {
  * components
  */
 
-const PageSection = (props :Props) => (
+// TODO: PageSection needs to support responsive layouts
+const PageSection = ({
+  bgColor,
+  bgComponent,
+  bgImage,
+  bgSize,
+  children
+} :Props) => (
   <PageSectionOuterWrapper>
-    <PageSectionBackgroundWrapper bgColor={props.bgColor} bgImage={props.bgImage}>
-      { props.bgComponent }
+    <PageSectionBackgroundWrapper bgColor={bgColor} bgImage={bgImage} bgSize={bgSize}>
+      { bgComponent }
     </PageSectionBackgroundWrapper>
     <PageSectionInnerWrapper>
-      { props.children }
+      { children }
     </PageSectionInnerWrapper>
   </PageSectionOuterWrapper>
 );
@@ -90,7 +100,8 @@ const PageSection = (props :Props) => (
 PageSection.defaultProps = {
   bgColor: undefined,
   bgComponent: undefined,
-  bgImage: undefined
+  bgImage: undefined,
+  bgSize: undefined
 };
 
 export default PageSection;

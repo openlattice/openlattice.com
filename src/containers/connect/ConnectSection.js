@@ -14,8 +14,13 @@ import ConnectCTA from './ConnectCTA';
 import PageSection from '../../components/layout/PageSection';
 import StyledSectionSubTitle from '../../components/headers/StyledSectionSubTitle';
 import StyledSectionTitle from '../../components/headers/StyledSectionTitle';
-import { PK0, PP4, PP5 } from '../../core/style/Colors';
-import { MEDIA_QUERY_SM } from '../../core/style/Sizes';
+import {
+  N1,
+  PK0,
+  PP5,
+  PP6
+} from '../../core/style/Colors';
+import { MEDIA_QUERY_MD } from '../../core/style/Sizes';
 
 /*
  * constants
@@ -28,7 +33,8 @@ const EMAIL :string = 'info@openlattice.com';
  */
 
 const Content = styled.div`
-  color: #fff;
+  align-items: center;
+  color: ${N1};
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -36,9 +42,9 @@ const Content = styled.div`
   max-width: 100%;
   text-align: center;
 
-  @media only screen and (min-width: ${MEDIA_QUERY_SM}px) {
+  @media only screen and (min-width: ${MEDIA_QUERY_MD}px) {
     flex-direction: row;
-    margin: 120px 0;
+    margin: 110px 0;
     text-align: left;
   }
 `;
@@ -47,7 +53,7 @@ const LeftWrapper = styled.div`
   flex: 1;
   margin: 0 0 30px 0;
 
-  @media only screen and (min-width: ${MEDIA_QUERY_SM}px) {
+  @media only screen and (min-width: ${MEDIA_QUERY_MD}px) {
     margin: 0;
     margin-right: 30px;
   }
@@ -57,24 +63,35 @@ const RightWrapper = styled.div`
   display: flex;
   flex: 1;
   flex-direction: column;
+  height: 110px;
   justify-content: center;
 
-  @media only screen and (min-width: ${MEDIA_QUERY_SM}px) {
-    justify-content: space-around;
+  @media only screen and (min-width: ${MEDIA_QUERY_MD}px) {
+    justify-content: space-between;
   }
 `;
 
+
+const Title = StyledSectionTitle.extend`
+  color: ${N1};
+  margin-bottom: 10px;
+`;
+
 const SubTitle = StyledSectionSubTitle.extend`
-  color: #fff;
+  color: ${N1};
 `;
 
 const ConnectSection = () => (
-  <PageSection bgColor={PP4}>
+  <PageSection bgColor={PP5}>
     <Content>
       <LeftWrapper>
         <img src={handshakeIcon} alt="handshake icon" />
-        <StyledSectionTitle>{'Let\'s work together.'}</StyledSectionTitle>
-        <SubTitle>Have a project in mind or want to learn more?</SubTitle>
+        <Title>
+          {'Let\'s work together.'}
+        </Title>
+        <SubTitle>
+          Have a project in mind or want to learn more?
+        </SubTitle>
       </LeftWrapper>
       <RightWrapper>
         <ConnectCTA
@@ -84,7 +101,7 @@ const ConnectSection = () => (
             icon={callIcon}
             target="https://calendly.com/openlattice/openlattice-website-request" />
         <ConnectCTA
-            bgColor={PP5}
+            bgColor={PP6}
             copyLeft={EMAIL}
             copyRight="Write an Email"
             icon={emailIcon}

@@ -6,71 +6,82 @@ import React from 'react';
 
 import styled, { css } from 'styled-components';
 
-import { N2 } from '../../core/style/Colors';
-import { MEDIA_QUERY_MD, MEDIA_QUERY_SM } from '../../core/style/Sizes';
+import { N1, N2 } from '../../core/style/Colors';
+import { MEDIA_QUERY_LG, MEDIA_QUERY_MD } from '../../core/style/Sizes';
 
 /*
  * styled components
  */
+const bgColorMixin = ({ bgColor }) => {
+  if (bgColor) {
+    return css`
+      background-color: ${bgColor};
+    `;
+  }
+  return css`
+    background: none;
+  `;
+};
+
 
 const CTAWrapper = styled.div`
   color: ${N2};
   display: flex;
   flex: 0 0 auto;
   font-size: 15px;
+  font-weight: semi-bold;
+  height: 45px;
   justify-content: center;
-  line-height: 18px;
+  line-height: 20px;
   margin: 0 0 30px 0;
 
-  @media only screen and (min-width: ${MEDIA_QUERY_MD}px) {
+  @media only screen and (min-width: ${MEDIA_QUERY_LG}px) {
     margin: 0;
   }
 `;
 
 const LeftWrapper = styled.div`
   align-items: center;
-  background-color: #fff;
+  background-color: ${N1};
   border-radius: 2px 0 0 2px;
   display: flex;
-  flex: 1;
-  min-width: 250px;
+  width: 304px;
   padding: 15px 15px;
 
   @media only screen and (max-width: 500px) {
     display: none;
   }
 
-  @media only screen and (min-width: ${MEDIA_QUERY_MD}px) {
+  @media only screen and (min-width: ${MEDIA_QUERY_LG}px) {
     padding: 15px 30px;
   }
 `;
 
 const RightWrapper = styled.div`
   align-items: center;
-  background-color: #fff;
+  background-color: ${N1};
   border-radius: 0 2px 2px 0;
   display: flex;
   justify-content: center;
-  padding: 15px 30px;
-  width: 180px;
-  ${(props) => {
-    if (props.bgColor) {
-      return css`background-color: ${props.bgColor};`;
-    }
-    return css`background: none`;
-  }}
+  padding: 12px 24px;
+  width: 200px;
+  ${props => bgColorMixin(props)}
+
+  @media only screen and (min-width: ${MEDIA_QUERY_MD}px) {
+    width: 161px;
+  }
 `;
 
 const ActionLink = styled.a`
-  color: #fff;
-  font-weight: 500;
+  color: ${N1};
+  font-weight: bold;
   text-decoration: none;
 `;
 
 const Icon = styled.img`
-  margin-right: 10px;
+  margin-right: 20px;
 
-  @media only screen and (min-width: ${MEDIA_QUERY_SM}) {
+  @media only screen and (min-width: ${MEDIA_QUERY_MD}) {
     margin-right: 20px;
   }
 `;
@@ -91,14 +102,24 @@ type Props = {
  * components
  */
 
-const ConnectCTA = (props :Props) => (
+const ConnectCTA = ({
+  bgColor,
+  copyLeft,
+  copyRight,
+  icon,
+  target
+} :Props) => (
   <CTAWrapper>
     <LeftWrapper>
-      <Icon src={props.icon} alt="icon" />
-      <span>{props.copyLeft}</span>
+      <Icon src={icon} alt="icon" />
+      <span>
+        { copyLeft }
+      </span>
     </LeftWrapper>
-    <RightWrapper bgColor={props.bgColor}>
-      <ActionLink href={props.target}>{ props.copyRight }</ActionLink>
+    <RightWrapper bgColor={bgColor}>
+      <ActionLink href={target}>
+        { copyRight }
+      </ActionLink>
     </RightWrapper>
   </CTAWrapper>
 );
