@@ -6,7 +6,7 @@ import React from 'react';
 
 import styled from 'styled-components';
 
-import logoImg from '../../assets/images/logo-original@3x.png';
+import logoImg from '../../assets/images/logo-original.png';
 
 import PageSection from '../../components/layout/PageSection';
 import { N1, N2 } from '../../core/style/Colors';
