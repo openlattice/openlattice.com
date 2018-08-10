@@ -94,7 +94,11 @@ export default function baseWebpackConfig() {
       BANNER_PLUGIN
     ],
     resolve: {
-      extensions: ['.js', '.css']
+      extensions: ['.js', '.css'],
+      modules: [
+        APP_PATHS.ABS.SOURCE,
+        APP_PATHS.ABS.NODE
+      ]
     },
     node: {
       net: 'empty'
