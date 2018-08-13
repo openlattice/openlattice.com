@@ -6,7 +6,7 @@ import React from 'react';
 
 import styled from 'styled-components';
 
-import logoImg from '../../assets/images/logo-white@3x.png';
+import logoImg from '../../assets/images/logo-white.png';
 
 import BackgroundCarousel from './BackgroundCarousel';
 import PageSection from '../../components/layout/PageSection';
