@@ -109,7 +109,7 @@ export const CONTENT_04 = {
 
   LIST_ITEM_02: {
     TITLE: '02',
-    TEXT: `Minnehaha & Pennington County, SD automated risk assessments for pre-trial release decisions 
+    TEXT: `Minnehaha & Pennington County, SD automated risk assessments for pretrial release decisions
       and monitors released individuals.`
   },
 
