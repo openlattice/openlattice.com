@@ -23,9 +23,7 @@ import {
   HUDSON,
   BERKS,
   BALTIMORE,
-  LAKE,
   JOHNSON,
-  POLK,
   CALIFORNIA,
   PENNINGTON,
   MINNEHAHA
@@ -44,9 +42,7 @@ const jurisdictions = [
   HUDSON,
   BERKS,
   BALTIMORE,
-  LAKE,
   JOHNSON,
-  POLK,
   CALIFORNIA,
   PENNINGTON,
   MINNEHAHA

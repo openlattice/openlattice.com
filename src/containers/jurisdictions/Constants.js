@@ -105,21 +105,6 @@ export const BALTIMORE = {
   POPULATION: '621,849 People'
 };
 
-export const LAKE = {
-  X_LABEL: '731',
-  Y_LABEL: '673',
-  X_LINE: '750',
-  Y_LINE: '442',
-  X1_LINE: '0',
-  Y1_LINE: '0',
-  X2_LINE: '31',
-  Y2_LINE: '227',
-  X_TARGET: '746',
-  Y_TARGET: '439',
-  LOCATION: 'Lake County, IL',
-  POPULATION: '208,419 People'
-};
-
 export const JOHNSON = {
   X_LABEL: '470',
   Y_LABEL: '657',
@@ -133,21 +118,6 @@ export const JOHNSON = {
   Y_TARGET: '449',
   LOCATION: 'Johnson County, IA',
   POPULATION: '146,547 People'
-};
-
-export const POLK = {
-  X_LABEL: '265',
-  Y_LABEL: '657',
-  X_LINE: '372',
-  Y_LINE: '456',
-  X1_LINE: '0',
-  Y1_LINE: '207',
-  X2_LINE: '314',
-  Y2_LINE: '0',
-  X_TARGET: '681',
-  Y_TARGET: '452',
-  LOCATION: 'Polk County, IA',
-  POPULATION: '474,045 People'
 };
 
 export const CALIFORNIA = {
