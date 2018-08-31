@@ -2,7 +2,8 @@
  * @flow
  */
 
-import React, { Node } from 'react';
+import React from 'react';
+import type { Node } from 'react';
 
 import styled from 'styled-components';
 
