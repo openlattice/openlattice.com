@@ -99,7 +99,7 @@ const ConnectSection = () => (
             copyLeft="Find a date on Calendly"
             copyRight="Schedule a call"
             icon={callIcon}
-            target="https://calendly.com/openlattice/openlattice-website-request" />
+            target="https://calendly.com/openlattice/openlattice-demo" />
         <ConnectCTA
             bgColor={PP6}
             copyLeft={EMAIL}
