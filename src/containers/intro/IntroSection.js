@@ -97,7 +97,7 @@ const IntroSection = () => (
       <SubTitle>
         Foundational tools to better serve all citizens
       </SubTitle>
-      <ScheduleLink href="https://calendly.com/openlattice/openlattice-website-request">
+      <ScheduleLink href="https://calendly.com/openlattice/openlattice-web-request">
         Schedule a call to learn more
       </ScheduleLink>
     </Content>
