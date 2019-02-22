@@ -65,7 +65,7 @@ const FooterSection = () => (
           Help Center
         </StyledHelpLink>
         <Copyright>
-          Copyright © 2018 OpenLattice
+          Copyright © 2019 OpenLattice
         </Copyright>
       </RightSectionWrapper>
     </Content>
