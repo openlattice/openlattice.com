@@ -62,7 +62,7 @@ const Content = styled.div`
   }
 `;
 
-const Title = StyledSectionTitle.extend`
+const Title = styled(StyledSectionTitle)`
   color: ${N3};
 
   @media only screen and (min-width: ${MEDIA_QUERY_MD}px) {
