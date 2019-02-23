@@ -62,7 +62,7 @@ const FooterBody = styled.span`
   line-height: 19px;
 `;
 
-const FooterBodyEmpasized = FooterBody.extend`
+const FooterBodyEmpasized = styled(FooterBody)`
   color: ${N4};
 `;
 

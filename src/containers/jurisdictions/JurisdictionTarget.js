@@ -1,5 +1,4 @@
 import React from 'react';
-import PropTypes from 'prop-types';
 
 import styled from 'styled-components';
 
@@ -20,10 +19,5 @@ const JurisdictionTarget = ({
     <circle cx="4.5" cy="4.5" r="2.5" fill={PP4} />
   </TargetSVG>
 );
-
-JurisdictionTarget.propTypes = {
-  x: PropTypes.string.isRequired,
-  y: PropTypes.string.isRequired
-};
 
 export default JurisdictionTarget;
