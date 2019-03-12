@@ -39,7 +39,7 @@ const Content = styled.div`
   }
 `;
 
-const Title = StyledSectionTitle.extend`
+const Title = styled(StyledSectionTitle)`
   color: ${N0};
   margin-bottom: 20px;
   text-align: center;
@@ -50,7 +50,7 @@ const Title = StyledSectionTitle.extend`
   }
 `;
 
-const SubTitle = StyledSectionSubTitle.extend`
+const SubTitle = styled(StyledSectionSubTitle)`
   color: ${N0};
   font-size: 15px;
   line-height: 27px;

@@ -35,17 +35,17 @@ import {
  */
 
 const jurisdictions = [
+  MINNEHAHA,
+  PENNINGTON,
+  CALIFORNIA,
   DANE,
+  JOHNSON,
   FRANKLIN,
-  PORTLAND,
-  MIDDLESEX,
-  HUDSON,
   BERKS,
   BALTIMORE,
-  JOHNSON,
-  CALIFORNIA,
-  PENNINGTON,
-  MINNEHAHA
+  HUDSON,
+  PORTLAND,
+  MIDDLESEX,
 ];
 
 const Content = styled.div`
@@ -62,7 +62,7 @@ const Content = styled.div`
   }
 `;
 
-const Title = StyledSectionTitle.extend`
+const Title = styled(StyledSectionTitle)`
   color: ${N3};
 
   @media only screen and (min-width: ${MEDIA_QUERY_MD}px) {

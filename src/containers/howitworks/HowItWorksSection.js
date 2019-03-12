@@ -21,7 +21,7 @@ const Content = styled.div`
   }
 `;
 
-const StyledCroppedSubtitle = StyledSectionSubTitle.extend`
+const StyledCroppedSubtitle = styled(StyledSectionSubTitle)`
   margin-bottom: 60px;
 
   @media only screen and (min-width: ${MEDIA_QUERY_LG}px) {

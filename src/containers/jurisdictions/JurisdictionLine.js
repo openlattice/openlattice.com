@@ -1,5 +1,4 @@
 import React from 'react';
-import PropTypes from 'prop-types';
 
 import styled from 'styled-components';
 
@@ -23,15 +22,6 @@ const JurisdictionLine = ({
       <line x1={x1} y1={y1} x2={x2} y2={y2} stroke={PP4} />
     </Line>
   );
-};
-
-JurisdictionLine.propTypes = {
-  x: PropTypes.string.isRequired,
-  y: PropTypes.string.isRequired,
-  x1: PropTypes.string.isRequired,
-  y1: PropTypes.string.isRequired,
-  x2: PropTypes.string.isRequired,
-  y2: PropTypes.string.isRequired
 };
 
 export default JurisdictionLine;

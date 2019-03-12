@@ -123,7 +123,7 @@ const HealthSvg = styled.svg`
   }
 `;
 
-const HealthBadge = Badge.extend`
+const HealthBadge = styled(Badge)`
   background-color: #9359ff;
   left: calc(30% - 20px);
   position: absolute;
@@ -159,7 +159,7 @@ const PublicSafetySvg = styled.svg`
   height: 133px;
 `;
 
-const PublicSafetyBadge = Badge.extend`
+const PublicSafetyBadge = styled(Badge)`
   background-color: #c881ff;
   left: calc(30%);
   position: absolute;
@@ -202,7 +202,7 @@ const SocialServicesSvg = styled.svg`
   }
 `;
 
-const SocialServicesBadge = Badge.extend`
+const SocialServicesBadge = styled(Badge)`
   background-color: #6124e2;
   left: calc(26%);
   position: absolute;

@@ -72,12 +72,12 @@ const RightWrapper = styled.div`
 `;
 
 
-const Title = StyledSectionTitle.extend`
+const Title = styled(StyledSectionTitle)`
   color: ${N1};
   margin-bottom: 10px;
 `;
 
-const SubTitle = StyledSectionSubTitle.extend`
+const SubTitle = styled(StyledSectionSubTitle)`
   color: ${N1};
 `;
 
