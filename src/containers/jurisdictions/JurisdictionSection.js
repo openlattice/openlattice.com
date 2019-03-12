@@ -35,17 +35,17 @@ import {
  */
 
 const jurisdictions = [
+  MINNEHAHA,
+  PENNINGTON,
+  CALIFORNIA,
   DANE,
+  JOHNSON,
   FRANKLIN,
-  PORTLAND,
-  MIDDLESEX,
-  HUDSON,
   BERKS,
   BALTIMORE,
-  JOHNSON,
-  CALIFORNIA,
-  PENNINGTON,
-  MINNEHAHA
+  HUDSON,
+  PORTLAND,
+  MIDDLESEX,
 ];
 
 const Content = styled.div`
