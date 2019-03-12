@@ -12,7 +12,7 @@ export const DANE = {
   X_TARGET: '726',
   Y_TARGET: '425',
   LOCATION: 'Dane County, WI',
-  POPULATION: '531,273 People'
+  POPULATION: 'Pop. 531,273'
 };
 
 export const FRANKLIN = {
@@ -27,7 +27,7 @@ export const FRANKLIN = {
   X_TARGET: '803',
   Y_TARGET: '465',
   LOCATION: 'Franklin County, OH',
-  POPULATION: '1,264,518 People'
+  POPULATION: 'Pop. 1,264,518'
 };
 
 export const PORTLAND = {
@@ -42,7 +42,7 @@ export const PORTLAND = {
   X_TARGET: '939',
   Y_TARGET: '380',
   LOCATION: 'Portland, ME (GPAC)',
-  POPULATION: '66,881 People'
+  POPULATION: 'Pop. 66,881'
 };
 
 export const MIDDLESEX = {
@@ -57,7 +57,7 @@ export const MIDDLESEX = {
   X_TARGET: '929',
   Y_TARGET: '404',
   LOCATION: 'Middlesex County, MA',
-  POPULATION: '1,589,774 People'
+  POPULATION: 'Pop. 1,589,774'
 };
 
 export const HUDSON = {
@@ -72,7 +72,7 @@ export const HUDSON = {
   X_TARGET: '905',
   Y_TARGET: '438',
   LOCATION: 'Hudson County, NJ',
-  POPULATION: '677,983 People'
+  POPULATION: 'Pop. 677,983'
 };
 
 export const BERKS = {
@@ -87,7 +87,7 @@ export const BERKS = {
   X_TARGET: '885',
   Y_TARGET: '447',
   LOCATION: 'Berks County, PA',
-  POPULATION: '414,812 People'
+  POPULATION: 'Pop. 414,812'
 };
 
 export const BALTIMORE = {
@@ -102,7 +102,7 @@ export const BALTIMORE = {
   X_TARGET: '886',
   Y_TARGET: '465',
   LOCATION: 'Baltimore, MD',
-  POPULATION: '621,849 People'
+  POPULATION: 'Pop. 621,849'
 };
 
 export const JOHNSON = {
@@ -117,7 +117,7 @@ export const JOHNSON = {
   X_TARGET: '704',
   Y_TARGET: '449',
   LOCATION: 'Johnson County, IA',
-  POPULATION: '146,547 People'
+  POPULATION: 'Pop. 146,547'
 };
 
 export const CALIFORNIA = {
@@ -132,7 +132,7 @@ export const CALIFORNIA = {
   X_TARGET: '355',
   Y_TARGET: '466',
   LOCATION: 'State of California',
-  POPULATION: ''
+  POPULATION: 'Pop. 40,017,007'
 };
 
 export const PENNINGTON = {
@@ -147,7 +147,7 @@ export const PENNINGTON = {
   X_TARGET: '589',
   Y_TARGET: '414',
   LOCATION: 'Pennington County, SD',
-  POPULATION: '109,372 People'
+  POPULATION: 'Pop. 109,372'
 };
 
 export const MINNEHAHA = {
@@ -162,5 +162,5 @@ export const MINNEHAHA = {
   X_TARGET: '641',
   Y_TARGET: '420',
   LOCATION: 'Minnehaha County, SD',
-  POPULATION: '187,318 People'
+  POPULATION: 'Pop. 187,318'
 };
