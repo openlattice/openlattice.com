@@ -5,7 +5,9 @@
 import React, { Fragment } from 'react';
 
 import styled from 'styled-components';
-
+import { withRouter } from 'react-router';
+import { Link } from 'react-router-dom';
+import * as Routes from '../../core/router/Routes';
 import personPng from '../../assets/images/person-grp@3x.png';
 
 import PageSection from '../../components/layout/PageSection';
@@ -14,7 +16,9 @@ import StyledSectionTitle from '../../components/headers/StyledSectionTitle';
 import { PAGE_SECTION_MIN_WIDTH, MEDIA_QUERY_MD, MEDIA_QUERY_LG } from '../../core/style/Sizes';
 
 import {
+  N0,
   N1,
+  PK0,
   PP2,
   PP3,
   PP4
@@ -22,7 +26,7 @@ import {
 
 const Content = styled.div`
   display: block;
-  margin: 80px 0 100px 0;
+  margin: 30px 0 100px 0;
   max-width: 100%;
   height: 375px;
 
@@ -32,7 +36,7 @@ const Content = styled.div`
   }
 
   @media only screen and (min-width: ${MEDIA_QUERY_LG}px) {
-    height: 525px;
+    height: 625px;
     margin: 140px 0 0 0;
   }
 `;
@@ -282,6 +286,30 @@ const SocialServices = () => (
   </SocialServicesWrapper>
 );
 
+const PaddedSubTitle = styled(StyledSectionSubTitle)`
+  padding-bottom: 10px;
+`;
+
+const ProductsLink = styled(Link)`
+  background-color: ${PK0};
+  border: none;
+  border-radius: 20px;
+  color: ${N0};
+  cursor: pointer;
+  display: inline-block;
+  font-family: 'Roboto', sans-serif;
+  font-size: 15px;
+  font-weight: semi-bold;
+  line-height: 20px;
+  margin-top: 10px;
+  outline: none;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  white-space: nowrap;
+  z-index: 3000;
+`;
+
 const ServicesSection = () => (
   <Fragment>
     <PageSection bgColor={N1}>
@@ -295,6 +323,9 @@ const ServicesSection = () => (
             test interventions, and improve human outcomes.`
           }
         </StyledSectionSubTitle>
+        <ProductsLink to={Routes.PRODUCTS}>
+          Learn more about our products
+        </ProductsLink>
       </Content>
     </PageSection>
     <ArtSectionOuterWrapper>
@@ -306,4 +337,4 @@ const ServicesSection = () => (
   </Fragment>
 );
 
-export default ServicesSection;
+export default withRouter(ServicesSection);
