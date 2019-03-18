@@ -286,10 +286,6 @@ const SocialServices = () => (
   </SocialServicesWrapper>
 );
 
-const PaddedSubTitle = styled(StyledSectionSubTitle)`
-  padding-bottom: 10px;
-`;
-
 const ProductsLink = styled(Link)`
   background-color: ${PK0};
   border: none;
