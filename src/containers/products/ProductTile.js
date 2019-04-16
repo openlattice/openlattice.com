@@ -7,7 +7,6 @@ import React from 'react';
 import styled from 'styled-components';
 import { withRouter } from 'react-router';
 import { Link } from 'react-router-dom';
-import * as Routes from '../../core/router/Routes';
 
 import { N2, N4, PP1 } from '../../core/style/Colors';
 import { MEDIA_QUERY_TECH_SM } from '../../core/style/Sizes';
@@ -53,7 +52,12 @@ type Props = {
   title :string;
 }
 
-const ProductTile = ({ body, icon, route, title } :Props) => (
+const ProductTile = ({
+  body,
+  icon,
+  route,
+  title,
+} :Props) => (
   <TileWrapper to={route}>
     <Icon src={icon} />
     <Title>
