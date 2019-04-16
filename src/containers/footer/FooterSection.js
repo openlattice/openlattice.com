@@ -12,7 +12,7 @@ import PageSection from '../../components/layout/PageSection';
 import { N1, N2, PP4 } from '../../core/style/Colors';
 import { MEDIA_QUERY_MD } from '../../core/style/Sizes';
 
-const helpLink = 'https://help.openlattice.com/faq/';
+const helpLink = 'https://help.openlattice.com';
 /*
  * styled components
  */
