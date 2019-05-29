@@ -91,11 +91,7 @@ const TechnologySection = () => (
         <TechTilesInnerWrapper>
           <FooterTile icon={Constants.icon7}>
             <FooterBody>
-              All of our code is available
-              <FooterBodyEmpasized>
-                {' open source '}
-              </FooterBodyEmpasized>
-              on github.
+              Check out our code on GitHub.
             </FooterBody>
           </FooterTile>
           <FooterTile icon={Constants.icon8}>
