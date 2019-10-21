@@ -93,7 +93,7 @@ const ProductTilesInnerWrapper = styled.div`
   margin: -15px;
 
   @media only screen and (min-width: ${MEDIA_QUERY_LG}px) {
-    justify-content: space-between;
+    justify-content: flex-start;
   }
 `;
 
@@ -126,7 +126,6 @@ const ProductsPage = () => (
             <ProductTile title={Constants.title3} body={Constants.body3} icon="" route={Routes.PSA} />
             <ProductTile title={Constants.title4} body={Constants.body4} icon="" route={Routes.PCM} />
             <ProductTile title={Constants.title5} body={Constants.body5} icon="" route={Routes.CHRONICLE} />
-            <ProductTile title={Constants.title6} body={Constants.body6} icon="" route={Routes.ECR} />
           </ProductTilesInnerWrapper>
         </ProductTilesOuterWrapper>
       </PageContent>
