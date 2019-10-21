@@ -15,36 +15,6 @@ export const DANE = {
   POPULATION: 'Pop. 531,273'
 };
 
-export const FRANKLIN = {
-  X_LABEL: '784',
-  Y_LABEL: '286',
-  X_LINE: '807',
-  Y_LINE: '328',
-  X1_LINE: '42',
-  Y1_LINE: '0',
-  X2_LINE: '0',
-  Y2_LINE: '142',
-  X_TARGET: '803',
-  Y_TARGET: '465',
-  LOCATION: 'Franklin County, OH',
-  POPULATION: 'Pop. 1,264,518'
-};
-
-export const PORTLAND = {
-  X_LABEL: '990',
-  Y_LABEL: '306',
-  X_LINE: '943',
-  Y_LINE: '320',
-  X1_LINE: '0',
-  Y1_LINE: '65',
-  X2_LINE: '40',
-  Y2_LINE: '0',
-  X_TARGET: '939',
-  Y_TARGET: '380',
-  LOCATION: 'Portland, ME (GPAC)',
-  POPULATION: 'Pop. 66,881'
-};
-
 export const MIDDLESEX = {
   X_LABEL: '990',
   Y_LABEL: '377',
@@ -88,21 +58,6 @@ export const BERKS = {
   Y_TARGET: '447',
   LOCATION: 'Berks County, PA',
   POPULATION: 'Pop. 414,812'
-};
-
-export const BALTIMORE = {
-  X_LABEL: '990',
-  Y_LABEL: '590',
-  X_LINE: '891',
-  Y_LINE: '470',
-  X1_LINE: '0',
-  Y1_LINE: '0',
-  X2_LINE: '94',
-  Y2_LINE: '127',
-  X_TARGET: '886',
-  Y_TARGET: '465',
-  LOCATION: 'Baltimore, MD',
-  POPULATION: 'Pop. 621,849'
 };
 
 export const JOHNSON = {

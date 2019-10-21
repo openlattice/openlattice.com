@@ -14,7 +14,6 @@ import RideAlongPage from '../products/RideAlongPage';
 import PSAPage from '../products/PSAPage';
 import PCMPage from '../products/PCMPage';
 import ChroniclePage from '../products/ChroniclePage';
-import ECRPage from '../products/ECRPage';
 
 const AppContainer = () => (
   <Switch>
@@ -24,7 +23,6 @@ const AppContainer = () => (
     <Route exact path={Routes.PSA} component={PSAPage} />
     <Route exact path={Routes.PCM} component={PCMPage} />
     <Route exact path={Routes.CHRONICLE} component={ChroniclePage} />
-    <Route exact path={Routes.ECR} component={ECRPage} />
     <Route component={AppHomePage} />
   </Switch>
 );
