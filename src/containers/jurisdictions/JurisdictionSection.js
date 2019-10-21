@@ -18,7 +18,6 @@ import {
   TITLE,
   DANE,
   FRANKLIN,
-  PORTLAND,
   MIDDLESEX,
   HUDSON,
   BERKS,
@@ -44,7 +43,6 @@ const jurisdictions = [
   BERKS,
   BALTIMORE,
   HUDSON,
-  PORTLAND,
   MIDDLESEX,
 ];
 

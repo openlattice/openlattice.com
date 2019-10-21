@@ -44,14 +44,6 @@ const Content04 = () => (
           { CONTENT_04.LIST_ITEM_02.TEXT }
         </ListItemText>
       </ListItem>
-      <ListItem>
-        <ListItemNumber>
-          { CONTENT_04.LIST_ITEM_03.TITLE }
-        </ListItemNumber>
-        <ListItemText>
-          { CONTENT_04.LIST_ITEM_03.TEXT }
-        </ListItemText>
-      </ListItem>
     </ContentRight>
   </ContentWrapper>
 );

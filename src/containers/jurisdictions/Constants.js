@@ -30,21 +30,6 @@ export const FRANKLIN = {
   POPULATION: 'Pop. 1,264,518'
 };
 
-export const PORTLAND = {
-  X_LABEL: '990',
-  Y_LABEL: '306',
-  X_LINE: '943',
-  Y_LINE: '320',
-  X1_LINE: '0',
-  Y1_LINE: '65',
-  X2_LINE: '40',
-  Y2_LINE: '0',
-  X_TARGET: '939',
-  Y_TARGET: '380',
-  LOCATION: 'Portland, ME (GPAC)',
-  POPULATION: 'Pop. 66,881'
-};
-
 export const MIDDLESEX = {
   X_LABEL: '990',
   Y_LABEL: '377',
