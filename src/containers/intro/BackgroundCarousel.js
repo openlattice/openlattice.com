@@ -2,7 +2,7 @@
  * @flow
  */
 
-import React, { Component, Fragment } from 'react';
+import React, { Component } from 'react';
 
 import styled, { keyframes } from 'styled-components';
 
@@ -94,10 +94,10 @@ class BackgroundCarousel extends Component<Props, State> {
     ));
 
     return (
-      <Fragment>
+      <>
         { imageComponents }
         <BackgroundImage bgImage={images[prevIndex]} />
-      </Fragment>
+      </>
     );
   }
 }

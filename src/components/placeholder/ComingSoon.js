@@ -2,7 +2,7 @@
  * @flow
  */
 
-import React, { Fragment } from 'react';
+import React from 'react';
 import styled from 'styled-components';
 
 import backgroundImage from '../../assets/images/splash_01.png';
@@ -38,14 +38,14 @@ const TitleText = styled(StyledSectionTitle)`
 `;
 
 const ComingSoon = () => (
-  <Fragment>
+  <>
     <PageSection bgImage={backgroundImage}>
       <Content>
         <TitleText>COMING SOON</TitleText>
       </Content>
     </PageSection>
     <FooterSection />
-  </Fragment>
+  </>
 );
 
 export default ComingSoon;

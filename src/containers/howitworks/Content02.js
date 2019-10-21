@@ -42,7 +42,7 @@ const Content02 = () => (
           <ListItemLink
               href={CONTENT_02.LIST_ITEM_02.BAA_LINK}
               target="_blank">
-            { 'BAA' }
+            BAA
           </ListItemLink>
           <ListItemText>
             { ' for ' }
@@ -81,7 +81,7 @@ const Content02 = () => (
           <ListItemLink
               href={CONTENT_02.LIST_ITEM_02.CJIS_LINK}
               target="_blank">
-            { 'CJIS' }
+            CJIS
           </ListItemLink>
           <ListItemText>
             { ' for Criminal Justice data' }
@@ -91,7 +91,7 @@ const Content02 = () => (
           <ListItemLink
               href={CONTENT_02.LIST_ITEM_02.FERPA_LINK}
               target="_blank">
-            { 'FERPA' }
+            FERPA
           </ListItemLink>
           <ListItemText>
             { ' for student data' }

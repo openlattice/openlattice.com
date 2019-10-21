@@ -61,7 +61,7 @@ const PageSectionBackgroundWrapper = styled.div`
   height: 100%;
   position: absolute;
   width: 100%;
-  ${props => bgImageMixin(props)}
+  ${(props) => bgImageMixin(props)}
 `;
 
 /*
