@@ -1,3 +1,4 @@
+// @flow
 import React from 'react';
 
 import styled from 'styled-components';
@@ -10,10 +11,23 @@ const Line = styled.svg`
   top: ${({ y }) => y || null}px;
 `;
 
+type Props = {
+  x :number;
+  y :number;
+  x1 :number;
+  y1 :number;
+  x2 :number;
+  y2 :number;
+};
 
 const JurisdictionLine = ({
-  x, y, x1, y1, x2, y2
-}) => {
+  x,
+  y,
+  x1,
+  y1,
+  x2,
+  y2,
+} :Props) => {
   const width = Math.max(x1, x2);
   const height = Math.max(y, y2);
 

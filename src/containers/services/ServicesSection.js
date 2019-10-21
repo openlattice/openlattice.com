@@ -2,7 +2,7 @@
  * @flow
  */
 
-import React, { Fragment } from 'react';
+import React from 'react';
 
 import styled from 'styled-components';
 import { withRouter } from 'react-router';
@@ -307,7 +307,7 @@ const ProductsLink = styled(Link)`
 `;
 
 const ServicesSection = () => (
-  <Fragment>
+  <>
     <PageSection bgColor={N1}>
       <Content>
         <StyledSectionTitle>
@@ -330,7 +330,7 @@ const ServicesSection = () => (
       <PublicSafety />
       <SocialServices />
     </ArtSectionOuterWrapper>
-  </Fragment>
+  </>
 );
 
 // $FlowFixMe

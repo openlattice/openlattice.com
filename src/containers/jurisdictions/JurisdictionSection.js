@@ -98,7 +98,7 @@ const LabelSets = styled.div`
 
 // Renders simple labels at < large browser size
 const renderLabels = () => (
-  jurisdictions.map(jurisdiction => (
+  jurisdictions.map((jurisdiction) => (
     <JurisdictionLabel
         location={jurisdiction.LOCATION}
         population={jurisdiction.POPULATION}
@@ -108,7 +108,7 @@ const renderLabels = () => (
 
 // Renders full label sets only at large browser size
 const renderLabelSets = () => (
-  jurisdictions.map(jurisdiction => (
+  jurisdictions.map((jurisdiction) => (
     <JurisdictionLabelSet
         jurisdiction={jurisdiction}
         key={jurisdiction.LOCATION} />

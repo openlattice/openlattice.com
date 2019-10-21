@@ -1,3 +1,4 @@
+// @flow
 import React from 'react';
 
 import styled from 'styled-components';
@@ -10,9 +11,15 @@ const TargetSVG = styled.svg`
   top: ${({ y }) => `${y}px` || null};
 `;
 
+type Props = {
+  x :string;
+  y :string;
+};
+
 const JurisdictionTarget = ({
-  x, y
-}) => (
+  x,
+  y,
+} :Props) => (
   <TargetSVG x={x} y={y}>
     <circle cx="4.5" cy="4.5" r="4.5" fill={PP4} />
     <circle cx="4.5" cy="4.5" r="3.5" fill={N0} />

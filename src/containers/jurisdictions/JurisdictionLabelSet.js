@@ -1,12 +1,16 @@
-import React, { Fragment } from 'react';
+// @flow
+import React from 'react';
 
 import JurisdictionLabel from './JurisdictionLabel';
 import JurisdictionLine from './JurisdictionLine';
 import JurisdictionTarget from './JurisdictionTarget';
 
+type Props = {
+  jurisdiction :Object;
+};
 
-const JurisdictionLabelSet = ({ jurisdiction }) => (
-  <Fragment>
+const JurisdictionLabelSet = ({ jurisdiction } :Props) => (
+  <>
     <JurisdictionLabel
         x={jurisdiction.X_LABEL}
         y={jurisdiction.Y_LABEL}
@@ -22,7 +26,7 @@ const JurisdictionLabelSet = ({ jurisdiction }) => (
     <JurisdictionTarget
         x={jurisdiction.X_TARGET}
         y={jurisdiction.Y_TARGET} />
-  </Fragment>
+  </>
 );
 
 export default JurisdictionLabelSet;
