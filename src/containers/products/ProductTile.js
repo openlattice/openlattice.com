@@ -69,4 +69,5 @@ const ProductTile = ({
   </TileWrapper>
 );
 
+// $FlowFixMe
 export default withRouter(ProductTile);
