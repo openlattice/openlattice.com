@@ -21,7 +21,6 @@ import {
   MIDDLESEX,
   HUDSON,
   BERKS,
-  BALTIMORE,
   JOHNSON,
   CALIFORNIA,
   PENNINGTON,
@@ -41,7 +40,6 @@ const jurisdictions = [
   JOHNSON,
   FRANKLIN,
   BERKS,
-  BALTIMORE,
   HUDSON,
   MIDDLESEX,
 ];

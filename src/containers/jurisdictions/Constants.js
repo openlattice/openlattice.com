@@ -75,21 +75,6 @@ export const BERKS = {
   POPULATION: 'Pop. 414,812'
 };
 
-export const BALTIMORE = {
-  X_LABEL: '990',
-  Y_LABEL: '590',
-  X_LINE: '891',
-  Y_LINE: '470',
-  X1_LINE: '0',
-  Y1_LINE: '0',
-  X2_LINE: '94',
-  Y2_LINE: '127',
-  X_TARGET: '886',
-  Y_TARGET: '465',
-  LOCATION: 'Baltimore, MD',
-  POPULATION: 'Pop. 621,849'
-};
-
 export const JOHNSON = {
   X_LABEL: '470',
   Y_LABEL: '657',
