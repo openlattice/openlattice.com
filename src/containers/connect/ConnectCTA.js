@@ -65,7 +65,7 @@ const RightWrapper = styled.div`
   justify-content: center;
   padding: 12px 24px;
   width: 200px;
-  ${props => bgColorMixin(props)}
+  ${(props) => bgColorMixin(props)}
 
   @media only screen and (min-width: ${MEDIA_QUERY_MD}px) {
     width: 161px;

@@ -1,4 +1,4 @@
-import React, { Fragment } from 'react';
+import React from 'react';
 
 import styled from 'styled-components';
 
@@ -30,7 +30,7 @@ const StyledCroppedSubtitle = styled(StyledSectionSubTitle)`
 `;
 
 const HowItWorksSection = () => (
-  <Fragment>
+  <>
     <PageSection bgColor={N1}>
       <Content>
         <StyledSectionTitle>
@@ -42,7 +42,7 @@ const HowItWorksSection = () => (
         <TabDisplay />
       </Content>
     </PageSection>
-  </Fragment>
+  </>
 );
 
 export default HowItWorksSection;

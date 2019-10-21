@@ -1,3 +1,4 @@
+// @flow
 import React from 'react';
 
 import styled from 'styled-components';
@@ -47,10 +48,18 @@ const PopulationLabel = styled.span`
   font-weight: normal;
 `;
 
-
+type Props = {
+  x ? :string;
+  y ? :string;
+  location :string;
+  population :string;
+};
 const JurisdictionLabel = ({
-  x, y, location, population
-}) => (
+  location,
+  population,
+  x,
+  y,
+} :Props) => (
   <LabelWrapper x={x} y={y}>
     <LocationLabel>
       { location }
