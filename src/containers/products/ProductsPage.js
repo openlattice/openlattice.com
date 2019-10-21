@@ -93,7 +93,7 @@ const ProductTilesInnerWrapper = styled.div`
   margin: -15px;
 
   @media only screen and (min-width: ${MEDIA_QUERY_LG}px) {
-    justify-content: space-between;
+    justify-content: flex-start;
   }
 `;
 
