@@ -109,7 +109,7 @@ export const CONTENT_04 = {
 
   LIST_ITEM_02: {
     TITLE: '02',
-    TEXT: `Baltimore (Maryland) and Johnson County (Iowa) are monitoring behavioral health
+    TEXT: `Middlesex, Johnson, and various counties across Washington are monitoring behavioral health
       associated criminal justice incidents.`
   }
 };
