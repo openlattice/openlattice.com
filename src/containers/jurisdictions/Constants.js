@@ -15,21 +15,6 @@ export const DANE = {
   POPULATION: 'Pop. 531,273'
 };
 
-export const FRANKLIN = {
-  X_LABEL: '784',
-  Y_LABEL: '286',
-  X_LINE: '807',
-  Y_LINE: '328',
-  X1_LINE: '42',
-  Y1_LINE: '0',
-  X2_LINE: '0',
-  Y2_LINE: '142',
-  X_TARGET: '803',
-  Y_TARGET: '465',
-  LOCATION: 'Franklin County, OH',
-  POPULATION: 'Pop. 1,264,518'
-};
-
 export const MIDDLESEX = {
   X_LABEL: '990',
   Y_LABEL: '377',

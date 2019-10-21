@@ -17,7 +17,6 @@ import { N3 } from '../../core/style/Colors';
 import {
   TITLE,
   DANE,
-  FRANKLIN,
   MIDDLESEX,
   HUDSON,
   BERKS,
@@ -38,7 +37,6 @@ const jurisdictions = [
   CALIFORNIA,
   DANE,
   JOHNSON,
-  FRANKLIN,
   BERKS,
   HUDSON,
   MIDDLESEX,
