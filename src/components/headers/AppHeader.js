@@ -41,7 +41,9 @@ const MenuExternalLink = styled.a`
 
 const AppHeader = () => (
   <Header>
-    <img src={logoImg} alt="OpenLattice Logo" height={50} />
+    <Link to={Routes.ROOT}>
+      <img src={logoImg} alt="OpenLattice Logo" height={50} />
+    </Link>
     <Menu>
       <MenuInternalLink to={Routes.PRODUCTS}>Products</MenuInternalLink>
       <MenuExternalLink href={helpLink}>Help</MenuExternalLink>
