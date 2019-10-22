@@ -23,7 +23,8 @@ import {
   JOHNSON,
   CALIFORNIA,
   PENNINGTON,
-  MINNEHAHA
+  MINNEHAHA,
+  WASPC
 } from './Constants';
 
 
@@ -32,8 +33,9 @@ import {
  */
 
 const jurisdictions = [
-  MINNEHAHA,
+  WASPC,
   PENNINGTON,
+  MINNEHAHA,
   CALIFORNIA,
   DANE,
   JOHNSON,

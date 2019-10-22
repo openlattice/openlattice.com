@@ -76,29 +76,29 @@ export const JOHNSON = {
 };
 
 export const CALIFORNIA = {
-  X_LABEL: '170',
-  Y_LABEL: '498',
-  X_LINE: '300',
-  Y_LINE: '470',
+  X_LABEL: '180',
+  Y_LABEL: '558',
+  X_LINE: '305',
+  Y_LINE: '495',
   X1_LINE: '0',
-  Y1_LINE: '34',
-  X2_LINE: '60',
+  Y1_LINE: '65',
+  X2_LINE: '65',
   Y2_LINE: '0',
-  X_TARGET: '355',
-  Y_TARGET: '466',
+  X_TARGET: '363',
+  Y_TARGET: '493',
   LOCATION: 'State of California',
   POPULATION: 'Pop. 40,017,007'
 };
 
 export const PENNINGTON = {
   X_LABEL: '170',
-  Y_LABEL: '402',
+  Y_LABEL: '360',
   X_LINE: '335',
-  Y_LINE: '411',
+  Y_LINE: '370',
   X1_LINE: '0',
   Y1_LINE: '0',
   X2_LINE: '259',
-  Y2_LINE: '8',
+  Y2_LINE: '48',
   X_TARGET: '589',
   Y_TARGET: '414',
   LOCATION: 'Pennington County, SD',
@@ -107,15 +107,30 @@ export const PENNINGTON = {
 
 export const MINNEHAHA = {
   X_LABEL: '170',
-  Y_LABEL: '306',
-  X_LINE: '332',
-  Y_LINE: '316',
+  Y_LABEL: '455',
+  X_LINE: '325',
+  Y_LINE: '318',
   X1_LINE: '0',
-  Y1_LINE: '0',
-  X2_LINE: '315',
-  Y2_LINE: '109',
+  Y1_LINE: '145',
+  X2_LINE: '320',
+  Y2_LINE: '107',
   X_TARGET: '641',
   Y_TARGET: '420',
   LOCATION: 'Minnehaha County, SD',
   POPULATION: 'Pop. 187,318'
+};
+
+export const WASPC = {
+  X_LABEL: '265',
+  Y_LABEL: '286',
+  X_LINE: '320',
+  Y_LINE: '300',
+  X1_LINE: '0',
+  Y1_LINE: '0',
+  X2_LINE: '74',
+  Y2_LINE: '40',
+  X_TARGET: '390',
+  Y_TARGET: '335',
+  LOCATION: 'WASPC',
+  POPULATION: ''
 };
