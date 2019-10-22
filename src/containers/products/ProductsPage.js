@@ -6,8 +6,7 @@ import styled from 'styled-components';
 import * as Routes from '../../core/router/Routes';
 
 import topImage from '../../assets/images/capitol.png';
-import logo from '../../assets/images/logo-white.png';
-import { N0, N1 } from '../../core/style/Colors';
+import AppHeader from '../../components/headers/AppHeader';
 import PageSection from '../../components/layout/PageSection';
 import StyledSectionTitle from '../../components/headers/StyledSectionTitle';
 import StyledSectionSubTitle from '../../components/headers/StyledSectionSubTitle';
@@ -15,20 +14,14 @@ import ProductTile from './ProductTile';
 import ConnectSection from '../connect/ConnectSection';
 import FooterSection from '../footer/FooterSection';
 
+import { N0, N1 } from '../../core/style/Colors';
 import * as Constants from './Constants';
 
 import {
   CONTENT_GRID_WIDTH,
-  WINDOW_EDGE_PADDING,
   MEDIA_QUERY_MD,
   MEDIA_QUERY_LG
 } from '../../core/style/Sizes';
-
-const Header = styled.div`
-  display: flex;
-  flex: 1 0 auto;
-  margin-top: ${WINDOW_EDGE_PADDING}px;
-`;
 
 const Content = styled.div`
   color: ${N0};
@@ -100,9 +93,7 @@ const ProductTilesInnerWrapper = styled.div`
 const ProductsPage = () => (
   <>
     <PageSection bgImage={topImage}>
-      <Header>
-        <img src={logo} alt="OpenLattice Logo" height={50} />
-      </Header>
+      <AppHeader />
       <Content>
         <TitleText>Make organizations more productive through modern workflows.</TitleText>
       </Content>
