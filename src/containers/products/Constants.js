@@ -1,13 +1,54 @@
-// Products
-export const title1 = 'Holodeck';
-export const title2 = 'Care';
-export const title3 = 'Pretrial Case Management';
-export const title4 = 'Chronicle';
+// @flow
 
-export const body1 = (`Holodeck allows you to explore your data — search a dataset, traverse connections between
-  datasets, identify top utilizers, and perform analysis.`);
-export const body2 = (`A tool for collecting behavioral health report data, viewing historical data, and
-  performing analysis.`);
-export const body3 = (`Manage a person as they move through the pretrial court system, from a public safety assessment,
-  to scheduling an initial appearance hearing, to tracking their outcomes given a judge's decision.`);
-export const body4 = 'Create and manage studies, participants, and devices, and access study data.';
+import GalleryIcon from '../../assets/logos/gallery-logo.svg';
+
+const PRODUCT_ICONS :Oject = {
+  GALLERY: GalleryIcon,
+};
+
+const PRODUCT_TITLES :Object = {
+  ASTROMETRICS: 'Astrometrics',
+  CARE: 'Care',
+  CHRONICLE: 'Chronicle',
+  CWP: 'Community Work Program',
+  GALLERY: 'Gallery',
+  HOLODECK: 'Holodeck',
+  ORGANIZATIONS: 'Organizations',
+  OTHER_SERVICES: 'Other services',
+  PCM: 'Pretrial Case Management',
+  REFERRALS: 'Referrals',
+  RESEARCH_HUB: 'Research Hub',
+  STEPPING_UP: 'SteppingUp Dashboard',
+};
+
+const PRODUCT_DESCRIPTIONS :Object = {
+  ASTROMETRICS: (`Astrometrics gathers all integrated ALPR data for authorized users to search,
+      investigate, set alerts, and create reports on vehicles of interest.`),
+  CARE: (`A tool for collecting behavioral health report data, viewing historical data, and
+    performing analysis.`),
+  CHRONICLE: 'Create and manage studies, participants, and devices, and access study data.',
+  CWP: (`Manage a person as they move through a community work jail diversion program, from scheduling
+    them for work to tracking their outcome in the program.`),
+  GALLERY: (`Access, explore, and analyze your data - search for datasets, traverse connections between
+    datasets, identify top utilizers, and perform analysis.`),
+  HOLODECK: (`Holodeck allows you to explore your data — search a dataset, traverse connections between
+    datasets, identify top utilizers, and perform analysis.`),
+  ORGANIZATIONS: (`Access and manage your organizations – manage roles and permissions of members and
+    entity sets within the organizations.`),
+  OTHER_SERVICES: (`Placeholder text – A tool for collecting behavioral health report data, viewing historical data, and
+    performing analysis.`),
+  PCM: (`Manage a person as they move through the pretrial court system, from a public safety
+    assessment, to initial appearance, to tracking their outcomes (judge's decision).`),
+  REFERRALS: (`Placeholder text – A tool for collecting behavioral health report data, viewing historical data, and
+    performing analysis.`),
+  RESEARCH_HUB: (`Placeholder text – A tool for collecting behavioral health report data, viewing historical data, and
+    performing analysis.`),
+  STEPPING_UP: (`Placeholder text – A tool for collecting behavioral health report data, viewing historical data, and
+    performing analysis.`),
+};
+
+export {
+  PRODUCT_DESCRIPTIONS,
+  PRODUCT_ICONS,
+  PRODUCT_TITLES,
+};
