@@ -11,6 +11,7 @@ export const N1 :string = '#f9f9fd';
 export const N2 :string = '#6f788a';
 export const N3 :string = '#4d4d4d';
 export const N4 :string = '#000000';
+export const N5 :string = '#b9b7bf';
 
 /*
 * pinks
