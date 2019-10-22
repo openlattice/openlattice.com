@@ -82,7 +82,7 @@ const ProductTilesOuterWrapper = styled.div`
   flex: 1 0 auto;
   flex-direction: row;
   justify-content: center;
-  margin: 0 0 30px 0;
+  margin: 70px 0 30px 0;
   max-width: ${CONTENT_GRID_WIDTH}px;
 `;
 
@@ -111,6 +111,20 @@ const ProductsPage = () => (
       <PageContent>
         <SectionHeaderWrapper>
           <StyledSectionTitle>
+            Core Platform Services
+          </StyledSectionTitle>
+          <StyledSectionSubTitle>
+            {`OpenLattice enables precision goverment by linking of
+              individual level data across criminal justice, healthcare, and
+              social services.`}
+          </StyledSectionSubTitle>
+        </SectionHeaderWrapper>
+        <ProductTilesOuterWrapper>
+          <ProductTilesInnerWrapper>
+          </ProductTilesInnerWrapper>
+        </ProductTilesOuterWrapper>
+        <SectionHeaderWrapper>
+          <StyledSectionTitle>
             Our Products
           </StyledSectionTitle>
           <StyledSectionSubTitle>
@@ -119,13 +133,12 @@ const ProductsPage = () => (
               social services.`}
           </StyledSectionSubTitle>
         </SectionHeaderWrapper>
-        <ProductTilesOuterWrapper style={{ marginTop: '70px' }}>
+        <ProductTilesOuterWrapper>
           <ProductTilesInnerWrapper>
             <ProductTile title={Constants.title1} body={Constants.body1} icon="" route={Routes.HOLODECK} />
             <ProductTile title={Constants.title2} body={Constants.body2} icon="" route={Routes.RIDE_ALONG} />
-            <ProductTile title={Constants.title3} body={Constants.body3} icon="" route={Routes.PSA} />
-            <ProductTile title={Constants.title4} body={Constants.body4} icon="" route={Routes.PCM} />
-            <ProductTile title={Constants.title5} body={Constants.body5} icon="" route={Routes.CHRONICLE} />
+            <ProductTile title={Constants.title3} body={Constants.body3} icon="" route={Routes.PCM} />
+            <ProductTile title={Constants.title4} body={Constants.body4} icon="" route={Routes.CHRONICLE} />
           </ProductTilesInnerWrapper>
         </ProductTilesOuterWrapper>
       </PageContent>
