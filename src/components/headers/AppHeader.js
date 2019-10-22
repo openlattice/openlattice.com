@@ -1,14 +1,20 @@
 // @flow
 import React from 'react';
 import styled from 'styled-components';
-import { Link } from 'react-router-dom';
+import { Link, NavLink } from 'react-router-dom';
 
 import logoImg from '../../assets/images/logo-white.png';
 import { WINDOW_EDGE_PADDING } from '../../core/style/Sizes';
-import { N0 } from '../../core/style/Colors';
+import { N0, N4, N5 } from '../../core/style/Colors';
 import * as Routes from '../../core/router/Routes';
 
 const helpLink = 'https://help.openlattice.com';
+const scheduleACallLink = 'https://calendly.com/openlattice/openlattice-web-request';
+
+const activeLinkStyles = {
+  color: N0,
+  fontWeight: 600,
+};
 
 const Header = styled.div`
   display: flex;
@@ -24,9 +30,9 @@ const Menu = styled.div`
   justify-content: space-between;
 `;
 
-const MenuInternalLink = styled(Link)`
-  color: ${N0};
-  margin-left: 30px;
+const MenuInternalLink = styled(NavLink)`
+  color: ${N5};
+  margin-right: 30px;
   text-decoration: none;
   &:hover {
     cursor: pointer;
@@ -34,17 +40,32 @@ const MenuInternalLink = styled(Link)`
 `;
 
 const MenuExternalLink = styled.a`
-  color: ${N0};
-  margin-left: 30px;
+  color: ${N5};
+  margin-right: 30px;
   text-decoration: none;
+`;
+
+const ScheduleACallButton = styled.a`
+  background-color: ${N0};
+  border-radius: 16px;
+  color: ${N4};
+  display: inline-block;
+  font-weight: 600;
+  padding: 7px 13px;
+  text-align: center;
+  text-decoration: none;
+  white-space: nowrap;
 `;
 
 const AppHeader = () => (
   <Header>
-    <img src={logoImg} alt="OpenLattice Logo" height={50} />
+    <Link to={Routes.ROOT}>
+      <img src={logoImg} alt="OpenLattice Logo" height={50} />
+    </Link>
     <Menu>
-      <MenuInternalLink to={Routes.PRODUCTS}>Products</MenuInternalLink>
-      <MenuExternalLink href={helpLink}>Help</MenuExternalLink>
+      <MenuInternalLink activeStyle={activeLinkStyles} to={Routes.PRODUCTS}>Products</MenuInternalLink>
+      <MenuExternalLink href={helpLink} target="_blank">Help</MenuExternalLink>
+      <ScheduleACallButton href={scheduleACallLink} target="_blank">Schedule a call</ScheduleACallButton>
     </Menu>
   </Header>
 );

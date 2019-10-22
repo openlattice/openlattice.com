@@ -89,7 +89,7 @@ const IntroSection = () => (
       <SubTitle>
         Foundational tools to better serve all citizens
       </SubTitle>
-      <ScheduleLink href={scheduleACallLink}>
+      <ScheduleLink href={scheduleACallLink} target="_blank">
         Schedule a call to learn more
       </ScheduleLink>
     </Content>
