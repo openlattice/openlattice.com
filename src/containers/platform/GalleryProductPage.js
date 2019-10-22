@@ -5,10 +5,10 @@ import React from 'react';
 
 import ComingSoon from '../../components/placeholder/ComingSoon';
 
-const ChroniclePage = () => (
+const GalleryProductPage = () => (
   <>
     <ComingSoon />
   </>
 );
 
-export default ChroniclePage;
+export default GalleryProductPage;
