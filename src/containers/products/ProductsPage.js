@@ -15,7 +15,7 @@ import ConnectSection from '../connect/ConnectSection';
 import FooterSection from '../footer/FooterSection';
 
 import { N0, N1 } from '../../core/style/Colors';
-import * as Constants from './Constants';
+import { PRODUCT_DESCRIPTIONS, PRODUCT_ICONS, PRODUCT_TITLES } from './Constants';
 
 import {
   CONTENT_GRID_WIDTH,
@@ -112,6 +112,26 @@ const ProductsPage = () => (
         </SectionHeaderWrapper>
         <ProductTilesOuterWrapper>
           <ProductTilesInnerWrapper>
+            <ProductTile
+                title={PRODUCT_TITLES.GALLERY}
+                body={PRODUCT_DESCRIPTIONS.GALLERY}
+                icon={PRODUCT_ICONS.GALLERY}
+                route={Routes.GALLERY} />
+            <ProductTile
+                title={PRODUCT_TITLES.ORGANIZATIONS}
+                body={PRODUCT_DESCRIPTIONS.ORGANIZATIONS}
+                icon=""
+                route={Routes.ORGANIZATIONS} />
+            <ProductTile
+                title={PRODUCT_TITLES.RESEARCH_HUB}
+                body={PRODUCT_DESCRIPTIONS.RESEARCH_HUB}
+                icon=""
+                route={Routes.RESEARCH_HUB} />
+            <ProductTile
+                title={PRODUCT_TITLES.OTHER_SERVICES}
+                body={PRODUCT_DESCRIPTIONS.OTHER_SERVICES}
+                icon=""
+                route={Routes.OTHER_SERVICES} />
           </ProductTilesInnerWrapper>
         </ProductTilesOuterWrapper>
         <SectionHeaderWrapper>
@@ -126,10 +146,41 @@ const ProductsPage = () => (
         </SectionHeaderWrapper>
         <ProductTilesOuterWrapper>
           <ProductTilesInnerWrapper>
-            <ProductTile title={Constants.title1} body={Constants.body1} icon="" route={Routes.HOLODECK} />
-            <ProductTile title={Constants.title2} body={Constants.body2} icon="" route={Routes.RIDE_ALONG} />
-            <ProductTile title={Constants.title3} body={Constants.body3} icon="" route={Routes.PCM} />
-            <ProductTile title={Constants.title4} body={Constants.body4} icon="" route={Routes.CHRONICLE} />
+            <ProductTile
+                title={PRODUCT_TITLES.REFERRALS}
+                body={PRODUCT_DESCRIPTIONS.REFERRALS}
+                icon=""
+                route={Routes.REFERRALS} />
+            <ProductTile
+                title={PRODUCT_TITLES.CARE}
+                body={PRODUCT_DESCRIPTIONS.CARE}
+                icon=""
+                route={Routes.CARE} />
+            <ProductTile
+                title={PRODUCT_TITLES.PCM}
+                body={PRODUCT_DESCRIPTIONS.PCM}
+                icon=""
+                route={Routes.PCM} />
+            <ProductTile
+                title={PRODUCT_TITLES.ASTROMETRICS}
+                body={PRODUCT_DESCRIPTIONS.ASTROMETRICS}
+                icon=""
+                route={Routes.ASTROMETRICS} />
+            <ProductTile
+                title={PRODUCT_TITLES.CHRONICLE}
+                body={PRODUCT_DESCRIPTIONS.CHRONICLE}
+                icon=""
+                route={Routes.CHRONICLE} />
+            <ProductTile
+                title={PRODUCT_TITLES.CWP}
+                body={PRODUCT_DESCRIPTIONS.CWP}
+                icon=""
+                route={Routes.CWP} />
+            <ProductTile
+                title={PRODUCT_TITLES.STEPPING_UP}
+                body={PRODUCT_DESCRIPTIONS.STEPPING_UP}
+                icon=""
+                route={Routes.STEPPING_UP} />
           </ProductTilesInnerWrapper>
         </ProductTilesOuterWrapper>
       </PageContent>
