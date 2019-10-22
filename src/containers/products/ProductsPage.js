@@ -24,32 +24,31 @@ import {
 } from '../../core/style/Sizes';
 
 const Content = styled.div`
-  color: ${N0};
-  align-items: center;
-  display: block;
-  flex-direction: column;
+  align-items: flex-start;
+  display: flex;
+  justify-content: flex-start;
   margin: 50px auto;
   max-width: 100%;
-  text-align: center;
 
   @media only screen and (min-width: ${MEDIA_QUERY_MD}px) {
     max-width: 60%;
   }
 
   @media only screen and (min-width: ${MEDIA_QUERY_LG}px) {
-    margin: 210px auto 211px auto;
+    margin: 155px 0 150px 0;
   }
 `;
 
 const TitleText = styled(StyledSectionTitle)`
   color: ${N0};
   margin-bottom: 20px;
-  text-align: center;
-  font-weight: 500;
+  text-align: left;
+  font-weight: 600;
 
   @media only screen and (min-width: ${MEDIA_QUERY_MD}px) {
-    font-size: 40px;
-    text-align: center;
+    font-size: 30px;
+    text-align: left;
+    min-width: 770px;
   }
 `;
 
@@ -75,7 +74,7 @@ const ProductTilesOuterWrapper = styled.div`
   flex: 1 0 auto;
   flex-direction: row;
   justify-content: center;
-  margin: 70px 0 30px 0;
+  margin: 60px 0 140px 0;
   max-width: ${CONTENT_GRID_WIDTH}px;
 `;
 
@@ -98,16 +97,15 @@ const ProductsPage = () => (
         <TitleText>Make organizations more productive through modern workflows.</TitleText>
       </Content>
     </PageSection>
-    <PageSection bgColor={N1}>
+    <PageSection bgColor={N0}>
       <PageContent>
         <SectionHeaderWrapper>
           <StyledSectionTitle>
-            Core Platform Services
+            Core platform services
           </StyledSectionTitle>
           <StyledSectionSubTitle>
-            {`OpenLattice enables precision goverment by linking of
-              individual level data across criminal justice, healthcare, and
-              social services.`}
+            {`Core tools and services for you to access, explore, configure,
+              and analyze your data.`}
           </StyledSectionSubTitle>
         </SectionHeaderWrapper>
         <ProductTilesOuterWrapper>
@@ -139,9 +137,8 @@ const ProductsPage = () => (
             Our Products
           </StyledSectionTitle>
           <StyledSectionSubTitle>
-            {`OpenLattice enables precision goverment by linking of
-              individual level data across criminal justice, healthcare, and
-              social services.`}
+            {`We enable precision government by linking of individual level
+              data across criminal justice, healthcare, and social services.`}
           </StyledSectionSubTitle>
         </SectionHeaderWrapper>
         <ProductTilesOuterWrapper>
