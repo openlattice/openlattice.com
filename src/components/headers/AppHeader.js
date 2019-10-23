@@ -1,6 +1,6 @@
 // @flow
 import React from 'react';
-import styled from 'styled-components';
+import styled, { css } from 'styled-components';
 import { Link, NavLink } from 'react-router-dom';
 
 import logoImg from '../../assets/images/logo-white.png';
@@ -10,11 +10,6 @@ import * as Routes from '../../core/router/Routes';
 
 const helpLink = 'https://help.openlattice.com';
 const scheduleACallLink = 'https://calendly.com/openlattice/openlattice-web-request';
-
-const activeLinkStyles = {
-  color: N0,
-  fontWeight: 600,
-};
 
 const Header = styled.div`
   display: flex;
@@ -36,7 +31,7 @@ const Menu = styled.div`
 `;
 
 const MenuInternalLink = styled(NavLink)`
-  color: ${N5};
+  color: ${(props) => props.color};
   margin-right: 30px;
   text-decoration: none;
   &:hover {
@@ -45,7 +40,7 @@ const MenuInternalLink = styled(NavLink)`
 `;
 
 const MenuExternalLink = styled.a`
-  color: ${N5};
+  color: ${(props) => props.color};
   margin-right: 30px;
   text-decoration: none;
 `;
@@ -53,7 +48,17 @@ const MenuExternalLink = styled.a`
 const ScheduleACallButton = styled.a`
   background-color: ${N0};
   border-radius: 16px;
-  color: ${N4};
+ ${(props) => {
+    if (!props.border) {
+      return css`
+        border: none;
+      `;
+    }
+    return css`
+      border: 1px solid ${props.color};
+    `;
+  }}
+  color: ${(props) => props.color};
   display: inline-block;
   font-weight: 600;
   padding: 7px 13px;
@@ -62,17 +67,52 @@ const ScheduleACallButton = styled.a`
   white-space: nowrap;
 `;
 
-const AppHeader = () => (
+type Props = {
+  logo ? :React.Element;
+  menuStyles ? :Object;
+};
+
+const AppHeader = ({ logo, menuStyles } :Props) => (
   <Header>
     <Link to={Routes.ROOT}>
-      <img src={logoImg} alt="OpenLattice Logo" height={50} />
+      <img src={logo} alt="OpenLattice Logo" height={50} />
     </Link>
     <Menu>
-      <MenuInternalLink activeStyle={activeLinkStyles} to={Routes.PRODUCTS}>Products</MenuInternalLink>
-      <MenuExternalLink href={helpLink} target="_blank">Help</MenuExternalLink>
-      <ScheduleACallButton href={scheduleACallLink} target="_blank">Schedule a call</ScheduleACallButton>
+      <MenuInternalLink
+          activeStyle={menuStyles.activeColor}
+          color={menuStyles.menuFontColor}
+          to={Routes.PRODUCTS}>
+        Products
+      </MenuInternalLink>
+      <MenuExternalLink
+          color={menuStyles.menuFontColor}
+          href={helpLink}
+          target="_blank">
+        Help
+      </MenuExternalLink>
+      <ScheduleACallButton
+          border={menuStyles.includeScheduleButtonBorder}
+          color={menuStyles.scheduleColor}
+          href={scheduleACallLink}
+          target="_blank">
+        Schedule a call
+      </ScheduleACallButton>
     </Menu>
   </Header>
 );
+
+AppHeader.defaultProps = {
+  menuStyles: {
+    activeColor: {
+      color: N0,
+      fontWeight: 600
+    },
+    includeScheduleButtonBorder: false,
+    menuFontColor: N5,
+    scheduleBorderColor: undefined,
+    scheduleColor: N4,
+  },
+  logo: logoImg,
+};
 
 export default AppHeader;
