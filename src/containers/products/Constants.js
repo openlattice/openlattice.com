@@ -1,20 +1,27 @@
 // @flow
 
+import AstrometricsIcon from '../../assets/logos/astrometrics-logo.svg';
+import CWPIcon from '../../assets/logos/cwp-logo.svg';
+import CareIcon from '../../assets/logos/care-logo.svg';
 import GalleryIcon from '../../assets/logos/gallery-logo.svg';
+import OrganizationsIcon from '../../assets/logos/organizations-logo.svg';
+import PCMIcon from '../../assets/logos/pcm-logo.svg';
+import PlaceholderIcon from '../../assets/logos/placeholder-logo.svg';
+import SteppingUpIcon from '../../assets/logos/stepping-up-logo.svg';
 
 const PRODUCT_ICONS :Oject = {
-  ASTROMETRICS: '',
-  CARE: '',
-  CHRONICLE: '',
-  CWP: '',
+  ASTROMETRICS: AstrometricsIcon,
+  CARE: CareIcon,
+  CHRONICLE: PlaceholderIcon,
+  CWP: CWPIcon,
   GALLERY: GalleryIcon,
   HOLODECK: '',
-  ORGANIZATIONS: '',
-  OTHER_SERVICES: '',
-  PCM: '',
-  REFERRALS: '',
-  RESEARCH_HUB: '',
-  STEPPING_UP: '',
+  ORGANIZATIONS: OrganizationsIcon,
+  OTHER_SERVICES: PlaceholderIcon,
+  PCM: PCMIcon,
+  REFERRALS: PlaceholderIcon,
+  RESEARCH_HUB: PlaceholderIcon,
+  STEPPING_UP: SteppingUpIcon,
 };
 
 const PRODUCT_TITLES :Object = {
@@ -48,8 +55,8 @@ const PRODUCT_DESCRIPTIONS :Object = {
     entity sets within the organizations.`),
   OTHER_SERVICES: (`Placeholder text – A tool for collecting behavioral health report data, viewing historical data, and
     performing analysis.`),
-  PCM: (`Manage a person as they move through the pretrial court system, from a public safety
-    assessment, to initial appearance, to tracking their outcomes (judge's decision).`),
+  PCM: (`Manage a person moving through the pretrial court system, from a public safety assessment,
+    to initial appearance, to tracking their outcomes (judge’s decision).`),
   REFERRALS: (`Placeholder text – A tool for collecting behavioral health report data, viewing historical data, and
     performing analysis.`),
   RESEARCH_HUB: (`Placeholder text – A tool for collecting behavioral health report data, viewing historical data, and
