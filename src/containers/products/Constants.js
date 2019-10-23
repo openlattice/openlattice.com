@@ -38,8 +38,8 @@ const PRODUCT_DESCRIPTIONS :Object = {
   CARE: (`A tool for collecting behavioral health report data, viewing historical data, and
     performing analysis.`),
   CHRONICLE: 'Create and manage studies, participants, and devices, and access study data.',
-  CWP: (`Manage a person as they move through a community service-based jail diversion program, from scheduling
-    them for work at work sites to tracking their outcome in the program.`),
+  CWP: (`Manage a person as they complete sentenced community service hours, from scheduling
+    them at work sites to tracking their outcome in the program.`),
   GALLERY: (`Access, explore, and analyze your data - search for datasets, traverse connections between
     datasets, identify top utilizers, and perform analysis.`),
   HOLODECK: (`Holodeck allows you to explore your data — search a dataset, traverse connections between
