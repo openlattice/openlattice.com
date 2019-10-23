@@ -4,7 +4,7 @@ import styled from 'styled-components';
 import { Link, NavLink } from 'react-router-dom';
 
 import logoImg from '../../assets/images/logo-white.png';
-import { WINDOW_EDGE_PADDING } from '../../core/style/Sizes';
+import { MEDIA_QUERY_MD, WINDOW_EDGE_PADDING } from '../../core/style/Sizes';
 import { N0, N4, N5 } from '../../core/style/Colors';
 import * as Routes from '../../core/router/Routes';
 
@@ -19,8 +19,13 @@ const activeLinkStyles = {
 const Header = styled.div`
   display: flex;
   flex: 1 0 auto;
+  flex-direction: column;
   justify-content: space-between;
   margin-top: ${WINDOW_EDGE_PADDING}px;
+
+  @media only screen and (min-width: ${MEDIA_QUERY_MD}px) {
+    flex-direction: row;
+  }
 `;
 
 const Menu = styled.div`
