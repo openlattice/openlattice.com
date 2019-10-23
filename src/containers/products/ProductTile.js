@@ -39,6 +39,7 @@ const Icon = styled.img`
 const Title = styled.div`
   color: ${N4};
   font-size: 20px;
+  font-weight: 600;
   line-height: 24px;
   margin-bottom: 20px;
   top: 88px;
