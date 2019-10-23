@@ -14,7 +14,7 @@ import ProductTile from './ProductTile';
 import ConnectSection from '../connect/ConnectSection';
 import FooterSection from '../footer/FooterSection';
 
-import { N0, N1 } from '../../core/style/Colors';
+import { N0 } from '../../core/style/Colors';
 import { PRODUCT_DESCRIPTIONS, PRODUCT_ICONS, PRODUCT_TITLES } from './Constants';
 
 import {
