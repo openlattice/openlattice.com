@@ -3,7 +3,18 @@
 import GalleryIcon from '../../assets/logos/gallery-logo.svg';
 
 const PRODUCT_ICONS :Oject = {
+  ASTROMETRICS: '',
+  CARE: '',
+  CHRONICLE: '',
+  CWP: '',
   GALLERY: GalleryIcon,
+  HOLODECK: '',
+  ORGANIZATIONS: '',
+  OTHER_SERVICES: '',
+  PCM: '',
+  REFERRALS: '',
+  RESEARCH_HUB: '',
+  STEPPING_UP: '',
 };
 
 const PRODUCT_TITLES :Object = {

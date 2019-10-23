@@ -118,17 +118,17 @@ const ProductsPage = () => (
             <ProductTile
                 title={PRODUCT_TITLES.ORGANIZATIONS}
                 body={PRODUCT_DESCRIPTIONS.ORGANIZATIONS}
-                icon=""
+                icon={PRODUCT_ICONS.ORGANIZATIONS}
                 route={Routes.ORGANIZATIONS} />
             <ProductTile
                 title={PRODUCT_TITLES.RESEARCH_HUB}
                 body={PRODUCT_DESCRIPTIONS.RESEARCH_HUB}
-                icon=""
+                icon={PRODUCT_ICONS.RESEARCH_HUB}
                 route={Routes.RESEARCH_HUB} />
             <ProductTile
                 title={PRODUCT_TITLES.OTHER_SERVICES}
                 body={PRODUCT_DESCRIPTIONS.OTHER_SERVICES}
-                icon=""
+                icon={PRODUCT_ICONS.OTHER_SERVICES}
                 route={Routes.OTHER_SERVICES} />
           </ProductTilesInnerWrapper>
         </ProductTilesOuterWrapper>
@@ -146,37 +146,37 @@ const ProductsPage = () => (
             <ProductTile
                 title={PRODUCT_TITLES.REFERRALS}
                 body={PRODUCT_DESCRIPTIONS.REFERRALS}
-                icon=""
+                icon={PRODUCT_ICONS.REFERRALS}
                 route={Routes.REFERRALS} />
             <ProductTile
                 title={PRODUCT_TITLES.CARE}
                 body={PRODUCT_DESCRIPTIONS.CARE}
-                icon=""
+                icon={PRODUCT_ICONS.CARE}
                 route={Routes.CARE} />
             <ProductTile
                 title={PRODUCT_TITLES.PCM}
                 body={PRODUCT_DESCRIPTIONS.PCM}
-                icon=""
+                icon={PRODUCT_ICONS.PCM}
                 route={Routes.PCM} />
             <ProductTile
                 title={PRODUCT_TITLES.ASTROMETRICS}
                 body={PRODUCT_DESCRIPTIONS.ASTROMETRICS}
-                icon=""
+                icon={PRODUCT_ICONS.ASTROMETRICS}
                 route={Routes.ASTROMETRICS} />
             <ProductTile
                 title={PRODUCT_TITLES.CHRONICLE}
                 body={PRODUCT_DESCRIPTIONS.CHRONICLE}
-                icon=""
+                icon={PRODUCT_ICONS.CHRONICLE}
                 route={Routes.CHRONICLE} />
             <ProductTile
                 title={PRODUCT_TITLES.CWP}
                 body={PRODUCT_DESCRIPTIONS.CWP}
-                icon=""
+                icon={PRODUCT_ICONS.CWP}
                 route={Routes.CWP} />
             <ProductTile
                 title={PRODUCT_TITLES.STEPPING_UP}
                 body={PRODUCT_DESCRIPTIONS.STEPPING_UP}
-                icon=""
+                icon={PRODUCT_ICONS.STEPPING_UP}
                 route={Routes.STEPPING_UP} />
           </ProductTilesInnerWrapper>
         </ProductTilesOuterWrapper>
