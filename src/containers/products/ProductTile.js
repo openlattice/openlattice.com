@@ -5,6 +5,7 @@
 import React from 'react';
 
 import styled from 'styled-components';
+import { StyleUtils } from 'lattice-ui-kit';
 import { withRouter } from 'react-router';
 import { Link } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
@@ -17,6 +18,14 @@ import {
   PP4
 } from '../../core/style/Colors';
 import { MEDIA_QUERY_TECH_SM } from '../../core/style/Sizes';
+
+const { getStyleVariation } = StyleUtils;
+
+const bodyStyleVariation = getStyleVariation('section', {
+  default: '151px',
+  corePlatform: '151px',
+  products: '182px',
+});
 
 const TileWrapper = styled(Link)`
   background-color: ${N1};
@@ -40,7 +49,7 @@ const Title = styled.div`
   color: ${N4};
   font-size: 20px;
   font-weight: 600;
-  line-height: 24px;
+  line-height: normal;
   margin-bottom: 20px;
   top: 88px;
 `;
@@ -48,9 +57,11 @@ const Title = styled.div`
 const Body = styled.div`
   color: ${N2};
   font-size: 14px;
-  line-height: 19px;
-  top: 151px;
-  margin-bottom: 20px;
+  left: 30px;
+  line-height: normal;
+  position: absolute;
+  right: 30px;
+  top: ${bodyStyleVariation};
 `;
 
 const LearnMoreButton = styled.div`
@@ -71,6 +82,7 @@ type Props = {
   body :string;
   icon :string;
   route :string;
+  section :string;
   title :string;
 };
 
@@ -78,6 +90,7 @@ const ProductTile = ({
   body,
   icon,
   route,
+  section,
   title,
 } :Props) => (
   <TileWrapper to={route}>
@@ -85,7 +98,7 @@ const ProductTile = ({
     <Title>
       { title }
     </Title>
-    <Body>
+    <Body section={section}>
       { body }
     </Body>
     <LearnMoreButton>

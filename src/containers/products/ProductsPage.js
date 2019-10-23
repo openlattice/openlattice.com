@@ -23,6 +23,11 @@ import {
   MEDIA_QUERY_LG
 } from '../../core/style/Sizes';
 
+const SECTIONS = {
+  CORE_PLATFORM: 'corePlatform',
+  PRODUCTS: 'products',
+};
+
 const Content = styled.div`
   align-items: flex-start;
   display: flex;
@@ -111,21 +116,25 @@ const ProductsPage = () => (
         <ProductTilesOuterWrapper>
           <ProductTilesInnerWrapper>
             <ProductTile
+                section={SECTIONS.CORE_PLATFORM}
                 title={PRODUCT_TITLES.GALLERY}
                 body={PRODUCT_DESCRIPTIONS.GALLERY}
                 icon={PRODUCT_ICONS.GALLERY}
                 route={Routes.GALLERY} />
             <ProductTile
+                section={SECTIONS.CORE_PLATFORM}
                 title={PRODUCT_TITLES.ORGANIZATIONS}
                 body={PRODUCT_DESCRIPTIONS.ORGANIZATIONS}
                 icon={PRODUCT_ICONS.ORGANIZATIONS}
                 route={Routes.ORGANIZATIONS} />
             <ProductTile
+                section={SECTIONS.CORE_PLATFORM}
                 title={PRODUCT_TITLES.RESEARCH_HUB}
                 body={PRODUCT_DESCRIPTIONS.RESEARCH_HUB}
                 icon={PRODUCT_ICONS.RESEARCH_HUB}
                 route={Routes.RESEARCH_HUB} />
             <ProductTile
+                section={SECTIONS.CORE_PLATFORM}
                 title={PRODUCT_TITLES.OTHER_SERVICES}
                 body={PRODUCT_DESCRIPTIONS.OTHER_SERVICES}
                 icon={PRODUCT_ICONS.OTHER_SERVICES}
@@ -144,36 +153,43 @@ const ProductsPage = () => (
         <ProductTilesOuterWrapper>
           <ProductTilesInnerWrapper>
             <ProductTile
+                section={SECTIONS.PRODUCTS}
                 title={PRODUCT_TITLES.REFERRALS}
                 body={PRODUCT_DESCRIPTIONS.REFERRALS}
                 icon={PRODUCT_ICONS.REFERRALS}
                 route={Routes.REFERRALS} />
             <ProductTile
+                section={SECTIONS.PRODUCTS}
                 title={PRODUCT_TITLES.CARE}
                 body={PRODUCT_DESCRIPTIONS.CARE}
                 icon={PRODUCT_ICONS.CARE}
                 route={Routes.CARE} />
             <ProductTile
+                section={SECTIONS.PRODUCTS}
                 title={PRODUCT_TITLES.PCM}
                 body={PRODUCT_DESCRIPTIONS.PCM}
                 icon={PRODUCT_ICONS.PCM}
                 route={Routes.PCM} />
             <ProductTile
+                section={SECTIONS.PRODUCTS}
                 title={PRODUCT_TITLES.ASTROMETRICS}
                 body={PRODUCT_DESCRIPTIONS.ASTROMETRICS}
                 icon={PRODUCT_ICONS.ASTROMETRICS}
                 route={Routes.ASTROMETRICS} />
             <ProductTile
+                section={SECTIONS.PRODUCTS}
                 title={PRODUCT_TITLES.CHRONICLE}
                 body={PRODUCT_DESCRIPTIONS.CHRONICLE}
                 icon={PRODUCT_ICONS.CHRONICLE}
                 route={Routes.CHRONICLE} />
             <ProductTile
+                section={SECTIONS.PRODUCTS}
                 title={PRODUCT_TITLES.CWP}
                 body={PRODUCT_DESCRIPTIONS.CWP}
                 icon={PRODUCT_ICONS.CWP}
                 route={Routes.CWP} />
             <ProductTile
+                section={SECTIONS.PRODUCTS}
                 title={PRODUCT_TITLES.STEPPING_UP}
                 body={PRODUCT_DESCRIPTIONS.STEPPING_UP}
                 icon={PRODUCT_ICONS.STEPPING_UP}
