@@ -6,8 +6,7 @@ import styled from 'styled-components';
 import * as Routes from '../../core/router/Routes';
 
 import topImage from '../../assets/images/capitol.png';
-import logo from '../../assets/images/logo-white.png';
-import { N0, N1 } from '../../core/style/Colors';
+import AppHeader from '../../components/headers/AppHeader';
 import PageSection from '../../components/layout/PageSection';
 import StyledSectionTitle from '../../components/headers/StyledSectionTitle';
 import StyledSectionSubTitle from '../../components/headers/StyledSectionSubTitle';
@@ -15,20 +14,14 @@ import ProductTile from './ProductTile';
 import ConnectSection from '../connect/ConnectSection';
 import FooterSection from '../footer/FooterSection';
 
+import { N0, N1 } from '../../core/style/Colors';
 import * as Constants from './Constants';
 
 import {
   CONTENT_GRID_WIDTH,
-  WINDOW_EDGE_PADDING,
   MEDIA_QUERY_MD,
   MEDIA_QUERY_LG
 } from '../../core/style/Sizes';
-
-const Header = styled.div`
-  display: flex;
-  flex: 1 0 auto;
-  margin-top: ${WINDOW_EDGE_PADDING}px;
-`;
 
 const Content = styled.div`
   color: ${N0};
@@ -82,7 +75,7 @@ const ProductTilesOuterWrapper = styled.div`
   flex: 1 0 auto;
   flex-direction: row;
   justify-content: center;
-  margin: 0 0 30px 0;
+  margin: 70px 0 30px 0;
   max-width: ${CONTENT_GRID_WIDTH}px;
 `;
 
@@ -100,15 +93,27 @@ const ProductTilesInnerWrapper = styled.div`
 const ProductsPage = () => (
   <>
     <PageSection bgImage={topImage}>
-      <Header>
-        <img src={logo} alt="OpenLattice Logo" height={50} />
-      </Header>
+      <AppHeader />
       <Content>
         <TitleText>Make organizations more productive through modern workflows.</TitleText>
       </Content>
     </PageSection>
     <PageSection bgColor={N1}>
       <PageContent>
+        <SectionHeaderWrapper>
+          <StyledSectionTitle>
+            Core Platform Services
+          </StyledSectionTitle>
+          <StyledSectionSubTitle>
+            {`OpenLattice enables precision goverment by linking of
+              individual level data across criminal justice, healthcare, and
+              social services.`}
+          </StyledSectionSubTitle>
+        </SectionHeaderWrapper>
+        <ProductTilesOuterWrapper>
+          <ProductTilesInnerWrapper>
+          </ProductTilesInnerWrapper>
+        </ProductTilesOuterWrapper>
         <SectionHeaderWrapper>
           <StyledSectionTitle>
             Our Products
@@ -119,13 +124,12 @@ const ProductsPage = () => (
               social services.`}
           </StyledSectionSubTitle>
         </SectionHeaderWrapper>
-        <ProductTilesOuterWrapper style={{ marginTop: '70px' }}>
+        <ProductTilesOuterWrapper>
           <ProductTilesInnerWrapper>
             <ProductTile title={Constants.title1} body={Constants.body1} icon="" route={Routes.HOLODECK} />
             <ProductTile title={Constants.title2} body={Constants.body2} icon="" route={Routes.RIDE_ALONG} />
-            <ProductTile title={Constants.title3} body={Constants.body3} icon="" route={Routes.PSA} />
-            <ProductTile title={Constants.title4} body={Constants.body4} icon="" route={Routes.PCM} />
-            <ProductTile title={Constants.title5} body={Constants.body5} icon="" route={Routes.CHRONICLE} />
+            <ProductTile title={Constants.title3} body={Constants.body3} icon="" route={Routes.PCM} />
+            <ProductTile title={Constants.title4} body={Constants.body4} icon="" route={Routes.CHRONICLE} />
           </ProductTilesInnerWrapper>
         </ProductTilesOuterWrapper>
       </PageContent>

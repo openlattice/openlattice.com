@@ -50,7 +50,7 @@ type Props = {
   icon :string;
   route :string;
   title :string;
-}
+};
 
 const ProductTile = ({
   body,

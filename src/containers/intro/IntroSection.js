@@ -3,23 +3,17 @@
  */
 
 import React from 'react';
-
 import styled from 'styled-components';
 
-import logoImg from '../../assets/images/logo-white.png';
-
+import AppHeader from '../../components/headers/AppHeader';
 import BackgroundCarousel from './BackgroundCarousel';
 import PageSection from '../../components/layout/PageSection';
 import StyledSectionSubTitle from '../../components/headers/StyledSectionSubTitle';
 import StyledSectionTitle from '../../components/headers/StyledSectionTitle';
 import { N0, PK0 } from '../../core/style/Colors';
-import { WINDOW_EDGE_PADDING, MEDIA_QUERY_MD, MEDIA_QUERY_LG } from '../../core/style/Sizes';
+import { MEDIA_QUERY_MD, MEDIA_QUERY_LG } from '../../core/style/Sizes';
 
-const Header = styled.div`
-  display: flex;
-  flex: 1 0 auto;
-  margin-top: ${WINDOW_EDGE_PADDING}px;
-`;
+const scheduleACallLink = 'https://calendly.com/openlattice/openlattice-web-request';
 
 const Content = styled.div`
   color: ${N0};
@@ -87,9 +81,7 @@ const BackgroundComponent = (
 
 const IntroSection = () => (
   <PageSection bgComponent={BackgroundComponent}>
-    <Header>
-      <img src={logoImg} alt="OpenLattice Logo" height={50} />
-    </Header>
+    <AppHeader />
     <Content>
       <Title>
         Modern data infrastructure for core societal institutions
@@ -97,7 +89,7 @@ const IntroSection = () => (
       <SubTitle>
         Foundational tools to better serve all citizens
       </SubTitle>
-      <ScheduleLink href="https://calendly.com/openlattice/openlattice-web-request">
+      <ScheduleLink href={scheduleACallLink} target="_blank">
         Schedule a call to learn more
       </ScheduleLink>
     </Content>
