@@ -22,7 +22,7 @@ const HeaderContent = styled.div`
   }
 `;
 
-const GalleryProductStamp = styled.a`
+const ProductStamp = styled.a`
   align-items: center;
   background-color: ${NEUTRALS.WHITE};
   border-radius: 281px;
@@ -202,7 +202,6 @@ export {
   FeatureOverviewWrapper,
   FeatureShot,
   FeaturesContent,
-  GalleryProductStamp,
   HeaderContent,
   Icon,
   ProductDescription,
@@ -212,4 +211,5 @@ export {
   ProductOverviewTitle,
   ProductOverviewWrapper,
   ProductShot,
+  ProductStamp,
 };
