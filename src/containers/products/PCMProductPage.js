@@ -20,7 +20,6 @@ import {
   FeatureOverviewWrapper,
   FeatureShot,
   FeaturesContent,
-  GalleryProductStamp,
   HeaderContent,
   Icon,
   ProductDescription,
@@ -30,6 +29,7 @@ import {
   ProductOverviewTitle,
   ProductOverviewWrapper,
   ProductShot,
+  ProductStamp,
 } from './styled/StyledProductComponents';
 import { menuStylesForProductPages } from './styled/MenuStyles';
 
@@ -42,10 +42,10 @@ const PCMProductPage = () => (
           logo={PurpleOLIcon}
           menuStyles={menuStylesForProductPages} />
       <HeaderContent>
-        <GalleryProductStamp>
+        <ProductStamp>
           <Icon src={PCMIcon} />
           <div>Pretrial Case Management</div>
-        </GalleryProductStamp>
+        </ProductStamp>
         <ProductIntro>Reduce time spent on risk assessments while measuring their impact</ProductIntro>
         <ProductDescription>
           {`The PCM Application allows you to autofill risk assessments leaving more time to
