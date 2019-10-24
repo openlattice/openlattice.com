@@ -79,7 +79,7 @@ const AppHeader = ({ logo, menuStyles } :Props) => (
     </Link>
     <Menu>
       <MenuInternalLink
-          activeStyle={menuStyles.activeColor}
+          activeStyle={menuStyles.activeStyles}
           color={menuStyles.menuFontColor}
           to={Routes.PRODUCTS}>
         Products
@@ -103,7 +103,7 @@ const AppHeader = ({ logo, menuStyles } :Props) => (
 
 AppHeader.defaultProps = {
   menuStyles: {
-    activeColor: {
+    activeStyles: {
       color: N0,
       fontWeight: 600
     },
