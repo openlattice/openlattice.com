@@ -9,7 +9,7 @@ import { MEDIA_QUERY_LG } from '../../core/style/Sizes';
 import { TITLE, SUBTITLE } from './Constants';
 import TabDisplay from './TabDisplay';
 
-import { N1 } from '../../core/style/Colors';
+import { NEUTRALS } from '../../core/style/Colors';
 
 const Content = styled.div`
   margin: 80px 0 100px 0;
@@ -31,7 +31,7 @@ const StyledCroppedSubtitle = styled(StyledSectionSubTitle)`
 
 const HowItWorksSection = () => (
   <>
-    <PageSection bgColor={N1}>
+    <PageSection bgColor={NEUTRALS.GRAY01}>
       <Content>
         <StyledSectionTitle>
           { TITLE }

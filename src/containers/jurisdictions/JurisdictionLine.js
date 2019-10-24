@@ -3,7 +3,7 @@ import React from 'react';
 
 import styled from 'styled-components';
 
-import { PP4 } from '../../core/style/Colors';
+import { PURPLES } from '../../core/style/Colors';
 
 const Line = styled.svg`
   left: ${({ x }) => x || null}px;
@@ -33,7 +33,7 @@ const JurisdictionLine = ({
 
   return (
     <Line x={x} y={y} width={width} height={height}>
-      <line x1={x1} y1={y1} x2={x2} y2={y2} stroke={PP4} />
+      <line x1={x1} y1={y1} x2={x2} y2={y2} stroke={PURPLES.PP05} />
     </Line>
   );
 };

@@ -14,7 +14,7 @@ import ProductTile from './ProductTile';
 import ConnectSection from '../connect/ConnectSection';
 import FooterSection from '../footer/FooterSection';
 
-import { N0 } from '../../core/style/Colors';
+import { NEUTRALS } from '../../core/style/Colors';
 import { PRODUCT_DESCRIPTIONS, PRODUCT_ICONS, PRODUCT_TITLES } from './Constants';
 
 import {
@@ -45,7 +45,7 @@ const Content = styled.div`
 `;
 
 const TitleText = styled(StyledSectionTitle)`
-  color: ${N0};
+  color: ${NEUTRALS.WHITE};
   margin-bottom: 20px;
   text-align: left;
   font-weight: 600;
@@ -102,7 +102,7 @@ const ProductsPage = () => (
         <TitleText>Make organizations more productive through modern workflows.</TitleText>
       </Content>
     </PageSection>
-    <PageSection bgColor={N0}>
+    <PageSection bgColor={NEUTRALS.WHITE}>
       <PageContent>
         <SectionHeaderWrapper>
           <StyledSectionTitle>

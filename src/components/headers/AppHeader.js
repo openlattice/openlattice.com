@@ -5,7 +5,7 @@ import { Link, NavLink } from 'react-router-dom';
 
 import logoImg from '../../assets/images/logo-white.png';
 import { MEDIA_QUERY_MD, WINDOW_EDGE_PADDING } from '../../core/style/Sizes';
-import { N0, N4, N5 } from '../../core/style/Colors';
+import { NEUTRALS } from '../../core/style/Colors';
 import * as Routes from '../../core/router/Routes';
 
 const helpLink = 'https://help.openlattice.com';
@@ -46,7 +46,7 @@ const MenuExternalLink = styled.a`
 `;
 
 const ScheduleACallButton = styled.a`
-  background-color: ${N0};
+  background-color: ${NEUTRALS.WHITE};
   border-radius: 16px;
  ${(props) => {
     if (!props.border) {
@@ -104,13 +104,13 @@ const AppHeader = ({ logo, menuStyles } :Props) => (
 AppHeader.defaultProps = {
   menuStyles: {
     activeStyles: {
-      color: N0,
+      color: NEUTRALS.WHITE,
       fontWeight: 600
     },
     includeScheduleButtonBorder: false,
-    menuFontColor: N5,
+    menuFontColor: NEUTRALS.GRAY04,
     scheduleBorderColor: undefined,
-    scheduleColor: N4,
+    scheduleColor: NEUTRALS.BLACK,
   },
   logo: logoImg,
 };

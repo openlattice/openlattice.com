@@ -2,12 +2,7 @@
 
 import styled from 'styled-components';
 
-import {
-  N0,
-  N4,
-  N7,
-  N8,
-} from '../../../core/style/Colors';
+import { NEUTRALS } from '../../../core/style/Colors';
 import { MEDIA_QUERY_LG, MEDIA_QUERY_MD } from '../../../core/style/Sizes';
 
 const HeaderContent = styled.div`
@@ -29,9 +24,9 @@ const HeaderContent = styled.div`
 
 const GalleryProductStamp = styled.a`
   align-items: center;
-  background-color: ${N0};
+  background-color: ${NEUTRALS.WHITE};
   border-radius: 281px;
-  color: ${N4};
+  color: ${NEUTRALS.BLACK};
   display: flex;
   font-weight: 600;
   line-height: 150%;
@@ -46,7 +41,7 @@ const Icon = styled.img`
 `;
 
 const ProductIntro = styled.div`
-  color: ${N7};
+  color: ${NEUTRALS.GRAY06};
   font-size: 35px;
   font-weight: bold;
   margin: 24px 0 32px 0;
@@ -61,7 +56,7 @@ const ProductIntro = styled.div`
 `;
 
 const ProductDescription = styled.div`
-  color: ${N8};
+  color: ${NEUTRALS.GRAY07};
   font-size: 20px;
   text-align: center;
   line-height: 150%;
@@ -126,7 +121,7 @@ const FeatureOverviewWrapper = styled.div`
 `;
 
 const FeatureOverviewTitle = styled.div`
-  color: ${N7};
+  color: ${NEUTRALS.GRAY06};
   font-size: 25px;
   font-weight: 600;
   line-height: 150%;
@@ -134,7 +129,7 @@ const FeatureOverviewTitle = styled.div`
 `;
 
 const FeatureOverviewDescription = styled.div`
-  color: ${N8};
+  color: ${NEUTRALS.GRAY07};
   font-size: 16px;
   line-height: 150%;
   width: 100%;

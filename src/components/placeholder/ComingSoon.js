@@ -10,14 +10,14 @@ import PageSection from '../layout/PageSection';
 import FooterSection from '../../containers/footer/FooterSection';
 import StyledSectionTitle from '../headers/StyledSectionTitle';
 import { MEDIA_QUERY_MD } from '../../core/style/Sizes';
-import { N0, N2 } from '../../core/style/Colors';
+import { NEUTRALS } from '../../core/style/Colors';
 
 const Content = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  color: ${N2};
+  color: ${NEUTRALS.GRAY02};
   margin-bottom: 500px;
   margin-top: 500px;
 
@@ -27,7 +27,7 @@ const Content = styled.div`
 `;
 
 const TitleText = styled(StyledSectionTitle)`
-  color: ${N0};
+  color: ${NEUTRALS.WHITE};
   text-align: center;
   letter-spacing: 4px;
 

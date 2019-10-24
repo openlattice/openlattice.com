@@ -15,7 +15,7 @@ import AppContainer from './containers/app/AppContainer';
 import initializeReduxStore from './core/redux/ReduxStore';
 import initializeRouterHistory from './core/router/RouterHistory';
 import * as Routes from './core/router/Routes';
-import { N0, N3 } from './core/style/Colors';
+import { NEUTRALS } from './core/style/Colors';
 
 /* eslint-disable */
 const NormalizeCSS = createGlobalStyle`
@@ -25,8 +25,8 @@ const NormalizeCSS = createGlobalStyle`
 const GlobalStyle = createGlobalStyle`
   html,
   body {
-    background-color: ${N0};
-    color: ${N3};
+    background-color: ${NEUTRALS.WHITE};
+    color: ${NEUTRALS.GRAY03};
     font-family: 'Open Sans', sans-serif;
     height: 100%;
     line-height: normal;

@@ -32,27 +32,22 @@ import {
   ProductShot,
 } from './styled/StyledProductComponents';
 
-import {
-  N6,
-  N7,
-  N9,
-  PP7,
-} from '../../core/style/Colors';
+import { NEUTRALS, PURPLES } from '../../core/style/Colors';
 
 const PCMProductPage = () => (
   <>
-    <PageSection bgColor={N6}>
+    <PageSection bgColor={NEUTRALS.GRAY05}>
       <AppHeader
           logo={PurpleOLIcon}
           menuStyles={{
             activeStyles: {
-              color: N7,
+              color: NEUTRALS.GRAY06,
               fontWeight: 600
             },
             includeScheduleButtonBorder: true,
-            menuFontColor: N9,
-            scheduleBorderColor: PP7,
-            scheduleColor: PP7
+            menuFontColor: NEUTRALS.GRAY08,
+            scheduleBorderColor: PURPLES.PP08,
+            scheduleColor: PURPLES.PP08
           }} />
       <HeaderContent>
         <GalleryProductStamp>
