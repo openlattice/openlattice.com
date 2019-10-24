@@ -9,7 +9,7 @@ import Feature3 from '../../assets/productfeatures/feature3.svg';
 // import FeatureImg1 from '../../assets/images/pcm-feature-shot-1.png';
 // import FeatureImg2 from '../../assets/images/pcm-feature-shot-2.png';
 import FooterSection from '../footer/FooterSection';
-import SteppingUpIcon from '../../assets/logos/pcm-logo.svg';
+import SteppingUpIcon from '../../assets/logos/stepping-up-small-logo.svg';
 import PageSection from '../../components/layout/PageSection';
 // import ProductImg from '../../assets/images/pcm-product-shot.png';
 import PurpleOLIcon from '../../assets/images/purple-ol.svg';
