@@ -9,7 +9,7 @@ import Feature3 from '../../assets/productfeatures/feature3.svg';
 // import FeatureImg1 from '../../assets/images/pcm-feature-shot-1.png';
 // import FeatureImg2 from '../../assets/images/pcm-feature-shot-2.png';
 import FooterSection from '../footer/FooterSection';
-import PCMIcon from '../../assets/logos/pcm-logo.svg';
+import SteppingUpIcon from '../../assets/logos/pcm-logo.svg';
 import PageSection from '../../components/layout/PageSection';
 // import ProductImg from '../../assets/images/pcm-product-shot.png';
 import PurpleOLIcon from '../../assets/images/purple-ol.svg';
@@ -44,13 +44,13 @@ const SteppingUpProductPage = () => (
           menuStyles={menuStylesForProductPages} />
       <HeaderContent>
         <ProductStamp>
-          <Icon src={PCMIcon} />
-          <div>Pretrial Case Management</div>
+          <Icon src={SteppingUpIcon} />
+          <div>SteppingUp Dashboard</div>
         </ProductStamp>
-        <ProductIntro>Reduce time spent on risk assessments while measuring their impact</ProductIntro>
+        <ProductIntro>Quantify how your mental health affected population interacts with social services</ProductIntro>
         <ProductDescription>
-          {`The PCM Application allows you to autofill risk assessments leaving more time to
-            manage supervision and track outcomes to measure effectiveness.`}
+          {`Visualize and link data from across siloes to see how different subsets of individuals affected by
+            mental illness interact across social services.`}
         </ProductDescription>
       </HeaderContent>
       {/* <ProductShot bgImage={ProductImg} /> */}
@@ -59,26 +59,26 @@ const SteppingUpProductPage = () => (
       <FeaturesContent>
         <FeatureOverviewWrapper>
           <img src={Feature1} alt="" />
-          <FeatureOverviewTitle>Autofill Risk Assessments</FeatureOverviewTitle>
+          <FeatureOverviewTitle>Data Visualization</FeatureOverviewTitle>
           <FeatureOverviewDescription>
-            {`Integrate your Records Management System so you do not have to manually
-              look up defendant case history to complete risk assessments.`}
+            {`View metrics that update live to understand how your mental health affected population
+              interacts with services.`}
           </FeatureOverviewDescription>
         </FeatureOverviewWrapper>
         <FeatureOverviewWrapper>
           <img src={Feature2} alt="" />
-          <FeatureOverviewTitle>Track Outcomes</FeatureOverviewTitle>
+          <FeatureOverviewTitle>Data Linking</FeatureOverviewTitle>
           <FeatureOverviewDescription>
-            {`Track hearing outcomes to better understand how judges and defendants interact
-              with risk assessments and release requirements broadly in your jurisdiction.`}
+            {`Create a unified profile of an individual across siloed datasets through OpenLattice’s
+              linking algorithm.`}
           </FeatureOverviewDescription>
         </FeatureOverviewWrapper>
         <FeatureOverviewWrapper>
           <img src={Feature3} alt="" />
-          <FeatureOverviewTitle>Manage Supervision</FeatureOverviewTitle>
+          <FeatureOverviewTitle>Feature 3</FeatureOverviewTitle>
           <FeatureOverviewDescription>
-            {`Send automated court reminders to reduce Failure to Appear rates, and manage
-              voice verification check-in appointments, and track community service completion.`}
+            {`Placeholder text. Placeholder text. Placeholder text. Placeholder text. Placeholder text.
+              Placeholder text. Placeholder text. Placeholder text. Placeholder text. `}
           </FeatureOverviewDescription>
         </FeatureOverviewWrapper>
       </FeaturesContent>
@@ -86,13 +86,14 @@ const SteppingUpProductPage = () => (
     <PageSection>
       <ProductOverviewWrapper>
         <ProductOverviewDescriptionWrapper>
-          <ProductOverviewTitle>Manage Risk in Your Community</ProductOverviewTitle>
+          <ProductOverviewTitle>Data Linking</ProductOverviewTitle>
           <ProductOverviewDescription>
-            {`Reducing jail population safely and objectively can reduce cost to taxpayers while
-              allowing defendants who have been deemed low-risk to continue to work and live in the community.
-              Furthermore, a 2013 report found low-risk defendants held 2-3 days on pretrial detention were
-              roughly 40% more likely to be arrested on new criminal activity after release than those held
-              less than 24 hours.`}
+            {`Most current data systems operate in siloes while the constituents they serve often do not.
+              In other words, those who consume one social service typically consume multiple social services.
+              This is especially true for system high utilizers, and those who are affected by mental illness,
+              two groups with high overlap.  With the OpenLAttice linking algorithm, you can de-duplicate profiles
+              within datasets, and create a unified profile of an individual’s interactions with services in the
+              community across datasets. `}
           </ProductOverviewDescription>
         </ProductOverviewDescriptionWrapper>
         {/* <FeatureShot bgImage={FeatureImg1} /> */}
@@ -100,13 +101,14 @@ const SteppingUpProductPage = () => (
       <ProductOverviewWrapper>
         {/* <FeatureShot bgImage={FeatureImg2} /> */}
         <ProductOverviewDescriptionWrapper>
-          <ProductOverviewTitle>Supervision Touchpoints</ProductOverviewTitle>
+          <ProductOverviewTitle>Visualizing Cross-Sectional Insights</ProductOverviewTitle>
           <ProductOverviewDescription>
-            {`Failures to appear can result in additional jurisdiction resources spent executing warrants, and
-              potential avoidable jail time for defendants.  Knowing the positive impact court reminders can have,
-              OpenLattice developed both an automated Court Reminder system and an automated Voice Verification
-              Check-In system.  This allows jurisdictions to maximize benefit, while maintaining minimal labor
-              requirements.`}
+            {`The OpenLattice linking technology can be deployed in a myriad of different ways, one of which is to
+              power the StepipngUp Dashboard.  Once the segment of the jail population affected by mental illness has
+              been quantified, communities can see exactly where they are succeeding in serving this population,
+              and where they can improve across and between services.  Taking this more holistic view allows
+              jurisdictions to identify problems closer to the root.  By amplifying success and improving upon
+              less efficient programs, jurisdictions can provide better care to their community often at a lower cost.`}
           </ProductOverviewDescription>
         </ProductOverviewDescriptionWrapper>
       </ProductOverviewWrapper>
