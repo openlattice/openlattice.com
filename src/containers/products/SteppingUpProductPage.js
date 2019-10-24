@@ -14,6 +14,8 @@ import PageSection from '../../components/layout/PageSection';
 // import ProductImg from '../../assets/images/pcm-product-shot.png';
 import PurpleOLIcon from '../../assets/images/purple-ol.svg';
 
+import { menuStylesForProductPages } from './styled/MenuStyles';
+
 import {
   FeatureOverviewDescription,
   FeatureOverviewTitle,
@@ -32,23 +34,14 @@ import {
   ProductShot,
 } from './styled/StyledProductComponents';
 
-import { NEUTRALS, PURPLES } from '../../core/style/Colors';
+import { NEUTRALS } from '../../core/style/Colors';
 
 const SteppingUpProductPage = () => (
   <>
     <PageSection bgColor={NEUTRALS.GRAY05}>
       <AppHeader
           logo={PurpleOLIcon}
-          menuStyles={{
-            activeStyles: {
-              color: NEUTRALS.GRAY06,
-              fontWeight: 600
-            },
-            includeScheduleButtonBorder: true,
-            menuFontColor: NEUTRALS.GRAY08,
-            scheduleBorderColor: PURPLES.PP08,
-            scheduleColor: PURPLES.PP08
-          }} />
+          menuStyles={menuStylesForProductPages} />
       <HeaderContent>
         <GalleryProductStamp>
           <Icon src={PCMIcon} />
