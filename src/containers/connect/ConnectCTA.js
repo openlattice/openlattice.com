@@ -6,7 +6,7 @@ import React from 'react';
 
 import styled, { css } from 'styled-components';
 
-import { N1, N2 } from '../../core/style/Colors';
+import { NEUTRALS } from '../../core/style/Colors';
 import { MEDIA_QUERY_LG, MEDIA_QUERY_MD } from '../../core/style/Sizes';
 
 /*
@@ -25,7 +25,7 @@ const bgColorMixin = ({ bgColor }) => {
 
 
 const CTAWrapper = styled.div`
-  color: ${N2};
+  color: ${NEUTRALS.GRAY02};
   display: flex;
   flex: 0 0 auto;
   font-size: 15px;
@@ -42,7 +42,7 @@ const CTAWrapper = styled.div`
 
 const LeftWrapper = styled.div`
   align-items: center;
-  background-color: ${N1};
+  background-color: ${NEUTRALS.GRAY01};
   border-radius: 2px 0 0 2px;
   display: flex;
   width: 304px;
@@ -59,7 +59,7 @@ const LeftWrapper = styled.div`
 
 const RightWrapper = styled.div`
   align-items: center;
-  background-color: ${N1};
+  background-color: ${NEUTRALS.GRAY01};
   border-radius: 0 2px 2px 0;
   display: flex;
   justify-content: center;
@@ -73,7 +73,7 @@ const RightWrapper = styled.div`
 `;
 
 const ActionLink = styled.a`
-  color: ${N1};
+  color: ${NEUTRALS.GRAY01};
   font-weight: bold;
   text-decoration: none;
 `;

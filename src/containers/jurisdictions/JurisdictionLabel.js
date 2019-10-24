@@ -3,7 +3,7 @@ import React from 'react';
 
 import styled from 'styled-components';
 
-import { N2, PP4 } from '../../core/style/Colors';
+import { NEUTRALS, PURPLES } from '../../core/style/Colors';
 import {
   MEDIA_QUERY_JUR_SM,
   MEDIA_QUERY_JUR_MD,
@@ -38,13 +38,13 @@ const LabelWrapper = styled.span`
 `;
 
 const LocationLabel = styled.span`
-  color: ${PP4};
+  color: ${PURPLES.PP05};
   font-weight: 600;
   margin-bottom: 4px;
 `;
 
 const PopulationLabel = styled.span`
-  color: ${N2};
+  color: ${NEUTRALS.GRAY02};
   font-weight: normal;
 `;
 

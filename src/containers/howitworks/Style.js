@@ -1,10 +1,8 @@
 import styled from 'styled-components';
 
 import {
-  N0,
-  N2,
-  N4,
-  PP4
+  NEUTRALS,
+  PURPLES
 } from '../../core/style/Colors';
 
 import { MEDIA_QUERY_JUR_SM, MEDIA_QUERY_LG } from '../../core/style/Sizes';
@@ -47,7 +45,7 @@ export const ContentLeft = styled.img`
 `;
 
 export const ContentRight = styled.div`
-  background: ${N0};
+  background: ${NEUTRALS.WHITE};
   display: flex;
   flex-direction: column;
   height: 100%;
@@ -60,7 +58,7 @@ export const ContentRight = styled.div`
 `;
 
 export const Body = styled.div`
-  color: ${N4};
+  color: ${NEUTRALS.BLACK};
   font-size: 16px;
   line-height: 22px;
   margin-bottom: 20px;
@@ -76,7 +74,7 @@ export const ListItem = styled.div`
 `;
 
 export const ListItemNumber = styled.div`
-  color: ${N2};
+  color: ${NEUTRALS.GRAY02};
   font-size: 18px;
   font-weight: 600;
   line-height: 24px;
@@ -84,25 +82,25 @@ export const ListItemNumber = styled.div`
 `;
 
 export const ListItemText = styled.span`
-  color: ${N2};
+  color: ${NEUTRALS.GRAY02};
   font-size: 14px;
   line-height: 19px;
 `;
 
 export const ListItemLink = styled.a`
-  color: ${PP4};
+  color: ${PURPLES.PP05};
   cursor: pointer;
   font-size: 14px;
   line-height: 19px;
   text-decoration: none;
 
   &:visited {
-    color: ${PP4};
+    color: ${PURPLES.PP05};
   }
 `;
 
 export const ListItemTitle = styled.div`
-  color: ${N2};
+  color: ${NEUTRALS.GRAY02};
   font-size: 14px;
   font-weight: 600;
   line-height: 19px;
