@@ -49,7 +49,7 @@ const SteppingUpProductPage = () => (
         </ProductStamp>
         <ProductIntro>Quantify how your mental health affected population interacts with social services</ProductIntro>
         <ProductDescription>
-          {`Visualize and link data from across siloes to see how different subsets of individuals affected by
+          {`Visualize and link data from across silos to see how different subsets of individuals affected by
             mental illness interact across social services.`}
         </ProductDescription>
       </HeaderContent>
@@ -88,7 +88,7 @@ const SteppingUpProductPage = () => (
         <ProductOverviewDescriptionWrapper>
           <ProductOverviewTitle>Data Linking</ProductOverviewTitle>
           <ProductOverviewDescription>
-            {`Most current data systems operate in siloes while the constituents they serve often do not.
+            {`Most current data systems operate in silos while the constituents they serve often do not.
               In other words, those who consume one social service typically consume multiple social services.
               This is especially true for system high utilizers, and those who are affected by mental illness,
               two groups with high overlap.  With the OpenLAttice linking algorithm, you can de-duplicate profiles
