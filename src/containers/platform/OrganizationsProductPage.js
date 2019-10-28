@@ -5,10 +5,10 @@ import React from 'react';
 
 import ComingSoon from '../../components/placeholder/ComingSoon';
 
-const RideAlongPage = () => (
+const OrganizationsProductPage = () => (
   <>
     <ComingSoon />
   </>
 );
 
-export default RideAlongPage;
+export default OrganizationsProductPage;

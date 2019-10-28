@@ -6,8 +6,7 @@ import styled from 'styled-components';
 import * as Routes from '../../core/router/Routes';
 
 import topImage from '../../assets/images/capitol.png';
-import logo from '../../assets/images/logo-white.png';
-import { N0, N1 } from '../../core/style/Colors';
+import AppHeader from '../../components/headers/AppHeader';
 import PageSection from '../../components/layout/PageSection';
 import StyledSectionTitle from '../../components/headers/StyledSectionTitle';
 import StyledSectionSubTitle from '../../components/headers/StyledSectionSubTitle';
@@ -15,48 +14,46 @@ import ProductTile from './ProductTile';
 import ConnectSection from '../connect/ConnectSection';
 import FooterSection from '../footer/FooterSection';
 
-import * as Constants from './Constants';
+import { N0 } from '../../core/style/Colors';
+import { PRODUCT_DESCRIPTIONS, PRODUCT_ICONS, PRODUCT_TITLES } from './Constants';
 
 import {
   CONTENT_GRID_WIDTH,
-  WINDOW_EDGE_PADDING,
   MEDIA_QUERY_MD,
   MEDIA_QUERY_LG
 } from '../../core/style/Sizes';
 
-const Header = styled.div`
-  display: flex;
-  flex: 1 0 auto;
-  margin-top: ${WINDOW_EDGE_PADDING}px;
-`;
+const SECTIONS = {
+  CORE_PLATFORM: 'corePlatform',
+  PRODUCTS: 'products',
+};
 
 const Content = styled.div`
-  color: ${N0};
-  align-items: center;
-  display: block;
-  flex-direction: column;
+  align-items: flex-start;
+  display: flex;
+  justify-content: flex-start;
   margin: 50px auto;
   max-width: 100%;
-  text-align: center;
 
   @media only screen and (min-width: ${MEDIA_QUERY_MD}px) {
     max-width: 60%;
   }
 
   @media only screen and (min-width: ${MEDIA_QUERY_LG}px) {
-    margin: 210px auto 211px auto;
+    margin: 155px 0 150px 0;
   }
 `;
 
 const TitleText = styled(StyledSectionTitle)`
   color: ${N0};
   margin-bottom: 20px;
-  text-align: center;
-  font-weight: 500;
+  text-align: left;
+  font-weight: 600;
 
   @media only screen and (min-width: ${MEDIA_QUERY_MD}px) {
-    font-size: 40px;
-    text-align: center;
+    font-size: 30px;
+    text-align: left;
+    min-width: 770px;
   }
 `;
 
@@ -82,7 +79,7 @@ const ProductTilesOuterWrapper = styled.div`
   flex: 1 0 auto;
   flex-direction: row;
   justify-content: center;
-  margin: 0 0 30px 0;
+  margin: 60px 0 140px 0;
   max-width: ${CONTENT_GRID_WIDTH}px;
 `;
 
@@ -100,32 +97,103 @@ const ProductTilesInnerWrapper = styled.div`
 const ProductsPage = () => (
   <>
     <PageSection bgImage={topImage}>
-      <Header>
-        <img src={logo} alt="OpenLattice Logo" height={50} />
-      </Header>
+      <AppHeader />
       <Content>
         <TitleText>Make organizations more productive through modern workflows.</TitleText>
       </Content>
     </PageSection>
-    <PageSection bgColor={N1}>
+    <PageSection bgColor={N0}>
       <PageContent>
+        <SectionHeaderWrapper>
+          <StyledSectionTitle>
+            Core platform services
+          </StyledSectionTitle>
+          <StyledSectionSubTitle>
+            {`Core tools and services for you to access, explore, configure,
+              and analyze your data.`}
+          </StyledSectionSubTitle>
+        </SectionHeaderWrapper>
+        <ProductTilesOuterWrapper>
+          <ProductTilesInnerWrapper>
+            <ProductTile
+                section={SECTIONS.CORE_PLATFORM}
+                title={PRODUCT_TITLES.GALLERY}
+                body={PRODUCT_DESCRIPTIONS.GALLERY}
+                icon={PRODUCT_ICONS.GALLERY}
+                route={Routes.GALLERY} />
+            <ProductTile
+                section={SECTIONS.CORE_PLATFORM}
+                title={PRODUCT_TITLES.ORGANIZATIONS}
+                body={PRODUCT_DESCRIPTIONS.ORGANIZATIONS}
+                icon={PRODUCT_ICONS.ORGANIZATIONS}
+                route={Routes.ORGANIZATIONS} />
+            <ProductTile
+                section={SECTIONS.CORE_PLATFORM}
+                title={PRODUCT_TITLES.RESEARCH_HUB}
+                body={PRODUCT_DESCRIPTIONS.RESEARCH_HUB}
+                icon={PRODUCT_ICONS.RESEARCH_HUB}
+                route={Routes.RESEARCH_HUB} />
+            <ProductTile
+                section={SECTIONS.CORE_PLATFORM}
+                title={PRODUCT_TITLES.OTHER_SERVICES}
+                body={PRODUCT_DESCRIPTIONS.OTHER_SERVICES}
+                icon={PRODUCT_ICONS.OTHER_SERVICES}
+                route={Routes.OTHER_SERVICES} />
+          </ProductTilesInnerWrapper>
+        </ProductTilesOuterWrapper>
         <SectionHeaderWrapper>
           <StyledSectionTitle>
             Our Products
           </StyledSectionTitle>
           <StyledSectionSubTitle>
-            {`OpenLattice enables precision goverment by linking of
-              individual level data across criminal justice, healthcare, and
-              social services.`}
+            {`We enable precision government by linking of individual level
+              data across criminal justice, healthcare, and social services.`}
           </StyledSectionSubTitle>
         </SectionHeaderWrapper>
-        <ProductTilesOuterWrapper style={{ marginTop: '70px' }}>
+        <ProductTilesOuterWrapper>
           <ProductTilesInnerWrapper>
-            <ProductTile title={Constants.title1} body={Constants.body1} icon="" route={Routes.HOLODECK} />
-            <ProductTile title={Constants.title2} body={Constants.body2} icon="" route={Routes.RIDE_ALONG} />
-            <ProductTile title={Constants.title3} body={Constants.body3} icon="" route={Routes.PSA} />
-            <ProductTile title={Constants.title4} body={Constants.body4} icon="" route={Routes.PCM} />
-            <ProductTile title={Constants.title5} body={Constants.body5} icon="" route={Routes.CHRONICLE} />
+            <ProductTile
+                section={SECTIONS.PRODUCTS}
+                title={PRODUCT_TITLES.REFERRALS}
+                body={PRODUCT_DESCRIPTIONS.REFERRALS}
+                icon={PRODUCT_ICONS.REFERRALS}
+                route={Routes.REFERRALS} />
+            <ProductTile
+                section={SECTIONS.PRODUCTS}
+                title={PRODUCT_TITLES.CARE}
+                body={PRODUCT_DESCRIPTIONS.CARE}
+                icon={PRODUCT_ICONS.CARE}
+                route={Routes.CARE} />
+            <ProductTile
+                section={SECTIONS.PRODUCTS}
+                title={PRODUCT_TITLES.PCM}
+                body={PRODUCT_DESCRIPTIONS.PCM}
+                icon={PRODUCT_ICONS.PCM}
+                route={Routes.PCM} />
+            <ProductTile
+                section={SECTIONS.PRODUCTS}
+                title={PRODUCT_TITLES.ASTROMETRICS}
+                body={PRODUCT_DESCRIPTIONS.ASTROMETRICS}
+                icon={PRODUCT_ICONS.ASTROMETRICS}
+                route={Routes.ASTROMETRICS} />
+            <ProductTile
+                section={SECTIONS.PRODUCTS}
+                title={PRODUCT_TITLES.CHRONICLE}
+                body={PRODUCT_DESCRIPTIONS.CHRONICLE}
+                icon={PRODUCT_ICONS.CHRONICLE}
+                route={Routes.CHRONICLE} />
+            <ProductTile
+                section={SECTIONS.PRODUCTS}
+                title={PRODUCT_TITLES.CWP}
+                body={PRODUCT_DESCRIPTIONS.CWP}
+                icon={PRODUCT_ICONS.CWP}
+                route={Routes.CWP} />
+            <ProductTile
+                section={SECTIONS.PRODUCTS}
+                title={PRODUCT_TITLES.STEPPING_UP}
+                body={PRODUCT_DESCRIPTIONS.STEPPING_UP}
+                icon={PRODUCT_ICONS.STEPPING_UP}
+                route={Routes.STEPPING_UP} />
           </ProductTilesInnerWrapper>
         </ProductTilesOuterWrapper>
       </PageContent>
