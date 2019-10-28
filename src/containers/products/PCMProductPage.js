@@ -11,7 +11,7 @@ import FeatureImg2 from '../../assets/images/pcm-feature-shot-2.png';
 import FooterSection from '../footer/FooterSection';
 import PCMIcon from '../../assets/logos/pcm-logo.svg';
 import PageSection from '../../components/layout/PageSection';
-import ProductImg from '../../assets/images/pcm-product-shot.png';
+import ProductImg from '../../assets/images/pcm-product-shot.svg';
 import PurpleOLIcon from '../../assets/images/purple-ol.svg';
 
 import {
@@ -28,7 +28,7 @@ import {
   ProductOverviewDescriptionWrapper,
   ProductOverviewTitle,
   ProductOverviewWrapper,
-  ProductShot,
+  ProductShotWrapper,
   ProductStamp,
 } from './styled/StyledProductComponents';
 import { menuStylesForProductPages } from './styled/MenuStyles';
@@ -52,7 +52,9 @@ const PCMProductPage = () => (
             manage supervision and track outcomes to measure effectiveness.`}
         </ProductDescription>
       </HeaderContent>
-      <ProductShot bgImage={ProductImg} />
+      <ProductShotWrapper>
+        <img alt="" src={ProductImg} position="absolute" top="625px" zindex="1000" viewBox="0 0 960 710" />
+      </ProductShotWrapper>
     </PageSection>
     <PageSection>
       <FeaturesContent>
