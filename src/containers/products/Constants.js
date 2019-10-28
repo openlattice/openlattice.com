@@ -9,7 +9,7 @@ import PCMIcon from '../../assets/logos/pcm-logo.svg';
 import PlaceholderIcon from '../../assets/logos/placeholder-logo.svg';
 import SteppingUpIcon from '../../assets/logos/stepping-up-logo.svg';
 
-const PRODUCT_ICONS :Oject = {
+const PRODUCT_ICONS :Object = {
   ASTROMETRICS: AstrometricsIcon,
   CARE: CareIcon,
   CHRONICLE: PlaceholderIcon,

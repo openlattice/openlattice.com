@@ -73,6 +73,7 @@ const LearnMoreButton = styled.div`
   justify-content: flex-start;
   position: absolute;
   bottom: 30px;
+
   span {
     margin-right: 8px;
   }
