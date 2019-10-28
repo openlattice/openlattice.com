@@ -66,26 +66,42 @@ const ProductDescription = styled.div`
   }
 `;
 
+const ProductShotWrapper = styled.div`
+  align-self: center;
+  position: absolute;
+  top: 625px;
+  /* width: 1102px;
+  height: 670px; */
+  border-radius: 2px;
+  border: 1px solid #E1E1EB;
+  box-shadow: 0px 10px 30px rgba(48, 47, 57, 0.05);
+  box-sizing: border-box;
+  /* margin: 0 auto; */
+  z-index: 500;
+`;
+
 const ProductShot = styled.div`
   align-self: center;
   background-image: url(${(props) => props.bgImage});
   background-position: center;
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: cover;
   height: 100%;
   position: absolute;
-  top: 450px;
+  top: 500px;
   width: 100%;
   z-index: 1000;
 
-  @media only screen and (min-width: ${MEDIA_QUERY_MD}px) {
-    top: 500px;
-  }
-
   @media only screen and (min-width: ${MEDIA_QUERY_LG}px) {
-    height: 575px;
-    width: 1104px;
+    border-radius: 2px;
+    border: 1px solid #E1E1EB;
+    box-shadow: 0px 10px 30px rgba(48, 47, 57, 0.05);
+    box-sizing: border-box;
+    /* height: 710px; */
+    height: 670px;
     top: 625px;
+    /* width: 1102px; */
+    width: 1102px;
   }
 `;
 
@@ -95,18 +111,18 @@ const FeaturesContent = styled.div`
   flex-direction: column;
   align-items: center;
   width: 100%;
-  margin-top: 400px;
+  margin-top: 450px;
 
   @media only screen and (min-width: ${MEDIA_QUERY_LG}px) {
     flex-direction: row;
-    margin-top: 500px;
+    margin-top: 600px;
   }
 `;
 
 const FeatureOverviewWrapper = styled.div`
   width: 360px;
   height: 250px;
-  margin: 48px 48px 80px 0;
+  margin: 30px 0 30px 0;
   position: relative;
 
   :last-child {
@@ -114,6 +130,7 @@ const FeatureOverviewWrapper = styled.div`
   }
 
   @media only screen and (min-width: ${MEDIA_QUERY_LG}px) {
+    margin: 48px 48px 80px 0;
     :last-child {
       margin-right: 0;
     }
@@ -133,8 +150,12 @@ const FeatureOverviewDescription = styled.div`
   font-size: 16px;
   line-height: 150%;
   width: 100%;
-  top: 170px;
+  top: 150px;
   position: absolute;
+
+  @media only screen and (min-width: ${MEDIA_QUERY_LG}px) {
+    top: 170px;
+  }
 `;
 
 const ProductOverviewWrapper = styled.div`
@@ -194,6 +215,10 @@ const ProductOverviewDescription = styled(FeatureOverviewDescription)`
   margin-top: 24px;
   position: relative;
   top: auto;
+
+  @media only screen and (min-width: ${MEDIA_QUERY_LG}px) {
+    top: auto;
+  }
 `;
 
 export {
@@ -211,5 +236,6 @@ export {
   ProductOverviewTitle,
   ProductOverviewWrapper,
   ProductShot,
+  ProductShotWrapper,
   ProductStamp,
 };
