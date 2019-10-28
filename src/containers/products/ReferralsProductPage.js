@@ -47,10 +47,11 @@ const ReferralsProductPage = () => (
           <Icon src={ReferralsIcon} />
           <div>Referrals</div>
         </ProductStamp>
-        <ProductIntro>Referrals Referrals Referrals Referrals Referrals Referrals</ProductIntro>
+        <ProductIntro>Refer clients to social services and share information with other service providers</ProductIntro>
         <ProductDescription>
-          {`The PCM Application allows you to autofill risk assessments leaving more time to
-            manage supervision and track outcomes to measure effectiveness.`}
+          {`The referrals management platform is a mobile-friendly application that allows case workers,
+            first responders, and other providers to identify and suggest services for their clients,
+            manage a person's referrals, and close the information loop with other service providers.`}
         </ProductDescription>
       </HeaderContent>
       <ProductShot bgImage={ProductImg} />
@@ -59,26 +60,30 @@ const ReferralsProductPage = () => (
       <FeaturesContent>
         <FeatureOverviewWrapper>
           <img src={Feature1} alt="" />
-          <FeatureOverviewTitle>Autofill Risk Assessments</FeatureOverviewTitle>
+          <FeatureOverviewTitle>Address Client Crises</FeatureOverviewTitle>
           <FeatureOverviewDescription>
-            {`Integrate your Records Management System so you do not have to manually
-              look up defendant case history to complete risk assessments.`}
+            {`Facilitate case workers and first responders who need to provide services for clients in crisis,
+              identifying appropriate services available in a specific geographic location, contacting the
+              provider directly, and engaging the client with whatever information is available.`}
           </FeatureOverviewDescription>
         </FeatureOverviewWrapper>
         <FeatureOverviewWrapper>
           <img src={Feature2} alt="" />
-          <FeatureOverviewTitle>Track Outcomes</FeatureOverviewTitle>
+          <FeatureOverviewTitle>Manage Referrals</FeatureOverviewTitle>
           <FeatureOverviewDescription>
-            {`Track hearing outcomes to better understand how judges and defendants interact
-              with risk assessments and release requirements broadly in your jurisdiction.`}
+            {`Allow providers to manage all inbound and outbound referrals and alert
+              users when referrals need attention, automatically sending status updates to referring
+              providers to close the feedback loop and provide information.`}
           </FeatureOverviewDescription>
         </FeatureOverviewWrapper>
         <FeatureOverviewWrapper>
           <img src={Feature3} alt="" />
-          <FeatureOverviewTitle>Manage Supervision</FeatureOverviewTitle>
+          <FeatureOverviewTitle>Engage with Patients</FeatureOverviewTitle>
           <FeatureOverviewDescription>
-            {`Send automated court reminders to reduce Failure to Appear rates, and manage
-              voice verification check-in appointments, and track community service completion.`}
+            {`Improve customer service, engagement, and retention by ensuring patients are engaged throughout
+              the entire referral process. Communicate with patients securely through the OpenLattice platform,
+              resulting in a better patient experience, better patient understanding of results and next steps,
+              and increased loyalty to providers.`}
           </FeatureOverviewDescription>
         </FeatureOverviewWrapper>
       </FeaturesContent>
@@ -86,13 +91,13 @@ const ReferralsProductPage = () => (
     <PageSection>
       <ProductOverviewWrapper>
         <ProductOverviewDescriptionWrapper>
-          <ProductOverviewTitle>Manage Risk in Your Community</ProductOverviewTitle>
+          <ProductOverviewTitle>Use Real-Time Analytics</ProductOverviewTitle>
           <ProductOverviewDescription>
-            {`Reducing jail population safely and objectively can reduce cost to taxpayers while
-              allowing defendants who have been deemed low-risk to continue to work and live in the community.
-              Furthermore, a 2013 report found low-risk defendants held 2-3 days on pretrial detention were
-              roughly 40% more likely to be arrested on new criminal activity after release than those held
-              less than 24 hours.`}
+            {`Providers achieve greater insight into their businesses using real-time analytics such as metrics
+              dashboards, referral volume, trends, leakage rate, capture rate, service levels, wait times, outreach
+              results, and other self-defined outcomes of interest. They can track metrics over time and also
+              achieve greater awareness of external provider wait-time and responsiveness trends, ensuring that
+              the patients that they refer out receive the highest standards of care.`}
           </ProductOverviewDescription>
         </ProductOverviewDescriptionWrapper>
         {/* <FeatureShot bgImage={FeatureImg1} /> */}
@@ -100,13 +105,11 @@ const ReferralsProductPage = () => (
       <ProductOverviewWrapper>
         {/* <FeatureShot bgImage={FeatureImg2} /> */}
         <ProductOverviewDescriptionWrapper>
-          <ProductOverviewTitle>Supervision Touchpoints</ProductOverviewTitle>
+          <ProductOverviewTitle>Collect Data Safely</ProductOverviewTitle>
           <ProductOverviewDescription>
-            {`Failures to appear can result in additional jurisdiction resources spent executing warrants, and
-              potential avoidable jail time for defendants.  Knowing the positive impact court reminders can have,
-              OpenLattice developed both an automated Court Reminder system and an automated Voice Verification
-              Check-In system.  This allows jurisdictions to maximize benefit, while maintaining minimal labor
-              requirements.`}
+            {`Providers can safely collect data and consent statements from their clients on the OpenLattice platform.
+              The platform is HIPAA-compliant and supports other compliance and privacy features, such as presentation
+              of user consent statements and data use agreements upon login.`}
           </ProductOverviewDescription>
         </ProductOverviewDescriptionWrapper>
       </ProductOverviewWrapper>
