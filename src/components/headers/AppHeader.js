@@ -39,6 +39,7 @@ const MenuInternalLink = styled(NavLink)`
   color: ${N5};
   margin-right: 30px;
   text-decoration: none;
+
   &:hover {
     cursor: pointer;
   }
