@@ -53,16 +53,15 @@ const PRODUCT_DESCRIPTIONS :Object = {
     datasets, identify top utilizers, and perform analysis.`),
   ORGANIZATIONS: (`Access and manage your organizations – manage roles and permissions of members and
     entity sets within the organizations.`),
-  OTHER_SERVICES: (`Placeholder text – A tool for collecting behavioral health report data, viewing historical data, and
-    performing analysis.`),
+  OTHER_SERVICES: 'Explore other services we offer to securely store, manage, and analyze your data.',
   PCM: (`Manage a person moving through the pretrial court system, from a public safety assessment,
     to initial appearance, to tracking their outcomes (judge’s decision).`),
-  REFERRALS: (`Placeholder text – A tool for collecting behavioral health report data, viewing historical data, and
-    performing analysis.`),
-  RESEARCH_HUB: (`Placeholder text – A tool for collecting behavioral health report data, viewing historical data, and
-    performing analysis.`),
-  STEPPING_UP: (`Placeholder text – A tool for collecting behavioral health report data, viewing historical data, and
-    performing analysis.`),
+  REFERRALS: (`Allow case workers, first responders, and other providers to identify and suggest services
+    for their clients, manage a person's referrals, and share with other providers.`),
+  RESEARCH_HUB: (`Securely integrate, index, and link highly variable and sensitive data across disparate sources
+    (e.g., Medicaid, DDS, Child Welfare), enabling longitudinal analysis of social services and human outcomes.`),
+  STEPPING_UP: (`Visualize and link data across sources to see how different subsets of individuals
+    affected by mental illness interact across social services.`),
 };
 
 export {
