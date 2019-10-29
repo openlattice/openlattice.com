@@ -1,5 +1,6 @@
 // @flow
 import React from 'react';
+import styled from 'styled-components';
 
 import AppHeader from '../../components/headers/AppHeader';
 import ConnectSection from '../connect/ConnectSection';
@@ -15,7 +16,8 @@ import ProductImg from '../../assets/images/cwp/cwp-product-shot.png';
 import PurpleOLIcon from '../../assets/images/purple-ol.svg';
 
 import { menuStylesForProductPages } from './styled/MenuStyles';
-
+import { MEDIA_QUERY_MD, MEDIA_QUERY_TECH_SM } from '../../core/style/Sizes';
+import { NEUTRALS } from '../../core/style/Colors';
 import {
   FeatureOverviewDescription,
   FeatureOverviewTitle,
@@ -34,7 +36,25 @@ import {
   ProductStamp,
 } from './styled/StyledProductComponents';
 
-import { NEUTRALS } from '../../core/style/Colors';
+const CWPFeature1Shot = styled(FeatureShot)`
+  height: 556px;
+  width: 438px;
+
+  @media only screen and (max-width: ${MEDIA_QUERY_TECH_SM}px) {
+    height: 348px;
+    width: 274px;
+  }
+`;
+
+const CWPFeature2Shot = styled(FeatureShot)`
+  height: 519px;
+  width: 480px;
+
+  @media only screen and (max-width: ${MEDIA_QUERY_TECH_SM}px) {
+    height: 324px;
+    width: 300px;
+  }
+`;
 
 const CWPProductPage = () => (
   <>
@@ -92,10 +112,10 @@ const CWPProductPage = () => (
               participation data.`}
           </ProductOverviewDescription>
         </ProductOverviewDescriptionWrapper>
-        <FeatureShot bgImage={FeatureImg1} />
+        <CWPFeature1Shot bgImage={FeatureImg1} />
       </ProductOverviewWrapper>
       <ProductOverviewWrapper>
-        <FeatureShot bgImage={FeatureImg2} />
+        <CWPFeature2Shot bgImage={FeatureImg2} />
         <ProductOverviewDescriptionWrapper>
           <ProductOverviewTitle>Track Participant Progress</ProductOverviewTitle>
           <ProductOverviewDescription>
