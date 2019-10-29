@@ -58,7 +58,7 @@ const CWPFeature2Shot = styled(FeatureShot)`
 
 const CWPProductPage = () => (
   <>
-    <PageSection bgColor={NEUTRALS.GRAY05}>
+    <PageSection bgColor={NEUTRALS.GRAY_05}>
       <AppHeader
           logo={PurpleOLLogo}
           menuStyles={menuStylesForProductPages} />
