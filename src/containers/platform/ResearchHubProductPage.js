@@ -9,7 +9,7 @@ import Feature3 from '../../assets/productfeatureicons/researchhub/feature3.svg'
 import FeatureImg1 from '../../assets/images/permissions-feature-shot.png';
 import FeatureImg2 from '../../assets/images/researchhub/research-hub-feature-shot-2.png';
 import FooterSection from '../footer/FooterSection';
-import PlaceholderIcon from '../../assets/logos/placeholder-logo.svg';
+import PlaceholderIcon from '../../assets/logos/placeholder-small-logo.svg';
 import PageSection from '../../components/layout/PageSection';
 import ProductImg from '../../assets/images/researchhub/research-hub-product-shot.png';
 import PurpleOLIcon from '../../assets/images/purple-ol.svg';

@@ -112,9 +112,9 @@ const ProductShot = styled.div`
   }
 
   @media only screen and (min-width: ${MEDIA_QUERY_LG}px) {
-    height: 670px;
+    height: 710px;
     top: 625px;
-    width: 1102px;
+    width: 1104px;
   }
 `;
 
