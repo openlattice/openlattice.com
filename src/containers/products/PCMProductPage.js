@@ -9,9 +9,9 @@ import Feature3 from '../../assets/productfeatures/feature3.svg';
 import FeatureImg1 from '../../assets/images/pcm-feature-shot-1.png';
 import FeatureImg2 from '../../assets/images/pcm-feature-shot-2.png';
 import FooterSection from '../footer/FooterSection';
-import PCMIcon from '../../assets/logos/pcm-logo.svg';
+import PCMIcon from '../../assets/logos/pcm-small-logo.svg';
 import PageSection from '../../components/layout/PageSection';
-import ProductImg from '../../assets/images/pcm-product-shot.svg';
+import ProductImg from '../../assets/images/pcm-product-shot.png';
 import PurpleOLIcon from '../../assets/images/purple-ol.svg';
 
 import {
@@ -28,7 +28,7 @@ import {
   ProductOverviewDescriptionWrapper,
   ProductOverviewTitle,
   ProductOverviewWrapper,
-  ProductShotWrapper,
+  ProductShot,
   ProductStamp,
 } from './styled/StyledProductComponents';
 import { menuStylesForProductPages } from './styled/MenuStyles';
@@ -52,15 +52,13 @@ const PCMProductPage = () => (
             manage supervision and track outcomes to measure effectiveness.`}
         </ProductDescription>
       </HeaderContent>
-      <ProductShotWrapper>
-        <img alt="" src={ProductImg} position="absolute" top="625px" zindex="1000" viewBox="0 0 960 710" />
-      </ProductShotWrapper>
+      <ProductShot bgImage={ProductImg} />
     </PageSection>
     <PageSection>
       <FeaturesContent>
         <FeatureOverviewWrapper>
           <img src={Feature1} alt="" />
-          <FeatureOverviewTitle>Autofill Risk Assessments</FeatureOverviewTitle>
+          <FeatureOverviewTitle>Autofill risk assessments</FeatureOverviewTitle>
           <FeatureOverviewDescription>
             {`Integrate your Records Management System so you do not have to manually
               look up defendant case history to complete risk assessments.`}
@@ -68,7 +66,7 @@ const PCMProductPage = () => (
         </FeatureOverviewWrapper>
         <FeatureOverviewWrapper>
           <img src={Feature2} alt="" />
-          <FeatureOverviewTitle>Track Outcomes</FeatureOverviewTitle>
+          <FeatureOverviewTitle>Track outcomes</FeatureOverviewTitle>
           <FeatureOverviewDescription>
             {`Track hearing outcomes to better understand how judges and defendants interact
               with risk assessments and release requirements broadly in your jurisdiction.`}
@@ -76,7 +74,7 @@ const PCMProductPage = () => (
         </FeatureOverviewWrapper>
         <FeatureOverviewWrapper>
           <img src={Feature3} alt="" />
-          <FeatureOverviewTitle>Manage Supervision</FeatureOverviewTitle>
+          <FeatureOverviewTitle>Manage supervision</FeatureOverviewTitle>
           <FeatureOverviewDescription>
             {`Send automated court reminders to reduce Failure to Appear rates, and manage
               voice verification check-in appointments, and track community service completion.`}
