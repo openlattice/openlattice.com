@@ -12,7 +12,7 @@ import FooterSection from '../footer/FooterSection';
 import ReferralsIcon from '../../assets/logos/placeholder-small-logo.svg';
 import PageSection from '../../components/layout/PageSection';
 import ProductImg from '../../assets/images/referrals/referrals-product-shot.png';
-import PurpleOLIcon from '../../assets/images/purple-ol.svg';
+import PurpleOLogo from '../../assets/images/logo-original.png';
 
 import { menuStylesForProductPages } from './styled/MenuStyles';
 
@@ -40,7 +40,7 @@ const ReferralsProductPage = () => (
   <>
     <PageSection bgColor={NEUTRALS.GRAY_05}>
       <AppHeader
-          logo={PurpleOLIcon}
+          logo={PurpleOLogo}
           menuStyles={menuStylesForProductPages} />
       <HeaderContent>
         <ProductStamp>
