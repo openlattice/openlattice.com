@@ -23,7 +23,7 @@ const bodyStyleVariation = getStyleVariation('section', {
 });
 
 const TileWrapper = styled(Link)`
-  background-color: ${NEUTRALS.GRAY01};
+  background-color: ${NEUTRALS.GRAY_01};
   height: 322px;
   margin: 15px;
   padding: 30px;
@@ -50,7 +50,7 @@ const Title = styled.div`
 `;
 
 const Body = styled.div`
-  color: ${NEUTRALS.GRAY02};
+  color: ${NEUTRALS.GRAY_02};
   font-size: 14px;
   left: 30px;
   line-height: normal;

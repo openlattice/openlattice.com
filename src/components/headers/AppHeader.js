@@ -109,7 +109,7 @@ AppHeader.defaultProps = {
       fontWeight: 600
     },
     includeScheduleButtonBorder: false,
-    menuFontColor: NEUTRALS.GRAY04,
+    menuFontColor: NEUTRALS.GRAY_04,
     scheduleBorderColor: undefined,
     scheduleColor: NEUTRALS.BLACK,
   },
