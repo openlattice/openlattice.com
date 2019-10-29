@@ -38,7 +38,7 @@ import { NEUTRALS } from '../../core/style/Colors';
 
 const ReferralsProductPage = () => (
   <>
-    <PageSection bgColor={NEUTRALS.GRAY05}>
+    <PageSection bgColor={NEUTRALS.GRAY_05}>
       <AppHeader
           logo={PurpleOLIcon}
           menuStyles={menuStylesForProductPages} />
