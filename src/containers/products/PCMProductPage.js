@@ -3,15 +3,15 @@ import React from 'react';
 
 import AppHeader from '../../components/headers/AppHeader';
 import ConnectSection from '../connect/ConnectSection';
-import Feature1 from '../../assets/productfeatures/feature1.svg';
-import Feature2 from '../../assets/productfeatures/feature2.svg';
-import Feature3 from '../../assets/productfeatures/feature3.svg';
-import FeatureImg1 from '../../assets/images/pcm-feature-shot-1.png';
-import FeatureImg2 from '../../assets/images/pcm-feature-shot-2.png';
+import Feature1 from '../../assets/productfeatureicons/merge.svg';
+import Feature2 from '../../assets/productfeatureicons/pcm/gavel.svg';
+import Feature3 from '../../assets/productfeatureicons/pcm/clipboard.svg';
+import FeatureImg1 from '../../assets/images/pcm/pcm-feature-shot-1.png';
+import FeatureImg2 from '../../assets/images/pcm/pcm-feature-shot-2.png';
 import FooterSection from '../footer/FooterSection';
 import PCMIcon from '../../assets/logos/pcm-small-logo.svg';
 import PageSection from '../../components/layout/PageSection';
-import ProductImg from '../../assets/images/pcm-product-shot.png';
+import ProductImg from '../../assets/images/pcm/pcm-product-shot.png';
 import PurpleOLIcon from '../../assets/images/purple-ol.svg';
 
 import {
@@ -36,7 +36,7 @@ import { NEUTRALS } from '../../core/style/Colors';
 
 const PCMProductPage = () => (
   <>
-    <PageSection bgColor={NEUTRALS.GRAY05}>
+    <PageSection bgColor={NEUTRALS.GRAY_05}>
       <AppHeader
           logo={PurpleOLIcon}
           menuStyles={menuStylesForProductPages} />
