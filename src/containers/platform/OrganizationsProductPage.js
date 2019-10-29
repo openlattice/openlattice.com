@@ -6,7 +6,7 @@ import ConnectSection from '../connect/ConnectSection';
 import Feature1 from '../../assets/productfeatureicons/organizations/feature1.svg';
 import Feature2 from '../../assets/productfeatureicons/organizations/feature2.svg';
 import Feature3 from '../../assets/productfeatureicons/organizations/feature3.svg';
-// import FeatureImg from '../../assets/images/gallery-feature-shot.png';
+import FeatureImg from '../../assets/images/permissions-feature-shot.png';
 import FooterSection from '../footer/FooterSection';
 import OrganizationsIcon from '../../assets/logos/organizations-small-logo.svg';
 import PageSection from '../../components/layout/PageSection';
@@ -19,10 +19,10 @@ import {
   FeatureOverviewDescription,
   FeatureOverviewTitle,
   FeatureOverviewWrapper,
-  FeatureShot,
   FeaturesContent,
   HeaderContent,
   Icon,
+  PermissionsFeatureShot,
   ProductDescription,
   ProductIntro,
   ProductOverviewDescription,
@@ -97,7 +97,7 @@ const OrganizationsProductPage = () => (
               at any time.  Gallery provides a simple user interface to ensure these functions are easy to maintain. `}
           </ProductOverviewDescription>
         </ProductOverviewDescriptionWrapper>
-      {/* <FeatureShot bgImage={FeatureImg} /> */}
+        <PermissionsFeatureShot bgImage={FeatureImg} />
       </ProductOverviewWrapper>
     </PageSection>
     <ConnectSection />
