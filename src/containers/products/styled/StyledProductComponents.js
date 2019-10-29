@@ -112,9 +112,9 @@ const ProductShot = styled.div`
   }
 
   @media only screen and (min-width: ${MEDIA_QUERY_LG}px) {
-    height: 710px;
+    height: 670px;
     top: 625px;
-    width: 1104px;
+    width: 1102px;
   }
 `;
 
@@ -150,7 +150,7 @@ const FeaturesContent = styled.div`
 
 const FeatureOverviewWrapper = styled.div`
   width: 366px;
-  height: 250px;
+  min-height: 250px;
   margin: 30px 0;
   position: relative;
   :last-child {
