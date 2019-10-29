@@ -49,7 +49,7 @@ const CustomFeatureShot = styled(FeatureShot)`
 
 const SteppingUpProductPage = () => (
   <>
-    <PageSection bgColor={NEUTRALS.GRAY05}>
+    <PageSection bgColor={NEUTRALS.GRAY_05}>
       <AppHeader
           logo={PurpleOLLogo}
           menuStyles={menuStylesForProductPages} />
