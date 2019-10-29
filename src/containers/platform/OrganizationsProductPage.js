@@ -11,7 +11,7 @@ import FooterSection from '../footer/FooterSection';
 import OrganizationsIcon from '../../assets/logos/organizations-small-logo.svg';
 import PageSection from '../../components/layout/PageSection';
 import ProductImg from '../../assets/images/organizations/organizations-product-shot.png';
-import PurpleOLIcon from '../../assets/images/purple-ol.svg';
+import PurpleOLLogo from '../../assets/images/logo-original.png';
 
 import { menuStylesForProductPages } from '../products/styled/MenuStyles';
 
@@ -40,7 +40,7 @@ const OrganizationsProductPage = () => (
   <>
     <PageSection bgColor={NEUTRALS.GRAY05}>
       <AppHeader
-          logo={PurpleOLIcon}
+          logo={PurpleOLLogo}
           menuStyles={menuStylesForProductPages} />
       <HeaderContent>
         <ProductStamp>
