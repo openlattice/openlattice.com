@@ -59,7 +59,7 @@ const Content = styled.div`
 `;
 
 const Title = styled(StyledSectionTitle)`
-  color: ${NEUTRALS.GRAY03};
+  color: ${NEUTRALS.GRAY_03};
 
   @media only screen and (min-width: ${MEDIA_QUERY_MD}px) {
     max-width: 60%;

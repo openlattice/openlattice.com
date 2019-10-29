@@ -19,7 +19,7 @@ const helpLink = 'https://help.openlattice.com';
 
 const Content = styled.div`
   align-items: center;
-  color: ${NEUTRALS.GRAY02};
+  color: ${NEUTRALS.GRAY_02};
   display: flex;
   flex-direction: column;
   margin-bottom: 22px;
@@ -57,7 +57,7 @@ const Copyright = styled.span`
 `;
 
 const FooterSection = () => (
-  <PageSection bgColor={NEUTRALS.GRAY01}>
+  <PageSection bgColor={NEUTRALS.GRAY_01}>
     <Content>
       <Logo src={logoImg} alt="OpenLattice Logo" height={50} />
       <RightSectionWrapper>

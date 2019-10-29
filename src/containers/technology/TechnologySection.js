@@ -57,7 +57,7 @@ const TechTilesInnerWrapper = styled.div`
 `;
 
 const FooterBody = styled.span`
-  color: ${NEUTRALS.GRAY02};
+  color: ${NEUTRALS.GRAY_02};
   font-size: 14px;
   line-height: 19px;
 `;

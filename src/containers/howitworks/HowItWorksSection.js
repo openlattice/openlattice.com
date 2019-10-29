@@ -31,7 +31,7 @@ const StyledCroppedSubtitle = styled(StyledSectionSubTitle)`
 
 const HowItWorksSection = () => (
   <>
-    <PageSection bgColor={NEUTRALS.GRAY01}>
+    <PageSection bgColor={NEUTRALS.GRAY_01}>
       <Content>
         <StyledSectionTitle>
           { TITLE }
