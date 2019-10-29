@@ -143,6 +143,7 @@ const FeaturesContent = styled.div`
   }
 
   @media only screen and (min-width: ${MEDIA_QUERY_LG}px) {
+    align-items: flex-start;
     flex-direction: row;
     margin-top: 600px;
   }
