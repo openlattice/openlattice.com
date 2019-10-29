@@ -94,7 +94,8 @@ const OrganizationsProductPage = () => (
               sharing to facilitate data-driven decision making and de-silo current data systems.  This is accomplished
               through role-based field-level permissions that grant the user maximum flexibility in granting data
               access. Users have full control over their data which can be added to, removed, and shared with anyone
-              at any time.  Gallery provides a simple user interface to ensure these functions are easy to maintain. `}
+              at any time.  Organizations provides a simple user interface to ensure these functions are easy to
+              maintain. `}
           </ProductOverviewDescription>
         </ProductOverviewDescriptionWrapper>
         <PermissionsFeatureShot bgImage={FeatureImg} />
