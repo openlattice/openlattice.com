@@ -3,15 +3,15 @@ import React from 'react';
 
 import AppHeader from '../../components/headers/AppHeader';
 import ConnectSection from '../connect/ConnectSection';
-import Feature1 from '../../assets/productfeatures/feature1.svg';
-import Feature2 from '../../assets/productfeatures/feature2.svg';
-import Feature3 from '../../assets/productfeatures/feature3.svg';
-// import FeatureImg1 from '../../assets/images/pcm-feature-shot-1.png';
-// import FeatureImg2 from '../../assets/images/pcm-feature-shot-2.png';
+import Feature1 from '../../assets/productfeatureicons/researchhub/feature1.svg';
+import Feature2 from '../../assets/productfeatureicons/researchhub/feature2.svg';
+import Feature3 from '../../assets/productfeatureicons/researchhub/feature3.svg';
+import FeatureImg1 from '../../assets/images/permissions-feature-shot.png';
+import FeatureImg2 from '../../assets/images/researchhub/research-hub-feature-shot-2.png';
 import FooterSection from '../footer/FooterSection';
 import PlaceholderIcon from '../../assets/logos/placeholder-logo.svg';
 import PageSection from '../../components/layout/PageSection';
-// import ProductImg from '../../assets/images/pcm-product-shot.png';
+import ProductImg from '../../assets/images/researchhub/research-hub-product-shot.png';
 import PurpleOLIcon from '../../assets/images/purple-ol.svg';
 
 import { menuStylesForProductPages } from '../products/styled/MenuStyles';
@@ -23,6 +23,7 @@ import {
   FeaturesContent,
   HeaderContent,
   Icon,
+  PermissionsFeatureShot,
   ProductDescription,
   ProductIntro,
   ProductOverviewDescription,
@@ -32,7 +33,6 @@ import {
   ProductShot,
   ProductStamp,
 } from '../products/styled/StyledProductComponents';
-
 import { NEUTRALS } from '../../core/style/Colors';
 
 const ResearchHubProductPage = () => (
@@ -46,40 +46,40 @@ const ResearchHubProductPage = () => (
           <Icon src={PlaceholderIcon} />
           <div>Research Hub</div>
         </ProductStamp>
-        <ProductIntro>Enable collaborative research and case management with our data platform</ProductIntro>
+        <ProductIntro>Data integration and sharehousing</ProductIntro>
         <ProductDescription>
-          {`Research Hub is a secure, cloud-based Management Information System (MIS) that securely integrates, indexes,
-            and links highly variable and sensitive data across disparate sources (e.g., Medicaid,
-            DDS, Child Welfare), enabling longitudinal analysis of social services and health care
-            use and outcomes, collaborative case management, and cross-agency workflow development. `}
+          {`A secure, cloud-based Management Information System (MIS) that securely integrates,
+            indexes, and links highly variable and sensitive data across disparate sources`}
         </ProductDescription>
       </HeaderContent>
-      {/* <ProductShot bgImage={ProductImg} /> */}
+      <ProductShot bgImage={ProductImg} />
     </PageSection>
     <PageSection>
       <FeaturesContent>
         <FeatureOverviewWrapper>
           <img src={Feature1} alt="" />
-          <FeatureOverviewTitle>Autofill Risk Assessments</FeatureOverviewTitle>
+          <FeatureOverviewTitle>Data services</FeatureOverviewTitle>
           <FeatureOverviewDescription>
-            {`Integrate your Records Management System so you do not have to manually
-              look up defendant case history to complete risk assessments.`}
+            {`Integrate, index, and link highly variable and sensitive data across disparate sources
+              (e.g., Medicaid, DDS, Child Welfare), enabling longitudinal analysis of social services
+              and health care use and outcomes, collaborative case management, and cross-agency workflow development.`}
           </FeatureOverviewDescription>
         </FeatureOverviewWrapper>
         <FeatureOverviewWrapper>
           <img src={Feature2} alt="" />
-          <FeatureOverviewTitle>Track Outcomes</FeatureOverviewTitle>
+          <FeatureOverviewTitle>Role-based access controls</FeatureOverviewTitle>
           <FeatureOverviewDescription>
-            {`Track hearing outcomes to better understand how judges and defendants interact
-              with risk assessments and release requirements broadly in your jurisdiction.`}
+            {`Flexible and highly customizable permissioning system, ideal for cleints with complex
+              data-sharing needs.`}
           </FeatureOverviewDescription>
         </FeatureOverviewWrapper>
         <FeatureOverviewWrapper>
           <img src={Feature3} alt="" />
-          <FeatureOverviewTitle>Manage Supervision</FeatureOverviewTitle>
+          <FeatureOverviewTitle>External collaboration management</FeatureOverviewTitle>
           <FeatureOverviewDescription>
-            {`Send automated court reminders to reduce Failure to Appear rates, and manage
-              voice verification check-in appointments, and track community service completion.`}
+            {`Enables agencies to share subsets of data with internal analysts and external research partners,
+              or to share asymmetrically and link individual-level data while enabling only one agency to see
+              individuals in both datasets. Facilitates the DUA-signing process.`}
           </FeatureOverviewDescription>
         </FeatureOverviewWrapper>
       </FeaturesContent>
@@ -87,27 +87,22 @@ const ResearchHubProductPage = () => (
     <PageSection>
       <ProductOverviewWrapper>
         <ProductOverviewDescriptionWrapper>
-          <ProductOverviewTitle>Manage Risk in Your Community</ProductOverviewTitle>
+          <ProductOverviewTitle>Fine-grained permissions settings</ProductOverviewTitle>
           <ProductOverviewDescription>
-            {`Reducing jail population safely and objectively can reduce cost to taxpayers while
-              allowing defendants who have been deemed low-risk to continue to work and live in the community.
-              Furthermore, a 2013 report found low-risk defendants held 2-3 days on pretrial detention were
-              roughly 40% more likely to be arrested on new criminal activity after release than those held
-              less than 24 hours.`}
+            {`Dataset owner(s) can add and revoke permissions from users and roles at any time, on a per-dataset
+              or per-property basis. Permissions to read, write, link, and materialize data sources can all be
+              set separately.`}
           </ProductOverviewDescription>
         </ProductOverviewDescriptionWrapper>
-        {/* <FeatureShot bgImage={FeatureImg1} /> */}
+        <PermissionsFeatureShot bgImage={FeatureImg1} />
       </ProductOverviewWrapper>
       <ProductOverviewWrapper>
-        {/* <FeatureShot bgImage={FeatureImg2} /> */}
+        <FeatureShot bgImage={FeatureImg2} />
         <ProductOverviewDescriptionWrapper>
-          <ProductOverviewTitle>Supervision Touchpoints</ProductOverviewTitle>
+          <ProductOverviewTitle>Secure analytics environment</ProductOverviewTitle>
           <ProductOverviewDescription>
-            {`Failures to appear can result in additional jurisdiction resources spent executing warrants, and
-              potential avoidable jail time for defendants.  Knowing the positive impact court reminders can have,
-              OpenLattice developed both an automated Court Reminder system and an automated Voice Verification
-              Check-In system.  This allows jurisdictions to maximize benefit, while maintaining minimal labor
-              requirements.`}
+            {`Secure, on-platform analysis using R Shiny enables internal and external research partners to collaborate
+              on confidential datasets using industry standard analytic tools, respecting all dataset access rules.`}
           </ProductOverviewDescription>
         </ProductOverviewDescriptionWrapper>
       </ProductOverviewWrapper>
