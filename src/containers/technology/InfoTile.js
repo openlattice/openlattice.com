@@ -36,7 +36,7 @@ const Title = styled.div`
 `;
 
 const Body = styled.div`
-  color: ${NEUTRALS.GRAY02};
+  color: ${NEUTRALS.GRAY_02};
   font-size: 14px;
   line-height: 19px;
   top: 151px;

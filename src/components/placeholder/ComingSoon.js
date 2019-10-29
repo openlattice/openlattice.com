@@ -17,7 +17,7 @@ const Content = styled.div`
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  color: ${NEUTRALS.GRAY02};
+  color: ${NEUTRALS.GRAY_02};
   margin-bottom: 500px;
   margin-top: 500px;
 

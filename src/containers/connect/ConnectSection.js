@@ -33,7 +33,7 @@ const EMAIL :string = 'info@openlattice.com';
 
 const Content = styled.div`
   align-items: center;
-  color: ${NEUTRALS.GRAY01};
+  color: ${NEUTRALS.GRAY_01};
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -72,12 +72,12 @@ const RightWrapper = styled.div`
 
 
 const Title = styled(StyledSectionTitle)`
-  color: ${NEUTRALS.GRAY01};
+  color: ${NEUTRALS.GRAY_01};
   margin-bottom: 10px;
 `;
 
 const SubTitle = styled(StyledSectionSubTitle)`
-  color: ${NEUTRALS.GRAY01};
+  color: ${NEUTRALS.GRAY_01};
 `;
 
 const ConnectSection = () => (
