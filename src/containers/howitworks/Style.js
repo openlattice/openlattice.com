@@ -74,7 +74,7 @@ export const ListItem = styled.div`
 `;
 
 export const ListItemNumber = styled.div`
-  color: ${NEUTRALS.GRAY02};
+  color: ${NEUTRALS.GRAY_02};
   font-size: 18px;
   font-weight: 600;
   line-height: 24px;
@@ -82,7 +82,7 @@ export const ListItemNumber = styled.div`
 `;
 
 export const ListItemText = styled.span`
-  color: ${NEUTRALS.GRAY02};
+  color: ${NEUTRALS.GRAY_02};
   font-size: 14px;
   line-height: 19px;
 `;
@@ -100,7 +100,7 @@ export const ListItemLink = styled.a`
 `;
 
 export const ListItemTitle = styled.div`
-  color: ${NEUTRALS.GRAY02};
+  color: ${NEUTRALS.GRAY_02};
   font-size: 14px;
   font-weight: 600;
   line-height: 19px;
