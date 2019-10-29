@@ -159,6 +159,7 @@ const FeatureOverviewWrapper = styled.div`
 
   @media only screen and (min-width: ${MEDIA_QUERY_LG}px) {
     margin: 48px 48px 80px 0;
+
     :last-child {
       margin-right: 0;
     }
