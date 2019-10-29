@@ -44,7 +44,7 @@ const OrgsIcon = styled(Icon)`
 /* eslint-disable react/no-unescaped-entities */
 const OrganizationsProductPage = () => (
   <>
-    <PageSection bgColor={NEUTRALS.GRAY05}>
+    <PageSection bgColor={NEUTRALS.GRAY_05}>
       <AppHeader
           logo={PurpleOLLogo}
           menuStyles={menuStylesForProductPages} />
