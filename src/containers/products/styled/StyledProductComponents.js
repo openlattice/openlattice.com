@@ -3,7 +3,7 @@
 import styled from 'styled-components';
 
 import { NEUTRALS } from '../../../core/style/Colors';
-import { MEDIA_QUERY_LG, MEDIA_QUERY_MD } from '../../../core/style/Sizes';
+import { MEDIA_QUERY_JUR_SM, MEDIA_QUERY_LG, MEDIA_QUERY_MD, MEDIA_QUERY_TECH_SM } from '../../../core/style/Sizes';
 
 const HeaderContent = styled.div`
   align-items: center;
@@ -66,41 +66,49 @@ const ProductDescription = styled.div`
   }
 `;
 
-const ProductShotWrapper = styled.div`
-  align-self: center;
-  position: absolute;
-  top: 625px;
-  /* width: 1102px;
-  height: 670px; */
-  border-radius: 2px;
-  border: 1px solid #E1E1EB;
-  box-shadow: 0px 10px 30px rgba(48, 47, 57, 0.05);
-  box-sizing: border-box;
-  /* margin: 0 auto; */
-  z-index: 500;
-`;
-
 const ProductShot = styled.div`
   align-self: center;
   background-image: url(${(props) => props.bgImage});
   background-position: center;
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: contain;
+  border-radius: 2px;
+  border: 1px solid ${NEUTRALS.GRAY09};
+  box-shadow: 0px 10px 30px rgba(48, 47, 57, 0.05);
+  box-sizing: border-box;
   height: 100%;
   position: absolute;
-  top: 500px;
+  top: 450px;
   width: 100%;
   z-index: 1000;
 
+  @media only screen and (max-width: ${MEDIA_QUERY_TECH_SM}px) {
+    height: 182px;
+    top: 720px;
+    width: 300px;
+  }
+
+  @media only screen and (min-width: ${MEDIA_QUERY_TECH_SM}px) and (max-width: ${MEDIA_QUERY_JUR_SM}px) {
+    height: 223px;
+    top: 600px;
+    width: 366px;
+  }
+
+  @media only screen and (min-width: ${MEDIA_QUERY_JUR_SM}px) and (max-width: ${MEDIA_QUERY_MD}px) {
+    height: 292px;
+    top: 550px;
+    width: 480px;
+  }
+
+  @media only screen and (min-width: ${MEDIA_QUERY_MD}px) and (max-width: ${MEDIA_QUERY_LG}px) {
+    height: 556px;
+    top: 550px;
+    width: 915px;
+  }
+
   @media only screen and (min-width: ${MEDIA_QUERY_LG}px) {
-    border-radius: 2px;
-    border: 1px solid #E1E1EB;
-    box-shadow: 0px 10px 30px rgba(48, 47, 57, 0.05);
-    box-sizing: border-box;
-    /* height: 710px; */
     height: 670px;
     top: 625px;
-    /* width: 1102px; */
     width: 1102px;
   }
 `;
@@ -111,7 +119,23 @@ const FeaturesContent = styled.div`
   flex-direction: column;
   align-items: center;
   width: 100%;
-  margin-top: 450px;
+  margin-top: 400px;
+
+  @media only screen and (max-width: ${MEDIA_QUERY_TECH_SM}px) {
+    margin-top: 200px;
+  }
+
+  @media only screen and (min-width: ${MEDIA_QUERY_TECH_SM}px) and (max-width: ${MEDIA_QUERY_JUR_SM}px) {
+    margin-top: 200px;
+  }
+
+  @media only screen and (min-width: ${MEDIA_QUERY_JUR_SM}px) and (max-width: ${MEDIA_QUERY_MD}px) {
+    margin-top: 300px;
+  }
+
+  @media only screen and (min-width: ${MEDIA_QUERY_MD}px) {
+    margin-top: 550px;
+  }
 
   @media only screen and (min-width: ${MEDIA_QUERY_LG}px) {
     flex-direction: row;
@@ -120,13 +144,17 @@ const FeaturesContent = styled.div`
 `;
 
 const FeatureOverviewWrapper = styled.div`
-  width: 360px;
+  width: 366px;
   height: 250px;
-  margin: 30px 0 30px 0;
+  margin: 30px 0;
   position: relative;
 
   :last-child {
     margin-left: 0;
+  }
+
+  @media only screen and (max-width: ${MEDIA_QUERY_TECH_SM}px) {
+    width: 300px;
   }
 
   @media only screen and (min-width: ${MEDIA_QUERY_LG}px) {
@@ -143,6 +171,10 @@ const FeatureOverviewTitle = styled.div`
   font-weight: 600;
   line-height: 150%;
   margin-top: 24px;
+
+  @media only screen and (max-width: ${MEDIA_QUERY_TECH_SM}px) {
+    font-size: 18px;
+  }
 `;
 
 const FeatureOverviewDescription = styled.div`
@@ -150,8 +182,7 @@ const FeatureOverviewDescription = styled.div`
   font-size: 16px;
   line-height: 150%;
   width: 100%;
-  top: 150px;
-  position: absolute;
+  margin-top: 16px;
 
   @media only screen and (min-width: ${MEDIA_QUERY_LG}px) {
     top: 170px;
@@ -166,6 +197,10 @@ const ProductOverviewWrapper = styled.div`
   width: 100%;
   margin: 64px 0;
 
+  span:first-child {
+    margin-bottom: 64px;
+  }
+
   :last-of-type {
     margin-bottom: 200px;
   }
@@ -174,40 +209,66 @@ const ProductOverviewWrapper = styled.div`
     flex-direction: row;
     justify-content: space-between;
 
-    div:first-child {
+    span:first-child {
       margin-right: 160px;
     }
   }
 `;
 
-const ProductOverviewDescriptionWrapper = styled.div`
+const ProductOverviewDescriptionWrapper = styled.span`
   align-items: flex-start;
   display: flex;
   flex-direction: column;
+  min-height: 400px;
   justify-content: center;
-  width: 480px;
-  height: 300px;
   margin-bottom: 60px;
+  width: 480px;
+
+  @media only screen and (max-width: ${MEDIA_QUERY_TECH_SM}px) {
+    width: 300px;
+  }
 
   @media only screen and (min-width: ${MEDIA_QUERY_LG}px) {
     height: 556px;
   }
 `;
 
-const FeatureShot = styled.div`
+const FeatureShot = styled.span`
   align-self: center;
   background-image: url(${(props) => props.bgImage});
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
+  border-radius: 2px;
+  border: 1px solid ${NEUTRALS.GRAY09};
+  box-shadow: 0px 10px 30px rgba(48, 47, 57, 0.05);
+  box-sizing: border-box;
   height: 556px;
   width: 480px;
+
+  @media only screen and (max-width: ${MEDIA_QUERY_TECH_SM}px) {
+    height: 348px;
+    width: 300px;
+  }
+
+  @media only screen and (min-width: ${MEDIA_QUERY_MD}px) {
+    height: 556px;
+    width: 480px;
+  }
 `;
 
 const ProductOverviewTitle = styled(FeatureOverviewTitle)`
-  font-size: 36px;
+  font-size: 30px;
   line-height: 140%;
   width: 100%;
+
+  @media only screen and (max-width: ${MEDIA_QUERY_TECH_SM}px) {
+    font-size: 20px;
+  }
+
+  @media only screen and (min-width: ${MEDIA_QUERY_LG}px) {
+    font-size: 36px;
+  }
 `;
 
 const ProductOverviewDescription = styled(FeatureOverviewDescription)`
@@ -236,6 +297,5 @@ export {
   ProductOverviewTitle,
   ProductOverviewWrapper,
   ProductShot,
-  ProductShotWrapper,
   ProductStamp,
 };
