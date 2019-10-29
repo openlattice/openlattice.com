@@ -26,7 +26,7 @@ const GlobalStyle = createGlobalStyle`
   html,
   body {
     background-color: ${NEUTRALS.WHITE};
-    color: ${NEUTRALS.GRAY03};
+    color: ${NEUTRALS.GRAY_03};
     font-family: 'Open Sans', sans-serif;
     height: 100%;
     line-height: normal;

@@ -77,7 +77,7 @@ const PersonImg = styled.img`
 
 const Badge = styled.div`
   border-radius: 2px;
-  color: ${NEUTRALS.GRAY01};
+  color: ${NEUTRALS.GRAY_01};
   display: inline;
   font-size: 12px;
   line-height: 17px;
@@ -305,7 +305,7 @@ const ProductsLink = styled(Link)`
 
 const ServicesSection = () => (
   <>
-    <PageSection bgColor={NEUTRALS.GRAY01}>
+    <PageSection bgColor={NEUTRALS.GRAY_01}>
       <Content>
         <StyledSectionTitle>
           Understand how services are delivered and consumed

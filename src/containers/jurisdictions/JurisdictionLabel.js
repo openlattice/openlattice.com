@@ -44,7 +44,7 @@ const LocationLabel = styled.span`
 `;
 
 const PopulationLabel = styled.span`
-  color: ${NEUTRALS.GRAY02};
+  color: ${NEUTRALS.GRAY_02};
   font-weight: normal;
 `;
 
