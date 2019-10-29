@@ -12,7 +12,7 @@ import FooterSection from '../footer/FooterSection';
 import CareIcon from '../../assets/logos/care-logo.svg';
 import PageSection from '../../components/layout/PageSection';
 // import ProductImg from '../../assets/images/pcm-product-shot.png';
-import PurpleOLIcon from '../../assets/images/purple-ol.svg';
+import PurpleOLLogo from '../../assets/images/logo-original.png';
 
 import { menuStylesForProductPages } from './styled/MenuStyles';
 
@@ -40,7 +40,7 @@ const CareProductPage = () => (
   <>
     <PageSection bgColor={NEUTRALS.GRAY05}>
       <AppHeader
-          logo={PurpleOLIcon}
+          logo={PurpleOLLogo}
           menuStyles={menuStylesForProductPages} />
       <HeaderContent>
         <ProductStamp>
