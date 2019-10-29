@@ -1,5 +1,6 @@
 // @flow
 import React from 'react';
+import styled from 'styled-components';
 
 import AppHeader from '../../components/headers/AppHeader';
 import ConnectSection from '../connect/ConnectSection';
@@ -8,7 +9,7 @@ import Feature2 from '../../assets/productfeatureicons/organizations/feature2.sv
 import Feature3 from '../../assets/productfeatureicons/organizations/feature3.svg';
 import FeatureImg from '../../assets/images/permissions-feature-shot.png';
 import FooterSection from '../footer/FooterSection';
-import OrganizationsIcon from '../../assets/logos/organizations-small-logo.svg';
+import OrganizationsIcon from '../../assets/logos/organizations-small-logo.png';
 import PageSection from '../../components/layout/PageSection';
 import ProductImg from '../../assets/images/organizations/organizations-product-shot.png';
 import PurpleOLLogo from '../../assets/images/logo-original.png';
@@ -35,6 +36,11 @@ import {
 
 import { NEUTRALS } from '../../core/style/Colors';
 
+const OrgsIcon = styled(Icon)`
+  height: 32px;
+  width: 38.4px;
+`;
+
 /* eslint-disable react/no-unescaped-entities */
 const OrganizationsProductPage = () => (
   <>
@@ -44,7 +50,7 @@ const OrganizationsProductPage = () => (
           menuStyles={menuStylesForProductPages} />
       <HeaderContent>
         <ProductStamp>
-          <Icon src={OrganizationsIcon} />
+          <OrgsIcon src={OrganizationsIcon} />
           <div>Organizations</div>
         </ProductStamp>
         <ProductIntro>Manage your organization's granular, role-based permissions quickly and easily</ProductIntro>
