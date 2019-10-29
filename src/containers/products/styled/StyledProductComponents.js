@@ -215,10 +215,6 @@ const ProductOverviewWrapper = styled.div`
   @media only screen and (min-width: ${MEDIA_QUERY_LG}px) {
     flex-direction: row;
     justify-content: space-between;
-
-    span:first-child {
-      margin-right: 160px;
-    }
   }
 `;
 
@@ -229,14 +225,10 @@ const ProductOverviewDescriptionWrapper = styled.span`
   min-height: 400px;
   justify-content: center;
   margin-bottom: 60px;
-  width: 480px;
+  width: 350px;
 
   @media only screen and (max-width: ${MEDIA_QUERY_TECH_SM}px) {
     width: 300px;
-  }
-
-  @media only screen and (min-width: ${MEDIA_QUERY_LG}px) {
-    height: 556px;
   }
 `;
 
@@ -256,11 +248,6 @@ const FeatureShot = styled.span`
   @media only screen and (max-width: ${MEDIA_QUERY_TECH_SM}px) {
     height: 348px;
     width: 300px;
-  }
-
-  @media only screen and (min-width: ${MEDIA_QUERY_MD}px) {
-    height: 556px;
-    width: 480px;
   }
 `;
 
