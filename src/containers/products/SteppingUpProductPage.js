@@ -12,7 +12,7 @@ import FooterSection from '../footer/FooterSection';
 import SteppingUpIcon from '../../assets/logos/stepping-up-small-logo.svg';
 import PageSection from '../../components/layout/PageSection';
 import ProductImg from '../../assets/images/steppingup/stepping-up-product-shot.png';
-import PurpleOLIcon from '../../assets/images/purple-ol.svg';
+import PurpleOLLogo from '../../assets/images/logo-original.png';
 
 import { menuStylesForProductPages } from './styled/MenuStyles';
 import { NEUTRALS } from '../../core/style/Colors';
@@ -51,7 +51,7 @@ const SteppingUpProductPage = () => (
   <>
     <PageSection bgColor={NEUTRALS.GRAY05}>
       <AppHeader
-          logo={PurpleOLIcon}
+          logo={PurpleOLLogo}
           menuStyles={menuStylesForProductPages} />
       <HeaderContent>
         <ProductStamp>
