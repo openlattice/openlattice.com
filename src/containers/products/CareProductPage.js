@@ -6,12 +6,12 @@ import ConnectSection from '../connect/ConnectSection';
 import Feature1 from '../../assets/productfeatures/feature1.svg';
 import Feature2 from '../../assets/productfeatures/feature2.svg';
 import Feature3 from '../../assets/productfeatures/feature3.svg';
-// import FeatureImg1 from '../../assets/images/pcm-feature-shot-1.png';
-// import FeatureImg2 from '../../assets/images/pcm-feature-shot-2.png';
+import FeatureImg1 from '../../assets/images/care/care-feature-shot-1.png';
+import FeatureImg2 from '../../assets/images/care/care-feature-shot-2.png';
 import FooterSection from '../footer/FooterSection';
-import CareIcon from '../../assets/logos/care-logo.svg';
+import CareIcon from '../../assets/logos/care-small-logo.svg';
 import PageSection from '../../components/layout/PageSection';
-// import ProductImg from '../../assets/images/pcm-product-shot.png';
+import ProductImg from '../../assets/images/care/care-product-shot.png';
 import PurpleOLLogo from '../../assets/images/logo-original.png';
 
 import { menuStylesForProductPages } from './styled/MenuStyles';
@@ -54,7 +54,7 @@ const CareProductPage = () => (
             to better and more safely assist vulnerable populations.`}
         </ProductDescription>
       </HeaderContent>
-      {/* <ProductShot bgImage={ProductImg} /> */}
+      <ProductShot bgImage={ProductImg} />
     </PageSection>
     <PageSection>
       <FeaturesContent>
@@ -96,10 +96,10 @@ const CareProductPage = () => (
               in a detention, notifying a case manager, hospitalization, or other outcome). `}
           </ProductOverviewDescription>
         </ProductOverviewDescriptionWrapper>
-        {/* <FeatureShot bgImage={FeatureImg1} /> */}
+        <FeatureShot bgImage={FeatureImg1} />
       </ProductOverviewWrapper>
       <ProductOverviewWrapper>
-        {/* <FeatureShot bgImage={FeatureImg2} /> */}
+        <FeatureShot bgImage={FeatureImg2} />
         <ProductOverviewDescriptionWrapper>
           <ProductOverviewTitle>Create Response and Interaction Plans</ProductOverviewTitle>
           <ProductOverviewDescription>
