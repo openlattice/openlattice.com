@@ -32,7 +32,6 @@ import {
   ProductStamp,
 } from './styled/StyledProductComponents';
 import { menuStylesForProductPages } from './styled/MenuStyles';
-
 import { NEUTRALS } from '../../core/style/Colors';
 
 const PCMProductPage = () => (
