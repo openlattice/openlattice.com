@@ -154,6 +154,7 @@ const FeatureOverviewWrapper = styled.div`
   min-height: 250px;
   margin: 30px 0;
   position: relative;
+
   :last-child {
     margin-left: 0;
   }
@@ -164,6 +165,7 @@ const FeatureOverviewWrapper = styled.div`
 
   @media only screen and (min-width: ${MEDIA_QUERY_LG}px) {
     margin: 48px 48px 80px 0;
+
     :last-child {
       margin-right: 0;
     }
@@ -201,9 +203,11 @@ const ProductOverviewWrapper = styled.div`
   justify-content: center;
   width: 100%;
   margin: 64px 0;
+
   span:first-child {
     margin-bottom: 64px;
   }
+
   :last-of-type {
     margin-bottom: 200px;
   }
@@ -211,6 +215,7 @@ const ProductOverviewWrapper = styled.div`
   @media only screen and (min-width: ${MEDIA_QUERY_LG}px) {
     flex-direction: row;
     justify-content: space-between;
+
     span:first-child {
       margin-right: 160px;
     }
@@ -275,9 +280,11 @@ const ProductOverviewTitle = styled(FeatureOverviewTitle)`
   font-size: 30px;
   line-height: 140%;
   width: 100%;
+
   @media only screen and (max-width: ${MEDIA_QUERY_TECH_SM}px) {
     font-size: 20px;
   }
+
   @media only screen and (min-width: ${MEDIA_QUERY_LG}px) {
     font-size: 36px;
   }
@@ -288,6 +295,7 @@ const ProductOverviewDescription = styled(FeatureOverviewDescription)`
   margin-top: 24px;
   position: relative;
   top: auto;
+
   @media only screen and (min-width: ${MEDIA_QUERY_LG}px) {
     top: auto;
   }
