@@ -13,7 +13,7 @@ import FooterSection from '../footer/FooterSection';
 import CWPIcon from '../../assets/logos/cwp-small-logo.svg';
 import PageSection from '../../components/layout/PageSection';
 import ProductImg from '../../assets/images/cwp/cwp-product-shot.png';
-import PurpleOLIcon from '../../assets/images/purple-ol.svg';
+import PurpleOLLogo from '../../assets/images/logo-original.png';
 
 import { menuStylesForProductPages } from './styled/MenuStyles';
 import { MEDIA_QUERY_TECH_SM } from '../../core/style/Sizes';
@@ -60,7 +60,7 @@ const CWPProductPage = () => (
   <>
     <PageSection bgColor={NEUTRALS.GRAY05}>
       <AppHeader
-          logo={PurpleOLIcon}
+          logo={PurpleOLLogo}
           menuStyles={menuStylesForProductPages} />
       <HeaderContent>
         <ProductStamp>
