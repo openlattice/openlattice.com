@@ -1,21 +1,22 @@
 // @flow
 import React from 'react';
+import styled from 'styled-components';
 
 import AppHeader from '../../components/headers/AppHeader';
 import ConnectSection from '../connect/ConnectSection';
-import Feature1 from '../../assets/productfeatures/feature1.svg';
-import Feature2 from '../../assets/productfeatures/feature2.svg';
-import Feature3 from '../../assets/productfeatures/feature3.svg';
-// import FeatureImg1 from '../../assets/images/pcm-feature-shot-1.png';
-// import FeatureImg2 from '../../assets/images/pcm-feature-shot-2.png';
+import Feature1 from '../../assets/productfeatureicons/steppingup/feature1.svg';
+import Feature2 from '../../assets/productfeatureicons/steppingup/feature2.svg';
+import FeatureImg1 from '../../assets/images/steppingup/stepping-up-feature-shot-1.png';
+import FeatureImg2 from '../../assets/images/steppingup/stepping-up-feature-shot-2.png';
 import FooterSection from '../footer/FooterSection';
 import SteppingUpIcon from '../../assets/logos/stepping-up-small-logo.svg';
 import PageSection from '../../components/layout/PageSection';
-// import ProductImg from '../../assets/images/pcm-product-shot.png';
+import ProductImg from '../../assets/images/steppingup/stepping-up-product-shot.png';
 import PurpleOLIcon from '../../assets/images/purple-ol.svg';
 
 import { menuStylesForProductPages } from './styled/MenuStyles';
-
+import { NEUTRALS } from '../../core/style/Colors';
+import { MEDIA_QUERY_MD, MEDIA_QUERY_TECH_SM } from '../../core/style/Sizes';
 import {
   FeatureOverviewDescription,
   FeatureOverviewTitle,
@@ -34,7 +35,17 @@ import {
   ProductStamp,
 } from './styled/StyledProductComponents';
 
-import { NEUTRALS } from '../../core/style/Colors';
+const CustomFeatureShot = styled(FeatureShot)`
+  height: 513px;
+
+  @media only screen and (max-width: ${MEDIA_QUERY_TECH_SM}px) {
+    height: 321px;
+  }
+
+  @media only screen and (min-width: ${MEDIA_QUERY_MD}px) {
+    height: 513px;
+  }
+`;
 
 const SteppingUpProductPage = () => (
   <>
@@ -53,7 +64,7 @@ const SteppingUpProductPage = () => (
             mental illness interact across social services.`}
         </ProductDescription>
       </HeaderContent>
-      {/* <ProductShot bgImage={ProductImg} /> */}
+      <ProductShot bgImage={ProductImg} />
     </PageSection>
     <PageSection>
       <FeaturesContent>
@@ -73,14 +84,6 @@ const SteppingUpProductPage = () => (
               linking algorithm.`}
           </FeatureOverviewDescription>
         </FeatureOverviewWrapper>
-        <FeatureOverviewWrapper>
-          <img src={Feature3} alt="" />
-          <FeatureOverviewTitle>Feature 3</FeatureOverviewTitle>
-          <FeatureOverviewDescription>
-            {`Placeholder text. Placeholder text. Placeholder text. Placeholder text. Placeholder text.
-              Placeholder text. Placeholder text. Placeholder text. Placeholder text. `}
-          </FeatureOverviewDescription>
-        </FeatureOverviewWrapper>
       </FeaturesContent>
     </PageSection>
     <PageSection>
@@ -91,15 +94,15 @@ const SteppingUpProductPage = () => (
             {`Most current data systems operate in silos while the constituents they serve often do not.
               In other words, those who consume one social service typically consume multiple social services.
               This is especially true for system high utilizers, and those who are affected by mental illness,
-              two groups with high overlap.  With the OpenLAttice linking algorithm, you can de-duplicate profiles
+              two groups with high overlap.  With the OpenLattice linking algorithm, you can de-duplicate profiles
               within datasets, and create a unified profile of an individual’s interactions with services in the
               community across datasets. `}
           </ProductOverviewDescription>
         </ProductOverviewDescriptionWrapper>
-        {/* <FeatureShot bgImage={FeatureImg1} /> */}
+        <FeatureShot bgImage={FeatureImg1} />
       </ProductOverviewWrapper>
       <ProductOverviewWrapper>
-        {/* <FeatureShot bgImage={FeatureImg2} /> */}
+        <CustomFeatureShot bgImage={FeatureImg2} />
         <ProductOverviewDescriptionWrapper>
           <ProductOverviewTitle>Visualizing Cross-Sectional Insights</ProductOverviewTitle>
           <ProductOverviewDescription>
