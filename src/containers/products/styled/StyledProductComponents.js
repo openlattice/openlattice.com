@@ -3,7 +3,12 @@
 import styled from 'styled-components';
 
 import { NEUTRALS } from '../../../core/style/Colors';
-import { MEDIA_QUERY_LG, MEDIA_QUERY_MD } from '../../../core/style/Sizes';
+import {
+  MEDIA_QUERY_JUR_SM,
+  MEDIA_QUERY_LG,
+  MEDIA_QUERY_MD,
+  MEDIA_QUERY_TECH_SM,
+} from '../../../core/style/Sizes';
 
 const HeaderContent = styled.div`
   align-items: center;
@@ -12,11 +17,9 @@ const HeaderContent = styled.div`
   margin: 50px auto 100px auto;
   max-width: 100%;
   text-align: center;
-
   @media only screen and (min-width: ${MEDIA_QUERY_MD}px) {
     max-width: 60%;
   }
-
   @media only screen and (min-width: ${MEDIA_QUERY_LG}px) {
     margin: 65px auto 211px auto;
   }
@@ -47,7 +50,6 @@ const ProductIntro = styled.div`
   margin: 24px 0 32px 0;
   text-align: center;
   line-height: 115%;
-
   @media only screen and (min-width: ${MEDIA_QUERY_MD}px) {
     font-size: 56px;
     text-align: center;
@@ -60,7 +62,6 @@ const ProductDescription = styled.div`
   font-size: 20px;
   text-align: center;
   line-height: 150%;
-
   @media only screen and (min-width: ${MEDIA_QUERY_MD}px) {
     width: 560px;
   }
@@ -72,20 +73,39 @@ const ProductShot = styled.div`
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
+  border-radius: 2px;
+  border: 1px solid ${NEUTRALS.GRAY09};
+  box-shadow: 0px 10px 30px rgba(48, 47, 57, 0.05);
+  box-sizing: border-box;
   height: 100%;
   position: absolute;
   top: 450px;
   width: 100%;
   z-index: 1000;
-
-  @media only screen and (min-width: ${MEDIA_QUERY_MD}px) {
-    top: 500px;
+  @media only screen and (max-width: ${MEDIA_QUERY_TECH_SM}px) {
+    height: 182px;
+    top: 720px;
+    width: 300px;
   }
-
+  @media only screen and (min-width: ${MEDIA_QUERY_TECH_SM}px) and (max-width: ${MEDIA_QUERY_JUR_SM}px) {
+    height: 223px;
+    top: 600px;
+    width: 366px;
+  }
+  @media only screen and (min-width: ${MEDIA_QUERY_JUR_SM}px) and (max-width: ${MEDIA_QUERY_MD}px) {
+    height: 292px;
+    top: 550px;
+    width: 480px;
+  }
+  @media only screen and (min-width: ${MEDIA_QUERY_MD}px) and (max-width: ${MEDIA_QUERY_LG}px) {
+    height: 556px;
+    top: 550px;
+    width: 915px;
+  }
   @media only screen and (min-width: ${MEDIA_QUERY_LG}px) {
-    height: 575px;
-    width: 1104px;
+    height: 670px;
     top: 625px;
+    width: 1102px;
   }
 `;
 
@@ -96,24 +116,37 @@ const FeaturesContent = styled.div`
   align-items: center;
   width: 100%;
   margin-top: 400px;
-
+  @media only screen and (max-width: ${MEDIA_QUERY_TECH_SM}px) {
+    margin-top: 200px;
+  }
+  @media only screen and (min-width: ${MEDIA_QUERY_TECH_SM}px) and (max-width: ${MEDIA_QUERY_JUR_SM}px) {
+    margin-top: 200px;
+  }
+  @media only screen and (min-width: ${MEDIA_QUERY_JUR_SM}px) and (max-width: ${MEDIA_QUERY_MD}px) {
+    margin-top: 300px;
+  }
+  @media only screen and (min-width: ${MEDIA_QUERY_MD}px) {
+    margin-top: 550px;
+  }
   @media only screen and (min-width: ${MEDIA_QUERY_LG}px) {
     flex-direction: row;
-    margin-top: 500px;
+    margin-top: 600px;
   }
 `;
 
 const FeatureOverviewWrapper = styled.div`
-  width: 360px;
+  width: 366px;
   height: 250px;
-  margin: 48px 48px 80px 0;
+  margin: 30px 0;
   position: relative;
-
   :last-child {
     margin-left: 0;
   }
-
+  @media only screen and (max-width: ${MEDIA_QUERY_TECH_SM}px) {
+    width: 300px;
+  }
   @media only screen and (min-width: ${MEDIA_QUERY_LG}px) {
+    margin: 48px 48px 80px 0;
     :last-child {
       margin-right: 0;
     }
@@ -126,6 +159,9 @@ const FeatureOverviewTitle = styled.div`
   font-weight: 600;
   line-height: 150%;
   margin-top: 24px;
+  @media only screen and (max-width: ${MEDIA_QUERY_TECH_SM}px) {
+    font-size: 18px;
+  }
 `;
 
 const FeatureOverviewDescription = styled.div`
@@ -133,8 +169,10 @@ const FeatureOverviewDescription = styled.div`
   font-size: 16px;
   line-height: 150%;
   width: 100%;
-  top: 170px;
-  position: absolute;
+  margin-top: 16px;
+  @media only screen and (min-width: ${MEDIA_QUERY_LG}px) {
+    top: 170px;
+  }
 `;
 
 const ProductOverviewWrapper = styled.div`
@@ -144,49 +182,69 @@ const ProductOverviewWrapper = styled.div`
   justify-content: center;
   width: 100%;
   margin: 64px 0;
-
+  span:first-child {
+    margin-bottom: 64px;
+  }
   :last-of-type {
     margin-bottom: 200px;
   }
-
   @media only screen and (min-width: ${MEDIA_QUERY_LG}px) {
     flex-direction: row;
     justify-content: space-between;
-
-    div:first-child {
+    span:first-child {
       margin-right: 160px;
     }
   }
 `;
 
-const ProductOverviewDescriptionWrapper = styled.div`
+const ProductOverviewDescriptionWrapper = styled.span`
   align-items: flex-start;
   display: flex;
   flex-direction: column;
+  min-height: 400px;
   justify-content: center;
-  width: 480px;
-  height: 300px;
   margin-bottom: 60px;
-
+  width: 480px;
+  @media only screen and (max-width: ${MEDIA_QUERY_TECH_SM}px) {
+    width: 300px;
+  }
   @media only screen and (min-width: ${MEDIA_QUERY_LG}px) {
     height: 556px;
   }
 `;
 
-const FeatureShot = styled.div`
+const FeatureShot = styled.span`
   align-self: center;
   background-image: url(${(props) => props.bgImage});
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
+  border-radius: 2px;
+  border: 1px solid ${NEUTRALS.GRAY09};
+  box-shadow: 0px 10px 30px rgba(48, 47, 57, 0.05);
+  box-sizing: border-box;
   height: 556px;
   width: 480px;
+  @media only screen and (max-width: ${MEDIA_QUERY_TECH_SM}px) {
+    height: 348px;
+    width: 300px;
+  }
+  @media only screen and (min-width: ${MEDIA_QUERY_MD}px) {
+    height: 556px;
+    width: 480px;
+  }
 `;
 
 const ProductOverviewTitle = styled(FeatureOverviewTitle)`
-  font-size: 36px;
+  font-size: 30px;
   line-height: 140%;
   width: 100%;
+  @media only screen and (max-width: ${MEDIA_QUERY_TECH_SM}px) {
+    font-size: 20px;
+  }
+  @media only screen and (min-width: ${MEDIA_QUERY_LG}px) {
+    font-size: 36px;
+  }
 `;
 
 const ProductOverviewDescription = styled(FeatureOverviewDescription)`
@@ -194,6 +252,9 @@ const ProductOverviewDescription = styled(FeatureOverviewDescription)`
   margin-top: 24px;
   position: relative;
   top: auto;
+  @media only screen and (min-width: ${MEDIA_QUERY_LG}px) {
+    top: auto;
+  }
 `;
 
 export {
