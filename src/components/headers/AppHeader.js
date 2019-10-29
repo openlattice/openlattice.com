@@ -48,7 +48,7 @@ const MenuExternalLink = styled.a`
 const ScheduleACallButton = styled.a`
   background-color: ${NEUTRALS.WHITE};
   border-radius: 16px;
- ${(props) => {
+  ${(props) => {
     if (!props.border) {
       return css`
         border: none;
@@ -68,7 +68,7 @@ const ScheduleACallButton = styled.a`
 `;
 
 type Props = {
-  logo ? :React.Element;
+  logo ? :string;
   menuStyles ? :Object;
 };
 
