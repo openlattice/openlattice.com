@@ -12,7 +12,7 @@ import FooterSection from '../footer/FooterSection';
 import PCMIcon from '../../assets/logos/pcm-small-logo.svg';
 import PageSection from '../../components/layout/PageSection';
 import ProductImg from '../../assets/images/pcm/pcm-product-shot.png';
-import PurpleOLIcon from '../../assets/images/purple-ol.svg';
+import PurpleOLogo from '../../assets/images/logo-original.png';
 
 import {
   FeatureOverviewDescription,
@@ -38,7 +38,7 @@ const PCMProductPage = () => (
   <>
     <PageSection bgColor={NEUTRALS.GRAY_05}>
       <AppHeader
-          logo={PurpleOLIcon}
+          logo={PurpleOLogo}
           menuStyles={menuStylesForProductPages} />
       <HeaderContent>
         <ProductStamp>
