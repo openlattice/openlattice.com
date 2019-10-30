@@ -209,6 +209,10 @@ const ProductOverviewWrapper = styled.div`
   @media only screen and (min-width: ${MEDIA_QUERY_LG}px) {
     flex-direction: row;
     justify-content: space-between;
+
+    span:first-child {
+      margin-bottom: 0;
+    }
   }
 `;
 
@@ -275,6 +279,11 @@ const ProductOverviewDescription = styled(FeatureOverviewDescription)`
   }
 `;
 
+const ProductStampWrapper = styled.img`
+  height: 64px;
+  width: ${(props) => props.width};
+`;
+
 export {
   FeatureOverviewDescription,
   FeatureOverviewTitle,
@@ -291,4 +300,5 @@ export {
   ProductOverviewWrapper,
   ProductShot,
   ProductStamp,
+  ProductStampWrapper,
 };
