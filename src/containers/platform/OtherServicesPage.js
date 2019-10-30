@@ -87,7 +87,7 @@ const OtherServicesPage = () => (
       <OtherProductsHeaderContent>
         <ProductIntro>Other services</ProductIntro>
         <ProductDescription>
-          The OpenLattice Platform provides you with the ability to securely access, explore, manage, and analyze your data.
+          Securely access, explore, manage, and analyze your data through the OpenLatttice Platform.
         </ProductDescription>
       </OtherProductsHeaderContent>
     </PageSection>
