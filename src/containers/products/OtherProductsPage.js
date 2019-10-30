@@ -5,10 +5,10 @@ import React from 'react';
 
 import ComingSoon from '../../components/placeholder/ComingSoon';
 
-const CWPProductPage = () => (
+const OtherProductsPage = () => (
   <>
     <ComingSoon />
   </>
 );
 
-export default CWPProductPage;
+export default OtherProductsPage;
