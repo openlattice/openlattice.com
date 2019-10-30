@@ -217,7 +217,7 @@ const ProductOverviewWrapper = styled.div`
     justify-content: space-between;
 
     span:first-child {
-      margin-right: 160px;
+      margin-bottom: 0;
     }
   }
 `;
@@ -301,6 +301,11 @@ const ProductOverviewDescription = styled(FeatureOverviewDescription)`
   }
 `;
 
+const ProductStampWrapper = styled.img`
+  height: 64px;
+  width: ${(props) => props.width};
+`;
+
 export {
   FeatureOverviewDescription,
   FeatureOverviewTitle,
@@ -318,4 +323,5 @@ export {
   ProductOverviewWrapper,
   ProductShot,
   ProductStamp,
+  ProductStampWrapper,
 };
