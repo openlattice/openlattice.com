@@ -229,7 +229,7 @@ const ProductOverviewDescriptionWrapper = styled.span`
   min-height: 400px;
   justify-content: center;
   margin-bottom: 60px;
-  width: 480px;
+  width: 350px;
 
   @media only screen and (max-width: ${MEDIA_QUERY_TECH_SM}px) {
     width: 300px;
