@@ -1,11 +1,12 @@
 // @flow
 import React from 'react';
+import styled from 'styled-components';
 
 import AppHeader from '../../components/headers/AppHeader';
 import ConnectSection from '../connect/ConnectSection';
-import Feature1 from '../../assets/productfeatures/feature1.svg';
-import Feature2 from '../../assets/productfeatures/feature2.svg';
-import Feature3 from '../../assets/productfeatures/feature3.svg';
+import Feature1 from '../../assets/productfeatureicons/care/headphones.svg';
+import Feature2 from '../../assets/productfeatureicons/feature2.svg';
+import Feature3 from '../../assets/productfeatureicons/care/pages.svg';
 import FeatureImg1 from '../../assets/images/care/care-feature-shot-1.png';
 import FeatureImg2 from '../../assets/images/care/care-feature-shot-2.png';
 import FooterSection from '../footer/FooterSection';
@@ -15,7 +16,13 @@ import ProductImg from '../../assets/images/care/care-product-shot.png';
 import PurpleOLLogo from '../../assets/images/logo-original.png';
 
 import { menuStylesForProductPages } from './styled/MenuStyles';
-
+import {
+  MEDIA_QUERY_JUR_SM,
+  MEDIA_QUERY_LG,
+  MEDIA_QUERY_MD,
+  MEDIA_QUERY_TECH_SM,
+} from '../../core/style/Sizes';
+import { NEUTRALS } from '../../core/style/Colors';
 import {
   FeatureOverviewDescription,
   FeatureOverviewTitle,
@@ -34,7 +41,29 @@ import {
   ProductStamp,
 } from './styled/StyledProductComponents';
 
-import { NEUTRALS } from '../../core/style/Colors';
+const CareProductShot = styled(ProductShot)`
+  top: 450px;
+
+  @media only screen and (max-width: ${MEDIA_QUERY_TECH_SM}px) {
+    top: 800px;
+  }
+
+  @media only screen and (min-width: ${MEDIA_QUERY_TECH_SM}px) and (max-width: ${MEDIA_QUERY_JUR_SM}px) {
+    top: 665px;
+  }
+
+  @media only screen and (min-width: ${MEDIA_QUERY_JUR_SM}px) and (max-width: ${MEDIA_QUERY_MD}px) {
+    top: 600px;
+  }
+
+  @media only screen and (min-width: ${MEDIA_QUERY_MD}px) and (max-width: ${MEDIA_QUERY_LG}px) {
+    top: 695px;
+  }
+
+  @media only screen and (min-width: ${MEDIA_QUERY_LG}px) {
+    top: 725px;
+  }
+`;
 
 const CareProductPage = () => (
   <>
@@ -45,7 +74,7 @@ const CareProductPage = () => (
       <HeaderContent>
         <ProductStamp>
           <Icon src={CareIcon} />
-          <div>Care</div>
+          <div>CARE</div>
         </ProductStamp>
         <ProductIntro>Facilitate safe and effective interactions between patrol officers and individuals</ProductIntro>
         <ProductDescription>
@@ -54,7 +83,7 @@ const CareProductPage = () => (
             to better and more safely assist vulnerable populations.`}
         </ProductDescription>
       </HeaderContent>
-      <ProductShot bgImage={ProductImg} />
+      <CareProductShot bgImage={ProductImg} />
     </PageSection>
     <PageSection>
       <FeaturesContent>
