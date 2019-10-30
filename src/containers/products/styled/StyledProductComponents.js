@@ -215,6 +215,10 @@ const ProductOverviewWrapper = styled.div`
   @media only screen and (min-width: ${MEDIA_QUERY_LG}px) {
     flex-direction: row;
     justify-content: space-between;
+
+    span:first-child {
+      margin-right: 160px;
+    }
   }
 `;
 
@@ -229,6 +233,10 @@ const ProductOverviewDescriptionWrapper = styled.span`
 
   @media only screen and (max-width: ${MEDIA_QUERY_TECH_SM}px) {
     width: 300px;
+  }
+
+  @media only screen and (min-width: ${MEDIA_QUERY_LG}px) {
+    height: 556px;
   }
 `;
 
