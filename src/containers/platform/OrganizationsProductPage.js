@@ -15,7 +15,13 @@ import ProductImg from '../../assets/images/organizations/organizations-product-
 import PurpleOLLogo from '../../assets/images/logo-original.png';
 
 import { menuStylesForProductPages } from '../products/styled/MenuStyles';
-
+import { NEUTRALS } from '../../core/style/Colors';
+import {
+  MEDIA_QUERY_JUR_SM,
+  MEDIA_QUERY_LG,
+  MEDIA_QUERY_MD,
+  MEDIA_QUERY_TECH_SM,
+} from '../../core/style/Sizes';
 import {
   FeatureOverviewDescription,
   FeatureOverviewTitle,
@@ -34,11 +40,28 @@ import {
   ProductStamp,
 } from '../products/styled/StyledProductComponents';
 
-import { NEUTRALS } from '../../core/style/Colors';
-
 const OrgsIcon = styled(Icon)`
   height: 32px;
   width: 38.4px;
+`;
+
+const OrgsProductShot = styled(ProductShot)`
+  top: 450px;
+  @media only screen and (max-width: ${MEDIA_QUERY_TECH_SM}px) {
+    top: 740px;
+  }
+  @media only screen and (min-width: ${MEDIA_QUERY_TECH_SM}px) and (max-width: ${MEDIA_QUERY_JUR_SM}px) {
+    top: 595px;
+  }
+  @media only screen and (min-width: ${MEDIA_QUERY_JUR_SM}px) and (max-width: ${MEDIA_QUERY_MD}px) {
+    top: 525px;
+  }
+  @media only screen and (min-width: ${MEDIA_QUERY_MD}px) and (max-width: ${MEDIA_QUERY_LG}px) {
+    top: 675px;
+  }
+  @media only screen and (min-width: ${MEDIA_QUERY_LG}px) {
+    top: 725px;
+  }
 `;
 
 /* eslint-disable react/no-unescaped-entities */
@@ -59,7 +82,7 @@ const OrganizationsProductPage = () => (
             regulations in your field or jurisdiction.`}
         </ProductDescription>
       </HeaderContent>
-      <ProductShot bgImage={ProductImg} />
+      <OrgsProductShot bgImage={ProductImg} />
     </PageSection>
     <PageSection>
       <FeaturesContent>
