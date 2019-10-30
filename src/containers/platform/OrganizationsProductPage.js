@@ -7,7 +7,7 @@ import ConnectSection from '../connect/ConnectSection';
 import Feature1 from '../../assets/productfeatureicons/organizations/feature1.svg';
 import Feature2 from '../../assets/productfeatureicons/organizations/feature2.svg';
 import Feature3 from '../../assets/productfeatureicons/organizations/feature3.svg';
-import FeatureImg from '../../assets/images/permissions-feature-shot.png';
+import FeatureImg from '../../assets/images/organizations/organizations-feature-shot.png';
 import FooterSection from '../footer/FooterSection';
 import OrganizationsIcon from '../../assets/logos/organizations-small-logo.png';
 import PageSection from '../../components/layout/PageSection';
