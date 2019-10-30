@@ -234,6 +234,10 @@ const ProductOverviewDescriptionWrapper = styled.span`
   @media only screen and (max-width: ${MEDIA_QUERY_TECH_SM}px) {
     width: 300px;
   }
+
+  @media only screen and (min-width: ${MEDIA_QUERY_LG}px) {
+    height: 556px;
+  }
 `;
 
 const FeatureShot = styled.span`
@@ -252,11 +256,6 @@ const FeatureShot = styled.span`
   @media only screen and (max-width: ${MEDIA_QUERY_TECH_SM}px) {
     height: 348px;
     width: 300px;
-  }
-
-  @media only screen and (min-width: ${MEDIA_QUERY_MD}px) {
-    height: 556px;
-    width: 480px;
   }
 `;
 
