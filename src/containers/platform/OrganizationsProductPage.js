@@ -47,18 +47,23 @@ const OrgsIcon = styled(Icon)`
 
 const OrgsProductShot = styled(ProductShot)`
   top: 450px;
+
   @media only screen and (max-width: ${MEDIA_QUERY_TECH_SM}px) {
     top: 740px;
   }
+
   @media only screen and (min-width: ${MEDIA_QUERY_TECH_SM}px) and (max-width: ${MEDIA_QUERY_JUR_SM}px) {
     top: 595px;
   }
+
   @media only screen and (min-width: ${MEDIA_QUERY_JUR_SM}px) and (max-width: ${MEDIA_QUERY_MD}px) {
     top: 525px;
   }
+
   @media only screen and (min-width: ${MEDIA_QUERY_MD}px) and (max-width: ${MEDIA_QUERY_LG}px) {
     top: 675px;
   }
+
   @media only screen and (min-width: ${MEDIA_QUERY_LG}px) {
     top: 725px;
   }
