@@ -45,7 +45,7 @@ const CareProductShot = styled(ProductShot)`
   top: 450px;
 
   @media only screen and (max-width: ${MEDIA_QUERY_TECH_SM}px) {
-    top: 800px;
+    top: 840px;
   }
 
   @media only screen and (min-width: ${MEDIA_QUERY_TECH_SM}px) and (max-width: ${MEDIA_QUERY_JUR_SM}px) {
