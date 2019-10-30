@@ -3,7 +3,12 @@
 import styled from 'styled-components';
 
 import { NEUTRALS } from '../../../core/style/Colors';
-import { MEDIA_QUERY_JUR_SM, MEDIA_QUERY_LG, MEDIA_QUERY_MD, MEDIA_QUERY_TECH_SM } from '../../../core/style/Sizes';
+import {
+  MEDIA_QUERY_JUR_SM,
+  MEDIA_QUERY_LG,
+  MEDIA_QUERY_MD,
+  MEDIA_QUERY_TECH_SM,
+} from '../../../core/style/Sizes';
 
 const HeaderContent = styled.div`
   align-items: center;
@@ -138,6 +143,7 @@ const FeaturesContent = styled.div`
   }
 
   @media only screen and (min-width: ${MEDIA_QUERY_LG}px) {
+    align-items: flex-start;
     flex-direction: row;
     margin-top: 600px;
   }
@@ -145,7 +151,7 @@ const FeaturesContent = styled.div`
 
 const FeatureOverviewWrapper = styled.div`
   width: 366px;
-  height: 250px;
+  min-height: 250px;
   margin: 30px 0;
   position: relative;
 
@@ -254,6 +260,18 @@ const FeatureShot = styled.span`
   }
 `;
 
+const PermissionsFeatureShot = styled(FeatureShot)`
+  height: 315px;
+
+  @media only screen and (max-width: ${MEDIA_QUERY_TECH_SM}px) {
+    height: 197px;
+  }
+
+  @media only screen and (min-width: ${MEDIA_QUERY_MD}px) {
+    height: 315px;
+  }
+`;
+
 const ProductOverviewTitle = styled(FeatureOverviewTitle)`
   font-size: 30px;
   line-height: 140%;
@@ -292,6 +310,7 @@ export {
   FeaturesContent,
   HeaderContent,
   Icon,
+  PermissionsFeatureShot,
   ProductDescription,
   ProductIntro,
   ProductOverviewDescription,
