@@ -9,7 +9,7 @@ import styled from 'styled-components';
 import logoImg from '../../assets/images/logo-original.png';
 
 import PageSection from '../../components/layout/PageSection';
-import { N1, N2, PP4 } from '../../core/style/Colors';
+import { NEUTRALS, PURPLES } from '../../core/style/Colors';
 import { MEDIA_QUERY_MD } from '../../core/style/Sizes';
 
 const helpLink = 'https://help.openlattice.com';
@@ -19,7 +19,7 @@ const helpLink = 'https://help.openlattice.com';
 
 const Content = styled.div`
   align-items: center;
-  color: ${N2};
+  color: ${NEUTRALS.GRAY_02};
   display: flex;
   flex-direction: column;
   margin-bottom: 22px;
@@ -47,7 +47,7 @@ const RightSectionWrapper = styled.div`
 const StyledHelpLink = styled.a`
   font-size: 14px;
   font-weight: 600;
-  color: ${PP4};
+  color: ${PURPLES.PP05};
   text-decoration: none;
 `;
 
@@ -57,7 +57,7 @@ const Copyright = styled.span`
 `;
 
 const FooterSection = () => (
-  <PageSection bgColor={N1}>
+  <PageSection bgColor={NEUTRALS.GRAY_01}>
     <Content>
       <Logo src={logoImg} alt="OpenLattice Logo" height={50} />
       <RightSectionWrapper>

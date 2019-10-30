@@ -11,12 +11,7 @@ import { Link } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faChevronRight } from '@fortawesome/pro-regular-svg-icons';
 
-import {
-  N1,
-  N2,
-  N4,
-  PP4
-} from '../../core/style/Colors';
+import { NEUTRALS, PURPLES } from '../../core/style/Colors';
 import { MEDIA_QUERY_TECH_SM } from '../../core/style/Sizes';
 
 const { getStyleVariation } = StyleUtils;
@@ -28,7 +23,7 @@ const bodyStyleVariation = getStyleVariation('section', {
 });
 
 const TileWrapper = styled(Link)`
-  background-color: ${N1};
+  background-color: ${NEUTRALS.GRAY_01};
   height: 322px;
   margin: 15px;
   padding: 30px;
@@ -46,7 +41,7 @@ const Icon = styled.img`
 `;
 
 const Title = styled.div`
-  color: ${N4};
+  color: ${NEUTRALS.BLACK};
   font-size: 20px;
   font-weight: 600;
   line-height: normal;
@@ -55,7 +50,7 @@ const Title = styled.div`
 `;
 
 const Body = styled.div`
-  color: ${N2};
+  color: ${NEUTRALS.GRAY_02};
   font-size: 14px;
   left: 30px;
   line-height: normal;
@@ -66,7 +61,7 @@ const Body = styled.div`
 
 const LearnMoreButton = styled.div`
   align-items: center;
-  color: ${PP4};
+  color: ${PURPLES.PP05};
   display: flex;
   font-size: 16px;
   font-weight: 600;
@@ -104,7 +99,7 @@ const ProductTile = ({
     </Body>
     <LearnMoreButton>
       <span>Learn more</span>
-      <FontAwesomeIcon icon={faChevronRight} color={PP4} size="xs" />
+      <FontAwesomeIcon icon={faChevronRight} color={PURPLES.PP05} size="xs" />
     </LearnMoreButton>
   </TileWrapper>
 );

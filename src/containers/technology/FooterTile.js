@@ -7,13 +7,13 @@ import type { Node } from 'react';
 
 import styled from 'styled-components';
 
-import { PP0 } from '../../core/style/Colors';
+import { PURPLES } from '../../core/style/Colors';
 import { MEDIA_QUERY_TECH_SM, MEDIA_QUERY_LG } from '../../core/style/Sizes';
 
 
 const TileWrapper = styled.div`
   align-items: center;
-  background-color: ${PP0};
+  background-color: ${PURPLES.PP01};
   border-radius: 2px;
   display: flex;
   justify-content: flex-start;

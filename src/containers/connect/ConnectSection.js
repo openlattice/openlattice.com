@@ -15,10 +15,9 @@ import PageSection from '../../components/layout/PageSection';
 import StyledSectionSubTitle from '../../components/headers/StyledSectionSubTitle';
 import StyledSectionTitle from '../../components/headers/StyledSectionTitle';
 import {
-  N1,
-  PK0,
-  PP5,
-  PP6
+  NEUTRALS,
+  PINKS,
+  PURPLES,
 } from '../../core/style/Colors';
 import { MEDIA_QUERY_MD } from '../../core/style/Sizes';
 
@@ -34,7 +33,7 @@ const EMAIL :string = 'info@openlattice.com';
 
 const Content = styled.div`
   align-items: center;
-  color: ${N1};
+  color: ${NEUTRALS.GRAY_01};
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -73,16 +72,16 @@ const RightWrapper = styled.div`
 
 
 const Title = styled(StyledSectionTitle)`
-  color: ${N1};
+  color: ${NEUTRALS.GRAY_01};
   margin-bottom: 10px;
 `;
 
 const SubTitle = styled(StyledSectionSubTitle)`
-  color: ${N1};
+  color: ${NEUTRALS.GRAY_01};
 `;
 
 const ConnectSection = () => (
-  <PageSection bgColor={PP5}>
+  <PageSection bgColor={PURPLES.PP06}>
     <Content>
       <LeftWrapper>
         <img src={handshakeIcon} alt="handshake icon" />
@@ -95,13 +94,13 @@ const ConnectSection = () => (
       </LeftWrapper>
       <RightWrapper>
         <ConnectCTA
-            bgColor={PK0}
+            bgColor={PINKS.PINK01}
             copyLeft="Find a date on Calendly"
             copyRight="Schedule a call"
             icon={callIcon}
             target="https://calendly.com/openlattice/openlattice-web-request" />
         <ConnectCTA
-            bgColor={PP6}
+            bgColor={PURPLES.PP07}
             copyLeft={EMAIL}
             copyRight="Write an Email"
             icon={emailIcon}

@@ -1,10 +1,10 @@
 import styled from 'styled-components';
 import { MEDIA_QUERY_MD } from '../../core/style/Sizes';
 
-import { N2 } from '../../core/style/Colors';
+import { NEUTRALS } from '../../core/style/Colors';
 
 const StyledSectionSubTitle = styled.h2`
-  color: ${N2};
+  color: ${NEUTRALS.GRAY_02};
   font-size: 15px;
   font-weight: normal;
   line-height: 22px;

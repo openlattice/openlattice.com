@@ -16,12 +16,9 @@ import StyledSectionTitle from '../../components/headers/StyledSectionTitle';
 import { PAGE_SECTION_MIN_WIDTH, MEDIA_QUERY_MD, MEDIA_QUERY_LG } from '../../core/style/Sizes';
 
 import {
-  N0,
-  N1,
-  PK0,
-  PP2,
-  PP3,
-  PP4
+  NEUTRALS,
+  PINKS,
+  PURPLES,
 } from '../../core/style/Colors';
 
 const Content = styled.div`
@@ -80,7 +77,7 @@ const PersonImg = styled.img`
 
 const Badge = styled.div`
   border-radius: 2px;
-  color: ${N1};
+  color: ${NEUTRALS.GRAY_01};
   display: inline;
   font-size: 12px;
   line-height: 17px;
@@ -236,7 +233,7 @@ const Health = () => (
       <path
           fill="none"
           fillRule="evenodd"
-          stroke={PP3}
+          stroke={PURPLES.PP04}
           strokeWidth="2"
           vectorEffect="non-scaling-stroke"
           d="M-152.38 33.147C-63.027-1.367 26.603-8.061 116.51 13.065 251.37 44.753 386.15 176.098 511.266 217.168c83.41 27.38 174.656 31.08 273.735 11.1" />
@@ -259,7 +256,7 @@ const PublicSafety = () => (
       <path
           fill="none"
           fillRule="evenodd"
-          stroke={PP2}
+          stroke={PURPLES.PP03}
           strokeWidth="2"
           d="M1 131.9C8.696 128.555 190.364-17.495 474.106 3.544" />
     </PublicSafetySvg>
@@ -279,7 +276,7 @@ const SocialServices = () => (
       <path
           fill="none"
           fillRule="evenodd"
-          stroke={PP4}
+          stroke={PURPLES.PP05}
           strokeWidth="2"
           d="M958.576-81.579C904.796 5.88 787.47 61.375 606.6 84.908 335.295 120.207 237.057-21.178 1 4.346" />
     </SocialServicesSvg>
@@ -287,10 +284,10 @@ const SocialServices = () => (
 );
 
 const ProductsLink = styled(Link)`
-  background-color: ${PK0};
+  background-color: ${PINKS.PINK01};
   border: none;
   border-radius: 20px;
-  color: ${N0};
+  color: ${NEUTRALS.WHITE};
   cursor: pointer;
   display: inline-block;
   font-family: 'Roboto', sans-serif;
@@ -308,7 +305,7 @@ const ProductsLink = styled(Link)`
 
 const ServicesSection = () => (
   <>
-    <PageSection bgColor={N1}>
+    <PageSection bgColor={NEUTRALS.GRAY_01}>
       <Content>
         <StyledSectionTitle>
           Understand how services are delivered and consumed
