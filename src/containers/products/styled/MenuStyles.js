@@ -7,7 +7,7 @@ export const menuStylesForProductPages = {
     color: NEUTRALS.GRAY_06,
     fontWeight: 600
   },
-  includeScheduleButtonBorder: true,
+  includeScheduleACallButton: true,
   menuFontColor: NEUTRALS.GRAY_08,
   scheduleBorderColor: PURPLES.PP08,
   scheduleColor: PURPLES.PP08
