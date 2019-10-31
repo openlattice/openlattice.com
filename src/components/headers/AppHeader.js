@@ -68,7 +68,7 @@ const ScheduleACallButton = styled.a`
 `;
 
 type Props = {
-  logo ? :React.Element;
+  logo ? :string;
   menuStyles ? :Object;
 };
 
