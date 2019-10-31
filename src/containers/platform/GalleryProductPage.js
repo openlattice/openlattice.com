@@ -1,11 +1,12 @@
 // @flow
 import React from 'react';
+import styled from 'styled-components';
 
 import AppHeader from '../../components/headers/AppHeader';
 import ConnectSection from '../connect/ConnectSection';
 import Feature1 from '../../assets/productfeatureicons/merge.svg';
 import Feature2 from '../../assets/productfeatureicons/cycle.svg';
-// import FeatureImg from '../../assets/images/gallery-feature-shot.png';
+import FeatureImg from '../../assets/images/gallery/gallery-feature-shot.png';
 import FooterSection from '../footer/FooterSection';
 import GalleryIcon from '../../assets/logos/gallery-small-logo.svg';
 import PageSection from '../../components/layout/PageSection';
@@ -13,7 +14,8 @@ import ProductImg from '../../assets/images/gallery/gallery-product-shot.png';
 import PurpleOLLogo from '../../assets/images/logo-original.png';
 
 import { menuStylesForProductPages } from '../products/styled/MenuStyles';
-
+import { MEDIA_QUERY_TECH_SM } from '../../core/style/Sizes';
+import { NEUTRALS } from '../../core/style/Colors';
 import {
   FeatureOverviewDescription,
   FeatureOverviewTitle,
@@ -32,7 +34,17 @@ import {
   ProductStamp,
 } from '../products/styled/StyledProductComponents';
 
-import { NEUTRALS } from '../../core/style/Colors';
+const GalleryFeatureShot = styled(FeatureShot)`
+  border: none;
+  box-shadow: none;
+  height: 549px;
+  width: 492px;
+
+  @media only screen and (max-width: ${MEDIA_QUERY_TECH_SM}px) {
+    height: 270px;
+    width: 306px;
+  }
+`;
 
 /* eslint-disable react/no-unescaped-entities */
 const GalleryProductPage = () => (
@@ -80,14 +92,16 @@ const GalleryProductPage = () => (
         <ProductOverviewDescriptionWrapper>
           <ProductOverviewTitle>Frequent Flyer Identifier</ProductOverviewTitle>
           <ProductOverviewDescription>
-            {`The OpenLattice Platform was built from the ground-up with the intent to enable secure, compliant data
-              sharing to facilitate data-driven decision making and de-silo current data systems.  This is accomplished
-              through role-based field-level permissions that grant the user maximum flexibility in granting data
-              access. Users have full control over their data which can be added to, removed, and shared with anyone
-              at any time.  Gallery provides a simple user interface to ensure these functions are easy to maintain. `}
+            {`The frequent flyer identifier allows you to quickly and easily understand who in your jurisdiction is
+              consuming services, and how they interact with and consume said services. You can choose to look at
+              individual datasets, for example jail data to identify those individuals who cycle in and out with
+              a high number of bookings but a low number of days per jail stay to identify potential candidates
+              for diversion. Furthermore, you can view cross-sectional linked datasets to identify frequent
+              flyers across the spectrum of social services in your jurisdiction to view a more complete picture
+              of your jurisdiction. `}
           </ProductOverviewDescription>
         </ProductOverviewDescriptionWrapper>
-        {/*<FeatureShot bgImage={FeatureImg} />*/}
+        <GalleryFeatureShot bgImage={FeatureImg} />
       </ProductOverviewWrapper>
     </PageSection>
     <ConnectSection />
