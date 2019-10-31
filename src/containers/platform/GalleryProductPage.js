@@ -6,11 +6,11 @@ import ConnectSection from '../connect/ConnectSection';
 import Feature1 from '../../assets/productfeatures/feature1.svg';
 import Feature2 from '../../assets/productfeatures/feature2.svg';
 import Feature3 from '../../assets/productfeatures/feature3.svg';
-import FeatureImg from '../../assets/images/gallery-feature-shot.png';
+// import FeatureImg from '../../assets/images/gallery-feature-shot.png';
 import FooterSection from '../footer/FooterSection';
 import GalleryIcon from '../../assets/logos/gallery-small-logo.svg';
 import PageSection from '../../components/layout/PageSection';
-import ProductImg from '../../assets/images/gallery-product-shot.png';
+import ProductImg from '../../assets/images/gallery/gallery-product-shot.png';
 import PurpleOLIcon from '../../assets/images/purple-ol.svg';
 
 import { menuStylesForProductPages } from '../products/styled/MenuStyles';
@@ -47,10 +47,10 @@ const GalleryProductPage = () => (
           <Icon src={GalleryIcon} />
           <div>Gallery</div>
         </ProductStamp>
-        <ProductIntro>Manage your organization's granular, role-based permissions quickly and easily</ProductIntro>
+        <ProductIntro>Explore your data and identify frequent flyers in only a few clicks</ProductIntro>
         <ProductDescription>
-          {`Gallery allows you to securely share data while maintaining compliance with any regulations in your
-            field or jurisdiction.`}
+          {`Gallery allows you to view your raw and linked data, and easily identify frequent flyers
+            by a variety of criteria (e.g. most jail stays, most interactions with health clinics, etc.).`}
         </ProductDescription>
       </HeaderContent>
       <ProductShot bgImage={ProductImg} />
@@ -97,7 +97,7 @@ const GalleryProductPage = () => (
               at any time.  Gallery provides a simple user interface to ensure these functions are easy to maintain. `}
           </ProductOverviewDescription>
         </ProductOverviewDescriptionWrapper>
-        <FeatureShot bgImage={FeatureImg} />
+        {/*<FeatureShot bgImage={FeatureImg} />*/}
       </ProductOverviewWrapper>
     </PageSection>
     <ConnectSection />
