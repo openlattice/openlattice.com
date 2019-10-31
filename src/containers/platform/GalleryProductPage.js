@@ -5,7 +5,6 @@ import AppHeader from '../../components/headers/AppHeader';
 import ConnectSection from '../connect/ConnectSection';
 import Feature1 from '../../assets/productfeatures/feature1.svg';
 import Feature2 from '../../assets/productfeatures/feature2.svg';
-import Feature3 from '../../assets/productfeatures/feature3.svg';
 // import FeatureImg from '../../assets/images/gallery-feature-shot.png';
 import FooterSection from '../footer/FooterSection';
 import GalleryIcon from '../../assets/logos/gallery-small-logo.svg';
@@ -59,28 +58,19 @@ const GalleryProductPage = () => (
       <FeaturesContent>
         <FeatureOverviewWrapper>
           <img src={Feature1} alt="" />
-          <FeatureOverviewTitle>Role-based permissions</FeatureOverviewTitle>
+          <FeatureOverviewTitle>Frequent Flyer Identifier</FeatureOverviewTitle>
           <FeatureOverviewDescription>
-            {`With role-based permissions you can assign all individuals who have the same level of permissions,
-              for example officers, the “Officer” role, rather than individually granting each permission included
-              in the role simplifying the process.`}
+            {`Search for the dataset, or linked dataset you would like to view, select the criteria by which
+              you would like to measure frequent flyers, click “calculate top utilizers,” and explore those
+              that use your jurisdiction's services the most.`}
           </FeatureOverviewDescription>
         </FeatureOverviewWrapper>
         <FeatureOverviewWrapper>
           <img src={Feature2} alt="" />
-          <FeatureOverviewTitle>Manage organization members</FeatureOverviewTitle>
+          <FeatureOverviewTitle>Data Explorer</FeatureOverviewTitle>
           <FeatureOverviewDescription>
-            {`In just a few clicks, you can easily add and remove members from your organization, and change their
-              permissions to view and edit your data.`}
-          </FeatureOverviewDescription>
-        </FeatureOverviewWrapper>
-        <FeatureOverviewWrapper>
-          <img src={Feature3} alt="" />
-          <FeatureOverviewTitle>Field-level permissions</FeatureOverviewTitle>
-          <FeatureOverviewDescription>
-            {`With field-level permissions you can restrict or grant access to data by an individual or role at the
-              field level (e.g. “Officers” can see basic identification information, but not medical history)
-              maintaining regulatory compliance while maximizing data sharing flexibility.`}
+            {`In just a few clicks, administrators can easily add and remove members from their organization,
+              and also change member permissions to view and/or edit data.`}
           </FeatureOverviewDescription>
         </FeatureOverviewWrapper>
       </FeaturesContent>
@@ -88,7 +78,7 @@ const GalleryProductPage = () => (
     <PageSection>
       <ProductOverviewWrapper>
         <ProductOverviewDescriptionWrapper>
-          <ProductOverviewTitle>Role-based field-level permissions</ProductOverviewTitle>
+          <ProductOverviewTitle>Frequent Flyer Identifier</ProductOverviewTitle>
           <ProductOverviewDescription>
             {`The OpenLattice Platform was built from the ground-up with the intent to enable secure, compliant data
               sharing to facilitate data-driven decision making and de-silo current data systems.  This is accomplished
