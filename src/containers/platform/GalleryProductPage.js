@@ -60,8 +60,8 @@ const GalleryProductPage = () => (
         </ProductStamp>
         <ProductIntro>Explore your data and identify frequent flyers in only a few clicks</ProductIntro>
         <ProductDescription>
-          {`Gallery allows you to view your raw and linked data, and easily identify frequent flyers
-            by a variety of criteria (e.g. most jail stays, most interactions with health clinics, etc.).`}
+          {`View your raw and linked data, and easily identify frequent flyers by a variety of criteria
+            (e.g. most jail stays, most interactions with health clinics, etc.).`}
         </ProductDescription>
       </HeaderContent>
       <ProductShot bgImage={ProductImg} />
