@@ -223,7 +223,7 @@ const SocialServicesBadge = styled(Badge)`
 const Health = () => (
   <HealthWrapper>
     <HealthBadge>
-      HEALTHCARE
+      Healthcare
     </HealthBadge>
     <HealthSvg
         xmlns="http://www.w3.org/2000/svg"
@@ -246,7 +246,7 @@ const Health = () => (
 const PublicSafety = () => (
   <PublicSafetyWrapper>
     <PublicSafetyBadge>
-      PUBLIC SAFETY
+      Public Safety
     </PublicSafetyBadge>
     <PublicSafetySvg
         xmlns="http://www.w3.org/2000/svg"
@@ -266,7 +266,7 @@ const PublicSafety = () => (
 const SocialServices = () => (
   <SocialServicesWrapper>
     <SocialServicesBadge>
-      SOCIAL SERVICES
+      Social Services
     </SocialServicesBadge>
     <SocialServicesSvg
         xmlns="http://www.w3.org/2000/svg"
