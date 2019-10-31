@@ -17,11 +17,9 @@ const HeaderContent = styled.div`
   margin: 50px auto 100px auto;
   max-width: 100%;
   text-align: center;
-
   @media only screen and (min-width: ${MEDIA_QUERY_MD}px) {
     max-width: 60%;
   }
-
   @media only screen and (min-width: ${MEDIA_QUERY_LG}px) {
     margin: 65px auto 211px auto;
   }
@@ -52,7 +50,6 @@ const ProductIntro = styled.div`
   margin: 24px 0 32px 0;
   text-align: center;
   line-height: 115%;
-
   @media only screen and (min-width: ${MEDIA_QUERY_MD}px) {
     font-size: 56px;
     text-align: center;
@@ -65,7 +62,6 @@ const ProductDescription = styled.div`
   font-size: 20px;
   text-align: center;
   line-height: 150%;
-
   @media only screen and (min-width: ${MEDIA_QUERY_MD}px) {
     width: 560px;
   }
@@ -80,7 +76,7 @@ const ProductShot = styled.div`
   border-radius: 2px;
   border: 1px solid ${NEUTRALS.GRAY_09};
   box-shadow: 0px 10px 30px rgba(48, 47, 57, 0.05);
-  box-sizing: border-box;
+  box-sizing: content-box;
   height: 100%;
   position: absolute;
   top: 450px;
@@ -110,7 +106,6 @@ const ProductShot = styled.div`
     top: 550px;
     width: 915px;
   }
-
   @media only screen and (min-width: ${MEDIA_QUERY_LG}px) {
     height: 670px;
     top: 625px;
@@ -154,7 +149,6 @@ const FeatureOverviewWrapper = styled.div`
   min-height: 250px;
   margin: 30px 0;
   position: relative;
-
   :last-child {
     margin-left: 0;
   }
@@ -211,7 +205,6 @@ const ProductOverviewWrapper = styled.div`
   :last-of-type {
     margin-bottom: 200px;
   }
-
   @media only screen and (min-width: ${MEDIA_QUERY_LG}px) {
     flex-direction: row;
     justify-content: space-between;
