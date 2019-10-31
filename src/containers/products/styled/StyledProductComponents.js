@@ -217,7 +217,7 @@ const ProductOverviewWrapper = styled.div`
     justify-content: space-between;
 
     span:first-child {
-      margin-right: 160px;
+      margin-bottom: 0;
     }
   }
 `;
@@ -256,11 +256,6 @@ const FeatureShot = styled.span`
   @media only screen and (max-width: ${MEDIA_QUERY_TECH_SM}px) {
     height: 348px;
     width: 300px;
-  }
-
-  @media only screen and (min-width: ${MEDIA_QUERY_MD}px) {
-    height: 556px;
-    width: 480px;
   }
 `;
 
@@ -301,6 +296,11 @@ const ProductOverviewDescription = styled(FeatureOverviewDescription)`
   }
 `;
 
+const ProductStampWrapper = styled.img`
+  height: 64px;
+  width: ${(props) => props.width};
+`;
+
 export {
   FeatureOverviewDescription,
   FeatureOverviewTitle,
@@ -318,4 +318,5 @@ export {
   ProductOverviewWrapper,
   ProductShot,
   ProductStamp,
+  ProductStampWrapper,
 };
