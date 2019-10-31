@@ -36,7 +36,6 @@ import { NEUTRALS } from '../../core/style/Colors';
 import { MEDIA_QUERY_LG, MEDIA_QUERY_MD, MEDIA_QUERY_TECH_SM } from '../../core/style/Sizes';
 
 const OtherProductsHeaderContent = styled(HeaderContent)`
-
   @media only screen and (min-width: ${MEDIA_QUERY_LG}px) {
     margin: 40px auto 150px auto;
   }
