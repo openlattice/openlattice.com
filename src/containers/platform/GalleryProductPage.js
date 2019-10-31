@@ -3,14 +3,14 @@ import React from 'react';
 
 import AppHeader from '../../components/headers/AppHeader';
 import ConnectSection from '../connect/ConnectSection';
-import Feature1 from '../../assets/productfeatures/feature1.svg';
-import Feature2 from '../../assets/productfeatures/feature2.svg';
+import Feature1 from '../../assets/productfeatureicons/merge.svg';
+import Feature2 from '../../assets/productfeatureicons/cycle.svg';
 // import FeatureImg from '../../assets/images/gallery-feature-shot.png';
 import FooterSection from '../footer/FooterSection';
 import GalleryIcon from '../../assets/logos/gallery-small-logo.svg';
 import PageSection from '../../components/layout/PageSection';
 import ProductImg from '../../assets/images/gallery/gallery-product-shot.png';
-import PurpleOLIcon from '../../assets/images/purple-ol.svg';
+import PurpleOLLogo from '../../assets/images/logo-original.png';
 
 import { menuStylesForProductPages } from '../products/styled/MenuStyles';
 
@@ -39,7 +39,7 @@ const GalleryProductPage = () => (
   <>
     <PageSection bgColor={NEUTRALS.GRAY_05}>
       <AppHeader
-          logo={PurpleOLIcon}
+          logo={PurpleOLLogo}
           menuStyles={menuStylesForProductPages} />
       <HeaderContent>
         <ProductStamp>
