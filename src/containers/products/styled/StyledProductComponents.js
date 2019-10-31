@@ -257,11 +257,6 @@ const FeatureShot = styled.span`
     height: 348px;
     width: 300px;
   }
-
-  @media only screen and (min-width: ${MEDIA_QUERY_MD}px) {
-    height: 556px;
-    width: 480px;
-  }
 `;
 
 const PermissionsFeatureShot = styled(FeatureShot)`
