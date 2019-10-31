@@ -76,7 +76,7 @@ const ProductShot = styled.div`
   border-radius: 2px;
   border: 1px solid ${NEUTRALS.GRAY_09};
   box-shadow: 0px 10px 30px rgba(48, 47, 57, 0.05);
-  box-sizing: border-box;
+  box-sizing: content-box;
   height: 100%;
   position: absolute;
   top: 450px;
