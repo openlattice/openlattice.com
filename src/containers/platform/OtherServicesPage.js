@@ -119,7 +119,7 @@ const OtherServicesPage = () => (
           <ProductOverviewDescription>
             {`Familiarize yourself with the standardized OpenLattice graph data model and quickly and easily
               search for the entities you need. This tool facilitates analysis and development on the Platform,
-              enabling users to take advantage of.`}
+              enabling users to take advantage of unique insights available from cross-sectional data.`}
           </ProductOverviewDescription>
         </TextWrapper>
       </ProductOverviewWrapper>
