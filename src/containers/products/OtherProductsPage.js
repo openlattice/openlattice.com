@@ -7,6 +7,7 @@ import styled from 'styled-components';
 import AstrometricsFeatureImg from '../../assets/images/astrometrics-feature-shot.png';
 import AstrometricsStamp from '../../assets/logos/astrometrics-product-stamp.png';
 import AppHeader from '../../components/headers/AppHeader';
+import ChronicleFeatureImg from '../../assets/images/chronicle-feature-shot.png';
 import ChronicleStamp from '../../assets/logos/chronicle-product-stamp.png';
 import ConnectSection from '../connect/ConnectSection';
 import CWPFeatureImg from '../../assets/images/cwp-feature-shot.png';
@@ -69,6 +70,22 @@ const CWPFeatureShot = styled(FeatureShot)`
   }
 `;
 
+const ChronicleFeatureShot = styled.img`
+  border: none;
+  height: 618px;
+  width: 359px;
+
+  @media only screen and (max-width: ${MEDIA_QUERY_TECH_SM}px) {
+    height: 387px;
+    width: 224px;
+  }
+
+  @media only screen and (min-width: ${MEDIA_QUERY_MD}px) {
+    height: 618px;
+    width: 359px;
+  }
+`;
+
 const OtherProductsPage = () => (
   <>
     <PageSection bgColor={NEUTRALS.GRAY_05}>
@@ -78,7 +95,8 @@ const OtherProductsPage = () => (
       <OtherProductsHeaderContent>
         <ProductIntro>Other products</ProductIntro>
         <ProductDescription>
-          As a public benefit corporation, OpenLattice enables precision government by linking individual-level data.
+          {`Explore other products we offer to link data across behavioral health services, criminal justice,
+            and public safety.`}
         </ProductDescription>
       </OtherProductsHeaderContent>
     </PageSection>
@@ -139,7 +157,7 @@ const OtherProductsPage = () => (
               patterns down to the specific app, such as duration, frequency, and time of day.`}
           </ProductOverviewDescription>
         </AstrometricsTextWrapper>
-        <FeatureShot bgImage={AstrometricsFeatureImg} />
+        <ChronicleFeatureShot src={ChronicleFeatureImg} />
       </ProductOverviewWrapper>
     </PageSection>
     <ConnectSection />
