@@ -99,7 +99,7 @@ const ProductsPage = () => (
     <PageSection bgImage={topImage}>
       <AppHeader />
       <Content>
-        <TitleText>Make organizations more productive through modern workflows.</TitleText>
+        <TitleText>Leverage cross-sector data to improve human outcomes.</TitleText>
       </Content>
     </PageSection>
     <PageSection bgColor={NEUTRALS.WHITE}>
