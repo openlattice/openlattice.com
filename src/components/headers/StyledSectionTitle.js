@@ -1,9 +1,9 @@
 import styled from 'styled-components';
 import { MEDIA_QUERY_MD } from '../../core/style/Sizes';
-import { N4 } from '../../core/style/Colors';
+import { NEUTRALS } from '../../core/style/Colors';
 
 const StyledSectionTitle = styled.h1`
-  color: ${N4};
+  color: ${NEUTRALS.BLACK};
   font-size: 25px;
   font-weight: semi-bold;
   line-height: 1.2;

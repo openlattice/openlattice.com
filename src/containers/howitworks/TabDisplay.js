@@ -8,7 +8,7 @@ import Content04 from './Content04';
 
 import { TABS } from './Constants';
 
-import { PP4 } from '../../core/style/Colors';
+import { PURPLES } from '../../core/style/Colors';
 import { MEDIA_QUERY_JUR_SM, MEDIA_QUERY_LG } from '../../core/style/Sizes';
 
 const Wrapper = styled.div`
@@ -37,8 +37,8 @@ const TabItem = styled.span`
 
   &:hover,
   &.active {
-    color: ${PP4};
-    border-bottom: 2px solid ${PP4};
+    color: ${PURPLES.PP05};
+    border-bottom: 2px solid ${PURPLES.PP05};
   }
 
   @media only screen and (min-width: ${MEDIA_QUERY_JUR_SM}px) {

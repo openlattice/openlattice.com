@@ -10,13 +10,13 @@ import BackgroundCarousel from './BackgroundCarousel';
 import PageSection from '../../components/layout/PageSection';
 import StyledSectionSubTitle from '../../components/headers/StyledSectionSubTitle';
 import StyledSectionTitle from '../../components/headers/StyledSectionTitle';
-import { N0, PK0 } from '../../core/style/Colors';
+import { NEUTRALS, PINKS } from '../../core/style/Colors';
 import { MEDIA_QUERY_MD, MEDIA_QUERY_LG } from '../../core/style/Sizes';
 
 const scheduleACallLink = 'https://calendly.com/openlattice/openlattice-web-request';
 
 const Content = styled.div`
-  color: ${N0};
+  color: ${NEUTRALS.WHITE};
   align-items: center;
   display: block;
   flex-direction: column;
@@ -34,7 +34,7 @@ const Content = styled.div`
 `;
 
 const Title = styled(StyledSectionTitle)`
-  color: ${N0};
+  color: ${NEUTRALS.WHITE};
   margin-bottom: 20px;
   text-align: center;
 
@@ -45,7 +45,7 @@ const Title = styled(StyledSectionTitle)`
 `;
 
 const SubTitle = styled(StyledSectionSubTitle)`
-  color: ${N0};
+  color: ${NEUTRALS.WHITE};
   font-size: 15px;
   line-height: 27px;
   margin-bottom: 60px;
@@ -58,10 +58,10 @@ const SubTitle = styled(StyledSectionSubTitle)`
 `;
 
 const ScheduleLink = styled.a`
-  background-color: ${PK0};
+  background-color: ${PINKS.PINK01};
   border: none;
   border-radius: 20px;
-  color: ${N0};
+  color: ${NEUTRALS.WHITE};
   cursor: pointer;
   display: inline-block;
   font-family: 'Roboto', sans-serif;

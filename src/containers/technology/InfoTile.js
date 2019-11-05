@@ -6,11 +6,11 @@ import React from 'react';
 
 import styled from 'styled-components';
 
-import { N2, N4, PP1 } from '../../core/style/Colors';
+import { NEUTRALS, PURPLES } from '../../core/style/Colors';
 import { MEDIA_QUERY_TECH_SM } from '../../core/style/Sizes';
 
 const TileWrapper = styled.div`
-  background-color: ${PP1};
+  background-color: ${PURPLES.PP02};
   border-radius: 2px;
   height: 267px;
   margin: 15px;
@@ -28,7 +28,7 @@ const Icon = styled.img`
 `;
 
 const Title = styled.div`
-  color: ${N4};
+  color: ${NEUTRALS.BLACK};
   font-size: 20px;
   line-height: 24px;
   margin-bottom: 15px;
@@ -36,7 +36,7 @@ const Title = styled.div`
 `;
 
 const Body = styled.div`
-  color: ${N2};
+  color: ${NEUTRALS.GRAY_02};
   font-size: 14px;
   line-height: 19px;
   top: 151px;

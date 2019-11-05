@@ -13,7 +13,7 @@ import StyledSectionSubTitle from '../../components/headers/StyledSectionSubTitl
 import StyledSectionTitle from '../../components/headers/StyledSectionTitle';
 import * as Constants from './Constants';
 import { CONTENT_GRID_WIDTH, MEDIA_QUERY_MD, MEDIA_QUERY_LG } from '../../core/style/Sizes';
-import { N2, N4 } from '../../core/style/Colors';
+import { NEUTRALS } from '../../core/style/Colors';
 
 /*
  * styled components
@@ -57,13 +57,13 @@ const TechTilesInnerWrapper = styled.div`
 `;
 
 const FooterBody = styled.span`
-  color: ${N2};
+  color: ${NEUTRALS.GRAY_02};
   font-size: 14px;
   line-height: 19px;
 `;
 
 const FooterBodyEmpasized = styled(FooterBody)`
-  color: ${N4};
+  color: ${NEUTRALS.BLACK};
 `;
 
 const TechnologySection = () => (

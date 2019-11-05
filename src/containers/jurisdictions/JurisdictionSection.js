@@ -12,7 +12,7 @@ import PageSection from '../../components/layout/PageSection';
 import StyledSectionTitle from '../../components/headers/StyledSectionTitle';
 import mapImage from '../../assets/images/map.png';
 import { MEDIA_QUERY_MD, MEDIA_QUERY_JUR_SM, MEDIA_QUERY_JUR_LG } from '../../core/style/Sizes';
-import { N3 } from '../../core/style/Colors';
+import { NEUTRALS } from '../../core/style/Colors';
 
 import {
   TITLE,
@@ -59,7 +59,7 @@ const Content = styled.div`
 `;
 
 const Title = styled(StyledSectionTitle)`
-  color: ${N3};
+  color: ${NEUTRALS.GRAY_03};
 
   @media only screen and (min-width: ${MEDIA_QUERY_MD}px) {
     max-width: 60%;
