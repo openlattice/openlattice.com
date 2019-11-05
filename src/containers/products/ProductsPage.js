@@ -106,12 +106,9 @@ const ProductsPage = () => (
       <PageContent>
         <SectionHeaderWrapper>
           <StyledSectionTitle>
-            Core platform services
+            Core Platform Services
           </StyledSectionTitle>
-          <StyledSectionSubTitle>
-            {`Core tools and services for you to access, explore, configure,
-              and analyze your data.`}
-          </StyledSectionSubTitle>
+          <StyledSectionSubTitle>Manage, explore, and analyze your data.</StyledSectionSubTitle>
         </SectionHeaderWrapper>
         <ProductTilesOuterWrapper>
           <ProductTilesInnerWrapper>
@@ -140,8 +137,8 @@ const ProductsPage = () => (
             Our Products
           </StyledSectionTitle>
           <StyledSectionSubTitle>
-            {`We enable precision government by linking of individual level
-              data across criminal justice, healthcare, and social services.`}
+            {`We help public servants, policy makers, and researchers make better decisions with a complete
+              picture across existing criminal justice, healthcare, and social service data sets.`}
           </StyledSectionSubTitle>
         </SectionHeaderWrapper>
         <ProductTilesOuterWrapper>
