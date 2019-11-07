@@ -4,8 +4,6 @@
 import React from 'react';
 import styled from 'styled-components';
 
-import AstrometricsFeatureImg from '../../assets/images/astrometrics-feature-shot.png';
-import AstrometricsStamp from '../../assets/logos/astrometrics-product-stamp.png';
 import AppHeader from '../../components/headers/AppHeader';
 import ChronicleFeatureImg from '../../assets/images/chronicle-feature-shot.png';
 import ChronicleStamp from '../../assets/logos/chronicle-product-stamp.png';
@@ -125,19 +123,6 @@ const OtherProductsPage = () => (
         </SteppingUpTextWrapper>
       </ProductOverviewWrapper>
       <ProductOverviewWrapper>
-        <AstrometricsTextWrapper>
-          <ProductStampWrapper src={AstrometricsStamp} width="243px" />
-          <ProductOverviewTitle>Implement geospatial workflows at scale</ProductOverviewTitle>
-          <ProductOverviewDescription>
-            {`The OpenLattice Platform supports geospatial workflows at scale. It enables authorized law enforcement
-              agencies to perform audited, map-based searches of automated license plate reader data through an
-              intuitive, compliance minded user interface.`}
-          </ProductOverviewDescription>
-        </AstrometricsTextWrapper>
-        <FeatureShot bgImage={AstrometricsFeatureImg} />
-      </ProductOverviewWrapper>
-      <ProductOverviewWrapper>
-        <FeatureShot bgImage={ReferralsFeatureImg} />
         <SteppingUpTextWrapper>
           <ProductStampWrapper src={ReferralsStamp} width="182px" />
           <ProductOverviewTitle>Referrals and service management in one platform</ProductOverviewTitle>
@@ -146,17 +131,18 @@ const OtherProductsPage = () => (
               and other customer service-focused analytics.`}
           </ProductOverviewDescription>
         </SteppingUpTextWrapper>
+        <FeatureShot bgImage={ReferralsFeatureImg} />
       </ProductOverviewWrapper>
       <ProductOverviewWrapper>
+        <ChronicleFeatureShot src={ChronicleFeatureImg} />
         <AstrometricsTextWrapper>
           <ProductStampWrapper src={ChronicleStamp} width="189px" />
-          <ProductOverviewTitle>Comprehensive mobile phone usage tracking</ProductOverviewTitle>
+          <ProductOverviewTitle>Manage human centered research studies</ProductOverviewTitle>
           <ProductOverviewDescription>
-            {`Designed for research, Chronicle uses passive sensing to detail a participant’s phone interaction
-              patterns down to the specific app, such as duration, frequency, and time of day.`}
+            {`Manage enrollment, consent, and multi-sensor data collection for collaborative human centered
+              research studies in highly regulated areas.`}
           </ProductOverviewDescription>
         </AstrometricsTextWrapper>
-        <ChronicleFeatureShot src={ChronicleFeatureImg} />
       </ProductOverviewWrapper>
     </PageSection>
     <ConnectSection />
