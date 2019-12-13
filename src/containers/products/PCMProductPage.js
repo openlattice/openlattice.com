@@ -93,10 +93,10 @@ const PCMProductPage = () => (
               less than 24 hours.`}
           </ProductOverviewDescription>
         </ProductOverviewDescriptionWrapper>
-        <FeatureShot bgImage={FeatureImg2} />
+        <FeatureShot bgImage={FeatureImg1} />
       </ProductOverviewWrapper>
       <ProductOverviewWrapper>
-        <FeatureShot bgImage={FeatureImg1} />
+        <FeatureShot bgImage={FeatureImg2} />
         <ProductOverviewDescriptionWrapper>
           <ProductOverviewTitle>Supervision Touchpoints</ProductOverviewTitle>
           <ProductOverviewDescription>
