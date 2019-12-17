@@ -15,6 +15,8 @@ import OtherProductsPage from '../products/OtherProductsPage';
 import OtherServicesPage from '../platform/OtherServicesPage';
 import PCMProductPage from '../products/PCMProductPage';
 import ProductsPage from '../products/ProductsPage';
+import Platform from '../platform/Platform';
+import WorkingWithUs from '../workingwithus/WorkingWithUs';
 
 const AppContainer = () => (
   <Switch>
@@ -25,6 +27,8 @@ const AppContainer = () => (
     <Route exact path={Routes.PCM} component={PCMProductPage} />
     <Route exact path={Routes.OTHER_PRODUCTS} component={OtherProductsPage} />
     <Route exact path={Routes.PRODUCTS} component={ProductsPage} />
+    <Route exact path={Routes.PLATFORM} component={Platform} />
+    <Route exact path={Routes.WORKING_WITH_US} component={WorkingWithUs} />
     <Route component={AppHomePage} />
   </Switch>
 );
