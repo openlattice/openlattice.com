@@ -23,11 +23,17 @@ const NormalizeCSS = createGlobalStyle`
 `;
 
 const GlobalStyle = createGlobalStyle`
+  @supports (font-variation-settings: normal) {
+    html {
+      font-family: 'Inter', sans-serif;
+    }
+  }
+
   html,
   body {
     background-color: ${NEUTRALS.WHITE};
     color: ${NEUTRALS.GRAY_03};
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Inter', sans-serif;
     height: 100%;
     line-height: normal;
     width: 100%;
