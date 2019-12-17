@@ -4,6 +4,8 @@
 
 export const ROOT :string = '/';
 export const LOGIN :string = '/login';
+export const ABOUT :string = '/about';
+export const WORKING_WITH_US :string = '/workingwithus';
 export const PRODUCTS :string = '/products';
 export const PLATFORM :string = '/platform';
 
