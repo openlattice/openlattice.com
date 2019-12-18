@@ -2,8 +2,8 @@
 
 import * as Routes from '../../core/router/Routes';
 
-const helpCenterLink :string = 'https://help.openlattice.com';
-const scheduleACallLink :string = 'https://calendly.com/openlattice/openlattice-web-request';
+export const helpCenterLink :string = 'https://help.openlattice.com';
+export const scheduleACallLink :string = 'https://calendly.com/openlattice/openlattice-web-request';
 
 const MENU_HEADERS :Object = {
   ABOUT: 'About',
