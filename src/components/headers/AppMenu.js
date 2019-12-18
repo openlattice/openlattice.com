@@ -5,8 +5,9 @@ import { Link, NavLink } from 'react-router-dom';
 
 import OlLogo from '../../assets/logos/ol-logo-header.png';
 
+import { ScheduleACallWhite } from '../controls/index';
 import { MENU_HEADERS, MENU_ROUTES } from './MenuConsts';
-import { NEUTRALS, PURPLES } from '../../core/style/Colors';
+import { NEUTRALS } from '../../core/style/Colors';
 
 const menuActiveColor = {
   color: NEUTRALS.GRAY_06
@@ -14,6 +15,7 @@ const menuActiveColor = {
 
 const menuItemStyles = css`
   color: ${NEUTRALS.GRAY_08};
+  line-height: 150%;
   margin-right: 40px;
   text-decoration: none;
 `;
@@ -22,8 +24,8 @@ const MenuWrapper = styled.div`
   align-items: center;
   display: flex;
   justify-content: space-between;
-  margin: 24px 32px 0 32px;
-  width: 100%;
+  margin: 0;
+  max-width: 100%;
 `;
 
 const MenuItemsWrapper = styled.div`
@@ -43,20 +45,6 @@ const MenuInternalLink = styled(NavLink)`
 
 const MenuExternalLink = styled.a`
   ${menuItemStyles}
-`;
-
-const ScheduleACallButton = styled.a`
-  background-color: ${NEUTRALS.WHITE};
-  border-radius: 23px;
-  border: 1px solid ${PURPLES.PP08};
-  color: ${PURPLES.PP08};
-  display: inline-block;
-  font-weight: 500;
-  line-height: 150%;
-  padding: 8px 18px;
-  text-align: center;
-  text-decoration: none;
-  white-space: nowrap;
 `;
 
 const AppMenu = () => (
@@ -91,12 +79,12 @@ const AppMenu = () => (
           target="_blank">
         { MENU_HEADERS.HELP_CENTER }
       </MenuExternalLink>
-      <ScheduleACallButton
+      <ScheduleACallWhite
           activeStyle={menuActiveColor}
           href={MENU_ROUTES.SCHEDULE_A_CALL}
           target="_blank">
         { MENU_HEADERS.SCHEDULE_A_CALL }
-      </ScheduleACallButton>
+      </ScheduleACallWhite>
     </MenuItemsWrapper>
   </MenuWrapper>
 );
