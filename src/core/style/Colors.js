@@ -17,6 +17,7 @@ export const NEUTRALS = {
   GRAY_07: '#505060',
   GRAY_08: '#9999AF',
   GRAY_09: '#E1E1EB',
+  GRAY_10: '#DFDFE9',
   WHITE: '#ffffff',
 };
 
