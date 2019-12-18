@@ -4,8 +4,14 @@
 
 import React from 'react';
 
+import PlatformIntro from './PlatformIntro';
+import GraphicSection from './GraphicSection';
+
 const Platform = () => (
-  <div />
+  <>
+    <PlatformIntro />
+    <GraphicSection />
+  </>
 );
 
 export default Platform;
