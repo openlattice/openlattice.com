@@ -5,7 +5,7 @@
 import React from 'react';
 import styled from 'styled-components';
 
-import FeatureTile from './FeatureTile';
+import FeatureTile from './features/FeatureTile';
 import PageSection from '../../components/layout/NewPageSection';
 
 import * as Routes from '../../core/router/Routes';
@@ -14,7 +14,7 @@ import {
   FEATURE_DESCRIPTIONS,
   FEATURE_ICONS,
   FEATURE_TITLES
-} from './FeaturesConsts';
+} from './features/FeaturesConsts';
 import { NEUTRALS } from '../../core/style/Colors';
 import { CONTENT_WIDTH, MEDIA_QUERY_LG, MEDIA_QUERY_MD } from '../../core/style/Sizes';
 

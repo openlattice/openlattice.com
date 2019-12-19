@@ -1,6 +1,6 @@
 // @flow
 
-import PurpleMergeIcon from '../../assets/svg/purple-merge-icon.svg';
+import PurpleMergeIcon from '../../../assets/svg/purple-merge-icon.svg';
 
 const FEATURE_ICONS :Object = {
   INTEGRATION: PurpleMergeIcon,

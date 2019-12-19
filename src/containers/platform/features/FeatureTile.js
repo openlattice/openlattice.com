@@ -3,15 +3,15 @@
  */
 
 import React from 'react';
-
 import styled from 'styled-components';
 
-import { LearnMoreInternalLink } from '../../components/controls/index';
-import { NEUTRALS } from '../../core/style/Colors';
-import { MEDIA_QUERY_TECH_SM } from '../../core/style/Sizes';
+import { LearnMoreInternalLink } from '../../../components/controls/index';
+import { NEUTRALS } from '../../../core/style/Colors';
+import { MEDIA_QUERY_TECH_SM } from '../../../core/style/Sizes';
 
 const TileWrapper = styled.div`
   border: 1px solid ${NEUTRALS.GRAY_10};
+  border-radius: 3px;
   height: 374px;
   margin: 24px;
   position: relative;
