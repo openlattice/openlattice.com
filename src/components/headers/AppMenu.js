@@ -3,7 +3,7 @@ import React from 'react';
 import styled, { css } from 'styled-components';
 import { Link, NavLink } from 'react-router-dom';
 
-import OlLogo from '../../assets/logos/ol-logo-header.png';
+import OlLogo from '../../assets/logos/ol-logo-header.svg';
 
 import { ScheduleACallWhite } from '../controls/index';
 import { MENU_HEADERS, MENU_ROUTES } from './MenuConsts';
