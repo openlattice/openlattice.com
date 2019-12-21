@@ -34,7 +34,7 @@ const TextWrapper = styled.div`
   align-items: flex-start;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-start;
   width: 384px;
 `;
 
@@ -42,6 +42,7 @@ const ItemTitle = styled(SectionHeader)`
   align-self: flex-start;
   font-size: 18px;
   text-align: left;
+  margin-bottom: 8px;
 `;
 
 const Body = styled.div`
@@ -49,6 +50,7 @@ const Body = styled.div`
   font-size: 14px;
   font-weight: normal;
   line-height: 150%;
+  text-align: left;
 `;
 
 type Props = {
