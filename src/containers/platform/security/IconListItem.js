@@ -26,8 +26,8 @@ const ItemWrapper = styled.div`
 `;
 
 const Icon = styled.img`
-  height: 110px;
-  width: 126px;
+  height: 96px;
+  width: 96px;
 `;
 
 const TextWrapper = styled.div`
