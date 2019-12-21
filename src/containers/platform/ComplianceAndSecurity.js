@@ -68,6 +68,10 @@ const ListOuterWrapper = styled.div`
   margin-top: 41px;
   margin-bottom: 101px;
   max-width: ${CONTENT_WIDTH}px;
+
+  :last-of-type {
+    margin-bottom: 0;
+  }
 `;
 
 const ListInnerWrapper = styled.div`
