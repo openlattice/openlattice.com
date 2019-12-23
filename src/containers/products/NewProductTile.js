@@ -6,8 +6,10 @@ import React from 'react';
 import styled from 'styled-components';
 
 import { LearnMoreInternalLink } from '../../components/controls/index';
+import { Tag } from '../../components/tags/Tag';
 import { NEUTRALS } from '../../core/style/Colors';
 import { MEDIA_QUERY_TECH_SM } from '../../core/style/Sizes';
+import { PRODUCT_TITLES } from './ProductConsts';
 
 const TileWrapper = styled.div`
   border: 1px solid ${NEUTRALS.GRAY_10};
@@ -43,6 +45,12 @@ const Title = styled.div`
   right: 0;
   text-align: center;
   top: 120px;
+`;
+
+const BetaTitle = styled(Title)`
+  align-items: center;
+  display: flex;
+  justify-content: center;
 `;
 
 const Subtitle = styled.div`
@@ -101,9 +109,20 @@ const ProductTile = ({
 } :Props) => (
   <TileWrapper to={route}>
     <Icon src={icon} />
-    <Title>
-      { title }
-    </Title>
+    {
+      title === PRODUCT_TITLES.RESEARCH_HUB
+        ? (
+          <BetaTitle>
+            <div>{ title }</div>
+            <Tag tagType="beta">BETA</Tag>
+          </BetaTitle>
+        )
+        : (
+          <Title>
+            { title }
+          </Title>
+        )
+    }
     <Subtitle>
       { subtitles.join(' • ') }
     </Subtitle>
