@@ -4,8 +4,12 @@
 
 import React from 'react';
 
+import AboutIntro from './AboutIntro';
+
 const About = () => (
-  <div />
+  <>
+    <AboutIntro />
+  </>
 );
 
 export default About;
