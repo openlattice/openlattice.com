@@ -30,7 +30,7 @@ const Content = styled.div`
   }
 
   @media only screen and (min-width: ${MEDIA_QUERY_LG}px) {
-    margin: 200px auto 200px auto;
+    margin: 176px auto 200px auto;
   }
 `;
 
@@ -69,7 +69,7 @@ const GraphicSection = () => (
         </TextSection>
         <LearnMoreInternalLink to={Routes.PLATFORM}>Learn more</LearnMoreInternalLink>
       </TextWrapper>
-      <img src={PlatformGraphicSVG} alt="" width={580} height={376} />
+      <img src={PlatformGraphicSVG} alt="" width={605} height={433} />
     </Content>
   </PageSection>
 );

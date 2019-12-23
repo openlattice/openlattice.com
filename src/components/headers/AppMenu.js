@@ -15,6 +15,7 @@ const menuActiveColor = {
 
 const menuItemStyles = css`
   color: ${NEUTRALS.GRAY_08};
+  font-weight: 500;
   line-height: 150%;
   margin-right: 40px;
   text-decoration: none;
