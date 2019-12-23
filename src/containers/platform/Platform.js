@@ -9,6 +9,7 @@ import GraphicSection from './GraphicSection';
 import CorePlatformFeatures from './CorePlatformFeatures';
 import ComplianceAndSecurity from './ComplianceAndSecurity';
 import ContactUsSection from '../contactus/ContactUsSection';
+import FooterSectionWithPageLinks from '../footer/FooterSectionWithPageLinks';
 
 const Platform = () => (
   <>
@@ -17,6 +18,7 @@ const Platform = () => (
     <CorePlatformFeatures />
     <ComplianceAndSecurity />
     <ContactUsSection />
+    <FooterSectionWithPageLinks />
   </>
 );
 
