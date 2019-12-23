@@ -11,7 +11,7 @@ import { PageDescription, PageIntro, PageTitle } from '../../components/headers/
 import { ScheduleACallPurple } from '../../components/controls/index';
 import { NEUTRALS } from '../../core/style/Colors';
 import { MEDIA_QUERY_MD, MEDIA_QUERY_LG } from '../../core/style/Sizes';
-import { scheduleACallLink } from '../../components/headers/MenuConsts';
+import { scheduleACallLink, TARGET } from '../../components/headers/MenuConsts';
 
 const Content = styled.div`
   align-items: center;
@@ -48,7 +48,7 @@ const PlatformIntro = () => (
       </PageDescriptionWrapper>
       <ScheduleACallPurple
           href={scheduleACallLink}
-          target="_blank">
+          target={TARGET}>
         Schedule a call
       </ScheduleACallPurple>
     </Content>

@@ -6,7 +6,7 @@ import { Link, NavLink } from 'react-router-dom';
 import OlLogo from '../../assets/logos/ol-logo-header.svg';
 
 import { ScheduleACallWhite } from '../controls/index';
-import { MENU_HEADERS, MENU_ROUTES } from './MenuConsts';
+import { MENU_HEADERS, MENU_ROUTES, TARGET } from './MenuConsts';
 import { NEUTRALS } from '../../core/style/Colors';
 
 const menuActiveColor = {
@@ -76,13 +76,13 @@ const AppMenu = () => (
       <MenuExternalLink
           activeStyle={menuActiveColor}
           href={MENU_ROUTES.HELP_CENTER}
-          target="_blank">
+          target={TARGET}>
         { MENU_HEADERS.HELP_CENTER }
       </MenuExternalLink>
       <ScheduleACallWhite
           activeStyle={menuActiveColor}
           href={MENU_ROUTES.SCHEDULE_A_CALL}
-          target="_blank">
+          target={TARGET}>
         { MENU_HEADERS.SCHEDULE_A_CALL }
       </ScheduleACallWhite>
     </MenuItemsWrapper>

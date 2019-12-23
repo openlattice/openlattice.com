@@ -24,7 +24,10 @@ const MENU_ROUTES :Object = {
   SCHEDULE_A_CALL: scheduleACallLink
 };
 
+const TARGET = '_blank';
+
 export {
   MENU_HEADERS,
-  MENU_ROUTES
+  MENU_ROUTES,
+  TARGET
 };
