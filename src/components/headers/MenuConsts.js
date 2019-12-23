@@ -18,7 +18,7 @@ const MENU_ROUTES :Object = {
   ABOUT: Routes.ABOUT,
   WORKING_WITH_US: Routes.WORKING_WITH_US,
   PLATFORM: Routes.PLATFORM,
-  PRODUCTS: Routes.PRODUCTS,
+  PRODUCTS: Routes.PRODUCTS_NEW,
   HELP_CENTER: helpCenterLink,
   ROOT: Routes.ROOT,
   SCHEDULE_A_CALL: scheduleACallLink
