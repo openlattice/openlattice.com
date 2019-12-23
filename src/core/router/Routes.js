@@ -11,8 +11,12 @@ export const PLATFORM :string = '/platform';
 
 export const CARE :string = `${PRODUCTS}/care`;
 export const PCM :string = `${PRODUCTS}/pretrialcasemanagement`;
+export const RESEARCH_HUB :string = `${PRODUCTS}/researchhub`;
 export const OTHER_PRODUCTS :string = `${PRODUCTS}/otherproducts`;
 
 export const GALLERY :string = `${PLATFORM}/gallery`;
 export const ORGANIZATIONS :string = `${PLATFORM}/organizations`;
 export const OTHER_SERVICES :string = `${PLATFORM}/otherservices`;
+
+export const TERMS_OF_SERVICE :string = '/termsofservice';
+export const PRIVACY_POLICY :string = '/privacypolicy';
