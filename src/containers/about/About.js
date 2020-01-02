@@ -5,9 +5,11 @@
 import React from 'react';
 
 import AboutIntro from './AboutIntro';
-import MissionSection from './MissionSection';
-import MeetTheTeam from './MeetTheTeam';
+import ContactUsSection from '../contactus/ContactUsSection';
+import FooterSectionWithPageLinks from '../footer/FooterSectionWithPageLinks';
 import InvestorsSection from './InvestorsSection';
+import MeetTheTeam from './MeetTheTeam';
+import MissionSection from './MissionSection';
 
 const About = () => (
   <>
@@ -15,6 +17,8 @@ const About = () => (
     <MissionSection />
     <MeetTheTeam />
     <InvestorsSection />
+    <ContactUsSection />
+    <FooterSectionWithPageLinks />
   </>
 );
 
