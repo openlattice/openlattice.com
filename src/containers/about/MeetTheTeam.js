@@ -119,17 +119,29 @@ const MeetTheTeam = () => (
           <TeamMember>
             <TeamMemberPhoto headshot={TEAM_PHOTOS.MATTHEW} />
             <TeamMemberName>{TEAM_NAMES.MATTHEW}</TeamMemberName>
-            <TeamMemberRole>{TEAM_ROLES.MATTHEW}</TeamMemberRole>
+            <TeamMemberRole>
+              Founder &
+              <br />
+              {TEAM_ROLES.MATTHEW}
+            </TeamMemberRole>
           </TeamMember>
           <TeamMember>
             <TeamMemberPhoto headshot={TEAM_PHOTOS.HRISTO} />
             <TeamMemberName>{TEAM_NAMES.HRISTO}</TeamMemberName>
-            <TeamMemberRole>{TEAM_ROLES.HRISTO}</TeamMemberRole>
+            <TeamMemberRole>
+              Co-founder &
+              <br />
+              {TEAM_ROLES.HRISTO}
+            </TeamMemberRole>
           </TeamMember>
           <TeamMember>
             <TeamMemberPhoto headshot={TEAM_PHOTOS.KATHERINE} />
             <TeamMemberName>{TEAM_NAMES.KATHERINE}</TeamMemberName>
-            <TeamMemberRole>{TEAM_ROLES.KATHERINE}</TeamMemberRole>
+            <TeamMemberRole>
+              Co-founder &
+              <br />
+              {TEAM_ROLES.KATHERINE}
+            </TeamMemberRole>
           </TeamMember>
           <TeamMember>
             <TeamMemberPhoto headshot={TEAM_PHOTOS.KIM} />
