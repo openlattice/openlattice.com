@@ -8,6 +8,7 @@ import OlLogo from '../../assets/logos/ol-logo-header.svg';
 import { ScheduleACallWhite } from '../controls/index';
 import { MENU_HEADERS, MENU_ROUTES, TARGET } from './MenuConsts';
 import { NEUTRALS } from '../../core/style/Colors';
+import { MEDIA_QUERY_MD } from '../../core/style/Sizes';
 
 const menuActiveColor = {
   color: NEUTRALS.GRAY_06
@@ -19,6 +20,11 @@ const menuItemStyles = css`
   line-height: 150%;
   margin-right: 40px;
   text-decoration: none;
+
+  @media only screen and (max-width: ${MEDIA_QUERY_MD}px) {
+    margin-bottom: 20px;
+    margin-right: 0;
+  }
 `;
 
 const MenuWrapper = styled.div`
@@ -27,6 +33,11 @@ const MenuWrapper = styled.div`
   justify-content: space-between;
   margin: 0;
   max-width: 100%;
+
+  @media only screen and (max-width: ${MEDIA_QUERY_MD}px) {
+    flex-direction: column;
+    justify-content: center;
+  }
 `;
 
 const MenuItemsWrapper = styled.div`
@@ -34,6 +45,12 @@ const MenuItemsWrapper = styled.div`
   display: flex;
   font-size: 14px;
   justify-content: space-between;
+
+  @media only screen and (max-width: ${MEDIA_QUERY_MD}px) {
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 20px;
+  }
 `;
 
 const MenuInternalLink = styled(NavLink)`
