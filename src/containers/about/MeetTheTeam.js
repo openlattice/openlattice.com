@@ -22,6 +22,7 @@ const Content = styled.div`
   width: 100%;
 
   @media only screen and (min-width: ${MEDIA_QUERY_MD}px) {
+    margin-bottom: 220px;
     width: 1104px;
   }
 `;
