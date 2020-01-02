@@ -19,7 +19,6 @@ const Content = styled.div`
   justify-content: center;
   margin: 0 auto 0 auto;
   text-align: center;
-  /* width: 100%; */
 
   @media only screen and (min-width: ${MEDIA_QUERY_MD}px) {
     margin-bottom: 196px;
