@@ -19,10 +19,10 @@ const Content = styled.div`
   justify-content: center;
   margin: 0 auto 0 auto;
   text-align: center;
-  width: 100%;
+  /* width: 100%; */
 
   @media only screen and (min-width: ${MEDIA_QUERY_MD}px) {
-    margin-bottom: 220px;
+    margin-bottom: 196px;
     width: 1104px;
   }
 `;
@@ -88,7 +88,11 @@ const TeamMembersOuterWrapper = styled.div`
   flex-direction: row;
   justify-content: center;
   margin: auto;
-  max-width: 1104px;
+  max-width: 100%;
+
+  @media only screen and (min-width: ${MEDIA_QUERY_MD}px) {
+    width: 1104px;
+  }
 `;
 
 const TeamMembersInnerWrapper = styled.div`
