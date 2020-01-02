@@ -17,7 +17,7 @@ const SectionContent = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: center;
-  margin: 0 auto 0 auto;
+  margin: 40px auto 40px auto;
   max-width: 100%;
   text-align: center;
 
@@ -38,6 +38,8 @@ const Message = styled.div`
 
   @media only screen and (max-width: ${MEDIA_QUERY_MD}px) {
     margin-bottom: 30px;
+    font-size: 18px;
+    width: auto;
   }
 `;
 
