@@ -16,7 +16,12 @@ import {
   FEATURE_TITLES
 } from './features/FeaturesConsts';
 import { NEUTRALS } from '../../core/style/Colors';
-import { CONTENT_WIDTH, MEDIA_QUERY_LG, MEDIA_QUERY_MD } from '../../core/style/Sizes';
+import {
+  CONTENT_WIDTH,
+  MEDIA_QUERY_LG,
+  MEDIA_QUERY_MD,
+  MEDIA_QUERY_TECH_SM
+} from '../../core/style/Sizes';
 
 const Content = styled.div`
   align-items: center;
@@ -38,16 +43,25 @@ const TextWrapper = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: center;
-  width: 528px;
+  width: 100%;
+
+  @media only screen and (min-width: ${MEDIA_QUERY_MD}px) {
+    width: 528px;
+  }
 `;
 
 const TextSection = styled.div`
   color: ${NEUTRALS.GRAY_07};
-  font-size: 18px;
+  font-size: 14px;
   line-height: 150%;
-  margin-bottom: 104px;
+  margin-bottom: 48px;
   text-align: center;
   width: 100%;
+
+  @media only screen and (min-width: ${MEDIA_QUERY_MD}px) {
+    font-size: 18px;
+    margin-bottom: 104px;
+  }
 `;
 
 const FeatureTilesOuterWrapper = styled.div`
@@ -57,6 +71,10 @@ const FeatureTilesOuterWrapper = styled.div`
   justify-content: center;
   margin: auto;
   max-width: ${CONTENT_WIDTH}px;
+
+  @media only screen and (max-width: ${MEDIA_QUERY_TECH_SM}px) {
+    margin: 0 -24px;
+  }
 `;
 
 const FeatureTilesInnerWrapper = styled.div`
