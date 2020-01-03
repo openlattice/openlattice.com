@@ -28,6 +28,11 @@ const Icon = styled.img`
   position: absolute;
   right: 143px;
   top: 40px;
+
+  @media only screen and (max-width: ${MEDIA_QUERY_TECH_SM}px) {
+    left: 101px;
+    right: 101px;
+  }
 `;
 
 const Title = styled.div`
@@ -43,6 +48,10 @@ const Title = styled.div`
   right: 0;
   text-align: center;
   top: 122px;
+
+  @media only screen and (max-width: ${MEDIA_QUERY_TECH_SM}px) {
+    font-size: 18px;
+  }
 `;
 
 const Body = styled.div`
@@ -55,13 +64,23 @@ const Body = styled.div`
   right: 32px;
   text-align: center;
   top: 174px;
+
+  @media only screen and (max-width: ${MEDIA_QUERY_TECH_SM}px) {
+    font-size: 12px;
+  }
 `;
 
 const TileLearnMoreButton = styled(LearnMoreInternalLink)`
   bottom: 40px;
-  position: absolute;
   left: 106px;
+  position: absolute;
   right: 107px;
+
+  @media only screen and (max-width: ${MEDIA_QUERY_TECH_SM}px) {
+    font-size: 12px;
+    left: 70px;
+    right: 70px;
+  }
 `;
 
 type Props = {
