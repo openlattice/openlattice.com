@@ -3,6 +3,7 @@
  */
 
 import React from 'react';
+import styled from 'styled-components';
 
 import PageSection from '../../components/layout/NewPageSection';
 
@@ -12,13 +13,17 @@ import { ScheduleACallPurple } from '../../components/controls/index';
 import { NEUTRALS } from '../../core/style/Colors';
 import { scheduleACallLink, TARGET } from '../../components/headers/MenuConsts';
 
+const PageIntroWrapper = styled(PageIntro)`
+  width: 855px;
+`;
+
 const PlatformIntro = () => (
   <PageSection bgColor={NEUTRALS.GRAY_05} includeMenu>
     <Content>
       <PageTitle>Platform</PageTitle>
-      <PageIntro>
+      <PageIntroWrapper>
         Built from scratch to meet industry requirements.
-      </PageIntro>
+      </PageIntroWrapper>
       <PageDescriptionWrapper>
         {`We understand the difficulty of working with various regulations and compliances,
           so we’re taking care of that for you.`}
