@@ -8,7 +8,7 @@ import type { Node } from 'react';
 
 import AppMenu from '../headers/AppMenu';
 
-import { MEDIA_QUERY_MD, PAGE_SECTION_WIDTH, WINDOW_EDGE_PADDING } from '../../core/style/Sizes';
+import { MEDIA_QUERY_MD, PAGE_SECTION_WIDTH } from '../../core/style/Sizes';
 
 /*
  * styled components
@@ -51,10 +51,6 @@ export const PageSectionInnerWrapper = styled.div`
   margin: 24px 32px 0 32px;
   position: relative;
   width: 100%;
-
-  @media only screen and (max-width: ${MEDIA_QUERY_MD}px) {
-    padding: 0 ${WINDOW_EDGE_PADDING}px;
-  }
 
   @media only screen and (min-width: ${MEDIA_QUERY_MD}px) {
     align-items: stretch;
