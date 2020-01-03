@@ -7,7 +7,7 @@ import styled from 'styled-components';
 
 import { SectionHeader } from '../../../components/headers/PageHeaders';
 import { NEUTRALS } from '../../../core/style/Colors';
-import { MEDIA_QUERY_TECH_SM } from '../../../core/style/Sizes';
+import { MEDIA_QUERY_MD, MEDIA_QUERY_TECH_SM } from '../../../core/style/Sizes';
 
 const ItemWrapper = styled.div`
   align-items: center;
@@ -28,6 +28,11 @@ const ItemWrapper = styled.div`
 const Icon = styled.img`
   height: 96px;
   width: 96px;
+
+  @media only screen and (max-width: ${MEDIA_QUERY_TECH_SM}px) {
+    height: 48px;
+    width: 48px;
+  }
 `;
 
 const TextWrapper = styled.div`
@@ -36,6 +41,10 @@ const TextWrapper = styled.div`
   flex-direction: column;
   justify-content: flex-start;
   width: 384px;
+
+  @media only screen and (max-width: ${MEDIA_QUERY_TECH_SM}px) {
+    width: 270px;
+  }
 `;
 
 const ItemTitle = styled(SectionHeader)`
@@ -43,6 +52,14 @@ const ItemTitle = styled(SectionHeader)`
   font-size: 18px;
   text-align: left;
   margin-bottom: 8px;
+
+  @media only screen and (min-width: ${MEDIA_QUERY_MD}px) {
+    font-size: 18px;
+  }
+
+  @media only screen and (max-width: ${MEDIA_QUERY_MD}px) {
+    font-size: 16px;
+  }
 `;
 
 const Body = styled.div`
@@ -51,6 +68,10 @@ const Body = styled.div`
   font-weight: normal;
   line-height: 150%;
   text-align: left;
+
+  @media only screen and (max-width: ${MEDIA_QUERY_TECH_SM}px) {
+    font-size: 12px;
+  }
 `;
 
 type Props = {
