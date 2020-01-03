@@ -12,7 +12,7 @@ import GrayOLLogo from '../../assets/logos/ol-gray-logo.svg';
 
 import * as Routes from '../../core/router/Routes';
 import { NEUTRALS, PINKS } from '../../core/style/Colors';
-import { MEDIA_QUERY_MD } from '../../core/style/Sizes';
+import { MEDIA_QUERY_MD, MEDIA_QUERY_TECH_SM } from '../../core/style/Sizes';
 import { helpCenterLink, TARGET } from '../../components/headers/MenuConsts';
 
 const { getStyleVariation } = StyleUtils;
@@ -69,6 +69,10 @@ const Header = styled.div`
   font-size: 20px;
   font-weight: 600;
   line-height: 150%;
+
+  @media only screen and (max-width: ${MEDIA_QUERY_TECH_SM}px) {
+    font-size: 18px;
+  }
 `;
 
 const HeaderWithTag = styled.div`
@@ -104,6 +108,10 @@ const linkStyles = css`
 
   :first-of-type {
     margin-top: 14px;
+  }
+
+  @media only screen and (max-width: ${MEDIA_QUERY_TECH_SM}px) {
+    font-size: 14px;
   }
 `;
 
