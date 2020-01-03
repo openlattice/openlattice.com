@@ -31,6 +31,10 @@ const Content = styled.div`
   }
 `;
 
+const PageIntroWrapper = styled(PageIntro)`
+  width: 855px;
+`;
+
 const PageDescriptionWrapper = styled(PageDescription)`
   width: 624px;
 `;
@@ -39,9 +43,9 @@ const PlatformIntro = () => (
   <PageSection bgColor={NEUTRALS.GRAY_05} includeMenu>
     <Content>
       <PageTitle>Platform</PageTitle>
-      <PageIntro>
+      <PageIntroWrapper>
         Built from scratch to meet industry requirements.
-      </PageIntro>
+      </PageIntroWrapper>
       <PageDescriptionWrapper>
         {`We understand the difficulty of working with various regulations and compliances,
           so we’re taking care of that for you.`}

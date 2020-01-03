@@ -54,7 +54,7 @@ export const PageSectionInnerWrapper = styled.div`
 
   @media only screen and (min-width: ${MEDIA_QUERY_MD}px) {
     align-items: stretch;
-    width: ${PAGE_SECTION_WIDTH}px;
+    width: 100%;
   }
 `;
 
