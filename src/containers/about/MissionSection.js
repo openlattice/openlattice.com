@@ -17,14 +17,16 @@ const MissionContent = styled.div`
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  margin: 400px auto 100px auto;
 
   @media only screen and (min-width: ${MEDIA_QUERY_MD}px) {
+    margin: 401px auto 216px auto;
     width: 1104px;
   }
 
-  @media only screen and (min-width: ${MEDIA_QUERY_LG}px) {
+  /* @media only screen and (max-width: ${MEDIA_QUERY_MD}px) {
     margin: 401px auto 216px auto;
-  }
+  } */
 `;
 
 const ContentBlock = styled.div`
@@ -32,6 +34,10 @@ const ContentBlock = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+
+  @media only screen and (max-width: ${MEDIA_QUERY_MD}px) {
+    height: 700px;
+  }
 
   @media only screen and (min-width: ${MEDIA_QUERY_LG}px) {
     height: 948px;
@@ -48,6 +54,10 @@ const Text = styled.div`
   line-height: 150%;
   text-align: left;
   width: 480px;
+
+  @media only screen and (max-width: ${MEDIA_QUERY_MD}px) {
+    width: 100%;
+  }
 `;
 
 const Image = styled.div`
@@ -55,8 +65,13 @@ const Image = styled.div`
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
-  height: 100%;
-  width: 100%;
+  height: 417px;
+  width: 360px;
+
+  @media only screen and (min-width: ${MEDIA_QUERY_MD}px) {
+    height: 417px;
+    width: 360px;
+  }
 
   @media only screen and (min-width: ${MEDIA_QUERY_LG}px) {
     height: 556px;
