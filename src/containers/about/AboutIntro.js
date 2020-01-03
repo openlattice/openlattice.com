@@ -11,7 +11,7 @@ import StockImage from '../../assets/images/about-stock-photo.png';
 import { PageIntro } from '../../components/headers/PageHeaders';
 import { Content } from '../../components/layout/IntroComponents';
 import { NEUTRALS } from '../../core/style/Colors';
-import { MEDIA_QUERY_LG } from '../../core/style/Sizes';
+import { MEDIA_QUERY_LG, MEDIA_QUERY_MD } from '../../core/style/Sizes';
 
 const AboutContent = styled(Content)`
   @media only screen and (min-width: ${MEDIA_QUERY_LG}px) {
@@ -36,6 +36,10 @@ const AboutStockImage = styled.div`
   top: 514px;
   width: 100%;
   z-index: 1000;
+
+  @media only screen and (max-width: ${MEDIA_QUERY_MD}px) {
+    top: 400px;
+  }
 
   @media only screen and (min-width: ${MEDIA_QUERY_LG}px) {
     height: 575px;
