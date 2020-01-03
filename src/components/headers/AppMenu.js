@@ -16,12 +16,14 @@ const menuActiveColor = {
 
 const menuItemStyles = css`
   color: ${NEUTRALS.GRAY_08};
+  font-size: 14px;
   font-weight: 500;
   line-height: 150%;
   margin-right: 40px;
   text-decoration: none;
 
   @media only screen and (max-width: ${MEDIA_QUERY_MD}px) {
+    font-size: 12px;
     margin-bottom: 20px;
     margin-right: 0;
   }
@@ -43,7 +45,6 @@ const MenuWrapper = styled.div`
 const MenuItemsWrapper = styled.div`
   align-items: center;
   display: flex;
-  font-size: 14px;
   justify-content: space-between;
 
   @media only screen and (max-width: ${MEDIA_QUERY_MD}px) {
