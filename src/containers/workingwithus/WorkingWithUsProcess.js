@@ -48,10 +48,6 @@ const PageContent = styled.div`
     margin: 200px auto;
     width: 1097px;
   }
-
-  @media only screen and (max-width: ${MEDIA_QUERY_TECH_SM}px) {
-    padding: 0 30px;
-  }
 `;
 
 const SectionDescription = styled.div`
