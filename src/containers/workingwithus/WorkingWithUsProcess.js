@@ -12,7 +12,7 @@ import { SectionHeader } from '../../components/headers/PageHeaders';
 import { LearnMoreExternalLink } from '../../components/controls/index';
 import { TARGET } from '../../components/headers/MenuConsts';
 import { NEUTRALS, PURPLES } from '../../core/style/Colors';
-import { MEDIA_QUERY_LG } from '../../core/style/Sizes';
+import { MEDIA_QUERY_LG, MEDIA_QUERY_MD } from '../../core/style/Sizes';
 import { WORKING_WITH_US_DESCRIPTIONS, WORKING_WITH_US_GRAPHICS, WORKING_WITH_US_STEPS } from './WorkingWithUsConsts';
 
 const { getStyleVariation } = StyleUtils;
@@ -26,6 +26,7 @@ const getAlignSelfStyle = getStyleVariation('align', {
 
 const getMarginTop = getStyleVariation('marginTop', {
   default: '0',
+  huge: '66px',
   large: '24px',
   medium: '17px',
   small: '7px'
@@ -69,10 +70,17 @@ const ListItemOuterWrapper = styled.div`
   justify-content: flex-start;
   margin-top: ${getMarginTop};
   width: 100%;
+
+  @media only screen and (max-width: ${MEDIA_QUERY_MD}px) {
+    margin-top: 0;
+    margin-bottom: 40px;
+  }
 `;
 
 const NumberOneOuterWrapper = styled(ListItemOuterWrapper)`
-  height: 408px;
+  @media only screen and (min-width: ${MEDIA_QUERY_MD}px) {
+    height: 408px;
+  }
 `;
 
 const ListItemInnerWrapper = styled.div`
@@ -81,6 +89,10 @@ const ListItemInnerWrapper = styled.div`
   justify-content: space-between;
   height: 100%;
   width: 100%;
+
+  @media only screen and (max-width: ${MEDIA_QUERY_MD}px) {
+    flex-direction: column;
+  }
 `;
 
 const ListNumberAndTextWrapper = styled.div`
@@ -90,6 +102,10 @@ const ListNumberAndTextWrapper = styled.div`
   justify-content: space-between;
   margin-top: ${getMarginTop};
   width: 576px;
+
+  @media only screen and (max-width: ${MEDIA_QUERY_MD}px) {
+    margin-bottom: 40px;
+  }
 `;
 
 const NumberWrapper = styled.div`
@@ -121,6 +137,11 @@ const NumberLine = styled.div`
   height: 299px;
   margin-left: 50%;
   width: 0;
+
+  @media only screen and (max-width: ${MEDIA_QUERY_MD}px) {
+    border: 0;
+    height: 0;
+  }
 `;
 
 const TextWrapper = styled.div`
@@ -131,7 +152,13 @@ const TextWrapper = styled.div`
 `;
 
 const Graphic = styled.img`
-  align-self: ${getAlignSelfStyle};
+  align-self: flex-start;
+  margin-top: ${getMarginTop};
+
+  @media only screen and (max-width: ${MEDIA_QUERY_MD}px) {
+    align-self: center;
+    margin-top: 0;
+  }
 `;
 
 const ListItemTitle = styled(SectionHeader)`
@@ -176,18 +203,20 @@ const WorkingWithUsProcess = () => (
           </ListItemInnerWrapper>
         </NumberOneOuterWrapper>
         <ListItemOuterWrapper marginTop="large">
-          <NumberWrapper>
-            <NumberBubble>2</NumberBubble>
-            <NumberLine />
-          </NumberWrapper>
           <ListItemInnerWrapper>
-            <TextWrapper>
-              <ListItemTitle>{ WORKING_WITH_US_STEPS.DATA_SHARING_AGREEMENTS }</ListItemTitle>
-              <ListItemDescription>
-                { WORKING_WITH_US_DESCRIPTIONS.DATA_SHARING_AGREEMENTS }
-              </ListItemDescription>
-            </TextWrapper>
-            <Graphic src={WORKING_WITH_US_GRAPHICS.DATA_SHARING_AGREEMENTS} alt="" align="center" />
+            <ListNumberAndTextWrapper>
+              <NumberWrapper>
+                <NumberBubble>2</NumberBubble>
+                <NumberLine />
+              </NumberWrapper>
+              <TextWrapper>
+                <ListItemTitle>{ WORKING_WITH_US_STEPS.DATA_SHARING_AGREEMENTS }</ListItemTitle>
+                <ListItemDescription>
+                  { WORKING_WITH_US_DESCRIPTIONS.DATA_SHARING_AGREEMENTS }
+                </ListItemDescription>
+              </TextWrapper>
+            </ListNumberAndTextWrapper>
+            <Graphic src={WORKING_WITH_US_GRAPHICS.DATA_SHARING_AGREEMENTS} alt="" align="start" marginTop="huge" />
           </ListItemInnerWrapper>
         </ListItemOuterWrapper>
         <ListItemOuterWrapper>
