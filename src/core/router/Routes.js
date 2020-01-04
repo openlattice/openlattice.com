@@ -19,4 +19,4 @@ export const ORGANIZATIONS :string = `${PLATFORM}/organizations`;
 export const OTHER_SERVICES :string = `${PLATFORM}/otherservices`;
 
 export const TERMS_OF_SERVICE :string = '/termsofservice';
-export const PRIVACY_POLICY :string = '/privacypolicy';
+export const PRIVACY_POLICY :string = '/privacy';
