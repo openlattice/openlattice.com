@@ -12,7 +12,7 @@ import { SectionHeader } from '../../components/headers/PageHeaders';
 import { LearnMoreExternalLink } from '../../components/controls/index';
 import { TARGET } from '../../components/headers/MenuConsts';
 import { NEUTRALS, PURPLES } from '../../core/style/Colors';
-import { MEDIA_QUERY_LG, MEDIA_QUERY_MD } from '../../core/style/Sizes';
+import { MEDIA_QUERY_LG, MEDIA_QUERY_MD, MEDIA_QUERY_TECH_SM } from '../../core/style/Sizes';
 import { WORKING_WITH_US_DESCRIPTIONS, WORKING_WITH_US_GRAPHICS, WORKING_WITH_US_STEPS } from './WorkingWithUsConsts';
 
 const { getStyleVariation } = StyleUtils;
@@ -48,6 +48,10 @@ const PageContent = styled.div`
     margin: 200px auto;
     width: 1097px;
   }
+
+  @media only screen and (max-width: ${MEDIA_QUERY_TECH_SM}px) {
+    padding: 0 30px;
+  }
 `;
 
 const SectionDescription = styled.div`
@@ -57,6 +61,11 @@ const SectionDescription = styled.div`
   margin-bottom: 40px;
   text-align: center;
   width: 528px;
+
+  @media only screen and (max-width: ${MEDIA_QUERY_TECH_SM}px) {
+    font-size: 14px;
+    width: 100%;
+  }
 `;
 
 const ListWrapper = styled.div`
@@ -106,6 +115,10 @@ const ListNumberAndTextWrapper = styled.div`
   @media only screen and (max-width: ${MEDIA_QUERY_MD}px) {
     margin-bottom: 40px;
   }
+
+  @media only screen and (max-width: ${MEDIA_QUERY_TECH_SM}px) {
+    width: 100%;
+  }
 `;
 
 const NumberWrapper = styled.div`
@@ -113,6 +126,10 @@ const NumberWrapper = styled.div`
   ${columnFlex}
   justify-content: center;
   margin-right: 56px;
+
+  @media only screen and (max-width: ${MEDIA_QUERY_TECH_SM}px) {
+    margin-right: 28px;
+  }
 `;
 
 const NumberBubble = styled.div`
@@ -129,6 +146,12 @@ const NumberBubble = styled.div`
   margin-bottom: 24px;
   text-align: center;
   width: 40px;
+
+  @media only screen and (max-width: ${MEDIA_QUERY_TECH_SM}px) {
+    font-size: 16px;
+    height: 30px;
+    width: 30px;
+  }
 `;
 
 const NumberLine = styled.div`
@@ -149,6 +172,10 @@ const TextWrapper = styled.div`
   ${columnFlex}
   justify-content: center;
   width: 480px;
+
+  @media only screen and (max-width: ${MEDIA_QUERY_TECH_SM}px) {
+    width: 100%;
+  }
 `;
 
 const Graphic = styled.img`
@@ -158,6 +185,11 @@ const Graphic = styled.img`
   @media only screen and (max-width: ${MEDIA_QUERY_MD}px) {
     align-self: center;
     margin-top: 0;
+  }
+
+  @media only screen and (max-width: ${MEDIA_QUERY_TECH_SM}px) {
+    height: 100%;
+    width: 100%;
   }
 `;
 
@@ -174,6 +206,10 @@ const ListItemDescription = styled.div`
   line-height: 150%;
   text-align: left;
   width: 100%;
+
+  @media only screen and (max-width: ${MEDIA_QUERY_TECH_SM}px) {
+    font-size: 14px;
+  }
 `;
 
 const WorkingWithUsProcess = () => (
