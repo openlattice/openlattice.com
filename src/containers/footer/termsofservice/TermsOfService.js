@@ -352,7 +352,6 @@ const TermsOfService = () => (
         </BodyTextWrapper>
       </Content>
     </PageSection>
-    <ContactUsSection />
     <FooterSectionWithPageLinks />
   </>
 );
