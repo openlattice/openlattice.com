@@ -180,7 +180,7 @@ const TermsOfService = () => (
             <FakeBulletedList>
               {
                 ITEM_2.MAIN_BULLET_POINTS.slice(0, 3).map((text :string) => (
-                  <ListItem>
+                  <ListItem key={text}>
                     <BulletWrapper>
                       <Bullet />
                     </BulletWrapper>
@@ -192,7 +192,7 @@ const TermsOfService = () => (
             <FakeInnerBulletedList>
               {
                 ITEM_2.INNER_BULLET_POINTS.map((text :string) => (
-                  <ListItem>
+                  <ListItem key={text}>
                     <BulletWrapper>
                       <Bullet />
                     </BulletWrapper>
@@ -204,7 +204,7 @@ const TermsOfService = () => (
             <FakeBulletedList>
               {
                 ITEM_2.MAIN_BULLET_POINTS.slice(3).map((text :string) => (
-                  <ListItem>
+                  <ListItem key={text}>
                     <BulletWrapper>
                       <Bullet />
                     </BulletWrapper>
