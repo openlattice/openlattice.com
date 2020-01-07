@@ -7,13 +7,12 @@ import styled, { css } from 'styled-components';
 import { NavLink } from 'react-router-dom';
 
 import PageSection from '../../../components/layout/NewPageSection';
-import ContactUsSection from '../../contactus/ContactUsSection';
 import FooterSectionWithPageLinks from '../FooterSectionWithPageLinks';
 
 import * as Routes from '../../../core/router/Routes';
 import { PageIntro } from '../../../components/headers/PageHeaders';
 import { NEUTRALS, PURPLES } from '../../../core/style/Colors';
-import { MEDIA_QUERY_LG } from '../../../core/style/Sizes';
+import { MEDIA_QUERY_LG, MEDIA_QUERY_TECH_SM } from '../../../core/style/Sizes';
 import { TARGET } from '../../../components/headers/MenuConsts';
 import {
   INTRODUCTION,
@@ -53,6 +52,10 @@ const Content = styled.div`
 const sharedTextStyles = css`
   font-size: 16px;
   line-height: 150%;
+
+  @media only screen and (max-width: ${MEDIA_QUERY_TECH_SM}px) {
+    font-size: 14px;
+  }
 `;
 
 const LastUpdated = styled.div`
@@ -65,6 +68,10 @@ const LastUpdated = styled.div`
 const BodyTextWrapper = styled.div`
   width: 720px;
   margin-bottom: 104px;
+
+  @media only screen and (max-width: ${MEDIA_QUERY_TECH_SM}px) {
+    width: 100%;
+  }
 `;
 
 const BodyText = styled.div`
@@ -104,7 +111,10 @@ const FakeBulletedList = styled.div`
 `;
 const FakeInnerBulletedList = styled.div`
   margin-left: 34px;
-  width: 100%;
+
+  @media only screen and (max-width: ${MEDIA_QUERY_TECH_SM}px) {
+    margin-left: 24px;
+  }
 `;
 
 const ListItem = styled.div`
@@ -133,6 +143,11 @@ const Bullet = styled.div`
   margin-right: 16px;
   margin-top: 9px;
   width: 8px;
+
+  @media only screen and (max-width: ${MEDIA_QUERY_TECH_SM}px) {
+    height: 6px;
+    width: 6px;
+  }
 `;
 
 const TermsOfService = () => (
