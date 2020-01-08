@@ -16,12 +16,14 @@ import OtherProductsPage from '../products/OtherProductsPage';
 import OtherServicesPage from '../platform/OtherServicesPage';
 import PCMProductPage from '../products/PCMProductPage';
 import Platform from '../platform/Platform';
+import PrivacyPolicy from '../footer/privacy/PrivacyPolicy';
 import ProductsPage from '../products/ProductsPage';
 import TermsOfService from '../footer/termsofservice/TermsOfService';
 import WorkingWithUs from '../workingwithus/WorkingWithUs';
 
 const AppContainer = () => (
   <Switch>
+    <Route exact path={Routes.PRIVACY_POLICY} component={PrivacyPolicy} />
     <Route exact path={Routes.TERMS_OF_SERVICE} component={TermsOfService} />
     <Route exact path={Routes.GALLERY} component={GalleryProductPage} />
     <Route exact path={Routes.OTHER_SERVICES} component={OtherServicesPage} />
