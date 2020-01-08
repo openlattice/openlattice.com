@@ -28,7 +28,7 @@ const Content = styled.div`
   text-align: center;
 
   @media only screen and (min-width: ${MEDIA_QUERY_LG}px) {
-    margin: 109px auto 363px auto;
+    margin: 128px auto 204px auto;
   }
 `;
 
