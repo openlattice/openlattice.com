@@ -4,13 +4,15 @@
 
 import React from 'react';
 
-import IntroSection from './IntroSection';
+import Intro from './Intro';
 import ValueProps from './ValueProps';
+import Features from './Features';
 
 const AppHomePage = () => (
   <>
-    <IntroSection />
+    <Intro />
     <ValueProps />
+    <Features />
   </>
 );
 
