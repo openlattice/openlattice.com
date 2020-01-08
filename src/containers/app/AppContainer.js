@@ -8,7 +8,8 @@ import { Route, Switch } from 'react-router';
 import * as Routes from '../../core/router/Routes';
 
 import About from '../about/About';
-import AppHomePage from './AppHomePage';
+import AppHomePage from '../home/AppHomePage';
+import AppHomePageOld from './AppHomePage_OLD';
 import CareProductPage from '../products/CareProductPage';
 import GalleryProductPage from '../platform/GalleryProductPage';
 import OrganizationsProductPage from '../platform/OrganizationsProductPage';
@@ -31,6 +32,7 @@ const AppContainer = () => (
     <Route exact path={Routes.PLATFORM} component={Platform} />
     <Route exact path={Routes.WORKING_WITH_US} component={WorkingWithUs} />
     <Route exact path={Routes.ABOUT} component={About} />
+    <Route exact path={Routes.OLD_HOME} component={AppHomePageOld} />
     <Route component={AppHomePage} />
   </Switch>
 );
