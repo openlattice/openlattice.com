@@ -22,7 +22,6 @@ export const NEUTRALS = {
   GRAY_12: '#A6A6AC',
   GRAY_13: '#4D4D50',
   GRAY_14: '#39393E',
-  GRAY_15: '#F3F2F9',
   WHITE: '#ffffff',
 };
 
