@@ -6,7 +6,6 @@ import React from 'react';
 import styled from 'styled-components';
 import type { Element } from 'react';
 
-import PurpleMergeIcon from '../../assets/productfeatureicons/small-purple-merge.svg';
 import PageSection from '../../components/layout/NewPageSection';
 
 import { SectionHeader } from '../../components/headers/PageHeaders';
@@ -121,9 +120,9 @@ const Features = () => (
               <FeatureHeader>{ feature.TITLE }</FeatureHeader>
               <Description>{ feature.DESCRIPTION }</Description>
               {
-                feature.SUB_FEATURES.map((text :string) => (
+                feature.SUB_FEATURES.map((text :string, subIndex :number) => (
                   <SubFeatureWrapper key={text}>
-                    <img src={PurpleMergeIcon} alt="" />
+                    <img src={feature.ICONS[subIndex]} alt="" />
                     <SubFeatureText>{ text }</SubFeatureText>
                   </SubFeatureWrapper>
                 ))
