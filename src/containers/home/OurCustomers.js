@@ -101,10 +101,13 @@ const JurisdictionsOuterWrapper = styled.div`
   justify-content: space-between;
   margin: auto;
   margin-top: 80px;
-  max-width: 1102px;
 
   @media only screen and (max-width: ${MEDIA_QUERY_MD}px) {
     justify-content: center;
+  }
+
+  @media only screen and (min-width: ${MEDIA_QUERY_LG}px) {
+    width: 1102px;
   }
 `;
 
