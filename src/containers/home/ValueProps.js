@@ -41,7 +41,7 @@ const ValuePropsOuterWrapper = styled.div`
   width: 100%;
 
   @media only screen and (min-width: ${MEDIA_QUERY_MD}px) {
-    margin: 0 -24px;
+    margin: -24px -24px;
     width: ${CONTENT_WIDTH}px;
   }
 `;
@@ -76,6 +76,16 @@ const ValuePropWrapper = styled.div`
   @media only screen and (max-width: ${MEDIA_QUERY_TECH_SM}px) {
     margin-right: 0;
     margin-left: 0;
+  }
+
+  @media only screen and (min-width: ${MEDIA_QUERY_LG}px) {
+    :first-of-type {
+      margin-left: 0;
+    }
+
+    :last-of-type {
+      margin-right: 0;
+    }
   }
 `;
 
