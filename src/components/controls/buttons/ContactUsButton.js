@@ -3,7 +3,7 @@ import styled from 'styled-components';
 
 import { NEUTRALS, PURPLES } from '../../../core/style/Colors';
 
-const ScheduleACallWhite = styled.a`
+const ContactUsWhite = styled.a`
   border-radius: 23px;
   border: 1px solid ${PURPLES.PP08};
   color: ${PURPLES.PP08};
@@ -17,7 +17,7 @@ const ScheduleACallWhite = styled.a`
   white-space: nowrap;
 `;
 
-const ScheduleACallPurple = styled(ScheduleACallWhite)`
+const ContactUsPurple = styled(ContactUsWhite)`
   align-self: center;
   background-color: ${PURPLES.PP08};
   border: none;
@@ -25,6 +25,6 @@ const ScheduleACallPurple = styled(ScheduleACallWhite)`
 `;
 
 export {
-  ScheduleACallPurple,
-  ScheduleACallWhite
+  ContactUsPurple,
+  ContactUsWhite
 };
