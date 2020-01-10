@@ -8,9 +8,9 @@ import PageSection from '../../components/layout/NewPageSection';
 
 import { PageIntro, PageTitle } from '../../components/headers/PageHeaders';
 import { Content, PageDescriptionWrapper } from '../../components/layout/IntroComponents';
-import { ScheduleACallPurple } from '../../components/controls/index';
+import { ContactUsPurple } from '../../components/controls/index';
 import { NEUTRALS } from '../../core/style/Colors';
-import { scheduleACallLink, TARGET } from '../../components/headers/MenuConsts';
+import { contactUsLink, TARGET } from '../../components/headers/MenuConsts';
 
 const ProductsIntro = () => (
   <PageSection bgColor={NEUTRALS.GRAY_05} includeMenu>
@@ -23,11 +23,11 @@ const ProductsIntro = () => (
         {`Use data-driven workflows to accurately and efficiently identify problems,
           take necessary actions, and track outcomes.`}
       </PageDescriptionWrapper>
-      <ScheduleACallPurple
-          href={scheduleACallLink}
+      <ContactUsPurple
+          href={contactUsLink}
           target={TARGET}>
         Schedule a call
-      </ScheduleACallPurple>
+      </ContactUsPurple>
     </Content>
   </PageSection>
 );

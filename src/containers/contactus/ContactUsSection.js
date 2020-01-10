@@ -7,10 +7,10 @@ import styled from 'styled-components';
 
 import PageSection from '../../components/layout/PageSection';
 
-import { ScheduleACallPurple, ScheduleACallWhite } from '../../components/controls/index';
+import { ContactUsPurple, ContactUsWhite } from '../../components/controls/index';
 import { NEUTRALS } from '../../core/style/Colors';
 import { MEDIA_QUERY_MD } from '../../core/style/Sizes';
-import { scheduleACallLink, TARGET } from '../../components/headers/MenuConsts';
+import { contactUsLink, TARGET } from '../../components/headers/MenuConsts';
 
 const SectionContent = styled.div`
   align-items: center;
@@ -54,8 +54,8 @@ const ContactUsSection = () => (
         If you have a project in mind or just want to learn more, don’t hesitate to contact us.
       </Message>
       <ButtonGroup>
-        <ScheduleACallWhite>Send an email</ScheduleACallWhite>
-        <ScheduleACallPurple href={scheduleACallLink} target={TARGET}>Schedule a call</ScheduleACallPurple>
+        <ContactUsWhite>Send an email</ContactUsWhite>
+        <ContactUsPurple href={contactUsLink} target={TARGET}>Schedule a call</ContactUsPurple>
       </ButtonGroup>
     </SectionContent>
   </PageSection>

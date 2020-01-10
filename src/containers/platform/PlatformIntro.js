@@ -3,31 +3,55 @@
  */
 
 import React from 'react';
+import styled from 'styled-components';
 
 import PageSection from '../../components/layout/NewPageSection';
 
-import { PageIntro, PageTitle } from '../../components/headers/PageHeaders';
-import { Content, PageDescriptionWrapper } from '../../components/layout/IntroComponents';
-import { ScheduleACallPurple } from '../../components/controls/index';
+import { PageDescription, PageIntro } from '../../components/headers/PageHeaders';
+import { ContactUsPurple } from '../../components/controls/index';
 import { NEUTRALS } from '../../core/style/Colors';
-import { scheduleACallLink, TARGET } from '../../components/headers/MenuConsts';
+import { MEDIA_QUERY_MD, MEDIA_QUERY_LG } from '../../core/style/Sizes';
+import { contactUsLink, TARGET } from '../../components/headers/MenuConsts';
+
+const Content = styled.div`
+  align-items: center;
+  color: ${NEUTRALS.WHITE};
+  display: flex;
+  flex-direction: column;
+  margin: 50px auto 100px auto;
+  max-width: 100%;
+  text-align: center;
+  @media only screen and (min-width: ${MEDIA_QUERY_MD}px) {
+    max-width: 60%;
+  }
+  @media only screen and (min-width: ${MEDIA_QUERY_LG}px) {
+    margin: 144px auto 208px auto;
+  }
+`;
+
+const PageIntroWrapper = styled(PageIntro)`
+  width: 855px;
+`;
+
+const PageDescriptionWrapper = styled(PageDescription)`
+  width: 624px;
+`;
 
 const PlatformIntro = () => (
   <PageSection bgColor={NEUTRALS.GRAY_05} includeMenu>
     <Content>
-      <PageTitle>Platform</PageTitle>
-      <PageIntro>
+      <PageIntroWrapper>
         Built from scratch to meet industry requirements.
-      </PageIntro>
+      </PageIntroWrapper>
       <PageDescriptionWrapper>
         {`We understand the difficulty of working with various regulations and compliances,
           so we’re taking care of that for you.`}
       </PageDescriptionWrapper>
-      <ScheduleACallPurple
-          href={scheduleACallLink}
+      <ContactUsPurple
+          href={contactUsLink}
           target={TARGET}>
         Schedule a call
-      </ScheduleACallPurple>
+      </ContactUsPurple>
     </Content>
   </PageSection>
 );
