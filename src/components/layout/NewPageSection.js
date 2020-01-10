@@ -8,7 +8,7 @@ import type { Node } from 'react';
 
 import AppMenu from '../headers/AppMenu';
 
-import { MEDIA_QUERY_MD, PAGE_SECTION_WIDTH } from '../../core/style/Sizes';
+import { MEDIA_QUERY_MD } from '../../core/style/Sizes';
 
 /*
  * styled components
@@ -54,7 +54,7 @@ export const PageSectionInnerWrapper = styled.div`
 
   @media only screen and (min-width: ${MEDIA_QUERY_MD}px) {
     align-items: stretch;
-    width: ${PAGE_SECTION_WIDTH}px;
+    width: 100%;
   }
 `;
 
@@ -96,9 +96,7 @@ const PageSection = ({
       { bgComponent }
     </PageSectionBackgroundWrapper>
     <PageSectionInnerWrapper>
-      {
-        includeMenu && <AppMenu />
-      }
+      { includeMenu && <AppMenu /> }
       { children }
     </PageSectionInnerWrapper>
   </PageSectionOuterWrapper>
