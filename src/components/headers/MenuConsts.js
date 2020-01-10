@@ -3,25 +3,25 @@
 import * as Routes from '../../core/router/Routes';
 
 export const helpCenterLink :string = 'https://help.openlattice.com';
-export const scheduleACallLink :string = 'https://calendly.com/openlattice/openlattice-web-request';
+export const contactUsLink :string = 'https://calendly.com/openlattice/openlattice-web-request';
 
 const MENU_HEADERS :Object = {
   ABOUT: 'About',
-  WORKING_WITH_US: 'Working with us',
+  CONTACT_US: 'Contact us',
+  HELP_CENTER: 'Help Center',
   PLATFORM: 'Platform',
   PRODUCTS: 'Products',
-  HELP_CENTER: 'Help Center',
-  SCHEDULE_A_CALL: 'Schedule a Call'
+  WORKING_WITH_US: 'Working with us',
 };
 
 const MENU_ROUTES :Object = {
   ABOUT: Routes.ABOUT,
-  WORKING_WITH_US: Routes.WORKING_WITH_US,
+  CONTACT_US: contactUsLink,
+  HELP_CENTER: helpCenterLink,
   PLATFORM: Routes.PLATFORM,
   PRODUCTS: Routes.PRODUCTS_NEW,
-  HELP_CENTER: helpCenterLink,
   ROOT: Routes.ROOT,
-  SCHEDULE_A_CALL: scheduleACallLink
+  WORKING_WITH_US: Routes.WORKING_WITH_US,
 };
 
 const TARGET = '_blank';
