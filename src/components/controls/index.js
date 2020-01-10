@@ -1,9 +1,9 @@
-import { ScheduleACallPurple, ScheduleACallWhite } from './buttons/ScheduleACallButton';
+import { ContactUsPurple, ContactUsWhite } from './buttons/ContactUsButton';
 import { LearnMoreExternalLink, LearnMoreInternalLink } from './buttons/LearnMoreButton';
 
 export {
   LearnMoreExternalLink,
   LearnMoreInternalLink,
-  ScheduleACallPurple,
-  ScheduleACallWhite
+  ContactUsPurple,
+  ContactUsWhite
 };

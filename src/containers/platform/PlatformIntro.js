@@ -8,10 +8,10 @@ import styled from 'styled-components';
 import PageSection from '../../components/layout/NewPageSection';
 
 import { PageDescription, PageIntro, PageTitle } from '../../components/headers/PageHeaders';
-import { ScheduleACallPurple } from '../../components/controls/index';
+import { ContactUsPurple } from '../../components/controls/index';
 import { NEUTRALS } from '../../core/style/Colors';
 import { MEDIA_QUERY_MD, MEDIA_QUERY_LG } from '../../core/style/Sizes';
-import { scheduleACallLink, TARGET } from '../../components/headers/MenuConsts';
+import { contactUsLink, TARGET } from '../../components/headers/MenuConsts';
 
 const Content = styled.div`
   align-items: center;
@@ -50,11 +50,11 @@ const PlatformIntro = () => (
         {`We understand the difficulty of working with various regulations and compliances,
           so we’re taking care of that for you.`}
       </PageDescriptionWrapper>
-      <ScheduleACallPurple
-          href={scheduleACallLink}
+      <ContactUsPurple
+          href={contactUsLink}
           target={TARGET}>
         Schedule a call
-      </ScheduleACallPurple>
+      </ContactUsPurple>
     </Content>
   </PageSection>
 );
