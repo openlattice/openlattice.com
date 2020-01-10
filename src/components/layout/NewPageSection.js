@@ -8,7 +8,7 @@ import type { Node } from 'react';
 
 import AppMenu from '../headers/AppMenu';
 
-import { MEDIA_QUERY_MD, PAGE_SECTION_WIDTH } from '../../core/style/Sizes';
+import { MEDIA_QUERY_MD } from '../../core/style/Sizes';
 
 /*
  * styled components
@@ -96,9 +96,7 @@ const PageSection = ({
       { bgComponent }
     </PageSectionBackgroundWrapper>
     <PageSectionInnerWrapper>
-      {
-        includeMenu && <AppMenu />
-      }
+      { includeMenu && <AppMenu /> }
       { children }
     </PageSectionInnerWrapper>
   </PageSectionOuterWrapper>
