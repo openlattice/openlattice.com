@@ -3,7 +3,7 @@
  */
 
 import React, { Component } from 'react';
-import styled, { css, keyframes } from 'styled-components';
+import styled, { css } from 'styled-components';
 
 import RightArrow from '../../assets/svg/home/right-arrow.svg';
 import LeftArrow from '../../assets/svg/home/left-arrow.svg';
@@ -78,63 +78,6 @@ const ButtonCircle = styled.div`
   &:hover {
     cursor: pointer;
   }
-`;
-
-const fadeInAnimation = keyframes`
-  from {
-    opacity: 0.5;
-  }
-
-  to {
-    opacity: 1;
-  }
-`;
-
-const slideLeftAnimation = keyframes`
-  slide {
-    100% { left: 0; }
-  }
-`;
-
-const FadeInWrapper = styled.div`
-  @media only screen and (min-width: ${MEDIA_QUERY_LG}px) {
-    height: 374px;
-    width: 912px;
-  }
-`;
-
-const FadeInInnerWrapper = styled.div`
-  width: 100%;
-  height: 100%;
-  overflow: visible;
-  position: relative;
-`;
-
-const Mask = styled.div`
-  overflow: hidden;
-  width: 100%;
-  height: 100%;
-`;
-
-const FadeIn = styled.div`
-  animation-duration: 0.5s;
-  animation-iteration-count: 1;
-  animation-name: slide;
-  animation-direction: reverse;
-  animation-timing-function: ease-in;
-  position: absolute;
-  /* animation-duration: 1s;
-  animation-iteration-count: 1;
-  animation-name: ${fadeInAnimation};
-  animation-timing-function: ease-in; */
-  /* display: ${({ isVisible }) => (isVisible ? 'block' : 'none')}; */
-  display: block;
-  /* height: 912px; */
-  /* position: absolute; */
-  width: 912px;
-  /* top: 122px; */
-  /* left: 344px;
-  right: 344px; */
 `;
 
 type Props = {};
