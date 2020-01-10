@@ -8,10 +8,10 @@ import styled from 'styled-components';
 import PageSection from '../../components/layout/NewPageSection';
 
 import { PageDescription, PageIntro } from '../../components/headers/PageHeaders';
-import { ScheduleACallPurple } from '../../components/controls/index';
+import { ContactUsPurple } from '../../components/controls/index';
 import { NEUTRALS } from '../../core/style/Colors';
 import { MEDIA_QUERY_LG } from '../../core/style/Sizes';
-import { scheduleACallLink, TARGET } from '../../components/headers/MenuConsts';
+import { contactUsLink, TARGET } from '../../components/headers/MenuConsts';
 
 const Content = styled.div`
   align-items: center;
@@ -22,7 +22,7 @@ const Content = styled.div`
   text-align: center;
 
   @media only screen and (min-width: ${MEDIA_QUERY_LG}px) {
-    margin: 109px auto 363px auto;
+    margin: 159px auto 304px auto;
   }
 `;
 
@@ -44,11 +44,11 @@ const IntroSection = () => (
         {`Modern data infrastructure that removes data silos across agencies and
           organizations, saving lives, money, and time.`}
       </PageDescriptionWrapper>
-      <ScheduleACallPurple
-          href={scheduleACallLink}
+      <ContactUsPurple
+          href={contactUsLink}
           target={TARGET}>
         Schedule a call
-      </ScheduleACallPurple>
+      </ContactUsPurple>
     </Content>
   </PageSection>
 );
