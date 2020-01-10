@@ -112,6 +112,10 @@ const Line = styled.div`
 const SectionFooterInnerWrapper = styled(LinksWrapper)`
   align-items: center;
   margin: 0;
+
+  @media only screen and (min-width: ${MEDIA_QUERY_MD}px) {
+    margin: 0;
+  }
 `;
 
 const Copyright = styled.div`
