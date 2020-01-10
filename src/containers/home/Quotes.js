@@ -11,7 +11,7 @@ import PageSection from '../../components/layout/NewPageSection';
 
 import { DAVID_SCHWINDT, RANDOM, RANDOM_2 } from './QuotesConsts';
 import { NEUTRALS } from '../../core/style/Colors';
-import { MEDIA_QUERY_LG } from '../../core/style/Sizes';
+import { MEDIA_QUERY_LG, MEDIA_QUERY_TECH_SM } from '../../core/style/Sizes';
 
 const QUOTES :Object[] = [
   DAVID_SCHWINDT,
@@ -42,6 +42,12 @@ const QuoteWrapper = styled.div`
     height: 374px;
     width: 912px;
   }
+
+  @media only screen and (max-width: ${MEDIA_QUERY_TECH_SM}px) {
+    height: 338px;
+    margin: 0 10px;
+    width: 100%;
+  }
 `;
 
 const sharedTextStyles = css`
@@ -53,12 +59,20 @@ const Quote = styled.div`
   font-size: 32px;
   margin-bottom: 80px;
   ${sharedTextStyles}
+
+  @media only screen and (max-width: ${MEDIA_QUERY_TECH_SM}px) {
+    font-size: 18px;
+  }
 `;
 
 const Name = styled.div`
   font-size: 18px;
   font-weight: 600;
   ${sharedTextStyles}
+
+  @media only screen and (max-width: ${MEDIA_QUERY_TECH_SM}px) {
+    font-size: 14px;
+  }
 `;
 
 const Org = styled(Name)`
@@ -77,6 +91,19 @@ const ButtonCircle = styled.div`
 
   &:hover {
     cursor: pointer;
+  }
+
+  @media only screen and (max-width: ${MEDIA_QUERY_TECH_SM}px) {
+    height: 20px;
+    margin-bottom: 18px;
+    width: 20px;
+  }
+`;
+
+const Arrow = styled.img`
+  @media only screen and (max-width: ${MEDIA_QUERY_TECH_SM}px) {
+    height: 8px;
+    width: 9px;
   }
 `;
 
@@ -124,7 +151,7 @@ class Quotes extends Component<Props, State> {
       <PageSection bgColor={NEUTRALS.GRAY_15}>
         <Content>
           <ButtonCircle onClick={this.moveBackward}>
-            <img src={LeftArrow} alt="" />
+            <Arrow src={LeftArrow} alt="" />
           </ButtonCircle>
           <QuoteWrapper>
             <Quote>{ QUOTES[currentIndex].QUOTE }</Quote>
@@ -134,7 +161,7 @@ class Quotes extends Component<Props, State> {
             </div>
           </QuoteWrapper>
           <ButtonCircle onClick={this.moveForward}>
-            <img src={RightArrow} alt="" />
+            <Arrow src={RightArrow} alt="" />
           </ButtonCircle>
         </Content>
       </PageSection>
