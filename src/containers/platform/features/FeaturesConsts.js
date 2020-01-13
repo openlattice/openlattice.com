@@ -1,37 +1,42 @@
 // @flow
 
-import PurpleMergeIcon from '../../../assets/svg/purple-merge-icon.svg';
+import DataExploration from '../../../assets/svg/platform/data-exploration.svg';
+import DataIntegration from '../../../assets/svg/platform/data-integration.svg';
+import DataLinking from '../../../assets/svg/platform/data-linking.svg';
+import DataStandardization from '../../../assets/svg/platform/data-standardization.svg';
+import DataStorage from '../../../assets/svg/platform/data-storage.svg';
+import Permissions from '../../../assets/svg/platform/permissions.svg';
 
 const FEATURE_ICONS :Object = {
-  INTEGRATION: PurpleMergeIcon,
-  LINKING: PurpleMergeIcon,
-  STORAGE: PurpleMergeIcon,
-  STANDARDIZATION: PurpleMergeIcon,
-  EXPLORATION: PurpleMergeIcon,
-  PERMISSIONS_MANAGEMENT: PurpleMergeIcon,
+  EXPLORATION: DataExploration,
+  INTEGRATION: DataIntegration,
+  LINKING: DataLinking,
+  PERMISSIONS_MANAGEMENT: Permissions,
+  STANDARDIZATION: DataStandardization,
+  STORAGE: DataStorage,
 };
 
 const FEATURE_TITLES :Object = {
+  EXPLORATION: 'Data Exploration',
   INTEGRATION: 'Data Integration',
   LINKING: 'Data Linking',
-  STORAGE: 'Data Storage',
-  STANDARDIZATION: 'Data Standardization',
-  EXPLORATION: 'Data Exploration',
   PERMISSIONS_MANAGEMENT: 'Permissions Management',
+  STANDARDIZATION: 'Data Standardization',
+  STORAGE: 'Data Storage',
 };
 
 const FEATURE_DESCRIPTIONS :Object = {
+  EXPLORATION: (`Placeholder text - Access and manage your organizations - manage
+    roles and permissions of members and entity sets within the organizations.`),
   INTEGRATION: (`Placeholder text - Access and manage your organizations - manage
     roles and permissions of members and entity sets within the organizations.`),
   LINKING: (`Placeholder text - Access and manage your organizations - manage
     roles and permissions of members and entity sets within the organizations.`),
-  STORAGE: (`Placeholder text - Access and manage your organizations - manage
+  PERMISSIONS_MANAGEMENT: (`Placeholder text - Access and manage your organizations - manage
     roles and permissions of members and entity sets within the organizations.`),
   STANDARDIZATION: (`Placeholder text - Access and manage your organizations - manage
     roles and permissions of members and entity sets within the organizations.`),
-  EXPLORATION: (`Placeholder text - Access and manage your organizations - manage
-    roles and permissions of members and entity sets within the organizations.`),
-  PERMISSIONS_MANAGEMENT: (`Placeholder text - Access and manage your organizations - manage
+  STORAGE: (`Placeholder text - Access and manage your organizations - manage
     roles and permissions of members and entity sets within the organizations.`),
 };
 

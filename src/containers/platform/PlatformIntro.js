@@ -41,7 +41,7 @@ const PlatformIntro = () => (
   <PageSection bgColor={NEUTRALS.GRAY_05} includeMenu>
     <Content>
       <PageIntroWrapper>
-        Built from scratch to meet industry requirements.
+        Built from scratch to meet complex compliance and security requirements.
       </PageIntroWrapper>
       <PageDescriptionWrapper>
         {`We understand the difficulty of working with various regulations and compliances,

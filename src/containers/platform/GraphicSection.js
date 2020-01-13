@@ -12,7 +12,12 @@ import * as Routes from '../../core/router/Routes';
 import { SectionHeader } from '../../components/headers/PageHeaders';
 import { LearnMoreInternalLink } from '../../components/controls/index';
 import { NEUTRALS } from '../../core/style/Colors';
-import { CONTENT_WIDTH, MEDIA_QUERY_LG, MEDIA_QUERY_MD } from '../../core/style/Sizes';
+import {
+  CONTENT_WIDTH,
+  MEDIA_QUERY_LG,
+  MEDIA_QUERY_MD,
+  MEDIA_QUERY_TECH_SM
+} from '../../core/style/Sizes';
 
 const Content = styled.div`
   align-items: center;
@@ -24,13 +29,17 @@ const Content = styled.div`
   max-width: 100%;
   text-align: center;
 
+  @media only screen and (max-width: ${MEDIA_QUERY_TECH_SM}px) {
+    margin: 50px auto 50px auto;
+  }
+
   @media only screen and (min-width: ${MEDIA_QUERY_MD}px) {
     flex-direction: row;
     width: ${CONTENT_WIDTH}px;
   }
 
   @media only screen and (min-width: ${MEDIA_QUERY_LG}px) {
-    margin: 176px auto 200px auto;
+    margin: 135px auto 200px auto;
   }
 `;
 
@@ -39,7 +48,11 @@ const TextWrapper = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  width: 432px;
+  width: 100%;
+
+  @media only screen and (min-width: ${MEDIA_QUERY_MD}px) {
+    width: 432px;
+  }
 `;
 
 const TextSection = styled.div`
@@ -49,10 +62,31 @@ const TextSection = styled.div`
   margin-bottom: 40px;
   text-align: left;
   width: 100%;
+
+  @media only screen and (max-width: ${MEDIA_QUERY_MD}px) {
+    font-size: 14px;
+  }
 `;
 
 const TextSectionHeader = styled(SectionHeader)`
   text-align: left;
+`;
+
+const Graphic = styled.img`
+  width: 605px;
+  height: 433px;
+
+  @media only screen and (max-width: ${MEDIA_QUERY_TECH_SM}px) {
+    margin-top: 40px;
+    width: 100%;
+    height: auto;
+  }
+
+  @media only screen and (min-width: ${MEDIA_QUERY_TECH_SM}px) and (max-width: ${MEDIA_QUERY_MD}px) {
+    margin-top: 40px;
+    width: 453.75px;
+    height: 324.75px;
+  }
 `;
 
 const GraphicSection = () => (
@@ -69,7 +103,7 @@ const GraphicSection = () => (
         </TextSection>
         <LearnMoreInternalLink to={Routes.PLATFORM}>Learn more</LearnMoreInternalLink>
       </TextWrapper>
-      <img src={PlatformGraphicSVG} alt="" width={605} height={433} />
+      <Graphic src={PlatformGraphicSVG} />
     </Content>
   </PageSection>
 );

@@ -2,6 +2,7 @@
 import styled, { css } from 'styled-components';
 
 import { NEUTRALS, PURPLES } from '../../core/style/Colors';
+import { MEDIA_QUERY_MD } from '../../core/style/Sizes';
 
 const sharedStyles = css`
   align-self: center;
@@ -25,6 +26,10 @@ const PageIntro = styled.h1`
   line-height: 115%;
   margin-bottom: 24px;
   ${sharedStyles}
+
+  @media only screen and (max-width: ${MEDIA_QUERY_MD}px) {
+    font-size: 32px;
+  }
 `;
 
 const PageDescription = styled.h3`
@@ -34,6 +39,11 @@ const PageDescription = styled.h3`
   line-height: 150%;
   margin-bottom: 32px;
   ${sharedStyles}
+
+  @media only screen and (max-width: ${MEDIA_QUERY_MD}px) {
+    font-size: 16px;
+    width: 100%;
+  }
 `;
 
 const SectionHeader = styled.h2`
@@ -43,6 +53,10 @@ const SectionHeader = styled.h2`
   line-height: 140%;
   margin-bottom: 24px;
   ${sharedStyles}
+
+  @media only screen and (max-width: ${MEDIA_QUERY_MD}px) {
+    font-size: 26px;
+  }
 `;
 
 export {

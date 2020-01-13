@@ -12,7 +12,7 @@ import GrayOLLogo from '../../assets/logos/ol-gray-logo.svg';
 import * as Routes from '../../core/router/Routes';
 import { Tag } from '../../components/tags/Tag';
 import { NEUTRALS } from '../../core/style/Colors';
-import { CONTENT_WIDTH, MEDIA_QUERY_MD } from '../../core/style/Sizes';
+import { CONTENT_WIDTH, MEDIA_QUERY_MD, MEDIA_QUERY_TECH_SM } from '../../core/style/Sizes';
 import { helpCenterLink, TARGET } from '../../components/headers/MenuConsts';
 
 const Content = styled.div`
@@ -20,7 +20,7 @@ const Content = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  margin: 0 auto 0 auto;
+  margin: 40px auto 0 auto;
   max-width: 100%;
   text-align: center;
 
@@ -33,12 +33,19 @@ const Content = styled.div`
   }
 `;
 
-const LinksWrapper = styled.div`
-  align-items: flex-start;
+const LinksOuterWrapper = styled.div`
+  align-items: center;
   display: flex;
+  flex-direction: column;
   justify-content: space-between;
-  margin-bottom: 176px;
   width: 100%;
+
+  @media only screen and (min-width: ${MEDIA_QUERY_MD}px) {
+    align-items: flex-start;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 176px;
+  }
 `;
 
 const LinkGroupWrapper = styled.div`
@@ -46,6 +53,11 @@ const LinkGroupWrapper = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: center;
+
+  @media only screen and (max-width: ${MEDIA_QUERY_MD}px) {
+    align-items: center;
+    margin-bottom: 40px;
+  }
 `;
 
 const InnerLinkGroupWrapper = styled(LinkGroupWrapper)`
@@ -57,6 +69,10 @@ const Header = styled.div`
   font-size: 20px;
   font-weight: 600;
   line-height: 150%;
+
+  @media only screen and (max-width: ${MEDIA_QUERY_TECH_SM}px) {
+    font-size: 18px;
+  }
 `;
 
 const HeaderWithTag = styled.div`
@@ -75,6 +91,10 @@ const linkStyles = css`
 
   :first-of-type {
     margin-top: 14px;
+  }
+
+  @media only screen and (max-width: ${MEDIA_QUERY_TECH_SM}px) {
+    font-size: 14px;
   }
 `;
 
@@ -111,10 +131,9 @@ const Line = styled.div`
   width: 100%;
 `;
 
-const SectionFooterInnerWrapper = styled(LinksWrapper)`
+const SectionFooterInnerWrapper = styled(LinksOuterWrapper)`
   align-items: center;
   margin: 0;
-  width: 100%;
 
   @media only screen and (min-width: ${MEDIA_QUERY_MD}px) {
     margin: 0;
@@ -129,7 +148,7 @@ const Copyright = styled.div`
 const FooterSection = () => (
   <PageSection bgColor={NEUTRALS.GRAY_11}>
     <Content>
-      <LinksWrapper>
+      <LinksOuterWrapper>
         <LinkGroupWrapper>
           <Header>Company</Header>
           <InternalLink to={Routes.ROOT}>Home</InternalLink>
@@ -169,7 +188,7 @@ const FooterSection = () => (
           <InternalLink to={Routes.TERMS_OF_SERVICE}>Terms of Service</InternalLink>
           <InternalLink to={Routes.PRIVACY_POLICY}>Privacy Policy</InternalLink>
         </LinkGroupWrapper>
-      </LinksWrapper>
+      </LinksOuterWrapper>
       <SectionFooterWrapper>
         <Line />
         <SectionFooterInnerWrapper>
