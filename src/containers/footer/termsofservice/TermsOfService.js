@@ -6,8 +6,9 @@ import React from 'react';
 import styled, { css } from 'styled-components';
 import { NavLink } from 'react-router-dom';
 
-import PageSection from '../../../components/layout/NewPageSection';
 import FooterSectionWithPageLinks from '../FooterSectionWithPageLinks';
+import PageSection from '../../../components/layout/NewPageSection';
+import ScrollToTopOnMount from '../../../components/layout/ScrollToTopOnMount';
 
 import * as Routes from '../../../core/router/Routes';
 import { PageIntro } from '../../../components/headers/PageHeaders';
@@ -152,6 +153,7 @@ const Bullet = styled.div`
 
 const TermsOfService = () => (
   <>
+    <ScrollToTopOnMount />
     <PageSection bgColor={NEUTRALS.WHITE} includeMenu>
       <Content>
         <PageIntro>Terms of Service</PageIntro>
