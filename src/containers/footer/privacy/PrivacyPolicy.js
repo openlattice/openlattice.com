@@ -5,8 +5,9 @@
 import React from 'react';
 import styled from 'styled-components';
 
-import PageSection from '../../../components/layout/NewPageSection';
 import FooterSectionWithPageLinks from '../FooterSectionWithPageLinks';
+import PageSection from '../../../components/layout/NewPageSection';
+import ScrollToTopOnMount from '../../../components/layout/ScrollToTopOnMount';
 
 import * as Routes from '../../../core/router/Routes';
 import { PageIntro } from '../../../components/headers/PageHeaders';
@@ -85,6 +86,7 @@ const BulletedListWithMargin = styled(FakeBulletedList)`
 
 const PrivacyPolicy = () => (
   <>
+    <ScrollToTopOnMount />
     <PageSection bgColor={NEUTRALS.WHITE} includeMenu>
       <Content>
         <PageIntro>Privacy Policy</PageIntro>
