@@ -11,7 +11,7 @@ import PageSection from '../../components/layout/NewPageSection';
 
 import { DAVID_SCHWINDT, RANDOM, RANDOM_2 } from './QuotesConsts';
 import { NEUTRALS } from '../../core/style/Colors';
-import { MEDIA_QUERY_LG, MEDIA_QUERY_TECH_SM } from '../../core/style/Sizes';
+import { MEDIA_QUERY_LG, MEDIA_QUERY_MD, MEDIA_QUERY_TECH_SM } from '../../core/style/Sizes';
 
 const QUOTES :Object[] = [
   DAVID_SCHWINDT,
@@ -48,6 +48,12 @@ const QuoteWrapper = styled.div`
     margin: 0 10px;
     width: 100%;
   }
+
+  @media only screen and (max-width: ${MEDIA_QUERY_MD}px) {
+    height: 360px;
+    margin: 0 10px;
+    width: 100%;
+  }
 `;
 
 const sharedTextStyles = css`
@@ -62,6 +68,10 @@ const Quote = styled.div`
 
   @media only screen and (max-width: ${MEDIA_QUERY_TECH_SM}px) {
     font-size: 18px;
+  }
+
+  @media only screen and (max-width: ${MEDIA_QUERY_MD}px) {
+    font-size: 26px;
   }
 `;
 
@@ -93,6 +103,12 @@ const ButtonCircle = styled.div`
     cursor: pointer;
   }
 
+  @media only screen and (max-width: ${MEDIA_QUERY_MD}px) {
+    height: 32px;
+    margin-bottom: 24px;
+    width: 32px;
+  }
+
   @media only screen and (max-width: ${MEDIA_QUERY_TECH_SM}px) {
     height: 20px;
     margin-bottom: 18px;
@@ -101,6 +117,11 @@ const ButtonCircle = styled.div`
 `;
 
 const Arrow = styled.img`
+  @media only screen and (max-width: ${MEDIA_QUERY_MD}px) {
+    height: 12px;
+    width: 13.5px;
+  }
+
   @media only screen and (max-width: ${MEDIA_QUERY_TECH_SM}px) {
     height: 8px;
     width: 9px;
