@@ -21,6 +21,7 @@ import Solomon from '../../assets/team/solomon.png';
 import Todd from '../../assets/team/todd.png';
 
 const TEAM_PHOTOS :Object = {
+  ANDREA: '',
   ANDY: '',
   BLAKE: Blake,
   BRANDON: Brandon,
@@ -35,6 +36,7 @@ const TEAM_PHOTOS :Object = {
   JULIA: Julia,
   KATHERINE: '',
   KIM: Kim,
+  MANDY: '',
   MATTHEW: Matthew,
   MOLLIE: Mollie,
   NICHOLAS: '',
@@ -48,6 +50,7 @@ const TEAM_PHOTOS :Object = {
 };
 
 const TEAM_NAMES :Object = {
+  ANDREA: 'Andrea Fowles',
   ANDY: 'Andy Doyle',
   BLAKE: 'Blake Freitas',
   BRANDON: 'Brandon Wright',
@@ -62,6 +65,7 @@ const TEAM_NAMES :Object = {
   JULIA: 'Julia Joosz',
   KATHERINE: 'Katherine Bernstein',
   KIM: 'Kim Engie',
+  MANDY: 'Mandy Schow',
   MATTHEW: 'Matthew Tamayo-Rios',
   MOLLIE: 'Mollie Epstein',
   NICHOLAS: 'Nicholas Hobbs',
@@ -82,6 +86,7 @@ const DESIGNER :string = 'Product Designer';
 const FRONTEND :string = 'Frontend Software Engineer';
 
 const TEAM_ROLES :Object = {
+  ANDREA: ACCOUNT,
   ANDY: ACCOUNT,
   BLAKE: 'Customer Success Engineer',
   BRANDON: 'Customer Success Manager',
@@ -96,6 +101,7 @@ const TEAM_ROLES :Object = {
   JULIA: DATA_ENGINEER,
   KATHERINE: 'Software Engineer',
   KIM: 'Data Science Manager',
+  MANDY: ACCOUNT,
   MATTHEW: 'Chief Executive Officer',
   MOLLIE: DATA_SCIENTIST,
   NICHOLAS: DATA_SCIENTIST,
