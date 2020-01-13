@@ -4,15 +4,17 @@
 
 import React from 'react';
 
-import PlatformIntro from './PlatformIntro';
-import GraphicSection from './GraphicSection';
-import CorePlatformFeatures from './CorePlatformFeatures';
 import ComplianceAndSecurity from './ComplianceAndSecurity';
 import ContactUsSection from '../contactus/ContactUsSection';
+import CorePlatformFeatures from './CorePlatformFeatures';
 import FooterSectionWithPageLinks from '../footer/FooterSectionWithPageLinks';
+import GraphicSection from './GraphicSection';
+import PlatformIntro from './PlatformIntro';
+import ScrollToTopOnMount from '../../components/layout/ScrollToTopOnMount';
 
 const Platform = () => (
   <>
+    <ScrollToTopOnMount />
     <PlatformIntro />
     <GraphicSection />
     <CorePlatformFeatures />
