@@ -44,7 +44,6 @@ const Description = styled(PageDescription)`
 const ProductTilesOuterWrapper = styled.div`
   display: flex;
   flex: 1 0 auto;
-  flex-direction: row;
   justify-content: center;
   margin: auto;
   max-width: ${CONTENT_WIDTH}px;
