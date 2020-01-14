@@ -39,7 +39,7 @@ const Content = styled.div`
   }
 
   @media only screen and (min-width: ${MEDIA_QUERY_LG}px) {
-    margin: 176px auto 200px auto;
+    margin: 135px auto 200px auto;
   }
 `;
 

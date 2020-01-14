@@ -134,7 +134,6 @@ const Line = styled.div`
 const SectionFooterInnerWrapper = styled(LinksOuterWrapper)`
   align-items: center;
   margin: 0;
-  width: 100%;
 
   @media only screen and (min-width: ${MEDIA_QUERY_MD}px) {
     margin: 0;

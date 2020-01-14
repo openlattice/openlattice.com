@@ -7,7 +7,7 @@ import styled from 'styled-components';
 
 import PageSection from '../../components/layout/NewPageSection';
 
-import { PageDescription, PageIntro, PageTitle } from '../../components/headers/PageHeaders';
+import { PageDescription, PageIntro } from '../../components/headers/PageHeaders';
 import { ContactUsPurple } from '../../components/controls/index';
 import { NEUTRALS } from '../../core/style/Colors';
 import { MEDIA_QUERY_MD, MEDIA_QUERY_LG } from '../../core/style/Sizes';
@@ -42,9 +42,8 @@ const PageDescriptionWrapper = styled(PageDescription)`
 const PlatformIntro = () => (
   <PageSection bgColor={NEUTRALS.GRAY_05} includeMenu>
     <Content>
-      <PageTitle>Platform</PageTitle>
       <PageIntroWrapper>
-        Built from scratch to meet industry requirements.
+        Built from scratch to meet complex compliance and security requirements.
       </PageIntroWrapper>
       <PageDescriptionWrapper>
         {`We understand the difficulty of working with various regulations and compliances,
