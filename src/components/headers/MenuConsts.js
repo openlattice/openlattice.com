@@ -19,7 +19,7 @@ const MENU_ROUTES :Object = {
   CONTACT_US: contactUsLink,
   HELP_CENTER: helpCenterLink,
   PLATFORM: Routes.PLATFORM,
-  PRODUCTS: Routes.PRODUCTS_NEW,
+  PRODUCTS: Routes.PRODUCTS,
   ROOT: Routes.ROOT,
   WORKING_WITH_US: Routes.WORKING_WITH_US,
 };
