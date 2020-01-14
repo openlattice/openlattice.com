@@ -1,6 +1,6 @@
 // @flow
 import React from 'react';
-import styled, { css } from 'styled-components';
+import styled from 'styled-components';
 
 import ContactUsSection from '../contactus/ContactUsSection';
 import Feature1 from '../../assets/productfeatureicons/merge.svg';
@@ -14,13 +14,21 @@ import PageSection from '../../components/layout/NewPageSection';
 import ProductImg from '../../assets/images/pcm/pcm-product-shot.png';
 import ScrollToTopOnMount from '../../components/layout/ScrollToTopOnMount';
 
-import { PageIntro, SectionHeader } from '../../components/headers/PageHeaders';
+import { PageIntro } from '../../components/headers/PageHeaders';
 import { Content, PageDescriptionWrapper } from '../../components/layout/IntroComponents';
 import {
+  ExtendedFeatureDescription,
+  ExtendedFeatureHeader,
+  FeatureOverviewDescription,
+  FeatureOverviewTitle,
+  FeatureOverviewWrapper,
   FeatureShot,
   Icon,
+  ProductOverviewDescriptionWrapper,
+  ProductOverviewWrapper,
   ProductShot,
   ProductStamp,
+  paragraphStyles,
 } from './styled/StyledProductComponents';
 import { NEUTRALS, PURPLES } from '../../core/style/Colors';
 import {
@@ -98,127 +106,6 @@ const ExtendedFeaturesContent = styled(ProductFeaturesContent)`
 
   @media only screen and (max-width: ${MEDIA_QUERY_TECH_SM}px) {
     margin: 40px 0;
-  }
-`;
-
-const FeatureOverviewWrapper = styled.div`
-  margin: 30px 0;
-  min-height: 250px;
-  position: relative;
-  width: 366px;
-
-  :last-child {
-    margin-left: 0;
-  }
-
-  @media only screen and (max-width: ${MEDIA_QUERY_TECH_SM}px) {
-    width: 300px;
-  }
-
-  @media only screen and (min-width: ${MEDIA_QUERY_LG}px) {
-    margin: 48px 48px 80px 0;
-
-    :last-child {
-      margin-right: 0;
-    }
-  }
-`;
-
-const FeatureOverviewTitle = styled.div`
-  color: ${NEUTRALS.GRAY_06};
-  font-size: 25px;
-  font-weight: 600;
-  line-height: 150%;
-  margin-top: 24px;
-
-  @media only screen and (max-width: ${MEDIA_QUERY_TECH_SM}px) {
-    font-size: 18px;
-  }
-`;
-
-const paragraphStyles = css`
-  color: ${NEUTRALS.GRAY_07};
-  line-height: 150%;
-`;
-
-const FeatureOverviewDescription = styled.div`
-  font-size: 16px;
-  margin-top: 16px;
-  width: 100%;
-  ${paragraphStyles}
-
-  @media only screen and (min-width: ${MEDIA_QUERY_LG}px) {
-    top: 170px;
-  }
-`;
-
-const ProductOverviewWrapper = styled.div`
-  align-items: center;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  margin: 64px 0;
-  width: 100%;
-
-  span:first-child {
-    margin-bottom: 64px;
-  }
-
-  :first-of-type {
-    margin-top: 0;
-  }
-
-  :last-of-type {
-    margin-bottom: 0;
-  }
-
-  @media only screen and (min-width: ${MEDIA_QUERY_LG}px) {
-    flex-direction: row;
-    justify-content: space-between;
-
-    span:first-child {
-      margin-bottom: 0;
-    }
-  }
-`;
-
-const ProductOverviewDescriptionWrapper = styled.span`
-  align-items: flex-start;
-  display: flex;
-  flex-direction: column;
-  min-height: 400px;
-  justify-content: center;
-  margin-bottom: 60px;
-  width: 464px;
-
-  @media only screen and (max-width: ${MEDIA_QUERY_TECH_SM}px) {
-    width: 300px;
-  }
-
-  @media only screen and (min-width: ${MEDIA_QUERY_LG}px) {
-    height: 556px;
-  }
-`;
-
-const ExtendedFeatureHeader = styled(SectionHeader)`
-  align-self: flex-start;
-  text-align: left;
-  width: 100%;
-
-  @media only screen and (min-width: ${MEDIA_QUERY_LG}px) {
-    width: 432px;
-  }
-`;
-
-const ExtendedFeatureDescription = styled.div`
-  font-size: 18px;
-  position: relative;
-  top: auto;
-  ${paragraphStyles}
-
-  @media only screen and (min-width: ${MEDIA_QUERY_LG}px) {
-    top: auto;
-    width: 464px;
   }
 `;
 

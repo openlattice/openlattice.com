@@ -1,30 +1,15 @@
 // @flow
 
-import styled from 'styled-components';
+import styled, { css } from 'styled-components';
 
+import { SectionHeader } from '../../../components/headers/PageHeaders';
 import { NEUTRALS } from '../../../core/style/Colors';
 import {
-  CONTENT_WIDTH,
   MEDIA_QUERY_JUR_SM,
   MEDIA_QUERY_LG,
   MEDIA_QUERY_MD,
   MEDIA_QUERY_TECH_SM,
 } from '../../../core/style/Sizes';
-
-const HeaderContent = styled.div`
-  align-items: center;
-  display: flex;
-  flex-direction: column;
-  margin: 50px auto 100px auto;
-  max-width: 100%;
-  text-align: center;
-  @media only screen and (min-width: ${MEDIA_QUERY_MD}px) {
-    max-width: 60%;
-  }
-  @media only screen and (min-width: ${MEDIA_QUERY_LG}px) {
-    margin: 65px auto 211px auto;
-  }
-`;
 
 const ProductStamp = styled.a`
   align-items: center;
@@ -48,30 +33,6 @@ const ProductStamp = styled.a`
 
 const Icon = styled.img`
   margin-right: 13px;
-`;
-
-const ProductIntro = styled.div`
-  color: ${NEUTRALS.GRAY_06};
-  font-size: 35px;
-  font-weight: bold;
-  margin: 24px 0 32px 0;
-  text-align: center;
-  line-height: 115%;
-  @media only screen and (min-width: ${MEDIA_QUERY_MD}px) {
-    font-size: 56px;
-    text-align: center;
-    width: 700px;
-  }
-`;
-
-const ProductDescription = styled.div`
-  color: ${NEUTRALS.GRAY_07};
-  font-size: 20px;
-  text-align: center;
-  line-height: 150%;
-  @media only screen and (min-width: ${MEDIA_QUERY_MD}px) {
-    width: 560px;
-  }
 `;
 
 const ProductShot = styled.div`
@@ -121,35 +82,22 @@ const ProductShot = styled.div`
   }
 `;
 
-const FeaturesContent = styled.div`
-  display: flex;
-  justify-content: space-between;
-  flex-direction: column;
-  align-items: center;
-  width: 100%;
-  margin-top: 400px;
+const FeatureShot = styled.span`
+  align-self: center;
+  background-image: url(${(props) => props.bgImage});
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  border-radius: 2px;
+  border: 1px solid ${NEUTRALS.GRAY_09};
+  box-shadow: 0 10px 30px rgba(48, 47, 57, 0.05);
+  box-sizing: border-box;
+  height: 556px;
+  width: 480px;
 
   @media only screen and (max-width: ${MEDIA_QUERY_TECH_SM}px) {
-    margin-top: 200px;
-  }
-
-  @media only screen and (min-width: ${MEDIA_QUERY_TECH_SM}px) and (max-width: ${MEDIA_QUERY_JUR_SM}px) {
-    margin-top: 200px;
-  }
-
-  @media only screen and (min-width: ${MEDIA_QUERY_JUR_SM}px) and (max-width: ${MEDIA_QUERY_MD}px) {
-    margin-top: 300px;
-  }
-
-  @media only screen and (min-width: ${MEDIA_QUERY_MD}px) {
-    margin-top: 550px;
-  }
-
-  @media only screen and (min-width: ${MEDIA_QUERY_LG}px) {
-    align-items: flex-start;
-    flex-direction: row;
-    margin: 440px auto 200px auto;
-    width: ${CONTENT_WIDTH}px;
+    height: 348px;
+    width: 300px;
   }
 `;
 
@@ -188,12 +136,16 @@ const FeatureOverviewTitle = styled.div`
   }
 `;
 
-const FeatureOverviewDescription = styled.div`
+const paragraphStyles = css`
   color: ${NEUTRALS.GRAY_07};
-  font-size: 16px;
   line-height: 150%;
-  width: 100%;
+`;
+
+const FeatureOverviewDescription = styled.div`
+  font-size: 16px;
   margin-top: 16px;
+  width: 100%;
+  ${paragraphStyles}
 
   @media only screen and (min-width: ${MEDIA_QUERY_LG}px) {
     top: 170px;
@@ -205,8 +157,8 @@ const ProductOverviewWrapper = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: center;
-  width: 100%;
   margin: 64px 0;
+  width: 100%;
 
   span:first-child {
     margin-bottom: 64px;
@@ -217,7 +169,7 @@ const ProductOverviewWrapper = styled.div`
   }
 
   :last-of-type {
-    margin-bottom: 200px;
+    margin-bottom: 0;
   }
 
   @media only screen and (min-width: ${MEDIA_QUERY_LG}px) {
@@ -237,7 +189,7 @@ const ProductOverviewDescriptionWrapper = styled.span`
   min-height: 400px;
   justify-content: center;
   margin-bottom: 60px;
-  width: 350px;
+  width: 464px;
 
   @media only screen and (max-width: ${MEDIA_QUERY_TECH_SM}px) {
     width: 300px;
@@ -248,58 +200,21 @@ const ProductOverviewDescriptionWrapper = styled.span`
   }
 `;
 
-const FeatureShot = styled.span`
-  align-self: center;
-  background-image: url(${(props) => props.bgImage});
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: contain;
-  border-radius: 2px;
-  border: 1px solid ${NEUTRALS.GRAY_09};
-  box-shadow: 0 10px 30px rgba(48, 47, 57, 0.05);
-  box-sizing: border-box;
-  height: 556px;
-  width: 480px;
-
-  @media only screen and (max-width: ${MEDIA_QUERY_TECH_SM}px) {
-    height: 348px;
-    width: 300px;
-  }
-`;
-
-const PermissionsFeatureShot = styled(FeatureShot)`
-  height: 315px;
-
-  @media only screen and (max-width: ${MEDIA_QUERY_TECH_SM}px) {
-    height: 197px;
-  }
-
-  @media only screen and (min-width: ${MEDIA_QUERY_MD}px) {
-    height: 315px;
-  }
-`;
-
-const ProductOverviewTitle = styled(FeatureOverviewTitle)`
-  font-weight: 600;
-  font-size: 36px;
-  line-height: 140%;
+const ExtendedFeatureHeader = styled(SectionHeader)`
+  align-self: flex-start;
+  text-align: left;
   width: 100%;
 
-  @media only screen and (max-width: ${MEDIA_QUERY_TECH_SM}px) {
-    font-size: 20px;
-  }
-
   @media only screen and (min-width: ${MEDIA_QUERY_LG}px) {
-    font-size: 36px;
     width: 432px;
   }
 `;
 
-const ProductOverviewDescription = styled(FeatureOverviewDescription)`
+const ExtendedFeatureDescription = styled.div`
   font-size: 18px;
-  margin-top: 24px;
   position: relative;
   top: auto;
+  ${paragraphStyles}
 
   @media only screen and (min-width: ${MEDIA_QUERY_LG}px) {
     top: auto;
@@ -307,27 +222,17 @@ const ProductOverviewDescription = styled(FeatureOverviewDescription)`
   }
 `;
 
-const ProductStampWrapper = styled.img`
-  height: 64px;
-  width: ${(props) => props.width};
-`;
-
 export {
+  ExtendedFeatureDescription,
+  ExtendedFeatureHeader,
   FeatureOverviewDescription,
   FeatureOverviewTitle,
   FeatureOverviewWrapper,
   FeatureShot,
-  FeaturesContent,
-  HeaderContent,
   Icon,
-  PermissionsFeatureShot,
-  ProductDescription,
-  ProductIntro,
-  ProductOverviewDescription,
   ProductOverviewDescriptionWrapper,
-  ProductOverviewTitle,
   ProductOverviewWrapper,
   ProductShot,
   ProductStamp,
-  ProductStampWrapper,
+  paragraphStyles,
 };
