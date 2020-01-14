@@ -15,11 +15,11 @@ const Content = styled.div`
   text-align: center;
 
   @media only screen and (min-width: ${MEDIA_QUERY_MD}px) {
-    max-width: 60%;
+    width: 100%;
   }
 
   @media only screen and (min-width: ${MEDIA_QUERY_LG}px) {
-    margin: 156px auto 168px auto;
+    margin: 134px auto 208px auto;
   }
 `;
 
