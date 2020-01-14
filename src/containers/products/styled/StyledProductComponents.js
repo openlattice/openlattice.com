@@ -5,6 +5,7 @@ import styled, { css } from 'styled-components';
 import { SectionHeader } from '../../../components/headers/PageHeaders';
 import { NEUTRALS } from '../../../core/style/Colors';
 import {
+  CONTENT_WIDTH,
   MEDIA_QUERY_JUR_SM,
   MEDIA_QUERY_LG,
   MEDIA_QUERY_MD,
@@ -222,14 +223,59 @@ const ExtendedFeatureDescription = styled.div`
   }
 `;
 
+const ProductFeaturesContent = styled.div`
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 100%;
+
+  @media only screen and (max-width: ${MEDIA_QUERY_MD}px) {
+    margin-top: 300px;
+  }
+
+  @media only screen and (min-width: ${MEDIA_QUERY_LG}px) {
+    align-items: flex-start;
+    flex-direction: row;
+    margin: 440px auto 96px auto;
+    width: ${CONTENT_WIDTH}px;
+  }
+
+  @media only screen and (max-width: ${MEDIA_QUERY_TECH_SM}px) {
+    margin-top: 150px;
+  }
+`;
+
+const ExtendedFeaturesContent = styled(ProductFeaturesContent)`
+  align-self: center;
+  margin-top: 0;
+
+  @media only screen and (max-width: ${MEDIA_QUERY_MD}px) {
+    margin-top: 32px;
+  }
+
+  @media only screen and (min-width: ${MEDIA_QUERY_LG}px) {
+    align-items: flex-start;
+    flex-direction: column;
+    margin: 0 0 200px 0;
+    width: ${CONTENT_WIDTH}px;
+  }
+
+  @media only screen and (max-width: ${MEDIA_QUERY_TECH_SM}px) {
+    margin: 40px 0;
+  }
+`;
+
 export {
   ExtendedFeatureDescription,
   ExtendedFeatureHeader,
+  ExtendedFeaturesContent,
   FeatureOverviewDescription,
   FeatureOverviewTitle,
   FeatureOverviewWrapper,
   FeatureShot,
   Icon,
+  ProductFeaturesContent,
   ProductOverviewDescriptionWrapper,
   ProductOverviewWrapper,
   ProductShot,

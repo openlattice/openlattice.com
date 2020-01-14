@@ -19,11 +19,13 @@ import { Content, PageDescriptionWrapper } from '../../components/layout/IntroCo
 import {
   ExtendedFeatureDescription,
   ExtendedFeatureHeader,
+  ExtendedFeaturesContent,
   FeatureOverviewDescription,
   FeatureOverviewTitle,
   FeatureOverviewWrapper,
   FeatureShot,
   Icon,
+  ProductFeaturesContent,
   ProductOverviewDescriptionWrapper,
   ProductOverviewWrapper,
   ProductShot,
@@ -31,20 +33,14 @@ import {
   paragraphStyles,
 } from './styled/StyledProductComponents';
 import { NEUTRALS, PURPLES } from '../../core/style/Colors';
-import {
-  CONTENT_WIDTH,
-  MEDIA_QUERY_LG,
-  MEDIA_QUERY_MD,
-  MEDIA_QUERY_TECH_SM,
-} from '../../core/style/Sizes';
+import { MEDIA_QUERY_LG, MEDIA_QUERY_TECH_SM } from '../../core/style/Sizes';
 import { TARGET } from '../../components/headers/MenuConsts';
 
 const report :string = ' 2013 report ';
 const reportLink :string = 'https://craftmediabucket.s3.amazonaws.com/uploads/PDFs/LJAF_Report_hidden-costs_FNL.pdf';
 const courtReminders :string = ' positive impact court reminders can have';
 const courtRemindersLink :string = `https://urbanlabs.uchicago.edu/attachments/3b31252760b28d3b44ad1a8d964d0f1e9128af34/
-  store/9c86b123e3b00a5da58318f438a6e787dd01d66d0efad54d66aa232a6473/
-  I42-954_NYCSummonsPaper_Final_Mar2018.pdf`;
+store/9c86b123e3b00a5da58318f438a6e787dd01d66d0efad54d66aa232a6473/I42-954_NYCSummonsPaper_Final_Mar2018.pdf`;
 
 
 const IntroContent = styled(Content)`
@@ -64,49 +60,6 @@ const PCMIntro = styled(PageIntro)`
 
 const PCMDescription = styled(PageDescriptionWrapper)`
   margin: 0;
-`;
-
-const ProductFeaturesContent = styled.div`
-  align-items: center;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  width: 100%;
-
-  @media only screen and (max-width: ${MEDIA_QUERY_MD}px) {
-    margin-top: 300px;
-  }
-
-  @media only screen and (min-width: ${MEDIA_QUERY_LG}px) {
-    align-items: flex-start;
-    flex-direction: row;
-    margin: 440px auto 96px auto;
-    width: ${CONTENT_WIDTH}px;
-  }
-
-  @media only screen and (max-width: ${MEDIA_QUERY_TECH_SM}px) {
-    margin-top: 150px;
-  }
-`;
-
-const ExtendedFeaturesContent = styled(ProductFeaturesContent)`
-  align-self: center;
-  margin-top: 0;
-
-  @media only screen and (max-width: ${MEDIA_QUERY_MD}px) {
-    margin-top: 32px;
-  }
-
-  @media only screen and (min-width: ${MEDIA_QUERY_LG}px) {
-    align-items: flex-start;
-    flex-direction: column;
-    margin: 0 0 200px 0;
-    width: ${CONTENT_WIDTH}px;
-  }
-
-  @media only screen and (max-width: ${MEDIA_QUERY_TECH_SM}px) {
-    margin: 40px 0;
-  }
 `;
 
 const PurpleLink = styled.a`
