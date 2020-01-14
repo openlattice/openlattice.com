@@ -9,9 +9,9 @@ import PageSection from '../../components/layout/NewPageSection';
 
 import { PageIntro, PageTitle } from '../../components/headers/PageHeaders';
 import { Content, PageDescriptionWrapper } from '../../components/layout/IntroComponents';
-import { ScheduleACallPurple } from '../../components/controls/index';
+import { ContactUsPurple } from '../../components/controls/index';
 import { NEUTRALS } from '../../core/style/Colors';
-import { scheduleACallLink, TARGET } from '../../components/headers/MenuConsts';
+import { contactUsLink, TARGET } from '../../components/headers/MenuConsts';
 
 const PageIntroWrapper = styled(PageIntro)`
   width: 624px;
@@ -28,11 +28,11 @@ const WorkingWithUsIntro = () => (
         {`Placeholder - Integrate and utilize siloed data across agencies and
           organizations to save money, time, and lives.`}
       </PageDescriptionWrapper>
-      <ScheduleACallPurple
-          href={scheduleACallLink}
+      <ContactUsPurple
+          href={contactUsLink}
           target={TARGET}>
         Schedule a call
-      </ScheduleACallPurple>
+      </ContactUsPurple>
     </Content>
   </PageSection>
 );
