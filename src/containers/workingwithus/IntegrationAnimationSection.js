@@ -5,22 +5,31 @@
 import React from 'react';
 import styled from 'styled-components';
 
+import IntegrationImage from '../../assets/images/integrated-data.png';
 import PageSection from '../../components/layout/NewPageSection';
 
 import { SectionHeader } from '../../components/headers/PageHeaders';
+import { LearnMoreExternalLink } from '../../components/controls/index';
 import { NEUTRALS } from '../../core/style/Colors';
-import { MEDIA_QUERY_LG, MEDIA_QUERY_MD, MEDIA_QUERY_TECH_SM } from '../../core/style/Sizes';
+import {
+  CONTENT_WIDTH,
+  MEDIA_QUERY_LG,
+  MEDIA_QUERY_MD,
+  MEDIA_QUERY_TECH_SM
+} from '../../core/style/Sizes';
 
 const PageContent = styled.div`
   align-items: center;
+  align-self: center;
   display: flex;
   flex-direction: column;
-  margin: 50px auto 100px auto;
+  margin: 50px 0 0 0;
   max-width: 100%;
   text-align: center;
 
   @media only screen and (min-width: ${MEDIA_QUERY_LG}px) {
     margin-top: 128px;
+    width: ${CONTENT_WIDTH}px;
   }
 `;
 
@@ -30,6 +39,10 @@ const SectionHeaderWrapper = styled(SectionHeader)`
   @media only screen and (max-width: ${MEDIA_QUERY_MD}px) {
     width: 100%;
   }
+`;
+
+const IntegrationSectionHeader = styled(SectionHeader)`
+  text-align: left;
 `;
 
 const SectionDescription = styled.div`
@@ -49,6 +62,33 @@ const SectionDescription = styled.div`
   }
 `;
 
+const IntegrationSectionWrapper = styled.div`
+  align-self: center;
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+`;
+
+const TextWrapper = styled.div`
+  display: flex;
+  flex-direction: column;
+  width: 464px;
+`;
+
+const Description = styled.div`
+  color: ${NEUTRALS.GRAY_07};
+  font-size: 18px;
+  line-height: 150%;
+  margin-bottom: 40px;
+  text-align: left;
+`;
+
+const CaseStudiesButton = styled(LearnMoreExternalLink)`
+  width: 165px;
+`;
+
 const IntegrationAnimationSection = () => (
   <PageSection bgColor={NEUTRALS.WHITE}>
     <PageContent>
@@ -57,6 +97,20 @@ const IntegrationAnimationSection = () => (
         {`Placeholder - As a public benefit corporation, OpenLattice enables precision government by linking
           individual-level data enables precision government by linking individual-level data.`}
       </SectionDescription>
+      <IntegrationSectionWrapper>
+        <TextWrapper>
+          <IntegrationSectionHeader>
+            Leverage data across silos and save money, time, and lives
+          </IntegrationSectionHeader>
+          <Description>
+            {`Integrate data across public safety, healthcare systems, and social services to streamline operations,
+              test interventions, and improve human outcomes. Use existing OpenLattice solutions or develop your
+              own against unified individual profiles.`}
+          </Description>
+          <CaseStudiesButton>Our case studies</CaseStudiesButton>
+        </TextWrapper>
+        <img src={IntegrationImage} alt="" width={528} height={726} />
+      </IntegrationSectionWrapper>
     </PageContent>
   </PageSection>
 );
