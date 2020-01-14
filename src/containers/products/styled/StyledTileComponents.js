@@ -3,7 +3,7 @@ import styled, { css } from 'styled-components';
 
 import { LearnMoreInternalLink } from '../../../components/controls/index';
 import { NEUTRALS } from '../../../core/style/Colors';
-import { MEDIA_QUERY_TECH_SM } from '../../../core/style/Sizes';
+import { MEDIA_QUERY_MD, MEDIA_QUERY_TECH_SM } from '../../../core/style/Sizes';
 
 const tileWrapperStyles = css`
   border: 1px solid ${NEUTRALS.GRAY_10};
@@ -21,7 +21,9 @@ const TileWrapper = styled.div`
 
   @media only screen and (min-width: ${MEDIA_QUERY_TECH_SM}px) {
     width: 528px;
+  }
 
+  @media only screen and (min-width: ${MEDIA_QUERY_MD}px) {
     :nth-of-type(odd) {
       margin-left: 0;
     }
