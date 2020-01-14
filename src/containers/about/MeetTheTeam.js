@@ -9,7 +9,7 @@ import PageSection from '../../components/layout/NewPageSection';
 
 import { NEUTRALS } from '../../core/style/Colors';
 import { MEDIA_QUERY_LG, MEDIA_QUERY_MD, MEDIA_QUERY_TECH_SM } from '../../core/style/Sizes';
-import { TEAM_NAMES, TEAM_PHOTOS, TEAM_ROLES } from './TeamMemberConsts';
+import { TEAM_MEMBERS } from './TeamMemberConsts';
 
 const Content = styled.div`
   align-items: center;
@@ -102,143 +102,30 @@ const MeetTheTeam = () => (
     <Content>
       <TeamMembersOuterWrapper>
         <TeamMembersInnerWrapper>
-          <TeamMember>
-            <TeamMemberPhoto headshot={TEAM_PHOTOS.MATTHEW} />
-            <TeamMemberName>{TEAM_NAMES.MATTHEW}</TeamMemberName>
-            <TeamMemberRole>
-              Founder &
-              <br />
-              {TEAM_ROLES.MATTHEW}
-            </TeamMemberRole>
-          </TeamMember>
-          <TeamMember>
-            <TeamMemberPhoto headshot={TEAM_PHOTOS.HRISTO} />
-            <TeamMemberName>{TEAM_NAMES.HRISTO}</TeamMemberName>
-            <TeamMemberRole>
-              Co-founder &
-              <br />
-              {TEAM_ROLES.HRISTO}
-            </TeamMemberRole>
-          </TeamMember>
-          <TeamMember>
-            <TeamMemberPhoto headshot={TEAM_PHOTOS.KATHERINE} />
-            <TeamMemberName>{TEAM_NAMES.KATHERINE}</TeamMemberName>
-            <TeamMemberRole>
-              Co-founder &
-              <br />
-              {TEAM_ROLES.KATHERINE}
-            </TeamMemberRole>
-          </TeamMember>
-          <TeamMember>
-            <TeamMemberPhoto headshot={TEAM_PHOTOS.KIM} />
-            <TeamMemberName>{TEAM_NAMES.KIM}</TeamMemberName>
-            <TeamMemberRole>{TEAM_ROLES.KIM}</TeamMemberRole>
-          </TeamMember>
-          <TeamMember>
-            <TeamMemberPhoto headshot={TEAM_PHOTOS.BRANDON} />
-            <TeamMemberName>{TEAM_NAMES.BRANDON}</TeamMemberName>
-            <TeamMemberRole>{TEAM_ROLES.BRANDON}</TeamMemberRole>
-          </TeamMember>
-          <TeamMember>
-            <TeamMemberPhoto headshot={TEAM_PHOTOS.JOE} />
-            <TeamMemberName>{TEAM_NAMES.JOE}</TeamMemberName>
-            <TeamMemberRole>{TEAM_ROLES.JOE}</TeamMemberRole>
-          </TeamMember>
-          <TeamMember>
-            <TeamMemberPhoto headshot={TEAM_PHOTOS.GIULIANA} />
-            <TeamMemberName>{TEAM_NAMES.GIULIANA}</TeamMemberName>
-            <TeamMemberRole>{TEAM_ROLES.GIULIANA}</TeamMemberRole>
-          </TeamMember>
-          <TeamMember>
-            <TeamMemberPhoto headshot={TEAM_PHOTOS.DAVID} />
-            <TeamMemberName>{TEAM_NAMES.DAVID}</TeamMemberName>
-            <TeamMemberRole>{TEAM_ROLES.DAVID}</TeamMemberRole>
-          </TeamMember>
-          <TeamMember>
-            <TeamMemberPhoto headshot={TEAM_PHOTOS.MOLLIE} />
-            <TeamMemberName>{TEAM_NAMES.MOLLIE}</TeamMemberName>
-            <TeamMemberRole>{TEAM_ROLES.MOLLIE}</TeamMemberRole>
-          </TeamMember>
-          <TeamMember>
-            <TeamMemberPhoto headshot={TEAM_PHOTOS.PAUL} />
-            <TeamMemberName>{TEAM_NAMES.PAUL}</TeamMemberName>
-            <TeamMemberRole>{TEAM_ROLES.PAUL}</TeamMemberRole>
-          </TeamMember>
-          <TeamMember>
-            <TeamMemberPhoto headshot={TEAM_PHOTOS.JOKE} />
-            <TeamMemberName>{TEAM_NAMES.JOKE}</TeamMemberName>
-            <TeamMemberRole>{TEAM_ROLES.JOKE}</TeamMemberRole>
-          </TeamMember>
-          <TeamMember>
-            <TeamMemberPhoto headshot={TEAM_PHOTOS.SOLOMON} />
-            <TeamMemberName>{TEAM_NAMES.SOLOMON}</TeamMemberName>
-            <TeamMemberRole>{TEAM_ROLES.SOLOMON}</TeamMemberRole>
-          </TeamMember>
-          <TeamMember>
-            <TeamMemberPhoto headshot={TEAM_PHOTOS.TODD} />
-            <TeamMemberName>{TEAM_NAMES.TODD}</TeamMemberName>
-            <TeamMemberRole>{TEAM_ROLES.TODD}</TeamMemberRole>
-          </TeamMember>
-          <TeamMember>
-            <TeamMemberPhoto headshot={TEAM_PHOTOS.PIPER} />
-            <TeamMemberName>{TEAM_NAMES.PIPER}</TeamMemberName>
-            <TeamMemberRole>{TEAM_ROLES.PIPER}</TeamMemberRole>
-          </TeamMember>
-          <TeamMember>
-            <TeamMemberPhoto headshot={TEAM_PHOTOS.JULIA} />
-            <TeamMemberName>{TEAM_NAMES.JULIA}</TeamMemberName>
-            <TeamMemberRole>{TEAM_ROLES.JULIA}</TeamMemberRole>
-          </TeamMember>
-          <TeamMember>
-            <TeamMemberPhoto headshot={TEAM_PHOTOS.GIULIA} />
-            <TeamMemberName>{TEAM_NAMES.GIULIA}</TeamMemberName>
-            <TeamMemberRole>{TEAM_ROLES.GIULIA}</TeamMemberRole>
-          </TeamMember>
-          <TeamMember>
-            <TeamMemberPhoto headshot={TEAM_PHOTOS.JASON} />
-            <TeamMemberName>{TEAM_NAMES.JASON}</TeamMemberName>
-            <TeamMemberRole>{TEAM_ROLES.JASON}</TeamMemberRole>
-          </TeamMember>
-          <TeamMember>
-            <TeamMemberPhoto headshot={TEAM_PHOTOS.BLAKE} />
-            <TeamMemberName>{TEAM_NAMES.BLAKE}</TeamMemberName>
-            <TeamMemberRole>{TEAM_ROLES.BLAKE}</TeamMemberRole>
-          </TeamMember>
-          <TeamMember>
-            <TeamMemberPhoto headshot={TEAM_PHOTOS.DREW} />
-            <TeamMemberName>{TEAM_NAMES.DREW}</TeamMemberName>
-            <TeamMemberRole>{TEAM_ROLES.DREW}</TeamMemberRole>
-          </TeamMember>
-          <TeamMember>
-            <TeamMemberPhoto headshot={TEAM_PHOTOS.SHIREEN} />
-            <TeamMemberName>{TEAM_NAMES.SHIREEN}</TeamMemberName>
-            <TeamMemberRole>{TEAM_ROLES.SHIREEN}</TeamMemberRole>
-          </TeamMember>
-          <TeamMember>
-            <TeamMemberPhoto headshot={TEAM_PHOTOS.ANDY} />
-            <TeamMemberName>{TEAM_NAMES.ANDY}</TeamMemberName>
-            <TeamMemberRole>{TEAM_ROLES.ANDY}</TeamMemberRole>
-          </TeamMember>
-          <TeamMember>
-            <TeamMemberPhoto headshot={TEAM_PHOTOS.NICHOLAS} />
-            <TeamMemberName>{TEAM_NAMES.NICHOLAS}</TeamMemberName>
-            <TeamMemberRole>{TEAM_ROLES.NICHOLAS}</TeamMemberRole>
-          </TeamMember>
-          <TeamMember>
-            <TeamMemberPhoto headshot={TEAM_PHOTOS.RYAN} />
-            <TeamMemberName>{TEAM_NAMES.RYAN}</TeamMemberName>
-            <TeamMemberRole>{TEAM_ROLES.RYAN}</TeamMemberRole>
-          </TeamMember>
-          <TeamMember>
-            <TeamMemberPhoto headshot={TEAM_PHOTOS.ANDREA} />
-            <TeamMemberName>{TEAM_NAMES.ANDREA}</TeamMemberName>
-            <TeamMemberRole>{TEAM_ROLES.ANDREA}</TeamMemberRole>
-          </TeamMember>
-          <TeamMember>
-            <TeamMemberPhoto headshot={TEAM_PHOTOS.MANDY} />
-            <TeamMemberName>{TEAM_NAMES.MANDY}</TeamMemberName>
-            <TeamMemberRole>{TEAM_ROLES.MANDY}</TeamMemberRole>
-          </TeamMember>
+          {
+            TEAM_MEMBERS.map((teamMember :Object, index :number) => {
+              if (index > -1 && index < 3) {
+                return (
+                  <TeamMember key={teamMember.NAME}>
+                    <TeamMemberPhoto headshot={teamMember.PHOTO} />
+                    <TeamMemberName>{teamMember.NAME}</TeamMemberName>
+                    <TeamMemberRole>
+                      Founder &
+                      <br />
+                      {teamMember.ROLE}
+                    </TeamMemberRole>
+                  </TeamMember>
+                );
+              }
+              return (
+                <TeamMember key={teamMember.NAME}>
+                  <TeamMemberPhoto headshot={teamMember.PHOTO} />
+                  <TeamMemberName>{teamMember.NAME}</TeamMemberName>
+                  <TeamMemberRole>{teamMember.ROLE}</TeamMemberRole>
+                </TeamMember>
+              );
+            })
+          }
         </TeamMembersInnerWrapper>
       </TeamMembersOuterWrapper>
     </Content>
