@@ -2,146 +2,158 @@
 import React from 'react';
 import styled from 'styled-components';
 
-import AppHeader from '../../components/headers/AppHeader';
-import ConnectSection from '../connect/ConnectSection';
+import ContactUsSection from '../contactus/ContactUsSection';
 import Feature1 from '../../assets/productfeatureicons/care/headphones.svg';
 import Feature2 from '../../assets/productfeatureicons/feature2.svg';
 import Feature3 from '../../assets/productfeatureicons/care/pages.svg';
 import FeatureImg1 from '../../assets/images/care/care-feature-shot-1.png';
 import FeatureImg2 from '../../assets/images/care/care-feature-shot-2.png';
-import FooterSection from '../footer/FooterSection';
+import FooterSectionWithPageLinks from '../footer/FooterSectionWithPageLinks';
 import CareIcon from '../../assets/logos/care-small-logo.svg';
-import PageSection from '../../components/layout/PageSection';
+import PageSection from '../../components/layout/NewPageSection';
 import ProductImg from '../../assets/images/care/care-product-shot.png';
-import PurpleOLLogo from '../../assets/images/logo-original.png';
+import ScrollToTopOnMount from '../../components/layout/ScrollToTopOnMount';
 
-import { menuStylesForProductPages } from './styled/MenuStyles';
+import { PageIntro } from '../../components/headers/PageHeaders';
+import { Content, PageDescriptionWrapper } from '../../components/layout/IntroComponents';
 import {
-  MEDIA_QUERY_JUR_SM,
+  ExtendedFeatureDescription,
+  ExtendedFeatureHeader,
+  ExtendedFeaturesContent,
+  FeatureOverviewDescription,
+  FeatureOverviewTitle,
+  FeatureOverviewWrapper,
+  FeatureShot,
+  Icon,
+  ProductFeaturesContent,
+  ProductOverviewDescriptionWrapper,
+  ProductOverviewWrapper,
+  ProductShot,
+  ProductStamp,
+} from './styled/StyledProductComponents';
+import {
   MEDIA_QUERY_LG,
   MEDIA_QUERY_MD,
   MEDIA_QUERY_TECH_SM,
 } from '../../core/style/Sizes';
 import { NEUTRALS } from '../../core/style/Colors';
-import {
-  FeatureOverviewDescription,
-  FeatureOverviewTitle,
-  FeatureOverviewWrapper,
-  FeatureShot,
-  FeaturesContent,
-  HeaderContent,
-  Icon,
-  ProductDescription,
-  ProductIntro,
-  ProductOverviewDescription,
-  ProductOverviewDescriptionWrapper,
-  ProductOverviewTitle,
-  ProductOverviewWrapper,
-  ProductShot,
-  ProductStamp,
-} from './styled/StyledProductComponents';
+
+const IntroContent = styled(Content)`
+  @media only screen and (min-width: ${MEDIA_QUERY_LG}px) {
+    margin: 70px auto 451px auto;
+  }
+`;
+
+const CAREIntro = styled(PageIntro)`
+  margin-bottom: 32px;
+  width: 912px;
+
+  @media only screen and (max-width: ${MEDIA_QUERY_MD}px) {
+    width: 100%;
+  }
+`;
+
+const CAREDescription = styled(PageDescriptionWrapper)`
+  margin: 0;
+  width: 528px;
+`;
 
 const CareProductShot = styled(ProductShot)`
   top: 450px;
 
   @media only screen and (max-width: ${MEDIA_QUERY_TECH_SM}px) {
-    top: 840px;
+    top: 800px;
   }
 
-  @media only screen and (min-width: ${MEDIA_QUERY_TECH_SM}px) and (max-width: ${MEDIA_QUERY_JUR_SM}px) {
-    top: 665px;
-  }
-
-  @media only screen and (min-width: ${MEDIA_QUERY_JUR_SM}px) and (max-width: ${MEDIA_QUERY_MD}px) {
-    top: 600px;
-  }
-
-  @media only screen and (min-width: ${MEDIA_QUERY_MD}px) and (max-width: ${MEDIA_QUERY_LG}px) {
-    top: 695px;
+  @media only screen and (min-width: ${MEDIA_QUERY_MD}px) {
+    top: 660px;
   }
 
   @media only screen and (min-width: ${MEDIA_QUERY_LG}px) {
-    top: 725px;
+    top: 643px;
+  }
+`;
+
+const CAREFeaturesContent = styled(ProductFeaturesContent)`
+  @media only screen and (min-width: ${MEDIA_QUERY_LG}px) {
+    margin: 391px auto 96px auto;
   }
 `;
 
 const CareProductPage = () => (
   <>
-    <PageSection bgColor={NEUTRALS.GRAY_05}>
-      <AppHeader
-          logo={PurpleOLLogo}
-          menuStyles={menuStylesForProductPages} />
-      <HeaderContent>
+    <ScrollToTopOnMount />
+    <PageSection bgColor={NEUTRALS.GRAY_05} includeMenu>
+      <IntroContent>
         <ProductStamp>
           <Icon src={CareIcon} />
           <div>CARE</div>
         </ProductStamp>
-        <ProductIntro>Facilitate safe and effective interactions between patrol officers and individuals</ProductIntro>
-        <ProductDescription>
-          {`The Coordination, Assessment, Response and Engagement (CARE) Application is a mobile-friendly,
-            real-time data platform that enables patrol officers, dispatchers, and their community partners
-            to better and more safely assist vulnerable populations.`}
-        </ProductDescription>
-      </HeaderContent>
+        <CAREIntro>Facilitate safe and effective interactions between patrol officers and individuals</CAREIntro>
+        <CAREDescription>
+          {`A mobile-friendly, real-time data platform that enables patrol officers, dispatchers, and their
+            community partners to better assist the vulnerable populations.`}
+        </CAREDescription>
+      </IntroContent>
       <CareProductShot bgImage={ProductImg} />
     </PageSection>
     <PageSection>
-      <FeaturesContent>
+      <CAREFeaturesContent>
         <FeatureOverviewWrapper>
           <img src={Feature1} alt="" />
-          <FeatureOverviewTitle>Create Person Profiles</FeatureOverviewTitle>
+          <FeatureOverviewTitle>Dispatch integration</FeatureOverviewTitle>
           <FeatureOverviewDescription>
-            {`Allow creation of profiles for people who may be experiencing mental illness, homelessness,
-              chemical dependencies, and other behavioral issues.`}
+            {`Integrate with the 911 dispatch system to deliver up-to-date, key information that officers need
+              to assist encountered individuals.`}
           </FeatureOverviewDescription>
         </FeatureOverviewWrapper>
         <FeatureOverviewWrapper>
           <img src={Feature2} alt="" />
-          <FeatureOverviewTitle>Use Real-Time Data</FeatureOverviewTitle>
+          <FeatureOverviewTitle>Collaborative workflows</FeatureOverviewTitle>
           <FeatureOverviewDescription>
-            {`Provide access to information that will facilitate interactions between individuals and
-              first responders, presented in a way that is easily scanned in the field. Information submitted
-              into CARE can be made available to other officers almost immediately.`}
+            {`Facilitate communication and collaboration across PD units, across zones, and with service providers,
+              while protecting personal information of clients.`}
           </FeatureOverviewDescription>
         </FeatureOverviewWrapper>
         <FeatureOverviewWrapper>
           <img src={Feature3} alt="" />
-          <FeatureOverviewTitle>Integrate with Dispatch</FeatureOverviewTitle>
+          <FeatureOverviewTitle>Response & interaction plans</FeatureOverviewTitle>
           <FeatureOverviewDescription>
-            {`Integrate with the 911 dispatch system to deliver up-to-date, key information that
-              officers need to assist encountered individuals.`}
+            {`Care serves as a centralized repository for individualized contextual information and curated crisis
+              response plans for frequently-encountered individuals.`}
           </FeatureOverviewDescription>
         </FeatureOverviewWrapper>
-      </FeaturesContent>
+      </CAREFeaturesContent>
     </PageSection>
     <PageSection>
-      <ProductOverviewWrapper>
-        <ProductOverviewDescriptionWrapper>
-          <ProductOverviewTitle>Record Robust Encounter Information</ProductOverviewTitle>
-          <ProductOverviewDescription>
-            {`The online data collection template quickly and efficiently records encounter information including
-              observed behaviors, location encountered, contact information for support individuals, techniques
-              used to diffuse a situation, any use of force, and the outcome of an encounter (whether it ended
-              in a detention, notifying a case manager, hospitalization, or other outcome). `}
-          </ProductOverviewDescription>
-        </ProductOverviewDescriptionWrapper>
-        <FeatureShot bgImage={FeatureImg1} />
-      </ProductOverviewWrapper>
-      <ProductOverviewWrapper>
-        <FeatureShot bgImage={FeatureImg2} />
-        <ProductOverviewDescriptionWrapper>
-          <ProductOverviewTitle>Create Response and Interaction Plans</ProductOverviewTitle>
-          <ProductOverviewDescription>
-            {`CARE serves as a centralized repository for individualized contextual information and curated
-              crisis response plans for frequently-encountered individuals. The platform facilitates communication and
-              collaboration across PD units, across zones, and with service providers, while protecting
-              personal information of clients.`}
-          </ProductOverviewDescription>
-        </ProductOverviewDescriptionWrapper>
-      </ProductOverviewWrapper>
+      <ExtendedFeaturesContent>
+        <ProductOverviewWrapper>
+          <ProductOverviewDescriptionWrapper>
+            <ExtendedFeatureHeader>Data collection</ExtendedFeatureHeader>
+            <ExtendedFeatureDescription>
+              {`The online data collection template quickly and efficiently records encounter information including
+                observed behaviors, location encountered, contact information for support individuals, techniques
+                used to diffuse a situation, any use of force, and the outcome of an encounter (whether it ended
+                in a detention, notifying a case manager, hospitalization, or other outcome). `}
+            </ExtendedFeatureDescription>
+          </ProductOverviewDescriptionWrapper>
+          <FeatureShot bgImage={FeatureImg1} />
+        </ProductOverviewWrapper>
+        <ProductOverviewWrapper>
+          <FeatureShot bgImage={FeatureImg2} />
+          <ProductOverviewDescriptionWrapper>
+            <ExtendedFeatureHeader>Real-time data</ExtendedFeatureHeader>
+            <ExtendedFeatureDescription>
+              {`Care provides access to information that will facilitate interactions between individuals and first
+                responders, presented in a way that is easily scanned in the field. Information submitted into
+                Care can be made available to other officers almost immediately.`}
+            </ExtendedFeatureDescription>
+          </ProductOverviewDescriptionWrapper>
+        </ProductOverviewWrapper>
+      </ExtendedFeaturesContent>
     </PageSection>
-    <ConnectSection />
-    <FooterSection />
+    <ContactUsSection />
+    <FooterSectionWithPageLinks />
   </>
 );
 
