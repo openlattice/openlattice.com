@@ -106,11 +106,11 @@ const ItemTitle = styled.div`
   text-align: left;
 `;
 
-const FakeBulletedList = styled.div`
+const CustomBulletedList = styled.div`
   margin-left: 2px;
   width: 100%;
 `;
-const FakeInnerBulletedList = styled.div`
+const CustomInnerBulletedList = styled.div`
   margin-left: 34px;
 
   @media only screen and (max-width: ${MEDIA_QUERY_TECH_SM}px) {
@@ -194,7 +194,7 @@ const TermsOfService = () => (
           <ItemTitle>{ ITEM_2.TITLE }</ItemTitle>
           <BodyText>
             { ITEM_2.TOP_LINE }
-            <FakeBulletedList>
+            <CustomBulletedList>
               {
                 ITEM_2.MAIN_BULLET_POINTS.slice(0, 3).map((text :string) => (
                   <ListItem key={text}>
@@ -205,8 +205,8 @@ const TermsOfService = () => (
                   </ListItem>
                 ))
               }
-            </FakeBulletedList>
-            <FakeInnerBulletedList>
+            </CustomBulletedList>
+            <CustomInnerBulletedList>
               {
                 ITEM_2.INNER_BULLET_POINTS.map((text :string) => (
                   <ListItem key={text}>
@@ -217,8 +217,8 @@ const TermsOfService = () => (
                   </ListItem>
                 ))
               }
-            </FakeInnerBulletedList>
-            <FakeBulletedList>
+            </CustomInnerBulletedList>
+            <CustomBulletedList>
               {
                 ITEM_2.MAIN_BULLET_POINTS.slice(3).map((text :string) => (
                   <ListItem key={text}>
@@ -229,7 +229,7 @@ const TermsOfService = () => (
                   </ListItem>
                 ))
               }
-            </FakeBulletedList>
+            </CustomBulletedList>
             { ITEM_2.BOTTOM_LINE }
           </BodyText>
         </BodyTextWrapper>
