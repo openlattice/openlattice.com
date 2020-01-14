@@ -25,7 +25,7 @@ const Content = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  margin: 50px auto 100px auto;
+  margin: 50px auto 100px;
   max-width: 100%;
   text-align: center;
 

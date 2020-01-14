@@ -18,7 +18,7 @@ const Content = styled.div`
   color: ${NEUTRALS.WHITE};
   display: flex;
   flex-direction: column;
-  margin: 50px auto 100px auto;
+  margin: 50px auto 100px;
   max-width: 100%;
   text-align: center;
 

@@ -17,7 +17,7 @@ const SectionContent = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: center;
-  margin: 40px auto 40px auto;
+  margin: 40px auto;
   max-width: 100%;
   text-align: center;
 
