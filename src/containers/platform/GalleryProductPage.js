@@ -3,7 +3,7 @@ import React from 'react';
 import styled from 'styled-components';
 
 import AppHeader from '../../components/headers/AppHeader';
-import ConnectSection from '../connect/ConnectSection';
+import ContactUsSection from '../contactus/ContactUsSection';
 import Feature1 from '../../assets/productfeatureicons/merge.svg';
 import Feature2 from '../../assets/productfeatureicons/cycle.svg';
 import FeatureImg from '../../assets/images/gallery/gallery-feature-shot.png';
@@ -104,7 +104,7 @@ const GalleryProductPage = () => (
         <GalleryFeatureShot bgImage={FeatureImg} />
       </ProductOverviewWrapper>
     </PageSection>
-    <ConnectSection />
+    <ContactUsSection />
     <FooterSection />
   </>
 );

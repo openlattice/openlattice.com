@@ -9,7 +9,7 @@ import AstrometricsStamp from '../../assets/logos/astrometrics-product-stamp.png
 import AppHeader from '../../components/headers/AppHeader';
 import ChronicleFeatureImg from '../../assets/images/chronicle-feature-shot.png';
 import ChronicleStamp from '../../assets/logos/chronicle-product-stamp.png';
-import ConnectSection from '../connect/ConnectSection';
+import ContactUsSection from '../contactus/ContactUsSection';
 import CWPFeatureImg from '../../assets/images/cwp-feature-shot.png';
 import CWPStamp from '../../assets/logos/cwp-product-stamp.png';
 import FooterSection from '../footer/FooterSection';
@@ -159,7 +159,7 @@ const OtherProductsPage = () => (
         <ChronicleFeatureShot src={ChronicleFeatureImg} />
       </ProductOverviewWrapper>
     </PageSection>
-    <ConnectSection />
+    <ContactUsSection />
     <FooterSection />
   </>
 );

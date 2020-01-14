@@ -11,7 +11,7 @@ import PageSection from '../../components/layout/PageSection';
 import StyledSectionTitle from '../../components/headers/StyledSectionTitle';
 import StyledSectionSubTitle from '../../components/headers/StyledSectionSubTitle';
 import ProductTile from './ProductTile';
-import ConnectSection from '../connect/ConnectSection';
+import ContactUsSection from '../contactus/ContactUsSection';
 import FooterSection from '../footer/FooterSection';
 
 import { NEUTRALS } from '../../core/style/Colors';
@@ -165,7 +165,7 @@ const ProductsPage = () => (
         </ProductTilesOuterWrapper>
       </PageContent>
     </PageSection>
-    <ConnectSection />
+    <ContactUsSection />
     <FooterSection />
   </>
 );

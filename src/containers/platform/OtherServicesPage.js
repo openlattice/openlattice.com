@@ -5,7 +5,7 @@ import React from 'react';
 import styled from 'styled-components';
 
 import AppHeader from '../../components/headers/AppHeader';
-import ConnectSection from '../connect/ConnectSection';
+import ContactUsSection from '../contactus/ContactUsSection';
 import EDMImg from '../../assets/images/edm-product-shot.png';
 import EDMStamp from '../../assets/logos/edm-product-stamp.png';
 import FooterSection from '../footer/FooterSection';
@@ -135,7 +135,7 @@ const OtherServicesPage = () => (
         <FeatureShot bgImage={ResearchHubImg} />
       </ProductOverviewWrapper>
     </PageSection>
-    <ConnectSection />
+    <ContactUsSection />
     <FooterSection />
   </>
 );
