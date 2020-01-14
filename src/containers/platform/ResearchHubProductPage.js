@@ -12,7 +12,7 @@ import FooterSection from '../footer/FooterSection';
 import PlaceholderIcon from '../../assets/logos/placeholder-small-logo.svg';
 import PageSection from '../../components/layout/PageSection';
 import ProductImg from '../../assets/images/researchhub/research-hub-product-shot.png';
-import PurpleOLIcon from '../../assets/images/purple-ol.svg';
+import PurpleOLIcon from '../../assets/images/logo-original.png';
 
 import { menuStylesForProductPages } from '../products/styled/MenuStyles';
 import {
@@ -37,7 +37,7 @@ import { NEUTRALS } from '../../core/style/Colors';
 
 const ResearchHubProductPage = () => (
   <>
-    <PageSection bgColor={NEUTRALS.GRAY05}>
+    <PageSection bgColor={NEUTRALS.GRAY_05}>
       <AppHeader
           logo={PurpleOLIcon}
           menuStyles={menuStylesForProductPages} />

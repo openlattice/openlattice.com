@@ -99,19 +99,16 @@ const ProductsPage = () => (
     <PageSection bgImage={topImage}>
       <AppHeader />
       <Content>
-        <TitleText>Make organizations more productive through modern workflows.</TitleText>
+        <TitleText>Leverage cross-sector data to improve human outcomes.</TitleText>
       </Content>
     </PageSection>
     <PageSection bgColor={NEUTRALS.WHITE}>
       <PageContent>
         <SectionHeaderWrapper>
           <StyledSectionTitle>
-            Core platform services
+            Core Platform Services
           </StyledSectionTitle>
-          <StyledSectionSubTitle>
-            {`Core tools and services for you to access, explore, configure,
-              and analyze your data.`}
-          </StyledSectionSubTitle>
+          <StyledSectionSubTitle>Manage, explore, and analyze your data.</StyledSectionSubTitle>
         </SectionHeaderWrapper>
         <ProductTilesOuterWrapper>
           <ProductTilesInnerWrapper>
@@ -129,12 +126,6 @@ const ProductsPage = () => (
                 route={Routes.ORGANIZATIONS} />
             <ProductTile
                 section={SECTIONS.CORE_PLATFORM}
-                title={PRODUCT_TITLES.RESEARCH_HUB}
-                body={PRODUCT_DESCRIPTIONS.RESEARCH_HUB}
-                icon={PRODUCT_ICONS.RESEARCH_HUB}
-                route={Routes.RESEARCH_HUB} />
-            <ProductTile
-                section={SECTIONS.CORE_PLATFORM}
                 title={PRODUCT_TITLES.OTHER_SERVICES}
                 body={PRODUCT_DESCRIPTIONS.OTHER_SERVICES}
                 icon={PRODUCT_ICONS.OTHER_SERVICES}
@@ -146,18 +137,12 @@ const ProductsPage = () => (
             Our Products
           </StyledSectionTitle>
           <StyledSectionSubTitle>
-            {`We enable precision government by linking of individual level
-              data across criminal justice, healthcare, and social services.`}
+            {`We help public servants, policy makers, and researchers make better decisions with a complete
+              picture across existing criminal justice, healthcare, and social service data sets.`}
           </StyledSectionSubTitle>
         </SectionHeaderWrapper>
         <ProductTilesOuterWrapper>
           <ProductTilesInnerWrapper>
-            <ProductTile
-                section={SECTIONS.PRODUCTS}
-                title={PRODUCT_TITLES.REFERRALS}
-                body={PRODUCT_DESCRIPTIONS.REFERRALS}
-                icon={PRODUCT_ICONS.REFERRALS}
-                route={Routes.REFERRALS} />
             <ProductTile
                 section={SECTIONS.PRODUCTS}
                 title={PRODUCT_TITLES.CARE}
@@ -171,29 +156,11 @@ const ProductsPage = () => (
                 icon={PRODUCT_ICONS.PCM}
                 route={Routes.PCM} />
             <ProductTile
-                section={SECTIONS.PRODUCTS}
-                title={PRODUCT_TITLES.ASTROMETRICS}
-                body={PRODUCT_DESCRIPTIONS.ASTROMETRICS}
-                icon={PRODUCT_ICONS.ASTROMETRICS}
-                route={Routes.ASTROMETRICS} />
-            <ProductTile
-                section={SECTIONS.PRODUCTS}
-                title={PRODUCT_TITLES.CHRONICLE}
-                body={PRODUCT_DESCRIPTIONS.CHRONICLE}
-                icon={PRODUCT_ICONS.CHRONICLE}
-                route={Routes.CHRONICLE} />
-            <ProductTile
-                section={SECTIONS.PRODUCTS}
-                title={PRODUCT_TITLES.CWP}
-                body={PRODUCT_DESCRIPTIONS.CWP}
-                icon={PRODUCT_ICONS.CWP}
-                route={Routes.CWP} />
-            <ProductTile
-                section={SECTIONS.PRODUCTS}
-                title={PRODUCT_TITLES.STEPPING_UP}
-                body={PRODUCT_DESCRIPTIONS.STEPPING_UP}
-                icon={PRODUCT_ICONS.STEPPING_UP}
-                route={Routes.STEPPING_UP} />
+                section={SECTIONS.CORE_PLATFORM}
+                title={PRODUCT_TITLES.OTHER_PRODUCTS}
+                body={PRODUCT_DESCRIPTIONS.OTHER_PRODUCTS}
+                icon={PRODUCT_ICONS.OTHER_PRODUCTS}
+                route={Routes.OTHER_PRODUCTS} />
           </ProductTilesInnerWrapper>
         </ProductTilesOuterWrapper>
       </PageContent>

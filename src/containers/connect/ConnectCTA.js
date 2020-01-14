@@ -25,7 +25,7 @@ const bgColorMixin = ({ bgColor }) => {
 
 
 const CTAWrapper = styled.div`
-  color: ${NEUTRALS.GRAY02};
+  color: ${NEUTRALS.GRAY_02};
   display: flex;
   flex: 0 0 auto;
   font-size: 15px;
@@ -42,7 +42,7 @@ const CTAWrapper = styled.div`
 
 const LeftWrapper = styled.div`
   align-items: center;
-  background-color: ${NEUTRALS.GRAY01};
+  background-color: ${NEUTRALS.GRAY_01};
   border-radius: 2px 0 0 2px;
   display: flex;
   width: 304px;
@@ -59,7 +59,7 @@ const LeftWrapper = styled.div`
 
 const RightWrapper = styled.div`
   align-items: center;
-  background-color: ${NEUTRALS.GRAY01};
+  background-color: ${NEUTRALS.GRAY_01};
   border-radius: 0 2px 2px 0;
   display: flex;
   justify-content: center;
@@ -73,7 +73,7 @@ const RightWrapper = styled.div`
 `;
 
 const ActionLink = styled.a`
-  color: ${NEUTRALS.GRAY01};
+  color: ${NEUTRALS.GRAY_01};
   font-weight: bold;
   text-decoration: none;
 `;

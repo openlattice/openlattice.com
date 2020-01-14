@@ -8,15 +8,15 @@
 
 export const NEUTRALS = {
   BLACK: '#000000',
-  GRAY01: '#f9f9fd',
-  GRAY02: '#6f788a',
-  GRAY03: '#4d4d4d',
-  GRAY04: '#b9b7bf',
-  GRAY05: '#F9F9FC',
-  GRAY06: '#3B3B49',
-  GRAY07: '#505060',
-  GRAY08: '#9999AF',
-  GRAY09: '#E1E1EB',
+  GRAY_01: '#f9f9fd',
+  GRAY_02: '#6f788a',
+  GRAY_03: '#4d4d4d',
+  GRAY_04: '#b9b7bf',
+  GRAY_05: '#F9F9FC',
+  GRAY_06: '#3B3B49',
+  GRAY_07: '#505060',
+  GRAY_08: '#9999AF',
+  GRAY_09: '#E1E1EB',
   WHITE: '#ffffff',
 };
 

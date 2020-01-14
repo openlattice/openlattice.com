@@ -17,11 +17,9 @@ const HeaderContent = styled.div`
   margin: 50px auto 100px auto;
   max-width: 100%;
   text-align: center;
-
   @media only screen and (min-width: ${MEDIA_QUERY_MD}px) {
     max-width: 60%;
   }
-
   @media only screen and (min-width: ${MEDIA_QUERY_LG}px) {
     margin: 65px auto 211px auto;
   }
@@ -46,13 +44,12 @@ const Icon = styled.img`
 `;
 
 const ProductIntro = styled.div`
-  color: ${NEUTRALS.GRAY06};
+  color: ${NEUTRALS.GRAY_06};
   font-size: 35px;
   font-weight: bold;
   margin: 24px 0 32px 0;
   text-align: center;
   line-height: 115%;
-
   @media only screen and (min-width: ${MEDIA_QUERY_MD}px) {
     font-size: 56px;
     text-align: center;
@@ -61,11 +58,10 @@ const ProductIntro = styled.div`
 `;
 
 const ProductDescription = styled.div`
-  color: ${NEUTRALS.GRAY07};
+  color: ${NEUTRALS.GRAY_07};
   font-size: 20px;
   text-align: center;
   line-height: 150%;
-
   @media only screen and (min-width: ${MEDIA_QUERY_MD}px) {
     width: 560px;
   }
@@ -78,9 +74,9 @@ const ProductShot = styled.div`
   background-repeat: no-repeat;
   background-size: contain;
   border-radius: 2px;
-  border: 1px solid ${NEUTRALS.GRAY09};
+  border: 1px solid ${NEUTRALS.GRAY_09};
   box-shadow: 0px 10px 30px rgba(48, 47, 57, 0.05);
-  box-sizing: border-box;
+  box-sizing: content-box;
   height: 100%;
   position: absolute;
   top: 450px;
@@ -110,7 +106,6 @@ const ProductShot = styled.div`
     top: 550px;
     width: 915px;
   }
-
   @media only screen and (min-width: ${MEDIA_QUERY_LG}px) {
     height: 670px;
     top: 625px;
@@ -154,7 +149,6 @@ const FeatureOverviewWrapper = styled.div`
   min-height: 250px;
   margin: 30px 0;
   position: relative;
-
   :last-child {
     margin-left: 0;
   }
@@ -173,7 +167,7 @@ const FeatureOverviewWrapper = styled.div`
 `;
 
 const FeatureOverviewTitle = styled.div`
-  color: ${NEUTRALS.GRAY06};
+  color: ${NEUTRALS.GRAY_06};
   font-size: 25px;
   font-weight: 600;
   line-height: 150%;
@@ -185,7 +179,7 @@ const FeatureOverviewTitle = styled.div`
 `;
 
 const FeatureOverviewDescription = styled.div`
-  color: ${NEUTRALS.GRAY07};
+  color: ${NEUTRALS.GRAY_07};
   font-size: 16px;
   line-height: 150%;
   width: 100%;
@@ -211,13 +205,12 @@ const ProductOverviewWrapper = styled.div`
   :last-of-type {
     margin-bottom: 200px;
   }
-
   @media only screen and (min-width: ${MEDIA_QUERY_LG}px) {
     flex-direction: row;
     justify-content: space-between;
 
     span:first-child {
-      margin-right: 160px;
+      margin-bottom: 0;
     }
   }
 `;
@@ -229,7 +222,7 @@ const ProductOverviewDescriptionWrapper = styled.span`
   min-height: 400px;
   justify-content: center;
   margin-bottom: 60px;
-  width: 480px;
+  width: 350px;
 
   @media only screen and (max-width: ${MEDIA_QUERY_TECH_SM}px) {
     width: 300px;
@@ -247,7 +240,7 @@ const FeatureShot = styled.span`
   background-repeat: no-repeat;
   background-size: contain;
   border-radius: 2px;
-  border: 1px solid ${NEUTRALS.GRAY09};
+  border: 1px solid ${NEUTRALS.GRAY_09};
   box-shadow: 0px 10px 30px rgba(48, 47, 57, 0.05);
   box-sizing: border-box;
   height: 556px;
@@ -256,11 +249,6 @@ const FeatureShot = styled.span`
   @media only screen and (max-width: ${MEDIA_QUERY_TECH_SM}px) {
     height: 348px;
     width: 300px;
-  }
-
-  @media only screen and (min-width: ${MEDIA_QUERY_MD}px) {
-    height: 556px;
-    width: 480px;
   }
 `;
 
@@ -301,6 +289,11 @@ const ProductOverviewDescription = styled(FeatureOverviewDescription)`
   }
 `;
 
+const ProductStampWrapper = styled.img`
+  height: 64px;
+  width: ${(props) => props.width};
+`;
+
 export {
   FeatureOverviewDescription,
   FeatureOverviewTitle,
@@ -318,4 +311,5 @@ export {
   ProductOverviewWrapper,
   ProductShot,
   ProductStamp,
+  ProductStampWrapper,
 };

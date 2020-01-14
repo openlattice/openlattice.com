@@ -49,16 +49,7 @@ const MenuExternalLink = styled.a`
 const ScheduleACallButton = styled.a`
   background-color: ${NEUTRALS.WHITE};
   border-radius: 16px;
-  ${(props) => {
-    if (!props.border) {
-      return css`
-        border: none;
-      `;
-    }
-    return css`
-      border: 1px solid ${props.color};
-    `;
-  }}
+  border: 1px solid ${(props) => props.color};
   color: ${(props) => props.color};
   display: inline-block;
   font-weight: 600;
@@ -91,13 +82,17 @@ const AppHeader = ({ logo, menuStyles } :Props) => (
           target="_blank">
         Help
       </MenuExternalLink>
-      <ScheduleACallButton
-          border={menuStyles.includeScheduleButtonBorder}
-          color={menuStyles.scheduleColor}
-          href={scheduleACallLink}
-          target="_blank">
-        Schedule a call
-      </ScheduleACallButton>
+      {
+        menuStyles.includeScheduleACallButton
+        && (
+          <ScheduleACallButton
+              color={menuStyles.scheduleColor}
+              href={scheduleACallLink}
+              target="_blank">
+            Schedule a call
+          </ScheduleACallButton>
+        )
+      }
     </Menu>
   </Header>
 );
@@ -108,8 +103,8 @@ AppHeader.defaultProps = {
       color: NEUTRALS.WHITE,
       fontWeight: 600
     },
-    includeScheduleButtonBorder: false,
-    menuFontColor: NEUTRALS.GRAY04,
+    includeScheduleACallButton: false,
+    menuFontColor: NEUTRALS.GRAY_04,
     scheduleBorderColor: undefined,
     scheduleColor: NEUTRALS.BLACK,
   },
