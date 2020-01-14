@@ -34,7 +34,7 @@ const Content = styled.div`
   align-items: center;
   display: flex;
   flex-direction: column;
-  margin: 50px auto 50px auto;
+  margin: 50px auto;
   max-width: 100%;
   text-align: center;
 
