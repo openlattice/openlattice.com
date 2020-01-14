@@ -180,7 +180,7 @@ const FooterSection = () => (
             <InternalLink to={Routes.RESEARCH_HUB}>Research Hub</InternalLink>
             <Tag tagType="beta">BETA</Tag>
           </LinkWithTag>
-          <InternalLink to={Routes.OTHER_PRODUCTS}>Other products</InternalLink>
+          <InternalLink to={Routes.PRODUCTS}>Other products</InternalLink>
         </LinkGroupWrapper>
         <LinkGroupWrapper>
           <Header>Support</Header>
