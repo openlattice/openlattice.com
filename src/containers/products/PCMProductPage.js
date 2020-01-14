@@ -22,13 +22,23 @@ import {
   ProductShot,
   ProductStamp,
 } from './styled/StyledProductComponents';
-import { NEUTRALS } from '../../core/style/Colors';
+import { NEUTRALS, PURPLES } from '../../core/style/Colors';
 import {
   CONTENT_WIDTH,
   MEDIA_QUERY_LG,
   MEDIA_QUERY_MD,
   MEDIA_QUERY_TECH_SM,
 } from '../../core/style/Sizes';
+import { TARGET } from '../../components/headers/MenuConsts';
+
+const report :string = ' 2013 report ';
+const reportLink :string = 'https://craftmediabucket.s3.amazonaws.com/uploads/PDFs/LJAF_Report_hidden-costs_FNL.pdf';
+const courtReminders :string = ' positive impact court reminders ';
+const courtRemindersLink :string =
+  `https://urbanlabs.uchicago.edu/attachments/3b31252760b28d3b44ad1a8d964d0f1e9128af34/
+  store/9c86b123e3b00a5da58318f438a6e787dd01d66d0efad54d66aa232a6473/
+  I42-954_NYCSummonsPaper_Final_Mar2018.pdf`;
+
 
 const IntroContent = styled(Content)`
   @media only screen and (min-width: ${MEDIA_QUERY_LG}px) {
@@ -213,6 +223,13 @@ const ExtendedFeatureDescription = styled.div`
   }
 `;
 
+const PurpleLink = styled.a`
+  ${paragraphStyles}
+  color: ${PURPLES.PP08};
+  font-size: 18px;
+  text-decoration: none;
+`;
+
 const PCMProductPage = () => (
   <>
     <ScrollToTopOnMount />
@@ -264,11 +281,13 @@ const PCMProductPage = () => (
           <ProductOverviewDescriptionWrapper>
             <ExtendedFeatureHeader>Manage risk in your community</ExtendedFeatureHeader>
             <ExtendedFeatureDescription>
-              {`Reducing jail population safely and objectively can reduce cost to taxpayers while
-                allowing defendants who have been deemed low-risk to continue to work and live in the community.
-                Furthermore, a 2013 report found low-risk defendants held 2-3 days on pretrial detention were
-                roughly 40% more likely to be arrested on new criminal activity after release than those held
-                less than 24 hours.`}
+              Reducing jail population safely and objectively can reduce cost to taxpayers while
+              allowing defendants who have been deemed low-risk to continue to work and live in the community.
+              Furthermore, a
+              <PurpleLink href={reportLink} target={TARGET}>{ report }</PurpleLink>
+              found low-risk defendants held 2-3 days on pretrial detention were
+              roughly 40% more likely to be arrested on new criminal activity after release than those held
+              less than 24 hours.
             </ExtendedFeatureDescription>
           </ProductOverviewDescriptionWrapper>
           <FeatureShot bgImage={FeatureImg1} />
@@ -278,11 +297,12 @@ const PCMProductPage = () => (
           <ProductOverviewDescriptionWrapper>
             <ExtendedFeatureHeader>Supervision touchpoints</ExtendedFeatureHeader>
             <ExtendedFeatureDescription>
-              {`Failures to appear can result in additional jurisdiction resources spent executing warrants, and
-                potential avoidable jail time for defendants.  Knowing the positive impact court reminders can have,
-                OpenLattice developed both an automated Court Reminder system and an automated Voice Verification
-                Check-In system.  This allows jurisdictions to maximize benefit, while maintaining minimal labor
-                requirements.`}
+              Failures to appear can result in additional jurisdiction resources spent executing warrants, and
+                potential avoidable jail time for defendants.  Knowing the
+              <PurpleLink href={courtRemindersLink} target={TARGET}>{ courtReminders }</PurpleLink>
+              can have, OpenLattice developed both an automated Court Reminder system and an automated
+              Voice Verification Check-In system.  This allows jurisdictions to maximize benefit, while
+              maintaining minimal labor requirements.
             </ExtendedFeatureDescription>
           </ProductOverviewDescriptionWrapper>
         </ProductOverviewWrapper>
