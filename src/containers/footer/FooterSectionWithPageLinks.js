@@ -29,7 +29,7 @@ const Content = styled.div`
   @media only screen and (min-width: ${MEDIA_QUERY_MD}px) {
     align-self: center;
     justify-content: space-between;
-    margin: 136px 0 24px 0;
+    margin: 136px 0 24px;
     text-align: left;
     width: ${CONTENT_WIDTH}px;
   }
