@@ -45,7 +45,6 @@ const TEAM_PHOTOS :Object = {
   RYAN: Ryan,
   SHIREEN: Shireen,
   SOLOMON: Solomon,
-  TAYLOR: '',
   TODD: Todd,
 };
 
@@ -74,7 +73,6 @@ const TEAM_NAMES :Object = {
   RYAN: 'Ryan Weese',
   SHIREEN: 'Shireen Aziz',
   SOLOMON: 'Solomon Tang',
-  TAYLOR: 'Taylor Parker',
   TODD: 'Todd Bergman',
 };
 
@@ -110,7 +108,6 @@ const TEAM_ROLES :Object = {
   RYAN: ACCOUNT,
   SHIREEN: DESIGNER,
   SOLOMON: FRONTEND,
-  TAYLOR: ACCOUNT,
   TODD: FRONTEND,
 };
 

@@ -16,7 +16,7 @@ const Content = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: center;
-  margin: 0 auto 0 auto;
+  margin: 0 auto;
   text-align: center;
 
   @media only screen and (min-width: ${MEDIA_QUERY_MD}px) {
@@ -77,7 +77,6 @@ const TeamMemberRole = styled.div`
 const TeamMembersOuterWrapper = styled.div`
   display: flex;
   flex: 1 0 auto;
-  flex-direction: row;
   justify-content: center;
   margin: auto;
   max-width: 100%;
@@ -229,11 +228,6 @@ const MeetTheTeam = () => (
             <TeamMemberPhoto headshot={TEAM_PHOTOS.RYAN} />
             <TeamMemberName>{TEAM_NAMES.RYAN}</TeamMemberName>
             <TeamMemberRole>{TEAM_ROLES.RYAN}</TeamMemberRole>
-          </TeamMember>
-          <TeamMember>
-            <TeamMemberPhoto headshot={TEAM_PHOTOS.TAYLOR} />
-            <TeamMemberName>{TEAM_NAMES.TAYLOR}</TeamMemberName>
-            <TeamMemberRole>{TEAM_ROLES.TAYLOR}</TeamMemberRole>
           </TeamMember>
           <TeamMember>
             <TeamMemberPhoto headshot={TEAM_PHOTOS.ANDREA} />

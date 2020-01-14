@@ -21,7 +21,7 @@ const Content = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: center;
-  margin: 100px auto 100px auto;
+  margin: 100px auto;
   text-align: center;
   width: 100%;
 
@@ -38,7 +38,6 @@ const Header = styled(SectionHeader)`
 const LogosOuterWrapper = styled.div`
   display: flex;
   flex: 1 0 auto;
-  flex-direction: row;
   justify-content: center;
   margin: auto;
   max-width: 1104px;
