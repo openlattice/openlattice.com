@@ -43,6 +43,10 @@ const SectionHeaderWrapper = styled(SectionHeader)`
 
 const IntegrationSectionHeader = styled(SectionHeader)`
   text-align: left;
+
+  @media only screen and (max-width: ${MEDIA_QUERY_TECH_SM}px) {
+    width: 100%;
+  }
 `;
 
 const SectionDescription = styled.div`
@@ -69,12 +73,20 @@ const IntegrationSectionWrapper = styled.div`
   flex-direction: row;
   justify-content: space-between;
   width: 100%;
+
+  @media only screen and (max-width: ${MEDIA_QUERY_MD}px) {
+    flex-direction: column;
+  }
 `;
 
 const TextWrapper = styled.div`
   display: flex;
   flex-direction: column;
   width: 464px;
+
+  @media only screen and (max-width: ${MEDIA_QUERY_TECH_SM}px) {
+    width: 100%;
+  }
 `;
 
 const Description = styled.div`
@@ -83,10 +95,24 @@ const Description = styled.div`
   line-height: 150%;
   margin-bottom: 40px;
   text-align: left;
+
+  @media only screen and (max-width: ${MEDIA_QUERY_TECH_SM}px) {
+    font-size: 14px;
+  }
 `;
 
 const CaseStudiesButton = styled(LearnMoreExternalLink)`
   width: 165px;
+`;
+
+const Image = styled.img`
+  height: 726px;
+  width: 528px;
+
+  @media only screen and (max-width: ${MEDIA_QUERY_TECH_SM}px) {
+    height: 471.9px;
+    width: 343.2px;
+  }
 `;
 
 const IntegrationAnimationSection = () => (
@@ -109,7 +135,7 @@ const IntegrationAnimationSection = () => (
           </Description>
           <CaseStudiesButton>Our case studies</CaseStudiesButton>
         </TextWrapper>
-        <img src={IntegrationImage} alt="" width={528} height={726} />
+        <Image src={IntegrationImage} />
       </IntegrationSectionWrapper>
     </PageContent>
   </PageSection>
