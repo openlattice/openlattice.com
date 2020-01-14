@@ -12,7 +12,7 @@ import FooterSection from '../footer/FooterSection';
 import PCMIcon from '../../assets/logos/pcm-small-logo.svg';
 import PageSection from '../../components/layout/PageSection';
 import ProductImg from '../../assets/images/pcm/pcm-product-shot.png';
-import PurpleOLogo from '../../assets/images/logo-original.png';
+import ScrollToTopOnMount from '../../components/layout/ScrollToTopOnMount';
 
 import {
   FeatureOverviewDescription,
@@ -40,6 +40,7 @@ const PCMProductPage = () => (
       <AppHeader
           logo={PurpleOLogo}
           menuStyles={menuStylesForProductPages} />
+    <ScrollToTopOnMount />
       <HeaderContent>
         <ProductStamp>
           <Icon src={PCMIcon} />
