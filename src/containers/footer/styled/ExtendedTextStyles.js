@@ -74,11 +74,11 @@ const ItemTitle = styled.div`
   text-align: left;
 `;
 
-const FakeBulletedList = styled.div`
+const CustomBulletedList = styled.div`
   margin-left: 2px;
   width: 100%;
 `;
-const FakeInnerBulletedList = styled.div`
+const CustomInnerBulletedList = styled.div`
   margin-left: 34px;
 
   @media only screen and (max-width: ${MEDIA_QUERY_TECH_SM}px) {
@@ -126,8 +126,8 @@ export {
   BulletWrapper,
   Content,
   ExternalLink,
-  FakeBulletedList,
-  FakeInnerBulletedList,
+  CustomBulletedList,
+  CustomInnerBulletedList,
   ItemTitle,
   LastUpdated,
   ListItem,

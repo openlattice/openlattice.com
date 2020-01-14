@@ -18,7 +18,7 @@ import {
   BulletWrapper,
   Content,
   ExternalLink,
-  FakeBulletedList,
+  CustomBulletedList,
   ItemTitle,
   LastUpdated,
   ListItem,
@@ -57,7 +57,7 @@ const InnerItemTitle = styled(ItemTitle)`
   margin-bottom: 8px;
 `;
 
-const NumberedList = styled(FakeBulletedList)`
+const NumberedList = styled(CustomBulletedList)`
   margin-left: 10px;
 `;
 
@@ -80,7 +80,7 @@ const Number = styled.div`
   margin-top: 2px;
 `;
 
-const BulletedListWithMargin = styled(FakeBulletedList)`
+const BulletedListWithMargin = styled(CustomBulletedList)`
   margin-bottom: 48px;
 `;
 

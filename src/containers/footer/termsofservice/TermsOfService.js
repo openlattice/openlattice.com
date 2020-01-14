@@ -17,8 +17,8 @@ import {
   BulletWrapper,
   Content,
   ExternalLink,
-  FakeBulletedList,
-  FakeInnerBulletedList,
+  CustomBulletedList,
+  CustomInnerBulletedList,
   ItemTitle,
   LastUpdated,
   ListItem,
@@ -91,7 +91,7 @@ const TermsOfService = () => (
           <ItemTitle>{ ITEM_2.TITLE }</ItemTitle>
           <BodyText>
             { ITEM_2.TOP_LINE }
-            <FakeBulletedList>
+            <CustomBulletedList>
               {
                 ITEM_2.MAIN_BULLET_POINTS.slice(0, 3).map((text :string) => (
                   <ListItem key={text}>
@@ -102,8 +102,8 @@ const TermsOfService = () => (
                   </ListItem>
                 ))
               }
-            </FakeBulletedList>
-            <FakeInnerBulletedList>
+            </CustomBulletedList>
+            <CustomInnerBulletedList>
               {
                 ITEM_2.INNER_BULLET_POINTS.map((text :string) => (
                   <ListItem key={text}>
@@ -114,8 +114,8 @@ const TermsOfService = () => (
                   </ListItem>
                 ))
               }
-            </FakeInnerBulletedList>
-            <FakeBulletedList>
+            </CustomInnerBulletedList>
+            <CustomBulletedList>
               {
                 ITEM_2.MAIN_BULLET_POINTS.slice(3).map((text :string) => (
                   <ListItem key={text}>
@@ -126,7 +126,7 @@ const TermsOfService = () => (
                   </ListItem>
                 ))
               }
-            </FakeBulletedList>
+            </CustomBulletedList>
             { ITEM_2.BOTTOM_LINE }
           </BodyText>
         </BodyTextWrapper>
