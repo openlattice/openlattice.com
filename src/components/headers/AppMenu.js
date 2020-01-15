@@ -1,5 +1,5 @@
 // @flow
-import React, { useState } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 import styled, { css } from 'styled-components';
 import { Link, NavLink } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
@@ -27,6 +27,15 @@ const menuActiveColor = {
   color: NEUTRALS.GRAY_06
 };
 
+const StickyWrapper = styled.div`
+  background-color: ${NEUTRALS.GRAY_05};
+  height: 52px;
+  margin-top: 8px;
+  position: relative;
+  width: 100%;
+  z-index: 100;
+`;
+
 const menuItemStyles = css`
   color: ${NEUTRALS.GRAY_08};
   font-size: 14px;
@@ -44,10 +53,18 @@ const menuItemStyles = css`
 
 const MenuWrapper = styled.div`
   align-items: center;
+  background-color: ${(props) => (props.isSticky ? NEUTRALS.WHITE : NEUTRALS.GRAY_05)};
+  box-shadow: ${(props) => (props.isSticky ? '0 5px 20px rgba(0, 0, 0, 0.05)' : 'none')};
   display: flex;
   justify-content: space-between;
-  margin: 0;
+  margin: ${(props) => (props.isSticky ? '0 -32px' : '0')};
   max-width: 100%;
+  padding: ${(props) => (props.isSticky ? '16px 32px' : '16px 0')};
+  position: ${(props) => (props.isSticky ? 'fixed' : 'relative')};
+  top: 0;
+  left: ${(props) => (props.isSticky ? '32px' : 'auto')};
+  right: ${(props) => (props.isSticky ? '32px' : 'auto')};
+  z-index: 100;
 
   @media only screen and (max-width: ${MEDIA_QUERY_MD}px) {
     flex-direction: column;
@@ -206,72 +223,90 @@ const ProductBlurb = styled.div`
 
 const AppMenu = () => {
   const [productsMenuIsOpen, openProductsMenu] = useState(false);
+  const [isSticky, setSticky] = useState(false);
+  const ref = useRef({});
+  const handleScroll = () => {
+    setSticky(ref.current.getBoundingClientRect().top <= 0);
+  };
+
+  useEffect(() => {
+    window.addEventListener('scroll', handleScroll);
+
+    return () => {
+      window.removeEventListener('scroll', () => handleScroll);
+    };
+  }, []);
+
   return (
-    <MenuWrapper>
-      <Link to={MENU_ROUTES.ROOT}>
-        <img src={OlLogo} alt="OpenLattice" height={40} />
-      </Link>
-      <MenuItemsWrapper>
-        <MenuInternalLink
-            activeStyle={menuActiveColor}
-            to={MENU_ROUTES.ABOUT}>
-          { MENU_HEADERS.ABOUT }
-        </MenuInternalLink>
-        <MenuInternalLink
-            activeStyle={menuActiveColor}
-            to={MENU_ROUTES.WORKING_WITH_US}>
-          { MENU_HEADERS.WORKING_WITH_US }
-        </MenuInternalLink>
-        <MenuInternalLink
-            activeStyle={menuActiveColor}
-            to={MENU_ROUTES.PLATFORM}>
-          { MENU_HEADERS.PLATFORM }
-        </MenuInternalLink>
-        <ProductsWrapper
-            active={productsMenuIsOpen}
-            onClick={() => openProductsMenu(!productsMenuIsOpen)}>
-          <ProductsMenuTitle>
-            { MENU_HEADERS.PRODUCTS }
-          </ProductsMenuTitle>
-          <FontAwesomeIcon color={productsMenuIsOpen ? menuActiveColor.color : NEUTRALS.GRAY_08} icon={faChevronDown} />
-        </ProductsWrapper>
-        <MenuExternalLink
-            activeStyle={menuActiveColor}
-            href={MENU_ROUTES.HELP_CENTER}
-            target={TARGET}>
-          { MENU_HEADERS.HELP_CENTER }
-        </MenuExternalLink>
-        <ContactUsWhite
-            activeStyle={menuActiveColor}
-            href={MENU_ROUTES.CONTACT_US}
-            target={TARGET}>
-          { MENU_HEADERS.CONTACT_US }
-        </ContactUsWhite>
-      </MenuItemsWrapper>
-      {
-        productsMenuIsOpen && (
-          <ProductsMenuWrapper>
-            <ProductOverviewRow>
-              <ProductOverviewLink to={MENU_ROUTES.PRODUCTS}>Product overview</ProductOverviewLink>
-              <FontAwesomeIcon color={NEUTRALS.GRAY_06} icon={faLongArrowRight} />
-            </ProductOverviewRow>
-            <ProductsMenuInnerWrapper>
-              {
-                PRODUCT_MENU_ITEMS.map((item :Object) => (
-                  <ProductRow key={item.NAME}>
-                    <img src={item.ICON} alt="" />
-                    <ProductRowTextWrapper to={item.ROUTE}>
-                      <ProductName>{ item.NAME }</ProductName>
-                      <ProductBlurb>{ item.BLURB }</ProductBlurb>
-                    </ProductRowTextWrapper>
-                  </ProductRow>
-                ))
-              }
-            </ProductsMenuInnerWrapper>
-          </ProductsMenuWrapper>
-        )
-      }
-    </MenuWrapper>
+    <StickyWrapper isSticky={isSticky} ref={ref}>
+      <MenuWrapper isSticky={isSticky}>
+        <Link to={MENU_ROUTES.ROOT}>
+          <img src={OlLogo} alt="OpenLattice" height={40} />
+        </Link>
+        <MenuItemsWrapper>
+          <MenuInternalLink
+              activeStyle={menuActiveColor}
+              to={MENU_ROUTES.ABOUT}>
+            { MENU_HEADERS.ABOUT }
+          </MenuInternalLink>
+          <MenuInternalLink
+              activeStyle={menuActiveColor}
+              to={MENU_ROUTES.WORKING_WITH_US}>
+            { MENU_HEADERS.WORKING_WITH_US }
+          </MenuInternalLink>
+          <MenuInternalLink
+              activeStyle={menuActiveColor}
+              to={MENU_ROUTES.PLATFORM}>
+            { MENU_HEADERS.PLATFORM }
+          </MenuInternalLink>
+          <ProductsWrapper
+              active={productsMenuIsOpen}
+              onClick={() => openProductsMenu(!productsMenuIsOpen)}>
+            <ProductsMenuTitle>
+              { MENU_HEADERS.PRODUCTS }
+            </ProductsMenuTitle>
+            <FontAwesomeIcon
+                color={productsMenuIsOpen ? menuActiveColor.color : NEUTRALS.GRAY_08}
+                icon={faChevronDown} />
+          </ProductsWrapper>
+          <MenuExternalLink
+              activeStyle={menuActiveColor}
+              href={MENU_ROUTES.HELP_CENTER}
+              target={TARGET}>
+            { MENU_HEADERS.HELP_CENTER }
+          </MenuExternalLink>
+          <ContactUsWhite
+              activeStyle={menuActiveColor}
+              href={MENU_ROUTES.CONTACT_US}
+              target={TARGET}>
+            { MENU_HEADERS.CONTACT_US }
+          </ContactUsWhite>
+        </MenuItemsWrapper>
+        {
+          productsMenuIsOpen && (
+            <ProductsMenuWrapper>
+              <ProductOverviewRow>
+                <ProductOverviewLink to={MENU_ROUTES.PRODUCTS}>Product overview</ProductOverviewLink>
+                <FontAwesomeIcon color={NEUTRALS.GRAY_06} icon={faLongArrowRight} />
+              </ProductOverviewRow>
+              <ProductsMenuInnerWrapper>
+                {
+                  PRODUCT_MENU_ITEMS.map((item :Object) => (
+                    <ProductRow key={item.NAME}>
+                      <img src={item.ICON} alt="" />
+                      <ProductRowTextWrapper to={item.ROUTE}>
+                        <ProductName>{ item.NAME }</ProductName>
+                        <ProductBlurb>{ item.BLURB }</ProductBlurb>
+                      </ProductRowTextWrapper>
+                    </ProductRow>
+                  ))
+                }
+              </ProductsMenuInnerWrapper>
+            </ProductsMenuWrapper>
+          )
+        }
+      </MenuWrapper>
+    </StickyWrapper>
   );
 };
 
