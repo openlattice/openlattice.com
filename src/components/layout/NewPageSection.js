@@ -48,7 +48,7 @@ export const PageSectionInnerWrapper = styled.div`
   align-items: center;
   display: flex;
   flex-direction: column;
-  margin: 24px 32px 0 32px;
+  margin: ${(props) => (props.includeMenu ? '0 32px' : '24px 32px 0')};
   position: relative;
   width: 100%;
 
@@ -95,7 +95,7 @@ const PageSection = ({
     <PageSectionBackgroundWrapper bgColor={bgColor} bgImage={bgImage} bgSize={bgSize}>
       { bgComponent }
     </PageSectionBackgroundWrapper>
-    <PageSectionInnerWrapper>
+    <PageSectionInnerWrapper includeMenu={includeMenu}>
       { includeMenu && <AppMenu /> }
       { children }
     </PageSectionInnerWrapper>
