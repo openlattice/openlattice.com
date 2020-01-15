@@ -96,9 +96,7 @@ const PageSection = ({
       { bgComponent }
     </PageSectionBackgroundWrapper>
     <PageSectionInnerWrapper>
-      {
-        includeMenu && <AppMenu />
-      }
+      { includeMenu && <AppMenu /> }
       { children }
     </PageSectionInnerWrapper>
   </PageSectionOuterWrapper>
