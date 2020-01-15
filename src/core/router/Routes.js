@@ -12,6 +12,7 @@ export const PLATFORM :string = '/platform';
 export const CARE :string = `${PRODUCTS}/care`;
 export const PCM :string = `${PRODUCTS}/pretrialcasemanagement`;
 export const RESEARCH_HUB :string = `${PRODUCTS}/researchhub`;
+export const CHRONICLE :string = `${PRODUCTS}/chronicle`;
 export const OTHER_PRODUCTS :string = `${PRODUCTS}/otherproducts`;
 
 export const GALLERY :string = `${PLATFORM}/gallery`;
