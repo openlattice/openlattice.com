@@ -42,7 +42,7 @@ const PRODUCT_MENU_ITEMS :Object[] = [
     ROUTE: Routes.CARE,
   },
   {
-    BLURB: 'Collaborative human centered research tool',
+    BLURB: 'Collaborative human-centered research tool',
     ICON: OLLogo,
     NAME: 'Chronicle',
     ROUTE: Routes.CHRONICLE,
