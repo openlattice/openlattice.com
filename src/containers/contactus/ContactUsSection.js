@@ -5,7 +5,7 @@
 import React from 'react';
 import styled from 'styled-components';
 
-import PageSection from '../../components/layout/PageSection';
+import PageSection from '../../components/layout/NewPageSection';
 
 import { ContactUsPurple, ContactUsWhite } from '../../components/controls/index';
 import { NEUTRALS } from '../../core/style/Colors';

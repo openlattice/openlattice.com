@@ -7,7 +7,7 @@ import styled, { css } from 'styled-components';
 import { NavLink } from 'react-router-dom';
 import { StyleUtils } from 'lattice-ui-kit';
 
-import PageSection from '../../components/layout/PageSection';
+import PageSection from '../../components/layout/NewPageSection';
 import GrayOLLogo from '../../assets/logos/ol-gray-logo.svg';
 
 import * as Routes from '../../core/router/Routes';
