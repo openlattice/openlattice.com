@@ -84,7 +84,7 @@ const FeatureTilesInnerWrapper = styled.div`
   margin: -24px;
 
   @media only screen and (min-width: ${MEDIA_QUERY_LG}px) {
-    justify-content: flex-start;
+    justify-content: center;
   }
 `;
 

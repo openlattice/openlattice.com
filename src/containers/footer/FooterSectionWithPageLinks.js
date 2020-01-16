@@ -7,29 +7,34 @@ import styled, { css } from 'styled-components';
 import { NavLink } from 'react-router-dom';
 import { StyleUtils } from 'lattice-ui-kit';
 
-import PageSection from '../../components/layout/PageSection';
+import PageSection from '../../components/layout/NewPageSection';
 import GrayOLLogo from '../../assets/logos/ol-gray-logo.svg';
 
 import * as Routes from '../../core/router/Routes';
 import { NEUTRALS, PINKS } from '../../core/style/Colors';
-import { MEDIA_QUERY_MD, MEDIA_QUERY_TECH_SM } from '../../core/style/Sizes';
+import { CONTENT_WIDTH, MEDIA_QUERY_MD, MEDIA_QUERY_TECH_SM } from '../../core/style/Sizes';
 import { helpCenterLink, TARGET } from '../../components/headers/MenuConsts';
 
 const { getStyleVariation } = StyleUtils;
 
 const Content = styled.div`
+  align-self: center;
   align-items: center;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   margin: 40px auto 0 auto;
-  max-width: 100%;
+  width: ${CONTENT_WIDTH}px;
   text-align: center;
 
   @media only screen and (min-width: ${MEDIA_QUERY_MD}px) {
     justify-content: space-between;
     margin: 136px 0 24px 0;
     text-align: left;
+  }
+
+  @media only screen and (max-width: ${CONTENT_WIDTH}px) {
+    width: 100%;
   }
 `;
 
