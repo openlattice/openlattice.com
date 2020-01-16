@@ -34,6 +34,10 @@ const StickyWrapper = styled.div`
   position: relative;
   width: 100%;
   z-index: 100;
+
+  @media only screen and (max-width: ${MEDIA_QUERY_MD}px) {
+    height: 312px;
+  }
 `;
 
 const menuItemStyles = css`
@@ -53,18 +57,30 @@ const menuItemStyles = css`
 
 const MenuWrapper = styled.div`
   align-items: center;
-  background-color: ${(props) => (props.isSticky ? NEUTRALS.WHITE : NEUTRALS.GRAY_05)};
-  box-shadow: ${(props) => (props.isSticky ? '0 5px 20px rgba(0, 0, 0, 0.05)' : 'none')};
   display: flex;
   justify-content: space-between;
-  margin: ${(props) => (props.isSticky ? '0 -32px' : '0')};
   max-width: 100%;
-  padding: ${(props) => (props.isSticky ? '16px 32px' : '16px 0')};
-  position: ${(props) => (props.isSticky ? 'fixed' : 'relative')};
   top: 0;
-  left: ${(props) => (props.isSticky ? '32px' : 'auto')};
-  right: ${(props) => (props.isSticky ? '32px' : 'auto')};
   z-index: 100;
+  ${(props) => (props.isSticky ? css`
+     background-color: ${NEUTRALS.WHITE};
+     box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
+     margin: 0 -32px;
+     padding: 16px 32px;
+     position: fixed;
+     left: 32px;
+     right: 32px;
+  `
+    : `
+  background-color: ${NEUTRALS.GRAY_05};
+  box-shadow: none;
+  margin: 0;
+  padding: 16px 0;
+  position: relative;
+  left: auto;
+  right: auto;
+  `
+  )}
 
   @media only screen and (max-width: ${MEDIA_QUERY_MD}px) {
     flex-direction: column;
