@@ -8,7 +8,7 @@ import type { Node } from 'react';
 
 import AppMenu from '../headers/AppMenu';
 
-import { MEDIA_QUERY_MD, PAGE_SECTION_WIDTH } from '../../core/style/Sizes';
+import { MEDIA_QUERY_MD } from '../../core/style/Sizes';
 
 /*
  * styled components
@@ -37,24 +37,25 @@ const bgImageMixin = ({ bgColor, bgImage, bgSize }) => {
 
 // "min-width" because this container needs to stretch to 100% of the width of the window
 export const PageSectionOuterWrapper = styled.section`
+  box-sizing: border-box;
   display: flex;
   justify-content: center;
-  min-width: 100%;
+  width: 100%;
   position: relative;
 `;
 
-// "padding" adds space between the window edge and the content when the window size is really small
+// padding is for the menu/navbar
 export const PageSectionInnerWrapper = styled.div`
   align-items: center;
+  box-sizing: border-box;
   display: flex;
   flex-direction: column;
-  margin: 24px 32px 0 32px;
+  padding: 24px 32px 0 32px;
   position: relative;
   width: 100%;
 
   @media only screen and (min-width: ${MEDIA_QUERY_MD}px) {
     align-items: stretch;
-    width: 100%;
   }
 `;
 
