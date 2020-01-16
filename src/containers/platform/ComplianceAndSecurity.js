@@ -10,7 +10,12 @@ import PageSection from '../../components/layout/NewPageSection';
 
 import { SectionHeader } from '../../components/headers/PageHeaders';
 import { NEUTRALS } from '../../core/style/Colors';
-import { CONTENT_WIDTH, MEDIA_QUERY_LG, MEDIA_QUERY_MD } from '../../core/style/Sizes';
+import {
+  CONTENT_WIDTH,
+  MEDIA_QUERY_LG,
+  MEDIA_QUERY_MD,
+  MEDIA_QUERY_TECH_SM
+} from '../../core/style/Sizes';
 import {
   COMPLIANCE_DESCRIPTIONS,
   COMPLIANCE_ICONS,
@@ -22,7 +27,6 @@ import {
 
 const Content = styled.div`
   align-items: center;
-  color: ${NEUTRALS.WHITE};
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -72,6 +76,14 @@ const ListOuterWrapper = styled.div`
   :last-of-type {
     margin-bottom: 0;
   }
+
+  @media only screen and (max-width: ${MEDIA_QUERY_MD}px) {
+    max-width: 100vw;
+  }
+
+  @media only screen and (max-width: ${MEDIA_QUERY_TECH_SM}px) {
+    width: 100%;
+  }
 `;
 
 const ListInnerWrapper = styled.div`
@@ -82,6 +94,12 @@ const ListInnerWrapper = styled.div`
 
   @media only screen and (min-width: ${MEDIA_QUERY_LG}px) {
     justify-content: flex-start;
+  }
+
+  @media only screen and (max-width: ${MEDIA_QUERY_MD}px) {
+    max-width: 100vw;
+    margin-left: 0;
+    margin-right: 0;
   }
 `;
 
