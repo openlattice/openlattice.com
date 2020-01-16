@@ -83,9 +83,9 @@ const Graphic = styled.img`
   }
 
   @media only screen and (min-width: ${MEDIA_QUERY_TECH_SM}px) and (max-width: ${MEDIA_QUERY_MD}px) {
+    height: 324.75px;
     margin-top: 40px;
     width: 453.75px;
-    height: 324.75px;
   }
 `;
 
