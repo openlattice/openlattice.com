@@ -50,10 +50,9 @@ export const PageSectionInnerWrapper = styled.div`
   box-sizing: border-box;
   display: flex;
   flex-direction: column;
-  padding: 24px 32px 0 32px;
+  padding: ${(props) => (props.includeMenu ? '0 32px' : '24px 32px 0')};
   position: relative;
   width: 100%;
-
   @media only screen and (min-width: ${MEDIA_QUERY_MD}px) {
     align-items: stretch;
   }
@@ -77,7 +76,7 @@ type Props = {
   bgSize ? :string;
   children :Node;
   includeMenu :?boolean;
-}
+};
 
 /*
  * components
@@ -96,8 +95,8 @@ const PageSection = ({
     <PageSectionBackgroundWrapper bgColor={bgColor} bgImage={bgImage} bgSize={bgSize}>
       { bgComponent }
     </PageSectionBackgroundWrapper>
-    <PageSectionInnerWrapper>
-      { includeMenu && <AppMenu /> }
+    <PageSectionInnerWrapper includeMenu={includeMenu}>
+      { includeMenu && <AppMenu bgColor={bgColor} /> }
       { children }
     </PageSectionInnerWrapper>
   </PageSectionOuterWrapper>
