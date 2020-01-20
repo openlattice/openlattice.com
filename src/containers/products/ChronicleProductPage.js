@@ -8,6 +8,7 @@ import styled from 'styled-components';
 import ContactUsSection from '../contactus/ContactUsSection';
 import FooterSection from '../footer/FooterSectionWithPageLinks';
 import PageSection from '../../components/layout/NewPageSection';
+import ScrollToTopOnMount from '../../components/layout/ScrollToTopOnMount';
 
 import { PageIntro } from '../../components/headers/PageHeaders';
 import { Content } from '../../components/layout/IntroComponents';
@@ -22,6 +23,7 @@ const ComingSoonContent = styled(Content)`
 
 const ChronicleProductPage = () => (
   <>
+    <ScrollToTopOnMount />
     <PageSection bgColor={NEUTRALS.WHITE} includeMenu>
       <ComingSoonContent>
         <PageIntro>Coming Soon</PageIntro>
