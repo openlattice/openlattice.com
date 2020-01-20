@@ -169,7 +169,7 @@ class Quotes extends Component<Props, State> {
   render() {
     const { currentIndex } = this.state;
     return (
-      <PageSection bgColor={NEUTRALS.GRAY_15}>
+      <PageSection bgColor={NEUTRALS.GRAY_16}>
         <Content>
           <ButtonCircle onClick={this.moveBackward}>
             <Arrow src={LeftArrow} alt="" />
