@@ -28,7 +28,7 @@ const menuActiveColor = {
 };
 
 const StickyWrapper = styled.div`
-  background-color: ${NEUTRALS.GRAY_05};
+  background-color: ${(props) => props.bgColor};
   height: 52px;
   margin-top: 8px;
   position: relative;
@@ -47,7 +47,6 @@ const menuItemStyles = css`
   line-height: 150%;
   margin-right: 40px;
   text-decoration: none;
-
   @media only screen and (max-width: ${MEDIA_QUERY_MD}px) {
     font-size: 12px;
     margin-bottom: 20px;
@@ -72,7 +71,7 @@ const MenuWrapper = styled.div`
      right: 32px;
   `
     : `
-  background-color: ${NEUTRALS.GRAY_05};
+  background-color: ${props.bgColor};
   box-shadow: none;
   margin: 0;
   padding: 16px 0;
@@ -92,7 +91,6 @@ const MenuItemsWrapper = styled.div`
   align-items: center;
   display: flex;
   justify-content: space-between;
-
   @media only screen and (max-width: ${MEDIA_QUERY_MD}px) {
     flex-direction: column;
     justify-content: center;
@@ -102,7 +100,6 @@ const MenuItemsWrapper = styled.div`
 
 const MenuInternalLink = styled(NavLink)`
   ${menuItemStyles}
-
   &:hover {
     cursor: pointer;
   }
@@ -237,7 +234,11 @@ const ProductBlurb = styled.div`
   line-height: 17px;
 `;
 
-const AppMenu = () => {
+type Props = {
+  bgColor ? :string;
+};
+
+const AppMenu = ({ bgColor } :Props) => {
   const [productsMenuIsOpen, openProductsMenu] = useState(false);
   const [isSticky, setSticky] = useState(false);
   const ref = useRef({});
@@ -254,8 +255,8 @@ const AppMenu = () => {
   }, []);
 
   return (
-    <StickyWrapper isSticky={isSticky} ref={ref}>
-      <MenuWrapper isSticky={isSticky}>
+    <StickyWrapper bgColor={bgColor} isSticky={isSticky} ref={ref}>
+      <MenuWrapper bgColor={bgColor} isSticky={isSticky}>
         <Link to={MENU_ROUTES.ROOT}>
           <img src={OlLogo} alt="OpenLattice" height={40} />
         </Link>
@@ -324,6 +325,10 @@ const AppMenu = () => {
       </MenuWrapper>
     </StickyWrapper>
   );
+};
+
+AppMenu.defaultProps = {
+  bgColor: NEUTRALS.GRAY_05,
 };
 
 export default AppMenu;

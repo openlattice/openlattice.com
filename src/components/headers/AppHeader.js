@@ -1,6 +1,6 @@
 // @flow
 import React from 'react';
-import styled, { css } from 'styled-components';
+import styled from 'styled-components';
 import { Link, NavLink } from 'react-router-dom';
 
 import logoImg from '../../assets/images/logo-white.png';
