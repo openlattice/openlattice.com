@@ -10,6 +10,7 @@ import * as Routes from '../../core/router/Routes';
 import About from '../about/About';
 import AppHomePage from './AppHomePage';
 import CareProductPage from '../products/CareProductPage';
+import ChronicleProductPage from '../products/ChronicleProductPage';
 import GalleryProductPage from '../platform/GalleryProductPage';
 import OrganizationsProductPage from '../platform/OrganizationsProductPage';
 import OtherServicesPage from '../platform/OtherServicesPage';
@@ -22,6 +23,7 @@ import WorkingWithUs from '../workingwithus/WorkingWithUs';
 const AppContainer = () => (
   <Switch>
     <Route exact path={Routes.TERMS_OF_SERVICE} component={TermsOfService} />
+    <Route exact path={Routes.CHRONICLE} component={ChronicleProductPage} />
     <Route exact path={Routes.GALLERY} component={GalleryProductPage} />
     <Route exact path={Routes.OTHER_SERVICES} component={OtherServicesPage} />
     <Route exact path={Routes.ORGANIZATIONS} component={OrganizationsProductPage} />
