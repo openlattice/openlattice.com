@@ -5,17 +5,15 @@
 import React from 'react';
 import styled, { css } from 'styled-components';
 import { NavLink } from 'react-router-dom';
-import { StyleUtils } from 'lattice-ui-kit';
 
 import PageSection from '../../components/layout/NewPageSection';
 import GrayOLLogo from '../../assets/logos/ol-gray-logo.svg';
 
 import * as Routes from '../../core/router/Routes';
-import { NEUTRALS, PINKS } from '../../core/style/Colors';
+import { Tag } from '../../components/tags/Tag';
+import { NEUTRALS } from '../../core/style/Colors';
 import { CONTENT_WIDTH, MEDIA_QUERY_MD, MEDIA_QUERY_TECH_SM } from '../../core/style/Sizes';
 import { helpCenterLink, TARGET } from '../../components/headers/MenuConsts';
-
-const { getStyleVariation } = StyleUtils;
 
 const Content = styled.div`
   align-self: center;
@@ -87,23 +85,6 @@ const HeaderWithTag = styled.div`
   display: flex;
   justify-content: flex-start;
   margin-bottom: 14px;
-`;
-
-const getTagColor = getStyleVariation('tagType', {
-  beta: PINKS.PINK02,
-  comingSoon: NEUTRALS.GRAY_13
-});
-
-const Tag = styled.div`
-  background-color: ${getTagColor};
-  border-radius: 3px;
-  color: ${NEUTRALS.WHITE};
-  font-size: 10px;
-  font-weight: bold;
-  line-height: 150%;
-  margin-left: 12px;
-  padding: 1px 5px;
-  text-transform: uppercase;
 `;
 
 const linkStyles = css`
