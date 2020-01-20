@@ -18,16 +18,25 @@ const ItemWrapper = styled.div`
   margin: 24px;
   position: relative;
   text-decoration: none;
-  width: 100%;
 
-  @media only screen and (min-width: ${MEDIA_QUERY_TECH_SM}px) {
+  @media only screen and (min-width: ${MEDIA_QUERY_MD}px) {
     width: 528px;
+  }
+
+  @media only screen and (max-width: ${MEDIA_QUERY_MD}px) {
+    justify-content: flex-start;
+    margin: 24px 0;
   }
 `;
 
 const Icon = styled.img`
   height: 96px;
   width: 96px;
+
+  @media only screen and (max-width: ${MEDIA_QUERY_MD}px) {
+    height: 60px;
+    width: 60px;
+  }
 
   @media only screen and (max-width: ${MEDIA_QUERY_TECH_SM}px) {
     height: 48px;
@@ -42,8 +51,14 @@ const TextWrapper = styled.div`
   justify-content: flex-start;
   width: 384px;
 
+  @media only screen and (max-width: ${MEDIA_QUERY_MD}px) {
+    box-sizing: border-box;
+    padding-left: 30px;
+    width: 100%;
+  }
+
   @media only screen and (max-width: ${MEDIA_QUERY_TECH_SM}px) {
-    width: 270px;
+    width: 100%;
   }
 `;
 
