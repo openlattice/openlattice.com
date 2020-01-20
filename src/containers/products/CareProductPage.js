@@ -3,7 +3,7 @@ import React from 'react';
 import styled from 'styled-components';
 
 import AppHeader from '../../components/headers/AppHeader';
-import ConnectSection from '../connect/ConnectSection';
+import ContactUsSection from '../contactus/ContactUsSection';
 import Feature1 from '../../assets/productfeatureicons/care/headphones.svg';
 import Feature2 from '../../assets/productfeatureicons/feature2.svg';
 import Feature3 from '../../assets/productfeatureicons/care/pages.svg';
@@ -140,7 +140,7 @@ const CareProductPage = () => (
         </ProductOverviewDescriptionWrapper>
       </ProductOverviewWrapper>
     </PageSection>
-    <ConnectSection />
+    <ContactUsSection />
     <FooterSection />
   </>
 );

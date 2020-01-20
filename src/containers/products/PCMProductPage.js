@@ -2,7 +2,7 @@
 import React from 'react';
 
 import AppHeader from '../../components/headers/AppHeader';
-import ConnectSection from '../connect/ConnectSection';
+import ContactUsSection from '../contactus/ContactUsSection';
 import Feature1 from '../../assets/productfeatureicons/merge.svg';
 import Feature2 from '../../assets/productfeatureicons/pcm/gavel.svg';
 import Feature3 from '../../assets/productfeatureicons/pcm/clipboard.svg';
@@ -109,7 +109,7 @@ const PCMProductPage = () => (
         </ProductOverviewDescriptionWrapper>
       </ProductOverviewWrapper>
     </PageSection>
-    <ConnectSection />
+    <ContactUsSection />
     <FooterSection />
   </>
 );
