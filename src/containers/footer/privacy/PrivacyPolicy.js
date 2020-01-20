@@ -63,7 +63,7 @@ const NumberedList = styled(CustomBulletedList)`
 
 const NumberedListItem = styled(ListItem)`
   display: flex;
-  margin: 8px 0 8px 0;
+  margin: 8px 0;
 
   :first-of-type {
     margin-top: 18px;
