@@ -237,7 +237,7 @@ const ProductFeaturesContent = styled.div`
   @media only screen and (min-width: ${MEDIA_QUERY_LG}px) {
     align-items: flex-start;
     flex-direction: row;
-    margin: 440px auto 96px auto;
+    margin: 440px auto 96px;
     width: ${CONTENT_WIDTH}px;
   }
 
@@ -257,7 +257,7 @@ const ExtendedFeaturesContent = styled(ProductFeaturesContent)`
   @media only screen and (min-width: ${MEDIA_QUERY_LG}px) {
     align-items: flex-start;
     flex-direction: column;
-    margin: 0 0 200px 0;
+    margin: 0 0 200px;
     width: ${CONTENT_WIDTH}px;
   }
 
