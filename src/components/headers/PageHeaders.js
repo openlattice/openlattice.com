@@ -29,6 +29,7 @@ const PageIntro = styled.h1`
 
   @media only screen and (max-width: ${MEDIA_QUERY_MD}px) {
     font-size: 32px;
+    width: 100%;
   }
 `;
 

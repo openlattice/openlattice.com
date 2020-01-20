@@ -34,6 +34,7 @@ const StickyWrapper = styled.div`
   position: relative;
   width: 100%;
   z-index: 100;
+
   @media only screen and (max-width: ${MEDIA_QUERY_MD}px) {
     height: 312px;
   }
@@ -79,6 +80,7 @@ const MenuWrapper = styled.div`
   right: auto;
   `
   )}
+
   @media only screen and (max-width: ${MEDIA_QUERY_MD}px) {
     flex-direction: column;
     justify-content: center;
@@ -116,6 +118,7 @@ const ProductsWrapper = styled.div`
 
 const ProductsMenuTitle = styled.div`
   margin-right: 8px;
+
   &:hover {
     cursor: pointer;
   }
@@ -132,6 +135,7 @@ const ProductsMenuWrapper = styled.div`
   right: 9%;
   top: 56px;
   width: 441px;
+
   @media only screen and (max-width: ${MEDIA_QUERY_MD}px) {
     top: 220px;
     left: 0;
@@ -139,19 +143,24 @@ const ProductsMenuWrapper = styled.div`
     margin-left: auto;
     margin-right: auto;
   }
+
   @media only screen and (max-width: ${MEDIA_QUERY_TECH_SM}px) {
     top: 220px;
     width: 100%;
   }
+
   @media only screen and (min-width: ${MEDIA_QUERY_MD}px) {
     left: 46%;
   }
+
   @media only screen and (min-width: ${MEDIA_QUERY_LG}px) {
     left: 52%;
   }
+
   @media only screen and (min-width: 1268px) {
     left: 60%;
   }
+
   @media only screen and (min-width: ${PAGE_SECTION_WIDTH}px) {
     left: 70%;
   }
@@ -173,6 +182,7 @@ const productsMenuTextStyles = css`
   color: ${NEUTRALS.GRAY_06};
   font-weight: 600;
   line-height: 100%;
+
   &:hover {
     cursor: pointer;
   }
@@ -182,6 +192,7 @@ const ProductOverviewLink = styled(MenuInternalLink)`
   font-size: 16px;
   margin-right: 8px;
   ${productsMenuTextStyles}
+
   @media only screen and (max-width: ${MEDIA_QUERY_MD}px) {
     font-size: 16px;
     margin-bottom: 0;
@@ -193,6 +204,7 @@ const ProductRow = styled.div`
   display: flex;
   padding: 16px 32px;
   width: 100%;
+
   @media only screen and (max-width: ${MEDIA_QUERY_TECH_SM}px) {
     padding-bottom: 32px;
   }
@@ -204,6 +216,7 @@ const ProductRowTextWrapper = styled(NavLink)`
   left: 84px;
   position: absolute;
   text-decoration: none;
+
   @media only screen and (max-width: ${MEDIA_QUERY_TECH_SM}px) {
     right: 32px;
   }
