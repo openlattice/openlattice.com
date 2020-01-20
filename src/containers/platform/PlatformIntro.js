@@ -18,13 +18,9 @@ const Content = styled.div`
   color: ${NEUTRALS.WHITE};
   display: flex;
   flex-direction: column;
-  margin: 50px auto 100px auto;
-  max-width: 100%;
+  margin: 50px auto 100px;
+  width: 100%;
   text-align: center;
-
-  @media only screen and (min-width: ${MEDIA_QUERY_MD}px) {
-    max-width: 60%;
-  }
 
   @media only screen and (min-width: ${MEDIA_QUERY_LG}px) {
     margin: 144px auto 208px auto;
@@ -33,10 +29,18 @@ const Content = styled.div`
 
 const PageIntroWrapper = styled(PageIntro)`
   width: 855px;
+
+  @media only screen and (max-width: 854px) {
+    width: 100%;
+  }
 `;
 
 const PageDescriptionWrapper = styled(PageDescription)`
   width: 624px;
+
+  @media only screen and (max-width: ${MEDIA_QUERY_LG}px) {
+    width: 100%;
+  }
 `;
 
 const PlatformIntro = () => (

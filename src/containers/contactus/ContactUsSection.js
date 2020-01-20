@@ -5,11 +5,11 @@
 import React from 'react';
 import styled from 'styled-components';
 
-import PageSection from '../../components/layout/PageSection';
+import PageSection from '../../components/layout/NewPageSection';
 
 import { ContactUsPurple, ContactUsWhite } from '../../components/controls/index';
 import { NEUTRALS } from '../../core/style/Colors';
-import { MEDIA_QUERY_MD } from '../../core/style/Sizes';
+import { MEDIA_QUERY_MD, MEDIA_QUERY_LG } from '../../core/style/Sizes';
 import { contactUsLink, TARGET } from '../../components/headers/MenuConsts';
 
 const SectionContent = styled.div`
@@ -17,7 +17,7 @@ const SectionContent = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: center;
-  margin: 40px auto 40px auto;
+  margin: 40px auto;
   max-width: 100%;
   text-align: center;
 
@@ -26,6 +26,10 @@ const SectionContent = styled.div`
     justify-content: space-between;
     margin: 132px 0;
     text-align: left;
+  }
+
+  @media only screen and (min-width: ${MEDIA_QUERY_LG}px) {
+    justify-content: center;
   }
 `;
 
@@ -40,6 +44,10 @@ const Message = styled.div`
     margin-bottom: 30px;
     font-size: 18px;
     width: auto;
+  }
+
+  @media only screen and (min-width: ${MEDIA_QUERY_LG}px) {
+    margin-right: 60px;
   }
 `;
 
