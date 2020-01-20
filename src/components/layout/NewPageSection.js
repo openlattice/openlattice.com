@@ -53,6 +53,7 @@ export const PageSectionInnerWrapper = styled.div`
   padding: ${(props) => (props.includeMenu ? '0 32px' : '24px 32px 0')};
   position: relative;
   width: 100%;
+
   @media only screen and (min-width: ${MEDIA_QUERY_MD}px) {
     align-items: stretch;
   }
