@@ -18,12 +18,13 @@ import { helpCenterLink, TARGET } from '../../components/headers/MenuConsts';
 const { getStyleVariation } = StyleUtils;
 
 const Content = styled.div`
+  align-self: center;
   align-items: center;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   margin: 40px auto 0 auto;
-  max-width: 100%;
+  width: ${CONTENT_WIDTH}px;
   text-align: center;
 
   @media only screen and (min-width: ${MEDIA_QUERY_MD}px) {
@@ -32,6 +33,10 @@ const Content = styled.div`
     margin: 136px 0 24px 0;
     text-align: left;
     width: ${CONTENT_WIDTH}px;
+  }
+
+  @media only screen and (max-width: ${CONTENT_WIDTH}px) {
+    width: 100%;
   }
 `;
 
