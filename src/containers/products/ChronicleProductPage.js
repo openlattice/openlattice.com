@@ -5,9 +5,9 @@
 import React from 'react';
 import styled from 'styled-components';
 
-import PageSection from '../../components/layout/NewPageSection';
 import ContactUsSection from '../contactus/ContactUsSection';
 import FooterSection from '../footer/FooterSectionWithPageLinks';
+import PageSection from '../../components/layout/NewPageSection';
 
 import { PageIntro } from '../../components/headers/PageHeaders';
 import { Content } from '../../components/layout/IntroComponents';
