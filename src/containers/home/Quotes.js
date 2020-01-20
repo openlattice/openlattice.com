@@ -9,14 +9,12 @@ import RightArrow from '../../assets/svg/home/right-arrow.svg';
 import LeftArrow from '../../assets/svg/home/left-arrow.svg';
 import PageSection from '../../components/layout/NewPageSection';
 
-import { DAVID_SCHWINDT, RANDOM, RANDOM_2 } from './QuotesConsts';
+import { DAVID_SCHWINDT } from './QuotesConsts';
 import { NEUTRALS } from '../../core/style/Colors';
 import { MEDIA_QUERY_LG, MEDIA_QUERY_MD, MEDIA_QUERY_TECH_SM } from '../../core/style/Sizes';
 
 const QUOTES :Object[] = [
   DAVID_SCHWINDT,
-  RANDOM,
-  RANDOM_2,
 ];
 
 const Content = styled.div`
