@@ -10,7 +10,7 @@ import PageSection from '../../components/layout/NewPageSection';
 import { PageDescription, PageIntro } from '../../components/headers/PageHeaders';
 import { ContactUsPurple } from '../../components/controls/index';
 import { NEUTRALS } from '../../core/style/Colors';
-import { MEDIA_QUERY_MD, MEDIA_QUERY_LG } from '../../core/style/Sizes';
+import { MEDIA_QUERY_LG } from '../../core/style/Sizes';
 import { contactUsLink, TARGET } from '../../components/headers/MenuConsts';
 
 const Content = styled.div`

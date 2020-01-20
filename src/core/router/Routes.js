@@ -7,7 +7,6 @@ export const LOGIN :string = '/login';
 export const ABOUT :string = '/about';
 export const WORKING_WITH_US :string = '/workingwithus';
 export const PRODUCTS :string = '/products';
-export const PRODUCTS_NEW :string = '/products-new';
 export const PLATFORM :string = '/platform';
 
 export const CARE :string = `${PRODUCTS}/care`;
