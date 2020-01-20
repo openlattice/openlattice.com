@@ -40,8 +40,8 @@ export const PageSectionOuterWrapper = styled.section`
   box-sizing: border-box;
   display: flex;
   justify-content: center;
-  width: 100%;
   position: relative;
+  width: 100%;
 `;
 
 // padding is for the menu/navbar
