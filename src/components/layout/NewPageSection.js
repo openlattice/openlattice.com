@@ -40,8 +40,8 @@ export const PageSectionOuterWrapper = styled.section`
   box-sizing: border-box;
   display: flex;
   justify-content: center;
-  width: 100%;
   position: relative;
+  width: 100%;
 `;
 
 // padding is for the menu/navbar
@@ -53,6 +53,7 @@ export const PageSectionInnerWrapper = styled.div`
   padding: ${(props) => (props.includeMenu ? '0 32px' : '24px 32px 0')};
   position: relative;
   width: 100%;
+
   @media only screen and (min-width: ${MEDIA_QUERY_MD}px) {
     align-items: stretch;
   }

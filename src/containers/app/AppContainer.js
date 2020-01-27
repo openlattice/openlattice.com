@@ -8,7 +8,7 @@ import { Route, Switch } from 'react-router';
 import * as Routes from '../../core/router/Routes';
 
 import About from '../about/About';
-import AppHomePage from './AppHomePage';
+import AppHomePage from '../home/AppHomePage';
 import CareProductPage from '../products/CareProductPage';
 import ChronicleProductPage from '../products/ChronicleProductPage';
 import PCMProductPage from '../products/PCMProductPage';

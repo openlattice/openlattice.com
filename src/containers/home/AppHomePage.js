@@ -4,24 +4,26 @@
 
 import React from 'react';
 
-import AboutIntro from './AboutIntro';
 import ContactUsSection from '../contactus/ContactUsSection';
+import Features from './Features';
 import FooterSectionWithPageLinks from '../footer/FooterSectionWithPageLinks';
-import InvestorsSection from './InvestorsSection';
-import MeetTheTeam from './MeetTheTeam';
-import MissionSection from './MissionSection';
+import Intro from './Intro';
+import OurCustomers from './OurCustomers';
+import Quotes from './Quotes';
 import ScrollToTopOnMount from '../../components/layout/ScrollToTopOnMount';
+import ValueProps from './ValueProps';
 
-const About = () => (
+const AppHomePage = () => (
   <>
     <ScrollToTopOnMount />
-    <AboutIntro />
-    <MissionSection />
-    <MeetTheTeam />
-    <InvestorsSection />
+    <Intro />
+    <ValueProps />
+    <Features />
+    <OurCustomers />
+    <Quotes />
     <ContactUsSection />
     <FooterSectionWithPageLinks />
   </>
 );
 
-export default About;
+export default AppHomePage;
