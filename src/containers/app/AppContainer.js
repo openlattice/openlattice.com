@@ -23,6 +23,7 @@ const AppContainer = () => (
   <Switch>
     <Route exact path={Routes.PRIVACY_POLICY} component={PrivacyPolicy} />
     <Route exact path={Routes.TERMS_OF_SERVICE} component={TermsOfService} />
+    <Route exact path={Routes.RESEARCH_HUB} component={ResearchHubProductPage} />
     <Route exact path={Routes.CHRONICLE} component={ChronicleProductPage} />
     <Route exact path={Routes.CARE} component={CareProductPage} />
     <Route exact path={Routes.PCM} component={PCMProductPage} />

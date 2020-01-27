@@ -40,7 +40,7 @@ import { NEUTRALS } from '../../core/style/Colors';
 
 const IntroContent = styled(Content)`
   @media only screen and (min-width: ${MEDIA_QUERY_LG}px) {
-    margin: 70px auto 451px auto;
+    margin: 70px auto 451px;
   }
 `;
 
