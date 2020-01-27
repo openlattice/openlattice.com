@@ -28,7 +28,7 @@ const Content = styled.div`
   @media only screen and (min-width: ${MEDIA_QUERY_MD}px) {
     align-self: center;
     justify-content: space-between;
-    margin: 136px 0 24px 0;
+    margin: 136px 0 24px;
     text-align: left;
     width: ${CONTENT_WIDTH}px;
   }
@@ -139,6 +139,7 @@ const Line = styled.div`
 const SectionFooterInnerWrapper = styled(LinksOuterWrapper)`
   align-items: center;
   margin: 0;
+  width: 100%;
 
   @media only screen and (min-width: ${MEDIA_QUERY_MD}px) {
     margin: 0;
@@ -185,7 +186,7 @@ const FooterSection = () => (
             <InternalLink to={Routes.RESEARCH_HUB}>Research Hub</InternalLink>
             <Tag tagType="beta">BETA</Tag>
           </LinkWithTag>
-          <InternalLink to={Routes.OTHER_PRODUCTS}>Other products</InternalLink>
+          <InternalLink to={Routes.PRODUCTS}>Other products</InternalLink>
         </LinkGroupWrapper>
         <LinkGroupWrapper>
           <Header>Support</Header>
