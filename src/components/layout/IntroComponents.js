@@ -1,13 +1,11 @@
 // @flow
 import styled from 'styled-components';
 
-import { NEUTRALS } from '../../core/style/Colors';
 import { MEDIA_QUERY_MD, MEDIA_QUERY_LG } from '../../core/style/Sizes';
 import { PageDescription } from '../headers/PageHeaders';
 
 const Content = styled.div`
   align-items: center;
-  color: ${NEUTRALS.WHITE};
   display: flex;
   flex-direction: column;
   margin: 50px auto 100px auto;
