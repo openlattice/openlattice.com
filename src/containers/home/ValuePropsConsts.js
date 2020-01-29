@@ -4,24 +4,24 @@ import SecureData from '../../assets/svg/home/secure-data.svg';
 import Transparency from '../../assets/svg/home/transparency.svg';
 
 const VALUE_PROP_ICONS :Object = {
-  ACTIONABLE: ActionableData,
-  SECURE: SecureData,
-  TRANSPARENCY: Transparency,
+  APPS: Transparency,
+  INTEGRATIONS: ActionableData,
+  SHARING: SecureData,
 };
 
 const VALUE_PROP_HEADERS :Object = {
-  ACTIONABLE: ['Actionable data for', 'social policy'],
-  SECURE: ['Secure', 'data integration'],
-  TRANSPARENCY: ['Transparency and', 'data integrity']
+  APPS: ['Application', 'deployment'],
+  INTEGRATIONS: ['Intelligent', 'data integrations'],
+  SHARING: ['Data sharing', 'and collaboration'],
 };
 
 const VALUE_PROP_DESCRIPTIONS :Object = {
-  ACTIONABLE: (`Placeholder - standardized data sets for jail, police, and rehab
-    center data allow us to integrate with government agency...`),
-  SECURE: (`End-to-end encryption ensures data is securely stored at all times,
-    both in our database and in transit.`),
-  TRANSPARENCY: (`Tamper-proof audit trail ensures every search, read, and write is
-    logged, guarding against unlawful or malicious use.`),
+  APPS: (`Leverage our existing applications or develop your own on top of our open APIs to utilize
+    previously siloed datasets.`),
+  INTEGRATIONS: (`Integrate and standardize siloed databases intelligently through our platform to
+    utilize analyzable and aggregated data.`),
+  SHARING: (`Granular access controls let organizations share datasets without compromising ownership,
+    visibility, or security.`),
 };
 
 export {

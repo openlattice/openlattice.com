@@ -14,6 +14,7 @@ import GenerateDatasets2 from '../../assets/svg/home/generate-datasets-2.svg';
 import GenerateDatasets3 from '../../assets/svg/home/generate-datasets-3.svg';
 import SecureAudit1 from '../../assets/svg/home/secure-audit-1.svg';
 import PurpleMergeIcon from '../../assets/productfeatureicons/small-purple-merge.svg';
+import DataSecurityAndCompliance from '../../assets/images/home/data-security-and-compliance.png';
 
 const SHARE_DATA :Object = {
   DESCRIPTION: (`Collaborate across providers to make decisions grounded in a more holistic
@@ -111,12 +112,12 @@ const SECURE_AUDIT_LOG :Object = {
 const DATA_SECURITY :Object = {
   DESCRIPTION: (`Respect your citizen's privacy and maintain regulatory compliance while aggregating and
     analyzing data to better understand the community you serve.`),
-  GRAPHIC: '',
+  GRAPHIC: DataSecurityAndCompliance,
   GRAPHIC_DIMENSIONS: {
-    normalHeight: '',
-    normalWidth: '',
-    smallHeight: '',
-    smallWidth: '',
+    normalHeight: '576px',
+    normalWidth: '576px',
+    smallHeight: '288px',
+    smallWidth: '288px',
   },
   ICONS: [
     PurpleMergeIcon,
