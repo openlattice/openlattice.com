@@ -24,8 +24,8 @@ const WorkingWithUsIntro = () => (
         Technology solutions to empower public servants.
       </PageIntroWrapper>
       <PageDescriptionWrapper>
-        {`Placeholder - Integrate and utilize siloed data across agencies and
-          organizations to save money, time, and lives.`}
+        {`Our solutions help organizations use technology to drive positive change in tackling recidivism,
+          homelessness, mass incarceration, and other key societal welfare issues.`}
       </PageDescriptionWrapper>
       <ContactUsPurple
           href={contactUsLink}
