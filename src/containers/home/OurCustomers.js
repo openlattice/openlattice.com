@@ -60,10 +60,15 @@ const NumberIntegrated = styled.div`
   }
 `;
 
-const NumberSubHeader = styled.div`
-  font-size: 16px;
+const CitizensImpactedHeader = styled.div`
+  color: ${NEUTRALS.GRAY_07};
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: 0.1em;
   line-height: 150%;
-  ${sharedTextStyles}
+  margin-bottom: 16px;
+  text-align: left;
+  text-transform: uppercase;
 `;
 
 const MapWrapper = styled.div`
@@ -139,8 +144,8 @@ const OurCustomers = () => (
     <Content>
       <CustomerCountWrapper>
         <div>
-          <NumberIntegrated>1,452,582</NumberIntegrated>
-          <NumberSubHeader>Citizens’ data integrated</NumberSubHeader>
+          <CitizensImpactedHeader>Citizens impacted</CitizensImpactedHeader>
+          <NumberIntegrated>13,329,315</NumberIntegrated>
         </div>
         <MapWrapper>
           <Map src={MapImage} />
