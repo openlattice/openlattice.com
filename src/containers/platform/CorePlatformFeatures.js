@@ -96,9 +96,8 @@ const CorePlatformFeatures = () => (
           Core platform features
         </SectionHeader>
         <TextSection>
-          {`Placeholder - As a public benefit corporation, OpenLattice enables
-            precision government by linking individual-level data enables
-            precision government by linking individual-level data.`}
+          {`Our solutions help organizations use technology to drive positive change in tackling recidivism,
+            homelessness, mass incarceration, and other key societal welfare issues.`}
         </TextSection>
       </TextWrapper>
       <FeatureTilesOuterWrapper>

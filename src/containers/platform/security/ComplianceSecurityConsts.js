@@ -24,15 +24,17 @@ const COMPLIANCE_TITLES :Object = {
   FERPA: 'FERPA'
 };
 
-const placeholderText :string = `Access, explore, and analyze your data - search
-for datasets, traverse connections between datasets, identify top utilizers, and perform analysis.`;
-
 const COMPLIANCE_DESCRIPTIONS :Object = {
-  CJIS: placeholderText,
-  GDPR: placeholderText,
-  HIPAA: placeholderText,
-  CFR: placeholderText,
-  FERPA: placeholderText,
+  CJIS: (`Compliant with FBI’s Criminal Justice Information Services (CJIS) security
+    policy to protect sensitive information like fingerprints and criminal backgrounds.`),
+  GDPR: (`Compliant with the EU’s General Data Protection Regulation to protect data
+    and privacy in the European Union and European Economic Area.`),
+  HIPAA: (`Compliant with Health Insurance Portability and Accountability Act to protect
+    patients’ medical records and relevant information from various care providers.`),
+  CFR: (`Compliant with 42 CFR Part 2 to protect the privacy of substance use disorder
+    patient records by prohibiting unauthorized disclosures of patient records.`),
+  FERPA: (`Compliant with Family Educational Rights and Privacy Act to protect
+    privacy of educational information and records being accessed by public entities.`),
 };
 
 const SECURITY_ICONS :Object = {
@@ -48,9 +50,12 @@ const SECURITY_TITLES :Object = {
 };
 
 const SECURITY_DESCRIPTIONS :Object = {
-  ENCRYPTION: placeholderText,
-  LOGIN: placeholderText,
-  CLOUD: placeholderText,
+  ENCRYPTION: (`Your data is securely managed at every stage of implementation in accordance
+    with industry best practices.`),
+  LOGIN: (`Link your authentication protocols through a single sign-on integration
+    eliminating the need for another password or use our natively supported authentication.`),
+  CLOUD: (`Your data is securely stored in AWS cloud storage which is more reliable, scalable,
+    and secure than traditional on-premises storage systms.`),
 };
 
 export {
