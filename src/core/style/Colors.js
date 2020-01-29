@@ -17,6 +17,13 @@ export const NEUTRALS = {
   GRAY_07: '#505060',
   GRAY_08: '#9999AF',
   GRAY_09: '#E1E1EB',
+  GRAY_10: '#DFDFE9',
+  GRAY_11: '#272729',
+  GRAY_12: '#A6A6AC',
+  GRAY_13: '#4D4D50',
+  GRAY_14: '#39393E',
+  GRAY_15: '#EAEAEF',
+  GRAY_16: '#494956',
   WHITE: '#ffffff',
 };
 
@@ -25,7 +32,8 @@ export const NEUTRALS = {
 */
 
 export const PINKS = {
-  PINK01: '#ff5e95'
+  PINK01: '#ff5e95',
+  PINK02: '#ED6681'
 };
 
 /*
