@@ -5,7 +5,7 @@
 import React from 'react';
 import styled from 'styled-components';
 
-import IntegrationImage from '../../assets/images/integrated-data.png';
+import IntegrationImage from '../../assets/images/workingwithus/integrated-data.png';
 import PageSection from '../../components/layout/NewPageSection';
 
 import { SectionHeader } from '../../components/headers/PageHeaders';
@@ -105,7 +105,7 @@ const CaseStudiesButton = styled(LearnMoreExternalLink)`
   width: 165px;
 `;
 
-const Image = styled.img`
+const IntegratedDataImage = styled.img`
   height: 726px;
   width: 528px;
 
@@ -120,8 +120,8 @@ const IntegrationAnimationSection = () => (
     <PageContent>
       <SectionHeaderWrapper>Public servants are using ancient software and siloed data</SectionHeaderWrapper>
       <SectionDescription>
-        {`Placeholder - As a public benefit corporation, OpenLattice enables precision government by linking
-          individual-level data enables precision government by linking individual-level data.`}
+        {`Our solutions help organizations use technology to drive positive change in tackling recidivism,
+          homelessness, mass incarceration, and other key societal welfare issues.`}
       </SectionDescription>
       <IntegrationSectionWrapper>
         <TextWrapper>
@@ -135,7 +135,7 @@ const IntegrationAnimationSection = () => (
           </Description>
           <CaseStudiesButton>Our case studies</CaseStudiesButton>
         </TextWrapper>
-        <Image src={IntegrationImage} />
+        <IntegratedDataImage src={IntegrationImage} />
       </IntegrationSectionWrapper>
     </PageContent>
   </PageSection>

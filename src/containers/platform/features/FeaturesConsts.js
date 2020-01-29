@@ -26,18 +26,18 @@ const FEATURE_TITLES :Object = {
 };
 
 const FEATURE_DESCRIPTIONS :Object = {
-  EXPLORATION: (`Placeholder text - Access and manage your organizations - manage
-    roles and permissions of members and entity sets within the organizations.`),
-  INTEGRATION: (`Placeholder text - Access and manage your organizations - manage
-    roles and permissions of members and entity sets within the organizations.`),
-  LINKING: (`Placeholder text - Access and manage your organizations - manage
-    roles and permissions of members and entity sets within the organizations.`),
-  PERMISSIONS_MANAGEMENT: (`Placeholder text - Access and manage your organizations - manage
-    roles and permissions of members and entity sets within the organizations.`),
-  STANDARDIZATION: (`Placeholder text - Access and manage your organizations - manage
-    roles and permissions of members and entity sets within the organizations.`),
-  STORAGE: (`Placeholder text - Access and manage your organizations - manage
-    roles and permissions of members and entity sets within the organizations.`),
+  EXPLORATION: (`Access, explore, and analyze your data - search for datasets, traverse
+    connections between datasets, identify top utilizers, and perform analysis.`),
+  INTEGRATION: (`Integrate currently siloed databases securely through the OpenLattice platform.
+    All data is instantly analyzable and aggregated.`),
+  LINKING: (`Link datasets using our advanced artificial intelligence method, allowing for
+    data deduplication within or over datasets.`),
+  PERMISSIONS_MANAGEMENT: (`Access and manage your organization's members, roles, permissions,
+    and entity set access all in one simple interface.`),
+  STANDARDIZATION: (`Standardize your integrated data using our Entity Data Model (EDM)
+    designed by our data scientists to utilize previously siloed datasets.`),
+  STORAGE: (`Securely store all data in an encrypted database, allowing for a single system
+    of record across all analytical platforms and applications.`),
 };
 
 export {

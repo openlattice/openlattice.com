@@ -125,33 +125,33 @@ const ValueProps = () => (
       <ValuePropsOuterWrapper>
         <ValuePropsInnerWrapper>
           <ValuePropWrapper>
-            <img src={VALUE_PROP_ICONS.SECURE} alt="" />
+            <img src={VALUE_PROP_ICONS.INTEGRATIONS} alt="" />
             <ValuePropHeader>
-              { VALUE_PROP_HEADERS.SECURE[0] }
+              { VALUE_PROP_HEADERS.INTEGRATIONS[0] }
               <br />
-              { VALUE_PROP_HEADERS.SECURE[1] }
+              { VALUE_PROP_HEADERS.INTEGRATIONS[1] }
             </ValuePropHeader>
-            <Text>{ VALUE_PROP_DESCRIPTIONS.SECURE }</Text>
+            <Text>{ VALUE_PROP_DESCRIPTIONS.INTEGRATIONS }</Text>
             <LearnMoreWrapper to={Routes.ROOT}>Learn more</LearnMoreWrapper>
           </ValuePropWrapper>
           <ValuePropWrapper>
-            <img src={VALUE_PROP_ICONS.ACTIONABLE} alt="" />
+            <img src={VALUE_PROP_ICONS.SHARING} alt="" />
             <ValuePropHeader>
-              { VALUE_PROP_HEADERS.ACTIONABLE[0] }
+              { VALUE_PROP_HEADERS.SHARING[0] }
               <br />
-              { VALUE_PROP_HEADERS.ACTIONABLE[1] }
+              { VALUE_PROP_HEADERS.SHARING[1] }
             </ValuePropHeader>
-            <Text>{ VALUE_PROP_DESCRIPTIONS.ACTIONABLE }</Text>
+            <Text>{ VALUE_PROP_DESCRIPTIONS.SHARING }</Text>
             <LearnMoreWrapper to={Routes.ROOT}>Learn more</LearnMoreWrapper>
           </ValuePropWrapper>
           <ValuePropWrapper>
-            <img src={VALUE_PROP_ICONS.TRANSPARENCY} alt="" />
+            <img src={VALUE_PROP_ICONS.APPS} alt="" />
             <ValuePropHeader>
-              { VALUE_PROP_HEADERS.TRANSPARENCY[0] }
+              { VALUE_PROP_HEADERS.APPS[0] }
               <br />
-              { VALUE_PROP_HEADERS.TRANSPARENCY[1] }
+              { VALUE_PROP_HEADERS.APPS[1] }
             </ValuePropHeader>
-            <Text>{ VALUE_PROP_DESCRIPTIONS.TRANSPARENCY }</Text>
+            <Text>{ VALUE_PROP_DESCRIPTIONS.APPS }</Text>
             <LearnMoreWrapper to={Routes.ROOT}>Learn more</LearnMoreWrapper>
           </ValuePropWrapper>
         </ValuePropsInnerWrapper>

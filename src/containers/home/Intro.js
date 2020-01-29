@@ -38,11 +38,10 @@ const IntroSection = () => (
   <PageSection bgColor={NEUTRALS.GRAY_05} includeMenu>
     <Content>
       <PageIntroWrapper>
-        Foundational tools to better serve all citizens.
+        Modern data platform to improve human outcomes
       </PageIntroWrapper>
       <PageDescriptionWrapper>
-        {`Modern data infrastructure that removes data silos across agencies and
-          organizations, saving lives, money, and time.`}
+        Removes data silos across agencies and organizations to save lives, money, and time
       </PageDescriptionWrapper>
       <ContactUsPurple
           href={contactUsLink}
