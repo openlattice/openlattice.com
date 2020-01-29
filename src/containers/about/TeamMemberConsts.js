@@ -1,7 +1,10 @@
 // @flow
 
+import Andrea from '../../assets/team/andrea.png';
+import Andy from '../../assets/team/andy.png';
 import Blake from '../../assets/team/blake.png';
 import Brandon from '../../assets/team/brandon.png';
+import David from '../../assets/team/david.png';
 import Drew from '../../assets/team/drew.png';
 import Giulia from '../../assets/team/giulia.png';
 import Giuliana from '../../assets/team/giuliana.png';
@@ -10,11 +13,13 @@ import Jason from '../../assets/team/jason.png';
 import Joe from '../../assets/team/joe.png';
 import Joke from '../../assets/team/joke.png';
 import Julia from '../../assets/team/julia.png';
+import Katherine from '../../assets/team/katherine.png';
 import Kim from '../../assets/team/kim.png';
 import Matthew from '../../assets/team/matthew.png';
 import Mollie from '../../assets/team/mollie.png';
 import Paul from '../../assets/team/paul.png';
 import Piper from '../../assets/team/piper.png';
+import Placeholder from '../../assets/svg/team-photo-placeholder.svg';
 import Ryan from '../../assets/team/ryan.png';
 import Shireen from '../../assets/team/shireen.png';
 import Solomon from '../../assets/team/solomon.png';
@@ -30,13 +35,13 @@ const FRONTEND :string = 'Frontend Software Engineer';
 const ANDREA :Object = {
   NAME: 'Andrea Fowles',
   ROLE: ACCOUNT,
-  PHOTO: '',
+  PHOTO: Andrea,
 };
 
 const ANDY :Object = {
   NAME: 'Andy Doyle',
   ROLE: ACCOUNT,
-  PHOTO: '',
+  PHOTO: Andy,
 };
 
 const BLAKE :Object = {
@@ -54,7 +59,7 @@ const BRANDON :Object = {
 const DAVID :Object = {
   NAME: 'David Terrell',
   ROLE: 'Senior Staff Software Engineer',
-  PHOTO: '',
+  PHOTO: David,
 };
 
 const DREW :Object = {
@@ -108,7 +113,7 @@ const JULIA :Object = {
 const KATHERINE :Object = {
   NAME: 'Katherine Bernstein',
   ROLE: 'Software Engineer',
-  PHOTO: '',
+  PHOTO: Katherine,
 };
 
 const KIM :Object = {
@@ -120,7 +125,7 @@ const KIM :Object = {
 const MANDY :Object = {
   NAME: 'Mandy Schow',
   ROLE: ACCOUNT,
-  PHOTO: '',
+  PHOTO: Placeholder,
 };
 
 const MATTHEW :Object = {
@@ -138,7 +143,7 @@ const MOLLIE :Object = {
 const NICHOLAS :Object = {
   NAME: 'Nicholas Hobbs',
   ROLE: DATA_SCIENTIST,
-  PHOTO: '',
+  PHOTO: Placeholder,
 };
 
 const PAUL :Object = {
