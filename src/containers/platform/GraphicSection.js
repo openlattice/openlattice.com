@@ -97,9 +97,8 @@ const GraphicSection = () => (
           Designed to work with your security and compliance needs
         </TextSectionHeader>
         <TextSection>
-          {`Placeholder - Maybe talk about the multiple layers of security and
-            compliance features of our platform and how it’s built etc. Maybe
-            talk about the multiple layers of security and compliance...`}
+          {`We built our platform from the ground up to provide secure data storage and transfer
+            while accommodating for complex compliance requirements of various types of data.`}
         </TextSection>
         <LearnMoreInternalLink to={Routes.PLATFORM}>Learn more</LearnMoreInternalLink>
       </TextWrapper>
