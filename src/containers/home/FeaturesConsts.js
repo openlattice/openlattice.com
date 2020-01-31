@@ -22,10 +22,10 @@ const SHARE_DATA :Object = {
     jurisdiction.`),
   GRAPHIC: ShareData,
   GRAPHIC_DIMENSIONS: {
-    normalHeight: '494px',
-    normalWidth: '528px',
-    smallHeight: '321.1px',
-    smallWidth: '343.2px',
+    normalHeight: '481px',
+    normalWidth: '457px',
+    smallHeight: '312.6px',
+    smallWidth: '297px',
   },
   ICONS: [
     ShareDataIcon1,
