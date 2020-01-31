@@ -8,9 +8,8 @@ import styled from 'styled-components';
 import PlatformGraphicSVG from '../../assets/svg/platform-graphic.svg';
 import PageSection from '../../components/layout/NewPageSection';
 
-import * as Routes from '../../core/router/Routes';
 import { SectionHeader } from '../../components/headers/PageHeaders';
-import { LearnMoreInternalLink } from '../../components/controls/index';
+import { LearnMoreExternalLink } from '../../components/controls/index';
 import { NEUTRALS } from '../../core/style/Colors';
 import {
   CONTENT_WIDTH,
@@ -18,6 +17,9 @@ import {
   MEDIA_QUERY_MD,
   MEDIA_QUERY_TECH_SM
 } from '../../core/style/Sizes';
+import { TARGET } from '../../components/headers/MenuConsts';
+
+const learnMoreLink :string = 'https://help.openlattice.com/article/16-privacy-security';
 
 const Content = styled.div`
   align-items: center;
@@ -100,7 +102,11 @@ const GraphicSection = () => (
           {`We built our platform from the ground up to provide secure data storage and transfer
             while accommodating for complex compliance requirements of various types of data.`}
         </TextSection>
-        <LearnMoreInternalLink to={Routes.PLATFORM}>Learn more</LearnMoreInternalLink>
+        <LearnMoreExternalLink
+            href={learnMoreLink}
+            target={TARGET}>
+          Learn more
+        </LearnMoreExternalLink>
       </TextWrapper>
       <Graphic src={PlatformGraphicSVG} />
     </Content>

@@ -5,9 +5,10 @@
 import React from 'react';
 import styled from 'styled-components';
 
-import { LearnMoreInternalLink } from '../../../components/controls/index';
+import { LearnMoreExternalLink } from '../../../components/controls/index';
 import { NEUTRALS } from '../../../core/style/Colors';
 import { MEDIA_QUERY_TECH_SM } from '../../../core/style/Sizes';
+import { TARGET } from '../../../components/headers/MenuConsts';
 
 const TileWrapper = styled.div`
   border: 1px solid ${NEUTRALS.GRAY_10};
@@ -70,7 +71,7 @@ const Body = styled.div`
   }
 `;
 
-const TileLearnMoreButton = styled(LearnMoreInternalLink)`
+const TileLearnMoreButton = styled(LearnMoreExternalLink)`
   bottom: 40px;
   left: 106px;
   position: absolute;
@@ -104,7 +105,7 @@ const FeatureTile = ({
     <Body>
       { body }
     </Body>
-    <TileLearnMoreButton to={route}>
+    <TileLearnMoreButton href={route} target={TARGET}>
       Learn more
     </TileLearnMoreButton>
   </TileWrapper>
