@@ -15,11 +15,12 @@ import Joke from '../../assets/team/joke.png';
 import Julia from '../../assets/team/julia.png';
 import Katherine from '../../assets/team/katherine.png';
 import Kim from '../../assets/team/kim.png';
+import Mandy from '../../assets/team/mandy.png';
 import Matthew from '../../assets/team/matthew.png';
 import Mollie from '../../assets/team/mollie.png';
+import Nicholas from '../../assets/team/nicholas.png';
 import Paul from '../../assets/team/paul.png';
 import Piper from '../../assets/team/piper.png';
-import Placeholder from '../../assets/svg/team-photo-placeholder.svg';
 import Ryan from '../../assets/team/ryan.png';
 import Shireen from '../../assets/team/shireen.png';
 import Solomon from '../../assets/team/solomon.png';
@@ -125,7 +126,7 @@ const KIM :Object = {
 const MANDY :Object = {
   NAME: 'Mandy Schow',
   ROLE: ACCOUNT,
-  PHOTO: Placeholder,
+  PHOTO: Mandy,
 };
 
 const MATTHEW :Object = {
@@ -143,7 +144,7 @@ const MOLLIE :Object = {
 const NICHOLAS :Object = {
   NAME: 'Nicholas Hobbs',
   ROLE: DATA_SCIENTIST,
-  PHOTO: Placeholder,
+  PHOTO: Nicholas,
 };
 
 const PAUL :Object = {
