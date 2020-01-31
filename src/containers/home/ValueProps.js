@@ -7,9 +7,8 @@ import styled from 'styled-components';
 
 import PageSection from '../../components/layout/NewPageSection';
 
-import * as Routes from '../../core/router/Routes';
 import { SectionHeader } from '../../components/headers/PageHeaders';
-import { LearnMoreInternalLink } from '../../components/controls/index';
+import { LearnMoreExternalLink } from '../../components/controls/index';
 import { NEUTRALS } from '../../core/style/Colors';
 import {
   CONTENT_WIDTH,
@@ -17,7 +16,13 @@ import {
   MEDIA_QUERY_LG,
   MEDIA_QUERY_TECH_SM
 } from '../../core/style/Sizes';
-import { VALUE_PROP_DESCRIPTIONS, VALUE_PROP_HEADERS, VALUE_PROP_ICONS } from './ValuePropsConsts';
+import {
+  VALUE_PROP_DESCRIPTIONS,
+  VALUE_PROP_HEADERS,
+  VALUE_PROP_ICONS,
+  VALUE_PROP_LINKS,
+} from './ValuePropsConsts';
+import { TARGET } from '../../components/headers/MenuConsts';
 
 const Content = styled.div`
   align-items: center;
@@ -106,7 +111,7 @@ const Text = styled.div`
   top: 151px;
 `;
 
-const LearnMoreWrapper = styled(LearnMoreInternalLink)`
+const LearnMoreWrapper = styled(LearnMoreExternalLink)`
   bottom: 0;
   left: 106px;
   position: absolute;
@@ -132,7 +137,11 @@ const ValueProps = () => (
               { VALUE_PROP_HEADERS.INTEGRATIONS[1] }
             </ValuePropHeader>
             <Text>{ VALUE_PROP_DESCRIPTIONS.INTEGRATIONS }</Text>
-            <LearnMoreWrapper to={Routes.ROOT}>Learn more</LearnMoreWrapper>
+            <LearnMoreWrapper
+                href={VALUE_PROP_LINKS.INTEGRATIONS}
+                target={TARGET}>
+              Learn more
+            </LearnMoreWrapper>
           </ValuePropWrapper>
           <ValuePropWrapper>
             <img src={VALUE_PROP_ICONS.SHARING} alt="" />
@@ -142,7 +151,11 @@ const ValueProps = () => (
               { VALUE_PROP_HEADERS.SHARING[1] }
             </ValuePropHeader>
             <Text>{ VALUE_PROP_DESCRIPTIONS.SHARING }</Text>
-            <LearnMoreWrapper to={Routes.ROOT}>Learn more</LearnMoreWrapper>
+            <LearnMoreWrapper
+                href={VALUE_PROP_LINKS.SHARING}
+                target={TARGET}>
+              Learn more
+            </LearnMoreWrapper>
           </ValuePropWrapper>
           <ValuePropWrapper>
             <img src={VALUE_PROP_ICONS.APPS} alt="" />
@@ -152,7 +165,11 @@ const ValueProps = () => (
               { VALUE_PROP_HEADERS.APPS[1] }
             </ValuePropHeader>
             <Text>{ VALUE_PROP_DESCRIPTIONS.APPS }</Text>
-            <LearnMoreWrapper to={Routes.ROOT}>Learn more</LearnMoreWrapper>
+            <LearnMoreWrapper
+                href={VALUE_PROP_LINKS.APPS}
+                target={TARGET}>
+              Learn more
+            </LearnMoreWrapper>
           </ValuePropWrapper>
         </ValuePropsInnerWrapper>
       </ValuePropsOuterWrapper>
