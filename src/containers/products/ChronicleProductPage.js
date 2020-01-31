@@ -16,7 +16,7 @@ import { MEDIA_QUERY_LG } from '../../core/style/Sizes';
 
 const ComingSoonContent = styled(Content)`
   @media only screen and (min-width: ${MEDIA_QUERY_LG}px) {
-    margin: 300px auto;
+    margin: 300px auto 400px;
   }
 `;
 
