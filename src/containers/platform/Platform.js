@@ -5,7 +5,6 @@
 import React from 'react';
 
 import ComplianceAndSecurity from './ComplianceAndSecurity';
-import ContactUsSection from '../contactus/ContactUsSection';
 import CorePlatformFeatures from './CorePlatformFeatures';
 import FooterSectionWithPageLinks from '../footer/FooterSectionWithPageLinks';
 import GraphicSection from './GraphicSection';
@@ -19,7 +18,6 @@ const Platform = () => (
     <GraphicSection />
     <CorePlatformFeatures />
     <ComplianceAndSecurity />
-    <ContactUsSection />
     <FooterSectionWithPageLinks />
   </>
 );

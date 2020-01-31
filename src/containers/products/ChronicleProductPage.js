@@ -5,7 +5,6 @@
 import React from 'react';
 import styled from 'styled-components';
 
-import ContactUsSection from '../contactus/ContactUsSection';
 import FooterSection from '../footer/FooterSectionWithPageLinks';
 import PageSection from '../../components/layout/NewPageSection';
 import ScrollToTopOnMount from '../../components/layout/ScrollToTopOnMount';
@@ -29,7 +28,6 @@ const ChronicleProductPage = () => (
         <PageIntro>Coming Soon</PageIntro>
       </ComingSoonContent>
     </PageSection>
-    <ContactUsSection />
     <FooterSection />
   </>
 );

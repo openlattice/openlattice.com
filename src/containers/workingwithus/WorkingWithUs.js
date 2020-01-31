@@ -4,7 +4,6 @@
 
 import React from 'react';
 
-import ContactUsSection from '../contactus/ContactUsSection';
 import FooterSectionWithPageLinks from '../footer/FooterSectionWithPageLinks';
 import IntegrationAnimationSection from './IntegrationAnimationSection';
 import ScrollToTopOnMount from '../../components/layout/ScrollToTopOnMount';
@@ -17,7 +16,6 @@ const WorkingWithUs = () => (
     <WorkingWithUsIntro />
     <IntegrationAnimationSection />
     <WorkingWithUsProcess />
-    <ContactUsSection />
     <FooterSectionWithPageLinks />
   </>
 );
