@@ -58,20 +58,20 @@ const MANAGE_ACCESS :Object = {
   SUB_FEATURES: [
     'Role-based access',
     'Granular control down to the field level',
-    'Easily configured with just a few clicks',
+    'Simple configuration',
   ],
-  TITLE: 'Manage access & permissions',
+  TITLE: 'Easily manage access & permissions across applications',
 };
 
 const GENERATE_DATASETS :Object = {
   DESCRIPTION: (`Respect your citizen's privacy and maintain regulatory compliance while aggregating
-  and analyzing data to better understand the community you serve.`),
+    and analyzing data to better understand the community you serve.`),
   GRAPHIC: GenerateDatasets,
   GRAPHIC_DIMENSIONS: {
-    normalHeight: '356px',
-    normalWidth: '432px',
-    smallHeight: '231.4px',
-    smallWidth: '280.8px',
+    normalHeight: '401px',
+    normalWidth: '528px',
+    smallHeight: '260.65px',
+    smallWidth: '343.2px',
   },
   ICONS: [
     GenerateDatasets1,
@@ -83,7 +83,7 @@ const GENERATE_DATASETS :Object = {
     'Compliance-friendly infrastructure',
     'Top privacy & security standards',
   ],
-  TITLE: 'Generate de-identified datasets',
+  TITLE: 'Generate de-identified datasets for research',
 };
 
 const SECURE_AUDIT_LOG :Object = {
@@ -102,7 +102,7 @@ const SECURE_AUDIT_LOG :Object = {
     ManageAccess1,
   ],
   SUB_FEATURES: [
-    'Every read, write, search, and delete is logged',
+    'Every action is logged',
     'Tamper-resistant',
     'Restricted, role-based access',
   ],
@@ -110,8 +110,8 @@ const SECURE_AUDIT_LOG :Object = {
 };
 
 const DATA_SECURITY :Object = {
-  DESCRIPTION: (`Respect your citizen's privacy and maintain regulatory compliance while aggregating and
-    analyzing data to better understand the community you serve.`),
+  DESCRIPTION: (`We built our Platform from the ground up to acknowledge and account for the security
+    and compliance requirements of our customers.`),
   GRAPHIC: DataSecurityAndCompliance,
   GRAPHIC_DIMENSIONS: {
     normalHeight: '576px',
@@ -125,9 +125,9 @@ const DATA_SECURITY :Object = {
     PurpleMergeIcon,
   ],
   SUB_FEATURES: [
-    'Generate de-identified datasets',
-    'Compliance-friendly infrastructure',
-    'Top privacy & security standards',
+    'HIPAA, CJIS, GDPR, and FERPA compliant',
+    'Secure AWS cloud storage',
+    'Encryption at rest and in transit',
   ],
   TITLE: 'Data security & compliance',
 };
