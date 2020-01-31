@@ -118,15 +118,15 @@ const CorePlatformFeatures = () => (
               route={Routes.PLATFORM}
               title={FEATURE_TITLES.STORAGE} />
           <FeatureTile
-              body={FEATURE_DESCRIPTIONS.STANDARDIZATION}
-              icon={FEATURE_ICONS.STANDARDIZATION}
-              route={Routes.PLATFORM}
-              title={FEATURE_TITLES.STANDARDIZATION} />
-          <FeatureTile
               body={FEATURE_DESCRIPTIONS.EXPLORATION}
               icon={FEATURE_ICONS.EXPLORATION}
               route={Routes.PLATFORM}
               title={FEATURE_TITLES.EXPLORATION} />
+          <FeatureTile
+              body={FEATURE_DESCRIPTIONS.STANDARDIZATION}
+              icon={FEATURE_ICONS.STANDARDIZATION}
+              route={Routes.PLATFORM}
+              title={FEATURE_TITLES.STANDARDIZATION} />
           <FeatureTile
               body={FEATURE_DESCRIPTIONS.PERMISSIONS_MANAGEMENT}
               icon={FEATURE_ICONS.PERMISSIONS_MANAGEMENT}
