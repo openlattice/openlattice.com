@@ -24,8 +24,8 @@ const WorkingWithUsIntro = () => (
         Technology solutions to empower public servants.
       </PageIntroWrapper>
       <PageDescriptionWrapper>
-        {`Our solutions help organizations use technology to drive positive change in tackling recidivism,
-          homelessness, mass incarceration, and other key societal welfare issues.`}
+        {`Join dozens of jurisdictions across the United States who are using OpenLattice to
+          better serve their constituents.`}
       </PageDescriptionWrapper>
       <ContactUsPurple
           href={contactUsLink}

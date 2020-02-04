@@ -40,8 +40,18 @@ const FEATURE_DESCRIPTIONS :Object = {
     of record across all analytical platforms and applications.`),
 };
 
+const FEATURE_LINKS :Object = {
+  EXPLORATION: 'https://help.openlattice.com/article/80-top-utilizer-tool',
+  INTEGRATION: 'https://help.openlattice.com/article/78-how-is-openlattice-different-from-other-data-integration',
+  LINKING: 'https://help.openlattice.com/article/87-data-linking-with-artificial-intelligence',
+  PERMISSIONS_MANAGEMENT: 'https://help.openlattice.com/article/45-how-to-manage-permissions-in-your-datasets',
+  STANDARDIZATION: 'https://help.openlattice.com/article/20-the-openlattice-standardized-entity-data-model',
+  STORAGE: 'https://help.openlattice.com/article/16-privacy-security',
+};
+
 export {
   FEATURE_DESCRIPTIONS,
   FEATURE_ICONS,
+  FEATURE_LINKS,
   FEATURE_TITLES
 };
