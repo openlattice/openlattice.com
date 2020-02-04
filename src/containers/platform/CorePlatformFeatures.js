@@ -8,11 +8,11 @@ import styled from 'styled-components';
 import FeatureTile from './features/FeatureTile';
 import PageSection from '../../components/layout/NewPageSection';
 
-import * as Routes from '../../core/router/Routes';
 import { SectionHeader } from '../../components/headers/PageHeaders';
 import {
   FEATURE_DESCRIPTIONS,
   FEATURE_ICONS,
+  FEATURE_LINKS,
   FEATURE_TITLES
 } from './features/FeaturesConsts';
 import { NEUTRALS } from '../../core/style/Colors';
@@ -105,32 +105,32 @@ const CorePlatformFeatures = () => (
           <FeatureTile
               body={FEATURE_DESCRIPTIONS.INTEGRATION}
               icon={FEATURE_ICONS.INTEGRATION}
-              route={Routes.PLATFORM}
+              route={FEATURE_LINKS.INTEGRATION}
               title={FEATURE_TITLES.INTEGRATION} />
           <FeatureTile
               body={FEATURE_DESCRIPTIONS.LINKING}
               icon={FEATURE_ICONS.LINKING}
-              route={Routes.PLATFORM}
+              route={FEATURE_LINKS.LINKING}
               title={FEATURE_TITLES.LINKING} />
           <FeatureTile
               body={FEATURE_DESCRIPTIONS.STORAGE}
               icon={FEATURE_ICONS.STORAGE}
-              route={Routes.PLATFORM}
+              route={FEATURE_LINKS.STORAGE}
               title={FEATURE_TITLES.STORAGE} />
-          <FeatureTile
-              body={FEATURE_DESCRIPTIONS.STANDARDIZATION}
-              icon={FEATURE_ICONS.STANDARDIZATION}
-              route={Routes.PLATFORM}
-              title={FEATURE_TITLES.STANDARDIZATION} />
           <FeatureTile
               body={FEATURE_DESCRIPTIONS.EXPLORATION}
               icon={FEATURE_ICONS.EXPLORATION}
-              route={Routes.PLATFORM}
+              route={FEATURE_LINKS.EXPLORATION}
               title={FEATURE_TITLES.EXPLORATION} />
+          <FeatureTile
+              body={FEATURE_DESCRIPTIONS.STANDARDIZATION}
+              icon={FEATURE_ICONS.STANDARDIZATION}
+              route={FEATURE_LINKS.STANDARDIZATION}
+              title={FEATURE_TITLES.STANDARDIZATION} />
           <FeatureTile
               body={FEATURE_DESCRIPTIONS.PERMISSIONS_MANAGEMENT}
               icon={FEATURE_ICONS.PERMISSIONS_MANAGEMENT}
-              route={Routes.PLATFORM}
+              route={FEATURE_LINKS.PERMISSIONS_MANAGEMENT}
               title={FEATURE_TITLES.PERMISSIONS_MANAGEMENT} />
         </FeatureTilesInnerWrapper>
       </FeatureTilesOuterWrapper>

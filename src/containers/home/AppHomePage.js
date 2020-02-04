@@ -4,7 +4,6 @@
 
 import React from 'react';
 
-import ContactUsSection from '../contactus/ContactUsSection';
 import Features from './Features';
 import FooterSectionWithPageLinks from '../footer/FooterSectionWithPageLinks';
 import Intro from './Intro';
@@ -19,9 +18,8 @@ const AppHomePage = () => (
     <Intro />
     <ValueProps />
     <Features />
-    <OurCustomers />
     <Quotes />
-    <ContactUsSection />
+    <OurCustomers />
     <FooterSectionWithPageLinks />
   </>
 );

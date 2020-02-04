@@ -2,7 +2,6 @@
 import React from 'react';
 import styled from 'styled-components';
 
-import ContactUsSection from '../contactus/ContactUsSection';
 import Feature1 from '../../assets/productfeatureicons/merge.svg';
 import Feature2 from '../../assets/productfeatureicons/pcm/gavel.svg';
 import Feature3 from '../../assets/productfeatureicons/pcm/clipboard.svg';
@@ -147,7 +146,6 @@ const PCMProductPage = () => (
         </ProductOverviewWrapper>
       </ExtendedFeaturesContent>
     </PageSection>
-    <ContactUsSection />
     <FooterSectionWithPageLinks />
   </>
 );

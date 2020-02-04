@@ -17,6 +17,9 @@ import {
   MEDIA_QUERY_MD,
   MEDIA_QUERY_TECH_SM
 } from '../../core/style/Sizes';
+import { TARGET } from '../../components/headers/MenuConsts';
+
+const ourCaseStudiesLink :string = 'https://help.openlattice.com/collection/65-case-studies';
 
 const PageContent = styled.div`
   align-items: center;
@@ -133,7 +136,11 @@ const IntegrationAnimationSection = () => (
               test interventions, and improve human outcomes. Use existing OpenLattice solutions or develop your
               own against unified individual profiles.`}
           </Description>
-          <CaseStudiesButton>Our case studies</CaseStudiesButton>
+          <CaseStudiesButton
+              href={ourCaseStudiesLink}
+              target={TARGET}>
+            Our case studies
+          </CaseStudiesButton>
         </TextWrapper>
         <IntegratedDataImage src={IntegrationImage} />
       </IntegrationSectionWrapper>

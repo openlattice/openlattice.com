@@ -105,12 +105,14 @@ const MeetTheTeam = () => (
           {
             TEAM_MEMBERS.map((teamMember :Object, index :number) => {
               if (index > -1 && index < 3) {
+                let founderText = 'Founder &';
+                if (index === 1 || index === 2) founderText = 'Co-Founder &';
                 return (
                   <TeamMember key={teamMember.NAME}>
                     <TeamMemberPhoto headshot={teamMember.PHOTO} />
                     <TeamMemberName>{teamMember.NAME}</TeamMemberName>
                     <TeamMemberRole>
-                      Founder &
+                      {founderText}
                       <br />
                       {teamMember.ROLE}
                     </TeamMemberRole>

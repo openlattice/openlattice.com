@@ -5,7 +5,6 @@
 import React from 'react';
 import styled from 'styled-components';
 
-import ContactUsSection from '../contactus/ContactUsSection';
 import FooterSection from '../footer/FooterSectionWithPageLinks';
 import PageSection from '../../components/layout/NewPageSection';
 import ScrollToTopOnMount from '../../components/layout/ScrollToTopOnMount';
@@ -17,7 +16,7 @@ import { MEDIA_QUERY_LG } from '../../core/style/Sizes';
 
 const ComingSoonContent = styled(Content)`
   @media only screen and (min-width: ${MEDIA_QUERY_LG}px) {
-    margin: 300px auto;
+    margin: 300px auto 400px;
   }
 `;
 
@@ -29,7 +28,6 @@ const ResearchHubProductPage = () => (
         <PageIntro>Coming Soon</PageIntro>
       </ComingSoonContent>
     </PageSection>
-    <ContactUsSection />
     <FooterSection />
   </>
 );

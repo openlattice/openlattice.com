@@ -199,7 +199,7 @@ const FooterSection = () => (
         <Line />
         <SectionFooterInnerWrapper>
           <img src={GrayOLLogo} alt="" />
-          <Copyright>© 2019 OpenLattice, Inc. All rights reserved.</Copyright>
+          <Copyright>© 2020 OpenLattice, Inc. All rights reserved.</Copyright>
         </SectionFooterInnerWrapper>
       </SectionFooterWrapper>
     </Content>

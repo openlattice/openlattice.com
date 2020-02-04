@@ -60,9 +60,11 @@ const MissionSection = () => (
       <ContentBlock>
         <Header>Our mission</Header>
         <Text>
-          {`We set out to build a secure, scalable cloud-based data platform that
-            empowers civil servants, researchers, and policy-makers to work together
-            on society's toughest challenges.`}
+          {`We set out to build a secure, scalable cloud-based data platform that empowers
+            civil servants, researchers, and policy-makers to work together on society's
+            toughest challenges. Our solutions help organizations use technology to drive
+            positive change in tackling recidivism, homelessness, mass incarceration, and
+            other key societal welfare issues.`}
         </Text>
       </ContentBlock>
       <ContentBlock>
