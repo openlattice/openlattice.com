@@ -33,7 +33,7 @@ const StickyWrapper = styled.div`
   margin-top: 8px;
   position: relative;
   width: 100%;
-  z-index: 100;
+  z-index: 2000;
 
   @media only screen and (max-width: ${MEDIA_QUERY_MD}px) {
     height: 312px;
@@ -60,7 +60,7 @@ const MenuWrapper = styled.div`
   justify-content: space-between;
   max-width: 100%;
   top: 0;
-  z-index: 100;
+  z-index: 2000;
   ${(props) => (props.isSticky ? css`
      background-color: ${NEUTRALS.WHITE};
      box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
