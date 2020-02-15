@@ -159,7 +159,7 @@ const FooterSection = () => (
           <Header>Company</Header>
           <InternalLink to={Routes.ROOT}>Home</InternalLink>
           <InternalLink to={Routes.ABOUT}>About</InternalLink>
-          <ExternalLink href="https://angel.co/company/openlattice/jobs" target={TARGET}>Jobs</ExternalLink>
+          <ExternalLink href="https://jobs.lever.co/openlattice" target={TARGET}>Jobs</ExternalLink>
           <ExternalLink href="https://medium.com/openlattice" target={TARGET}>Blog</ExternalLink>
         </LinkGroupWrapper>
         <div>
