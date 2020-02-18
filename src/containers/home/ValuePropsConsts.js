@@ -1,12 +1,12 @@
 // @flow
-import ActionableData from '../../assets/svg/home/actionable-data.svg';
-import SecureData from '../../assets/svg/home/secure-data.svg';
-import Transparency from '../../assets/svg/home/transparency.svg';
+import ApplicationDeployment from '../../assets/svg/home/application-deployment.svg';
+import DataSharing from '../../assets/svg/home/data-sharing.svg';
+import Integrations from '../../assets/svg/home/integration.svg';
 
 const VALUE_PROP_ICONS :Object = {
-  APPS: Transparency,
-  INTEGRATIONS: ActionableData,
-  SHARING: SecureData,
+  APPS: ApplicationDeployment,
+  INTEGRATIONS: Integrations,
+  SHARING: DataSharing,
 };
 
 const VALUE_PROP_HEADERS :Object = {
