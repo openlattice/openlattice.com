@@ -73,11 +73,13 @@ const FeatureTextWrapper = styled.div`
 const FeatureHeader = styled(SectionHeader)`
   align-self: flex-start;
   text-align: left;
+  width: 432px;
 `;
 
 const Description = styled.div`
-  color: ${NEUTRALS.GRAY_06};
+  color: ${NEUTRALS.GRAY_17};
   font-size: 18px;
+  font-weight: 500;
   line-height: 150%;
   margin-bottom: 48px;
   text-align: left;
@@ -90,13 +92,14 @@ const Description = styled.div`
 const SubFeatureWrapper = styled.div`
   align-items: center;
   display: flex;
-  margin-bottom: 16px;
+  margin-bottom: 12px;
 `;
 
 const SubFeatureText = styled(Description)`
+  color: ${NEUTRALS.GRAY_07};
   font-weight: 500;
   margin-bottom: 0;
-  margin-left: 16px;
+  margin-left: 12px;
 `;
 
 const Graphic = styled.img`

@@ -15,6 +15,7 @@ import GenerateDatasets3 from '../../assets/svg/home/generate-datasets-3.svg';
 import SecureAudit1 from '../../assets/svg/home/secure-audit-1.svg';
 import PurpleMergeIcon from '../../assets/productfeatureicons/small-purple-merge.svg';
 import DataSecurityAndCompliance from '../../assets/images/home/data-security-and-compliance.png';
+import DataSecurity from '../../assets/svg/home/data-security.svg';
 
 const SHARE_DATA :Object = {
   DESCRIPTION: (`Collaborate across providers to make decisions grounded in a more holistic
@@ -98,7 +99,7 @@ const SECURE_AUDIT_LOG :Object = {
   },
   ICONS: [
     SecureAudit1,
-    GenerateDatasets2,
+    GenerateDatasets3,
     ManageAccess1,
   ],
   SUB_FEATURES: [
@@ -120,9 +121,9 @@ const DATA_SECURITY :Object = {
     smallWidth: '288px',
   },
   ICONS: [
-    PurpleMergeIcon,
-    PurpleMergeIcon,
-    PurpleMergeIcon,
+    GenerateDatasets2,
+    DataSecurity,
+    GenerateDatasets3,
   ],
   SUB_FEATURES: [
     'HIPAA, CJIS, GDPR, and FERPA compliant',
