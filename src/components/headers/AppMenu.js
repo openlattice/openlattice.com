@@ -244,7 +244,9 @@ const AppMenu = ({ bgColor } :Props) => {
   const ref = useRef({});
   const menuRef = useRef(null);
   const handleScroll = () => {
-    setSticky(ref.current.getBoundingClientRect().top <= 0);
+    if (ref.current) {
+      setSticky(ref.current.getBoundingClientRect().top <= 0);
+    }
   };
 
   const handleOutsideClick = (event) => {
