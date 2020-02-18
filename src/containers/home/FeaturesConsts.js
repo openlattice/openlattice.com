@@ -1,23 +1,23 @@
 // @flow
+import DataSecurity from '../../assets/svg/home/data-security.svg';
+import DataSecurityAndCompliance from '../../assets/images/home/data-security-and-compliance.png';
+import GenerateDatasets1 from '../../assets/svg/home/generate-datasets-1.svg';
+import GenerateDatasets2 from '../../assets/svg/home/generate-datasets-2.svg';
+import GenerateDatasets3 from '../../assets/svg/home/generate-datasets-3.svg';
 import GenerateDatasets from '../../assets/images/home/generate-datasets.png';
+import ManageAccess1 from '../../assets/svg/home/manage-access-1.svg';
+import ManageAccess2 from '../../assets/svg/home/manage-access-2.svg';
+import ManageAccess3 from '../../assets/svg/home/manage-access-3.svg';
 import ManageAccess from '../../assets/images/home/manage-access.png';
+import SecureAudit1 from '../../assets/svg/home/secure-audit-1.svg';
 import SecureAuditLog from '../../assets/images/home/secure-audit-log.png';
 import ShareData from '../../assets/images/home/share-data.png';
 import ShareDataIcon1 from '../../assets/svg/home/share-data-1.svg';
 import ShareDataIcon2 from '../../assets/svg/home/share-data-2.svg';
 import ShareDataIcon3 from '../../assets/svg/home/share-data-3.svg';
-import ManageAccess1 from '../../assets/svg/home/manage-access-1.svg';
-import ManageAccess2 from '../../assets/svg/home/manage-access-2.svg';
-import ManageAccess3 from '../../assets/svg/home/manage-access-3.svg';
-import GenerateDatasets1 from '../../assets/svg/home/generate-datasets-1.svg';
-import GenerateDatasets2 from '../../assets/svg/home/generate-datasets-2.svg';
-import GenerateDatasets3 from '../../assets/svg/home/generate-datasets-3.svg';
-import SecureAudit1 from '../../assets/svg/home/secure-audit-1.svg';
-import PurpleMergeIcon from '../../assets/productfeatureicons/small-purple-merge.svg';
-import DataSecurityAndCompliance from '../../assets/images/home/data-security-and-compliance.png';
-import DataSecurity from '../../assets/svg/home/data-security.svg';
 
 const SHARE_DATA :Object = {
+  BOTTOM_MARGIN: '309px',
   DESCRIPTION: (`Collaborate across providers to make decisions grounded in a more holistic
     view of how your constituents interact with the spectrum of services in your
     jurisdiction.`),
@@ -42,6 +42,7 @@ const SHARE_DATA :Object = {
 };
 
 const MANAGE_ACCESS :Object = {
+  BOTTOM_MARGIN: '279px',
   DESCRIPTION: (`Protect sensitive data by controlling what users are allowed to see and securely
     define what is shared across organizations.`),
   GRAPHIC: ManageAccess,
@@ -65,6 +66,7 @@ const MANAGE_ACCESS :Object = {
 };
 
 const GENERATE_DATASETS :Object = {
+  BOTTOM_MARGIN: '227px',
   DESCRIPTION: (`Respect your citizen's privacy and maintain regulatory compliance while aggregating
     and analyzing data to better understand the community you serve.`),
   GRAPHIC: GenerateDatasets,
@@ -88,6 +90,7 @@ const GENERATE_DATASETS :Object = {
 };
 
 const SECURE_AUDIT_LOG :Object = {
+  BOTTOM_MARGIN: '245px',
   DESCRIPTION: (`Protect against improper use of data by always knowing what users are doing
     with datasets.`),
   GRAPHIC: SecureAuditLog,
@@ -111,6 +114,7 @@ const SECURE_AUDIT_LOG :Object = {
 };
 
 const DATA_SECURITY :Object = {
+  BOTTOM_MARGIN: '0',
   DESCRIPTION: (`We built our Platform from the ground up to acknowledge and account for the security
     and compliance requirements of our customers.`),
   GRAPHIC: DataSecurityAndCompliance,

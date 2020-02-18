@@ -140,7 +140,7 @@ const Jurisdiction = styled.div`
 `;
 
 const OurCustomers = () => (
-  <PageSection bgColor={NEUTRALS.GRAY_05}>
+  <PageSection bgColor={NEUTRALS.WHITE}>
     <Content>
       <CustomerCountWrapper>
         <div>

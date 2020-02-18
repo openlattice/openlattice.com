@@ -42,7 +42,7 @@ const StickyWrapper = styled.div`
 
 const menuItemStyles = css`
   color: ${NEUTRALS.GRAY_08};
-  font-size: 14px;
+  font-size: 16px;
   font-weight: 500;
   line-height: 150%;
   margin-right: 40px;

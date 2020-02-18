@@ -41,7 +41,7 @@ const Content = styled.div`
   text-align: center;
 
   @media only screen and (min-width: ${MEDIA_QUERY_LG}px) {
-    margin: 0 auto 200px auto;
+    margin: 0 auto 143px auto;
   }
 `;
 
@@ -54,7 +54,7 @@ const FeatureWrapper = styled.div`
 
   @media only screen and (min-width: ${MEDIA_QUERY_MD}px) {
     flex-direction: row;
-    margin-bottom: 280px;
+    margin-bottom: ${(props) => props.bottomMargin};
     width: ${CONTENT_WIDTH}px;
   }
 `;
@@ -143,14 +143,14 @@ const Features = () => (
 
           if (index % 2 !== 0) {
             return (
-              <FeatureWrapper key={feature.TITLE}>
+              <FeatureWrapper key={feature.TITLE} bottomMargin={feature.BOTTOM_MARGIN}>
                 { graphic }
                 { featureText }
               </FeatureWrapper>
             );
           }
           return (
-            <FeatureWrapper key={feature.TITLE}>
+            <FeatureWrapper key={feature.TITLE} bottomMargin={feature.BOTTOM_MARGIN}>
               { featureText }
               { graphic }
             </FeatureWrapper>
