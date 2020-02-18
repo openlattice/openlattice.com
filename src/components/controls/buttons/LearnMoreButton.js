@@ -7,6 +7,7 @@ import { NEUTRALS } from '../../../core/style/Colors';
 const buttonStyles = css`
   border-radius: 45px;
   border: 1px solid ${NEUTRALS.GRAY_09};
+  box-sizing: border-box;
   color: ${NEUTRALS.GRAY_07};
   display: inline-block;
   font-size: 16px;

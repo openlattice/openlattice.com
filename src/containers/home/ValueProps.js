@@ -69,6 +69,7 @@ const ValuePropsInnerWrapper = styled.div`
 `;
 
 const ValuePropWrapper = styled.div`
+  box-sizing: content-box;
   height: 312px;
   margin: 24px;
   position: relative;
@@ -103,12 +104,13 @@ const ValuePropHeader = styled(SectionHeader)`
 `;
 
 const Text = styled.div`
-  color: ${NEUTRALS.GRAY_07};
-  font-size: 16px;
-  line-height: 150%;
+  color: ${NEUTRALS.GRAY_17};
   text-align: center;
   position: absolute;
   top: 176px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 150%;
 `;
 
 const LearnMoreWrapper = styled(LearnMoreExternalLink)`
