@@ -242,19 +242,29 @@ const AppMenu = ({ bgColor } :Props) => {
   const [productsMenuIsOpen, openProductsMenu] = useState(false);
   const [isSticky, setSticky] = useState(false);
   const ref = useRef({});
+  const menuRef = useRef(null);
   const handleScroll = () => {
     setSticky(ref.current.getBoundingClientRect().top <= 0);
   };
 
+  const handleOutsideClick = (event) => {
+    if (menuRef.current && !menuRef.current.contains(event.target)) {
+      openProductsMenu(false);
+    }
+  };
+
   useEffect(() => {
     window.addEventListener('scroll', handleScroll);
+    window.addEventListener('mousedown', handleOutsideClick);
 
     return () => {
       window.removeEventListener('scroll', () => handleScroll);
+      window.removeEventListener('mousedown', handleOutsideClick);
     };
   }, []);
 
   return (
+    // $FlowFixMe
     <StickyWrapper bgColor={bgColor} isSticky={isSticky} ref={ref}>
       <MenuWrapper bgColor={bgColor} isSticky={isSticky}>
         <Link to={MENU_ROUTES.ROOT}>
@@ -301,7 +311,7 @@ const AppMenu = ({ bgColor } :Props) => {
         </MenuItemsWrapper>
         {
           productsMenuIsOpen && (
-            <ProductsMenuWrapper>
+            <ProductsMenuWrapper ref={menuRef}>
               <ProductOverviewRow>
                 <ProductOverviewLink to={MENU_ROUTES.PRODUCTS}>Product overview</ProductOverviewLink>
                 <FontAwesomeIcon color={NEUTRALS.GRAY_06} icon={faLongArrowRight} />
