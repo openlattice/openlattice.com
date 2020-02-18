@@ -13,6 +13,8 @@ import { NEUTRALS } from '../../core/style/Colors';
 import { MEDIA_QUERY_LG } from '../../core/style/Sizes';
 
 const AboutContent = styled(Content)`
+  margin-top: 100px;
+
   @media only screen and (min-width: ${MEDIA_QUERY_LG}px) {
     margin: 152px auto 201px auto;
   }

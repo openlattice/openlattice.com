@@ -47,10 +47,16 @@ const menuItemStyles = css`
   line-height: 150%;
   margin-right: 40px;
   text-decoration: none;
+
   @media only screen and (max-width: ${MEDIA_QUERY_MD}px) {
     font-size: 12px;
     margin-bottom: 20px;
     margin-right: 0;
+  }
+
+  @media only screen and (min-width: ${MEDIA_QUERY_MD}px) and (max-width: ${MEDIA_QUERY_LG}px) {
+    font-size: 14px;
+    margin-right: 10px
   }
 `;
 
