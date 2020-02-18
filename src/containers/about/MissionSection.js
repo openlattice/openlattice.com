@@ -18,8 +18,7 @@ const MissionContent = styled.div`
   margin: 100px auto 24px auto;
 
   @media only screen and (min-width: ${MEDIA_QUERY_MD}px) {
-    margin: 128px auto 24px auto;
-    width: 1104px;
+    margin: 144px auto 24px auto;
   }
 `;
 
@@ -43,8 +42,9 @@ const Header = styled(SectionHeader)`
 `;
 
 const Text = styled.div`
-  color: ${NEUTRALS.GRAY_06};
-  font-size: 18px;
+  color: ${NEUTRALS.GRAY_17};
+  font-size: 20px;
+  font-weight: 500;
   line-height: 150%;
   text-align: left;
   width: 100%;

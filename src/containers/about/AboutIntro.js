@@ -14,7 +14,7 @@ import { MEDIA_QUERY_LG } from '../../core/style/Sizes';
 
 const AboutContent = styled(Content)`
   @media only screen and (min-width: ${MEDIA_QUERY_LG}px) {
-    margin: 143px auto 208px auto;
+    margin: 152px auto 201px auto;
   }
 `;
 

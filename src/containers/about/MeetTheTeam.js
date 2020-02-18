@@ -20,8 +20,7 @@ const Content = styled.div`
   text-align: center;
 
   @media only screen and (min-width: ${MEDIA_QUERY_MD}px) {
-    margin-bottom: 196px;
-    width: 1104px;
+    margin-bottom: 76px;
   }
 `;
 
@@ -80,10 +79,6 @@ const TeamMembersOuterWrapper = styled.div`
   justify-content: center;
   margin: auto;
   max-width: 100%;
-
-  @media only screen and (min-width: ${MEDIA_QUERY_MD}px) {
-    width: 1104px;
-  }
 `;
 
 const TeamMembersInnerWrapper = styled.div`
