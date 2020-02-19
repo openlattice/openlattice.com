@@ -64,8 +64,9 @@ const TeamMemberName = styled.div`
 `;
 
 const TeamMemberRole = styled.div`
-  color: ${NEUTRALS.GRAY_07};
+  color: ${NEUTRALS.GRAY_17};
   font-size: 13px;
+  font-weight: 500;
   line-height: 150%;
   position: absolute;
   text-align: center;
@@ -79,6 +80,10 @@ const TeamMembersOuterWrapper = styled.div`
   justify-content: center;
   margin: auto;
   max-width: 100%;
+
+  @media only screen and (min-width: ${MEDIA_QUERY_MD}px) {
+    width: 1104px;
+  }
 `;
 
 const TeamMembersInnerWrapper = styled.div`
