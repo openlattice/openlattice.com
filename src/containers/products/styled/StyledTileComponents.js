@@ -98,16 +98,17 @@ const Subtitle = styled.div`
 `;
 
 const bodyStyles = css`
-  color: ${NEUTRALS.GRAY_06};
+  color: ${NEUTRALS.GRAY_07};
   font-size: 16px;
+  font-weight: 500;
   line-height: 150%;
   text-align: center;
 `;
 
 const Body = styled.div`
-  left: 48px;
+  left: 40px;
   position: absolute;
-  right: 48px;
+  right: 40px;
   top: 208px;
   ${bodyStyles}
 `;

@@ -60,11 +60,11 @@ const PRODUCT_DESCRIPTIONS :Object = {
   CWP: (`A data driven tool for your jurisdiction to manage participation and completion of
     alternative sentences to community services.`),
   PCM: (`Manage a person moving through the pretrial court system, from a public safety
-    assessment, to initial apperance, to tracking their outcomes (judge’s decision).`),
+    assessment, to initial apperance, to tracking their outcomes.`),
   REFERRALS: (`Enable service providers to manage their own inbound and outbound referrals,
     as well as wait-time and other customer service-focused analytics.`),
   RESEARCH_HUB: (`A secure, cloud-based Management Information System (MIS) that securely
-  integrates, indexes, and links highly variable and sensitive data across disparate sources.`),
+    integrates, indexes, and links highly variable and sensitive data across disparate sources.`),
   STEPPING_UP: (`Visualize and link data from across silos to see how different subsets of
     individuals affected by mental illness interact across social services.`),
 };

@@ -39,7 +39,7 @@ const Content = styled.div`
   text-align: center;
 
   @media only screen and (min-width: ${MEDIA_QUERY_MD}px) {
-    margin: 128px auto 128px auto;
+    margin: 144px auto 123px auto;
     width: ${CONTENT_WIDTH}px;
   }
 `;
