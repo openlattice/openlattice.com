@@ -78,9 +78,9 @@ const ItemTitle = styled(SectionHeader)`
 `;
 
 const Body = styled.div`
-  color: ${NEUTRALS.GRAY_07};
+  color: ${NEUTRALS.GRAY_17};
   font-size: 14px;
-  font-weight: normal;
+  font-weight: 500;
   line-height: 150%;
   text-align: left;
 

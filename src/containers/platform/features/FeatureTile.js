@@ -56,8 +56,9 @@ const Title = styled.div`
 `;
 
 const Body = styled.div`
-  color: ${NEUTRALS.GRAY_06};
+  color: ${NEUTRALS.GRAY_17};
   font-size: 14px;
+  font-weight: 500;
   left: 32px;
   line-height: 140%;
   margin-bottom: 32px;

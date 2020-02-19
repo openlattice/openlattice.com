@@ -25,7 +25,6 @@ import {
 
 const Content = styled.div`
   align-items: center;
-  color: ${NEUTRALS.WHITE};
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -51,8 +50,9 @@ const TextWrapper = styled.div`
 `;
 
 const TextSection = styled.div`
-  color: ${NEUTRALS.GRAY_07};
+  color: ${NEUTRALS.GRAY_17};
   font-size: 14px;
+  font-weight: 500;
   line-height: 150%;
   margin-bottom: 48px;
   text-align: center;

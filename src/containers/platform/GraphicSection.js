@@ -23,7 +23,6 @@ const learnMoreLink :string = 'https://help.openlattice.com/article/16-privacy-s
 
 const Content = styled.div`
   align-items: center;
-  color: ${NEUTRALS.WHITE};
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -58,8 +57,9 @@ const TextWrapper = styled.div`
 `;
 
 const TextSection = styled.div`
-  color: ${NEUTRALS.GRAY_07};
+  color: ${NEUTRALS.GRAY_17};
   font-size: 18px;
+  font-weight: 500;
   line-height: 150%;
   margin-bottom: 40px;
   text-align: left;
