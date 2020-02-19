@@ -36,7 +36,7 @@ const PageIntro = styled.h1`
 const PageDescription = styled.h3`
   color: ${NEUTRALS.GRAY_07};
   font-size: 20px;
-  font-weight: normal;
+  font-weight: 500;
   line-height: 150%;
   margin-bottom: 32px;
   ${sharedStyles}

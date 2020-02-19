@@ -56,7 +56,7 @@ const menuItemStyles = css`
 
   @media only screen and (min-width: ${MEDIA_QUERY_MD}px) and (max-width: ${MEDIA_QUERY_LG}px) {
     font-size: 14px;
-    margin-right: 10px
+    margin-right: 10px;
   }
 `;
 

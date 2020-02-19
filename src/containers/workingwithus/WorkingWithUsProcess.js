@@ -51,8 +51,9 @@ const PageContent = styled.div`
 `;
 
 const SectionDescription = styled.div`
-  color: ${NEUTRALS.GRAY_07};
+  color: ${NEUTRALS.GRAY_17};
   font-size: 18px;
+  font-weight: 500;
   line-height: 150%;
   margin-bottom: 40px;
   text-align: center;
@@ -76,14 +77,14 @@ const ListItemOuterWrapper = styled.div`
   margin-top: ${getMarginTop};
   width: 100%;
 
-  @media only screen and (max-width: ${MEDIA_QUERY_MD}px) {
+  @media only screen and (max-width: ${MEDIA_QUERY_LG}px) {
     margin-top: 0;
     margin-bottom: 40px;
   }
 `;
 
 const NumberOneOuterWrapper = styled(ListItemOuterWrapper)`
-  @media only screen and (min-width: ${MEDIA_QUERY_MD}px) {
+  @media only screen and (min-width: ${MEDIA_QUERY_LG}px) {
     height: 408px;
   }
 `;
@@ -95,7 +96,7 @@ const ListItemInnerWrapper = styled.div`
   height: 100%;
   width: 100%;
 
-  @media only screen and (max-width: ${MEDIA_QUERY_MD}px) {
+  @media only screen and (max-width: ${MEDIA_QUERY_LG}px) {
     flex-direction: column;
   }
 `;
@@ -108,7 +109,7 @@ const ListNumberAndTextWrapper = styled.div`
   margin-top: ${getMarginTop};
   width: 576px;
 
-  @media only screen and (max-width: ${MEDIA_QUERY_MD}px) {
+  @media only screen and (max-width: ${MEDIA_QUERY_LG}px) {
     margin-bottom: 40px;
   }
 
@@ -178,7 +179,7 @@ const Graphic = styled.img`
   align-self: flex-start;
   margin-top: ${getMarginTop};
 
-  @media only screen and (max-width: ${MEDIA_QUERY_MD}px) {
+  @media only screen and (max-width: ${MEDIA_QUERY_LG}px) {
     align-self: center;
     margin-top: 0;
   }
@@ -197,8 +198,9 @@ const ListItemTitle = styled(SectionHeader)`
 `;
 
 const ListItemDescription = styled.div`
-  color: ${NEUTRALS.GRAY_07};
+  color: ${NEUTRALS.GRAY_17};
   font-size: 18px;
+  font-weight: 500;
   line-height: 150%;
   text-align: left;
   width: 100%;
