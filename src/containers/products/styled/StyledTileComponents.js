@@ -114,7 +114,7 @@ const Body = styled.div`
 `;
 
 const TileLearnMoreButton = styled(LearnMoreInternalLink)`
-  background-color: ${NEUTRALS.GRAY_15};
+  background-color: ${NEUTRALS.GRAY_18};
   border: none;
   bottom: 48px;
   left: 203px;
