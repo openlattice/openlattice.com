@@ -87,7 +87,7 @@ const GIULIANA :Object = {
 
 const HRISTO :Object = {
   NAME: 'Hristo Oskov',
-  ROLE: 'Application Engineering Lead',
+  ROLE: 'Engineer',
   PHOTO: Hristo,
 };
 
