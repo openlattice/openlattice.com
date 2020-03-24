@@ -37,11 +37,6 @@ const ContentBlock = styled.div`
   }
 `;
 
-const Header = styled(SectionHeader)`
-  align-self: flex-start;
-  text-align: left;
-`;
-
 const Text = styled.div`
   color: ${NEUTRALS.GRAY_06};
   font-size: 18px;
@@ -58,21 +53,13 @@ const MissionSection = () => (
   <PageSection bgColor={NEUTRALS.WHITE}>
     <MissionContent>
       <ContentBlock>
-        <Header>Our mission</Header>
+        <SectionHeader>Our mission</SectionHeader>
         <Text>
           {`We set out to build a secure, scalable cloud-based data platform that empowers
             civil servants, researchers, and policy-makers to work together on society's
             toughest challenges. Our solutions help organizations use technology to drive
             positive change in tackling recidivism, homelessness, mass incarceration, and
             other key societal welfare issues.`}
-        </Text>
-      </ContentBlock>
-      <ContentBlock>
-        <Header>Our team</Header>
-        <Text>
-          {`The OpenLattice team brings together a diverse group of individuals with
-            knowledge and experience across government data solutions, policy-making,
-            criminal justice, healthcare, and data science.`}
         </Text>
       </ContentBlock>
     </MissionContent>
