@@ -5,6 +5,7 @@
 import React from 'react';
 
 import AboutIntro from './AboutIntro';
+import BoardSection from './BoardSection';
 import FooterSectionWithPageLinks from '../footer/FooterSectionWithPageLinks';
 import InvestorsSection from './InvestorsSection';
 import MeetTheTeam from './MeetTheTeam';
@@ -17,6 +18,7 @@ const About = () => (
     <AboutIntro />
     <MissionSection />
     <MeetTheTeam />
+    <BoardSection />
     <InvestorsSection />
     <FooterSectionWithPageLinks />
   </>

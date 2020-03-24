@@ -19,8 +19,10 @@ import Mandy from '../../assets/team/mandy.png';
 import Matthew from '../../assets/team/matthew.png';
 import Mollie from '../../assets/team/mollie.png';
 import Nicholas from '../../assets/team/nicholas.png';
+import Patrick from '../../assets/team/patrick.png';
 import Paul from '../../assets/team/paul.png';
 import Piper from '../../assets/team/piper.png';
+import Ron from '../../assets/team/ron.png';
 import Ryan from '../../assets/team/ryan.png';
 import Shireen from '../../assets/team/shireen.png';
 import Solomon from '../../assets/team/solomon.png';
@@ -32,6 +34,8 @@ const DATA_ENGINEER :string = 'Data Engineer';
 const DATA_SCIENTIST :string = 'Data Scientist';
 const DESIGNER :string = 'Product Designer';
 const FRONTEND :string = 'Frontend Software Engineer';
+
+const BOARD_MEMBER :string = 'Board Member';
 
 const ANDREA :Object = {
   NAME: 'Andrea Fowles',
@@ -135,6 +139,12 @@ const MATTHEW :Object = {
   PHOTO: Matthew,
 };
 
+const MATTHEW_BOARD :Object = {
+  NAME: 'Matthew Tamayo-Rios',
+  ROLE: BOARD_MEMBER,
+  PHOTO: Matthew,
+};
+
 const MOLLIE :Object = {
   NAME: 'Mollie Epstein',
   ROLE: DATA_SCIENTIST,
@@ -147,6 +157,12 @@ const NICHOLAS :Object = {
   PHOTO: Nicholas,
 };
 
+const PATRICK :Object = {
+  NAME: 'Patrick Grady',
+  ROLE: BOARD_MEMBER,
+  PHOTO: Patrick,
+};
+
 const PAUL :Object = {
   NAME: 'Paul Kim',
   ROLE: DESIGNER,
@@ -157,6 +173,12 @@ const PIPER :Object = {
   NAME: 'Piper Keyes',
   ROLE: DATA_ENGINEER,
   PHOTO: Piper,
+};
+
+const RON :Object = {
+  NAME: 'Ron Bouganim',
+  ROLE: BOARD_MEMBER,
+  PHOTO: Ron,
 };
 
 const RYAN :Object = {
@@ -184,7 +206,7 @@ const TODD :Object = {
 };
 
 
-const TEAM_MEMBERS :Object = [
+const TEAM_MEMBERS :Object[] = [
   MATTHEW,
   HRISTO,
   KATHERINE,
@@ -212,7 +234,14 @@ const TEAM_MEMBERS :Object = [
   MANDY,
 ];
 
+const BOARD_MEMBERS :Object[] = [
+  MATTHEW_BOARD,
+  PATRICK,
+  RON,
+];
+
 /* eslint-disable import/prefer-default-export */
 export {
+  BOARD_MEMBERS,
   TEAM_MEMBERS,
 };
