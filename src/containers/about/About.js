@@ -17,8 +17,8 @@ const About = () => (
     <ScrollToTopOnMount />
     <AboutIntro />
     <MissionSection />
-    <MeetTheTeam />
     <BoardSection />
+    <MeetTheTeam />
     <InvestorsSection />
     <FooterSectionWithPageLinks />
   </>
