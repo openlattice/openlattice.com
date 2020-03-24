@@ -6,10 +6,11 @@ import React from 'react';
 import styled from 'styled-components';
 
 import PageSection from '../../components/layout/NewPageSection';
+import { SectionHeader } from '../../components/headers/PageHeaders';
 
 import { NEUTRALS } from '../../core/style/Colors';
 import { MEDIA_QUERY_LG, MEDIA_QUERY_MD, MEDIA_QUERY_TECH_SM } from '../../core/style/Sizes';
-import { TEAM_MEMBERS } from './TeamMemberConsts';
+import { BOARD_MEMBERS } from './TeamMemberConsts';
 
 const Content = styled.div`
   align-items: center;
@@ -25,7 +26,11 @@ const Content = styled.div`
   }
 `;
 
-const TeamMember = styled.div`
+const Header = styled(SectionHeader)`
+  margin-bottom: 50px;
+`;
+
+const Person = styled.div`
   align-items: center;
   display: flex;
   flex-direction: column;
@@ -40,7 +45,7 @@ const TeamMember = styled.div`
   }
 `;
 
-const TeamMemberPhoto = styled.div`
+const PersonPhoto = styled.div`
   background-image: url(${(props) => props.headshot});
   background-position: center;
   background-repeat: no-repeat;
@@ -53,7 +58,7 @@ const TeamMemberPhoto = styled.div`
   }
 `;
 
-const TeamMemberName = styled.div`
+const PersonName = styled.div`
   color: ${NEUTRALS.GRAY_06};
   font-size: 16px;
   font-weight: 600;
@@ -64,7 +69,7 @@ const TeamMemberName = styled.div`
   width: 100%;
 `;
 
-const TeamMemberRole = styled.div`
+const PersonRole = styled.div`
   color: ${NEUTRALS.GRAY_07};
   font-size: 13px;
   line-height: 150%;
@@ -74,7 +79,7 @@ const TeamMemberRole = styled.div`
   width: 100%;
 `;
 
-const TeamMembersOuterWrapper = styled.div`
+const BoardMembersOuterWrapper = styled.div`
   display: flex;
   flex: 1 0 auto;
   justify-content: center;
@@ -86,52 +91,37 @@ const TeamMembersOuterWrapper = styled.div`
   }
 `;
 
-const TeamMembersInnerWrapper = styled.div`
+const BoardMembersInnerWrapper = styled.div`
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   margin: -24px;
 
   @media only screen and (min-width: ${MEDIA_QUERY_LG}px) {
-    justify-content: flex-start;
+    justify-content: space-between;
+    width: 100%;
   }
 `;
 
-const MeetTheTeam = () => (
+const MeetTheBoard = () => (
   <PageSection bgColor={NEUTRALS.WHITE}>
     <Content>
-      <TeamMembersOuterWrapper>
-        <TeamMembersInnerWrapper>
+      <Header>Our board</Header>
+      <BoardMembersOuterWrapper>
+        <BoardMembersInnerWrapper>
           {
-            TEAM_MEMBERS.map((teamMember :Object, index :number) => {
-              if (index > -1 && index < 3) {
-                let founderText = 'Founder &';
-                if (index === 1 || index === 2) founderText = 'Co-Founder &';
-                return (
-                  <TeamMember key={teamMember.NAME}>
-                    <TeamMemberPhoto headshot={teamMember.PHOTO} />
-                    <TeamMemberName>{teamMember.NAME}</TeamMemberName>
-                    <TeamMemberRole>
-                      {founderText}
-                      <br />
-                      {teamMember.ROLE}
-                    </TeamMemberRole>
-                  </TeamMember>
-                );
-              }
-              return (
-                <TeamMember key={teamMember.NAME}>
-                  <TeamMemberPhoto headshot={teamMember.PHOTO} />
-                  <TeamMemberName>{teamMember.NAME}</TeamMemberName>
-                  <TeamMemberRole>{teamMember.ROLE}</TeamMemberRole>
-                </TeamMember>
-              );
-            })
+            BOARD_MEMBERS.map((teamMember :Object) => (
+              <Person key={teamMember.NAME}>
+                <PersonPhoto headshot={teamMember.PHOTO} />
+                <PersonName>{teamMember.NAME}</PersonName>
+                <PersonRole>{teamMember.ROLE}</PersonRole>
+              </Person>
+            ))
           }
-        </TeamMembersInnerWrapper>
-      </TeamMembersOuterWrapper>
+        </BoardMembersInnerWrapper>
+      </BoardMembersOuterWrapper>
     </Content>
   </PageSection>
 );
 
-export default MeetTheTeam;
+export default MeetTheBoard;
