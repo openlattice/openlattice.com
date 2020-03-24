@@ -95,7 +95,6 @@ const BoardMembersInnerWrapper = styled.div`
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  margin: -24px;
 
   @media only screen and (min-width: ${MEDIA_QUERY_LG}px) {
     justify-content: space-between;

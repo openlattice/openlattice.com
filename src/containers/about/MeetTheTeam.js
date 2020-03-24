@@ -6,6 +6,7 @@ import React from 'react';
 import styled from 'styled-components';
 
 import PageSection from '../../components/layout/NewPageSection';
+import { SectionHeader } from '../../components/headers/PageHeaders';
 
 import { NEUTRALS } from '../../core/style/Colors';
 import { MEDIA_QUERY_LG, MEDIA_QUERY_MD, MEDIA_QUERY_TECH_SM } from '../../core/style/Sizes';
@@ -22,6 +23,32 @@ const Content = styled.div`
   @media only screen and (min-width: ${MEDIA_QUERY_MD}px) {
     margin-bottom: 100px;
     width: 1104px;
+  }
+`;
+
+const ContentBlock = styled.div`
+  align-self: center;
+  align-items: flex-start;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-bottom: 104px;
+  width: 720px;
+
+  @media only screen and (max-width: ${MEDIA_QUERY_MD}px) {
+    width: 100%;
+  }
+`;
+
+const Text = styled.div`
+  color: ${NEUTRALS.GRAY_06};
+  font-size: 18px;
+  line-height: 150%;
+  text-align: left;
+  width: 100%;
+
+  @media only screen and (max-width: ${MEDIA_QUERY_MD}px) {
+    width: 100%;
   }
 `;
 
@@ -100,6 +127,14 @@ const TeamMembersInnerWrapper = styled.div`
 const MeetTheTeam = () => (
   <PageSection bgColor={NEUTRALS.WHITE}>
     <Content>
+      <ContentBlock>
+        <SectionHeader>Our team</SectionHeader>
+        <Text>
+          {`The OpenLattice team brings together a diverse group of individuals with
+            knowledge and experience across government data solutions, policy-making,
+            criminal justice, healthcare, and data science.`}
+        </Text>
+      </ContentBlock>
       <TeamMembersOuterWrapper>
         <TeamMembersInnerWrapper>
           {
