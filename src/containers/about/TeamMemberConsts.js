@@ -35,8 +35,6 @@ const DATA_SCIENTIST :string = 'Data Scientist';
 const DESIGNER :string = 'Product Designer';
 const FRONTEND :string = 'Frontend Software Engineer';
 
-const BOARD_MEMBER :string = 'Board Member';
-
 const ANDREA :Object = {
   NAME: 'Andrea Fowles',
   ROLE: ACCOUNT,
