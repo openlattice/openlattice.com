@@ -138,6 +138,7 @@ const MATTHEW :Object = {
 };
 
 const MATTHEW_BOARD :Object = {
+  LI: 'https://www.linkedin.com/in/matthewtrios',
   NAME: 'Matthew Tamayo-Rios',
   ROLE: 'Chief Executive Officer',
   PHOTO: Matthew,
@@ -156,6 +157,7 @@ const NICHOLAS :Object = {
 };
 
 const PATRICK :Object = {
+  LI: 'https://www.linkedin.com/in/patrickwgrady',
   NAME: 'Patrick Grady',
   ROLE: 'Impetus Advisors',
   PHOTO: Patrick,
@@ -174,6 +176,7 @@ const PIPER :Object = {
 };
 
 const RON :Object = {
+  LI: 'https://www.linkedin.com/in/ronbouganim',
   NAME: 'Ron Bouganim',
   ROLE: 'Govtech Fund',
   PHOTO: Ron,

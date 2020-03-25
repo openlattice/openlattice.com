@@ -4,6 +4,8 @@
 
 import React from 'react';
 import styled from 'styled-components';
+import { faLinkedin } from '@fortawesome/free-brands-svg-icons';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 import PageSection from '../../components/layout/NewPageSection';
 import { SectionHeader } from '../../components/headers/PageHeaders';
@@ -79,6 +81,12 @@ const PersonRole = styled.div`
   width: 100%;
 `;
 
+const PersonLI = styled.a`
+  color: ${NEUTRALS.GRAY_07};
+  position: absolute;
+  top: 385px;
+`;
+
 const BoardMembersOuterWrapper = styled.div`
   display: flex;
   flex: 1 0 auto;
@@ -114,6 +122,9 @@ const MeetTheBoard = () => (
                 <PersonPhoto headshot={teamMember.PHOTO} />
                 <PersonName>{teamMember.NAME}</PersonName>
                 <PersonRole>{teamMember.ROLE}</PersonRole>
+                <PersonLI href={teamMember.LI}>
+                  <FontAwesomeIcon icon={faLinkedin} size="lg" />
+                </PersonLI>
               </Person>
             ))
           }
