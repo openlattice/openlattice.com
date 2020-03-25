@@ -141,7 +141,7 @@ const MATTHEW :Object = {
 
 const MATTHEW_BOARD :Object = {
   NAME: 'Matthew Tamayo-Rios',
-  ROLE: BOARD_MEMBER,
+  ROLE: 'Chief Executive Officer',
   PHOTO: Matthew,
 };
 
@@ -159,7 +159,7 @@ const NICHOLAS :Object = {
 
 const PATRICK :Object = {
   NAME: 'Patrick Grady',
-  ROLE: BOARD_MEMBER,
+  ROLE: 'Impetus Advisors',
   PHOTO: Patrick,
 };
 
@@ -177,7 +177,7 @@ const PIPER :Object = {
 
 const RON :Object = {
   NAME: 'Ron Bouganim',
-  ROLE: BOARD_MEMBER,
+  ROLE: 'Govtech Fund',
   PHOTO: Ron,
 };
 
