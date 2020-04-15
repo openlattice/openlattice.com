@@ -21,6 +21,7 @@ const Content = styled.div`
   justify-content: center;
   margin: 0 auto;
   text-align: center;
+  width: 100%;
 
   @media only screen and (min-width: ${MEDIA_QUERY_MD}px) {
     margin-bottom: 100px;
@@ -92,7 +93,7 @@ const BoardMembersOuterWrapper = styled.div`
   flex: 1 0 auto;
   justify-content: center;
   margin: auto;
-  max-width: 100%;
+  width: 100%;
 
   @media only screen and (min-width: ${MEDIA_QUERY_MD}px) {
     width: 1104px;
@@ -102,10 +103,10 @@ const BoardMembersOuterWrapper = styled.div`
 const BoardMembersInnerWrapper = styled.div`
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: space-evenly;
+  width: 100%;
 
   @media only screen and (min-width: ${MEDIA_QUERY_LG}px) {
-    justify-content: space-between;
     width: 100%;
   }
 `;
