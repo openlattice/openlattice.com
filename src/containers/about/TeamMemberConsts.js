@@ -15,14 +15,13 @@ import Joke from '../../assets/team/joke.png';
 import Julia from '../../assets/team/julia.png';
 import Katherine from '../../assets/team/katherine.png';
 import Kim from '../../assets/team/kim.png';
+import Lynn from '../../assets/team/lynn.png';
 import Mandy from '../../assets/team/mandy.png';
 import Matthew from '../../assets/team/matthew.png';
 import Mollie from '../../assets/team/mollie.png';
 import Nicholas from '../../assets/team/nicholas.png';
-import Patrick from '../../assets/team/patrick.png';
 import Paul from '../../assets/team/paul.png';
 import Piper from '../../assets/team/piper.png';
-import Ron from '../../assets/team/ron.png';
 import Ryan from '../../assets/team/ryan.png';
 import Shireen from '../../assets/team/shireen.png';
 import Solomon from '../../assets/team/solomon.png';
@@ -35,172 +34,165 @@ const DATA_SCIENTIST :string = 'Data Scientist';
 const DESIGNER :string = 'Product Designer';
 const FRONTEND :string = 'Frontend Software Engineer';
 
-const ANDREA :Object = {
+const ANDREA = {
   NAME: 'Andrea Fowles',
   ROLE: ACCOUNT,
   PHOTO: Andrea,
 };
 
-const ANDY :Object = {
+const ANDY = {
   NAME: 'Andy Doyle',
   ROLE: ACCOUNT,
   PHOTO: Andy,
 };
 
-const BLAKE :Object = {
+const BLAKE = {
   NAME: 'Blake Freitas',
   ROLE: 'Customer Success Engineer',
   PHOTO: Blake,
 };
 
-const BRANDON :Object = {
+const BRANDON = {
   NAME: 'Brandon Wright',
   ROLE: 'Customer Success Manager',
   PHOTO: Brandon,
 };
 
-const DAVID :Object = {
+const DAVID = {
   NAME: 'David Terrell',
   ROLE: 'Senior Staff Software Engineer',
   PHOTO: David,
 };
 
-const DREW :Object = {
+const DREW = {
   NAME: 'Drew Bailey',
   ROLE: 'Senior Software Engineer',
   PHOTO: Drew,
 };
 
-const GIULIA :Object = {
+const GIULIA = {
   NAME: 'Giulia Campana',
   ROLE: FRONTEND,
   PHOTO: Giulia,
 };
 
-const GIULIANA :Object = {
+const GIULIANA = {
   NAME: 'Giuliana Anglin',
   ROLE: 'Senior Marketing Manager',
   PHOTO: Giuliana,
 };
 
-const HRISTO :Object = {
+const HRISTO = {
   NAME: 'Hristo Oskov',
   ROLE: 'Engineer',
   PHOTO: Hristo,
 };
 
-const JASON :Object = {
+const JASON = {
   NAME: 'Jason Twohy',
   ROLE: 'Data Integration',
   PHOTO: Jason,
 };
 
-const JOE :Object = {
+const JOE = {
   NAME: 'Joe Savino',
   ROLE: 'Operations Manager',
   PHOTO: Joe,
 };
 
-const JOKE :Object = {
+const JOKE = {
   NAME: 'Joke Durnez',
   ROLE: 'Machine Learning Engineer',
   PHOTO: Joke,
 };
 
-const JULIA :Object = {
+const JULIA = {
   NAME: 'Julia Joosz',
   ROLE: DATA_ENGINEER,
   PHOTO: Julia,
 };
 
-const KATHERINE :Object = {
+const KATHERINE = {
   NAME: 'Katherine Bernstein',
   ROLE: 'Software Engineer',
   PHOTO: Katherine,
 };
 
-const KIM :Object = {
+const KIM = {
   NAME: 'Kim Engie',
   ROLE: 'Data Science Manager',
   PHOTO: Kim,
 };
 
-const MANDY :Object = {
+const LYNN = {
+  LI: 'https://www.linkedin.com/in/lynn-overmann-325bb432',
+  NAME: 'Lynn Overmann',
+  ROLE: 'Opportunity Insights',
+  PHOTO: Lynn,
+};
+
+const MANDY = {
   NAME: 'Mandy Schow',
   ROLE: ACCOUNT,
   PHOTO: Mandy,
 };
 
-const MATTHEW :Object = {
+const MATTHEW = {
   NAME: 'Matthew Tamayo-Rios',
   ROLE: 'Chief Executive Officer',
   PHOTO: Matthew,
 };
 
-const MATTHEW_BOARD :Object = {
+const MATTHEW_BOARD = {
   LI: 'https://www.linkedin.com/in/matthewtrios',
   NAME: 'Matthew Tamayo-Rios',
   ROLE: 'Chief Executive Officer',
   PHOTO: Matthew,
 };
 
-const MOLLIE :Object = {
+const MOLLIE = {
   NAME: 'Mollie Epstein',
   ROLE: DATA_SCIENTIST,
   PHOTO: Mollie,
 };
 
-const NICHOLAS :Object = {
+const NICHOLAS = {
   NAME: 'Nicholas Hobbs',
   ROLE: DATA_SCIENTIST,
   PHOTO: Nicholas,
 };
 
-const PATRICK :Object = {
-  LI: 'https://www.linkedin.com/in/patrickwgrady',
-  NAME: 'Patrick Grady',
-  ROLE: 'Impetus Advisors',
-  PHOTO: Patrick,
-};
-
-const PAUL :Object = {
+const PAUL = {
   NAME: 'Paul Kim',
   ROLE: DESIGNER,
   PHOTO: Paul,
 };
 
-const PIPER :Object = {
+const PIPER = {
   NAME: 'Piper Keyes',
   ROLE: DATA_ENGINEER,
   PHOTO: Piper,
 };
 
-const RON :Object = {
-  LI: 'https://www.linkedin.com/in/ronbouganim',
-  NAME: 'Ron Bouganim',
-  ROLE: 'Govtech Fund',
-  PHOTO: Ron,
-};
-
-const RYAN :Object = {
+const RYAN = {
   NAME: 'Ryan Weese',
   ROLE: ACCOUNT,
   PHOTO: Ryan,
 };
 
-const SHIREEN :Object = {
+const SHIREEN = {
   NAME: 'Shireen Aziz',
   ROLE: DESIGNER,
   PHOTO: Shireen,
 };
 
-const SOLOMON :Object = {
+const SOLOMON = {
   NAME: 'Solomon Tang',
   ROLE: FRONTEND,
   PHOTO: Solomon,
 };
 
-const TODD :Object = {
+const TODD = {
   NAME: 'Todd Bergman',
   ROLE: FRONTEND,
   PHOTO: Todd,
@@ -237,8 +229,7 @@ const TEAM_MEMBERS :Object[] = [
 
 const BOARD_MEMBERS :Object[] = [
   MATTHEW_BOARD,
-  PATRICK,
-  RON,
+  LYNN,
 ];
 
 /* eslint-disable import/prefer-default-export */
