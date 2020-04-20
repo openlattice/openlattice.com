@@ -17,17 +17,17 @@ import {
   ProductShot,
   ProductStamp,
 } from './styled/StyledProductComponents';
-import { 
+import {
   MEDIA_QUERY_LG,
   MEDIA_QUERY_MD,
   MEDIA_QUERY_TECH_SM
-   } from '../../core/style/Sizes';
+} from '../../core/style/Sizes';
 import { NEUTRALS } from '../../core/style/Colors';
 import { PageIntro } from '../../components/headers/PageHeaders';
 import ChronicleIcon from '../../assets/logos/placeholder-logo.svg';
 import FeatureImg1 from '../../assets/images/chronicle/chronicle_participants.png';
-import FeatureImg2 from '../../assets/images/chronicle/chronicle_data.png';
-import FeatureImg3 from '../../assets/images/chronicle/mobile_screenshot_inapp.png';
+import FeatureImg2 from '../../assets/images/chronicle/mobile_screenshot_inapp.png';
+import FeatureImg3 from '../../assets/images/chronicle/chronicle_data.png';
 import FooterSectionWithPageLinks from '../footer/FooterSectionWithPageLinks';
 import PageSection from '../../components/layout/NewPageSection';
 import ProductImg from '../../assets/images/chronicle/chronicle_dashboard.png';
@@ -78,22 +78,22 @@ const ChronicleProductPage = () => (
   <>
     <ScrollToTopOnMount />
     <PageSection bgColor={NEUTRALS.GRAY_05} includeMenu>
-    <IntroContent>
-    <ProductStamp>
-    <Icon src={ChronicleIcon} />
-    <div>CHRONICLE</div>
-    </ProductStamp>
-    <ChronicleIntro>
-    A novel, passive sensing research tool for Android 
+      <IntroContent>
+        <ProductStamp>
+          <Icon src={ChronicleIcon} />
+          <div>CHRONICLE</div>
+        </ProductStamp>
+        <ChronicleIntro>
+    A novel, passive sensing research tool for Android
       that collects mobile device usage data with low participant burden.
-    </ChronicleIntro>
-    <ChronicleDescription>
-      {`With continuous time stamped output about app usage, research teams can 
+        </ChronicleIntro>
+        <ChronicleDescription>
+          {`With continuous time stamped output about app usage, research teams can 
         calculate detailed variables that reflect the complex ways that children 
         and adults use mobile media.`}
-    </ChronicleDescription>
-    </IntroContent>
-    <ChronicleProductShot bgImage={ProductImg} />
+        </ChronicleDescription>
+      </IntroContent>
+      <ChronicleProductShot bgImage={ProductImg} />
     </PageSection>
     <PageSection>
       <ChronicleExtendedFeaturesContent>
@@ -146,7 +146,7 @@ const ChronicleProductPage = () => (
     </PageSection>
     <FooterSectionWithPageLinks />
 
-    
+
   </>
 );
 
