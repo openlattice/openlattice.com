@@ -15,6 +15,10 @@ const ContactUsWhite = styled.a`
   text-align: center;
   text-decoration: none;
   white-space: nowrap;
+
+  &:hover {
+    cursor: pointer;
+  }
 `;
 
 const ContactUsPurple = styled(ContactUsWhite)`
@@ -22,6 +26,10 @@ const ContactUsPurple = styled(ContactUsWhite)`
   background-color: ${PURPLES.PP08};
   border: none;
   color: ${NEUTRALS.WHITE};
+
+  &:hover {
+    cursor: pointer;
+  }
 `;
 
 export {

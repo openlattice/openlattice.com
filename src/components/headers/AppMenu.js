@@ -22,6 +22,7 @@ import {
   MEDIA_QUERY_TECH_SM,
   PAGE_SECTION_WIDTH
 } from '../../core/style/Sizes';
+import { openBeacon } from '../../utils/Utils';
 
 const menuActiveColor = {
   color: NEUTRALS.GRAY_06
@@ -292,10 +293,7 @@ const AppMenu = ({ bgColor } :Props) => {
               target={TARGET}>
             { MENU_HEADERS.HELP_CENTER }
           </MenuExternalLink>
-          <ContactUsWhite
-              activeStyle={menuActiveColor}
-              href={MENU_ROUTES.CONTACT_US}
-              target={TARGET}>
+          <ContactUsWhite activeStyle={menuActiveColor} onClick={openBeacon}>
             { MENU_HEADERS.CONTACT_US }
           </ContactUsWhite>
         </MenuItemsWrapper>
