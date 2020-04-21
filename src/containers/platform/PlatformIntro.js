@@ -43,7 +43,6 @@ const PageDescriptionWrapper = styled(PageDescription)`
   }
 `;
 
-
 const PlatformIntro = () => (
   <PageSection bgColor={NEUTRALS.GRAY_05} includeMenu>
     <Content>
