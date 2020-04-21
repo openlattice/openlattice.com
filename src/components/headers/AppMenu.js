@@ -24,8 +24,6 @@ import {
 } from '../../core/style/Sizes';
 import { openBeacon } from '../../utils/Utils';
 
-declare var Beacon :Function;
-
 const menuActiveColor = {
   color: NEUTRALS.GRAY_06
 };
