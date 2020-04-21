@@ -12,7 +12,7 @@ import { Content, PageDescriptionWrapper } from '../../components/layout/IntroCo
 import { ContactUsPurple } from '../../components/controls/index';
 import { NEUTRALS } from '../../core/style/Colors';
 import { MEDIA_QUERY_MD } from '../../core/style/Sizes';
-import { contactUsLink, TARGET } from '../../components/headers/MenuConsts';
+import { openBeacon } from '../../utils/Utils';
 
 const PageIntroWrapper = styled(PageIntro)`
   width: 720px;
@@ -32,9 +32,7 @@ const ProductsIntro = () => (
         {`Use data-driven workflows to accurately and efficiently identify problems,
           take necessary actions, and track outcomes.`}
       </PageDescriptionWrapper>
-      <ContactUsPurple
-          href={contactUsLink}
-          target={TARGET}>
+      <ContactUsPurple onClick={openBeacon}>
         Schedule a call
       </ContactUsPurple>
     </Content>
