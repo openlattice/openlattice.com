@@ -11,7 +11,7 @@ import { PageDescription, PageIntro } from '../../components/headers/PageHeaders
 import { ContactUsPurple } from '../../components/controls/index';
 import { NEUTRALS } from '../../core/style/Colors';
 import { MEDIA_QUERY_LG } from '../../core/style/Sizes';
-import { contactUsLink, TARGET } from '../../components/headers/MenuConsts';
+import { openBeacon } from '../../utils/Utils';
 
 const Content = styled.div`
   align-items: center;
@@ -43,9 +43,7 @@ const IntroSection = () => (
       <PageDescriptionWrapper>
         Removes data silos across agencies and organizations to save lives, money, and time
       </PageDescriptionWrapper>
-      <ContactUsPurple
-          href={contactUsLink}
-          target={TARGET}>
+      <ContactUsPurple onClick={openBeacon}>
         Schedule a call
       </ContactUsPurple>
     </Content>

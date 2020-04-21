@@ -11,7 +11,7 @@ import { PageIntro } from '../../components/headers/PageHeaders';
 import { Content, PageDescriptionWrapper } from '../../components/layout/IntroComponents';
 import { ContactUsPurple } from '../../components/controls/index';
 import { NEUTRALS } from '../../core/style/Colors';
-import { contactUsLink, TARGET } from '../../components/headers/MenuConsts';
+import { openBeacon } from '../../utils/Utils';
 
 const PageIntroWrapper = styled(PageIntro)`
   width: 816px;
@@ -27,9 +27,7 @@ const WorkingWithUsIntro = () => (
         {`Join dozens of jurisdictions across the United States who are using OpenLattice to
           better serve their constituents.`}
       </PageDescriptionWrapper>
-      <ContactUsPurple
-          href={contactUsLink}
-          target={TARGET}>
+      <ContactUsPurple onClick={openBeacon}>
         Schedule a call
       </ContactUsPurple>
     </Content>

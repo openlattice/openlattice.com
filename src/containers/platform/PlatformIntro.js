@@ -11,7 +11,7 @@ import { PageDescription, PageIntro } from '../../components/headers/PageHeaders
 import { ContactUsPurple } from '../../components/controls/index';
 import { NEUTRALS } from '../../core/style/Colors';
 import { MEDIA_QUERY_LG } from '../../core/style/Sizes';
-import { contactUsLink, TARGET } from '../../components/headers/MenuConsts';
+import { openBeacon } from '../../utils/Utils';
 
 const Content = styled.div`
   align-items: center;
@@ -53,9 +53,7 @@ const PlatformIntro = () => (
         {`We understand the difficulty of working with various regulations and compliances,
           so we’re taking care of that for you.`}
       </PageDescriptionWrapper>
-      <ContactUsPurple
-          href={contactUsLink}
-          target={TARGET}>
+      <ContactUsPurple onClick={openBeacon}>
         Schedule a call
       </ContactUsPurple>
     </Content>
