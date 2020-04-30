@@ -81,11 +81,6 @@ const MenuWrapper = styled.div`
   right: auto;
   `
   )}
-
-  @media only screen and (max-width: ${MEDIA_QUERY_MD}px) {
-    flex-direction: column;
-    justify-content: center;
-  }
 `;
 
 const MenuItemsWrapper = styled.div`
