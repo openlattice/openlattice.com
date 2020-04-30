@@ -263,42 +263,6 @@ const AppMenu = ({ bgColor } :Props) => {
         <Link to={MENU_ROUTES.ROOT}>
           <img src={OlLogo} alt="OpenLattice" height={40} />
         </Link>
-        <MenuItemsWrapper>
-          <MenuInternalLink
-              activeStyle={menuActiveColor}
-              to={MENU_ROUTES.ABOUT}>
-            { MENU_HEADERS.ABOUT }
-          </MenuInternalLink>
-          <MenuInternalLink
-              activeStyle={menuActiveColor}
-              to={MENU_ROUTES.WORKING_WITH_US}>
-            { MENU_HEADERS.WORKING_WITH_US }
-          </MenuInternalLink>
-          <MenuInternalLink
-              activeStyle={menuActiveColor}
-              to={MENU_ROUTES.PLATFORM}>
-            { MENU_HEADERS.PLATFORM }
-          </MenuInternalLink>
-          <ProductsWrapper
-              active={productsMenuIsOpen}
-              onClick={() => openProductsMenu(!productsMenuIsOpen)}>
-            <ProductsMenuTitle>
-              { MENU_HEADERS.PRODUCTS }
-            </ProductsMenuTitle>
-            <FontAwesomeIcon
-                color={productsMenuIsOpen ? menuActiveColor.color : NEUTRALS.GRAY_08}
-                icon={faChevronDown} />
-          </ProductsWrapper>
-          <MenuExternalLink
-              activeStyle={menuActiveColor}
-              href={MENU_ROUTES.HELP_CENTER}
-              target={TARGET}>
-            { MENU_HEADERS.HELP_CENTER }
-          </MenuExternalLink>
-          <ContactUsWhite activeStyle={menuActiveColor} onClick={openBeacon}>
-            { MENU_HEADERS.CONTACT_US }
-          </ContactUsWhite>
-        </MenuItemsWrapper>
         {
           !isSmallScreen && (
             <MenuItemsWrapper>
