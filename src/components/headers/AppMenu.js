@@ -242,16 +242,23 @@ type Props = {
 const AppMenu = ({ bgColor } :Props) => {
   const [productsMenuIsOpen, openProductsMenu] = useState(false);
   const [isSticky, setSticky] = useState(false);
+  const [isSmallScreen, setSmallScreen] = useState(window.innerWidth < smallScreenSize);
   const ref = useRef({});
   const handleScroll = () => {
     setSticky(ref.current.getBoundingClientRect().top <= 0);
   };
 
+  const updateMenuProps = () => {
+    setSmallScreen(window.innerWidth < smallScreenSize);
+  };
+
   useEffect(() => {
     window.addEventListener('scroll', handleScroll);
+    window.addEventListener('resize', updateMenuProps);
 
     return () => {
       window.removeEventListener('scroll', () => handleScroll);
+      window.removeEventListener('resize', () => updateMenuProps);
     };
   }, []);
 
