@@ -261,7 +261,7 @@ const AppMenu = ({ bgColor } :Props) => {
     <StickyWrapper bgColor={bgColor} isSticky={isSticky} ref={ref}>
       <MenuWrapper bgColor={bgColor} isSticky={isSticky}>
         <Link to={MENU_ROUTES.ROOT}>
-          <img src={OlLogo} alt="OpenLattice" height={40} />
+          <img src={OlLogo} alt="OpenLattice" height={logoHeight(window.innerWidth)} />
         </Link>
         {
           !isSmallScreen && (
