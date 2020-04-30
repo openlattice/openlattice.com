@@ -240,6 +240,13 @@ const DrawerToggleWrapper = styled.div`
   justify-content: center;
   width: 30px;
 `;
+
+const smallScreenSize = 900;
+const logoHeight = (screenSize :number) => {
+  if (screenSize < smallScreenSize) return 30;
+  return 40;
+};
+
 type Props = {
   bgColor ? :string;
 };
