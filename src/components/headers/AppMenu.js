@@ -2,6 +2,7 @@
 import React, { useEffect, useRef, useState } from 'react';
 import styled, { css } from 'styled-components';
 import { Link, NavLink } from 'react-router-dom';
+import { Drawer } from 'lattice-ui-kit';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faChevronDown } from '@fortawesome/pro-light-svg-icons';
 import { faBars } from '@fortawesome/pro-solid-svg-icons';
@@ -258,6 +259,7 @@ const AppMenu = ({ bgColor } :Props) => {
   const [isSmallScreen, setSmallScreen] = useState(window.innerWidth < smallScreenSize);
   const [drawerIsOpen, toggleDrawer] = useState(false);
   const ref = useRef({});
+
   const handleScroll = () => {
     setSticky(ref.current.getBoundingClientRect().top <= 0);
   };
@@ -289,6 +291,7 @@ const AppMenu = ({ bgColor } :Props) => {
             </DrawerToggleWrapper>
           )
         }
+        <Drawer isOpen={drawerIsOpen} onClose={() => toggleDrawer(false)} side="right" />
         {
           !isSmallScreen && (
             <MenuItemsWrapper>
