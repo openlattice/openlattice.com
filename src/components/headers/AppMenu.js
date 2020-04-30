@@ -4,6 +4,7 @@ import styled, { css } from 'styled-components';
 import { Link, NavLink } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faChevronDown } from '@fortawesome/pro-light-svg-icons';
+import { faBars } from '@fortawesome/pro-solid-svg-icons';
 import { faLongArrowRight } from '@fortawesome/pro-regular-svg-icons';
 
 import OlLogo from '../../assets/logos/ol-logo-header.svg';
@@ -230,14 +231,25 @@ const ProductBlurb = styled.div`
   line-height: 17px;
 `;
 
+const DrawerToggleWrapper = styled.div`
+  align-items: center;
+  color: ${NEUTRALS[1]};
+  cursor: pointer;
+  display: flex;
+  height: 30px;
+  justify-content: center;
+  width: 30px;
+`;
 type Props = {
   bgColor ? :string;
 };
 
 const AppMenu = ({ bgColor } :Props) => {
+
   const [productsMenuIsOpen, openProductsMenu] = useState(false);
   const [isSticky, setSticky] = useState(false);
   const [isSmallScreen, setSmallScreen] = useState(window.innerWidth < smallScreenSize);
+  const [drawerIsOpen, toggleDrawer] = useState(false);
   const ref = useRef({});
   const handleScroll = () => {
     setSticky(ref.current.getBoundingClientRect().top <= 0);
@@ -263,6 +275,13 @@ const AppMenu = ({ bgColor } :Props) => {
         <Link to={MENU_ROUTES.ROOT}>
           <img src={OlLogo} alt="OpenLattice" height={logoHeight(window.innerWidth)} />
         </Link>
+        {
+          isSmallScreen && (
+            <DrawerToggleWrapper onClick={() => toggleDrawer(!drawerIsOpen)}>
+              <FontAwesomeIcon icon={faBars} />
+            </DrawerToggleWrapper>
+          )
+        }
         {
           !isSmallScreen && (
             <MenuItemsWrapper>
