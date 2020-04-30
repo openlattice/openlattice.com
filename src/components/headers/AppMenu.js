@@ -36,7 +36,7 @@ const StickyWrapper = styled.div`
   margin-top: 8px;
   position: relative;
   width: 100%;
-  z-index: 2000;
+  z-index: ${(props) => (props.drawerIsOpen ? 0 : 2)};
 
   @media only screen and (max-width: ${MEDIA_QUERY_MD}px) {
     height: 312px;
@@ -63,7 +63,7 @@ const MenuWrapper = styled.div`
   justify-content: space-between;
   max-width: 100%;
   top: 0;
-  z-index: 2000;
+  z-index: ${(props) => (props.drawerIsOpen ? 0 : 2)};
   ${(props) => (props.isSticky ? css`
      background-color: ${NEUTRALS.WHITE};
      box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
@@ -279,8 +279,13 @@ const AppMenu = ({ bgColor } :Props) => {
   }, []);
 
   return (
-    <StickyWrapper bgColor={bgColor} isSticky={isSticky} ref={ref}>
-      <MenuWrapper bgColor={bgColor} isSticky={isSticky}>
+    <StickyWrapper
+        bgColor={bgColor}
+        drawerIsOpen={drawerIsOpen}
+        isSticky={isSticky}
+        // $FlowFixMe
+        ref={ref}>
+      <MenuWrapper bgColor={bgColor} isSticky={isSticky} drawerIsOpen={drawerIsOpen}>
         <Link to={MENU_ROUTES.ROOT}>
           <img src={OlLogo} alt="OpenLattice" height={logoHeight(window.innerWidth)} />
         </Link>
