@@ -50,7 +50,7 @@ const StickyWrapper = styled.div`
   z-index: ${(props) => (props.drawerIsOpen ? 0 : 2)};
 
   @media only screen and (max-width: ${MEDIA_QUERY_MD}px) {
-    height: 312px;
+    height: 120px;
   }
 `;
 
