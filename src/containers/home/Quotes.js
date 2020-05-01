@@ -28,6 +28,14 @@ const Content = styled.div`
   @media only screen and (min-width: ${MEDIA_QUERY_LG}px) {
     margin: 122px auto 108px auto;
   }
+
+  @media only screen and (max-width: 575px) {
+    margin: 50px auto 50px auto;
+  }
+
+  @media only screen and (min-width: 575px) and (max-width: ${MEDIA_QUERY_MD}px) {
+    margin: 75px auto 75px auto;
+  }
 `;
 
 const QuoteWrapper = styled.div`
@@ -42,14 +50,20 @@ const QuoteWrapper = styled.div`
     width: 912px;
   }
 
-  @media only screen and (max-width: ${MEDIA_QUERY_TECH_SM}px) {
+  @media only screen and (max-width: ${MEDIA_QUERY_MD}px) {
+    height: 360px;
+    margin: 0 10px;
+    width: 100%;
+  }
+
+  @media only screen and (max-width: 575px) {
     height: 338px;
     margin: 0 10px;
     width: 100%;
   }
 
-  @media only screen and (max-width: ${MEDIA_QUERY_MD}px) {
-    height: 360px;
+  @media only screen and (min-width: 411px) and (max-width: 575px) {
+    height: 300px;
     margin: 0 10px;
     width: 100%;
   }
@@ -65,11 +79,15 @@ const Quote = styled.div`
   margin-bottom: 80px;
   ${sharedTextStyles}
 
-  @media only screen and (max-width: ${MEDIA_QUERY_TECH_SM}px) {
-    font-size: 18px;
+  @media only screen and (max-width: 575px) {
+    margin-bottom: 40px;
   }
 
-  @media only screen and (max-width: ${MEDIA_QUERY_MD}px) {
+  @media only screen and (max-width: 575px) {
+    font-size: 16px;
+  }
+
+  @media only screen and (min-width: 575px) and (max-width: ${MEDIA_QUERY_MD}px) {
     font-size: 26px;
   }
 `;
@@ -79,7 +97,7 @@ const Name = styled.div`
   font-weight: 600;
   ${sharedTextStyles}
 
-  @media only screen and (max-width: ${MEDIA_QUERY_TECH_SM}px) {
+  @media only screen and (max-width: 575px) {
     font-size: 14px;
   }
 `;
@@ -104,13 +122,11 @@ const ButtonCircle = styled.div`
 
   @media only screen and (max-width: ${MEDIA_QUERY_MD}px) {
     height: 32px;
-    margin-bottom: 24px;
     width: 32px;
   }
 
   @media only screen and (max-width: ${MEDIA_QUERY_TECH_SM}px) {
     height: 20px;
-    margin-bottom: 18px;
     width: 20px;
   }
 `;

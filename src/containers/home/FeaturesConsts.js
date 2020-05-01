@@ -47,8 +47,8 @@ const MANAGE_ACCESS :Object = {
   GRAPHIC_DIMENSIONS: {
     normalHeight: '483px',
     normalWidth: '576px',
-    smallHeight: '313.95px',
-    smallWidth: '374.4px',
+    smallHeight: '289.8px',
+    smallWidth: '345.6px',
   },
   ICONS: [
     ManageAccess1,
