@@ -93,8 +93,11 @@ const PlatformLink = ({ activeStyle, isSmallScreen } :LinkProps) => (
   </MenuInternalLink>
 );
 
+
+
 const ProductsLink = ({ activeStyle, isSmallScreen } :LinkProps) => (
   <MenuInternalLink
+      exact
       activeStyle={activeStyle}
       isSmallScreen={isSmallScreen}
       to={MENU_ROUTES.PRODUCTS}>
