@@ -50,7 +50,7 @@ const ProductShot = styled.div`
   position: absolute;
   top: 450px;
   width: 100%;
-  z-index: 1000;
+  z-index: 1;
 
   @media only screen and (max-width: ${MEDIA_QUERY_TECH_SM}px) {
     height: 182px;
