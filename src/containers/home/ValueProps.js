@@ -117,10 +117,8 @@ const LearnMoreWrapper = styled(LearnMoreExternalLink)`
   position: absolute;
   right: 107px;
 
-  @media only screen and (max-width: ${MEDIA_QUERY_TECH_SM}px) {
+  @media only screen and (max-width: 411px) {
     font-size: 12px;
-    left: 120px;
-    right: 120px;
   }
 `;
 
