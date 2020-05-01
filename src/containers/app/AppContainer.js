@@ -27,7 +27,7 @@ const AppContainer = () => (
     <Route exact path={Routes.CHRONICLE} component={ChronicleProductPage} />
     <Route exact path={Routes.CARE} component={CareProductPage} />
     <Route exact path={Routes.PCM} component={PCMProductPage} />
-    <Route exact path={Routes.PRODUCTS} component={Products} />
+    <Route exact strict path={Routes.PRODUCTS} component={Products} />
     <Route exact path={Routes.PLATFORM} component={Platform} />
     <Route exact path={Routes.WORKING_WITH_US} component={WorkingWithUs} />
     <Route exact path={Routes.ABOUT} component={About} />
