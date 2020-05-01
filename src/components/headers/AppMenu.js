@@ -338,6 +338,7 @@ const AppMenu = ({ bgColor } :Props) => {
               { MENU_HEADERS.PLATFORM }
             </MenuInternalLink>
             <MenuInternalLink
+                exact
                 isSmallScreen={isSmallScreen}
                 activeStyle={menuActiveStylesToUse}
                 to={MENU_ROUTES.PRODUCTS}>
