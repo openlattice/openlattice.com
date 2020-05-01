@@ -279,7 +279,7 @@ const AppMenu = ({ bgColor } :Props) => {
             <AboutLink activeStyle={menuActiveStylesToUse} isSmallScreen={isSmallScreen} />
             <WorkingWithUsLink activeStyle={menuActiveStylesToUse} isSmallScreen={isSmallScreen} />
             <PlatformLink activeStyle={menuActiveStylesToUse} isSmallScreen={isSmallScreen} />
-            <ProductsLink exact activeStyle={menuActiveStylesToUse} isSmallScreen={isSmallScreen} />
+            <ProductsLink activeStyle={menuActiveStylesToUse} isSmallScreen={isSmallScreen} />
             {
               PRODUCT_MENU_ITEMS.map((item :Object) => (
                 <DrawerMenuProductLink
