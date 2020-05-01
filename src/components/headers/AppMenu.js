@@ -257,11 +257,11 @@ const AppMenu = ({ bgColor } :Props) => {
   }, []);
 
   return (
+    // $FlowFixMe
     <StickyWrapper
         bgColor={bgColor}
         drawerIsOpen={drawerIsOpen}
         isSticky={isSticky}
-        // $FlowFixMe
         ref={ref}>
       <MenuWrapper bgColor={bgColor} isSticky={isSticky} drawerIsOpen={drawerIsOpen}>
         <Link to={MENU_ROUTES.ROOT}>
