@@ -17,7 +17,7 @@ import {
   PRODUCT_MENU_ITEMS,
   TARGET
 } from './MenuConsts';
-import { NEUTRALS } from '../../core/style/Colors';
+import { NEUTRALS, PURPLES } from '../../core/style/Colors';
 import {
   MEDIA_QUERY_LG,
   MEDIA_QUERY_MD,
@@ -26,8 +26,12 @@ import {
 } from '../../core/style/Sizes';
 import { openBeacon } from '../../utils/Utils';
 
-const menuActiveColor = {
+const horizontalMenuActiveStyles = {
   color: NEUTRALS.GRAY_06
+};
+
+const verticalMenuActiveStyles = {
+  color: PURPLES.PP05
 };
 
 const StickyWrapper = styled.div`
@@ -43,19 +47,22 @@ const StickyWrapper = styled.div`
   }
 `;
 
-const menuItemStyles = css`
+const menuItemStyles = (props) => (props.isSmallScreen
+  ? css`
+    color: ${NEUTRALS.GRAY_03};
+    font-size: 14px;
+    font-weight: 600;
+    margin: 20px 0;
+    text-decoration: none;
+  `
+  : css`
   color: ${NEUTRALS.GRAY_08};
   font-size: 14px;
   font-weight: 500;
   line-height: 150%;
   margin-right: 40px;
   text-decoration: none;
-  @media only screen and (max-width: ${MEDIA_QUERY_MD}px) {
-    font-size: 12px;
-    margin-bottom: 20px;
-    margin-right: 0;
-  }
-`;
+`);
 
 const MenuWrapper = styled.div`
   align-items: center;
@@ -89,10 +96,11 @@ const MenuItemsWrapper = styled.div`
   align-items: center;
   display: flex;
   justify-content: space-between;
-  @media only screen and (max-width: ${MEDIA_QUERY_MD}px) {
+
+  @media only screen and (max-width: 900px) {
     flex-direction: column;
-    justify-content: center;
-    margin-top: 20px;
+    justify-content: flex-start;
+    padding: 15px 0;
   }
 `;
 
@@ -105,12 +113,23 @@ const MenuInternalLink = styled(NavLink)`
 
 const MenuExternalLink = styled.a`
   ${menuItemStyles}
+  margin-bottom: ${(props) => (props.isSmallScreen ? '40px' : 0)};
+`;
+
+const DrawerMenuProductLink = styled(MenuInternalLink)`
+  ${menuItemStyles};
+  color: ${NEUTRALS.GRAY_08};
+  margin: 8px 0;
+
+  :last-of-type {
+    margin-bottom: 20px;
+  }
 `;
 
 const ProductsWrapper = styled.div`
   ${menuItemStyles}
   align-items: center;
-  color: ${(props) => (props.active ? menuActiveColor.color : NEUTRALS.GRAY_08)};
+  color: ${(props) => (props.active ? horizontalMenuActiveStyles.color : NEUTRALS.GRAY_08)};
   display: flex;
 `;
 
@@ -268,6 +287,8 @@ const AppMenu = ({ bgColor } :Props) => {
     setSmallScreen(window.innerWidth < smallScreenSize);
   };
 
+  const menuActiveStylesToUse = isSmallScreen ? verticalMenuActiveStyles : horizontalMenuActiveStyles;
+
   useEffect(() => {
     window.addEventListener('scroll', handleScroll);
     window.addEventListener('resize', updateMenuProps);
@@ -296,22 +317,69 @@ const AppMenu = ({ bgColor } :Props) => {
             </DrawerToggleWrapper>
           )
         }
-        <Drawer isOpen={drawerIsOpen} onClose={() => toggleDrawer(false)} side="right" />
+        <Drawer isOpen={drawerIsOpen} onClose={() => toggleDrawer(false)} side="right">
+          <MenuItemsWrapper>
+            <MenuInternalLink
+                isSmallScreen={isSmallScreen}
+                activeStyle={menuActiveStylesToUse}
+                to={MENU_ROUTES.ABOUT}>
+              { MENU_HEADERS.ABOUT }
+            </MenuInternalLink>
+            <MenuInternalLink
+                isSmallScreen={isSmallScreen}
+                activeStyle={menuActiveStylesToUse}
+                to={MENU_ROUTES.WORKING_WITH_US}>
+              { MENU_HEADERS.WORKING_WITH_US }
+            </MenuInternalLink>
+            <MenuInternalLink
+                isSmallScreen={isSmallScreen}
+                activeStyle={menuActiveStylesToUse}
+                to={MENU_ROUTES.PLATFORM}>
+              { MENU_HEADERS.PLATFORM }
+            </MenuInternalLink>
+            <MenuInternalLink
+                isSmallScreen={isSmallScreen}
+                activeStyle={menuActiveStylesToUse}
+                to={MENU_ROUTES.PRODUCTS}>
+              Product overview
+            </MenuInternalLink>
+            {
+              PRODUCT_MENU_ITEMS.map((item :Object) => (
+                <DrawerMenuProductLink
+                    isSmallScreen={isSmallScreen}
+                    activeStyle={menuActiveStylesToUse}
+                    to={item.ROUTE}>
+                  { item.NAME }
+                </DrawerMenuProductLink>
+              ))
+            }
+            <MenuExternalLink
+                isSmallScreen={isSmallScreen}
+                activeStyle={menuActiveStylesToUse}
+                href={MENU_ROUTES.HELP_CENTER}
+                target={TARGET}>
+              { MENU_HEADERS.HELP_CENTER }
+            </MenuExternalLink>
+            <ContactUsWhite activeStyle={horizontalMenuActiveStyles} onClick={openBeacon}>
+              { MENU_HEADERS.CONTACT_US }
+            </ContactUsWhite>
+          </MenuItemsWrapper>
+        </Drawer>
         {
           !isSmallScreen && (
             <MenuItemsWrapper>
               <MenuInternalLink
-                  activeStyle={menuActiveColor}
+                  activeStyle={menuActiveStylesToUse}
                   to={MENU_ROUTES.ABOUT}>
                 { MENU_HEADERS.ABOUT }
               </MenuInternalLink>
               <MenuInternalLink
-                  activeStyle={menuActiveColor}
+                  activeStyle={menuActiveStylesToUse}
                   to={MENU_ROUTES.WORKING_WITH_US}>
                 { MENU_HEADERS.WORKING_WITH_US }
               </MenuInternalLink>
               <MenuInternalLink
-                  activeStyle={menuActiveColor}
+                  activeStyle={menuActiveStylesToUse}
                   to={MENU_ROUTES.PLATFORM}>
                 { MENU_HEADERS.PLATFORM }
               </MenuInternalLink>
@@ -322,16 +390,16 @@ const AppMenu = ({ bgColor } :Props) => {
                   { MENU_HEADERS.PRODUCTS }
                 </ProductsMenuTitle>
                 <FontAwesomeIcon
-                    color={productsMenuIsOpen ? menuActiveColor.color : NEUTRALS.GRAY_08}
+                    color={productsMenuIsOpen ? horizontalMenuActiveStyles.color : NEUTRALS.GRAY_08}
                     icon={faChevronDown} />
               </ProductsWrapper>
               <MenuExternalLink
-                  activeStyle={menuActiveColor}
+                  activeStyle={menuActiveStylesToUse}
                   href={MENU_ROUTES.HELP_CENTER}
                   target={TARGET}>
                 { MENU_HEADERS.HELP_CENTER }
               </MenuExternalLink>
-              <ContactUsWhite activeStyle={menuActiveColor} onClick={openBeacon}>
+              <ContactUsWhite activeStyle={horizontalMenuActiveStyles} onClick={openBeacon}>
                 { MENU_HEADERS.CONTACT_US }
               </ContactUsWhite>
             </MenuItemsWrapper>
