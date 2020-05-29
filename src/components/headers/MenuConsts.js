@@ -5,9 +5,17 @@ import * as Routes from '../../core/router/Routes';
 import PCMLogo from '../../assets/svg/menu/pcm-logo.svg';
 import CARELogo from '../../assets/svg/menu/care-logo.svg';
 import OLLogo from '../../assets/svg/menu/ol-logo.svg';
+import { NEUTRALS, PURPLES } from '../../core/style/Colors';
 
 export const helpCenterLink :string = 'https://help.openlattice.com';
 export const contactUsLink :string = 'https://calendly.com/openlattice/openlattice-web-request';
+
+const horizontalMenuActiveStyles = {
+  color: NEUTRALS.GRAY_06
+};
+const verticalMenuActiveStyles = {
+  color: PURPLES.PP05
+};
 
 const MENU_HEADERS :Object = {
   ABOUT: 'About',
@@ -61,5 +69,7 @@ export {
   MENU_HEADERS,
   MENU_ROUTES,
   PRODUCT_MENU_ITEMS,
-  TARGET
+  TARGET,
+  horizontalMenuActiveStyles,
+  verticalMenuActiveStyles,
 };
