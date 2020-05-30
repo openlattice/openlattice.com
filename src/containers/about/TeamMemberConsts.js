@@ -23,7 +23,6 @@ import Todd from '../../assets/team/todd.png';
 
 // repeat roles
 const ACCOUNT :string = 'Account Executive';
-const DATA_ENGINEER :string = 'Data Engineer';
 const DATA_SCIENTIST :string = 'Data Scientist';
 const DESIGNER :string = 'Product Designer';
 const FRONTEND :string = 'Frontend Software Engineer';
