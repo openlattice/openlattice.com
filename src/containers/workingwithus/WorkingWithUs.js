@@ -4,11 +4,12 @@
 
 import React from 'react';
 
-import FooterSectionWithPageLinks from '../footer/FooterSectionWithPageLinks';
 import IntegrationAnimationSection from './IntegrationAnimationSection';
-import ScrollToTopOnMount from '../../components/layout/ScrollToTopOnMount';
 import WorkingWithUsIntro from './WorkingWithUsIntro';
 import WorkingWithUsProcess from './WorkingWithUsProcess';
+
+import FooterSectionWithPageLinks from '../footer/FooterSectionWithPageLinks';
+import ScrollToTopOnMount from '../../components/layout/ScrollToTopOnMount';
 
 const WorkingWithUs = () => (
   <>

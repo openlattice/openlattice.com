@@ -1,20 +1,9 @@
 // @flow
+
 import React from 'react';
+
 import styled from 'styled-components';
 
-import Feature1 from '../../assets/productfeatureicons/merge.svg';
-import Feature2 from '../../assets/productfeatureicons/pcm/gavel.svg';
-import Feature3 from '../../assets/productfeatureicons/pcm/clipboard.svg';
-import FeatureImg1 from '../../assets/images/pcm/pcm-feature-shot-1.png';
-import FeatureImg2 from '../../assets/images/pcm/pcm-feature-shot-2.png';
-import FooterSectionWithPageLinks from '../footer/FooterSectionWithPageLinks';
-import PCMIcon from '../../assets/logos/pcm-small-logo.svg';
-import PageSection from '../../components/layout/NewPageSection';
-import ProductImg from '../../assets/images/pcm/pcm-product-shot.png';
-import ScrollToTopOnMount from '../../components/layout/ScrollToTopOnMount';
-
-import { PageIntro } from '../../components/headers/PageHeaders';
-import { Content, PageDescriptionWrapper } from '../../components/layout/IntroComponents';
 import {
   ExtendedFeatureDescription,
   ExtendedFeatureHeader,
@@ -31,9 +20,22 @@ import {
   ProductStamp,
   paragraphStyles,
 } from './styled/StyledProductComponents';
+
+import Checkboard from '../../assets/svg/circle-icons/checkboard.svg';
+import FeatureImg1 from '../../assets/images/pcm/pcm-feature-shot-1.png';
+import FeatureImg2 from '../../assets/images/pcm/pcm-feature-shot-2.png';
+import FooterSectionWithPageLinks from '../footer/FooterSectionWithPageLinks';
+import Gravel from '../../assets/svg/circle-icons/gavel.svg';
+import Merge from '../../assets/svg/circle-icons/merge.svg';
+import PCMIconSVG from '../../assets/svg/icons/pcm-icon.svg';
+import PageSection from '../../components/layout/NewPageSection';
+import ProductImg from '../../assets/images/pcm/pcm-product-shot.png';
+import ScrollToTopOnMount from '../../components/layout/ScrollToTopOnMount';
+import { TARGET } from '../../components/headers/MenuConsts';
+import { PageIntro } from '../../components/headers/PageHeaders';
+import { Content, PageDescriptionWrapper } from '../../components/layout/IntroComponents';
 import { NEUTRALS, PURPLES } from '../../core/style/Colors';
 import { MEDIA_QUERY_LG, MEDIA_QUERY_TECH_SM } from '../../core/style/Sizes';
-import { TARGET } from '../../components/headers/MenuConsts';
 
 const report :string = ' 2013 report ';
 const reportLink :string = 'https://craftmediabucket.s3.amazonaws.com/uploads/PDFs/LJAF_Report_hidden-costs_FNL.pdf';
@@ -74,7 +76,7 @@ const PCMProductPage = () => (
     <PageSection bgColor={NEUTRALS.GRAY_05} includeMenu>
       <IntroContent>
         <ProductStamp>
-          <Icon src={PCMIcon} />
+          <Icon src={PCMIconSVG} width="40" />
           <div>Pretrial Case Management</div>
         </ProductStamp>
         <PCMIntro>Reduce time spent on risk assessments while measuring their impact</PCMIntro>
@@ -88,7 +90,7 @@ const PCMProductPage = () => (
     <PageSection bgColor={NEUTRALS.WHITE}>
       <ProductFeaturesContent>
         <FeatureOverviewWrapper>
-          <img src={Feature1} alt="" />
+          <img src={Merge} alt="" />
           <FeatureOverviewTitle>Autofill risk assessments</FeatureOverviewTitle>
           <FeatureOverviewDescription>
             {`Integrate your Records Management System so you do not have to manually
@@ -96,7 +98,7 @@ const PCMProductPage = () => (
           </FeatureOverviewDescription>
         </FeatureOverviewWrapper>
         <FeatureOverviewWrapper>
-          <img src={Feature2} alt="" />
+          <img src={Gravel} alt="" />
           <FeatureOverviewTitle>Track outcomes</FeatureOverviewTitle>
           <FeatureOverviewDescription>
             {`Track hearing outcomes to better understand how judges and defendants interact
@@ -104,7 +106,7 @@ const PCMProductPage = () => (
           </FeatureOverviewDescription>
         </FeatureOverviewWrapper>
         <FeatureOverviewWrapper>
-          <img src={Feature3} alt="" />
+          <img src={Checkboard} alt="" />
           <FeatureOverviewTitle>Manage supervision</FeatureOverviewTitle>
           <FeatureOverviewDescription>
             {`Send automated court reminders to reduce Failure to Appear rates, and manage

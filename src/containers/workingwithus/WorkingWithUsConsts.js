@@ -1,15 +1,15 @@
 // @flow
 
-import DataSharingSVG from '../../assets/svg/working-with-us-data-sharing.svg';
-import DeploySVG from '../../assets/svg/working-with-us-deploy.svg';
-import PipelinesSVG from '../../assets/svg/working-with-us-pipelines.svg';
-import ProblemDefinitionSVG from '../../assets/svg/working-with-us-problem-definition.svg';
+import DataSharing from '../../assets/images/working-with-us/working-with-us-data-sharing.png';
+import Deploy from '../../assets/images/working-with-us/working-with-us-deploy.png';
+import Pipelines from '../../assets/images/working-with-us/working-with-us-pipelines.png';
+import ProblemDefinition from '../../assets/images/working-with-us/working-with-us-problem-definition.png';
 
 const WORKING_WITH_US_GRAPHICS :Object = {
-  PROBLEM_DEFINITION: ProblemDefinitionSVG,
-  DATA_SHARING_AGREEMENTS: DataSharingSVG,
-  DATA_PIPELINES: PipelinesSVG,
-  DEPLOY_APPS: DeploySVG
+  PROBLEM_DEFINITION: ProblemDefinition,
+  DATA_SHARING_AGREEMENTS: DataSharing,
+  DATA_PIPELINES: Pipelines,
+  DEPLOY_APPS: Deploy
 };
 
 const WORKING_WITH_US_STEPS :Object = {

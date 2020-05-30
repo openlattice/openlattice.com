@@ -1,12 +1,13 @@
 // @flow
-import ActionableData from '../../assets/svg/home/actionable-data.svg';
-import SecureData from '../../assets/svg/home/secure-data.svg';
-import Transparency from '../../assets/svg/home/transparency.svg';
+
+import DBSyncSVG from '../../assets/svg/circle-icons/database-sync.svg';
+import PlatformStackSVG from '../../assets/svg/circle-icons/platform-stack.svg';
+import UsersSVG from '../../assets/svg/circle-icons/users-2-solid.svg';
 
 const VALUE_PROP_ICONS :Object = {
-  APPS: Transparency,
-  INTEGRATIONS: ActionableData,
-  SHARING: SecureData,
+  APPS: PlatformStackSVG,
+  INTEGRATIONS: DBSyncSVG,
+  SHARING: UsersSVG,
 };
 
 const VALUE_PROP_HEADERS :Object = {

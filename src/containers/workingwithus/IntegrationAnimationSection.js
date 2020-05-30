@@ -3,13 +3,14 @@
  */
 
 import React from 'react';
+
 import styled from 'styled-components';
 
-import IntegrationImage from '../../assets/images/workingwithus/integrated-data.png';
+import IntegrationImage from '../../assets/images/working-with-us/integrated-data.png';
 import PageSection from '../../components/layout/NewPageSection';
-
-import { SectionHeader } from '../../components/headers/PageHeaders';
 import { LearnMoreExternalLink } from '../../components/controls/index';
+import { TARGET } from '../../components/headers/MenuConsts';
+import { SectionHeader } from '../../components/headers/PageHeaders';
 import { NEUTRALS } from '../../core/style/Colors';
 import {
   CONTENT_WIDTH,
@@ -17,7 +18,6 @@ import {
   MEDIA_QUERY_MD,
   MEDIA_QUERY_TECH_SM
 } from '../../core/style/Sizes';
-import { TARGET } from '../../components/headers/MenuConsts';
 
 const ourCaseStudiesLink :string = 'https://help.openlattice.com/collection/65-case-studies';
 

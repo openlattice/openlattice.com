@@ -1,25 +1,25 @@
 // @flow
 
-import AstrometricsImage from '../../assets/images/astrometrics-feature-img.png';
-import AstrometricsLogo from '../../assets/logos/products/astrometrics-logo.svg';
-import CWPImage from '../../assets/images/cwp-feature-img.png';
-import CWPLogo from '../../assets/logos/products/cwp-logo.png';
-import CareLogo from '../../assets/logos/care-logo.svg';
-import OpenLatticeIcon from '../../assets/svg/ol-icon.svg';
-import PCMLogo from '../../assets/logos/pcm-logo.svg';
-import ReferralsImage from '../../assets/images/referrals-feature-img.png';
-import SteppingUpImage from '../../assets/images/stepping-up-feature-img.png';
-import SteppingUpLogo from '../../assets/logos/products/stepping-up-logo.png';
+import AstrometricsIconSVG from '../../assets/svg/icons/astrometrics-icon.svg';
+import AstrometricsImage from '../../assets/images/astrometrics/astrometrics-feature-shot-1.png';
+import CAREIconSVG from '../../assets/svg/icons/care-icon.svg';
+import CWPIconSVG from '../../assets/svg/icons/cwp-icon.svg';
+import CWPImage from '../../assets/images/cwp/cwp-feature-shot-1.png';
+import OpenLatticeIconSVG from '../../assets/svg/circle-icons/ol-icon.svg';
+import PCMIconSVG from '../../assets/svg/icons/pcm-icon.svg';
+import ReferralsImage from '../../assets/images/referrals/referrals-feature-shot-1.png';
+import SteppingUpIconSVG from '../../assets/svg/icons/stepping-up-icon.svg';
+import SteppingUpImage from '../../assets/images/stepping-up/stepping-up-feature-shot-1.png';
 
 const PRODUCT_ICONS :Object = {
-  ASTROMETRICS: AstrometricsLogo,
-  CARE: CareLogo,
-  CHRONICLE: OpenLatticeIcon,
-  CWP: CWPLogo,
-  PCM: PCMLogo,
-  REFERRALS: OpenLatticeIcon,
-  RESEARCH_HUB: OpenLatticeIcon,
-  STEPPING_UP: SteppingUpLogo,
+  ASTROMETRICS: AstrometricsIconSVG,
+  CARE: CAREIconSVG,
+  CHRONICLE: OpenLatticeIconSVG,
+  CWP: CWPIconSVG,
+  PCM: PCMIconSVG,
+  REFERRALS: OpenLatticeIconSVG,
+  RESEARCH_HUB: OpenLatticeIconSVG,
+  STEPPING_UP: SteppingUpIconSVG,
 };
 
 const PRODUCT_TITLES :Object = {

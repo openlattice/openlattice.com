@@ -21,7 +21,7 @@ import {
 } from './constants';
 
 import FooterSectionWithPageLinks from '../../footer/FooterSectionWithPageLinks';
-import OpenLatticeIcon from '../../../assets/svg/ol-icon.svg';
+import OpenLatticeIcon from '../../../assets/svg/icons/ol-icon.svg';
 import PageSection from '../../../components/layout/NewPageSection';
 import ScrollToTopOnMount from '../../../components/layout/ScrollToTopOnMount';
 import {
@@ -34,7 +34,7 @@ import {
   BarsCircleIcon,
   MergeArrowCircleIcon,
   UserCircleIcon,
-} from '../../../assets/svg/circle';
+} from '../../../assets/svg/circle-icons';
 import { PageDescription, PageIntro } from '../../../components/headers/PageHeaders';
 import { ContactUsPageSection } from '../../../components/sections';
 import { NEUTRALS } from '../../../core/style/Colors';

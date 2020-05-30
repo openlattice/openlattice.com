@@ -5,7 +5,7 @@
 import React from 'react';
 import styled from 'styled-components';
 
-import PlatformGraphicSVG from '../../assets/svg/platform-graphic.svg';
+import PlatformSVG from '../../assets/svg/graphics/platform-layers.svg';
 import PageSection from '../../components/layout/NewPageSection';
 
 import { SectionHeader } from '../../components/headers/PageHeaders';
@@ -108,7 +108,7 @@ const GraphicSection = () => (
           Learn more
         </LearnMoreExternalLink>
       </TextWrapper>
-      <Graphic src={PlatformGraphicSVG} />
+      <Graphic src={PlatformSVG} />
     </Content>
   </PageSection>
 );

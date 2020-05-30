@@ -29,6 +29,7 @@ const Icon = styled.img`
   position: absolute;
   right: 143px;
   top: 40px;
+  width: 50px;
 
   @media only screen and (max-width: ${MEDIA_QUERY_TECH_SM}px) {
     left: 101px;

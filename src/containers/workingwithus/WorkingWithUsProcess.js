@@ -3,17 +3,18 @@
  */
 
 import React from 'react';
+
 import styled, { css } from 'styled-components';
 import { StyleUtils } from 'lattice-ui-kit';
 
-import PageSection from '../../components/layout/NewPageSection';
+import { WORKING_WITH_US_DESCRIPTIONS, WORKING_WITH_US_GRAPHICS, WORKING_WITH_US_STEPS } from './WorkingWithUsConsts';
 
-import { SectionHeader } from '../../components/headers/PageHeaders';
+import PageSection from '../../components/layout/NewPageSection';
 import { LearnMoreExternalLink } from '../../components/controls/index';
 import { TARGET } from '../../components/headers/MenuConsts';
+import { SectionHeader } from '../../components/headers/PageHeaders';
 import { NEUTRALS, PURPLES } from '../../core/style/Colors';
 import { MEDIA_QUERY_LG, MEDIA_QUERY_MD, MEDIA_QUERY_TECH_SM } from '../../core/style/Sizes';
-import { WORKING_WITH_US_DESCRIPTIONS, WORKING_WITH_US_GRAPHICS, WORKING_WITH_US_STEPS } from './WorkingWithUsConsts';
 
 const { getStyleVariation } = StyleUtils;
 const implementationPlanLink :string = 'https://help.openlattice.com/article/96-our-implementation-plan';
@@ -177,6 +178,7 @@ const TextWrapper = styled.div`
 const Graphic = styled.img`
   align-self: flex-start;
   margin-top: ${getMarginTop};
+  width: 432px;
 
   @media only screen and (max-width: ${MEDIA_QUERY_MD}px) {
     align-self: center;
