@@ -20,16 +20,16 @@ const ANALYZE_COLLABORATE = 'Manage roles and permissions for researchers. Data 
 
 const APP_DESCRIPTION = 'Chronicle includes an optional companion mobile application for Android devices.'
   + ' Through this app, researchers can securely collect information for media usage studies and utilize push'
-  + ' notifications for point-in-time surveys.'
+  + ' notifications for point-in-time surveys.';
 
 const REVIEW_DESCRIPTION = 'Data are collected in a standardized format so that it can be viewed in a clean, simple,'
-  + ' and intuitive way on our Chronicle Dashboard or exported to a preferred statistical tool.'
+  + ' and intuitive way on our Chronicle Dashboard or exported to a preferred statistical tool.';
 
 const INTEGRATE_DESCRIPTION = 'Integrate multiple data streams for an individual, and securely share all or select'
   + ' data with other researchers via ResearchHub.';
 
 const ENSURE_DATA_QUALITY = 'See a list of all study participants, along with their consent date and drop-out date,'
-  + ' if applicable. Use this information to ensure data quality and identify any participation issues in real-time.'
+  + ' if applicable. Use this information to ensure data quality and identify any participation issues in real-time.';
 
 const SAVE_TIME = 'Chronicle collects and stores important information around enrollment, consent, and participation.'
   + ' A record gets automatically tabulated in a PDF that research teams can send directly to compliance and'

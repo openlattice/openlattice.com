@@ -136,7 +136,7 @@ const PCMProductPage = () => (
             <ExtendedFeatureHeader>Supervision touchpoints</ExtendedFeatureHeader>
             <ExtendedFeatureDescription>
               Failures to appear can result in additional jurisdiction resources spent executing warrants, and
-                potential avoidable jail time for defendants.  Knowing the
+              potential avoidable jail time for defendants.  Knowing the
               <PurpleLink href={courtRemindersLink} target={TARGET}>{ courtReminders }</PurpleLink>
               , OpenLattice developed both an automated Court Reminder system and an automated
               Voice Verification Check-In system.  This allows jurisdictions to maximize benefit, while
