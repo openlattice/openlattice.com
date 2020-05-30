@@ -1,10 +1,9 @@
 // @flow
 
+import CAREIconSVG from '../../assets/svg/icons/care-icon.svg';
+import OpenLatticeIconSVG from '../../assets/svg/circle-icons/ol-icon.svg';
+import PCMIconSVG from '../../assets/svg/icons/pcm-icon.svg';
 import * as Routes from '../../core/router/Routes';
-
-import PCMLogo from '../../assets/svg/menu/pcm-logo.svg';
-import CARELogo from '../../assets/svg/menu/care-logo.svg';
-import OLLogo from '../../assets/svg/menu/ol-logo.svg';
 import { NEUTRALS, PURPLES } from '../../core/style/Colors';
 
 export const helpCenterLink :string = 'https://help.openlattice.com';
@@ -39,25 +38,25 @@ const MENU_ROUTES :Object = {
 const PRODUCT_MENU_ITEMS :Object[] = [
   {
     BLURB: 'Manage a person moving through pretrial system',
-    ICON: PCMLogo,
+    ICON: PCMIconSVG,
     NAME: 'Pretrial Case Management',
     ROUTE: Routes.PCM,
   },
   {
     BLURB: 'Collect and utilize behavioral health data',
-    ICON: CARELogo,
+    ICON: CAREIconSVG,
     NAME: 'CARE',
     ROUTE: Routes.CARE,
   },
   {
     BLURB: 'Collaborative human-centered research tool',
-    ICON: OLLogo,
+    ICON: OpenLatticeIconSVG,
     NAME: 'Chronicle',
     ROUTE: Routes.CHRONICLE,
   },
   {
     BLURB: 'Cloud-based Management Information System',
-    ICON: OLLogo,
+    ICON: OpenLatticeIconSVG,
     NAME: 'Research Hub',
     ROUTE: Routes.RESEARCH_HUB,
   },

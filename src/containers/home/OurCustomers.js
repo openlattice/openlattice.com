@@ -3,10 +3,8 @@
  */
 
 import React from 'react';
-import styled, { css } from 'styled-components';
 
-import MapImage from '../../assets/images/home/our-customers-map.png';
-import PageSection from '../../components/layout/NewPageSection';
+import styled, { css } from 'styled-components';
 
 import {
   JURISDICTIONS_1,
@@ -14,8 +12,11 @@ import {
   JURISDICTIONS_3,
   JURISDICTIONS_4,
 } from './OurCustomersConsts';
+
+import MapImage from '../../assets/svg/graphics/our-customers-map.svg';
+import PageSection from '../../components/layout/NewPageSection';
 import { NEUTRALS } from '../../core/style/Colors';
-import { MEDIA_QUERY_MD, MEDIA_QUERY_LG, MEDIA_QUERY_TECH_SM } from '../../core/style/Sizes';
+import { MEDIA_QUERY_LG, MEDIA_QUERY_MD, MEDIA_QUERY_TECH_SM } from '../../core/style/Sizes';
 
 const Content = styled.div`
   align-items: center;

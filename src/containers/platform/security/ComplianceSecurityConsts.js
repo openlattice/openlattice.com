@@ -1,16 +1,17 @@
 // @flow
+
+import CFRIcon from '../../../assets/logos/compliance/42cfrp2.png';
 import CJISIcon from '../../../assets/logos/compliance/cjis.png';
-import CFRIcon from '../../../assets/logos/compliance/42cfr.png';
 import FERPAIcon from '../../../assets/logos/compliance/ferpa.png';
+import GDPRLogoSVG from '../../../assets/svg/logos/eu-gdpr-logo.svg';
 import HIPAAIcon from '../../../assets/logos/compliance/hipaa.png';
-import GDPRIcon from '../../../assets/logos/compliance/gdpr.png';
-import EncryptionIcon from '../../../assets/logos/security/encryption.png';
-import LoginIcon from '../../../assets/logos/security/login.png';
-import CloudIcon from '../../../assets/logos/security/cloud.png';
+import SecureCloudSVG from '../../../assets/svg/logos/secure-cloud-logo.svg';
+import SecureDataSVG from '../../../assets/svg/logos/secure-data-logo.svg';
+import SecureLoginSVG from '../../../assets/svg/logos/secure-login-logo.svg';
 
 const COMPLIANCE_ICONS :Object = {
   CJIS: CJISIcon,
-  GDPR: GDPRIcon,
+  GDPR: GDPRLogoSVG,
   HIPAA: HIPAAIcon,
   CFR: CFRIcon,
   FERPA: FERPAIcon,
@@ -38,9 +39,9 @@ const COMPLIANCE_DESCRIPTIONS :Object = {
 };
 
 const SECURITY_ICONS :Object = {
-  ENCRYPTION: EncryptionIcon,
-  LOGIN: LoginIcon,
-  CLOUD: CloudIcon,
+  ENCRYPTION: SecureDataSVG,
+  LOGIN: SecureLoginSVG,
+  CLOUD: SecureCloudSVG,
 };
 
 const SECURITY_TITLES :Object = {

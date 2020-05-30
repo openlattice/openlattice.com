@@ -4,6 +4,12 @@
 
 import React from 'react';
 
+import {
+  LatticeLuxonUtils,
+  MuiPickersUtilsProvider,
+  ThemeProvider,
+  lightTheme,
+} from 'lattice-ui-kit';
 import { Route, Switch } from 'react-router';
 
 import About from '../about/About';
@@ -20,19 +26,23 @@ import * as Routes from '../../core/router/Routes';
 import { ChronicleProductPage } from '../products/chronicle';
 
 const AppContainer = () => (
-  <Switch>
-    <Route exact path={Routes.PRIVACY_POLICY} component={PrivacyPolicy} />
-    <Route exact path={Routes.TERMS_OF_SERVICE} component={TermsOfService} />
-    <Route exact path={Routes.RESEARCH_HUB} component={ResearchHubProductPage} />
-    <Route exact path={Routes.CHRONICLE} component={ChronicleProductPage} />
-    <Route exact path={Routes.CARE} component={CareProductPage} />
-    <Route exact path={Routes.PCM} component={PCMProductPage} />
-    <Route exact strict path={Routes.PRODUCTS} component={Products} />
-    <Route exact path={Routes.PLATFORM} component={Platform} />
-    <Route exact path={Routes.WORKING_WITH_US} component={WorkingWithUs} />
-    <Route exact path={Routes.ABOUT} component={About} />
-    <Route component={AppHomePage} />
-  </Switch>
+  <ThemeProvider theme={lightTheme}>
+    <MuiPickersUtilsProvider utils={LatticeLuxonUtils}>
+      <Switch>
+        <Route exact path={Routes.PRIVACY_POLICY} component={PrivacyPolicy} />
+        <Route exact path={Routes.TERMS_OF_SERVICE} component={TermsOfService} />
+        <Route exact path={Routes.RESEARCH_HUB} component={ResearchHubProductPage} />
+        <Route exact path={Routes.CHRONICLE} component={ChronicleProductPage} />
+        <Route exact path={Routes.CARE} component={CareProductPage} />
+        <Route exact path={Routes.PCM} component={PCMProductPage} />
+        <Route exact strict path={Routes.PRODUCTS} component={Products} />
+        <Route exact path={Routes.PLATFORM} component={Platform} />
+        <Route exact path={Routes.WORKING_WITH_US} component={WorkingWithUs} />
+        <Route exact path={Routes.ABOUT} component={About} />
+        <Route component={AppHomePage} />
+      </Switch>
+    </MuiPickersUtilsProvider>
+  </ThemeProvider>
 );
 
 export default AppContainer;

@@ -1,20 +1,9 @@
 // @flow
+
 import React from 'react';
+
 import styled from 'styled-components';
 
-import Feature1 from '../../assets/productfeatureicons/care/headphones.svg';
-import Feature2 from '../../assets/productfeatureicons/feature2.svg';
-import Feature3 from '../../assets/productfeatureicons/care/pages.svg';
-import FeatureImg1 from '../../assets/images/care/care-feature-shot-1.png';
-import FeatureImg2 from '../../assets/images/care/care-feature-shot-2.png';
-import FooterSectionWithPageLinks from '../footer/FooterSectionWithPageLinks';
-import CareIcon from '../../assets/logos/care-small-logo.svg';
-import PageSection from '../../components/layout/NewPageSection';
-import ProductImg from '../../assets/images/care/care-product-shot.png';
-import ScrollToTopOnMount from '../../components/layout/ScrollToTopOnMount';
-
-import { PageIntro } from '../../components/headers/PageHeaders';
-import { Content, PageDescriptionWrapper } from '../../components/layout/IntroComponents';
 import {
   ExtendedFeatureDescription,
   ExtendedFeatureHeader,
@@ -30,12 +19,25 @@ import {
   ProductShot,
   ProductStamp,
 } from './styled/StyledProductComponents';
+
+import CAREIconSVG from '../../assets/svg/icons/care-icon.svg';
+import Cycle from '../../assets/svg/circle-icons/cycle.svg';
+import FeatureImg1 from '../../assets/images/care/care-feature-shot-1.png';
+import FeatureImg2 from '../../assets/images/care/care-feature-shot-2.png';
+import FooterSectionWithPageLinks from '../footer/FooterSectionWithPageLinks';
+import Headphones from '../../assets/svg/circle-icons/headphones.svg';
+import Logs from '../../assets/svg/circle-icons/logs.svg';
+import PageSection from '../../components/layout/NewPageSection';
+import ProductImg from '../../assets/images/care/care-product-shot.png';
+import ScrollToTopOnMount from '../../components/layout/ScrollToTopOnMount';
+import { PageIntro } from '../../components/headers/PageHeaders';
+import { Content, PageDescriptionWrapper } from '../../components/layout/IntroComponents';
+import { NEUTRALS } from '../../core/style/Colors';
 import {
   MEDIA_QUERY_LG,
   MEDIA_QUERY_MD,
   MEDIA_QUERY_TECH_SM,
 } from '../../core/style/Sizes';
-import { NEUTRALS } from '../../core/style/Colors';
 
 const IntroContent = styled(Content)`
   @media only screen and (min-width: ${MEDIA_QUERY_LG}px) {
@@ -85,7 +87,7 @@ const CareProductPage = () => (
     <PageSection bgColor={NEUTRALS.GRAY_05} includeMenu>
       <IntroContent>
         <ProductStamp>
-          <Icon src={CareIcon} />
+          <Icon src={CAREIconSVG} width="32" />
           <div>CARE</div>
         </ProductStamp>
         <CAREIntro>Facilitate safe and effective interactions between patrol officers and individuals</CAREIntro>
@@ -99,7 +101,7 @@ const CareProductPage = () => (
     <PageSection>
       <CAREFeaturesContent>
         <FeatureOverviewWrapper>
-          <img src={Feature1} alt="" />
+          <img src={Headphones} alt="" />
           <FeatureOverviewTitle>Dispatch integration</FeatureOverviewTitle>
           <FeatureOverviewDescription>
             {`Integrate with the 911 dispatch system to deliver up-to-date, key information that officers need
@@ -107,7 +109,7 @@ const CareProductPage = () => (
           </FeatureOverviewDescription>
         </FeatureOverviewWrapper>
         <FeatureOverviewWrapper>
-          <img src={Feature2} alt="" />
+          <img src={Cycle} alt="" />
           <FeatureOverviewTitle>Collaborative workflows</FeatureOverviewTitle>
           <FeatureOverviewDescription>
             {`Facilitate communication and collaboration across PD units, across zones, and with service providers,
@@ -115,7 +117,7 @@ const CareProductPage = () => (
           </FeatureOverviewDescription>
         </FeatureOverviewWrapper>
         <FeatureOverviewWrapper>
-          <img src={Feature3} alt="" />
+          <img src={Logs} alt="" />
           <FeatureOverviewTitle>Response & interaction plans</FeatureOverviewTitle>
           <FeatureOverviewDescription>
             {`Care serves as a centralized repository for individualized contextual information and curated crisis

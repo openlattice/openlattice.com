@@ -1,13 +1,14 @@
 // @flow
-import React, { useEffect, useRef, useState } from 'react';
-import styled, { css } from 'styled-components';
-import { Link, NavLink } from 'react-router-dom';
-import { Drawer } from 'lattice-ui-kit';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faBars } from '@fortawesome/pro-solid-svg-icons';
-import { faLongArrowRight } from '@fortawesome/pro-regular-svg-icons';
 
-import OlLogo from '../../assets/logos/ol-logo-header.svg';
+import React, { useEffect, useRef, useState } from 'react';
+
+import styled, { css } from 'styled-components';
+import { faLongArrowRight } from '@fortawesome/pro-regular-svg-icons';
+import { faBars } from '@fortawesome/pro-solid-svg-icons';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { Drawer } from 'lattice-ui-kit';
+import { Link, NavLink } from 'react-router-dom';
+
 import {
   AboutLink,
   HeaderMenuProducts,
@@ -18,7 +19,6 @@ import {
   WorkingWithUsLink,
   menuItemStyles,
 } from './AppMenuLinks';
-import { ContactUsWhite } from '../controls/index';
 import {
   MENU_HEADERS,
   MENU_ROUTES,
@@ -26,6 +26,8 @@ import {
   horizontalMenuActiveStyles,
   verticalMenuActiveStyles,
 } from './MenuConsts';
+
+import OpenLatticeLogoSVG from '../../assets/svg/logos/ol-logo-header.svg';
 import { NEUTRALS } from '../../core/style/Colors';
 import {
   MEDIA_QUERY_LG,
@@ -34,6 +36,7 @@ import {
   PAGE_SECTION_WIDTH
 } from '../../core/style/Sizes';
 import { openBeacon } from '../../utils/Utils';
+import { ContactUsWhite } from '../controls/index';
 
 const smallScreenSize = 900;
 const logoHeight = (screenSize :number) => {
@@ -86,6 +89,12 @@ const MenuItemsWrapper = styled.div`
   align-items: center;
   display: flex;
   justify-content: space-between;
+
+  @media only screen and (max-width: 900px) {
+    flex-direction: column;
+    justify-content: flex-start;
+    padding: 15px 0;
+  }
 `;
 
 const DrawerMenuProductLink = styled(MenuInternalLink)`
@@ -175,9 +184,14 @@ const ProductOverviewLink = styled(MenuInternalLink)`
 `;
 
 const ProductRow = styled.div`
+  align-items: center;
   display: flex;
   padding: 16px 32px;
   width: 100%;
+
+  img {
+    width: 36px;
+  }
 
   @media only screen and (max-width: ${MEDIA_QUERY_TECH_SM}px) {
     padding-bottom: 32px;
@@ -259,7 +273,7 @@ const AppMenu = ({ bgColor } :Props) => {
         ref={ref}>
       <MenuWrapper bgColor={bgColor} isSticky={isSticky} drawerIsOpen={drawerIsOpen}>
         <Link to={MENU_ROUTES.ROOT}>
-          <img src={OlLogo} alt="OpenLattice" height={logoHeight(window.innerWidth)} />
+          <img src={OpenLatticeLogoSVG} alt="OpenLattice" height={logoHeight(window.innerWidth)} />
         </Link>
         {
           isSmallScreen && (

@@ -3,13 +3,14 @@
  */
 
 import React, { Component } from 'react';
+
 import styled, { css } from 'styled-components';
 
-import RightArrow from '../../assets/svg/home/right-arrow.svg';
-import LeftArrow from '../../assets/svg/home/left-arrow.svg';
-import PageSection from '../../components/layout/NewPageSection';
-
 import { DAVID_SCHWINDT, JUSTIN_LOOSE } from './QuotesConsts';
+
+import LeftArrow from '../../assets/svg/icons/left-arrow.svg';
+import PageSection from '../../components/layout/NewPageSection';
+import RightArrow from '../../assets/svg/icons/right-arrow.svg';
 import { NEUTRALS } from '../../core/style/Colors';
 import { MEDIA_QUERY_LG, MEDIA_QUERY_MD, MEDIA_QUERY_TECH_SM } from '../../core/style/Sizes';
 

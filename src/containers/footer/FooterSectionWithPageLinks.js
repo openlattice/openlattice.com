@@ -3,17 +3,17 @@
  */
 
 import React from 'react';
+
 import styled, { css } from 'styled-components';
 import { NavLink } from 'react-router-dom';
 
+import OpenLatticeIconSVG from '../../assets/svg/icons/ol-icon-gray.svg';
 import PageSection from '../../components/layout/NewPageSection';
-import GrayOLLogo from '../../assets/logos/ol-gray-logo.svg';
-
 import * as Routes from '../../core/router/Routes';
+import { TARGET, helpCenterLink } from '../../components/headers/MenuConsts';
 import { Tag } from '../../components/tags/Tag';
 import { NEUTRALS } from '../../core/style/Colors';
 import { CONTENT_WIDTH, MEDIA_QUERY_MD, MEDIA_QUERY_TECH_SM } from '../../core/style/Sizes';
-import { helpCenterLink, TARGET } from '../../components/headers/MenuConsts';
 
 const Content = styled.div`
   align-self: center;
@@ -198,7 +198,7 @@ const FooterSection = () => (
       <SectionFooterWrapper>
         <Line />
         <SectionFooterInnerWrapper>
-          <img src={GrayOLLogo} alt="" />
+          <img src={OpenLatticeIconSVG} alt="" />
           <Copyright>© 2020 OpenLattice, Inc. All rights reserved.</Copyright>
         </SectionFooterInnerWrapper>
       </SectionFooterWrapper>
