@@ -47,7 +47,7 @@ const StickyWrapper = styled.div`
   margin-top: 8px;
   position: relative;
   width: 100%;
-  z-index: ${(props) => (props.drawerIsOpen ? 0 : 2)};
+  z-index: ${(props) => (props.drawerIsOpen ? 0 : 1000)};
 
   @media only screen and (max-width: ${MEDIA_QUERY_MD}px) {
     height: 120px;
@@ -86,12 +86,6 @@ const MenuItemsWrapper = styled.div`
   align-items: center;
   display: flex;
   justify-content: space-between;
-
-  @media only screen and (max-width: 900px) {
-    flex-direction: column;
-    justify-content: flex-start;
-    padding: 15px 0;
-  }
 `;
 
 const DrawerMenuProductLink = styled(MenuInternalLink)`

@@ -5,7 +5,7 @@ import AstrometricsLogo from '../../assets/logos/products/astrometrics-logo.svg'
 import CWPImage from '../../assets/images/cwp-feature-img.png';
 import CWPLogo from '../../assets/logos/products/cwp-logo.png';
 import CareLogo from '../../assets/logos/care-logo.svg';
-import OLLogo from '../../assets/logos/placeholder-logo.svg';
+import OpenLatticeIcon from '../../assets/svg/ol-icon.svg';
 import PCMLogo from '../../assets/logos/pcm-logo.svg';
 import ReferralsImage from '../../assets/images/referrals-feature-img.png';
 import SteppingUpImage from '../../assets/images/stepping-up-feature-img.png';
@@ -14,11 +14,11 @@ import SteppingUpLogo from '../../assets/logos/products/stepping-up-logo.png';
 const PRODUCT_ICONS :Object = {
   ASTROMETRICS: AstrometricsLogo,
   CARE: CareLogo,
-  CHRONICLE: OLLogo,
+  CHRONICLE: OpenLatticeIcon,
   CWP: CWPLogo,
   PCM: PCMLogo,
-  REFERRALS: OLLogo,
-  RESEARCH_HUB: OLLogo,
+  REFERRALS: OpenLatticeIcon,
+  RESEARCH_HUB: OpenLatticeIcon,
   STEPPING_UP: SteppingUpLogo,
 };
 

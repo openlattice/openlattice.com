@@ -12,18 +12,19 @@ export const NEUTRALS = {
   GRAY_02: '#6f788a',
   GRAY_03: '#4d4d4d',
   GRAY_04: '#b9b7bf',
-  GRAY_05: '#F9F9FC',
-  GRAY_06: '#3B3B49',
+  GRAY_05: '#f9f9fc',
+  GRAY_06: '#3b3b49',
   GRAY_07: '#505060',
-  GRAY_08: '#9999AF',
-  GRAY_09: '#E1E1EB',
-  GRAY_10: '#DFDFE9',
+  GRAY_08: '#9999af',
+  GRAY_09: '#e1e1eb',
+  GRAY_10: '#dfdfe9',
   GRAY_11: '#272729',
-  GRAY_12: '#A6A6AC',
-  GRAY_13: '#4D4D50',
-  GRAY_14: '#39393E',
-  GRAY_15: '#EAEAEF',
+  GRAY_12: '#a6a6ac',
+  GRAY_13: '#4d4d50',
+  GRAY_14: '#39393e',
+  GRAY_15: '#eaeaef',
   GRAY_16: '#494956',
+  GRAY_17: '#c4c4c4',
   WHITE: '#ffffff',
 };
 
@@ -33,7 +34,7 @@ export const NEUTRALS = {
 
 export const PINKS = {
   PINK01: '#ff5e95',
-  PINK02: '#ED6681'
+  PINK02: '#ed6681'
 };
 
 /*
@@ -48,5 +49,5 @@ export const PURPLES = {
   PP05: '#6124e2',
   PP06: '#31275c',
   PP07: '#7c7791',
-  PP08: '#7860FF',
+  PP08: '#7860ff',
 };
