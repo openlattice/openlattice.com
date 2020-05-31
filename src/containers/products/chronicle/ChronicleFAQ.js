@@ -56,16 +56,16 @@ const QUESTIONS = [
 ];
 
 const ANSWERS = [
-  'ResearchHub was built from the ground up with security and data-privacy in mind, and our team has an extensive'
-    + ' background in information security standards. All collected data are securely encrypted, de-identified'
+  'ResearchHub was built from the ground up with security and data privacy in mind, and our team has an extensive'
+    + ' background in information security standards. All collected data is securely encrypted, de-identified'
     + ' wherever appropriate, and stored securely in ResearchHub.',
-  'ResearchHub is our research-focused version of our OpenLattice Data Platform, where all data are securely stored,'
+  'ResearchHub is our research-focused version of our OpenLattice Data Platform, where all data is securely stored,'
     + ' and where they can also be viewed, analyzed, and shared. We designed Chronicle to seamlessly integrate on'
     + ' top of ResearchHub, providing a great way to view and manage participant data and communication.',
-  'Chronicle Mobile is an easy to use app for your participants. The app is available on Google Play Store, making'
+  'Chronicle Mobile is an easy-to-use app for your participants. The app is available on Google Play Store, making'
     + ' it simple for participants to find and install. Once the app is installed, the participants tap the research'
     + ' link, enter the study code, and connect automatically to the study. Any data the user has consented to share'
-    + ' get collected in the background. You can also send your participants helpful reminder notifications, links'
+    + ' gets collected in the background. You can also send your participants helpful reminder notifications, links'
     + ' to your custom surveys, and more directly through the app.',
   'Yes! Chronicle Mobile is an optional tool that can help automate participant and study data collection, as well'
     + ' as push custom communication to participants. If preferred, your team can import all your participant and'
@@ -73,10 +73,10 @@ const ANSWERS = [
     + ' communication features available in Chronicle.',
   'Researchers can collect data in different ways. If you elect to use Chronicle Mobile, participant and study data'
     + ' are collected automatically from the app. Plus, you can send custom surveys through the app. Alternatively,'
-    + ' you can import 3rd party data directly into ResearchHub and view it on the Chronicle Dashboard. The data can'
+    + ' you can import third party data directly into ResearchHub and view it on the Chronicle Dashboard. The data can'
     + ' be imported from any structured format and viewed in ResearchHub in a clean, simple, and intuitive way.',
   'Chronicle empowers you to expand your options for incorporating participant feedback into your studies. Creating'
-    + ' surveys with Chronicle means your survey data are secure and HIPAA-compliant. Additionally, if your team'
+    + ' surveys with Chronicle means your survey data is secure and HIPAA compliant. Additionally, if your team'
     + ' chooses to use Chronicle Mobile, you can push your surveys straight to your participants’ mobile devices,'
     + ' which improves engagement and increases the probability that your participants will respond.',
 ];
