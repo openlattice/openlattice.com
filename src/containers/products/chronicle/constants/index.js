@@ -22,7 +22,7 @@ const APP_DESCRIPTION = 'Chronicle includes an optional companion mobile applica
   + ' Through this app, researchers can securely collect information for media usage studies and utilize push'
   + ' notifications for point-in-time surveys.';
 
-const REVIEW_DESCRIPTION = 'Data are collected in a standardized format so that it can be viewed in a clean, simple,'
+const REVIEW_DESCRIPTION = 'Data is collected in a standardized format so that it can be viewed in a clean, simple,'
   + ' and intuitive way on our Chronicle Dashboard or exported to a preferred statistical tool.';
 
 const INTEGRATE_DESCRIPTION = 'Integrate multiple data streams for an individual, and securely share all or select'
