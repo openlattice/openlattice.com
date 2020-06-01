@@ -1,8 +1,7 @@
-// @flow
 import styled, { css } from 'styled-components';
 
 import { NEUTRALS, PURPLES } from '../../core/style/Colors';
-import { MEDIA_QUERY_MD } from '../../core/style/Sizes';
+import { MEDIA_QUERY_SM, MEDIA_QUERY_MD, MEDIA_QUERY_LG } from '../../core/style/Sizes';
 
 const sharedStyles = css`
   align-self: center;
@@ -21,29 +20,39 @@ const PageTitle = styled.p`
 
 const PageIntro = styled.h1`
   color: ${NEUTRALS.GRAY_06};
-  font-size: 56px;
+  font-size: 24px;
   font-weight: bold;
   line-height: 115%;
   margin-bottom: 24px;
   ${sharedStyles}
 
-  @media only screen and (max-width: ${MEDIA_QUERY_MD}px) {
+  @media only screen and (min-width: ${MEDIA_QUERY_SM}px) {
     font-size: 32px;
-    width: 100%;
+  }
+
+  @media only screen and (min-width: ${MEDIA_QUERY_MD}px) {
+    font-size: 48px;
+  }
+
+  @media only screen and (min-width: ${MEDIA_QUERY_LG}px) {
+    font-size: 56px;
   }
 `;
 
 const PageDescription = styled.h3`
   color: ${NEUTRALS.GRAY_07};
-  font-size: 20px;
+  font-size: 16px;
   font-weight: normal;
   line-height: 150%;
   margin-bottom: 32px;
   ${sharedStyles}
 
-  @media only screen and (max-width: ${MEDIA_QUERY_MD}px) {
-    font-size: 16px;
-    width: 100%;
+  @media only screen and (min-width: ${MEDIA_QUERY_SM}px) {
+    font-size: 18px;
+  }
+
+  @media only screen and (min-width: ${MEDIA_QUERY_MD}px) {
+    font-size: 20px;
   }
 `;
 

@@ -13,6 +13,7 @@ export const PAGE_PADDING :number = 248;
 export const CONTENT_WIDTH :number = PAGE_SECTION_WIDTH - (PAGE_PADDING * 2);
 
 // Common Media Queries
+export const MEDIA_QUERY_SM :number = 420;
 export const MEDIA_QUERY_MD :number = 768;
 export const MEDIA_QUERY_LG :number = PAGE_SECTION_MIN_WIDTH;
 

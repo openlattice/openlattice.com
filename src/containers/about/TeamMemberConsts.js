@@ -1,18 +1,15 @@
 // @flow
 
 import Andrea from '../../assets/team/andrea.png';
-import Andy from '../../assets/team/andy.png';
 import Blake from '../../assets/team/blake.png';
 import Brandon from '../../assets/team/brandon.png';
 import David from '../../assets/team/david.png';
 import Drew from '../../assets/team/drew.png';
 import Giulia from '../../assets/team/giulia.png';
-import Giuliana from '../../assets/team/giuliana.png';
 import Hristo from '../../assets/team/hristo.png';
 import Jason from '../../assets/team/jason.png';
 import Joe from '../../assets/team/joe.png';
 import Joke from '../../assets/team/joke.png';
-import Julia from '../../assets/team/julia.png';
 import Katherine from '../../assets/team/katherine.png';
 import Kim from '../../assets/team/kim.png';
 import Lynn from '../../assets/team/lynn.png';
@@ -20,16 +17,12 @@ import Mandy from '../../assets/team/mandy.png';
 import Matthew from '../../assets/team/matthew.png';
 import Mollie from '../../assets/team/mollie.png';
 import Nicholas from '../../assets/team/nicholas.png';
-import Paul from '../../assets/team/paul.png';
-import Piper from '../../assets/team/piper.png';
-import Ryan from '../../assets/team/ryan.png';
 import Shireen from '../../assets/team/shireen.png';
 import Solomon from '../../assets/team/solomon.png';
 import Todd from '../../assets/team/todd.png';
 
 // repeat roles
 const ACCOUNT :string = 'Account Executive';
-const DATA_ENGINEER :string = 'Data Engineer';
 const DATA_SCIENTIST :string = 'Data Scientist';
 const DESIGNER :string = 'Product Designer';
 const FRONTEND :string = 'Frontend Software Engineer';
@@ -38,12 +31,6 @@ const ANDREA = {
   NAME: 'Andrea Fowles',
   ROLE: ACCOUNT,
   PHOTO: Andrea,
-};
-
-const ANDY = {
-  NAME: 'Andy Doyle',
-  ROLE: ACCOUNT,
-  PHOTO: Andy,
 };
 
 const BLAKE = {
@@ -76,12 +63,6 @@ const GIULIA = {
   PHOTO: Giulia,
 };
 
-const GIULIANA = {
-  NAME: 'Giuliana Anglin',
-  ROLE: 'Senior Marketing Manager',
-  PHOTO: Giuliana,
-};
-
 const HRISTO = {
   NAME: 'Hristo Oskov',
   ROLE: 'Engineer',
@@ -104,12 +85,6 @@ const JOKE = {
   NAME: 'Joke Durnez',
   ROLE: 'Machine Learning Engineer',
   PHOTO: Joke,
-};
-
-const JULIA = {
-  NAME: 'Julia Joosz',
-  ROLE: DATA_ENGINEER,
-  PHOTO: Julia,
 };
 
 const KATHERINE = {
@@ -162,24 +137,6 @@ const NICHOLAS = {
   PHOTO: Nicholas,
 };
 
-const PAUL = {
-  NAME: 'Paul Kim',
-  ROLE: DESIGNER,
-  PHOTO: Paul,
-};
-
-const PIPER = {
-  NAME: 'Piper Keyes',
-  ROLE: DATA_ENGINEER,
-  PHOTO: Piper,
-};
-
-const RYAN = {
-  NAME: 'Ryan Weese',
-  ROLE: ACCOUNT,
-  PHOTO: Ryan,
-};
-
 const SHIREEN = {
   NAME: 'Shireen Aziz',
   ROLE: DESIGNER,
@@ -206,23 +163,17 @@ const TEAM_MEMBERS :Object[] = [
   KIM,
   BRANDON,
   JOE,
-  GIULIANA,
   DAVID,
   MOLLIE,
-  PAUL,
   JOKE,
   SOLOMON,
   TODD,
-  PIPER,
-  JULIA,
   GIULIA,
   JASON,
   BLAKE,
   DREW,
   SHIREEN,
-  ANDY,
   NICHOLAS,
-  RYAN,
   ANDREA,
   MANDY,
 ];

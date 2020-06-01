@@ -1,20 +1,21 @@
 // @flow
-import GenerateDatasets from '../../assets/images/home/generate-datasets.png';
-import ManageAccess from '../../assets/images/home/manage-access.png';
-import SecureAuditLog from '../../assets/images/home/secure-audit-log.png';
-import ShareData from '../../assets/images/home/share-data.png';
-import ShareDataIcon1 from '../../assets/svg/home/share-data-1.svg';
-import ShareDataIcon2 from '../../assets/svg/home/share-data-2.svg';
-import ShareDataIcon3 from '../../assets/svg/home/share-data-3.svg';
-import ManageAccess1 from '../../assets/svg/home/manage-access-1.svg';
-import ManageAccess2 from '../../assets/svg/home/manage-access-2.svg';
-import ManageAccess3 from '../../assets/svg/home/manage-access-3.svg';
-import GenerateDatasets1 from '../../assets/svg/home/generate-datasets-1.svg';
-import GenerateDatasets2 from '../../assets/svg/home/generate-datasets-2.svg';
-import GenerateDatasets3 from '../../assets/svg/home/generate-datasets-3.svg';
-import SecureAudit1 from '../../assets/svg/home/secure-audit-1.svg';
-import PurpleMergeIcon from '../../assets/productfeatureicons/small-purple-merge.svg';
+
+import Anonymous from '../../assets/svg/circle-icons/anonymous.svg';
+import Check from '../../assets/svg/circle-icons/check.svg';
+import Cloud from '../../assets/svg/circle-icons/cloud.svg';
 import DataSecurityAndCompliance from '../../assets/images/home/data-security-and-compliance.png';
+import DotGrid from '../../assets/svg/circle-icons/dot-grid.svg';
+import GenerateDatasets from '../../assets/images/home/generate-datasets.png';
+import Key from '../../assets/svg/circle-icons/key.svg';
+import Lock from '../../assets/svg/circle-icons/lock.svg';
+import Logs from '../../assets/svg/circle-icons/logs.svg';
+import ManageAccess from '../../assets/images/home/manage-access.png';
+import Pointer from '../../assets/svg/circle-icons/pointer.svg';
+import SecureAuditLog from '../../assets/images/home/secure-audit-log.png';
+import Select from '../../assets/svg/circle-icons/select.svg';
+import ShareData from '../../assets/images/home/share-data.png';
+import Sync from '../../assets/svg/circle-icons/sync.svg';
+import Users from '../../assets/svg/circle-icons/users-2.svg';
 
 const SHARE_DATA :Object = {
   DESCRIPTION: (`Collaborate across providers to make decisions grounded in a more holistic
@@ -28,9 +29,9 @@ const SHARE_DATA :Object = {
     smallWidth: '297px',
   },
   ICONS: [
-    ShareDataIcon1,
-    ShareDataIcon2,
-    ShareDataIcon3,
+    Sync,
+    DotGrid,
+    Users,
   ],
   SUB_FEATURES: [
     'Integrate siloed data',
@@ -51,9 +52,9 @@ const MANAGE_ACCESS :Object = {
     smallWidth: '345.6px',
   },
   ICONS: [
-    ManageAccess1,
-    ManageAccess2,
-    ManageAccess3,
+    Key,
+    Select,
+    Pointer,
   ],
   SUB_FEATURES: [
     'Role-based access',
@@ -74,9 +75,9 @@ const GENERATE_DATASETS :Object = {
     smallWidth: '343.2px',
   },
   ICONS: [
-    GenerateDatasets1,
-    GenerateDatasets2,
-    GenerateDatasets3,
+    Anonymous,
+    Check,
+    Lock,
   ],
   SUB_FEATURES: [
     'Anonymize personal information',
@@ -97,9 +98,9 @@ const SECURE_AUDIT_LOG :Object = {
     smallWidth: '343.2px',
   },
   ICONS: [
-    SecureAudit1,
-    GenerateDatasets2,
-    ManageAccess1,
+    Logs,
+    Lock,
+    Key,
   ],
   SUB_FEATURES: [
     'Every action is logged',
@@ -120,9 +121,9 @@ const DATA_SECURITY :Object = {
     smallWidth: '288px',
   },
   ICONS: [
-    PurpleMergeIcon,
-    PurpleMergeIcon,
-    PurpleMergeIcon,
+    Check,
+    Cloud,
+    Lock,
   ],
   SUB_FEATURES: [
     'HIPAA, CJIS, GDPR, and FERPA compliant',

@@ -1,11 +1,11 @@
 // @flow
 
-import DataExploration from '../../../assets/svg/platform/data-exploration.svg';
-import DataIntegration from '../../../assets/svg/platform/data-integration.svg';
-import DataLinking from '../../../assets/svg/platform/data-linking.svg';
-import DataStandardization from '../../../assets/svg/platform/data-standardization.svg';
-import DataStorage from '../../../assets/svg/platform/data-storage.svg';
-import Permissions from '../../../assets/svg/platform/permissions.svg';
+import DataExploration from '../../../assets/svg/circle-icons/search.svg';
+import DataIntegration from '../../../assets/svg/circle-icons/database-sync.svg';
+import DataLinking from '../../../assets/svg/circle-icons/link.svg';
+import DataStandardization from '../../../assets/svg/circle-icons/dot-grid.svg';
+import DataStorage from '../../../assets/svg/circle-icons/cloud-secure.svg';
+import Permissions from '../../../assets/svg/circle-icons/key.svg';
 
 const FEATURE_ICONS :Object = {
   EXPLORATION: DataExploration,

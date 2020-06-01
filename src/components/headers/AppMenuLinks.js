@@ -36,6 +36,7 @@ const menuItemStyles = (props :MenuStylesProps) => (props.isSmallScreen
 
 const MenuInternalLink = styled(NavLink)`
   ${menuItemStyles}
+
   &:hover {
     cursor: pointer;
   }
@@ -92,8 +93,6 @@ const PlatformLink = ({ activeStyle, isSmallScreen } :LinkProps) => (
     { MENU_HEADERS.PLATFORM }
   </MenuInternalLink>
 );
-
-
 
 const ProductsLink = ({ activeStyle, isSmallScreen } :LinkProps) => (
   <MenuInternalLink
