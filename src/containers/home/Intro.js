@@ -39,10 +39,10 @@ const IntroSection = () => (
     <Content>
       <PageIntroWrapper>
         <div>
-          The right data,
+          Get the right data
         </div>
         <div>
-          to the right people,
+          to the right people
         </div>
         <div>
           at the right time
