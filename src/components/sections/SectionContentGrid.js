@@ -2,9 +2,9 @@
  * @flow
  */
 
-import styled, { css } from 'styled-components';
+import styled from 'styled-components';
 
-import { GRID_GAP, MEDIA_QUERY_LG, MEDIA_QUERY_SM } from '../../core/style/Sizes';
+import { GRID_GAP, MEDIA_QUERY_LG } from '../../core/style/Sizes';
 
 const SectionContentGrid = styled.div`
   align-items: ${({ alignItems }) => (alignItems || 'flex-start')};

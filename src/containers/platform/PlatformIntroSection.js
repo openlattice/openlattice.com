@@ -5,8 +5,12 @@
 import React from 'react';
 
 import PageSection from '../../components/layout/NewPageSection';
-import { Header, SectionContent, SubHeader } from '../../components';
-import { ContactUsPurple } from '../../components/controls/index';
+import {
+  ContactUsPurple,
+  Header,
+  SectionContent,
+  SubHeader,
+} from '../../components';
 import { NEUTRALS } from '../../core/style/Colors';
 import { openBeacon } from '../../utils/Utils';
 
