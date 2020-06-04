@@ -6,15 +6,16 @@ import React from 'react';
 
 import ComplianceAndSecurity from './ComplianceAndSecurity';
 import CorePlatformFeatures from './CorePlatformFeatures';
-import FooterSectionWithPageLinks from '../footer/FooterSectionWithPageLinks';
 import GraphicSection from './GraphicSection';
-import PlatformIntro from './PlatformIntro';
+import PlatformIntroSection from './PlatformIntroSection';
+
+import FooterSectionWithPageLinks from '../footer/FooterSectionWithPageLinks';
 import ScrollToTopOnMount from '../../components/layout/ScrollToTopOnMount';
 
 const Platform = () => (
   <>
     <ScrollToTopOnMount />
-    <PlatformIntro />
+    <PlatformIntroSection />
     <GraphicSection />
     <CorePlatformFeatures />
     <ComplianceAndSecurity />

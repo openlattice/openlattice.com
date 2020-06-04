@@ -16,7 +16,7 @@ import About from '../about/About';
 import HomePage from '../home/HomePage';
 import CareProductPage from '../products/CareProductPage';
 import PCMProductPage from '../products/PCMProductPage';
-import Platform from '../platform/Platform';
+import PlatformPage from '../platform/PlatformPage';
 import PrivacyPolicy from '../footer/privacy/PrivacyPolicy';
 import Products from '../products/ProductsPage';
 import ResearchHubProductPage from '../products/ResearchHubProductPage';
@@ -36,7 +36,7 @@ const AppContainer = () => (
         <Route exact path={Routes.CARE} component={CareProductPage} />
         <Route exact path={Routes.PCM} component={PCMProductPage} />
         <Route exact strict path={Routes.PRODUCTS} component={Products} />
-        <Route exact path={Routes.PLATFORM} component={Platform} />
+        <Route exact path={Routes.PLATFORM} component={PlatformPage} />
         <Route exact path={Routes.WORKING_WITH_US} component={WorkingWithUs} />
         <Route exact path={Routes.ABOUT} component={About} />
         <Route component={HomePage} />
