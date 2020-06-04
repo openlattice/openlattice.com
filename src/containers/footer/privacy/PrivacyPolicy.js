@@ -3,29 +3,9 @@
  */
 
 import React from 'react';
+
 import styled from 'styled-components';
 
-import FooterSectionWithPageLinks from '../FooterSectionWithPageLinks';
-import PageSection from '../../../components/layout/NewPageSection';
-import ScrollToTopOnMount from '../../../components/layout/ScrollToTopOnMount';
-
-import * as Routes from '../../../core/router/Routes';
-import { PageIntro } from '../../../components/headers/PageHeaders';
-import {
-  BodyText,
-  BodyTextWrapper,
-  Bullet,
-  BulletWrapper,
-  Content,
-  ExternalLink,
-  CustomBulletedList,
-  ItemTitle,
-  LastUpdated,
-  ListItem,
-  SiteLink,
-} from '../styled/ExtendedTextStyles';
-import { TARGET } from '../../../components/headers/MenuConsts';
-import { NEUTRALS } from '../../../core/style/Colors';
 import {
   INTRODUCTION,
   SECTION_1,
@@ -38,6 +18,27 @@ import {
   SECTION_8,
   SECTION_9,
 } from './Text';
+
+import FooterSectionWithPageLinks from '../FooterSectionWithPageLinks';
+import PageSection from '../../../components/layout/NewPageSection';
+import ScrollToTopOnMount from '../../../components/layout/ScrollToTopOnMount';
+import * as Routes from '../../../core/router/Routes';
+import { SectionContent } from '../../../components';
+import { TARGET } from '../../../components/headers/MenuConsts';
+import { PageIntro } from '../../../components/headers/PageHeaders';
+import { NEUTRALS } from '../../../core/style/Colors';
+import {
+  BodyText,
+  BodyTextWrapper,
+  Bullet,
+  BulletWrapper,
+  CustomBulletedList,
+  ExternalLink,
+  ItemTitle,
+  LastUpdated,
+  ListItem,
+  SiteLink,
+} from '../styled/ExtendedTextStyles';
 
 const SITE :string = ' https://openlattice.com ';
 const GOOGLE_ANALYTICS :string = ' https://www.google.com/analytics ';
@@ -88,7 +89,7 @@ const PrivacyPolicy = () => (
   <>
     <ScrollToTopOnMount />
     <PageSection bgColor={NEUTRALS.WHITE} includeMenu>
-      <Content>
+      <SectionContent>
         <PageIntro>Privacy Policy</PageIntro>
         <LastUpdated>Last updated April 03, 2019</LastUpdated>
         <BodyTextWrapper>
@@ -222,7 +223,7 @@ const PrivacyPolicy = () => (
             { SECTION_9.BODY }
           </BodyText>
         </BodyTextWrapper>
-      </Content>
+      </SectionContent>
     </PageSection>
     <FooterSectionWithPageLinks />
   </>

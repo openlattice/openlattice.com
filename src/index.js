@@ -35,7 +35,7 @@ const GlobalStyle = createGlobalStyle`
     color: ${NEUTRALS.GRAY_03};
     font-family: 'Inter', sans-serif;
     height: 100%;
-    line-height: normal;
+    line-height: 1.5;
     width: 100%;
     -moz-osx-font-smoothing: grayscale;
     -webkit-font-smoothing: antialiased;
