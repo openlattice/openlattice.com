@@ -13,7 +13,7 @@ import {
 import { Route, Switch } from 'react-router';
 
 import About from '../about/About';
-import AppHomePage from '../home/AppHomePage';
+import HomePage from '../home/HomePage';
 import CareProductPage from '../products/CareProductPage';
 import PCMProductPage from '../products/PCMProductPage';
 import Platform from '../platform/Platform';
@@ -39,7 +39,7 @@ const AppContainer = () => (
         <Route exact path={Routes.PLATFORM} component={Platform} />
         <Route exact path={Routes.WORKING_WITH_US} component={WorkingWithUs} />
         <Route exact path={Routes.ABOUT} component={About} />
-        <Route component={AppHomePage} />
+        <Route component={HomePage} />
       </Switch>
     </MuiPickersUtilsProvider>
   </ThemeProvider>

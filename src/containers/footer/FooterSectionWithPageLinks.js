@@ -10,72 +10,18 @@ import { NavLink } from 'react-router-dom';
 import OpenLatticeIconSVG from '../../assets/svg/icons/ol-icon-gray.svg';
 import PageSection from '../../components/layout/NewPageSection';
 import * as Routes from '../../core/router/Routes';
+import { SectionContent } from '../../components';
 import { TARGET, helpCenterLink } from '../../components/headers/MenuConsts';
 import { Tag } from '../../components/tags/Tag';
 import { NEUTRALS } from '../../core/style/Colors';
-import { CONTENT_WIDTH, MEDIA_QUERY_MD, MEDIA_QUERY_TECH_SM } from '../../core/style/Sizes';
-
-const Content = styled.div`
-  align-self: center;
-  align-items: center;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  margin: 40px auto 0 auto;
-  width: ${CONTENT_WIDTH}px;
-  text-align: center;
-
-  @media only screen and (min-width: ${MEDIA_QUERY_MD}px) {
-    align-self: center;
-    justify-content: space-between;
-    margin: 136px 0 24px;
-    text-align: left;
-    width: ${CONTENT_WIDTH}px;
-  }
-
-  @media only screen and (max-width: ${CONTENT_WIDTH}px) {
-    width: 100%;
-  }
-`;
-
-const LinksOuterWrapper = styled.div`
-  align-items: center;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  width: 100%;
-
-  @media only screen and (min-width: ${MEDIA_QUERY_MD}px) {
-    align-items: flex-start;
-    flex-direction: row;
-    justify-content: space-between;
-    margin-bottom: 176px;
-  }
-`;
-
-const LinkGroupWrapper = styled.div`
-  align-items: flex-start;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-
-  @media only screen and (max-width: ${MEDIA_QUERY_MD}px) {
-    align-items: center;
-    margin-bottom: 40px;
-  }
-`;
-
-const InnerLinkGroupWrapper = styled(LinkGroupWrapper)`
-  margin-top: 52px;
-`;
+import { MEDIA_QUERY_MD, MEDIA_QUERY_SM } from '../../core/style/Sizes';
 
 const Header = styled.div`
   color: ${NEUTRALS.WHITE};
   font-size: 20px;
   font-weight: 600;
-  line-height: 150%;
 
-  @media only screen and (max-width: ${MEDIA_QUERY_TECH_SM}px) {
+  @media only screen and (max-width: ${MEDIA_QUERY_SM}px) {
     font-size: 18px;
   }
 `;
@@ -84,21 +30,14 @@ const HeaderWithTag = styled.div`
   align-items: center;
   display: flex;
   justify-content: flex-start;
-  margin-bottom: 14px;
 `;
 
 const linkStyles = css`
   color: ${NEUTRALS.GRAY_12};
   font-size: 16px;
-  line-height: 150%;
-  margin-bottom: 16px;
   text-decoration: none;
 
-  :first-of-type {
-    margin-top: 14px;
-  }
-
-  @media only screen and (max-width: ${MEDIA_QUERY_TECH_SM}px) {
+  @media only screen and (max-width: ${MEDIA_QUERY_SM}px) {
     font-size: 14px;
   }
 `;
@@ -116,15 +55,6 @@ const FakeLink = styled.div`
   color: ${NEUTRALS.GRAY_13};
 `;
 
-const LinkWithTag = styled(HeaderWithTag)`
-  margin: 0;
-  margin-bottom: 16px;
-
-  ${InternalLink} {
-    margin: 0;
-  }
-`;
-
 const SectionFooterWrapper = styled.div`
   width: 100%;
 `;
@@ -132,16 +62,20 @@ const SectionFooterWrapper = styled.div`
 const Line = styled.div`
   border: 1px solid ${NEUTRALS.GRAY_14};
   height: 0;
-  margin-bottom: 24px;
   width: 100%;
 `;
 
-const SectionFooterInnerWrapper = styled(LinksOuterWrapper)`
+const SectionFooterInnerWrapper = styled.div`
   align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   margin: 0;
+  padding: 24px 0;
   width: 100%;
 
   @media only screen and (min-width: ${MEDIA_QUERY_MD}px) {
+    flex-direction: row;
     margin: 0;
   }
 `;
@@ -149,60 +83,78 @@ const SectionFooterInnerWrapper = styled(LinksOuterWrapper)`
 const Copyright = styled.div`
   ${linkStyles}
   font-weight: normal;
+  margin: 16px 0;
+`;
+
+const FooterGrid = styled.div`
+  align-items: flex-start;
+  display: grid;
+  grid-gap: 48px;
+  grid-template-columns: auto;
+
+  @media only screen and (min-width: 500px) {
+    grid-template-columns: repeat(auto-fit, minmax(220px, auto));
+    width: 100%;
+  }
+
+  section {
+    display: grid;
+    grid-gap: 16px;
+  }
 `;
 
 const FooterSection = () => (
   <PageSection bgColor={NEUTRALS.GRAY_11}>
-    <Content>
-      <LinksOuterWrapper>
-        <LinkGroupWrapper>
+    <SectionContent>
+      <FooterGrid>
+        <section>
           <Header>Company</Header>
           <InternalLink to={Routes.ROOT}>Home</InternalLink>
           <InternalLink to={Routes.ABOUT}>About</InternalLink>
           <ExternalLink href="https://jobs.lever.co/openlattice" target={TARGET}>Jobs</ExternalLink>
           <ExternalLink href="https://medium.com/openlattice" target={TARGET}>Blog</ExternalLink>
-        </LinkGroupWrapper>
-        <div>
-          <LinkGroupWrapper>
+        </section>
+        <section>
+          <section>
             <Header>Platform</Header>
             <InternalLink to={Routes.PLATFORM}>Platform overview</InternalLink>
             <InternalLink to={Routes.WORKING_WITH_US}>Working with us</InternalLink>
-          </LinkGroupWrapper>
-          <InnerLinkGroupWrapper>
+          </section>
+          <section style={{ marginTop: '48px' }}>
             <HeaderWithTag>
               <Header>Partners</Header>
               <Tag tagType="comingSoon">Coming soon</Tag>
             </HeaderWithTag>
             <FakeLink>Technology partners</FakeLink>
             <FakeLink>Community Partners</FakeLink>
-          </InnerLinkGroupWrapper>
-        </div>
-        <LinkGroupWrapper>
+          </section>
+        </section>
+        <section>
           <Header>Products</Header>
           <InternalLink to={Routes.PRODUCTS}>All products</InternalLink>
           <InternalLink to={Routes.CARE}>Care</InternalLink>
           <InternalLink to={Routes.PCM}>Pretrial Case Management</InternalLink>
-          <LinkWithTag>
+          <HeaderWithTag>
             <InternalLink to={Routes.RESEARCH_HUB}>Research Hub</InternalLink>
             <Tag tagType="beta">BETA</Tag>
-          </LinkWithTag>
+          </HeaderWithTag>
           <InternalLink to={Routes.PRODUCTS}>Other products</InternalLink>
-        </LinkGroupWrapper>
-        <LinkGroupWrapper>
+        </section>
+        <section>
           <Header>Support</Header>
           <ExternalLink href={helpCenterLink} target={TARGET}>Help Center</ExternalLink>
           <InternalLink to={Routes.TERMS_OF_SERVICE}>Terms of Service</InternalLink>
           <InternalLink to={Routes.PRIVACY_POLICY}>Privacy Policy</InternalLink>
-        </LinkGroupWrapper>
-      </LinksOuterWrapper>
-      <SectionFooterWrapper>
-        <Line />
-        <SectionFooterInnerWrapper>
-          <img src={OpenLatticeIconSVG} alt="" />
-          <Copyright>© 2020 OpenLattice, Inc. All rights reserved.</Copyright>
-        </SectionFooterInnerWrapper>
-      </SectionFooterWrapper>
-    </Content>
+        </section>
+      </FooterGrid>
+    </SectionContent>
+    <SectionFooterWrapper>
+      <Line />
+      <SectionFooterInnerWrapper>
+        <img src={OpenLatticeIconSVG} alt="" />
+        <Copyright>© 2020 OpenLattice, Inc. All rights reserved.</Copyright>
+      </SectionFooterInnerWrapper>
+    </SectionFooterWrapper>
   </PageSection>
 );
 

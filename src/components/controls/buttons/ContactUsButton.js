@@ -11,7 +11,7 @@ const ContactUsWhite = styled.a`
   font-size: 16px;
   font-weight: 500;
   line-height: 150%;
-  padding: 8px 18px;
+  padding: 7px 18px;
   text-align: center;
   text-decoration: none;
   white-space: nowrap;
@@ -26,10 +26,7 @@ const ContactUsPurple = styled(ContactUsWhite)`
   background-color: ${PURPLES.PP08};
   border: none;
   color: ${NEUTRALS.WHITE};
-
-  &:hover {
-    cursor: pointer;
-  }
+  padding: 8px 18px;
 `;
 
 export {
