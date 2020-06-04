@@ -35,8 +35,9 @@ const LastUpdated = styled.div`
 `;
 
 const BodyTextWrapper = styled.div`
-  width: 720px;
   margin-bottom: 104px;
+  max-width: 720px;
+  word-break: break-word;
 
   @media only screen and (max-width: ${MEDIA_QUERY_TECH_SM}px) {
     width: 100%;

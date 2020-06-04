@@ -4,31 +4,14 @@
 
 import React from 'react';
 
-import FooterSectionWithPageLinks from '../FooterSectionWithPageLinks';
-import PageSection from '../../../components/layout/NewPageSection';
-import ScrollToTopOnMount from '../../../components/layout/ScrollToTopOnMount';
-
-import * as Routes from '../../../core/router/Routes';
-import { PageIntro } from '../../../components/headers/PageHeaders';
-import {
-  BodyText,
-  BodyTextWrapper,
-  Bullet,
-  BulletWrapper,
-  Content,
-  ExternalLink,
-  CustomBulletedList,
-  CustomInnerBulletedList,
-  ItemTitle,
-  LastUpdated,
-  ListItem,
-  SiteLink,
-} from '../styled/ExtendedTextStyles';
-import { NEUTRALS } from '../../../core/style/Colors';
-import { TARGET } from '../../../components/headers/MenuConsts';
 import {
   INTRODUCTION,
   ITEM_1,
+  ITEM_10,
+  ITEM_11,
+  ITEM_12,
+  ITEM_13,
+  ITEM_14,
   ITEM_2,
   ITEM_3,
   ITEM_4,
@@ -36,13 +19,30 @@ import {
   ITEM_6,
   ITEM_7,
   ITEM_8,
-  ITEM_9,
-  ITEM_10,
-  ITEM_11,
-  ITEM_12,
-  ITEM_13,
-  ITEM_14
+  ITEM_9
 } from './Text';
+
+import FooterSectionWithPageLinks from '../FooterSectionWithPageLinks';
+import PageSection from '../../../components/layout/NewPageSection';
+import ScrollToTopOnMount from '../../../components/layout/ScrollToTopOnMount';
+import * as Routes from '../../../core/router/Routes';
+import { SectionContent } from '../../../components';
+import { TARGET } from '../../../components/headers/MenuConsts';
+import { PageIntro } from '../../../components/headers/PageHeaders';
+import { NEUTRALS } from '../../../core/style/Colors';
+import {
+  BodyText,
+  BodyTextWrapper,
+  Bullet,
+  BulletWrapper,
+  CustomBulletedList,
+  CustomInnerBulletedList,
+  ExternalLink,
+  ItemTitle,
+  LastUpdated,
+  ListItem,
+  SiteLink,
+} from '../styled/ExtendedTextStyles';
 
 const SITE :string = ' https://openlattice.com ';
 const PRIVACY_LINK :string = ' https://openlattice.com/privacy ';
@@ -52,7 +52,7 @@ const TermsOfService = () => (
   <>
     <ScrollToTopOnMount />
     <PageSection bgColor={NEUTRALS.WHITE} includeMenu>
-      <Content>
+      <SectionContent>
         <PageIntro>Terms of Service</PageIntro>
         <LastUpdated>Last updated April 03, 2019</LastUpdated>
         <BodyTextWrapper>
@@ -264,7 +264,7 @@ const TermsOfService = () => (
             { ITEM_14.PARAGRAPH_2 }
           </BodyText>
         </BodyTextWrapper>
-      </Content>
+      </SectionContent>
     </PageSection>
     <FooterSectionWithPageLinks />
   </>

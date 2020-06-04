@@ -38,7 +38,7 @@ import {
 import { openBeacon } from '../../utils/Utils';
 import { ContactUsWhite } from '../controls/index';
 
-const smallScreenSize = 900;
+const smallScreenSize = 980;
 const logoHeight = (screenSize :number) => {
   if (screenSize < smallScreenSize) return 30;
   return 40;
@@ -46,15 +46,9 @@ const logoHeight = (screenSize :number) => {
 
 const StickyWrapper = styled.div`
   background-color: ${(props) => props.bgColor};
-  height: 52px;
-  margin-top: 8px;
   position: relative;
   width: 100%;
-  z-index: ${(props) => (props.drawerIsOpen ? 0 : 1000)};
-
-  @media only screen and (max-width: ${MEDIA_QUERY_MD}px) {
-    height: 120px;
-  }
+  z-index: 800;
 `;
 
 const MenuWrapper = styled.div`
@@ -77,12 +71,16 @@ const MenuWrapper = styled.div`
   background-color: ${props.bgColor};
   box-shadow: none;
   margin: 0;
-  padding: 16px 0;
+  padding: 24px 0;
   position: relative;
   left: auto;
   right: auto;
   `
   )}
+
+  > a {
+    display: flex;
+  }
 `;
 
 const MenuItemsWrapper = styled.div`
@@ -90,7 +88,7 @@ const MenuItemsWrapper = styled.div`
   display: flex;
   justify-content: space-between;
 
-  @media only screen and (max-width: 900px) {
+  @media only screen and (max-width: 980px) {
     flex-direction: column;
     justify-content: flex-start;
     padding: 15px 0;
@@ -240,16 +238,20 @@ const AppMenu = ({ bgColor } :Props) => {
 
   const [productsMenuIsOpen, openProductsMenu] = useState(false);
   const [isSticky, setSticky] = useState(false);
-  const [isSmallScreen, setSmallScreen] = useState(window.innerWidth < smallScreenSize);
+  const [isSmallScreen, setSmallScreen] = useState(window.innerWidth <= smallScreenSize);
   const [drawerIsOpen, toggleDrawer] = useState(false);
   const ref = useRef({});
 
   const handleScroll = () => {
-    setSticky(ref.current.getBoundingClientRect().top <= 0);
+    setSticky(ref.current.getBoundingClientRect().top < -8);
   };
 
   const updateMenuProps = () => {
-    setSmallScreen(window.innerWidth < smallScreenSize);
+    const isSmall = window.innerWidth <= smallScreenSize;
+    setSmallScreen(isSmall);
+    if (isSmall) {
+      openProductsMenu(false);
+    }
   };
 
   const menuActiveStylesToUse = isSmallScreen ? verticalMenuActiveStyles : horizontalMenuActiveStyles;
