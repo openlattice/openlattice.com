@@ -29,7 +29,7 @@ const StyledSubHeader = styled.h4`
   margin: 0;
   margin-bottom: 32px;
   padding: 0;
-  text-align: center;
+  text-align: ${({ align }) => (align || 'center')};
   white-space: normal;
   word-break: break-word;
 
@@ -48,20 +48,23 @@ type AS =
   | 'h6';
 
 type Props = {
+  align ?:string;
   as ?:AS;
   children :Node;
   className ?:string;
 };
 
 const Header = ({
+  align,
   as,
   children,
   className,
 } :Props) => (
-  <StyledSubHeader as={as} className={className}>{children}</StyledSubHeader>
+  <StyledSubHeader align={align} as={as} className={className}>{children}</StyledSubHeader>
 );
 
 Header.defaultProps = {
+  align: 'center',
   as: 'h4',
   className: undefined,
 };

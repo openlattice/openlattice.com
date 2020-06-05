@@ -53,12 +53,14 @@ import {
 
 // NOTE: the 328px value her is very carfully chosen and is tightly coupled with the media query below in Tile
 const TileGrid = styled(SectionContentGrid)`
-  @media only screen and (min-width: ${MEDIA_QUERY_SM}px) {
-    grid-template-columns: repeat(auto-fit,minmax(328px,1fr));
-  }
+  align-items: stretch;
 
   > div {
     max-width: 384px;
+  }
+
+  @media only screen and (min-width: ${MEDIA_QUERY_SM}px) {
+    grid-template-columns: repeat(auto-fit,minmax(328px,1fr));
   }
 `;
 
@@ -81,7 +83,7 @@ const CorePlatformSection = () => (
       <SubHeader as="h5">{CORE_PLATFORM_FEATURES_SUBHEADER}</SubHeader>
     </SectionContent>
     <SectionContent>
-      <TileGrid alignItems="stretch">
+      <TileGrid>
         <Tile withBorder>
           <DBSyncCircleIcon width="50" />
           <Header as="h3">{DATA_INTEGRATION_HEADER}</Header>

@@ -69,7 +69,7 @@ const FeatureList = styled.ul`
 const FeaturesSection = () => (
   <PageSection bgColor={NEUTRALS.WHITE}>
     <SectionContent>
-      <SectionContentGrid alignItems="center">
+      <SectionContentGrid align="center">
         <InfoTile align="left">
           <Header as="h2">{SHARE_DATA_BETTER_DECISIONS}</Header>
           <SubHeader as="h5">{SHARE_DATA_BETTER_DECISIONS_DESCRIPTION}</SubHeader>
@@ -94,7 +94,7 @@ const FeaturesSection = () => (
       </SectionContentGrid>
     </SectionContent>
     <SectionContent>
-      <SectionContentGrid alignItems="center" reverseOrderOnMobile>
+      <SectionContentGrid align="center" reverseOrderOnMobile>
         <GraphicShot>
           <ManageAccessImg />
         </GraphicShot>
@@ -119,7 +119,7 @@ const FeaturesSection = () => (
       </SectionContentGrid>
     </SectionContent>
     <SectionContent>
-      <SectionContentGrid alignItems="center">
+      <SectionContentGrid align="center">
         <InfoTile align="left">
           <Header as="h2">{GENERATE_DATASETS}</Header>
           <SubHeader as="h5">{GENERATE_DATASETS_DESCRIPTION}</SubHeader>
@@ -144,7 +144,7 @@ const FeaturesSection = () => (
       </SectionContentGrid>
     </SectionContent>
     <SectionContent>
-      <SectionContentGrid alignItems="center" reverseOrderOnMobile>
+      <SectionContentGrid align="center" reverseOrderOnMobile>
         <GraphicShot>
           <SecureAuditLogImg />
         </GraphicShot>
@@ -169,7 +169,7 @@ const FeaturesSection = () => (
       </SectionContentGrid>
     </SectionContent>
     <SectionContent>
-      <SectionContentGrid alignItems="center">
+      <SectionContentGrid align="center">
         <InfoTile align="left">
           <Header as="h2">{DATA_SECURITY_AND_COMPLIANCE}</Header>
           <SubHeader as="h5">{DATA_SECURITY_AND_COMPLIANCE_DESCRIPTION}</SubHeader>
