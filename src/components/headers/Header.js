@@ -46,7 +46,7 @@ const StyledHeader = styled.h1`
   margin: 0;
   margin-bottom: ${({ as }) => MARGIN_BOTTOM[as]};
   padding: 0;
-  text-align: center;
+  text-align: ${({ align }) => (align || 'center')};
   white-space: normal;
   word-break: break-word;
 
@@ -65,20 +65,23 @@ type AS =
   | 'h3';
 
 type Props = {
+  align ?:string;
   as ?:AS;
   children :Node;
   className ?:string;
 };
 
 const Header = ({
+  align,
   as,
   children,
   className,
 } :Props) => (
-  <StyledHeader as={as} className={className}>{children}</StyledHeader>
+  <StyledHeader align={align} as={as} className={className}>{children}</StyledHeader>
 );
 
 Header.defaultProps = {
+  align: 'center',
   as: 'h1',
   className: undefined,
 };
