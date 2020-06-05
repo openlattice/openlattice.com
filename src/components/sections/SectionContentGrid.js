@@ -2,9 +2,23 @@
  * @flow
  */
 
-import styled from 'styled-components';
+import React from 'react';
+
+import styled, { css } from 'styled-components';
 
 import { GRID_GAP, MEDIA_QUERY_LG } from '../../core/style/Sizes';
+
+const getComputedOrdering = ({ children, reverseOrderOnMobile }) => {
+  const items = React.Children.count(children);
+  const order = React.Children.map(children, (c, i) => (
+    `&:nth-of-type(${i + 1}) {
+      order: ${reverseOrderOnMobile ? items - i : (i + 1)};
+    }`
+  ));
+  return css`
+    ${order}
+  `;
+};
 
 const SectionContentGrid = styled.div`
   align-items: ${({ alignItems }) => (alignItems || 'flex-start')};
@@ -18,21 +32,7 @@ const SectionContentGrid = styled.div`
     max-width: 528px;
 
     @media only screen and (max-width: ${MEDIA_QUERY_LG}px) {
-      &:nth-of-type(1) {
-        order: ${({ reverseOrderOnMobile }) => (reverseOrderOnMobile ? 4 : 1)};
-      }
-
-      &:nth-of-type(2) {
-        order: ${({ reverseOrderOnMobile }) => (reverseOrderOnMobile ? 3 : 2)};
-      }
-
-      &:nth-of-type(3) {
-        order: ${({ reverseOrderOnMobile }) => (reverseOrderOnMobile ? 2 : 3)};
-      }
-
-      &:nth-of-type(4) {
-        order: ${({ reverseOrderOnMobile }) => (reverseOrderOnMobile ? 1 : 4)};
-      }
+      ${getComputedOrdering}
     }
   }
 `;
