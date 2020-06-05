@@ -46,6 +46,7 @@ const logoHeight = (screenSize :number) => {
 
 const StickyWrapper = styled.div`
   background-color: ${(props) => props.bgColor};
+  height: 78px; /* height doesn't really matter, but it prevents the "jump" when menu goes to fixed */
   position: relative;
   width: 100%;
   z-index: 800;
@@ -240,10 +241,12 @@ const AppMenu = ({ bgColor } :Props) => {
   const [isSticky, setSticky] = useState(false);
   const [isSmallScreen, setSmallScreen] = useState(window.innerWidth <= smallScreenSize);
   const [drawerIsOpen, toggleDrawer] = useState(false);
-  const ref = useRef({});
+  const ref = useRef();
 
   const handleScroll = () => {
-    setSticky(ref.current.getBoundingClientRect().top < -8);
+    if (ref.current) {
+      setSticky(ref.current.getBoundingClientRect().top < -8);
+    }
   };
 
   const updateMenuProps = () => {

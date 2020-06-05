@@ -2,26 +2,30 @@
  * @flow
  */
 
-import Andrea from '../../../assets/team/andrea.png';
-import Blake from '../../../assets/team/blake.png';
-import Brandon from '../../../assets/team/brandon.png';
-import David from '../../../assets/team/david.png';
-import Drew from '../../../assets/team/drew.png';
-import Giulia from '../../../assets/team/giulia.png';
-import Hristo from '../../../assets/team/hristo.png';
-import Jason from '../../../assets/team/jason.png';
-import Joe from '../../../assets/team/joe.png';
-import Joke from '../../../assets/team/joke.png';
-import Katherine from '../../../assets/team/katherine.png';
-import Kim from '../../../assets/team/kim.png';
-import Lynn from '../../../assets/team/lynn.png';
-import Mandy from '../../../assets/team/mandy.png';
-import Matthew from '../../../assets/team/matthew.png';
-import Mollie from '../../../assets/team/mollie.png';
-import Nicholas from '../../../assets/team/nicholas.png';
-import Shireen from '../../../assets/team/shireen.png';
-import Solomon from '../../../assets/team/solomon.png';
-import Todd from '../../../assets/team/todd.png';
+import React from 'react';
+
+import {
+  AndreaPhoto,
+  BlakePhoto,
+  BrandonPhoto,
+  DavidPhoto,
+  DrewPhoto,
+  GiuliaPhoto,
+  HristoPhoto,
+  JasonPhoto,
+  JoePhoto,
+  JokePhoto,
+  KatherinePhoto,
+  KimPhoto,
+  LynnPhoto,
+  MandyPhoto,
+  MatthewPhoto,
+  MolliePhoto,
+  NicholasPhoto,
+  ShireenPhoto,
+  SolomonPhoto,
+  ToddPhoto,
+} from '../../../assets/team';
 
 // repeat roles
 const ACCOUNT :string = 'Account Executive';
@@ -29,136 +33,125 @@ const DATA_SCIENTIST :string = 'Data Scientist';
 const DESIGNER :string = 'Product Designer';
 const FRONTEND :string = 'Frontend Software Engineer';
 
-const ANDREA = {
+const ANDREA :TeamMemberType = {
   NAME: 'Andrea Fowles',
   ROLE: ACCOUNT,
-  PHOTO: Andrea,
+  PHOTO: <AndreaPhoto />,
 };
 
-const BLAKE = {
+const BLAKE :TeamMemberType = {
   NAME: 'Blake Freitas',
   ROLE: 'Customer Success Engineer',
-  PHOTO: Blake,
+  PHOTO: <BlakePhoto />,
 };
 
-const BRANDON = {
+const BRANDON :TeamMemberType = {
   NAME: 'Brandon Wright',
   ROLE: 'Customer Success Manager',
-  PHOTO: Brandon,
+  PHOTO: <BrandonPhoto />,
 };
 
-const DAVID = {
+const DAVID :TeamMemberType = {
   NAME: 'David Terrell',
   ROLE: 'Senior Staff Software Engineer',
-  PHOTO: David,
+  PHOTO: <DavidPhoto />,
 };
 
-const DREW = {
+const DREW :TeamMemberType = {
   NAME: 'Drew Bailey',
   ROLE: 'Senior Software Engineer',
-  PHOTO: Drew,
+  PHOTO: <DrewPhoto />,
 };
 
-const GIULIA = {
+const GIULIA :TeamMemberType = {
   NAME: 'Giulia Campana',
   ROLE: FRONTEND,
-  PHOTO: Giulia,
+  PHOTO: <GiuliaPhoto />,
 };
 
-const HRISTO = {
+const HRISTO :TeamMemberType = {
+  COFOUNDER: true,
   NAME: 'Hristo Oskov',
   ROLE: 'Engineer',
-  PHOTO: Hristo,
+  PHOTO: <HristoPhoto />,
 };
 
-const JASON = {
+const JASON :TeamMemberType = {
   NAME: 'Jason Twohy',
   ROLE: 'Data Integration',
-  PHOTO: Jason,
+  PHOTO: <JasonPhoto />,
 };
 
-const JOE = {
+const JOE :TeamMemberType = {
   NAME: 'Joe Savino',
   ROLE: 'Operations Manager',
-  PHOTO: Joe,
+  PHOTO: <JoePhoto />,
 };
 
-const JOKE = {
+const JOKE :TeamMemberType = {
   NAME: 'Joke Durnez',
   ROLE: 'Machine Learning Engineer',
-  PHOTO: Joke,
+  PHOTO: <JokePhoto />,
 };
 
-const KATHERINE = {
+const KATHERINE :TeamMemberType = {
+  COFOUNDER: true,
   NAME: 'Katherine Bernstein',
   ROLE: 'Software Engineer',
-  PHOTO: Katherine,
+  PHOTO: <KatherinePhoto />,
 };
 
-const KIM = {
+const KIM :TeamMemberType = {
   NAME: 'Kim Engie',
   ROLE: 'Data Science Manager',
-  PHOTO: Kim,
+  PHOTO: <KimPhoto />,
 };
 
-const LYNN = {
-  LI: 'https://www.linkedin.com/in/lynn-overmann-325bb432',
-  NAME: 'Lynn Overmann',
-  ROLE: 'Opportunity Insights',
-  PHOTO: Lynn,
-};
-
-const MANDY = {
+const MANDY :TeamMemberType = {
   NAME: 'Mandy Schow',
   ROLE: ACCOUNT,
-  PHOTO: Mandy,
+  PHOTO: <MandyPhoto />,
 };
 
-const MATTHEW = {
+const MATTHEW :TeamMemberType = {
+  FOUNDER: true,
   NAME: 'Matthew Tamayo-Rios',
   ROLE: 'Chief Executive Officer',
-  PHOTO: Matthew,
+  PHOTO: <MatthewPhoto />,
 };
 
-const MATTHEW_BOARD = {
-  LI: 'https://www.linkedin.com/in/matthewtrios',
-  NAME: 'Matthew Tamayo-Rios',
-  ROLE: 'Chief Executive Officer',
-  PHOTO: Matthew,
-};
-
-const MOLLIE = {
+const MOLLIE :TeamMemberType = {
   NAME: 'Mollie Epstein',
   ROLE: DATA_SCIENTIST,
-  PHOTO: Mollie,
+  PHOTO: <MolliePhoto />,
 };
 
-const NICHOLAS = {
+const NICHOLAS :TeamMemberType = {
   NAME: 'Nicholas Hobbs',
   ROLE: DATA_SCIENTIST,
-  PHOTO: Nicholas,
+  PHOTO: <NicholasPhoto />,
 };
 
-const SHIREEN = {
+const SHIREEN :TeamMemberType = {
   NAME: 'Shireen Aziz',
   ROLE: DESIGNER,
-  PHOTO: Shireen,
+  PHOTO: <ShireenPhoto />,
 };
 
-const SOLOMON = {
+const SOLOMON :TeamMemberType = {
   NAME: 'Solomon Tang',
   ROLE: FRONTEND,
-  PHOTO: Solomon,
+  PHOTO: <SolomonPhoto />,
 };
 
-const TODD = {
+const TODD :TeamMemberType = {
   NAME: 'Todd Bergman',
   ROLE: FRONTEND,
-  PHOTO: Todd,
+  PHOTO: <ToddPhoto />,
 };
 
 
-const TEAM_MEMBERS :Object[] = [
+const TEAM_MEMBERS :TeamMemberType[] = [
   MATTHEW,
   HRISTO,
   KATHERINE,
@@ -180,9 +173,23 @@ const TEAM_MEMBERS :Object[] = [
   MANDY,
 ];
 
-const BOARD_MEMBERS :Object[] = [
+const LYNN_BOARD :TeamMemberType = {
+  LI: 'https://www.linkedin.com/in/lynn-overmann-325bb432',
+  NAME: 'Lynn Overmann',
+  ROLE: 'Opportunity Insights',
+  PHOTO: <LynnPhoto />,
+};
+
+const MATTHEW_BOARD :TeamMemberType = {
+  LI: 'https://www.linkedin.com/in/matthewtrios',
+  NAME: 'Matthew Tamayo-Rios',
+  ROLE: 'Chief Executive Officer',
+  PHOTO: <MatthewPhoto />,
+};
+
+const BOARD_MEMBERS :TeamMemberType[] = [
   MATTHEW_BOARD,
-  LYNN,
+  LYNN_BOARD,
 ];
 
 export {
