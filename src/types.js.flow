@@ -1,0 +1,14 @@
+/*
+ * @flow
+ */
+
+import type { Node } from 'react';
+
+declare type TeamMemberType = {|
+  COFOUNDER ?:boolean;
+  FOUNDER ?:boolean;
+  LI ?:string;
+  NAME :string;
+  ROLE :string;
+  PHOTO :Node;
+|};

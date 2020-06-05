@@ -19,7 +19,7 @@ const SectionContentExtraMargin = styled(SectionContent)`
 
 const INTRO_HEADER = `We believe core societal institutions
 should have modern data infrastructure
-to better serve the citizens
+to better serve citizens
 `;
 
 const AboutIntroSection = () => (
