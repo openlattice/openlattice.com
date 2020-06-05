@@ -11,7 +11,7 @@ import WorkingWithUsProcess from './WorkingWithUsProcess';
 import FooterSectionWithPageLinks from '../footer/FooterSectionWithPageLinks';
 import ScrollToTopOnMount from '../../components/layout/ScrollToTopOnMount';
 
-const WorkingWithUs = () => (
+const WorkingWithUsPage = () => (
   <>
     <ScrollToTopOnMount />
     <WorkingWithUsIntro />
@@ -21,4 +21,4 @@ const WorkingWithUs = () => (
   </>
 );
 
-export default WorkingWithUs;
+export default WorkingWithUsPage;
