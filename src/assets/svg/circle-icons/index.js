@@ -10,14 +10,17 @@ import AnonymousSVG from './anonymous.svg';
 import BarsSVG from './bars.svg';
 import CheckSVG from './check.svg';
 import CloudSVG from './cloud.svg';
+import CloudSecureSVG from './cloud-secure.svg';
 import DBSyncSVG from './database-sync.svg';
 import DotGridSVG from './dot-grid.svg';
 import KeySVG from './key.svg';
+import LinkSVG from './link.svg';
 import LockSVG from './lock.svg';
 import LogsSVG from './logs.svg';
 import MergeSVG from './merge.svg';
 import PlatformStackSVG from './platform-stack.svg';
 import PointerSVG from './pointer.svg';
+import SearchSVG from './search.svg';
 import SelectSVG from './select.svg';
 import SyncSVG from './sync.svg';
 import User1SVG from './user-1.svg';
@@ -45,6 +48,10 @@ const CloudCircleIcon = ({ className = '', width = 64 } :Props) => (
   <img alt="cloud-circle-icon" className={className} src={CloudSVG} width={width} />
 );
 
+const CloudSecureCircleIcon = ({ className = '', width = 64 } :Props) => (
+  <img alt="cloud-secure-circle-icon" className={className} src={CloudSecureSVG} width={width} />
+);
+
 const DBSyncCircleIcon = ({ className = '', width } :Props) => (
   <img alt="database-sync-circle-icon" className={className} src={DBSyncSVG} width={width} />
 );
@@ -55,6 +62,10 @@ const DotGridCircleIcon = ({ className = '', width } :Props) => (
 
 const KeyCircleIcon = ({ className = '', width } :Props) => (
   <img alt="key-circle-icon" className={className} src={KeySVG} width={width} />
+);
+
+const LinkCircleIcon = ({ className = '', width } :Props) => (
+  <img alt="link-circle-icon" className={className} src={LinkSVG} width={width} />
 );
 
 const LockCircleIcon = ({ className = '', width } :Props) => (
@@ -75,6 +86,10 @@ const PlatformStackCircleIcon = ({ className = '', width } :Props) => (
 
 const PointerCircleIcon = ({ className = '', width } :Props) => (
   <img alt="pointer-circle-icon" className={className} src={PointerSVG} width={width} />
+);
+
+const SearchCircleIcon = ({ className = '', width } :Props) => (
+  <img alt="search-circle-icon" className={className} src={SearchSVG} width={width} />
 );
 
 const SelectCircleIcon = ({ className = '', width } :Props) => (
@@ -102,14 +117,17 @@ export {
   BarsCircleIcon,
   CheckCircleIcon,
   CloudCircleIcon,
+  CloudSecureCircleIcon,
   DBSyncCircleIcon,
   DotGridCircleIcon,
   KeyCircleIcon,
+  LinkCircleIcon,
   LockCircleIcon,
   LogsCircleIcon,
   MergeArrowCircleIcon,
   PlatformStackCircleIcon,
   PointerCircleIcon,
+  SearchCircleIcon,
   SelectCircleIcon,
   SyncCircleIcon,
   UserCircleIcon,

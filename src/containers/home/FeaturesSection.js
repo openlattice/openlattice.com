@@ -41,6 +41,7 @@ import {
   Users2CircleIcon,
 } from '../../assets/svg/circle-icons';
 import {
+  GraphicShot,
   Header,
   InfoTile,
   SectionContent,
@@ -62,16 +63,6 @@ const FeatureList = styled.ul`
 
   span {
     margin-left: 16px;
-  }
-`;
-
-const FeatureShot = styled.div`
-  align-items: center;
-  display: flex;
-  width: 100%;
-
-  > img {
-    width: 100%;
   }
 `;
 
@@ -97,16 +88,16 @@ const FeaturesSection = () => (
             </li>
           </FeatureList>
         </InfoTile>
-        <FeatureShot>
+        <GraphicShot>
           <ShareDataImg />
-        </FeatureShot>
+        </GraphicShot>
       </SectionContentGrid>
     </SectionContent>
     <SectionContent>
       <SectionContentGrid alignItems="center" reverseOrderOnMobile>
-        <FeatureShot>
+        <GraphicShot>
           <ManageAccessImg />
-        </FeatureShot>
+        </GraphicShot>
         <InfoTile align="left">
           <Header as="h2">{MANAGE_ACCESS}</Header>
           <SubHeader as="h5">{MANAGE_ACCESS_DESCRIPTION}</SubHeader>
@@ -147,16 +138,16 @@ const FeaturesSection = () => (
             </li>
           </FeatureList>
         </InfoTile>
-        <FeatureShot>
+        <GraphicShot>
           <GenerateDatasetsImg />
-        </FeatureShot>
+        </GraphicShot>
       </SectionContentGrid>
     </SectionContent>
     <SectionContent>
       <SectionContentGrid alignItems="center" reverseOrderOnMobile>
-        <FeatureShot>
+        <GraphicShot>
           <SecureAuditLogImg />
-        </FeatureShot>
+        </GraphicShot>
         <InfoTile align="left">
           <Header as="h2">{SECURE_AUDIT_LOG}</Header>
           <SubHeader as="h5">{SECURE_AUDIT_LOG_DESCRIPTION}</SubHeader>
@@ -197,9 +188,9 @@ const FeaturesSection = () => (
             </li>
           </FeatureList>
         </InfoTile>
-        <FeatureShot>
+        <GraphicShot>
           <DataSecurityAndComplianceImg />
-        </FeatureShot>
+        </GraphicShot>
       </SectionContentGrid>
     </SectionContent>
   </PageSection>

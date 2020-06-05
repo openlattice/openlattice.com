@@ -8,7 +8,7 @@ import type { Node } from 'react';
 import styled from 'styled-components';
 
 import { NEUTRALS } from '../../core/style/Colors';
-import { MEDIA_QUERY_LG } from '../../core/style/Sizes';
+import { MEDIA_QUERY_LG, MEDIA_QUERY_MD } from '../../core/style/Sizes';
 
 const FONT_WEIGHT = {
   h1: 'bold',
@@ -47,8 +47,12 @@ const StyledHeader = styled.h1`
   margin-bottom: ${({ as }) => MARGIN_BOTTOM[as]};
   padding: 0;
   text-align: center;
-  white-space: pre-wrap;
+  white-space: normal;
   word-break: break-word;
+
+  @media only screen and (min-width: ${MEDIA_QUERY_MD}px) {
+    white-space: pre-wrap;
+  }
 
   @media only screen and (min-width: ${MEDIA_QUERY_LG}px) {
     font-size: ${({ as }) => FONT_SIZE_LG[as]};
