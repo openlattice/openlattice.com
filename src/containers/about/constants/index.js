@@ -1,25 +1,27 @@
-// @flow
+/*
+ * @flow
+ */
 
-import Andrea from '../../assets/team/andrea.png';
-import Blake from '../../assets/team/blake.png';
-import Brandon from '../../assets/team/brandon.png';
-import David from '../../assets/team/david.png';
-import Drew from '../../assets/team/drew.png';
-import Giulia from '../../assets/team/giulia.png';
-import Hristo from '../../assets/team/hristo.png';
-import Jason from '../../assets/team/jason.png';
-import Joe from '../../assets/team/joe.png';
-import Joke from '../../assets/team/joke.png';
-import Katherine from '../../assets/team/katherine.png';
-import Kim from '../../assets/team/kim.png';
-import Lynn from '../../assets/team/lynn.png';
-import Mandy from '../../assets/team/mandy.png';
-import Matthew from '../../assets/team/matthew.png';
-import Mollie from '../../assets/team/mollie.png';
-import Nicholas from '../../assets/team/nicholas.png';
-import Shireen from '../../assets/team/shireen.png';
-import Solomon from '../../assets/team/solomon.png';
-import Todd from '../../assets/team/todd.png';
+import Andrea from '../../../assets/team/andrea.png';
+import Blake from '../../../assets/team/blake.png';
+import Brandon from '../../../assets/team/brandon.png';
+import David from '../../../assets/team/david.png';
+import Drew from '../../../assets/team/drew.png';
+import Giulia from '../../../assets/team/giulia.png';
+import Hristo from '../../../assets/team/hristo.png';
+import Jason from '../../../assets/team/jason.png';
+import Joe from '../../../assets/team/joe.png';
+import Joke from '../../../assets/team/joke.png';
+import Katherine from '../../../assets/team/katherine.png';
+import Kim from '../../../assets/team/kim.png';
+import Lynn from '../../../assets/team/lynn.png';
+import Mandy from '../../../assets/team/mandy.png';
+import Matthew from '../../../assets/team/matthew.png';
+import Mollie from '../../../assets/team/mollie.png';
+import Nicholas from '../../../assets/team/nicholas.png';
+import Shireen from '../../../assets/team/shireen.png';
+import Solomon from '../../../assets/team/solomon.png';
+import Todd from '../../../assets/team/todd.png';
 
 // repeat roles
 const ACCOUNT :string = 'Account Executive';
@@ -183,7 +185,6 @@ const BOARD_MEMBERS :Object[] = [
   LYNN,
 ];
 
-/* eslint-disable import/prefer-default-export */
 export {
   BOARD_MEMBERS,
   TEAM_MEMBERS,
