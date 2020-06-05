@@ -7,13 +7,19 @@ import styled, { css } from 'styled-components';
 import { CONTENT_WIDTH, MEDIA_QUERY_MD, MEDIA_QUERY_SM } from '../../core/style/Sizes';
 
 type Props = {
+  align ?:string;
   maxWidth :{|
     sm ?:number;
     md ?:number;
   |};
 };
 
-const getComputedMediaQueries = ({ maxWidth } :Props) => {
+const getComputedMediaQueries = ({ align, maxWidth } :Props) => {
+
+  let alignItems = 'center';
+  if (align === 'left') {
+    alignItems = 'flex-start';
+  }
 
   let smMaxWidth;
   if (maxWidth && maxWidth.sm) {
@@ -26,6 +32,8 @@ const getComputedMediaQueries = ({ maxWidth } :Props) => {
   }
 
   return css`
+    align-items: ${alignItems};
+
     @media only screen and (min-width: ${MEDIA_QUERY_SM}px) {
       max-width: ${smMaxWidth};
     }
@@ -37,7 +45,6 @@ const getComputedMediaQueries = ({ maxWidth } :Props) => {
 };
 
 const SectionContent = styled.div`
-  align-items: center;
   display: flex;
   flex-direction: ${({ vertical }) => (vertical === false ? 'row' : 'column')};
   margin: 64px 0 100px 0;

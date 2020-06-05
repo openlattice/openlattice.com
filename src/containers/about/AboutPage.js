@@ -4,21 +4,21 @@
 
 import React from 'react';
 
-import AboutIntro from './AboutIntro';
+import AboutIntroSection from './AboutIntroSection';
 import BoardSection from './BoardSection';
 import FooterSectionWithPageLinks from '../footer/FooterSectionWithPageLinks';
 import InvestorsSection from './InvestorsSection';
-import MeetTheTeam from './MeetTheTeam';
+import TeamSection from './TeamSection';
 import MissionSection from './MissionSection';
 import ScrollToTopOnMount from '../../components/layout/ScrollToTopOnMount';
 
 const About = () => (
   <>
     <ScrollToTopOnMount />
-    <AboutIntro />
+    <AboutIntroSection />
     <MissionSection />
     <BoardSection />
-    <MeetTheTeam />
+    <TeamSection />
     <InvestorsSection />
     <FooterSectionWithPageLinks />
   </>
