@@ -4,14 +4,16 @@
 
 import React from 'react';
 
-import styled, { css } from 'styled-components';
+import styled from 'styled-components';
 
-import Bullpen from '../../assets/investors/bullpen.png';
-import GovTech from '../../assets/investors/gov-tech.png';
-import HarrisonMetal from '../../assets/investors/harrison-metal.png';
 import PageSection from '../../components/layout/NewPageSection';
-import PointNine from '../../assets/investors/point-nine.png';
-import UrbanInnovation from '../../assets/investors/urban-innovation.png';
+import {
+  BullpenLogo,
+  GovTechLogo,
+  HarrisonMetalLogo,
+  PointNineLogo,
+  UrbanInnovationLogo,
+} from '../../assets/investors';
 import { Header, SectionContent } from '../../components';
 import { NEUTRALS } from '../../core/style/Colors';
 import { MEDIA_QUERY_LG, MEDIA_QUERY_SM } from '../../core/style/Sizes';
@@ -27,12 +29,14 @@ const LogosWrapper = styled.div`
   }
 `;
 
-const logoStyles = css`
-  background-image: url(${(props) => props.logo});
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: contain;
+const InvestorLogo = styled.div`
+  display: flex;
+  justify-content: center;
   margin: 32px;
+
+  > img {
+    width: 100%;
+  }
 
   @media only screen and (min-width: ${MEDIA_QUERY_LG}px) {
     :first-of-type {
@@ -49,46 +53,16 @@ const logoStyles = css`
   }
 `;
 
-const UrbanInnovationLogo = styled.div`
-  ${logoStyles}
-  height: 65px;
-  width: 181px;
-`;
-
-const GovTechLogo = styled.div`
-  ${logoStyles}
-  height: 29px;
-  width: 116px;
-`;
-
-const BullpenLogo = styled.div`
-  ${logoStyles}
-  height: 14px;
-  width: 240px;
-`;
-
-const HarrisonMetalLogo = styled.div`
-  ${logoStyles}
-  height: 66px;
-  width: 132px;
-`;
-
-const PointNineLogo = styled.div`
-  ${logoStyles}
-  height: 40px;
-  width: 141px;
-`;
-
 const InvestorsSection = () => (
   <PageSection bgColor={NEUTRALS.WHITE}>
     <SectionContent>
       <Header as="h2">Our investors</Header>
       <LogosWrapper>
-        <UrbanInnovationLogo logo={UrbanInnovation} />
-        <GovTechLogo logo={GovTech} />
-        <BullpenLogo logo={Bullpen} />
-        <HarrisonMetalLogo logo={HarrisonMetal} />
-        <PointNineLogo logo={PointNine} />
+        <InvestorLogo><UrbanInnovationLogo /></InvestorLogo>
+        <InvestorLogo><GovTechLogo /></InvestorLogo>
+        <InvestorLogo><BullpenLogo /></InvestorLogo>
+        <InvestorLogo><HarrisonMetalLogo /></InvestorLogo>
+        <InvestorLogo><PointNineLogo /></InvestorLogo>
       </LogosWrapper>
     </SectionContent>
   </PageSection>

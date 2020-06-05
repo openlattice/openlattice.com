@@ -5,7 +5,6 @@
 import React from 'react';
 
 import AboutIntroSection from './AboutIntroSection';
-import BoardSection from './BoardSection';
 import FooterSectionWithPageLinks from '../footer/FooterSectionWithPageLinks';
 import InvestorsSection from './InvestorsSection';
 import TeamSection from './TeamSection';
@@ -17,7 +16,6 @@ const About = () => (
     <ScrollToTopOnMount />
     <AboutIntroSection />
     <MissionSection />
-    <BoardSection />
     <TeamSection />
     <InvestorsSection />
     <FooterSectionWithPageLinks />
