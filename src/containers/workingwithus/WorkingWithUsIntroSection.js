@@ -17,7 +17,7 @@ const PageIntroWrapper = styled(PageIntro)`
   width: 816px;
 `;
 
-const WorkingWithUsIntro = () => (
+const WorkingWithUsIntroSection = () => (
   <PageSection bgColor={NEUTRALS.GRAY_05} includeMenu>
     <Content>
       <PageIntroWrapper>
@@ -34,4 +34,4 @@ const WorkingWithUsIntro = () => (
   </PageSection>
 );
 
-export default WorkingWithUsIntro;
+export default WorkingWithUsIntroSection;
