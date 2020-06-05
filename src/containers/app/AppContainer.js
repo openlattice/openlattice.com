@@ -12,7 +12,7 @@ import {
 } from 'lattice-ui-kit';
 import { Route, Switch } from 'react-router';
 
-import About from '../about/About';
+import AboutPage from '../about/AboutPage';
 import HomePage from '../home/HomePage';
 import CareProductPage from '../products/CareProductPage';
 import PCMProductPage from '../products/PCMProductPage';
@@ -38,7 +38,7 @@ const AppContainer = () => (
         <Route exact strict path={Routes.PRODUCTS} component={Products} />
         <Route exact path={Routes.PLATFORM} component={PlatformPage} />
         <Route exact path={Routes.WORKING_WITH_US} component={WorkingWithUs} />
-        <Route exact path={Routes.ABOUT} component={About} />
+        <Route exact path={Routes.ABOUT} component={AboutPage} />
         <Route component={HomePage} />
       </Switch>
     </MuiPickersUtilsProvider>

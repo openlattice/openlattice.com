@@ -29,7 +29,11 @@ const Header = styled.div`
 const HeaderWithTag = styled.div`
   align-items: center;
   display: flex;
-  justify-content: flex-start;
+  justify-content: center;
+
+  @media only screen and (min-width: 550px) {
+    justify-content: flex-start;
+  }
 `;
 
 const linkStyles = css`
@@ -92,14 +96,20 @@ const FooterGrid = styled.div`
   grid-gap: 48px;
   grid-template-columns: auto;
 
-  @media only screen and (min-width: 500px) {
-    grid-template-columns: repeat(auto-fit, minmax(220px, auto));
+  @media only screen and (min-width: 550px) {
+    grid-template-columns: repeat(auto-fit, minmax(192px, auto));
+    text-align: left;
     width: 100%;
   }
 
   section {
     display: grid;
     grid-gap: 16px;
+    text-align: center;
+
+    @media only screen and (min-width: 550px) {
+      text-align: left;
+    }
   }
 `;
 

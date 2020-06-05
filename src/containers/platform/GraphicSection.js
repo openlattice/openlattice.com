@@ -23,7 +23,7 @@ import { PRIVACY_SECURITY_LINK } from '../../utils/constants/links';
 const GraphicSection = () => (
   <PageSection bgColor={NEUTRALS.WHITE}>
     <SectionContent>
-      <SectionContentGrid alignItems="center">
+      <SectionContentGrid align="center">
         <InfoTile align="left">
           <Header as="h2">{DESIGNED_FOR_SECURITY_HEADER}</Header>
           <SubHeader as="h5">{DESIGNED_FOR_SECURITY_SUBHEADER}</SubHeader>
