@@ -54,7 +54,7 @@ const TileGrid = styled(SectionContentGrid)`
   grid-template-columns: repeat(auto-fit,minmax(336px,1fr));
 `;
 
-const CorePlatformFeatures = () => (
+const CorePlatformSection = () => (
   <PageSection bgColor={NEUTRALS.WHITE}>
     <SectionContent maxWidth={{ sm: 528 }}>
       <Header as="h2">{CORE_PLATFORM_FEATURES_HEADER}</Header>
@@ -103,4 +103,4 @@ const CorePlatformFeatures = () => (
   </PageSection>
 );
 
-export default CorePlatformFeatures;
+export default CorePlatformSection;

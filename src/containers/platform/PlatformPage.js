@@ -4,8 +4,8 @@
 
 import React from 'react';
 
-import ComplianceAndSecurity from './ComplianceAndSecurity';
-import CorePlatformFeatures from './CorePlatformFeatures';
+import ComplianceAndSecuritySection from './ComplianceAndSecuritySection';
+import CorePlatformSection from './CorePlatformSection';
 import GraphicSection from './GraphicSection';
 import PlatformIntroSection from './PlatformIntroSection';
 
@@ -17,8 +17,8 @@ const Platform = () => (
     <ScrollToTopOnMount />
     <PlatformIntroSection />
     <GraphicSection />
-    <CorePlatformFeatures />
-    <ComplianceAndSecurity />
+    <CorePlatformSection />
+    <ComplianceAndSecuritySection />
     <FooterSectionWithPageLinks />
   </>
 );
