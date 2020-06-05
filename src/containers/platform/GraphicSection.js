@@ -5,7 +5,6 @@
 import React from 'react';
 
 import { DESIGNED_FOR_SECURITY_HEADER, DESIGNED_FOR_SECURITY_SUBHEADER } from './constants/language';
-import { PRIVACY_SECURITY_LINK } from './constants/links';
 
 import PageSection from '../../components/layout/NewPageSection';
 import { PlatformLayersGraphic } from '../../assets/svg/graphics';
@@ -19,6 +18,7 @@ import {
   SubHeader,
 } from '../../components';
 import { NEUTRALS } from '../../core/style/Colors';
+import { PRIVACY_SECURITY_LINK } from '../../utils/constants/links';
 
 const GraphicSection = () => (
   <PageSection bgColor={NEUTRALS.WHITE}>

@@ -12,11 +12,6 @@ import {
   INTELLIGENT_DATA_INTEGRATIONS,
   INTELLIGENT_DATA_INTEGRATIONS_DESCRIPTION,
 } from './constants/language';
-import {
-  DATA_INTEGRATIONS_LINK,
-  DATA_SHARING_LINK,
-  INTRO_TO_OL_LINK,
-} from './constants/links';
 
 import PageSection from '../../components/layout/NewPageSection';
 import {
@@ -33,6 +28,11 @@ import {
   SubHeader,
 } from '../../components';
 import { NEUTRALS } from '../../core/style/Colors';
+import {
+  DATA_INTEGRATIONS_LINK,
+  DATA_SHARING_LINK,
+  INTRO_TO_OL_LINK,
+} from '../../utils/constants/links';
 
 const InfoSection = () => (
   <PageSection bgColor={NEUTRALS.WHITE}>
