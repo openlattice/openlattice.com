@@ -4,7 +4,7 @@
 
 import React from 'react';
 
-import IntegrationAnimationSection from './IntegrationAnimationSection';
+import IntegrationSection from './IntegrationSection';
 import WorkingWithUsIntroSection from './WorkingWithUsIntroSection';
 import WorkingWithUsProcess from './WorkingWithUsProcess';
 
@@ -15,7 +15,7 @@ const WorkingWithUsPage = () => (
   <>
     <ScrollToTopOnMount />
     <WorkingWithUsIntroSection />
-    <IntegrationAnimationSection />
+    <IntegrationSection />
     <WorkingWithUsProcess />
     <FooterSectionWithPageLinks />
   </>

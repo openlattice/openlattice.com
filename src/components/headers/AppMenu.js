@@ -39,10 +39,6 @@ import { openBeacon } from '../../utils/Utils';
 import { ContactUsWhite } from '../controls/index';
 
 const smallScreenSize = 980;
-const logoHeight = (screenSize :number) => {
-  if (screenSize < smallScreenSize) return 30;
-  return 40;
-};
 
 const StickyWrapper = styled.div`
   background-color: ${(props) => props.bgColor};
@@ -237,9 +233,11 @@ type Props = {
 
 const AppMenu = ({ bgColor } :Props) => {
 
+  const [bodyWidth, setBodyWidth] = useState((document.body :any).offsetWidth);
+  const [logoHeight, setLogoHeight] = useState(40);
   const [productsMenuIsOpen, openProductsMenu] = useState(false);
   const [isSticky, setSticky] = useState(false);
-  const [isSmallScreen, setSmallScreen] = useState(window.innerWidth <= smallScreenSize);
+  const [isSmallScreen, setSmallScreen] = useState(bodyWidth <= smallScreenSize);
   const [drawerIsOpen, toggleDrawer] = useState(false);
   const ref = useRef();
 
@@ -250,7 +248,10 @@ const AppMenu = ({ bgColor } :Props) => {
   };
 
   const updateMenuProps = () => {
-    const isSmall = window.innerWidth <= smallScreenSize;
+    const newBodyWidth = (document.body :any).offsetWidth;
+    const isSmall = newBodyWidth <= smallScreenSize;
+    setBodyWidth(newBodyWidth);
+    setLogoHeight(isSmall ? 30 : 40);
     setSmallScreen(isSmall);
     if (isSmall) {
       openProductsMenu(false);
@@ -278,7 +279,7 @@ const AppMenu = ({ bgColor } :Props) => {
         ref={ref}>
       <MenuWrapper bgColor={bgColor} isSticky={isSticky} drawerIsOpen={drawerIsOpen}>
         <Link to={MENU_ROUTES.ROOT}>
-          <img src={OpenLatticeLogoSVG} alt="OpenLattice" height={logoHeight(window.innerWidth)} />
+          <img src={OpenLatticeLogoSVG} alt="OpenLattice" height={logoHeight} />
         </Link>
         {
           isSmallScreen && (

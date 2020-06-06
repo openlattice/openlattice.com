@@ -10,14 +10,14 @@
 <circle cx="45" cy="213" r="12" fill="#7860FF"/>
 <circle cx="250" cy="119" r="20" fill="#7860FF"/>
 <circle cx="374" cy="130" r="20" fill="#7860FF"/>
-<path d="M59.1233 26.8182H57.3683L54.8378 28.4439V30.1342L57.2192 28.6129H57.2789V37H59.1233V26.8182ZM65.3627 37.1392C67.5402 37.1392 69.1262 35.8913 69.1212 34.1712C69.1262 32.8984 68.3307 31.9837 66.9039 31.7798V31.7003C68.0075 31.4616 68.7483 30.6413 68.7433 29.4979C68.7483 27.9467 67.4259 26.679 65.3925 26.679C63.4138 26.679 61.8825 27.8572 61.8428 29.5625H63.6176C63.6475 28.7074 64.4429 28.1754 65.3825 28.1754C66.3321 28.1754 66.9635 28.7521 66.9585 29.6072C66.9635 30.4972 66.2277 31.0888 65.1737 31.0888H64.2739V32.5107H65.1737C66.4614 32.5107 67.227 33.157 67.222 34.0767C67.227 34.9766 66.4465 35.593 65.3577 35.593C64.3335 35.593 63.5431 35.0611 63.4983 34.2308H61.629C61.6787 35.951 63.2149 37.1392 65.3627 37.1392Z" fill="white"/>
-<path d="M40.1829 50.8182H38.4279L35.8974 52.4439V54.1342L38.2788 52.6129H38.3384V61H40.1829V50.8182Z" fill="white"/>
-<path d="M247.057 124H254.037V122.459H249.603V122.389L251.358 120.604C253.336 118.705 253.883 117.781 253.883 116.632C253.883 114.927 252.496 113.679 250.448 113.679C248.429 113.679 246.998 114.932 246.998 116.866H248.752C248.752 115.827 249.409 115.175 250.423 115.175C251.392 115.175 252.113 115.767 252.113 116.727C252.113 117.577 251.596 118.183 250.592 119.202L247.057 122.668V124Z" fill="white"/>
-<path d="M343.183 146.818H341.428L338.897 148.444V150.134L341.279 148.613H341.338V157H343.183V146.818Z" fill="white"/>
-<path d="M473.183 180.818H471.428L468.897 182.444V184.134L471.279 182.613H471.338V191H473.183V180.818Z" fill="white"/>
-<path d="M494.183 133.818H492.428L489.897 135.444V137.134L492.279 135.613H492.338V144H494.183V133.818Z" fill="white"/>
-<path d="M545.183 93.8182H543.428L540.897 95.4439V97.1342L543.279 95.6129H543.338V104H545.183V93.8182Z" fill="white"/>
-<path d="M370.057 135H377.037V133.459H372.603V133.389L374.358 131.604C376.336 129.705 376.883 128.781 376.883 127.632C376.883 125.927 375.496 124.679 373.448 124.679C371.429 124.679 369.998 125.932 369.998 127.866H371.752C371.752 126.827 372.409 126.175 373.423 126.175C374.392 126.175 375.113 126.767 375.113 127.727C375.113 128.577 374.596 129.183 373.592 130.202L370.057 133.668V135Z" fill="white"/>
-<path d="M13.1829 144.818H11.4279L8.89737 146.444V148.134L11.2788 146.613H11.3384V155H13.1829V144.818Z" fill="white"/>
-<path d="M46.1829 207.818H44.4279L41.8974 209.444V211.134L44.2788 209.613H44.3384V218H46.1829V207.818Z" fill="white"/>
+<text fill="white" xml:space="preserve" style="white-space: pre" font-family="Inter" font-size="14" font-weight="600" letter-spacing="0em"><tspan x="54.0771" y="36.5909">13</tspan></text>
+<text fill="white" xml:space="preserve" style="white-space: pre" font-family="Inter" font-size="14" font-weight="600" letter-spacing="0em"><tspan x="35.1367" y="60.5909">1</tspan></text>
+<text fill="white" xml:space="preserve" style="white-space: pre" font-family="Inter" font-size="14" font-weight="600" letter-spacing="0em"><tspan x="246.152" y="123.591">2</tspan></text>
+<text fill="white" xml:space="preserve" style="white-space: pre" font-family="Inter" font-size="14" font-weight="600" letter-spacing="0em"><tspan x="338.137" y="156.591">1</tspan></text>
+<text fill="white" xml:space="preserve" style="white-space: pre" font-family="Inter" font-size="14" font-weight="600" letter-spacing="0em"><tspan x="468.137" y="190.591">1</tspan></text>
+<text fill="white" xml:space="preserve" style="white-space: pre" font-family="Inter" font-size="14" font-weight="600" letter-spacing="0em"><tspan x="489.137" y="143.591">1</tspan></text>
+<text fill="white" xml:space="preserve" style="white-space: pre" font-family="Inter" font-size="14" font-weight="600" letter-spacing="0em"><tspan x="540.137" y="103.591">1</tspan></text>
+<text fill="white" xml:space="preserve" style="white-space: pre" font-family="Inter" font-size="14" font-weight="600" letter-spacing="0em"><tspan x="369.152" y="134.591">2</tspan></text>
+<text fill="white" xml:space="preserve" style="white-space: pre" font-family="Inter" font-size="14" font-weight="600" letter-spacing="0em"><tspan x="8.13672" y="154.591">1</tspan></text>
+<text fill="white" xml:space="preserve" style="white-space: pre" font-family="Inter" font-size="14" font-weight="600" letter-spacing="0em"><tspan x="41.1367" y="217.591">1</tspan></text>
 </svg>

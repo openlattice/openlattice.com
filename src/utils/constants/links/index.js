@@ -4,6 +4,7 @@
 
 const HELP_URL = 'https://help.openlattice.com';
 
+const CASE_STUDIES_LINK = `${HELP_URL}/collection/65-case-studies`;
 const DATA_INTEGRATIONS_LINK = `${HELP_URL}/article/78-how-is-openlattice-different-from-other-data-integration`;
 const DATA_LINKING_LINK = `${HELP_URL}/article/87-data-linking-with-artificial-intelligence`;
 const DATA_SHARING_LINK = `${HELP_URL}/article/24-data-sharing-and-roles`;
@@ -14,6 +15,7 @@ const PRIVACY_SECURITY_LINK = `${HELP_URL}/article/16-privacy-security`;
 const TOP_UTILIZERS_LINK = `${HELP_URL}/article/80-top-utilizer-tool`;
 
 export {
+  CASE_STUDIES_LINK,
   DATA_INTEGRATIONS_LINK,
   DATA_LINKING_LINK,
   DATA_SHARING_LINK,
