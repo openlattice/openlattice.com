@@ -1,0 +1,40 @@
+<svg width="432" height="267" viewBox="0 0 432 267" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect y="111.125" width="134.74" height="44.4502" rx="22.2251" fill="#75AEF9"/>
+<text fill="white" xml:space="preserve" style="white-space: pre" font-family="Inter" font-size="20" font-weight="500" letter-spacing="0em"><tspan x="22.0769" y="140.623">John Doe</tspan></text>
+<g opacity="0.6">
+<rect x="163.021" y="56.0625" width="114.293" height="43.4502" rx="21.7251" stroke="#E1E1EB"/>
+<text fill="#4E4E56" xml:space="preserve" style="white-space: pre" font-family="Inter" font-size="20" letter-spacing="0em"><tspan x="183.674" y="85.0602">Lives at</tspan></text>
+</g>
+<g opacity="0.6">
+<rect x="304.206" y="55.5625" width="120.849" height="44.4502" rx="22.2251" fill="#F4F4F7"/>
+<text fill="#4E4E56" xml:space="preserve" style="white-space: pre" font-family="Inter" font-size="20" letter-spacing="0em"><tspan x="325.626" y="85.0602">Address</tspan></text>
+</g>
+<g opacity="0.4">
+<rect x="154.687" y="0.5" width="130.961" height="43.4502" rx="21.7251" stroke="#E1E1EB"/>
+<text fill="#4E4E56" xml:space="preserve" style="white-space: pre" font-family="Inter" font-size="20" letter-spacing="0em"><tspan x="176.281" y="29.4977">Reported</tspan></text>
+</g>
+<g opacity="0.4">
+<rect x="295.871" width="136.129" height="44.4502" rx="22.2251" fill="#F4F4F7"/>
+<text fill="#4E4E56" xml:space="preserve" style="white-space: pre" font-family="Inter" font-size="20" letter-spacing="0em"><tspan x="318.008" y="29.4977">Diagnosis</tspan></text>
+</g>
+<rect x="146.353" y="111.625" width="147.63" height="43.4502" rx="21.7251" stroke="#E1E1EB"/>
+<text fill="#4E4E56" xml:space="preserve" style="white-space: pre" font-family="Inter" font-size="20" letter-spacing="0em"><tspan x="168.448" y="140.623">Arrested in</tspan></text>
+<rect x="305.595" y="111.125" width="118.071" height="44.4502" rx="22.2251" fill="#F4F4F7"/>
+<text fill="#4E4E56" xml:space="preserve" style="white-space: pre" font-family="Inter" font-size="20" letter-spacing="0em"><tspan x="326.661" y="140.623">Incident</tspan></text>
+<g opacity="0.6">
+<rect x="142.185" y="167.188" width="155.965" height="43.4502" rx="21.7251" stroke="#E1E1EB"/>
+<text fill="#4E4E56" xml:space="preserve" style="white-space: pre" font-family="Inter" font-size="20" letter-spacing="0em"><tspan x="164.542" y="196.186">Admitted to</tspan></text>
+</g>
+<g opacity="0.6">
+<rect x="315.318" y="166.688" width="100.013" height="44.4502" rx="22.2251" fill="#F4F4F7"/>
+<text fill="#4E4E56" xml:space="preserve" style="white-space: pre" font-family="Inter" font-size="20" letter-spacing="0em"><tspan x="335.413" y="196.186">Rehab</tspan></text>
+</g>
+<g opacity="0.4">
+<rect x="151.908" y="222.751" width="136.518" height="43.4502" rx="21.7251" stroke="#E1E1EB"/>
+<text fill="#4E4E56" xml:space="preserve" style="white-space: pre" font-family="Inter" font-size="20" letter-spacing="0em"><tspan x="173.448" y="251.749">Booked in</tspan></text>
+</g>
+<g opacity="0.4">
+<rect x="309.762" y="222.251" width="108.347" height="44.4502" rx="22.2251" fill="#F4F4F7"/>
+<text fill="#4E4E56" xml:space="preserve" style="white-space: pre" font-family="Inter" font-size="20" letter-spacing="0em"><tspan x="330.518" y="251.749">Facility</tspan></text>
+</g>
+</svg>

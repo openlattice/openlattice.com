@@ -1,0 +1,15 @@
+<svg width="433" height="231" viewBox="0 0 433 231" fill="none" xmlns="http://www.w3.org/2000/svg">
+<text fill="#A1A1AA" xml:space="preserve" style="white-space: pre" font-family="Inter" font-size="14" letter-spacing="0em"><tspan x="57.495" y="218.734">e.g. Timeline of a high utilizer (events over time)</tspan></text>
+<text fill="#A1A1AA" xml:space="preserve" style="white-space: pre" font-family="Inter" font-size="12" letter-spacing="0em"><tspan x="346" y="13.3636">Event count </tspan></text>
+<text fill="#3B3B49" xml:space="preserve" style="white-space: pre" font-family="Inter" font-size="12" letter-spacing="0em"><tspan x="416.945" y="13.3636">14</tspan></text>
+<rect y="190.286" width="432" height="1" fill="#E1E1EB"/>
+<rect x="310" y="8.57129" width="25.7143" height="3" fill="#F4899E"/>
+<text fill="#A1A1AA" xml:space="preserve" style="white-space: pre" font-family="Inter" font-size="12" letter-spacing="0em"><tspan x="346" y="38.6493">Hours </tspan></text>
+<text fill="#3B3B49" xml:space="preserve" style="white-space: pre" font-family="Inter" font-size="12" letter-spacing="0em"><tspan x="383.266" y="38.6493">5.87</tspan></text>
+<rect x="310" y="33.8574" width="25.7143" height="3" fill="#7860FF"/>
+<rect x="150" y="4" width="1" height="186" fill="#E1E1EB"/>
+<path d="M1.28613 156.214H14.7861L24.429 134.357L34.7147 142.071L55.929 144L66.8576 158.143L76.5004 156.214L87.429 148.5L97.0718 151.714L108.643 138.214L119.572 151.714L139.5 104.143L149.786 122.143L162 134.357L171.643 158.143L181.929 140.143L202.5 151.714L214.072 131.143L223.072 118.286L234.643 127.929L244.929 108.643L254.572 153.643H264.858L275.786 134.357L285.429 109.929L292.5 136.286L296.358 156.214L307.286 153.643L317.572 134.357L327.858 153.643L359.358 156.214L372.215 148.5L379.286 140.143L385.072 104.143L390.215 63L396.643 104.143L401.143 140.143H421.715L431.358 158.143" stroke="#7860FF" stroke-width="3"/>
+<path d="M2.57129 149.143H15.4284L33.4284 134.357L55.9284 130.5L66.857 149.143H77.1427L88.7141 141.429L108.643 134.357L118.286 136.929L129.214 106.714L139.5 97.0716L149.786 88.7145L162.643 136.929L171 149.143L181.286 119.572L194.143 132.429L201.214 145.286L215.357 126.643L223.714 108L234.643 122.786L244.286 119.572L251.357 138.857L264.857 149.143L277.071 134.357L286.071 118.286L295.071 144H307.928L317.571 119.572L327.857 144L359.357 149.143H369.643L383.143 104.786L390.214 63.6431L398.571 126.643L412.071 145.286L421.714 136.929L430.714 145.286" stroke="#F4899E" stroke-width="3"/>
+<circle cx="150.428" cy="88.7141" r="4.85714" fill="#F4899E" stroke="white" stroke-width="2"/>
+<circle cx="150.428" cy="122.143" r="4.85714" fill="#7860FF" stroke="white" stroke-width="2"/>
+</svg>

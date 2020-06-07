@@ -21,7 +21,7 @@ to the right people
 at the right time
 `;
 
-const IntroSection = () => (
+const HomeIntroSection = () => (
   <PageSection bgColor={NEUTRALS.GRAY_05} includeMenu>
     <SectionContent>
       <Header>{INTRO_HEADER}</Header>
@@ -35,4 +35,4 @@ const IntroSection = () => (
   </PageSection>
 );
 
-export default IntroSection;
+export default HomeIntroSection;

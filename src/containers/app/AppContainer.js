@@ -21,7 +21,7 @@ import PrivacyPolicy from '../footer/privacy/PrivacyPolicy';
 import Products from '../products/ProductsPage';
 import ResearchHubProductPage from '../products/ResearchHubProductPage';
 import TermsOfService from '../footer/termsofservice/TermsOfService';
-import WorkingWithUs from '../workingwithus/WorkingWithUs';
+import WorkingWithUsPage from '../workingwithus/WorkingWithUsPage';
 import * as Routes from '../../core/router/Routes';
 import { ChronicleProductPage } from '../products/chronicle';
 
@@ -37,7 +37,7 @@ const AppContainer = () => (
         <Route exact path={Routes.PCM} component={PCMProductPage} />
         <Route exact strict path={Routes.PRODUCTS} component={Products} />
         <Route exact path={Routes.PLATFORM} component={PlatformPage} />
-        <Route exact path={Routes.WORKING_WITH_US} component={WorkingWithUs} />
+        <Route exact path={Routes.WORKING_WITH_US} component={WorkingWithUsPage} />
         <Route exact path={Routes.ABOUT} component={AboutPage} />
         <Route component={HomePage} />
       </Switch>

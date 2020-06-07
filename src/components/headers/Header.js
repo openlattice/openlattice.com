@@ -2,9 +2,6 @@
  * @flow
  */
 
-import React from 'react';
-import type { Node } from 'react';
-
 import styled from 'styled-components';
 
 import { NEUTRALS } from '../../core/style/Colors';
@@ -38,7 +35,7 @@ const MARGIN_BOTTOM = {
   h3: '16px',
 };
 
-const StyledHeader = styled.h1`
+const Header = styled.h1`
   color: ${NEUTRALS.GRAY_06};
   font-size: ${({ as }) => FONT_SIZE_SM[as]};
   font-weight: ${({ as }) => FONT_WEIGHT[as]};
@@ -58,32 +55,5 @@ const StyledHeader = styled.h1`
     font-size: ${({ as }) => FONT_SIZE_LG[as]};
   }
 `;
-
-type AS =
-  | 'h1'
-  | 'h2'
-  | 'h3';
-
-type Props = {
-  align ?:string;
-  as ?:AS;
-  children :Node;
-  className ?:string;
-};
-
-const Header = ({
-  align,
-  as,
-  children,
-  className,
-} :Props) => (
-  <StyledHeader align={align} as={as} className={className}>{children}</StyledHeader>
-);
-
-Header.defaultProps = {
-  align: 'center',
-  as: 'h1',
-  className: undefined,
-};
 
 export default Header;
