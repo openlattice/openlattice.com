@@ -8,15 +8,9 @@ import styled from 'styled-components';
 
 import PageSection from '../../components/layout/NewPageSection';
 import {
-  DataPipelinesGraphic,
-  DataSharingAgreementsGraphic,
   EMSDataCardGraphic,
-  HighUtilizerTimelineGraphic,
   IntegratedDataDataCardGraphic,
   MedicaidDataCardGraphic,
-  OurCustomersMapGraphic,
-  OverdoseGraphGraphic,
-  PlatformLayersGraphic,
   PoliceDataCardGraphic,
 } from '../../assets/svg/graphics';
 import {
@@ -29,7 +23,7 @@ import {
   SubHeader,
 } from '../../components';
 import { NEUTRALS } from '../../core/style/Colors';
-import { PAGE_PADDING, MEDIA_QUERY_LG, MEDIA_QUERY_MD, MEDIA_QUERY_SM } from '../../core/style/Sizes';
+import { MEDIA_QUERY_MD, MEDIA_QUERY_SM, PAGE_PADDING } from '../../core/style/Sizes';
 import { CASE_STUDIES_LINK } from '../../utils/constants/links';
 
 const ANCIENT_SOFTWARE_HEADER = 'Public servants are using ancient software and siloed data';

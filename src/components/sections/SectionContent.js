@@ -13,7 +13,7 @@ import {
 
 type Props = {
   align ?:string;
-  maxWidth :{|
+  maxWidth ?:{|
     sm ?:number;
     md ?:number;
     lg ?:number;

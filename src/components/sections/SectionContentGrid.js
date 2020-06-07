@@ -6,7 +6,7 @@ import React from 'react';
 
 import styled, { css } from 'styled-components';
 
-import { GRID_GAP, MEDIA_QUERY_LG } from '../../core/style/Sizes';
+import { GRID_GAP, MEDIA_QUERY_LG, MEDIA_QUERY_SM } from '../../core/style/Sizes';
 
 type Props = {
   align ?:string;
@@ -52,6 +52,10 @@ const SectionContentGrid = styled.div`
     @media only screen and (max-width: ${MEDIA_QUERY_LG}px) {
       ${getComputedOrdering}
     }
+  }
+
+  @media only screen and (max-width: ${MEDIA_QUERY_SM}px) {
+    grid-template-columns: auto;
   }
 `;
 
