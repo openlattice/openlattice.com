@@ -5,8 +5,8 @@
 import React from 'react';
 
 import FeaturesSection from './FeaturesSection';
+import HomeIntroSection from './HomeIntroSection';
 import InfoSection from './InfoSection';
-import IntroSection from './IntroSection';
 import OurCustomersSection from './OurCustomersSection';
 import QuotesSection from './QuotesSection';
 
@@ -16,7 +16,7 @@ import ScrollToTopOnMount from '../../components/layout/ScrollToTopOnMount';
 const HomePage = () => (
   <>
     <ScrollToTopOnMount />
-    <IntroSection />
+    <HomeIntroSection />
     <InfoSection />
     <FeaturesSection />
     <QuotesSection />

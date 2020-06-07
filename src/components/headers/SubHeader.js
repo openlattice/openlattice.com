@@ -2,9 +2,6 @@
  * @flow
  */
 
-import React from 'react';
-import type { Node } from 'react';
-
 import styled from 'styled-components';
 
 import { NEUTRALS } from '../../core/style/Colors';
@@ -22,7 +19,7 @@ const FONT_WEIGHT = {
   h6: 'normal',
 };
 
-const StyledSubHeader = styled.h4`
+const SubHeader = styled.h4`
   color: ${NEUTRALS.GRAY_07};
   font-size: 16px;
   font-weight: ${({ as }) => FONT_WEIGHT[as]};
@@ -42,31 +39,4 @@ const StyledSubHeader = styled.h4`
   }
 `;
 
-type AS =
-  | 'h4'
-  | 'h5'
-  | 'h6';
-
-type Props = {
-  align ?:string;
-  as ?:AS;
-  children :Node;
-  className ?:string;
-};
-
-const Header = ({
-  align,
-  as,
-  children,
-  className,
-} :Props) => (
-  <StyledSubHeader align={align} as={as} className={className}>{children}</StyledSubHeader>
-);
-
-Header.defaultProps = {
-  align: 'center',
-  as: 'h4',
-  className: undefined,
-};
-
-export default Header;
+export default SubHeader;

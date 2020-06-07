@@ -4,13 +4,19 @@
 
 import styled, { css } from 'styled-components';
 
-import { CONTENT_WIDTH, MEDIA_QUERY_MD, MEDIA_QUERY_SM } from '../../core/style/Sizes';
+import {
+  CONTENT_WIDTH,
+  MEDIA_QUERY_LG,
+  MEDIA_QUERY_MD,
+  MEDIA_QUERY_SM,
+} from '../../core/style/Sizes';
 
 type Props = {
   align ?:string;
-  maxWidth :{|
+  maxWidth ?:{|
     sm ?:number;
     md ?:number;
+    lg ?:number;
   |};
 };
 
@@ -31,6 +37,11 @@ const getComputedMediaQueries = ({ align, maxWidth } :Props) => {
     mdMaxWidth = `${maxWidth.md}px`;
   }
 
+  let lgMaxWidth;
+  if (maxWidth && maxWidth.lg) {
+    lgMaxWidth = `${maxWidth.lg}px`;
+  }
+
   return css`
     align-items: ${alignItems};
 
@@ -40,6 +51,10 @@ const getComputedMediaQueries = ({ align, maxWidth } :Props) => {
 
     @media only screen and (min-width: ${MEDIA_QUERY_MD}px) {
       max-width: ${mdMaxWidth};
+    }
+
+    @media only screen and (min-width: ${MEDIA_QUERY_LG}px) {
+      max-width: ${lgMaxWidth};
     }
   `;
 };
