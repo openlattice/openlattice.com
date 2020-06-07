@@ -2,7 +2,7 @@
  * @flow
  */
 
-import styled from 'styled-components';
+import styled, { css } from 'styled-components';
 
 import { NEUTRALS } from '../../core/style/Colors';
 import { MEDIA_QUERY_LG, MEDIA_QUERY_MD } from '../../core/style/Sizes';
@@ -35,24 +35,35 @@ const MARGIN_BOTTOM = {
   h3: '16px',
 };
 
+type Props = {
+  align ?:string;
+  as ?:string;
+};
+
+const getComputedStyles = ({ align = 'center', as = 'h1' } :Props) => (
+  css`
+    font-size: ${FONT_SIZE_SM[as]};
+    font-weight: ${FONT_WEIGHT[as]};
+    line-height: ${LINE_HEIGHT[as]};
+    margin-bottom: ${MARGIN_BOTTOM[as]};
+    text-align: ${align};
+
+    @media only screen and (min-width: ${MEDIA_QUERY_LG}px) {
+      font-size: ${FONT_SIZE_LG[as]};
+    }
+  `
+);
+
 const Header = styled.h1`
   color: ${NEUTRALS.GRAY_06};
-  font-size: ${({ as }) => FONT_SIZE_SM[as]};
-  font-weight: ${({ as }) => FONT_WEIGHT[as]};
-  line-height: ${({ as }) => LINE_HEIGHT[as]};
   margin: 0;
-  margin-bottom: ${({ as }) => MARGIN_BOTTOM[as]};
   padding: 0;
-  text-align: ${({ align }) => (align || 'center')};
   white-space: normal;
   word-break: break-word;
+  ${getComputedStyles}
 
   @media only screen and (min-width: ${MEDIA_QUERY_MD}px) {
     white-space: pre-wrap;
-  }
-
-  @media only screen and (min-width: ${MEDIA_QUERY_LG}px) {
-    font-size: ${({ as }) => FONT_SIZE_LG[as]};
   }
 `;
 
