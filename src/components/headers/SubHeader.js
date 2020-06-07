@@ -2,7 +2,7 @@
  * @flow
  */
 
-import styled from 'styled-components';
+import styled, { css } from 'styled-components';
 
 import { NEUTRALS } from '../../core/style/Colors';
 import { MEDIA_QUERY_LG, MEDIA_QUERY_MD } from '../../core/style/Sizes';
@@ -19,23 +19,34 @@ const FONT_WEIGHT = {
   h6: 'normal',
 };
 
+type Props = {
+  align ?:string;
+  as ?:string;
+};
+
+const getComputedStyles = ({ align = 'center', as = 'h1' } :Props) => (
+  css`
+    font-weight: ${FONT_WEIGHT[as]};
+    text-align: ${align};
+
+    @media only screen and (min-width: ${MEDIA_QUERY_LG}px) {
+      font-size: ${FONT_SIZE_LG[as]};
+    }
+  `
+);
+
 const SubHeader = styled.h4`
   color: ${NEUTRALS.GRAY_07};
   font-size: 16px;
-  font-weight: ${({ as }) => FONT_WEIGHT[as]};
   margin: 0;
   margin-bottom: 32px;
   padding: 0;
-  text-align: ${({ align }) => (align || 'center')};
   white-space: normal;
   word-break: break-word;
+  ${getComputedStyles}
 
   @media only screen and (min-width: ${MEDIA_QUERY_MD}px) {
     white-space: pre-wrap;
-  }
-
-  @media only screen and (min-width: ${MEDIA_QUERY_LG}px) {
-    font-size: ${({ as }) => FONT_SIZE_LG[as]};
   }
 `;
 
