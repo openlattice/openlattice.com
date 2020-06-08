@@ -5,14 +5,14 @@
 import React from 'react';
 
 import FooterSection from '../footer/FooterSectionWithPageLinks';
-import ProductsIntro from './ProductsIntro';
+import ProductsIntroSection from './ProductsIntroSection';
 import ProductsList from './ProductsList';
 import ScrollToTopOnMount from '../../components/layout/ScrollToTopOnMount';
 
 const Products = () => (
   <>
     <ScrollToTopOnMount />
-    <ProductsIntro />
+    <ProductsIntroSection />
     <ProductsList />
     <FooterSection />
   </>
