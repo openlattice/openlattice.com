@@ -22,7 +22,7 @@ const PageIntroWrapper = styled(PageIntro)`
   }
 `;
 
-const ProductsIntro = () => (
+const ProductsIntroSection = () => (
   <PageSection bgColor={NEUTRALS.GRAY_05} includeMenu>
     <Content>
       <PageIntroWrapper>
@@ -39,4 +39,4 @@ const ProductsIntro = () => (
   </PageSection>
 );
 
-export default ProductsIntro;
+export default ProductsIntroSection;
