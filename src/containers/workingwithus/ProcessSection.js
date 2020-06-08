@@ -56,7 +56,7 @@ const ProcessStepsGrid = styled(SectionContentGrid)`
 
 const ProcessStepsSectionContent = styled(SectionContent)`
   ${ProcessStepsGrid}:first-child {
-    margin-top: 0px;
+    margin-top: 0;
   }
 `;
 
