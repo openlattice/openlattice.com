@@ -1,4 +1,7 @@
-// @flow
+/*
+ * @flow
+ */
+
 import styled from 'styled-components';
 import { StyleUtils } from 'lattice-ui-kit';
 
@@ -6,12 +9,12 @@ import { NEUTRALS, PINKS } from '../../core/style/Colors';
 
 const { getStyleVariation } = StyleUtils;
 
-export const getTagColor = getStyleVariation('tagType', {
+const getTagColor = getStyleVariation('tagType', {
   beta: PINKS.PINK02,
   comingSoon: NEUTRALS.GRAY_13
 });
 
-export const Tag = styled.div`
+const Tag = styled.div`
   background-color: ${getTagColor};
   border-radius: 3px;
   color: ${NEUTRALS.WHITE};
@@ -22,3 +25,5 @@ export const Tag = styled.div`
   padding: 1px 5px;
   text-transform: uppercase;
 `;
+
+export default Tag;

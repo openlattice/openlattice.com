@@ -19,7 +19,7 @@ import {
   SECTION_9,
 } from './Text';
 
-import FooterSectionWithPageLinks from '../FooterSectionWithPageLinks';
+import FooterSection from '../FooterSection';
 import PageSection from '../../../components/layout/NewPageSection';
 import ScrollToTopOnMount from '../../../components/layout/ScrollToTopOnMount';
 import * as Routes from '../../../core/router/Routes';
@@ -225,7 +225,7 @@ const PrivacyPolicy = () => (
         </BodyTextWrapper>
       </SectionContent>
     </PageSection>
-    <FooterSectionWithPageLinks />
+    <FooterSection />
   </>
 );
 

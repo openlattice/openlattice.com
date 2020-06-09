@@ -65,8 +65,6 @@ const TileGrid = styled(SectionContentGrid)`
 `;
 
 const Tile = styled(InfoTile)`
-  justify-content: space-between;
-
   @media only screen and (min-width: ${MEDIA_QUERY_MD}px) {
     &:nth-child(even) {
       margin: 0 auto 0 0;

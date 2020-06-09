@@ -24,7 +24,7 @@ import CAREIconSVG from '../../assets/svg/icons/care-icon.svg';
 import Cycle from '../../assets/svg/circle-icons/cycle.svg';
 import FeatureImg1 from '../../assets/images/care/care-feature-shot-1.png';
 import FeatureImg2 from '../../assets/images/care/care-feature-shot-2.png';
-import FooterSectionWithPageLinks from '../footer/FooterSectionWithPageLinks';
+import FooterSection from '../footer/FooterSection';
 import Headphones from '../../assets/svg/circle-icons/headphones.svg';
 import Logs from '../../assets/svg/circle-icons/logs.svg';
 import PageSection from '../../components/layout/NewPageSection';
@@ -153,7 +153,7 @@ const CareProductPage = () => (
         </ProductOverviewWrapper>
       </ExtendedFeaturesContent>
     </PageSection>
-    <FooterSectionWithPageLinks />
+    <FooterSection />
   </>
 );
 

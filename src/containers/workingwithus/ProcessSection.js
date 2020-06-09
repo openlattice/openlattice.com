@@ -114,7 +114,7 @@ const StepBubble = styled.div`
   }
 
   @media only screen and (min-width: ${MEDIA_QUERY_MD}px) {
-    &::after {
+    > div {
       background-color: ${NEUTRALS.GRAY_09};
       content: '';
       height: 100%;
@@ -144,6 +144,7 @@ const ProcessSection = () => (
         <StepTile align="left">
           <StepBubble>
             <span>1</span>
+            <div />
           </StepBubble>
           <div>
             <Header as="h3">Problem definition</Header>
@@ -158,6 +159,7 @@ const ProcessSection = () => (
         <StepTile align="left">
           <StepBubble>
             <span>2</span>
+            <div />
           </StepBubble>
           <div>
             <Header as="h3">Data sharing agreements</Header>
@@ -172,6 +174,7 @@ const ProcessSection = () => (
         <StepTile align="left">
           <StepBubble>
             <span>3</span>
+            <div />
           </StepBubble>
           <div>
             <Header as="h3">Integrate data pipelines</Header>
