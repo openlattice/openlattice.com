@@ -22,7 +22,7 @@ import {
   ITEM_9
 } from './Text';
 
-import FooterSectionWithPageLinks from '../FooterSectionWithPageLinks';
+import FooterSection from '../FooterSection';
 import PageSection from '../../../components/layout/NewPageSection';
 import ScrollToTopOnMount from '../../../components/layout/ScrollToTopOnMount';
 import * as Routes from '../../../core/router/Routes';
@@ -266,7 +266,7 @@ const TermsOfService = () => (
         </BodyTextWrapper>
       </SectionContent>
     </PageSection>
-    <FooterSectionWithPageLinks />
+    <FooterSection />
   </>
 );
 

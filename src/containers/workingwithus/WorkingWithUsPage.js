@@ -8,7 +8,7 @@ import IntegrationSection from './IntegrationSection';
 import ProcessSection from './ProcessSection';
 import WorkingWithUsIntroSection from './WorkingWithUsIntroSection';
 
-import FooterSectionWithPageLinks from '../footer/FooterSectionWithPageLinks';
+import FooterSection from '../footer/FooterSection';
 import ScrollToTopOnMount from '../../components/layout/ScrollToTopOnMount';
 
 const WorkingWithUsPage = () => (
@@ -17,7 +17,7 @@ const WorkingWithUsPage = () => (
     <WorkingWithUsIntroSection />
     <IntegrationSection />
     <ProcessSection />
-    <FooterSectionWithPageLinks />
+    <FooterSection />
   </>
 );
 
