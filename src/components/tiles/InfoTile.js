@@ -78,6 +78,11 @@ const InfoTileWrapper = styled.div`
   flex-direction: column;
   ${getComputedStyles}
 
+  > a {
+    margin-bottom: 0;
+    margin-top: auto;
+  }
+
   > img,
   svg {
     margin-bottom: 24px;

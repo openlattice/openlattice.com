@@ -9,7 +9,7 @@ import CorePlatformSection from './CorePlatformSection';
 import GraphicSection from './GraphicSection';
 import PlatformIntroSection from './PlatformIntroSection';
 
-import FooterSectionWithPageLinks from '../footer/FooterSectionWithPageLinks';
+import FooterSection from '../footer/FooterSection';
 import ScrollToTopOnMount from '../../components/layout/ScrollToTopOnMount';
 
 const Platform = () => (
@@ -19,7 +19,7 @@ const Platform = () => (
     <GraphicSection />
     <CorePlatformSection />
     <ComplianceAndSecuritySection />
-    <FooterSectionWithPageLinks />
+    <FooterSection />
   </>
 );
 

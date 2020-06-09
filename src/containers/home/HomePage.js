@@ -10,7 +10,7 @@ import InfoSection from './InfoSection';
 import OurCustomersSection from './OurCustomersSection';
 import QuotesSection from './QuotesSection';
 
-import FooterSectionWithPageLinks from '../footer/FooterSectionWithPageLinks';
+import FooterSection from '../footer/FooterSection';
 import ScrollToTopOnMount from '../../components/layout/ScrollToTopOnMount';
 
 const HomePage = () => (
@@ -21,7 +21,7 @@ const HomePage = () => (
     <FeaturesSection />
     <QuotesSection />
     <OurCustomersSection />
-    <FooterSectionWithPageLinks />
+    <FooterSection />
   </>
 );
 

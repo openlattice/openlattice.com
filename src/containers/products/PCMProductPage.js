@@ -24,7 +24,7 @@ import {
 import Checkboard from '../../assets/svg/circle-icons/checkboard.svg';
 import FeatureImg1 from '../../assets/images/pcm/pcm-feature-shot-1.png';
 import FeatureImg2 from '../../assets/images/pcm/pcm-feature-shot-2.png';
-import FooterSectionWithPageLinks from '../footer/FooterSectionWithPageLinks';
+import FooterSection from '../footer/FooterSection';
 import Gravel from '../../assets/svg/circle-icons/gavel.svg';
 import Merge from '../../assets/svg/circle-icons/merge.svg';
 import PCMIconSVG from '../../assets/svg/icons/pcm-icon.svg';
@@ -148,7 +148,7 @@ const PCMProductPage = () => (
         </ProductOverviewWrapper>
       </ExtendedFeaturesContent>
     </PageSection>
-    <FooterSectionWithPageLinks />
+    <FooterSection />
   </>
 );
 

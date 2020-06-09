@@ -20,7 +20,7 @@ import {
   SAVE_TIME,
 } from './constants';
 
-import FooterSectionWithPageLinks from '../../footer/FooterSectionWithPageLinks';
+import FooterSection from '../../footer/FooterSection';
 import OpenLatticeIcon from '../../../assets/svg/icons/ol-icon.svg';
 import PageSection from '../../../components/layout/NewPageSection';
 import ScrollToTopOnMount from '../../../components/layout/ScrollToTopOnMount';
@@ -230,7 +230,7 @@ const ChronicleProductPage = () => (
       <ChronicleFAQ />
     </PageSection>
     <ContactUsPageSection />
-    <FooterSectionWithPageLinks />
+    <FooterSection />
   </>
 );
 

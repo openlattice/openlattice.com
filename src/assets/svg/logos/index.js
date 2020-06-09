@@ -2,35 +2,36 @@
  * @flow
  */
 
-/* eslint-disable react/require-default-props */
-
-import React from 'react';
+import styled from 'styled-components';
 
 import GDPRLogoSVG from './eu-gdpr-logo.svg';
 import SecureCloudLogoSVG from './secure-cloud-logo.svg';
 import SecureDataLogoSVG from './secure-data-logo.svg';
 import SecureLoginLogoSVG from './secure-login-logo.svg';
 
-type Props = {
-  className ?:string;
-  width ?:string;
-};
+const GDPRLogo = styled.img.attrs(({ width }) => ({
+  alt: 'eu-gdpr-logo',
+  src: GDPRLogoSVG,
+  width: width || 64,
+}))``;
 
-const GDPRLogo = ({ className = '', width = 64 } :Props) => (
-  <img alt="eu-gdpr-logo" className={className} src={GDPRLogoSVG} width={width} />
-);
+const SecureCloudLogo = styled.img.attrs(({ width }) => ({
+  alt: 'secure-cloud-logo',
+  src: SecureCloudLogoSVG,
+  width: width || 64,
+}))``;
 
-const SecureCloudLogo = ({ className = '', width = 64 } :Props) => (
-  <img alt="secure-cloud-logo" className={className} src={SecureCloudLogoSVG} width={width} />
-);
+const SecureDataLogo = styled.img.attrs(({ width }) => ({
+  alt: 'secure-data-logo',
+  src: SecureDataLogoSVG,
+  width: width || 64,
+}))``;
 
-const SecureDataLogo = ({ className = '', width = 64 } :Props) => (
-  <img alt="secure-data-logo" className={className} src={SecureDataLogoSVG} width={width} />
-);
-
-const SecureLoginLogo = ({ className = '', width = 64 } :Props) => (
-  <img alt="secure-login-logo" className={className} src={SecureLoginLogoSVG} width={width} />
-);
+const SecureLoginLogo = styled.img.attrs(({ width }) => ({
+  alt: 'secure-login-logo',
+  src: SecureLoginLogoSVG,
+  width: width || 64,
+}))``;
 
 export {
   GDPRLogo,

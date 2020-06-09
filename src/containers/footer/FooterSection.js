@@ -10,9 +10,8 @@ import { NavLink } from 'react-router-dom';
 import OpenLatticeIconSVG from '../../assets/svg/icons/ol-icon-gray.svg';
 import PageSection from '../../components/layout/NewPageSection';
 import * as Routes from '../../core/router/Routes';
-import { SectionContent } from '../../components';
+import { SectionContent, Tag } from '../../components';
 import { TARGET, helpCenterLink } from '../../components/headers/MenuConsts';
-import { Tag } from '../../components/tags/Tag';
 import { NEUTRALS } from '../../core/style/Colors';
 import { MEDIA_QUERY_MD, MEDIA_QUERY_SM } from '../../core/style/Sizes';
 

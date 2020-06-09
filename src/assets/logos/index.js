@@ -2,35 +2,36 @@
  * @flow
  */
 
-/* eslint-disable react/require-default-props */
-
-import React from 'react';
+import styled from 'styled-components';
 
 import CFRLogoPNG from './42cfrp2.png';
 import CJISLogoPNG from './cjis.png';
 import FERPALogoPNG from './ferpa.png';
 import HIPAALogoPNG from './hipaa.png';
 
-type Props = {
-  className ?:string;
-  width ?:string;
-};
+const CFRLogo = styled.img.attrs(({ width }) => ({
+  alt: 'cfr-logo',
+  src: CFRLogoPNG,
+  width: width || 64,
+}))``;
 
-const CFRLogo = ({ className = '', width = 64 } :Props) => (
-  <img alt="cfr-logo" className={className} src={CFRLogoPNG} width={width} />
-);
+const CJISLogo = styled.img.attrs(({ width }) => ({
+  alt: 'cjis-logo',
+  src: CJISLogoPNG,
+  width: width || 64,
+}))``;
 
-const CJISLogo = ({ className = '', width = 64 } :Props) => (
-  <img alt="cjis-logo" className={className} src={CJISLogoPNG} width={width} />
-);
+const FERPALogo = styled.img.attrs(({ width }) => ({
+  alt: 'ferpa-logo',
+  src: FERPALogoPNG,
+  width: width || 64,
+}))``;
 
-const FERPALogo = ({ className = '', width = 64 } :Props) => (
-  <img alt="ferpa-logo" className={className} src={FERPALogoPNG} width={width} />
-);
-
-const HIPAALogo = ({ className = '', width = 64 } :Props) => (
-  <img alt="hipaa-logo" className={className} src={HIPAALogoPNG} width={width} />
-);
+const HIPAALogo = styled.img.attrs(({ width }) => ({
+  alt: 'hipaa-logo',
+  src: HIPAALogoPNG,
+  width: width || 64,
+}))``;
 
 export {
   CFRLogo,

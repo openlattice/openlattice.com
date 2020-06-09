@@ -5,7 +5,7 @@
 import React from 'react';
 import styled from 'styled-components';
 
-import FooterSection from '../footer/FooterSectionWithPageLinks';
+import FooterSection from '../footer/FooterSection';
 import PageSection from '../../components/layout/NewPageSection';
 import ScrollToTopOnMount from '../../components/layout/ScrollToTopOnMount';
 
