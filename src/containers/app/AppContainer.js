@@ -13,9 +13,8 @@ import {
 import { Route, Switch } from 'react-router';
 
 import AboutPage from '../about/AboutPage';
-import HomePage from '../home/HomePage';
 import CareProductPage from '../products/CareProductPage';
-import PCMProductPage from '../products/PCMProductPage';
+import HomePage from '../home/HomePage';
 import PlatformPage from '../platform/PlatformPage';
 import PrivacyPolicy from '../footer/privacy/PrivacyPolicy';
 import Products from '../products/ProductsPage';
@@ -24,6 +23,7 @@ import TermsOfService from '../footer/termsofservice/TermsOfService';
 import WorkingWithUsPage from '../workingwithus/WorkingWithUsPage';
 import * as Routes from '../../core/router/Routes';
 import { ChronicleProductPage } from '../products/chronicle';
+import { PCMProductPage } from '../products/pcm';
 
 const AppContainer = () => (
   <ThemeProvider theme={lightTheme}>

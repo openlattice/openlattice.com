@@ -96,7 +96,7 @@ const PageSection = ({
 );
 
 PageSection.defaultProps = {
-  bgColor: undefined,
+  bgColor: 'white',
   bgComponent: undefined,
   bgImage: undefined,
   bgSize: undefined,
