@@ -4,7 +4,7 @@
 
 import React from 'react';
 
-import styled from 'styled-components';
+import { ProductFeaturesSectionContent } from '../components';
 
 import {
   AUTOFILL_HEADER,
@@ -20,15 +20,8 @@ import {
 } from './constants/language';
 
 import PageSection from '../../../components/layout/NewPageSection';
-import {
-  PCMFeatureShot1,
-  PCMFeatureShot2,
-} from '../../../assets/images/pcm';
-import {
-  CheckBoardCircleIcon,
-  GavelCircleIcon,
-  MergeArrowCircleIcon,
-} from '../../../assets/svg/circle-icons';
+import { PCMFeatureShot1, PCMFeatureShot2 } from '../../../assets/images/pcm';
+import { CheckBoardCircleIcon, GavelCircleIcon, MergeArrowCircleIcon } from '../../../assets/svg/circle-icons';
 import {
   GraphicShot,
   Header,
@@ -37,19 +30,10 @@ import {
   SectionContentGrid,
   SubHeader,
 } from '../../../components';
-import { MEDIA_QUERY_LG } from '../../../core/style/Sizes';
-
-const FeaturesSectionContent = styled(SectionContent)`
-  margin-top: 50%;
-
-  @media only screen and (min-width: ${MEDIA_QUERY_LG}px) {
-    margin-top: 450px
-  }
-`;
 
 const PCMFeaturesSection = () => (
   <PageSection>
-    <FeaturesSectionContent>
+    <ProductFeaturesSectionContent>
       <SectionContentGrid>
         <InfoTile align="left">
           <MergeArrowCircleIcon />
@@ -67,7 +51,7 @@ const PCMFeaturesSection = () => (
           <SubHeader as="h6">{MANAGE_SUPERVISION_SUBHEADER}</SubHeader>
         </InfoTile>
       </SectionContentGrid>
-    </FeaturesSectionContent>
+    </ProductFeaturesSectionContent>
     <SectionContent>
       <SectionContentGrid align="center">
         <InfoTile align="left">
