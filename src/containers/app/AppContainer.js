@@ -17,13 +17,13 @@ import HomePage from '../home/HomePage';
 import PlatformPage from '../platform/PlatformPage';
 import PrivacyPolicy from '../footer/privacy/PrivacyPolicy';
 import Products from '../products/ProductsPage';
-import ResearchHubProductPage from '../products/ResearchHubProductPage';
 import TermsOfService from '../footer/termsofservice/TermsOfService';
 import WorkingWithUsPage from '../workingwithus/WorkingWithUsPage';
 import * as Routes from '../../core/router/Routes';
 import { CAREProductPage } from '../products/care';
 import { ChronicleProductPage } from '../products/chronicle';
 import { PCMProductPage } from '../products/pcm';
+import { ResearchHubProductPage } from '../products/research-hub';
 
 const AppContainer = () => (
   <ThemeProvider theme={lightTheme}>
