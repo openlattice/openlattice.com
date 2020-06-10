@@ -23,9 +23,8 @@ import FooterSection from '../FooterSection';
 import PageSection from '../../../components/layout/NewPageSection';
 import ScrollToTopOnMount from '../../../components/layout/ScrollToTopOnMount';
 import * as Routes from '../../../core/router/Routes';
-import { SectionContent } from '../../../components';
+import { Header, SectionContent } from '../../../components';
 import { TARGET } from '../../../components/headers/MenuConsts';
-import { PageIntro } from '../../../components/headers/PageHeaders';
 import { NEUTRALS } from '../../../core/style/Colors';
 import {
   BodyText,
@@ -90,7 +89,7 @@ const PrivacyPolicy = () => (
     <ScrollToTopOnMount />
     <PageSection bgColor={NEUTRALS.WHITE} includeMenu>
       <SectionContent>
-        <PageIntro>Privacy Policy</PageIntro>
+        <Header>Privacy Policy</Header>
         <LastUpdated>Last updated April 03, 2019</LastUpdated>
         <BodyTextWrapper>
           <BodyText>

@@ -34,6 +34,12 @@ import { NEUTRALS, PURPLES } from '../../core/style/Colors';
 import { MEDIA_QUERY_MD, MEDIA_QUERY_SM } from '../../core/style/Sizes';
 import { IMPLEMENTATION_PLAN_LINK } from '../../utils/constants/links';
 
+const ProcessStepsSectionContent = styled(SectionContent)`
+  div:first-child {
+    margin-top: 0;
+  }
+`;
+
 const ProcessStepsGrid = styled(SectionContentGrid)`
   grid-template-columns: auto;
   margin: 128px 0 24px 0;
@@ -51,12 +57,6 @@ const ProcessStepsGrid = styled(SectionContentGrid)`
       justify-self: flex-end;
       max-width: 432px;
     }
-  }
-`;
-
-const ProcessStepsSectionContent = styled(SectionContent)`
-  ${ProcessStepsGrid}:first-child {
-    margin-top: 0px;
   }
 `;
 

@@ -4,20 +4,20 @@
 
 import React from 'react';
 
-import PCMFeaturesSection from './PCMFeaturesSection';
-import PCMIntroSection from './PCMIntroSection';
+import CAREFeaturesSection from './CAREFeaturesSection';
+import CAREIntroSection from './CAREIntroSection';
 
 import FooterSection from '../../footer/FooterSection';
 import { ContactUsPageSection, ScrollToTopOnMount } from '../../../components';
 
-const PCMProductPage = () => (
+const CAREProductPage = () => (
   <>
     <ScrollToTopOnMount />
-    <PCMIntroSection />
-    <PCMFeaturesSection />
+    <CAREIntroSection />
+    <CAREFeaturesSection />
     <ContactUsPageSection />
     <FooterSection />
   </>
 );
 
-export default PCMProductPage;
+export default CAREProductPage;

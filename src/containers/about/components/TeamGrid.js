@@ -17,20 +17,22 @@ const GRID_COLUMNS_1 = (2 * PAGE_PADDING) + (1 * GRID_GAP) + (2 * GRID_ITEM_MAX_
 const GRID_COLUMNS_2 = (2 * PAGE_PADDING) + (2 * GRID_GAP) + (3 * GRID_ITEM_MAX_WIDTH) - 1; // 879
 const GRID_COLUMNS_3 = (2 * PAGE_PADDING) + (3 * GRID_GAP) + (4 * GRID_ITEM_MAX_WIDTH) - 1; // 1167
 
-const MemberGrid = styled(SectionContentGrid)`
-  > div {
-    max-width: ${GRID_ITEM_MAX_WIDTH}px;
-  }
+const getMaxWidth = ({ members }) => {
+  if (members === 1) return `${GRID_ITEM_MAX_WIDTH}px`;
+  if (members === 2) return `${GRID_ITEM_MAX_WIDTH * 2 + GRID_GAP}px`;
+  if (members === 3) return `${GRID_ITEM_MAX_WIDTH * 3 + GRID_GAP * 2}px`;
+  return undefined;
+};
 
-  max-width: ${({ members }) => {
-    if (members === 1) return `${GRID_ITEM_MAX_WIDTH}px`;
-    if (members === 2) return `${GRID_ITEM_MAX_WIDTH * 2 + GRID_GAP}px`;
-    if (members === 3) return `${GRID_ITEM_MAX_WIDTH * 3 + GRID_GAP * 2}px`;
-    return undefined;
-  }};
+const MemberGrid = styled(SectionContentGrid)`
+  max-width: ${getMaxWidth};
 
   @media only screen and (max-width: ${GRID_COLUMNS_1}px) {
     grid-template-columns: auto;
+  }
+
+  > div {
+    max-width: ${GRID_ITEM_MAX_WIDTH}px;
   }
 `;
 
