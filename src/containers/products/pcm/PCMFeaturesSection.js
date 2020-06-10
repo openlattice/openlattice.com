@@ -4,6 +4,8 @@
 
 import React from 'react';
 
+import styled from 'styled-components';
+
 import {
   AUTOFILL_HEADER,
   AUTOFILL_SUBHEADER,
@@ -35,10 +37,19 @@ import {
   SectionContentGrid,
   SubHeader,
 } from '../../../components';
+import { MEDIA_QUERY_LG } from '../../../core/style/Sizes';
+
+const FeaturesSectionContent = styled(SectionContent)`
+  margin-top: 50%;
+
+  @media only screen and (min-width: ${MEDIA_QUERY_LG}px) {
+    margin-top: 450px
+  }
+`;
 
 const PCMFeaturesSection = () => (
   <PageSection>
-    <SectionContent>
+    <FeaturesSectionContent>
       <SectionContentGrid>
         <InfoTile align="left">
           <MergeArrowCircleIcon />
@@ -56,7 +67,7 @@ const PCMFeaturesSection = () => (
           <SubHeader as="h6">{MANAGE_SUPERVISION_SUBHEADER}</SubHeader>
         </InfoTile>
       </SectionContentGrid>
-    </SectionContent>
+    </FeaturesSectionContent>
     <SectionContent>
       <SectionContentGrid align="center">
         <InfoTile align="left">
