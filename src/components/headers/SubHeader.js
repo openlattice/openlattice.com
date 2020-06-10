@@ -24,7 +24,7 @@ type Props = {
   as ?:string;
 };
 
-const getComputedStyles = ({ align = 'center', as = 'h1' } :Props) => (
+const getComputedStyles = ({ align = 'center', as = 'h4' } :Props) => (
   css`
     font-weight: ${FONT_WEIGHT[as]};
     text-align: ${align};
