@@ -4,8 +4,8 @@
 
 import styled from 'styled-components';
 
-import { NEUTRALS } from '../../core/style/Colors';
-import { MEDIA_QUERY_MD, MEDIA_QUERY_SM } from '../../core/style/Sizes';
+import { NEUTRALS } from '../../../core/style/Colors';
+import { MEDIA_QUERY_MD, MEDIA_QUERY_SM } from '../../../core/style/Sizes';
 
 const ProductStamp = styled.div`
   align-items: center;
@@ -30,13 +30,16 @@ const ProductStamp = styled.div`
   }
 
   > img {
+    height: 32px;
     width: 32px;
 
     @media only screen and (min-width: ${MEDIA_QUERY_SM}px) {
+      height: 36px;
       width: 36px;
     }
 
     @media only screen and (min-width: ${MEDIA_QUERY_MD}px) {
+      height: 40px;
       width: 40px;
     }
   }

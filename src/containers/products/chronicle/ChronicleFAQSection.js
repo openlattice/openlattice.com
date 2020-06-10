@@ -4,15 +4,9 @@ import styled from 'styled-components';
 import { faMinus, faPlus } from '@fortawesome/pro-light-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
+import PageSection from '../../../components/layout/NewPageSection';
+import { Header, SectionContent } from '../../../components';
 import { NEUTRALS, PURPLES } from '../../../core/style/Colors';
-import { CONTENT_WIDTH } from '../../../core/style/Sizes';
-
-const FAQ = styled.div`
-  margin: 120px auto;
-  padding: 0 30px;
-  max-width: ${CONTENT_WIDTH}px;
-  width: 100%;
-`;
 
 const Question = styled.span`
   color: ${NEUTRALS.GRAY_06};
@@ -22,8 +16,10 @@ const Question = styled.span`
 
 const QAWrapper = styled.div`
   border-bottom: 1px solid ${NEUTRALS.GRAY_10};
+  cursor: pointer;
   display: flex;
   padding: 40px 0;
+  width: 100%;
 
   > div {
     margin-left: 24px;
@@ -81,7 +77,7 @@ const ANSWERS = [
     + ' which improves engagement and increases the probability that your participants will respond.',
 ];
 
-const ChronicleFAQ = () => {
+const ChronicleFAQSection = () => {
 
   const [visibleAnswers, setVisibleAnswers] = useState({});
 
@@ -97,9 +93,9 @@ const ChronicleFAQ = () => {
   };
 
   return (
-    <FAQ>
-      <h1>FAQ</h1>
-      <div>
+    <PageSection>
+      <SectionContent align="left">
+        <Header as="h2">FAQ</Header>
         {
           QUESTIONS.map((question, index) => (
             <QAWrapper data-question={question} key={question} onClick={handleOnClick}>
@@ -119,9 +115,9 @@ const ChronicleFAQ = () => {
             </QAWrapper>
           ))
         }
-      </div>
-    </FAQ>
+      </SectionContent>
+    </PageSection>
   );
 };
 
-export default ChronicleFAQ;
+export default ChronicleFAQSection;

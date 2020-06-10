@@ -2,42 +2,36 @@
  * @flow
  */
 
-/* eslint-disable react/require-default-props */
+import styled from 'styled-components';
 
-import React from 'react';
+import ChronicleFeatureShot1PNG from './chronicle-feature-shot-1.png';
+import ChronicleFeatureShot2PNG from './chronicle-feature-shot-2.png';
+import ChronicleFeatureShot3PNG from './chronicle-feature-shot-3.png';
+import ChronicleProductShotPNG from './chronicle-product-shot.png';
 
-import ChronicleAndroidAppPNG from './chronicle-android-app.png';
-import ChronicleParticipantsTablePNG from './chronicle-participants-table.png';
-import ChronicleStudyDetailsPNG from './chronicle-study-details.png';
-import MetaTablePNG from './meta-table.png';
+const ChronicleFeatureShot1 = styled.img.attrs({
+  alt: 'chronicle-feature-shot-1',
+  src: ChronicleFeatureShot1PNG,
+})``;
 
-type Props = {
-  className ?:string;
-};
+const ChronicleFeatureShot2 = styled.img.attrs({
+  alt: 'chronicle-feature-shot-2',
+  src: ChronicleFeatureShot2PNG,
+})``;
 
-// const ChronicleAndroidApp = ({ className = '' } :Props) => (
-//   <img alt="chronicle-android-app-screenshot" className={className} src={ChronicleAndroidAppPNG} />
-// );
+const ChronicleFeatureShot3 = styled.img.attrs({
+  alt: 'chronicle-feature-shot-3',
+  src: ChronicleFeatureShot3PNG,
+})``;
 
-const ChronicleParticipantsTableImg = ({ className = '' } :Props) => (
-  <img alt="chronicle-participants-table-screenshot" className={className} src={ChronicleParticipantsTablePNG} />
-);
-
-// const ChronicleStudyDetails = ({ className = '' } :Props) => (
-//   <img alt="chronicle-study-details-screenshot" className={className} src={ChronicleStudyDetailsPNG} />
-// );
-
-// const MetaTable = ({ className = '' } :Props) => (
-//   <img alt="chronicle-study-details-screenshot" className={className} src={MetaTablePNG} />
-// );
+const ChronicleProductShot = styled.img.attrs({
+  alt: 'chronicle-product-shot',
+  src: ChronicleProductShotPNG,
+})``;
 
 export {
-  // ChronicleAndroidApp,
-  ChronicleAndroidAppPNG,
-  ChronicleParticipantsTableImg,
-  ChronicleParticipantsTablePNG,
-  // ChronicleStudyDetails,
-  ChronicleStudyDetailsPNG,
-  // MetaTable,
-  MetaTablePNG,
+  ChronicleFeatureShot1,
+  ChronicleFeatureShot2,
+  ChronicleFeatureShot3,
+  ChronicleProductShot,
 };
