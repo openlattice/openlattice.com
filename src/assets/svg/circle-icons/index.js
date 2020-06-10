@@ -6,11 +6,13 @@ import styled from 'styled-components';
 
 import AnonymousSVG from './anonymous.svg';
 import BarsSVG from './bars.svg';
+import CheckBoardSVG from './checkboard.svg';
 import CheckSVG from './check.svg';
 import CloudSVG from './cloud.svg';
 import CloudSecureSVG from './cloud-secure.svg';
 import DBSyncSVG from './database-sync.svg';
 import DotGridSVG from './dot-grid.svg';
+import GavelSVG from './gavel.svg';
 import KeySVG from './key.svg';
 import LinkSVG from './link.svg';
 import LockSVG from './lock.svg';
@@ -35,6 +37,12 @@ const AnonymousCircleIcon = styled.img.attrs(({ width }) => ({
 const BarsCircleIcon = styled.img.attrs(({ width }) => ({
   alt: 'bars-circle-icon',
   src: BarsSVG,
+  width: width || 64,
+}))``;
+
+const CheckBoardCircleIcon = styled.img.attrs(({ width }) => ({
+  alt: 'checkboard-circle-icon',
+  src: CheckBoardSVG,
   width: width || 64,
 }))``;
 
@@ -65,6 +73,12 @@ const DBSyncCircleIcon = styled.img.attrs(({ width }) => ({
 const DotGridCircleIcon = styled.img.attrs(({ width }) => ({
   alt: 'dot-grid-circle-icon',
   src: DotGridSVG,
+  width: width || 64,
+}))``;
+
+const GavelCircleIcon = styled.img.attrs(({ width }) => ({
+  alt: 'gavel-circle-icon',
+  src: GavelSVG,
   width: width || 64,
 }))``;
 
@@ -155,11 +169,13 @@ const Users2SolidCircleIcon = styled.img.attrs(({ width }) => ({
 export {
   AnonymousCircleIcon,
   BarsCircleIcon,
+  CheckBoardCircleIcon,
   CheckCircleIcon,
   CloudCircleIcon,
   CloudSecureCircleIcon,
   DBSyncCircleIcon,
   DotGridCircleIcon,
+  GavelCircleIcon,
   KeyCircleIcon,
   LinkCircleIcon,
   LockCircleIcon,
