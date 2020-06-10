@@ -60,7 +60,7 @@ const TileGrid = styled(SectionContentGrid)`
   }
 
   @media only screen and (min-width: ${MEDIA_QUERY_SM}px) {
-    grid-template-columns: repeat(auto-fit,minmax(328px,1fr));
+    grid-template-columns: repeat(auto-fit, minmax(328px, 1fr));
   }
 `;
 

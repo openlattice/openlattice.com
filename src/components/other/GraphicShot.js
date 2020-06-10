@@ -34,6 +34,7 @@ const GraphicShot = styled.div`
 
   > img {
     border: ${({ withBorder }) => (withBorder ? `1px solid ${NEUTRALS.GRAY_10}` : undefined)};
+    border-radius: ${({ withBorder }) => (withBorder ? '3px' : 0)};
     max-width: ${({ maxWidth }) => (maxWidth ? `${maxWidth}px` : undefined)};
     width: 100%;
   }

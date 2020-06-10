@@ -26,9 +26,8 @@ import FooterSection from '../FooterSection';
 import PageSection from '../../../components/layout/NewPageSection';
 import ScrollToTopOnMount from '../../../components/layout/ScrollToTopOnMount';
 import * as Routes from '../../../core/router/Routes';
-import { SectionContent } from '../../../components';
+import { Header, SectionContent } from '../../../components';
 import { TARGET } from '../../../components/headers/MenuConsts';
-import { PageIntro } from '../../../components/headers/PageHeaders';
 import { NEUTRALS } from '../../../core/style/Colors';
 import {
   BodyText,
@@ -53,7 +52,7 @@ const TermsOfService = () => (
     <ScrollToTopOnMount />
     <PageSection bgColor={NEUTRALS.WHITE} includeMenu>
       <SectionContent>
-        <PageIntro>Terms of Service</PageIntro>
+        <Header>Terms of Service</Header>
         <LastUpdated>Last updated April 03, 2019</LastUpdated>
         <BodyTextWrapper>
           <BodyText>

@@ -40,11 +40,11 @@ import { MEDIA_QUERY_MD, MEDIA_QUERY_SM } from '../../core/style/Sizes';
 
 const TileGrid = styled(SectionContentGrid)`
   @media only screen and (min-width: ${MEDIA_QUERY_SM}px) {
-    grid-template-columns: repeat(auto-fit,minmax(336px,1fr));
+    grid-template-columns: repeat(auto-fit, minmax(336px, 1fr));
   }
 
   @media only screen and (min-width: ${MEDIA_QUERY_MD}px) {
-    grid-template-columns: repeat(auto-fit,minmax(400px,1fr));
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
   }
 `;
 
