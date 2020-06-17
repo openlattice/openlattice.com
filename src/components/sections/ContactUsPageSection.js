@@ -2,13 +2,13 @@ import React from 'react';
 
 import styled from 'styled-components';
 
+import PageSection from './PageSection';
 import SectionContent from './SectionContent';
 
-import PageSection from '../layout/NewPageSection';
 import { NEUTRALS } from '../../core/style/Colors';
 import { GRID_GAP, MEDIA_QUERY_MD, MEDIA_QUERY_SM } from '../../core/style/Sizes';
 import { openBeacon } from '../../utils/Utils';
-import { ContactUsPurple, ContactUsWhite } from '../controls';
+import { OutlineButton, ScheduleCallButton } from '../controls';
 
 const ContactUsSectionContent = styled(SectionContent)`
   margin: 128px 0;
@@ -60,8 +60,8 @@ const ContactUsPageSection = () => (
           If you have a project in mind or just want to learn more, don’t hesitate to contact us.
         </h3>
         <ButtonsGrid>
-          <ContactUsWhite onClick={openBeacon}>Send an email</ContactUsWhite>
-          <ContactUsPurple onClick={openBeacon}>Schedule a call</ContactUsPurple>
+          <OutlineButton color="primary" onClick={openBeacon}>Send an email</OutlineButton>
+          <ScheduleCallButton onClick={openBeacon} />
         </ButtonsGrid>
       </ContactUsGrid>
     </ContactUsSectionContent>

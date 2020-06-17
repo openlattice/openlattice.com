@@ -4,10 +4,10 @@
 
 import React from 'react';
 
-import PageSection from '../../components/layout/NewPageSection';
 import {
-  ContactUsPurple,
   Header,
+  PageSection,
+  ScheduleCallButton,
   SectionContent,
   SubHeader,
 } from '../../components';
@@ -22,11 +22,11 @@ const INTRO_SUB_HEADER = `Use data-driven workflows to accurately and efficientl
 problems, take necessary actions, and track outcomes.`;
 
 const ProductsIntroSection = () => (
-  <PageSection bgColor={NEUTRALS.GRAY_05} includeMenu>
+  <PageSection bgColor={NEUTRALS.GRAY_05}>
     <SectionContent maxWidth={{ sm: 480, md: 720 }}>
       <Header>{INTRO_HEADER}</Header>
       <SubHeader>{INTRO_SUB_HEADER}</SubHeader>
-      <ContactUsPurple onClick={openBeacon}>Schedule a call</ContactUsPurple>
+      <ScheduleCallButton onClick={openBeacon} />
     </SectionContent>
   </PageSection>
 );

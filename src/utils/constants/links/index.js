@@ -2,7 +2,9 @@
  * @flow
  */
 
-const HELP_URL = 'https://help.openlattice.com';
+const HELP_URL :'https://help.openlattice.com' = 'https://help.openlattice.com';
+const OL_PRIVACY_URL :'https://openlattice.com/privacy' = 'https://openlattice.com/privacy';
+const OL_URL :'https://openlattice.com' = 'https://openlattice.com';
 
 const CASE_STUDIES_LINK = `${HELP_URL}/collection/65-case-studies`;
 const DATA_INTEGRATIONS_LINK = `${HELP_URL}/article/78-how-is-openlattice-different-from-other-data-integration`;
@@ -22,6 +24,10 @@ const COURT_REMINDERS_REPORT_LINK = 'https://urbanlabs.uchicago.edu/attachments'
   + '/I42-954_NYCSummonsPaper_Final_Mar2018.pdf';
 const LJAF_REPORT_LINK = 'https://craftmediabucket.s3.amazonaws.com/uploads/PDFs/LJAF_Report_hidden-costs_FNL.pdf';
 
+const GOOGLE_ANALYTICS_URL = 'https://www.google.com/analytics';
+const GOOGLE_SUPPORT_URL = 'https://support.google.com/analytics/answer/6004245';
+const JAMS_URL = 'https://www.jamsadr.com';
+
 export {
   CASE_STUDIES_LINK,
   COURT_REMINDERS_REPORT_LINK,
@@ -29,10 +35,15 @@ export {
   DATA_LINKING_LINK,
   DATA_SHARING_LINK,
   EDM_LINK,
+  GOOGLE_ANALYTICS_URL,
+  GOOGLE_SUPPORT_URL,
   IMPLEMENTATION_PLAN_LINK,
   INTRO_TO_OL_LINK,
+  JAMS_URL,
   LJAF_REPORT_LINK,
   MANAGE_PERMISSIONS_LINK,
+  OL_PRIVACY_URL,
+  OL_URL,
   PRIVACY_SECURITY_LINK,
   TOP_UTILIZERS_LINK,
 };

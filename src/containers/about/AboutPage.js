@@ -5,15 +5,16 @@
 import React from 'react';
 
 import AboutIntroSection from './AboutIntroSection';
-import FooterSection from '../footer/FooterSection';
 import InvestorsSection from './InvestorsSection';
-import TeamSection from './TeamSection';
 import MissionSection from './MissionSection';
-import ScrollToTopOnMount from '../../components/layout/ScrollToTopOnMount';
+import TeamSection from './TeamSection';
+
+import FooterSection from '../footer/FooterSection';
+import { ScrollToTop } from '../../components';
 
 const About = () => (
   <>
-    <ScrollToTopOnMount />
+    <ScrollToTop />
     <AboutIntroSection />
     <MissionSection />
     <TeamSection />

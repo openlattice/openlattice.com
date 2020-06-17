@@ -31,7 +31,7 @@ const GlobalStyle = createGlobalStyle`
 
   html,
   body {
-    background-color: ${NEUTRALS.WHITE};
+    background-color: white;
     color: ${NEUTRALS.GRAY_03};
     font-family: 'Inter', sans-serif;
     height: 100%;
@@ -48,6 +48,10 @@ const GlobalStyle = createGlobalStyle`
   *::before,
   *::after {
     box-sizing: border-box;
+  }
+
+  a {
+    text-decoration: none;
   }
 
   #app {

@@ -28,7 +28,6 @@ import {
   STEPPING_UP_SUBHEADER,
 } from './constants/language';
 
-import PageSection from '../../components/layout/NewPageSection';
 import { AstrometricsFeatureShot1 } from '../../assets/images/astrometrics';
 import { CWPFeatureShot1 } from '../../assets/images/cwp';
 import { ReferralsFeatureShot1 } from '../../assets/images/referrals';
@@ -42,19 +41,20 @@ import {
   SteppingUpIcon,
 } from '../../assets/svg/icons';
 import {
+  ContentGrid,
+  FeatureGrid,
   GraphicShot,
   Header,
   InfoTile,
-  LearnMoreInternalLink,
+  LearnMoreButton,
+  PageSection,
   SectionContent,
-  SectionContentGrid,
-  SlightlyRoundedButton,
   SubHeader,
   Tag,
 } from '../../components';
 import { Routes } from '../../core/router';
 import { NEUTRALS } from '../../core/style/Colors';
-import { MEDIA_QUERY_MD } from '../../core/style/Sizes';
+import { MEDIA_QUERY_SM } from '../../core/style/Sizes';
 import { openBeacon } from '../../utils/Utils';
 
 const PRODUCTS_HEADER = 'Bring government into the 21st century';
@@ -65,23 +65,16 @@ const ProductsSectionContent = styled(SectionContent)`
   margin-top: 0;
 `;
 
-const ProductsGrid = styled(SectionContentGrid)`
+const ProductsGrid = styled(ContentGrid)`
   align-items: stretch;
-  grid-template-columns: auto;
 
-  @media only screen and (min-width: ${MEDIA_QUERY_MD}px) {
+  @media only screen and (min-width: ${MEDIA_QUERY_SM}px) {
     grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
   }
 `;
 
-const OtherProductsGrid = styled(SectionContentGrid)`
-  align-items: center;
-  grid-template-columns: auto;
+const OtherProductsGrid = styled(FeatureGrid)`
   margin: 24px 0;
-
-  @media only screen and (min-width: ${MEDIA_QUERY_MD}px) {
-    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-  }
 `;
 
 const Categories = styled.div`
@@ -107,7 +100,7 @@ const MoreProductsHeader = styled.h3`
 `;
 
 const ScheduleCallButton = () => (
-  <SlightlyRoundedButton onClick={openBeacon}>Schedule a call to learn more</SlightlyRoundedButton>
+  <LearnMoreButton onClick={openBeacon} radius={5}>Schedule a call to learn more</LearnMoreButton>
 );
 
 const ProductsSection = () => {
@@ -123,7 +116,7 @@ const ProductsSection = () => {
     : <FontAwesomeIcon fixedWidth icon={faChevronDown} />;
 
   return (
-    <PageSection bgColor={NEUTRALS.WHITE}>
+    <PageSection>
       <SectionContent maxWidth={{ sm: 480, md: 720 }}>
         <Header as="h2">{PRODUCTS_HEADER}</Header>
         <SubHeader as="h5">{PRODUCTS_SUBHEADER}</SubHeader>
@@ -139,7 +132,7 @@ const ProductsSection = () => {
               <span>{PRODUCT_TAGS.JUSTICE}</span>
             </Categories>
             <SubHeader as="h6">{PCM_SUBHEADER}</SubHeader>
-            <LearnMoreInternalLink to={Routes.PCM}>Learn more</LearnMoreInternalLink>
+            <LearnMoreButton to={Routes.PCM} />
           </InfoTile>
           <InfoTile withBorder>
             <CAREIcon />
@@ -150,7 +143,7 @@ const ProductsSection = () => {
               <span>{PRODUCT_TAGS.BEHAVIORAL_HEALTH}</span>
             </Categories>
             <SubHeader as="h6">{CARE_SUBHEADER}</SubHeader>
-            <LearnMoreInternalLink to={Routes.CARE}>Learn more</LearnMoreInternalLink>
+            <LearnMoreButton to={Routes.CARE} />
           </InfoTile>
           <InfoTile withBorder>
             <OpenLatticeCircleIcon width={48} />
@@ -162,7 +155,7 @@ const ProductsSection = () => {
               <span>{PRODUCT_TAGS.RESEARCH}</span>
             </Categories>
             <SubHeader as="h6">{RESEARCH_HUB_SUBHEADER}</SubHeader>
-            <LearnMoreInternalLink to={Routes.RESEARCH_HUB}>Learn more</LearnMoreInternalLink>
+            <LearnMoreButton to={Routes.RESEARCH_HUB} />
           </InfoTile>
           <InfoTile withBorder>
             <OpenLatticeCircleIcon width={48} />
@@ -171,7 +164,7 @@ const ProductsSection = () => {
               <span>{PRODUCT_TAGS.RESEARCH}</span>
             </Categories>
             <SubHeader as="h6">{CHRONICLE_SUBHEADER}</SubHeader>
-            <LearnMoreInternalLink to={Routes.CHRONICLE}>Learn more</LearnMoreInternalLink>
+            <LearnMoreButton to={Routes.CHRONICLE} />
           </InfoTile>
         </ProductsGrid>
       </ProductsSectionContent>
@@ -197,7 +190,7 @@ const ProductsSection = () => {
                   <AstrometricsFeatureShot1 />
                 </GraphicShot>
               </OtherProductsGrid>
-              <OtherProductsGrid reverseOrderOnMobile>
+              <OtherProductsGrid reverseOrderOnWrap>
                 <GraphicShot withBorder>
                   <CWPFeatureShot1 />
                 </GraphicShot>
@@ -225,7 +218,7 @@ const ProductsSection = () => {
                   <ReferralsFeatureShot1 />
                 </GraphicShot>
               </OtherProductsGrid>
-              <OtherProductsGrid reverseOrderOnMobile>
+              <OtherProductsGrid reverseOrderOnWrap>
                 <GraphicShot withBorder>
                   <SteppingUpFeatureShot1 />
                 </GraphicShot>

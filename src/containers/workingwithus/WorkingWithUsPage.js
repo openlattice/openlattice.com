@@ -9,11 +9,11 @@ import ProcessSection from './ProcessSection';
 import WorkingWithUsIntroSection from './WorkingWithUsIntroSection';
 
 import FooterSection from '../footer/FooterSection';
-import ScrollToTopOnMount from '../../components/layout/ScrollToTopOnMount';
+import { ScrollToTop } from '../../components';
 
 const WorkingWithUsPage = () => (
   <>
-    <ScrollToTopOnMount />
+    <ScrollToTop />
     <WorkingWithUsIntroSection />
     <IntegrationSection />
     <ProcessSection />

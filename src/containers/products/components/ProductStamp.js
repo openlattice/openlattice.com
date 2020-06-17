@@ -9,7 +9,7 @@ import { MEDIA_QUERY_MD, MEDIA_QUERY_SM } from '../../../core/style/Sizes';
 
 const ProductStamp = styled.div`
   align-items: center;
-  background-color: ${NEUTRALS.WHITE};
+  background-color: white;
   border-radius: 281px;
   color: ${NEUTRALS.GRAY_06};
   display: flex;

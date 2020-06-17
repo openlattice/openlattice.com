@@ -8,9 +8,8 @@ import styled from 'styled-components';
 
 import { CUSTOMERS } from './constants/customers';
 
-import PageSection from '../../components/layout/NewPageSection';
 import { OurCustomersMapGraphic } from '../../assets/svg/graphics';
-import { SectionContent } from '../../components';
+import { PageSection, SectionContent } from '../../components';
 import { NEUTRALS } from '../../core/style/Colors';
 import { MEDIA_QUERY_LG, MEDIA_QUERY_MD, MEDIA_QUERY_SM } from '../../core/style/Sizes';
 

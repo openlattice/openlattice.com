@@ -6,33 +6,32 @@ import React from 'react';
 
 import { DESIGNED_FOR_SECURITY_HEADER, DESIGNED_FOR_SECURITY_SUBHEADER } from './constants/language';
 
-import PageSection from '../../components/layout/NewPageSection';
 import { PlatformLayersGraphic } from '../../assets/svg/graphics';
 import {
+  ContentGrid,
   GraphicShot,
   Header,
   InfoTile,
-  LearnMoreExternalLink,
+  LearnMoreButton,
+  PageSection,
   SectionContent,
-  SectionContentGrid,
   SubHeader,
 } from '../../components';
-import { NEUTRALS } from '../../core/style/Colors';
 import { PRIVACY_SECURITY_LINK } from '../../utils/constants/links';
 
 const GraphicSection = () => (
-  <PageSection bgColor={NEUTRALS.WHITE}>
+  <PageSection>
     <SectionContent>
-      <SectionContentGrid align="center">
+      <ContentGrid align="center">
         <InfoTile align="left">
           <Header as="h2">{DESIGNED_FOR_SECURITY_HEADER}</Header>
           <SubHeader as="h5">{DESIGNED_FOR_SECURITY_SUBHEADER}</SubHeader>
-          <LearnMoreExternalLink href={PRIVACY_SECURITY_LINK} target="_blank">Learn more</LearnMoreExternalLink>
+          <LearnMoreButton href={PRIVACY_SECURITY_LINK} />
         </InfoTile>
         <GraphicShot>
           <PlatformLayersGraphic />
         </GraphicShot>
-      </SectionContentGrid>
+      </ContentGrid>
     </SectionContent>
   </PageSection>
 );

@@ -17,7 +17,7 @@ const getTagColor = getStyleVariation('tagType', {
 const Tag = styled.div`
   background-color: ${getTagColor};
   border-radius: 3px;
-  color: ${NEUTRALS.WHITE};
+  color: white;
   font-size: 10px;
   font-weight: bold;
   line-height: 150%;

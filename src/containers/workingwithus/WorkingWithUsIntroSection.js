@@ -4,10 +4,10 @@
 
 import React from 'react';
 
-import PageSection from '../../components/layout/NewPageSection';
 import {
-  ContactUsPurple,
   Header,
+  PageSection,
+  ScheduleCallButton,
   SectionContent,
   SubHeader,
 } from '../../components';
@@ -20,13 +20,11 @@ const INTRO_SUB_HEADER = 'Join dozens of jurisdictions across the United States 
   + ' serve their constituents.';
 
 const WorkingWithUsIntroSection = () => (
-  <PageSection bgColor={NEUTRALS.GRAY_05} includeMenu>
+  <PageSection bgColor={NEUTRALS.GRAY_05}>
     <SectionContent maxWidth={{ sm: 500, lg: 720 }}>
       <Header>{INTRO_HEADER}</Header>
       <SubHeader>{INTRO_SUB_HEADER}</SubHeader>
-      <ContactUsPurple onClick={openBeacon}>
-        Schedule a call
-      </ContactUsPurple>
+      <ScheduleCallButton onClick={openBeacon} />
     </SectionContent>
   </PageSection>
 );

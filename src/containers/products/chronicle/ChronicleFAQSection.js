@@ -4,8 +4,7 @@ import styled from 'styled-components';
 import { faMinus, faPlus } from '@fortawesome/pro-light-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
-import PageSection from '../../../components/layout/NewPageSection';
-import { Header, SectionContent } from '../../../components';
+import { Header, PageSection, SectionContent } from '../../../components';
 import { NEUTRALS, PURPLES } from '../../../core/style/Colors';
 
 const Question = styled.span`

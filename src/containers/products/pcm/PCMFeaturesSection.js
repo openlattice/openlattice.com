@@ -4,8 +4,6 @@
 
 import React from 'react';
 
-import { ProductFeaturesSectionContent } from '../components';
-
 import {
   AUTOFILL_HEADER,
   AUTOFILL_SUBHEADER,
@@ -19,22 +17,24 @@ import {
   TRACK_OUTCOMES_SUBHEADER,
 } from './constants/language';
 
-import PageSection from '../../../components/layout/NewPageSection';
 import { PCMFeatureShot1, PCMFeatureShot2 } from '../../../assets/images/pcm';
 import { CheckBoardCircleIcon, GavelCircleIcon, MergeArrowCircleIcon } from '../../../assets/svg/circle-icons';
 import {
+  ContentGrid,
+  FeatureGrid,
   GraphicShot,
   Header,
   InfoTile,
+  PageSection,
   SectionContent,
-  SectionContentGrid,
   SubHeader,
 } from '../../../components';
+import { ProductFeaturesSectionContent } from '../components';
 
 const PCMFeaturesSection = () => (
   <PageSection>
     <ProductFeaturesSectionContent>
-      <SectionContentGrid>
+      <ContentGrid align={{ v: 'start' }}>
         <InfoTile align="left">
           <MergeArrowCircleIcon />
           <Header as="h3">{AUTOFILL_HEADER}</Header>
@@ -50,10 +50,10 @@ const PCMFeaturesSection = () => (
           <Header as="h3">{MANAGE_SUPERVISION_HEADER}</Header>
           <SubHeader as="h6">{MANAGE_SUPERVISION_SUBHEADER}</SubHeader>
         </InfoTile>
-      </SectionContentGrid>
+      </ContentGrid>
     </ProductFeaturesSectionContent>
     <SectionContent>
-      <SectionContentGrid align="center">
+      <FeatureGrid>
         <InfoTile align="left">
           <Header as="h2">{MANAGE_RISK_HEADER}</Header>
           <SubHeader as="h5">{MANAGE_RISK_SUBHEADER}</SubHeader>
@@ -61,10 +61,10 @@ const PCMFeaturesSection = () => (
         <GraphicShot withBorder>
           <PCMFeatureShot1 />
         </GraphicShot>
-      </SectionContentGrid>
+      </FeatureGrid>
     </SectionContent>
     <SectionContent>
-      <SectionContentGrid align="center" reverseOrderOnMobile>
+      <FeatureGrid reverseOrderOnWrap>
         <GraphicShot withBorder>
           <PCMFeatureShot2 />
         </GraphicShot>
@@ -72,7 +72,7 @@ const PCMFeaturesSection = () => (
           <Header as="h2">{SUPERVISION_TOUCHPOINTS_HEADER}</Header>
           <SubHeader as="h5">{SUPERVISION_TOUCHPOINTS_SUBHEADER}</SubHeader>
         </InfoTile>
-      </SectionContentGrid>
+      </FeatureGrid>
     </SectionContent>
   </PageSection>
 );

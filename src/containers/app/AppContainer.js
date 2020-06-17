@@ -12,30 +12,32 @@ import {
 } from 'lattice-ui-kit';
 import { Route, Switch } from 'react-router';
 
-import AboutPage from '../about/AboutPage';
-import HomePage from '../home/HomePage';
-import PlatformPage from '../platform/PlatformPage';
-import PrivacyPolicy from '../footer/privacy/PrivacyPolicy';
-import Products from '../products/ProductsPage';
-import TermsOfService from '../footer/termsofservice/TermsOfService';
-import WorkingWithUsPage from '../workingwithus/WorkingWithUsPage';
-import * as Routes from '../../core/router/Routes';
+import { AppNav } from '../../components';
+import { Routes } from '../../core/router';
+import { AboutPage } from '../about';
+import { HomePage } from '../home';
+import { PlatformPage } from '../platform';
+import { PrivacyPolicyPage } from '../privacy';
+import { ProductsPage } from '../products';
 import { CAREProductPage } from '../products/care';
 import { ChronicleProductPage } from '../products/chronicle';
 import { PCMProductPage } from '../products/pcm';
 import { ResearchHubProductPage } from '../products/research-hub';
+import { TermsOfServicePage } from '../terms';
+import { WorkingWithUsPage } from '../workingwithus';
 
 const AppContainer = () => (
   <ThemeProvider theme={lightTheme}>
     <MuiPickersUtilsProvider utils={LatticeLuxonUtils}>
+      <AppNav />
       <Switch>
-        <Route exact path={Routes.PRIVACY_POLICY} component={PrivacyPolicy} />
-        <Route exact path={Routes.TERMS_OF_SERVICE} component={TermsOfService} />
+        <Route exact path={Routes.PRIVACY_POLICY} component={PrivacyPolicyPage} />
+        <Route exact path={Routes.TERMS_OF_SERVICE} component={TermsOfServicePage} />
         <Route exact path={Routes.RESEARCH_HUB} component={ResearchHubProductPage} />
         <Route exact path={Routes.CHRONICLE} component={ChronicleProductPage} />
         <Route exact path={Routes.CARE} component={CAREProductPage} />
         <Route exact path={Routes.PCM} component={PCMProductPage} />
-        <Route exact strict path={Routes.PRODUCTS} component={Products} />
+        <Route exact strict path={Routes.PRODUCTS} component={ProductsPage} />
         <Route exact path={Routes.PLATFORM} component={PlatformPage} />
         <Route exact path={Routes.WORKING_WITH_US} component={WorkingWithUsPage} />
         <Route exact path={Routes.ABOUT} component={AboutPage} />
