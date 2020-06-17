@@ -1,29 +1,68 @@
-// @flow
-import styled, { css } from 'styled-components';
+/*
+ * @flow
+ */
+
+import React from 'react';
+import type { Node } from 'react';
+
+import styled from 'styled-components';
 import { NavLink } from 'react-router-dom';
 
-import { NEUTRALS } from '../../../core/style/Colors';
+import OutlineButton, { getComputedStyles } from './OutlineButton';
 
-const buttonStyles = css`
-  border-radius: 45px;
-  border: 1px solid ${NEUTRALS.GRAY_09};
-  color: ${NEUTRALS.GRAY_07};
-  display: inline-block;
-  font-size: 16px;
-  font-weight: 500;
-  line-height: 150%;
-  padding: 8px 18px;
-  text-align: center;
-  text-decoration: none;
-  white-space: nowrap;
+const OutlineButtonNavLink = styled(NavLink).attrs({
+  color: 'default'
+})`
+  ${getComputedStyles}
 `;
 
-const LearnMoreInternalLink = styled(NavLink)`
-  ${buttonStyles}
-`;
+const LEARN_MORE :'Learn more' = 'Learn more';
 
-const LearnMoreExternalLink = styled.a`
-  ${buttonStyles}
-`;
+type Props = {
+  children :Node;
+  className ?:string;
+  href ?:string;
+  onClick :() => void;
+  to ?:string;
+};
 
-export { LearnMoreExternalLink, LearnMoreInternalLink };
+const LearnMoreButton = ({
+  children,
+  className,
+  href,
+  onClick,
+  to,
+} :Props) => {
+
+  if (href) {
+    return (
+      <OutlineButton as="a" className={className} href={href} target="_blank">
+        {children}
+      </OutlineButton>
+    );
+  }
+
+  if (to) {
+    return (
+      <OutlineButtonNavLink className={className} to={to}>
+        {children}
+      </OutlineButtonNavLink>
+    );
+  }
+
+  return (
+    <OutlineButton className={className} onClick={onClick}>
+      {children}
+    </OutlineButton>
+  );
+};
+
+LearnMoreButton.defaultProps = {
+  className: undefined,
+  children: LEARN_MORE,
+  href: undefined,
+  onClick: () => {},
+  to: undefined,
+};
+
+export default LearnMoreButton;

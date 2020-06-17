@@ -9,8 +9,7 @@ import ProductIntroSectionContent from './ProductIntroSectionContent';
 import ProductShot from './ProductShot';
 import ProductStamp from './ProductStamp';
 
-import PageSection from '../../../components/layout/NewPageSection';
-import { Header, SubHeader } from '../../../components';
+import { Header, PageSection, SubHeader } from '../../../components';
 import { NEUTRALS } from '../../../core/style/Colors';
 
 type Props = {
@@ -28,7 +27,7 @@ const ProductIntroSection = ({
   productName,
   productShot: ProductShotImg,
 } :Props) => (
-  <PageSection bgColor={NEUTRALS.GRAY_05} includeMenu>
+  <PageSection bgColor={NEUTRALS.GRAY_05}>
     <ProductIntroSectionContent>
       <ProductStamp>
         <ProductIcon />

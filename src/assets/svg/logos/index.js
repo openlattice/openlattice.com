@@ -4,6 +4,7 @@
 
 import styled from 'styled-components';
 
+import OpenLatticeLogoSVG from './ol-logo-header.svg';
 import GDPRLogoSVG from './eu-gdpr-logo.svg';
 import SecureCloudLogoSVG from './secure-cloud-logo.svg';
 import SecureDataLogoSVG from './secure-data-logo.svg';
@@ -13,6 +14,11 @@ const GDPRLogo = styled.img.attrs(({ width }) => ({
   alt: 'eu-gdpr-logo',
   src: GDPRLogoSVG,
   width: width || 64,
+}))``;
+
+const OpenLatticeLogo = styled.img.attrs(() => ({
+  alt: 'openlattice-logo',
+  src: OpenLatticeLogoSVG,
 }))``;
 
 const SecureCloudLogo = styled.img.attrs(({ width }) => ({
@@ -35,6 +41,7 @@ const SecureLoginLogo = styled.img.attrs(({ width }) => ({
 
 export {
   GDPRLogo,
+  OpenLatticeLogo,
   SecureCloudLogo,
   SecureDataLogo,
   SecureLoginLogo,

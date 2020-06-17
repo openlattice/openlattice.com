@@ -8,15 +8,13 @@ import styled, { css } from 'styled-components';
 import { NavLink } from 'react-router-dom';
 
 import OpenLatticeIconSVG from '../../assets/svg/icons/ol-icon-gray.svg';
-import PageSection from '../../components/layout/NewPageSection';
 import * as Routes from '../../core/router/Routes';
-import { SectionContent, Tag } from '../../components';
-import { TARGET, helpCenterLink } from '../../components/headers/MenuConsts';
+import { PageSection, SectionContent, Tag } from '../../components';
 import { NEUTRALS } from '../../core/style/Colors';
 import { MEDIA_QUERY_MD, MEDIA_QUERY_SM } from '../../core/style/Sizes';
 
 const Header = styled.div`
-  color: ${NEUTRALS.WHITE};
+  color: white;
   font-size: 20px;
   font-weight: 600;
 
@@ -58,35 +56,26 @@ const FakeLink = styled.div`
   color: ${NEUTRALS.GRAY_13};
 `;
 
-const SectionFooterWrapper = styled.div`
-  width: 100%;
-`;
-
-const Line = styled.div`
-  border: 1px solid ${NEUTRALS.GRAY_14};
-  height: 0;
-  width: 100%;
-`;
-
-const SectionFooterInnerWrapper = styled.div`
+const Copyright = styled.div`
   align-items: center;
+  border-top: 1px solid ${NEUTRALS.GRAY_14};
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   margin: 0;
-  padding: 24px 0;
+  padding-top: 24px;
   width: 100%;
 
   @media only screen and (min-width: ${MEDIA_QUERY_MD}px) {
     flex-direction: row;
     margin: 0;
   }
-`;
 
-const Copyright = styled.div`
-  ${linkStyles}
-  font-weight: normal;
-  margin: 16px 0;
+  > span {
+    ${linkStyles}
+    font-weight: normal;
+    margin: 16px 0;
+  }
 `;
 
 const FooterGrid = styled.div`
@@ -120,8 +109,8 @@ const FooterSection = () => (
           <Header>Company</Header>
           <InternalLink to={Routes.ROOT}>Home</InternalLink>
           <InternalLink to={Routes.ABOUT}>About</InternalLink>
-          <ExternalLink href="https://jobs.lever.co/openlattice" target={TARGET}>Jobs</ExternalLink>
-          <ExternalLink href="https://medium.com/openlattice" target={TARGET}>Blog</ExternalLink>
+          <ExternalLink href="https://jobs.lever.co/openlattice" rel="noreferrer" target="_blank">Jobs</ExternalLink>
+          <ExternalLink href="https://medium.com/openlattice" rel="noreferrer" target="_blank">Blog</ExternalLink>
         </section>
         <section>
           <section>
@@ -151,19 +140,18 @@ const FooterSection = () => (
         </section>
         <section>
           <Header>Support</Header>
-          <ExternalLink href={helpCenterLink} target={TARGET}>Help Center</ExternalLink>
+          <ExternalLink href="https://help.openlattice.com" rel="noreferrer" target="_blank">Help Center</ExternalLink>
           <InternalLink to={Routes.TERMS_OF_SERVICE}>Terms of Service</InternalLink>
           <InternalLink to={Routes.PRIVACY_POLICY}>Privacy Policy</InternalLink>
         </section>
       </FooterGrid>
     </SectionContent>
-    <SectionFooterWrapper>
-      <Line />
-      <SectionFooterInnerWrapper>
+    <SectionContent margin="0">
+      <Copyright>
         <img src={OpenLatticeIconSVG} alt="" />
-        <Copyright>© 2020 OpenLattice, Inc. All rights reserved.</Copyright>
-      </SectionFooterInnerWrapper>
-    </SectionFooterWrapper>
+        <span>© 2020 OpenLattice, Inc. All rights reserved.</span>
+      </Copyright>
+    </SectionContent>
   </PageSection>
 );
 

@@ -1,8 +1,12 @@
-// @flow
+/*
+ * @flow
+ */
+
 import { Component } from 'react';
 
 // https://reacttraining.com/react-router/web/guides/scroll-restoration/scroll-to-top
-class ScrollToTopOnMount extends Component<*> {
+class ScrollToTop extends Component<{}> {
+
   componentDidMount() {
     window.scrollTo(0, 0);
   }
@@ -12,4 +16,4 @@ class ScrollToTopOnMount extends Component<*> {
   }
 }
 
-export default ScrollToTopOnMount;
+export default ScrollToTop;

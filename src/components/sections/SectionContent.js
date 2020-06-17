@@ -12,19 +12,48 @@ import {
 } from '../../core/style/Sizes';
 
 type Props = {
-  align ?:string;
+  align ?:{
+    h ?:'start' | 'center' | 'end';
+    v ?:'start' | 'center' | 'end';
+  };
+  margin ?:string;
   maxWidth ?:{|
     sm ?:number;
     md ?:number;
     lg ?:number;
   |};
+  vertical ?:boolean;
 };
 
-const getComputedMediaQueries = ({ align, maxWidth } :Props) => {
+const getComputedStyles = ({
+  align = {},
+  margin,
+  maxWidth,
+  vertical = true,
+} :Props) => {
 
-  let alignItems = 'center';
-  if (align === 'left') {
-    alignItems = 'flex-start';
+  let alignVertical = 'center';
+  if (align.v === 'start') {
+    alignVertical = 'flex-start';
+  }
+  else if (align.v === 'end') {
+    alignVertical = 'flex-end';
+  }
+
+  let alignHorizontal = 'center';
+  if (align.h === 'start') {
+    alignHorizontal = 'flex-start';
+  }
+  else if (align.h === 'end') {
+    alignHorizontal = 'flex-end';
+  }
+
+  const alignItems = vertical ? alignHorizontal : alignVertical;
+  const justifyContent = vertical ? alignVertical : alignHorizontal;
+
+  let finalMargin = '100px 0';
+  if (margin) {
+    finalMargin = margin;
   }
 
   let smMaxWidth;
@@ -44,6 +73,8 @@ const getComputedMediaQueries = ({ align, maxWidth } :Props) => {
 
   return css`
     align-items: ${alignItems};
+    justify-content: ${justifyContent};
+    margin: ${finalMargin};
 
     @media only screen and (min-width: ${MEDIA_QUERY_SM}px) {
       max-width: ${smMaxWidth};
@@ -62,10 +93,9 @@ const getComputedMediaQueries = ({ align, maxWidth } :Props) => {
 const SectionContent = styled.div`
   display: flex;
   flex-direction: ${({ vertical }) => (vertical === false ? 'row' : 'column')};
-  margin: 64px 0 100px 0;
   max-width: ${CONTENT_WIDTH}px;
   width: 100%;
-  ${getComputedMediaQueries}
+  ${getComputedStyles}
 `;
 
 export default SectionContent;

@@ -5,7 +5,7 @@
 import styled, { css } from 'styled-components';
 
 import { NEUTRALS } from '../../core/style/Colors';
-import { MEDIA_QUERY_LG, MEDIA_QUERY_MD } from '../../core/style/Sizes';
+import { MEDIA_QUERY_LG, MEDIA_QUERY_SM } from '../../core/style/Sizes';
 
 const FONT_SIZE_LG = {
   h4: '20px',
@@ -41,12 +41,12 @@ const SubHeader = styled.h4`
   margin: 0;
   margin-bottom: 32px;
   padding: 0;
-  white-space: normal;
+  white-space: pre-wrap;
   word-break: break-word;
   ${getComputedStyles}
 
-  @media only screen and (min-width: ${MEDIA_QUERY_MD}px) {
-    white-space: pre-wrap;
+  @media only screen and (max-width: ${MEDIA_QUERY_SM}px) {
+    white-space: normal;
   }
 `;
 

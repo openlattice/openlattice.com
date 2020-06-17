@@ -25,6 +25,7 @@ export const NEUTRALS = {
   GRAY_15: '#eaeaef',
   GRAY_16: '#494956',
   GRAY_17: '#c4c4c4',
+  GRAY_18: '#d1d1dc',
   WHITE: '#ffffff',
 };
 
@@ -50,4 +51,8 @@ export const PURPLES = {
   PP06: '#31275c',
   PP07: '#7c7791',
   PP08: '#7860ff',
+  PP09: '#7654ff',
+  PP10: '#6746ef',
+  PP11: '#ece8ff',
+  PP12: '#f8f8ff',
 };

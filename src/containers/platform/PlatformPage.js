@@ -10,11 +10,11 @@ import GraphicSection from './GraphicSection';
 import PlatformIntroSection from './PlatformIntroSection';
 
 import FooterSection from '../footer/FooterSection';
-import ScrollToTopOnMount from '../../components/layout/ScrollToTopOnMount';
+import { ScrollToTop } from '../../components';
 
 const Platform = () => (
   <>
-    <ScrollToTopOnMount />
+    <ScrollToTop />
     <PlatformIntroSection />
     <GraphicSection />
     <CorePlatformSection />

@@ -8,11 +8,11 @@ import PCMFeaturesSection from './PCMFeaturesSection';
 import PCMIntroSection from './PCMIntroSection';
 
 import FooterSection from '../../footer/FooterSection';
-import { ContactUsPageSection, ScrollToTopOnMount } from '../../../components';
+import { ContactUsPageSection, ScrollToTop } from '../../../components';
 
 const PCMProductPage = () => (
   <>
-    <ScrollToTopOnMount />
+    <ScrollToTop />
     <PCMIntroSection />
     <PCMFeaturesSection />
     <ContactUsPageSection />

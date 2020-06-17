@@ -4,14 +4,15 @@
 
 import React from 'react';
 
-import FooterSection from '../footer/FooterSection';
 import ProductsIntroSection from './ProductsIntroSection';
 import ProductsSection from './ProductsSection';
-import ScrollToTopOnMount from '../../components/layout/ScrollToTopOnMount';
+
+import FooterSection from '../footer/FooterSection';
+import { ScrollToTop } from '../../components';
 
 const Products = () => (
   <>
-    <ScrollToTopOnMount />
+    <ScrollToTop />
     <ProductsIntroSection />
     <ProductsSection />
     <FooterSection />

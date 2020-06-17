@@ -6,8 +6,7 @@ import React from 'react';
 
 import styled from 'styled-components';
 
-import PageSection from '../../components/layout/NewPageSection';
-import { Header, SectionContent } from '../../components';
+import { Header, PageSection, SectionContent } from '../../components';
 import { NEUTRALS } from '../../core/style/Colors';
 import { MEDIA_QUERY_MD } from '../../core/style/Sizes';
 
@@ -23,7 +22,7 @@ to better serve citizens
 `;
 
 const AboutIntroSection = () => (
-  <PageSection bgColor={NEUTRALS.GRAY_05} includeMenu>
+  <PageSection bgColor={NEUTRALS.GRAY_05}>
     <SectionContentExtraMargin>
       <Header>{INTRO_HEADER}</Header>
     </SectionContentExtraMargin>

@@ -6,15 +6,15 @@ import React from 'react';
 
 import styled from 'styled-components';
 
-import PageSection from '../../../components/layout/NewPageSection';
-import { Header, SectionContent } from '../../../components';
+import { Header, PageSection, SectionContent } from '../../../components';
+import { NEUTRALS } from '../../../core/style/Colors';
 
 const ComingSoonSectionContent = styled(SectionContent)`
-  margin: 400px 0 500px 0;
+  margin: 300px 0;
 `;
 
 const PCMIntroSection = () => (
-  <PageSection includeMenu>
+  <PageSection bgColor={NEUTRALS.GRAY_05}>
     <ComingSoonSectionContent>
       <Header>COMING SOON</Header>
     </ComingSoonSectionContent>

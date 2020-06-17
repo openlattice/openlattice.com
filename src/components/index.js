@@ -4,7 +4,7 @@
 
 export * from './controls';
 export * from './headers';
-export * from './layout';
+export * from './navigation';
 export * from './other';
 export * from './sections';
 export * from './tags';
