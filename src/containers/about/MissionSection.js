@@ -4,9 +4,12 @@
 
 import React from 'react';
 
-import PageSection from '../../components/layout/NewPageSection';
-import { Header, SectionContent, SubHeader } from '../../components';
-import { NEUTRALS } from '../../core/style/Colors';
+import {
+  Header,
+  PageSection,
+  SectionContent,
+  SubHeader,
+} from '../../components';
 
 const MISSION_STATEMENT = 'We set out to build a secure, scalable cloud-based data platform that empowers civil'
   + ' servants, researchers, and policy-makers to work together on society\'s toughest challenges. Our solutions'
@@ -14,7 +17,7 @@ const MISSION_STATEMENT = 'We set out to build a secure, scalable cloud-based da
   + ' incarceration, and other key societal welfare issues.';
 
 const MissionSection = () => (
-  <PageSection bgColor={NEUTRALS.WHITE}>
+  <PageSection>
     <SectionContent maxWidth={{ sm: 528, md: 720 }}>
       <Header as="h2">Our mission</Header>
       <SubHeader align="left" as="h5">{MISSION_STATEMENT}</SubHeader>

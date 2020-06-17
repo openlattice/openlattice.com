@@ -17,7 +17,6 @@ import {
   LOGIN_TEXT,
 } from './constants/language';
 
-import PageSection from '../../components/layout/NewPageSection';
 import {
   CFRLogo,
   CJISLogo,
@@ -31,14 +30,15 @@ import {
   SecureLoginLogo,
 } from '../../assets/svg/logos';
 import {
+  ContentGrid,
   InfoTile,
+  PageSection,
   SectionContent,
-  SectionContentGrid,
 } from '../../components';
 import { NEUTRALS } from '../../core/style/Colors';
 import { MEDIA_QUERY_MD, MEDIA_QUERY_SM } from '../../core/style/Sizes';
 
-const TileGrid = styled(SectionContentGrid)`
+const TileGrid = styled(ContentGrid)`
   @media only screen and (min-width: ${MEDIA_QUERY_SM}px) {
     grid-template-columns: repeat(auto-fit, minmax(336px, 1fr));
   }
@@ -89,7 +89,7 @@ const InfoTile2 = styled(InfoTile)`
 `;
 
 const ComplianceAndSecuritySection = () => (
-  <PageSection bgColor={NEUTRALS.WHITE}>
+  <PageSection>
     <SectionContent>
       <SeparationHeader>Compliance</SeparationHeader>
       <TileGrid>

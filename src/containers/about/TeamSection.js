@@ -9,9 +9,12 @@ import styled from 'styled-components';
 import TeamGrid from './components/TeamGrid';
 import { BOARD_MEMBERS, TEAM_MEMBERS } from './constants';
 
-import PageSection from '../../components/layout/NewPageSection';
-import { Header, SectionContent, SubHeader } from '../../components';
-import { NEUTRALS } from '../../core/style/Colors';
+import {
+  Header,
+  PageSection,
+  SectionContent,
+  SubHeader,
+} from '../../components';
 
 const SectionContentNoMargin = styled(SectionContent)`
   margin: 0;
@@ -21,7 +24,7 @@ const TEAM_STATEMENT = 'The OpenLattice team brings together a diverse group of 
   + ' experience across government data solutions, policy-making, criminal justice, healthcare, and data science.';
 
 const TeamSection = () => (
-  <PageSection bgColor={NEUTRALS.WHITE}>
+  <PageSection>
     <SectionContentNoMargin>
       <Header as="h2">Our board</Header>
     </SectionContentNoMargin>

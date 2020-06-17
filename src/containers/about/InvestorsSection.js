@@ -6,7 +6,6 @@ import React from 'react';
 
 import styled from 'styled-components';
 
-import PageSection from '../../components/layout/NewPageSection';
 import {
   BullpenLogo,
   GovTechLogo,
@@ -14,8 +13,7 @@ import {
   PointNineLogo,
   UrbanInnovationLogo,
 } from '../../assets/investors';
-import { Header, SectionContent } from '../../components';
-import { NEUTRALS } from '../../core/style/Colors';
+import { Header, PageSection, SectionContent } from '../../components';
 import { MEDIA_QUERY_LG, MEDIA_QUERY_SM } from '../../core/style/Sizes';
 
 const LogosWrapper = styled.div`
@@ -54,7 +52,7 @@ const InvestorLogo = styled.div`
 `;
 
 const InvestorsSection = () => (
-  <PageSection bgColor={NEUTRALS.WHITE}>
+  <PageSection>
     <SectionContent>
       <Header as="h2">Our investors</Header>
       <LogosWrapper>

@@ -7,11 +7,11 @@ import React from 'react';
 import ResearchHubIntroSection from './ResearchHubIntroSection';
 
 import FooterSection from '../../footer/FooterSection';
-import { ScrollToTopOnMount } from '../../../components';
+import { ScrollToTop } from '../../../components';
 
 const PCMProductPage = () => (
   <>
-    <ScrollToTopOnMount />
+    <ScrollToTop />
     <ResearchHubIntroSection />
     <FooterSection />
   </>

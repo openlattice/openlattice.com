@@ -19,7 +19,6 @@ import {
   SHARE_DATA_BETTER_DECISIONS_DESCRIPTION,
 } from './constants/language';
 
-import PageSection from '../../components/layout/NewPageSection';
 import {
   DataSecurityAndComplianceImg,
   GenerateDatasetsImg,
@@ -41,14 +40,14 @@ import {
   Users2CircleIcon,
 } from '../../assets/svg/circle-icons';
 import {
+  FeatureGrid,
   GraphicShot,
   Header,
   InfoTile,
+  PageSection,
   SectionContent,
-  SectionContentGrid,
   SubHeader,
 } from '../../components';
-import { NEUTRALS } from '../../core/style/Colors';
 
 const FeatureList = styled.ul`
   list-style-type: none;
@@ -67,9 +66,9 @@ const FeatureList = styled.ul`
 `;
 
 const FeaturesSection = () => (
-  <PageSection bgColor={NEUTRALS.WHITE}>
+  <PageSection>
     <SectionContent>
-      <SectionContentGrid align="center">
+      <FeatureGrid>
         <InfoTile align="left">
           <Header as="h2">{SHARE_DATA_BETTER_DECISIONS}</Header>
           <SubHeader as="h5">{SHARE_DATA_BETTER_DECISIONS_DESCRIPTION}</SubHeader>
@@ -91,10 +90,10 @@ const FeaturesSection = () => (
         <GraphicShot>
           <ShareDataImg />
         </GraphicShot>
-      </SectionContentGrid>
+      </FeatureGrid>
     </SectionContent>
     <SectionContent>
-      <SectionContentGrid align="center" reverseOrderOnMobile>
+      <FeatureGrid reverseOrderOnWrap>
         <GraphicShot>
           <ManageAccessImg />
         </GraphicShot>
@@ -116,10 +115,10 @@ const FeaturesSection = () => (
             </li>
           </FeatureList>
         </InfoTile>
-      </SectionContentGrid>
+      </FeatureGrid>
     </SectionContent>
     <SectionContent>
-      <SectionContentGrid align="center">
+      <FeatureGrid>
         <InfoTile align="left">
           <Header as="h2">{GENERATE_DATASETS}</Header>
           <SubHeader as="h5">{GENERATE_DATASETS_DESCRIPTION}</SubHeader>
@@ -141,10 +140,10 @@ const FeaturesSection = () => (
         <GraphicShot>
           <GenerateDatasetsImg />
         </GraphicShot>
-      </SectionContentGrid>
+      </FeatureGrid>
     </SectionContent>
     <SectionContent>
-      <SectionContentGrid align="center" reverseOrderOnMobile>
+      <FeatureGrid reverseOrderOnWrap>
         <GraphicShot>
           <SecureAuditLogImg />
         </GraphicShot>
@@ -166,10 +165,10 @@ const FeaturesSection = () => (
             </li>
           </FeatureList>
         </InfoTile>
-      </SectionContentGrid>
+      </FeatureGrid>
     </SectionContent>
     <SectionContent>
-      <SectionContentGrid align="center">
+      <FeatureGrid>
         <InfoTile align="left">
           <Header as="h2">{DATA_SECURITY_AND_COMPLIANCE}</Header>
           <SubHeader as="h5">{DATA_SECURITY_AND_COMPLIANCE_DESCRIPTION}</SubHeader>
@@ -191,7 +190,7 @@ const FeaturesSection = () => (
         <GraphicShot>
           <DataSecurityAndComplianceImg />
         </GraphicShot>
-      </SectionContentGrid>
+      </FeatureGrid>
     </SectionContent>
   </PageSection>
 );

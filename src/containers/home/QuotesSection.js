@@ -10,14 +10,13 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 import { QUOTES } from './constants/quotes';
 
-import PageSection from '../../components/layout/NewPageSection';
-import { SectionContent } from '../../components';
+import { PageSection, SectionContent } from '../../components';
 import { NEUTRALS } from '../../core/style/Colors';
 import { MEDIA_QUERY_MD, MEDIA_QUERY_SM } from '../../core/style/Sizes';
 
 const QuoteWrapper = styled.div`
   align-items: center;
-  color: ${NEUTRALS.WHITE};
+  color: white;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -57,7 +56,7 @@ const Org = styled(Name)`
 
 const ButtonCircle = styled.div`
   align-items: center;
-  background-color: ${NEUTRALS.WHITE};
+  background-color: white;
   border-radius: 50%;
   display: flex;
   flex: 0 0 auto;

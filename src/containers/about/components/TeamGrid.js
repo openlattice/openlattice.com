@@ -8,7 +8,7 @@ import styled from 'styled-components';
 import { faLinkedin } from '@fortawesome/free-brands-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
-import { SectionContentGrid } from '../../../components';
+import { ContentGrid } from '../../../components';
 import { NEUTRALS } from '../../../core/style/Colors';
 import { GRID_GAP, PAGE_PADDING } from '../../../core/style/Sizes';
 
@@ -24,12 +24,8 @@ const getMaxWidth = ({ members }) => {
   return undefined;
 };
 
-const MemberGrid = styled(SectionContentGrid)`
+const MemberGrid = styled(ContentGrid)`
   max-width: ${getMaxWidth};
-
-  @media only screen and (max-width: ${GRID_COLUMNS_1}px) {
-    grid-template-columns: auto;
-  }
 
   > div {
     max-width: ${GRID_ITEM_MAX_WIDTH}px;

@@ -6,7 +6,6 @@ import React from 'react';
 
 import styled from 'styled-components';
 
-import PageSection from '../../components/layout/NewPageSection';
 import {
   EMSDataCardGraphic,
   IntegratedDataDataCardGraphic,
@@ -14,12 +13,13 @@ import {
   PoliceDataCardGraphic,
 } from '../../assets/svg/graphics';
 import {
+  FeatureGrid,
   GraphicShot,
   Header,
   InfoTile,
-  LearnMoreExternalLink,
+  LearnMoreButton,
+  PageSection,
   SectionContent,
-  SectionContentGrid,
   SubHeader,
 } from '../../components';
 import { NEUTRALS } from '../../core/style/Colors';
@@ -82,7 +82,7 @@ const DataSiloCardsGrid = styled.div`
 `;
 
 const IntegrationSection = () => (
-  <PageSection bgColor={NEUTRALS.WHITE}>
+  <PageSection>
     <SectionContent maxWidth={{ sm: 410 }}>
       <Header as="h2">{ANCIENT_SOFTWARE_HEADER}</Header>
       <SubHeader as="h5">{ANCIENT_SOFTWARE_SUBHEADER}</SubHeader>
@@ -95,16 +95,16 @@ const IntegrationSection = () => (
       </DataSiloCardsGrid>
     </DataSiloCards>
     <SectionContent>
-      <SectionContentGrid align="center">
+      <FeatureGrid>
         <InfoTile align="left">
           <Header as="h2">{INTEGRATE_DATA_HEADER}</Header>
           <SubHeader as="h5">{INTEGRATE_DATA_SUBHEADER}</SubHeader>
-          <LearnMoreExternalLink href={CASE_STUDIES_LINK} target="_blank">Our case studies</LearnMoreExternalLink>
+          <LearnMoreButton href={CASE_STUDIES_LINK}>Our case studies</LearnMoreButton>
         </InfoTile>
         <GraphicShot>
           <IntegratedDataDataCardGraphic />
         </GraphicShot>
-      </SectionContentGrid>
+      </FeatureGrid>
     </SectionContent>
   </PageSection>
 );

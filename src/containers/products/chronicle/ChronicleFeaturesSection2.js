@@ -11,12 +11,12 @@ import {
   SAVE_TIME_SUBHEADER,
 } from './constants/language';
 
-import PageSection from '../../../components/layout/NewPageSection';
 import {
+  ContentGrid,
   Header,
   InfoTile,
+  PageSection,
   SectionContent,
-  SectionContentGrid,
   SubHeader,
 } from '../../../components';
 import { NEUTRALS } from '../../../core/style/Colors';
@@ -24,7 +24,7 @@ import { NEUTRALS } from '../../../core/style/Colors';
 const ChronicleFeaturesSection2 = () => (
   <PageSection bgColor={NEUTRALS.GRAY_05}>
     <SectionContent>
-      <SectionContentGrid>
+      <ContentGrid align={{ v: 'start' }}>
         <InfoTile align="left">
           <Header as="h2">{ENSURE_DATA_QUALITY_HEADER}</Header>
           <SubHeader as="h5">{ENSURE_DATA_QUALITY_SUBHEADER}</SubHeader>
@@ -33,7 +33,7 @@ const ChronicleFeaturesSection2 = () => (
           <Header as="h2">{SAVE_TIME_HEADER}</Header>
           <SubHeader as="h5">{SAVE_TIME_SUBHEADER}</SubHeader>
         </InfoTile>
-      </SectionContentGrid>
+      </ContentGrid>
     </SectionContent>
   </PageSection>
 );

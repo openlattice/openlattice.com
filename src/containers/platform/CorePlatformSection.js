@@ -23,7 +23,6 @@ import {
   PERMISSIONS_MANAGEMENT_SUBHEADER,
 } from './constants/language';
 
-import PageSection from '../../components/layout/NewPageSection';
 import {
   CloudSecureCircleIcon,
   DBSyncCircleIcon,
@@ -33,14 +32,14 @@ import {
   SearchCircleIcon,
 } from '../../assets/svg/circle-icons';
 import {
+  ContentGrid,
   Header,
   InfoTile,
-  LearnMoreExternalLink,
+  LearnMoreButton,
+  PageSection,
   SectionContent,
-  SectionContentGrid,
   SubHeader,
 } from '../../components';
-import { NEUTRALS } from '../../core/style/Colors';
 import { MEDIA_QUERY_MD, MEDIA_QUERY_SM } from '../../core/style/Sizes';
 import {
   DATA_INTEGRATIONS_LINK,
@@ -52,7 +51,7 @@ import {
 } from '../../utils/constants/links';
 
 // NOTE: the 328px value her is very carfully chosen and is tightly coupled with the media query below in Tile
-const TileGrid = styled(SectionContentGrid)`
+const TileGrid = styled(ContentGrid)`
   align-items: stretch;
 
   > div {
@@ -77,7 +76,7 @@ const Tile = styled(InfoTile)`
 `;
 
 const CorePlatformSection = () => (
-  <PageSection bgColor={NEUTRALS.WHITE}>
+  <PageSection>
     <SectionContent maxWidth={{ sm: 528 }}>
       <Header as="h2">{CORE_PLATFORM_FEATURES_HEADER}</Header>
       <SubHeader as="h5">{CORE_PLATFORM_FEATURES_SUBHEADER}</SubHeader>
@@ -88,37 +87,37 @@ const CorePlatformSection = () => (
           <DBSyncCircleIcon width="50" />
           <Header as="h3">{DATA_INTEGRATION_HEADER}</Header>
           <SubHeader as="h6">{DATA_INTEGRATION_SUBHEADER}</SubHeader>
-          <LearnMoreExternalLink href={DATA_INTEGRATIONS_LINK} target="_blank">Learn more</LearnMoreExternalLink>
+          <LearnMoreButton href={DATA_INTEGRATIONS_LINK} />
         </Tile>
         <Tile withBorder>
           <LinkCircleIcon width="50" />
           <Header as="h3">{DATA_LINKING_HEADER}</Header>
           <SubHeader as="h6">{DATA_LINKING_SUBHEADER}</SubHeader>
-          <LearnMoreExternalLink href={DATA_LINKING_LINK} target="_blank">Learn more</LearnMoreExternalLink>
+          <LearnMoreButton href={DATA_LINKING_LINK} />
         </Tile>
         <Tile withBorder>
           <CloudSecureCircleIcon width="50" />
           <Header as="h3">{DATA_STORAGE_HEADER}</Header>
           <SubHeader as="h6">{DATA_STORAGE_SUBHEADER}</SubHeader>
-          <LearnMoreExternalLink href={PRIVACY_SECURITY_LINK} target="_blank">Learn more</LearnMoreExternalLink>
+          <LearnMoreButton href={PRIVACY_SECURITY_LINK} />
         </Tile>
         <Tile withBorder>
           <SearchCircleIcon width="50" />
           <Header as="h3">{DATA_EXPLORATION_HEADER}</Header>
           <SubHeader as="h6">{DATA_EXPLORATION_SUBHEADER}</SubHeader>
-          <LearnMoreExternalLink href={TOP_UTILIZERS_LINK} target="_blank">Learn more</LearnMoreExternalLink>
+          <LearnMoreButton href={TOP_UTILIZERS_LINK} />
         </Tile>
         <Tile withBorder>
           <DotGridCircleIcon width="50" />
           <Header as="h3">{DATA_STANDARDIZATION_HEADER}</Header>
           <SubHeader as="h6">{DATA_STANDARDIZATION_SUBHEADER}</SubHeader>
-          <LearnMoreExternalLink href={EDM_LINK} target="_blank">Learn more</LearnMoreExternalLink>
+          <LearnMoreButton href={EDM_LINK} />
         </Tile>
         <Tile withBorder>
           <KeyCircleIcon width="50" />
           <Header as="h3">{PERMISSIONS_MANAGEMENT_HEADER}</Header>
           <SubHeader as="h6">{PERMISSIONS_MANAGEMENT_SUBHEADER}</SubHeader>
-          <LearnMoreExternalLink href={MANAGE_PERMISSIONS_LINK} target="_blank">Learn more</LearnMoreExternalLink>
+          <LearnMoreButton href={MANAGE_PERMISSIONS_LINK} />
         </Tile>
       </TileGrid>
     </SectionContent>

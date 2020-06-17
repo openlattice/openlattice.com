@@ -8,11 +8,11 @@ import CAREFeaturesSection from './CAREFeaturesSection';
 import CAREIntroSection from './CAREIntroSection';
 
 import FooterSection from '../../footer/FooterSection';
-import { ContactUsPageSection, ScrollToTopOnMount } from '../../../components';
+import { ContactUsPageSection, ScrollToTop } from '../../../components';
 
 const CAREProductPage = () => (
   <>
-    <ScrollToTopOnMount />
+    <ScrollToTop />
     <CAREIntroSection />
     <CAREFeaturesSection />
     <ContactUsPageSection />

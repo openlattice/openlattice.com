@@ -10,12 +10,11 @@ import ChronicleFeaturesSection2 from './ChronicleFeaturesSection2';
 import ChronicleIntroSection from './ChronicleIntroSection';
 
 import FooterSection from '../../footer/FooterSection';
-import ScrollToTopOnMount from '../../../components/layout/ScrollToTopOnMount';
-import { ContactUsPageSection } from '../../../components/sections';
+import { ContactUsPageSection, ScrollToTop } from '../../../components';
 
 const ChronicleProductPage = () => (
   <>
-    <ScrollToTopOnMount />
+    <ScrollToTop />
     <ChronicleIntroSection />
     <ChronicleFeaturesSection />
     <ChronicleFeaturesSection2 />

@@ -13,7 +13,6 @@ import {
   PROBLEM_DEFINITION,
 } from './constants';
 
-import PageSection from '../../components/layout/NewPageSection';
 import {
   DataPipelinesGraphic,
   DataSharingAgreementsGraphic,
@@ -21,15 +20,15 @@ import {
   OverdoseGraphGraphic,
 } from '../../assets/svg/graphics';
 import {
+  ContentGrid,
   GraphicShot,
   Header,
   InfoTile,
-  LearnMoreExternalLink,
+  LearnMoreButton,
+  PageSection,
   SectionContent,
-  SectionContentGrid,
   SubHeader,
 } from '../../components';
-import { TARGET } from '../../components/headers/MenuConsts';
 import { NEUTRALS, PURPLES } from '../../core/style/Colors';
 import { MEDIA_QUERY_MD, MEDIA_QUERY_SM } from '../../core/style/Sizes';
 import { IMPLEMENTATION_PLAN_LINK } from '../../utils/constants/links';
@@ -40,9 +39,12 @@ const ProcessStepsSectionContent = styled(SectionContent)`
   }
 `;
 
-const ProcessStepsGrid = styled(SectionContentGrid)`
-  grid-template-columns: auto;
+const ProcessStepsGrid = styled(ContentGrid)`
   margin: 128px 0 24px 0;
+
+  @media only screen and (min-width: ${MEDIA_QUERY_SM}px) {
+    grid-template-columns: auto;
+  }
 
   @media only screen and (min-width: ${MEDIA_QUERY_MD}px) {
     grid-template-columns: repeat(auto-fit, minmax(240px, auto));
@@ -99,7 +101,7 @@ const StepBubble = styled.div`
     align-items: center;
     background-color: ${PURPLES.PP08};
     border-radius: 50%;
-    color: ${NEUTRALS.WHITE};
+    color: white;
     display: flex;
     flex: 0 0 auto;
     font-size: 20px;
@@ -131,12 +133,12 @@ const HOW_TO_WORK_WITH_US_SUBHEADER = 'As a public benefit corporation, OpenLatt
   + ' information at little or no cost.';
 
 const ProcessSection = () => (
-  <PageSection bgColor={NEUTRALS.WHITE}>
+  <PageSection>
     <SectionContent>
       <InfoTile maxWidth={{ sm: 460, lg: 528 }}>
         <Header as="h2">{HOW_TO_WORK_WITH_US_HEADER}</Header>
         <SubHeader as="h5">{HOW_TO_WORK_WITH_US_SUBHEADER}</SubHeader>
-        <LearnMoreExternalLink href={IMPLEMENTATION_PLAN_LINK} target={TARGET}>Learn more</LearnMoreExternalLink>
+        <LearnMoreButton href={IMPLEMENTATION_PLAN_LINK} />
       </InfoTile>
     </SectionContent>
     <ProcessStepsSectionContent>

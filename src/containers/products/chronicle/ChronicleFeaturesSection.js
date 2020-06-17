@@ -19,15 +19,16 @@ import {
   STREAMLINE_SUBHEADER,
 } from './constants/language';
 
-import PageSection from '../../../components/layout/NewPageSection';
 import { ChronicleFeatureShot1, ChronicleFeatureShot2, ChronicleFeatureShot3 } from '../../../assets/images/chronicle';
 import { BarsCircleIcon, MergeArrowCircleIcon, UserCircleIcon } from '../../../assets/svg/circle-icons';
 import {
+  ContentGrid,
+  FeatureGrid,
   GraphicShot,
   Header,
   InfoTile,
+  PageSection,
   SectionContent,
-  SectionContentGrid,
   SubHeader,
 } from '../../../components';
 import { ProductFeaturesSectionContent } from '../components';
@@ -35,7 +36,7 @@ import { ProductFeaturesSectionContent } from '../components';
 const ChronicleFeaturesSection = () => (
   <PageSection>
     <ProductFeaturesSectionContent>
-      <SectionContentGrid>
+      <ContentGrid align={{ v: 'start' }}>
         <InfoTile align="left">
           <UserCircleIcon />
           <Header as="h3">{MANAGE_PARTICIPANTS_HEADER}</Header>
@@ -51,10 +52,10 @@ const ChronicleFeaturesSection = () => (
           <Header as="h3">{ANALYZE_COLLABORATE_HEADER}</Header>
           <SubHeader as="h6">{ANALYZE_COLLABORATE_SUBHEADER}</SubHeader>
         </InfoTile>
-      </SectionContentGrid>
+      </ContentGrid>
     </ProductFeaturesSectionContent>
     <SectionContent>
-      <SectionContentGrid align="center">
+      <FeatureGrid>
         <InfoTile align="left">
           <Header as="h2">{STREAMLINE_HEADER}</Header>
           <SubHeader as="h5">{STREAMLINE_SUBHEADER}</SubHeader>
@@ -62,10 +63,10 @@ const ChronicleFeaturesSection = () => (
         <GraphicShot withBorder>
           <ChronicleFeatureShot1 />
         </GraphicShot>
-      </SectionContentGrid>
+      </FeatureGrid>
     </SectionContent>
     <SectionContent>
-      <SectionContentGrid align="center" reverseOrderOnMobile>
+      <FeatureGrid reverseOrderOnWrap>
         <GraphicShot withBorder>
           <ChronicleFeatureShot2 />
         </GraphicShot>
@@ -73,10 +74,10 @@ const ChronicleFeaturesSection = () => (
           <Header as="h2">{REVIEW_STUDY_DATA_HEADER}</Header>
           <SubHeader as="h5">{REVIEW_STUDY_DATA_SUBHEADER}</SubHeader>
         </InfoTile>
-      </SectionContentGrid>
+      </FeatureGrid>
     </SectionContent>
     <SectionContent>
-      <SectionContentGrid align="center">
+      <FeatureGrid>
         <InfoTile align="left">
           <Header as="h2">{INTEGRATE_AND_SHARE_DATA_HEADER}</Header>
           <SubHeader as="h5">{INTEGRATE_AND_SHARE_DATA_SUBHEADER}</SubHeader>
@@ -84,7 +85,7 @@ const ChronicleFeaturesSection = () => (
         <GraphicShot withBorder>
           <ChronicleFeatureShot3 />
         </GraphicShot>
-      </SectionContentGrid>
+      </FeatureGrid>
     </SectionContent>
   </PageSection>
 );

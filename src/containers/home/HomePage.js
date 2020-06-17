@@ -11,11 +11,11 @@ import OurCustomersSection from './OurCustomersSection';
 import QuotesSection from './QuotesSection';
 
 import FooterSection from '../footer/FooterSection';
-import ScrollToTopOnMount from '../../components/layout/ScrollToTopOnMount';
+import { ScrollToTop } from '../../components';
 
 const HomePage = () => (
   <>
-    <ScrollToTopOnMount />
+    <ScrollToTop />
     <HomeIntroSection />
     <InfoSection />
     <FeaturesSection />
