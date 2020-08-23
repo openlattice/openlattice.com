@@ -150,7 +150,6 @@ const TODD :TeamMemberType = {
   PHOTO: <ToddPhoto />,
 };
 
-
 const TEAM_MEMBERS :TeamMemberType[] = [
   MATTHEW,
   HRISTO,

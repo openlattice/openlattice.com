@@ -105,7 +105,6 @@ const Customer = styled.div`
   }
 `;
 
-
 const OurCustomersSection = () => (
   <PageSection bgColor={NEUTRALS.GRAY_05}>
     <SectionContent>
