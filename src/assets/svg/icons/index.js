@@ -2,7 +2,6 @@
  * @flow
  */
 
-
 import styled from 'styled-components';
 
 import AstrometricsIconSVG from './astrometrics-icon.svg';
