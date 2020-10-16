@@ -23,19 +23,16 @@ const DRAWER_BREAKPOINT = 960;
 
 const getComputedStyles = ({ isNavFixed }) => {
 
-  let bgColor = NEUTRALS.GRAY_05;
   let boxShadow = 'none';
   let padding = `24px ${PAGE_PADDING}px`;
   let position = 'relative';
   if (isNavFixed) {
-    bgColor = 'white';
     boxShadow = '0 5px 20px rgba(0, 0, 0, 0.05)';
     padding = `16px ${PAGE_PADDING}px`;
     position = 'fixed';
   }
 
   return css`
-    background-color: ${bgColor};
     box-shadow: ${boxShadow};
     padding: ${padding};
     position: ${position};
@@ -44,14 +41,13 @@ const getComputedStyles = ({ isNavFixed }) => {
 
 const NavigationWrapper = styled.div`
   align-items: flex-start;
-  background-color: ${({ isNavFixed }) => (isNavFixed ? 'white' : NEUTRALS.GRAY_05)};
   display: flex;
   height: 64px;
 `;
 
 const Navigation = styled.nav`
   align-items: center;
-  background-color: ${NEUTRALS.GRAY_05};
+  background-color: white;
   display: flex;
   justify-content: space-between;
   top: 0;
