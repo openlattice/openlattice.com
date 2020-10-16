@@ -3,9 +3,11 @@
  */
 
 import styled, { css } from 'styled-components';
+import { Colors } from 'lattice-ui-kit';
 
-import { NEUTRALS } from '../../core/style/Colors';
 import { MEDIA_QUERY_LG, MEDIA_QUERY_SM } from '../../core/style/Sizes';
+
+const { NEUTRAL } = Colors;
 
 const FONT_SIZE_LG = {
   h4: '20px',
@@ -36,7 +38,7 @@ const getComputedStyles = ({ align = 'center', as = 'h4' } :Props) => (
 );
 
 const SubHeader = styled.h4`
-  color: ${NEUTRALS.GRAY_07};
+  color: ${NEUTRAL.N900};
   font-size: 16px;
   margin: 0;
   margin-bottom: 32px;

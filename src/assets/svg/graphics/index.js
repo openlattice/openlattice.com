@@ -14,6 +14,9 @@ import OurCustomersMapSVG from './our-customers-map.svg';
 import OverdoseGraphSVG from './overdose-graph.svg';
 import PlatformLayersSVG from './platform-layers.svg';
 import PoliceDataCardSVG from './police-data-card.svg';
+import RightDataSVG from './right-data.svg';
+import RightPeopleSVG from './right-people.svg';
+import RightTimeSVG from './right-time.svg';
 
 const DataPipelinesGraphic = styled.img.attrs({
   alt: 'data-pipelines-graphic',
@@ -65,6 +68,21 @@ const PoliceDataCardGraphic = styled.img.attrs({
   src: PoliceDataCardSVG,
 })``;
 
+const RightDataGraphic = styled.img.attrs({
+  alt: 'right-data-graphic',
+  src: RightDataSVG,
+})``;
+
+const RightPeopleGraphic = styled.img.attrs({
+  alt: 'right-people-graphic',
+  src: RightPeopleSVG,
+})``;
+
+const RightTimeGraphic = styled.img.attrs({
+  alt: 'right-time-graphic',
+  src: RightTimeSVG,
+})``;
+
 export {
   DataPipelinesGraphic,
   DataSharingAgreementsGraphic,
@@ -76,4 +94,7 @@ export {
   OverdoseGraphGraphic,
   PlatformLayersGraphic,
   PoliceDataCardGraphic,
+  RightDataGraphic,
+  RightPeopleGraphic,
+  RightTimeGraphic,
 };
