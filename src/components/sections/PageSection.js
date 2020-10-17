@@ -19,8 +19,8 @@ const getComputedStyles = ({ bgColor, bgImage }) => {
   }
 
   return css`
-    background-color: ${bgColor || 'white'};
     background: ${bg};
+    background-color: ${bgColor || 'white'};
     background-size: ${bgSize};
   `;
 };

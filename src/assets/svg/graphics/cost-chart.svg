@@ -1,0 +1,58 @@
+<svg width="576" height="576" viewBox="0 0 576 576" fill="none" xmlns="http://www.w3.org/2000/svg">
+<circle cx="288" cy="288" r="288" fill="url(#paint0_radial)"/>
+<rect x="48.4596" y="56.7916" width="431.081" height="488.068" rx="4.13617" fill="white" stroke="#E1E1EB" stroke-width="0.919149"/>
+<text fill="#2E2E34" xml:space="preserve" style="white-space: pre" font-family="Open Sans" font-size="18.383" font-weight="600" letter-spacing="0px"><tspan x="75.5744" y="103.538">Cost</tspan></text>
+<text fill="#8E929B" xml:space="preserve" style="white-space: pre" font-family="Open Sans" font-size="14.7064" font-weight="600" letter-spacing="0px"><tspan x="75.5744" y="133.62">Total </tspan></text>
+<text fill="#555E6F" xml:space="preserve" style="white-space: pre" font-family="Open Sans" font-size="14.7064" font-weight="600" letter-spacing="0px"><tspan x="115.141" y="133.62">$1,789,329</tspan></text>
+<text fill="#8E929B" xml:space="preserve" style="white-space: pre" font-family="Open Sans" font-size="12.8681" font-weight="600" letter-spacing="0px"><tspan x="176.681" y="514.273">2018</tspan></text>
+<text fill="#8E929B" xml:space="preserve" style="white-space: pre" font-family="Open Sans" font-size="12.8681" font-weight="600" letter-spacing="0px"><tspan x="241.021" y="514.273">2019</tspan></text>
+<text fill="#8E929B" xml:space="preserve" style="white-space: pre" font-family="Open Sans" font-size="12.8681" font-weight="600" letter-spacing="0px"><tspan x="305.362" y="514.273">2020</tspan></text>
+<text fill="#8E929B" xml:space="preserve" style="white-space: pre" font-family="Open Sans" font-size="12.8681" font-weight="600" letter-spacing="0px"><tspan x="369.702" y="514.273">2021</tspan></text>
+<text fill="#8E929B" xml:space="preserve" style="white-space: pre" font-family="Open Sans" font-size="12.8681" font-weight="600" letter-spacing="0px"><tspan x="97.6359" y="486.698">0</tspan></text>
+<text fill="#8E929B" xml:space="preserve" style="white-space: pre" font-family="Open Sans" font-size="12.8681" font-weight="600" letter-spacing="0px"><tspan x="75.1563" y="333.201">300k</tspan></text>
+<text fill="#8E929B" xml:space="preserve" style="white-space: pre" font-family="Open Sans" font-size="12.8681" font-weight="600" letter-spacing="0px"><tspan x="75.5095" y="435.226">100k</tspan></text>
+<text fill="#8E929B" xml:space="preserve" style="white-space: pre" font-family="Open Sans" font-size="12.8681" font-weight="600" letter-spacing="0px"><tspan x="75.1563" y="281.729">400k</tspan></text>
+<text fill="#8E929B" xml:space="preserve" style="white-space: pre" font-family="Open Sans" font-size="12.8681" font-weight="600" letter-spacing="0px"><tspan x="75.1563" y="384.673">200k</tspan></text>
+<text fill="#8E929B" xml:space="preserve" style="white-space: pre" font-family="Open Sans" font-size="12.8681" font-weight="600" letter-spacing="0px"><tspan x="75.1563" y="231.175">500k</tspan></text>
+<text fill="#8E929B" xml:space="preserve" style="white-space: pre" font-family="Open Sans" font-size="12.8681" font-weight="600" letter-spacing="0px"><tspan x="75.1563" y="179.703">600k</tspan></text>
+<rect x="123.37" y="480.979" width="329.055" height="0.919149" fill="#CDD1DB"/>
+<path d="M123.37 165.711H124.289V481.898H123.37V165.711Z" fill="#CDD1DB"/>
+<path d="M173.004 383.549C173.004 383.041 173.416 382.63 173.923 382.63H208.851C209.359 382.63 209.77 383.041 209.77 383.549V481.898H173.004V383.549Z" fill="#A57CFF"/>
+<path d="M237.345 196.042C237.345 195.535 237.756 195.123 238.264 195.123H273.191C273.699 195.123 274.111 195.535 274.111 196.042V481.898H237.345V196.042Z" fill="#A57CFF"/>
+<path d="M301.685 263.141C301.685 262.633 302.097 262.222 302.604 262.222H337.532C338.04 262.222 338.451 262.633 338.451 263.141V481.898H301.685V263.141Z" fill="#A57CFF"/>
+<rect x="173.004" y="400.094" width="36.766" height="23.8979" fill="#F89090"/>
+<rect x="237.345" y="241.081" width="36.766" height="70.7745" fill="#F89090"/>
+<rect x="301.685" y="279.685" width="36.766" height="45.9575" fill="#F89090"/>
+<path d="M173.004 383.549C173.004 383.041 173.416 382.63 173.923 382.63H208.851C209.359 382.63 209.77 383.041 209.77 383.549V400.094H173.004V383.549Z" fill="#FFC59E"/>
+<path d="M237.345 196.042C237.345 195.535 237.756 195.123 238.264 195.123H273.191C273.699 195.123 274.111 195.535 274.111 196.042V241.081H237.345V196.042Z" fill="#FFC59E"/>
+<path d="M301.685 263.141C301.685 262.633 302.097 262.222 302.604 262.222H337.532C338.04 262.222 338.451 262.633 338.451 263.141V279.686H301.685V263.141Z" fill="#FFC59E"/>
+<rect x="173.004" y="423.992" width="36.766" height="27.5745" fill="#7DD2FF"/>
+<rect x="237.345" y="311.855" width="36.766" height="80.8851" fill="#7DD2FF"/>
+<rect x="301.685" y="325.643" width="36.766" height="56.0681" fill="#7DD2FF"/>
+<path opacity="0.3" d="M366 407.919C366 407.412 366.412 407 366.919 407H402.081C402.588 407 403 407.412 403 407.919V482H366V407.919Z" fill="#A57CFF"/>
+<rect opacity="0.3" x="366.026" y="302.664" width="36.766" height="42.2808" fill="#F89090"/>
+<path opacity="0.3" d="M366.026 277.847C366.026 277.339 366.437 276.927 366.945 276.927H401.872C402.38 276.927 402.791 277.339 402.791 277.847V302.664H366.026V277.847Z" fill="#FF9A58"/>
+<rect opacity="0.3" x="366.026" y="344.945" width="36.766" height="62.5021" fill="#7DD2FF"/>
+<g filter="url(#filter0_d)">
+<rect x="338" y="200" width="114" height="49" rx="2.75745" fill="white"/>
+<rect x="338.46" y="200.46" width="113.081" height="48.0809" rx="2.29787" stroke="#E1E1EB" stroke-width="0.919149"/>
+</g>
+<text fill="#2E2E34" xml:space="preserve" style="white-space: pre" font-family="Open Sans" font-size="11.0298" font-weight="600" letter-spacing="0px"><tspan x="361.43" y="220.69">Event</tspan></text>
+<text fill="#2E2E34" xml:space="preserve" style="white-space: pre" font-family="Open Sans" font-size="11.0298" font-weight="600" letter-spacing="0px"><tspan x="361.43" y="236.315">Cost: $37,420</tspan></text>
+<path d="M354.536 219.94C355.805 219.94 356.834 218.912 356.834 217.643C356.834 216.374 355.805 215.345 354.536 215.345C353.267 215.345 352.238 216.374 352.238 217.643C352.238 218.912 353.267 219.94 354.536 219.94Z" fill="#FF9A58"/>
+<defs>
+<filter id="filter0_d" x="319.617" y="190.809" width="150.766" height="85.766" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+<feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"/>
+<feOffset dy="9.19149"/>
+<feGaussianBlur stdDeviation="9.19149"/>
+<feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.1 0"/>
+<feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow"/>
+<feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow" result="shape"/>
+</filter>
+<radialGradient id="paint0_radial" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(288 288) rotate(90) scale(288)">
+<stop stop-color="#E2E0EB" stop-opacity="0.7"/>
+<stop offset="1" stop-color="#E2E0EB" stop-opacity="0"/>
+</radialGradient>
+</defs>
+</svg>

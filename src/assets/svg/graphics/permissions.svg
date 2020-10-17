@@ -1,0 +1,53 @@
+<svg width="596" height="576" viewBox="0 0 596 576" fill="none" xmlns="http://www.w3.org/2000/svg">
+<circle cx="288" cy="288" r="288" fill="url(#paint0_radial)"/>
+<rect x="0.5" y="51.5" width="431" height="370" rx="2.5" fill="white" stroke="#E1E1EB"/>
+<rect x="32.5" y="273.5" width="367" height="129" rx="2.5" fill="white" stroke="#E1E1EB"/>
+<text fill="#505060" xml:space="preserve" style="white-space: pre" font-family="Inter" font-size="20" font-weight="600" letter-spacing="0em"><tspan x="32" y="105.273">Permissions</tspan></text>
+<text fill="#9999AF" xml:space="preserve" style="white-space: pre" font-family="Inter" font-size="16" letter-spacing="0em"><tspan x="32" y="154.818">Owner</tspan></text>
+<text fill="#9999AF" xml:space="preserve" style="white-space: pre" font-family="Inter" font-size="16" letter-spacing="0em"><tspan x="32" y="154.818">Owner</tspan></text>
+<text fill="#7860FF" xml:space="preserve" style="white-space: pre" font-family="Inter" font-size="16" font-weight="600" letter-spacing="0em"><tspan x="106" y="154.818">Write</tspan></text>
+<text fill="#9999AF" xml:space="preserve" style="white-space: pre" font-family="Inter" font-size="16" letter-spacing="0em"><tspan x="170" y="154.818">Read</tspan></text>
+<text fill="#9999AF" xml:space="preserve" style="white-space: pre" font-family="Inter" font-size="16" letter-spacing="0em"><tspan x="233" y="154.818">Discover</tspan></text>
+<text fill="#505060" xml:space="preserve" style="white-space: pre" font-family="Inter" font-size="15" letter-spacing="0em"><tspan x="48" y="299.955">adam@yourdomain.com</tspan></text>
+<rect x="32.5" y="210.5" width="367" height="42" rx="2.5" fill="#F8F8FB" stroke="#E1E1EB"/>
+<text fill="#9999AF" xml:space="preserve" style="white-space: pre" font-family="Inter" font-size="15" letter-spacing="0em"><tspan x="76" y="236.955">Search users</tspan></text>
+<path d="M64 238.969L59.1644 234.133C60.0356 233.031 60.5156 231.68 60.5156 230.258C60.5156 228.587 59.8578 227.022 58.6844 225.831C57.4933 224.658 55.9289 224 54.2578 224C52.5867 224 51.0222 224.658 49.8311 225.831C48.6578 227.004 48 228.587 48 230.258C48 231.929 48.6578 233.493 49.8311 234.684C51.0044 235.858 52.5867 236.516 54.2578 236.516C55.68 236.516 57.0311 236.036 58.1333 235.164L62.9689 240L64 238.969ZM50.8622 233.653C48.9956 231.787 48.9956 228.729 50.8622 226.862C51.7689 225.956 52.9778 225.458 54.2578 225.458C55.5378 225.458 56.7467 225.956 57.6533 226.862C59.52 228.729 59.52 231.787 57.6533 233.653C56.7467 234.56 55.5378 235.058 54.2578 235.058C52.9778 235.058 51.7689 234.56 50.8622 233.653Z" fill="#9999AF"/>
+<rect x="32" y="316" width="368" height="1" fill="#E1E1EB"/>
+<rect x="344" y="277" width="52" height="36" rx="2" fill="#FBD2CC"/>
+<rect x="364" y="295" width="12" height="1" fill="#D94630"/>
+<text fill="#505060" xml:space="preserve" style="white-space: pre" font-family="Inter" font-size="15" letter-spacing="0em"><tspan x="48" y="342.955">jane@yourdomain.com</tspan></text>
+<rect x="32" y="359" width="368" height="1" fill="#E1E1EB"/>
+<rect x="344" y="320" width="52" height="36" rx="2" fill="#FBD2CC"/>
+<rect x="364" y="338" width="12" height="1" fill="#D94630"/>
+<text fill="#505060" xml:space="preserve" style="white-space: pre" font-family="Inter" font-size="15" letter-spacing="0em"><tspan x="48" y="385.955">john@yourdomain.com</tspan></text>
+<rect x="344" y="363" width="52" height="36" rx="2" fill="#FBD2CC"/>
+<rect x="364" y="381" width="12" height="1" fill="#D94630"/>
+<rect y="177" width="432" height="1" fill="#E1E1EB"/>
+<rect x="106" y="177" width="42" height="1" fill="#7860FF"/>
+<g filter="url(#filter0_d)">
+<rect x="144" y="300" width="432" height="234" rx="3" fill="white"/>
+<rect x="144.5" y="300.5" width="431" height="233" rx="2.5" stroke="#E1E1EB"/>
+</g>
+<text fill="#505060" xml:space="preserve" style="white-space: pre" font-family="Inter" font-size="20" font-weight="600" letter-spacing="0em"><tspan x="176" y="354.273">Trusted Organizations</tspan></text>
+<rect x="176.5" y="458.5" width="367" height="43" rx="2.5" fill="white" stroke="#E1E1EB"/>
+<text fill="#9999AF" xml:space="preserve" style="white-space: pre" font-family="Inter" font-size="15" letter-spacing="0em"><tspan x="192" y="484.955">Add new trusted organization</tspan></text>
+<text fill="#9999AF" xml:space="preserve" style="white-space: pre" font-family="Inter" font-size="13" letter-spacing="0em"><tspan x="176" y="400.727">Organizations listed here and all their members will be able </tspan><tspan x="176" y="420.727">to see this organization and all its roles.</tspan></text>
+<rect x="488" y="462" width="52" height="36" rx="2" fill="#D7EFE6"/>
+<rect x="508" y="480" width="13" height="1" fill="#43AB7B"/>
+<rect x="514" y="474" width="1" height="13" fill="#43AB7B"/>
+<defs>
+<filter id="filter0_d" x="124" y="290" width="472" height="274" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+<feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"/>
+<feOffset dy="10"/>
+<feGaussianBlur stdDeviation="10"/>
+<feColorMatrix type="matrix" values="0 0 0 0 0.184314 0 0 0 0 0.176471 0 0 0 0 0.243137 0 0 0 0.05 0"/>
+<feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow"/>
+<feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow" result="shape"/>
+</filter>
+<radialGradient id="paint0_radial" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(288 288) rotate(90) scale(288)">
+<stop stop-color="#E2E0EB" stop-opacity="0.7"/>
+<stop offset="1" stop-color="#E2E0EB" stop-opacity="0"/>
+</radialGradient>
+</defs>
+</svg>

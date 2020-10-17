@@ -15,6 +15,7 @@ import { Route, Switch } from 'react-router';
 import { AppNav } from '../../components';
 import { Routes } from '../../core/router';
 import { AboutPage } from '../about';
+import { GovernmentPage } from '../government';
 import { HomePage } from '../home';
 import { PlatformPage } from '../platform';
 import { PrivacyPolicyPage } from '../privacy';
@@ -41,6 +42,7 @@ const AppContainer = () => (
         <Route exact path={Routes.PLATFORM} component={PlatformPage} />
         <Route exact path={Routes.WORKING_WITH_US} component={WorkingWithUsPage} />
         <Route exact path={Routes.ABOUT} component={AboutPage} />
+        <Route exact path={Routes.GOVERNMENT} component={GovernmentPage} />
         <Route component={HomePage} />
       </Switch>
     </MuiPickersUtilsProvider>

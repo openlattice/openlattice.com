@@ -8,7 +8,6 @@ import styled from 'styled-components';
 import { Colors } from 'lattice-ui-kit';
 
 import OurCustomersSection from './OurCustomersSection';
-import QuotesSection from './QuotesSection';
 import {
   AUTOMATE_NOTIFICATIONS,
   COLLECT_AND_CONNECT,
@@ -23,6 +22,7 @@ import {
   SEE_ACCESS,
   SET_ACCESS,
 } from './constants/language';
+import { QUOTES } from './constants/quotes';
 
 import FooterSection from '../footer/FooterSection';
 import { StatueOfLibertyPNG } from '../../assets/images/home';
@@ -37,12 +37,12 @@ import {
   Header,
   InfoTile,
   PageSection,
+  QuotesSection,
   ScrollToTop,
   SectionContent,
   SolidButton,
   SubHeader,
 } from '../../components';
-import { NEUTRALS } from '../../core/style/Colors';
 import { openBeacon } from '../../utils/Utils';
 
 const { PURPLE } = Colors;
@@ -61,7 +61,7 @@ const Underline = styled.span`
 const HomePage = () => (
   <>
     <ScrollToTop />
-    <PageSection bgColor={NEUTRALS.GRAY_05} bgImage={StatueOfLibertyPNG}>
+    <PageSection bgImage={StatueOfLibertyPNG}>
       <SectionContent align={{ h: 'end' }} margin="20vh 0">
         <Header>With liberty and</Header>
         <Header>
@@ -124,7 +124,7 @@ const HomePage = () => (
         </FeatureGrid>
       </SectionContent>
     </PageSection>
-    <QuotesSection />
+    <QuotesSection quotes={QUOTES} />
     <OurCustomersSection />
     <FooterSection />
   </>
