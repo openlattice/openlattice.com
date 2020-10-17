@@ -38,7 +38,7 @@ const getComputedStyles = ({ align = 'center', as = 'h4' } :Props) => (
 );
 
 const SubHeader = styled.h4`
-  color: ${NEUTRAL.N900};
+  color: ${({ color }) => (color || NEUTRAL.N900)};
   font-size: 16px;
   margin: 0;
   margin-bottom: 32px;

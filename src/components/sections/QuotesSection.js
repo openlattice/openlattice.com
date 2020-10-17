@@ -8,9 +8,9 @@ import styled from 'styled-components';
 import { faChevronLeft, faChevronRight } from '@fortawesome/pro-regular-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
-import { QUOTES } from './constants/quotes';
+import PageSection from './PageSection';
+import SectionContent from './SectionContent';
 
-import { PageSection, SectionContent } from '../../components';
 import { NEUTRALS } from '../../core/style/Colors';
 import { MEDIA_QUERY_MD, MEDIA_QUERY_SM } from '../../core/style/Sizes';
 
@@ -45,6 +45,7 @@ const Quote = styled.div`
 const Name = styled.div`
   font-size: 18px;
   font-weight: 600;
+  text-align: center;
 
   @media only screen and (max-width: 575px) {
     font-size: 14px;
@@ -53,6 +54,7 @@ const Name = styled.div`
 
 const Org = styled(Name)`
   font-weight: normal;
+  text-align: center;
 `;
 
 const ButtonCircle = styled.div`
@@ -83,16 +85,16 @@ const ButtonCircle = styled.div`
   }
 `;
 
-const QuotesSection = () => {
+const QuotesSection = ({ quotes } :{ quotes :Object[] }) => {
 
   const [index, setIndex] = useState(0);
 
   const moveForward = () => {
     const nextIndex = index + 1;
-    if (nextIndex < QUOTES.length) {
+    if (nextIndex < quotes.length) {
       setIndex(nextIndex);
     }
-    else if (nextIndex === QUOTES.length) {
+    else if (nextIndex === quotes.length) {
       setIndex(0);
     }
   };
@@ -103,26 +105,34 @@ const QuotesSection = () => {
       setIndex(previousIndex);
     }
     else if (previousIndex === -1) {
-      setIndex(QUOTES.length - 1);
+      setIndex(quotes.length - 1);
     }
   };
 
   return (
     <PageSection bgColor={NEUTRALS.GRAY_16}>
       <SectionContent vertical={false}>
-        <ButtonCircle arrowLeft onClick={moveBackward}>
-          <FontAwesomeIcon fixedWidth icon={faChevronLeft} />
-        </ButtonCircle>
+        {
+          quotes.length > 1 && (
+            <ButtonCircle aria-label="arrow-left-button" arrowLeft onClick={moveBackward}>
+              <FontAwesomeIcon fixedWidth icon={faChevronLeft} />
+            </ButtonCircle>
+          )
+        }
         <QuoteWrapper>
-          <Quote>{QUOTES[index].QUOTE}</Quote>
+          <Quote>{quotes[index].QUOTE}</Quote>
           <div>
-            <Name>{QUOTES[index].NAME}</Name>
-            <Org>{QUOTES[index].ORG}</Org>
+            <Name>{quotes[index].NAME}</Name>
+            <Org>{quotes[index].ORG}</Org>
           </div>
         </QuoteWrapper>
-        <ButtonCircle arrowRight onClick={moveForward}>
-          <FontAwesomeIcon fixedWidth icon={faChevronRight} />
-        </ButtonCircle>
+        {
+          quotes.length > 1 && (
+            <ButtonCircle aria-label="arrow-right-button" arrowRight onClick={moveForward}>
+              <FontAwesomeIcon fixedWidth icon={faChevronRight} />
+            </ButtonCircle>
+          )
+        }
       </SectionContent>
     </PageSection>
   );

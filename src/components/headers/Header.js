@@ -54,7 +54,7 @@ const getComputedStyles = ({ align = 'center', as = 'h1' } :Props) => (
 
 const Header = styled.h1`
   align-items: center;
-  color: ${NEUTRAL.N900};
+  color: ${({ color }) => (color || NEUTRAL.N900)};
   display: flex;
   margin: 0;
   padding: 0;

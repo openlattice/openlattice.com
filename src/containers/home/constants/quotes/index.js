@@ -23,7 +23,5 @@ const QUOTES = [
 ];
 
 export {
-  DAVID_SCHWINDT,
-  JUSTIN_LOOSE,
   QUOTES,
 };
