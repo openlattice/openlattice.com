@@ -30,6 +30,7 @@ const QuoteWrapper = styled.div`
 const Quote = styled.div`
   font-size: 32px;
   margin-bottom: 80px;
+  text-align: center;
 
   @media only screen and (max-width: ${MEDIA_QUERY_MD}px) {
     font-size: 24px;

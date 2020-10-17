@@ -2,64 +2,56 @@
  * @flow
  */
 
-const APPLICATION_DEPLOYMENT = `Application
-deployment
-`;
+/*
+ * RIGHT DATA
+ */
 
-const APPLICATION_DEPLOYMENT_DESCRIPTION = 'Leverage our existing applications or develop your own on top of our open'
-  + ' APIs to utilize previously siloed datasets.';
-
-const DATA_SECURITY_AND_COMPLIANCE = 'Data security & compliance';
-const DATA_SECURITY_AND_COMPLIANCE_DESCRIPTION = 'We built our Platform from the ground up to acknowledge and account'
-  + ' for the security and compliance requirements of our customers.';
-
-const DATA_SHARING_AND_COLLABORATION = `Data sharing
-and collaboration
-`;
-
-const DATA_SHARING_AND_COLLABORATION_DESCRIPTION = 'Granular access controls let organizations share datasets without'
-  + ' compromising ownership, visibility, or security.';
-
-const GENERATE_DATASETS = 'Generate de-identified datasets for research';
-const GENERATE_DATASETS_DESCRIPTION = 'Respect your citizen\'s privacy and maintain regulatory compliance while'
-  + ' aggregating and analyzing data to better understand the community you serve.';
-
-const INTELLIGENT_DATA_INTEGRATIONS = `Intelligent
-data integrations
-`;
-
-const INTELLIGENT_DATA_INTEGRATIONS_DESCRIPTION = 'Integrate and standardize siloed databases intelligently through'
-  + ' our platform to utilize analyzable and aggregated data.';
-
-const MANAGE_ACCESS = 'Easily manage access & permissions across applications';
-const MANAGE_ACCESS_DESCRIPTION = 'Protect sensitive data by controlling what users are allowed to see and securely'
-  + ' define what is shared across organizations.';
-
-const SECURE_AUDIT_LOG = 'Secure audit log';
-const SECURE_AUDIT_LOG_DESCRIPTION = 'Protect against improper use of data by always knowing what users are doing'
- + ' with datasets.';
-
-const SHARE_DATA_BETTER_DECISIONS = `Share data to make
-better decisions`;
-
-const SHARE_DATA_BETTER_DECISIONS_DESCRIPTION = 'Collaborate across providers to make decisions grounded in a more'
-  + ' holistic view of how your constituents interact with the spectrum of services in your jurisdiction.';
+const COLLECT_AND_CONNECT = 'Collect and connect all the data you need';
+const CONNECT_ALL_THE_THINGS = 'Connect any and all systems, teams, departments, jurisdictions, and researchers and'
+  + ' feed the data into one secure, modern, easy-to-use system that links it all together for you.';
+const COLLECT_DATA_VIA_APPS = 'Optionally, collect data through OpenLattice Apps, built to help you achieve specific'
+  + ' goals.';
+const OL_PROTECTS_DATA = 'OpenLattice makes sure the data is properly protected and compliant, so you can focus on the'
+  + ' actionable insights that come from integrated data.';
 
 export {
-  APPLICATION_DEPLOYMENT,
-  APPLICATION_DEPLOYMENT_DESCRIPTION,
-  DATA_SECURITY_AND_COMPLIANCE,
-  DATA_SECURITY_AND_COMPLIANCE_DESCRIPTION,
-  DATA_SHARING_AND_COLLABORATION,
-  DATA_SHARING_AND_COLLABORATION_DESCRIPTION,
-  GENERATE_DATASETS,
-  GENERATE_DATASETS_DESCRIPTION,
-  INTELLIGENT_DATA_INTEGRATIONS,
-  INTELLIGENT_DATA_INTEGRATIONS_DESCRIPTION,
-  MANAGE_ACCESS,
-  MANAGE_ACCESS_DESCRIPTION,
-  SECURE_AUDIT_LOG,
-  SECURE_AUDIT_LOG_DESCRIPTION,
-  SHARE_DATA_BETTER_DECISIONS,
-  SHARE_DATA_BETTER_DECISIONS_DESCRIPTION,
+  COLLECT_AND_CONNECT,
+  COLLECT_DATA_VIA_APPS,
+  CONNECT_ALL_THE_THINGS,
+  OL_PROTECTS_DATA,
+};
+
+/*
+ * RIGHT PEOPLE
+ */
+
+const PUT_DATA_RIGHT_PEOPLE = 'Put the data in the hands of people who need it';
+const SET_ACCESS = 'Set access to data according to fine-grained permissions and roles.';
+const SEE_ACCESS = 'See who accessed what data and when.';
+const OL_ENSURES_ACCESS = 'OpenLattice makes sure only those who should have access to certain data actually do.';
+
+export {
+  OL_ENSURES_ACCESS,
+  PUT_DATA_RIGHT_PEOPLE,
+  SEE_ACCESS,
+  SET_ACCESS,
+};
+
+/*
+ * RIGHT TIME
+ */
+
+const GET_NOTIFIED = 'Get notified of key information instantly';
+const NOTIFY_OTHERS = 'Notify others that need to see the information you’re seeing and work with you or take over'
+  + ' a case.';
+const AUTOMATE_NOTIFICATIONS = 'Automate notifications upon certain triggers or scenarios, or when critical'
+  + ' information arises.';
+const OL_EASY_INFO = 'OpenLattice makes sure it’s easy to pass information to others and understand information being'
+  + ' sent to you.';
+
+export {
+  AUTOMATE_NOTIFICATIONS,
+  GET_NOTIFIED,
+  NOTIFY_OTHERS,
+  OL_EASY_INFO,
 };

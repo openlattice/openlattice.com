@@ -9,6 +9,7 @@ import GenerateDatasetsPNG from './generate-datasets.png';
 import ManageAccessPNG from './manage-access.png';
 import SecureAuditLogPNG from './secure-audit-log.png';
 import ShareDataPNG from './share-data.png';
+import StatueOfLibertyPNG from './statue-of-liberty.png';
 
 const DataSecurityAndComplianceImg = styled.img.attrs({
   alt: 'data-security-and-compliance',
@@ -41,4 +42,5 @@ export {
   ManageAccessImg,
   SecureAuditLogImg,
   ShareDataImg,
+  StatueOfLibertyPNG,
 };
