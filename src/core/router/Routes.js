@@ -3,7 +3,6 @@
  */
 
 export const ABOUT :string = '/about';
-export const WORKING_WITH_US :string = '/workingwithus';
 export const PRODUCTS :string = '/products';
 export const PLATFORM :string = '/platform';
 
@@ -19,8 +18,19 @@ const ROOT :'/' = '/';
 const GOVERNMENT :'/government' = '/government';
 const RESEARCH :'/research' = '/research';
 
+const WORKING_WITH_US :'/working-with-us' = '/working-with-us';
+
+// $FlowFixMe - ignoring flow because I prefer the code hints to show the value
+const WORKING_WITH_US_GOVERNMENT :'/working-with-us/government' = `${WORKING_WITH_US}/government`;
+
+// $FlowFixMe - ignoring flow because I prefer the code hints to show the value
+const WORKING_WITH_US_RESEARCH :'/working-with-us/research' = `${WORKING_WITH_US}/research`;
+
 export {
   GOVERNMENT,
   RESEARCH,
   ROOT,
+  WORKING_WITH_US,
+  WORKING_WITH_US_GOVERNMENT,
+  WORKING_WITH_US_RESEARCH,
 };
