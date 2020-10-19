@@ -3,23 +3,8 @@
  */
 
 /*
- * intro section
- */
-
-const DESIGNED_FOR_SECURITY_HEADER = `Designed to work with
-your security and
-compliance needs
-`;
-const DESIGNED_FOR_SECURITY_SUBHEADER = 'We built our platform from the ground up to provide secure data storage'
-  + ' and transfer while accommodating for complex compliance requirements of various types of data.';
-
-/*
  * core platform section
  */
-
-const CORE_PLATFORM_FEATURES_HEADER = 'Core platform features';
-const CORE_PLATFORM_FEATURES_SUBHEADER = 'Our solutions help organizations use technology to drive positive change in'
-  + ' tackling recidivism, homelessness, mass incarceration, and other key societal welfare issues.';
 
 const DATA_EXPLORATION_HEADER = 'Data Exploration';
 const DATA_EXPLORATION_SUBHEADER = 'Access, explore, and analyze your data - search for datasets, traverse connections'
@@ -75,8 +60,6 @@ export {
   CFR_TEXT,
   CJIS_TEXT,
   CLOUD_TEXT,
-  CORE_PLATFORM_FEATURES_HEADER,
-  CORE_PLATFORM_FEATURES_SUBHEADER,
   DATA_EXPLORATION_HEADER,
   DATA_EXPLORATION_SUBHEADER,
   DATA_INTEGRATION_HEADER,
@@ -87,8 +70,6 @@ export {
   DATA_STANDARDIZATION_SUBHEADER,
   DATA_STORAGE_HEADER,
   DATA_STORAGE_SUBHEADER,
-  DESIGNED_FOR_SECURITY_HEADER,
-  DESIGNED_FOR_SECURITY_SUBHEADER,
   ENCRYPTION_TEXT,
   FERPA_TEXT,
   GDPR_TEXT,

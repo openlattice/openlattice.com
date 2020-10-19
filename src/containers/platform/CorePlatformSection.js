@@ -7,7 +7,6 @@ import React from 'react';
 import styled from 'styled-components';
 
 import {
-  CORE_PLATFORM_FEATURES_HEADER,
   DATA_EXPLORATION_HEADER,
   DATA_EXPLORATION_SUBHEADER,
   DATA_INTEGRATION_HEADER,
