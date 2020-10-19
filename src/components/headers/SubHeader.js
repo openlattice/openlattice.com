@@ -42,6 +42,7 @@ const SubHeader = styled.h4`
   font-size: 16px;
   margin: 0;
   margin-bottom: 32px;
+  max-width: ${({ maxWidth }) => (maxWidth ? `${maxWidth}px` : 'none')};
   padding: 0;
   white-space: pre-wrap;
   word-break: break-word;

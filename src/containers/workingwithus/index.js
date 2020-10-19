@@ -2,4 +2,5 @@
  * @flow
  */
 
-export { default as WorkingWithUsPage } from './WorkingWithUsPage';
+export { default as WorkingWithUsGovernmentPage } from './WorkingWithUsGovernmentPage';
+export { default as WorkingWithUsResearchPage } from './WorkingWithUsResearchPage';
