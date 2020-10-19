@@ -102,8 +102,8 @@ const NavItems = ({ inDrawer } :Props) => {
         {
           inDrawer
             ? (
-              <NavLink to={Routes.PRODUCTS}>
-                <NavItem>Product Overview</NavItem>
+              <NavLink to="#">
+                <NavItem>Products</NavItem>
               </NavLink>
             )
             : (
