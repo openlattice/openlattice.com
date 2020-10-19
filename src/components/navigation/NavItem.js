@@ -9,6 +9,7 @@ const NavItem = styled.div`
   display: flex;
   font-size: 15px;
   font-weight: 500;
+  margin-left: ${({ inDrawer }) => (inDrawer ? '30px' : 0)};
 `;
 
 export default NavItem;
