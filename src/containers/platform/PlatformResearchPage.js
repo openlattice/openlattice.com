@@ -34,13 +34,13 @@ const Tile = styled.div`
   grid-gap: ${({ gap }) => (gap ? `${gap}px` : '24px')};
 `;
 
-const PlatformGovernmentPage = () => (
+const PlatformResearchPage = () => (
   <>
     <ScrollToTop />
     <PageSection bgColor={NEUTRAL.N50}>
       <SectionContent margin="20vh 0" maxWidth={{ sm: 450, lg: 700 }}>
         <Header>The Modern OpenLattice Platform</Header>
-        <SubHeader>Finally, a safe and easy way to get actionable insights to public servants.</SubHeader>
+        <SubHeader>Finally, an easier way to run research studies.</SubHeader>
       </SectionContent>
     </PageSection>
     <PageSection>
@@ -96,32 +96,31 @@ const PlatformGovernmentPage = () => (
           <InfoTile>
             <BarsCircleIcon />
             <Typography gutterBottom variant="h2">
-              You want to make more data-driven decisions.
+              You want to collaborate on research studies.
             </Typography>
             <Typography variant="body1">
-              You know this will mean more effective and efficient services, more informed policy, and stronger
-              communities.
+              You know this will mean your research team can leverage more expertise, access more data, run more
+              analyses, draw more conclusions at tighter intervals, and impact broader populations.
             </Typography>
           </InfoTile>
           <InfoTile>
             <QuestionCircleIcon />
             <Typography gutterBottom variant="h2">
-              But it’s so complex, where do you start?
+              But, how do you get past the data sharing complications?
             </Typography>
             <Typography variant="body1">
-              Departments use different systems in different ways.  How do you connect your systems and people, without
-              overloading them with information they don’t need, all while keeping public data safe and planning for the
-              future?
+              Other methods of data sharing often don’t even work. When they do, they’re tedious to manage. You end up
+              spending too much of your time jumping through privacy and compliance hoops.
             </Typography>
           </InfoTile>
           <InfoTile>
             <LockCircleIcon />
             <Typography gutterBottom variant="h2">
-              Simplify safe data integration with one platform.
+              Simplify data collaboration with one platform.
             </Typography>
             <Typography variant="body1">
-              OpenLattice provides a modern, scalable platform that gives jurisdictions full control over their data,
-              and the flexibility to work with any systems and data partners while meeting top security standards.
+              With OpenLattice, researchers can securely and easily share and access data across organizational
+              boundaries. This means you can now smoothly collaborate where  previously difficult or impossible.
             </Typography>
           </InfoTile>
         </ContentGrid>
@@ -138,7 +137,7 @@ const PlatformGovernmentPage = () => (
               Built from the ground up to meet complex requirements
             </Typography>
             <Typography variant="body1">
-              Meeting security and compliance requirements is difficult. The OpenLattice platform takes care of it for
+              Meeting security and compliance requirements is difficult. The OpenLattice Platform takes care of it for
               you.
             </Typography>
             <div>
@@ -162,4 +161,4 @@ const PlatformGovernmentPage = () => (
   </>
 );
 
-export default PlatformGovernmentPage;
+export default PlatformResearchPage;
