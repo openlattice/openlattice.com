@@ -21,6 +21,7 @@ import MergeSVG from './merge.svg';
 import OpenLatticeSVG from './ol-icon.svg';
 import PlatformStackSVG from './platform-stack.svg';
 import PointerSVG from './pointer.svg';
+import QuestionSVG from './question.svg';
 import SearchSVG from './search.svg';
 import SelectSVG from './select.svg';
 import SyncSVG from './sync.svg';
@@ -130,6 +131,12 @@ const PointerCircleIcon = styled.img.attrs(({ width }) => ({
   width: width || 64,
 }))``;
 
+const QuestionCircleIcon = styled.img.attrs(({ width }) => ({
+  alt: 'question-circle-icon',
+  src: QuestionSVG,
+  width: width || 64,
+}))``;
+
 const SearchCircleIcon = styled.img.attrs(({ width }) => ({
   alt: 'search-circle-icon',
   src: SearchSVG,
@@ -184,6 +191,7 @@ export {
   OpenLatticeCircleIcon,
   PlatformStackCircleIcon,
   PointerCircleIcon,
+  QuestionCircleIcon,
   SearchCircleIcon,
   SelectCircleIcon,
   SyncCircleIcon,

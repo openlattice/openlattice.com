@@ -34,9 +34,11 @@ import {
   InfoTile,
   PageSection,
   SectionContent,
+  SolidButton,
 } from '../../components';
 import { NEUTRALS } from '../../core/style/Colors';
 import { MEDIA_QUERY_MD, MEDIA_QUERY_SM } from '../../core/style/Sizes';
+import { openBeacon } from '../../utils/Utils';
 
 const TileGrid = styled(ContentGrid)`
   @media only screen and (min-width: ${MEDIA_QUERY_SM}px) {
@@ -90,7 +92,7 @@ const InfoTile2 = styled(InfoTile)`
 
 const ComplianceAndSecuritySection = () => (
   <PageSection>
-    <SectionContent>
+    <SectionContent margin="0">
       <SeparationHeader>Compliance</SeparationHeader>
       <TileGrid>
         <InfoTile2 align="left">
@@ -131,6 +133,9 @@ const ComplianceAndSecuritySection = () => (
       </TileGrid>
     </SectionContent>
     <SectionContent>
+      <SolidButton onClick={openBeacon}>Learn More</SolidButton>
+    </SectionContent>
+    <SectionContent margin="0">
       <SeparationHeader>Security</SeparationHeader>
       <TileGrid>
         <InfoTile2 align="left">
@@ -155,6 +160,9 @@ const ComplianceAndSecuritySection = () => (
           </div>
         </InfoTile2>
       </TileGrid>
+    </SectionContent>
+    <SectionContent>
+      <SolidButton onClick={openBeacon}>Learn More</SolidButton>
     </SectionContent>
   </PageSection>
 );
