@@ -17,7 +17,7 @@ import { Routes } from '../../core/router';
 import { NEUTRALS } from '../../core/style/Colors';
 import { MEDIA_QUERY_LG } from '../../core/style/Sizes';
 import { openBeacon } from '../../utils/Utils';
-import { ContactUsButton } from '../controls';
+import { OutlineButton } from '../controls';
 
 const NavItemsWrapper = styled.div`
   align-items: ${({ inDrawer }) => (inDrawer ? 'stretch' : 'center')};
@@ -37,7 +37,7 @@ const NavItemsWrapper = styled.div`
     }
   }
 
-  ${ContactUsButton} {
+  ${OutlineButton} {
     align-items: center;
     display: flex;
     justify-content: center;
@@ -66,6 +66,7 @@ const PortalOuterWrapper = styled.div`
 const PortalInnerWrapper = styled.div`
   background-color: white;
   box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
+  min-width: 400px;
   padding: 16px 0;
   position: absolute;
   top: 70px;
@@ -78,10 +79,15 @@ type Props = {
 
 const NavItems = ({ inDrawer } :Props) => {
 
-  const [isPortalOpen, setIsPortalOpen] = useState(false);
+  const [isProductsPortalOpen, setIsProductsPortalOpen] = useState(false);
+  const [isWorkingWithUsPortalOpen, setIsWorkingWithUsPortalOpen] = useState(false);
 
   const toggleProductsPortal = () => {
-    setIsPortalOpen(!isPortalOpen);
+    setIsProductsPortalOpen(!isProductsPortalOpen);
+  };
+
+  const toggleWorkingWithUsPortal = () => {
+    setIsWorkingWithUsPortalOpen(!isWorkingWithUsPortalOpen);
   };
 
   return (
@@ -90,11 +96,8 @@ const NavItems = ({ inDrawer } :Props) => {
         <NavLink to={Routes.GOVERNMENT}>
           <NavItem>Government</NavItem>
         </NavLink>
-        <NavLink to={Routes.WORKING_WITH_US}>
-          <NavItem>Working with us</NavItem>
-        </NavLink>
-        <NavLink to={Routes.PLATFORM}>
-          <NavItem>Platform</NavItem>
+        <NavLink to={Routes.RESEARCH}>
+          <NavItem>Research</NavItem>
         </NavLink>
         {
           inDrawer
@@ -113,19 +116,63 @@ const NavItems = ({ inDrawer } :Props) => {
         {
           inDrawer && <ProductNavItems />
         }
-        <a href="https://help.openlattice.com" rel="noreferrer" target="_blank">
-          <NavItem>
-            Help Center
-          </NavItem>
-        </a>
-        <ContactUsButton onClick={openBeacon} />
+        {
+          inDrawer
+            ? (
+              <NavLink to="#">
+                <NavItem>Working with Us</NavItem>
+              </NavLink>
+            )
+            : (
+              <NavItem onClick={toggleWorkingWithUsPortal}>
+                <span>Working with Us</span>
+                <FontAwesomeIcon icon={faChevronDown} style={{ marginLeft: '8px' }} />
+              </NavItem>
+            )
+        }
+        {
+          inDrawer && (
+            <>
+              <NavLink to={Routes.WORKING_WITH_US_GOVERNMENT}>
+                <NavItem inDrawer>Government</NavItem>
+              </NavLink>
+              <NavLink to={Routes.WORKING_WITH_US_RESEARCH}>
+                <NavItem inDrawer>Research</NavItem>
+              </NavLink>
+            </>
+          )
+        }
+        <NavLink to={Routes.ABOUT}>
+          <NavItem>About</NavItem>
+        </NavLink>
+        <OutlineButton color="primary" onClick={openBeacon}>
+          Request a Demo
+        </OutlineButton>
       </NavItemsWrapper>
       {
-        isPortalOpen && (
+        isProductsPortalOpen && (
           <Portal>
             <PortalOuterWrapper onClick={toggleProductsPortal}>
               <PortalInnerWrapper>
                 <ProductNavItems inPortal />
+              </PortalInnerWrapper>
+            </PortalOuterWrapper>
+          </Portal>
+        )
+      }
+      {
+        isWorkingWithUsPortalOpen && (
+          <Portal>
+            <PortalOuterWrapper onClick={toggleWorkingWithUsPortal}>
+              <PortalInnerWrapper>
+                <NavItemsWrapper inDrawer>
+                  <NavLink to={Routes.WORKING_WITH_US_GOVERNMENT}>
+                    <NavItem>Government</NavItem>
+                  </NavLink>
+                  <NavLink to={Routes.WORKING_WITH_US_RESEARCH}>
+                    <NavItem>Research</NavItem>
+                  </NavLink>
+                </NavItemsWrapper>
               </PortalInnerWrapper>
             </PortalOuterWrapper>
           </Portal>
