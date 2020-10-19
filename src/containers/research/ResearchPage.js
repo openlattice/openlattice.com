@@ -4,7 +4,6 @@
 
 import React from 'react';
 
-import styled from 'styled-components';
 import { Colors } from 'lattice-ui-kit';
 
 import FooterSection from '../footer/FooterSection';
@@ -24,10 +23,6 @@ import { openBeacon } from '../../utils/Utils';
 
 const { NEUTRAL } = Colors;
 
-const StyledSubHeader = styled(SubHeader)`
-  max-width: 700px;
-`;
-
 const Container = () => (
   <>
     <ScrollToTop />
@@ -36,19 +31,19 @@ const Container = () => (
         <Header color={NEUTRAL.N800}>
           Keep collaborative science advancing
         </Header>
-        <StyledSubHeader color={NEUTRAL.N800}>
+        <SubHeader color={NEUTRAL.N800} maxWidth={700}>
           Get the data you need when you need it, collaborate on research, and spend more of your time on the fun stuff.
-        </StyledSubHeader>
+        </SubHeader>
         <SolidButton onClick={openBeacon}>Request a Demo</SolidButton>
       </SectionContent>
     </PageSection>
     <PageSection>
       <SectionContent>
         <Header color={NEUTRAL.N800}>Modern. Safe. Flexible.</Header>
-        <StyledSubHeader>
+        <SubHeader color={NEUTRAL.N800} maxWidth={700}>
           The OpenLattice data integration platform and applications make it safe, fast, and easy to manage study
           participation, collect data, and share data with your research data partners.
-        </StyledSubHeader>
+        </SubHeader>
       </SectionContent>
     </PageSection>
     <PageSection>

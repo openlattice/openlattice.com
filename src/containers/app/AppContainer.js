@@ -26,7 +26,7 @@ import { PCMProductPage } from '../products/pcm';
 import { ResearchHubProductPage } from '../products/research-hub';
 import { ResearchPage } from '../research';
 import { TermsOfServicePage } from '../terms';
-import { WorkingWithUsPage } from '../workingwithus';
+import { WorkingWithUsGovernmentPage, WorkingWithUsResearchPage } from '../workingwithus';
 
 const AppContainer = () => (
   <ThemeProvider theme={lightTheme}>
@@ -41,10 +41,11 @@ const AppContainer = () => (
         <Route exact path={Routes.PCM} component={PCMProductPage} />
         <Route exact strict path={Routes.PRODUCTS} component={ProductsPage} />
         <Route exact path={Routes.PLATFORM} component={PlatformPage} />
-        <Route exact path={Routes.WORKING_WITH_US} component={WorkingWithUsPage} />
         <Route exact path={Routes.ABOUT} component={AboutPage} />
         <Route exact path={Routes.GOVERNMENT} component={GovernmentPage} />
         <Route exact path={Routes.RESEARCH} component={ResearchPage} />
+        <Route exact path={Routes.WORKING_WITH_US_GOVERNMENT} component={WorkingWithUsGovernmentPage} />
+        <Route exact path={Routes.WORKING_WITH_US_RESEARCH} component={WorkingWithUsResearchPage} />
         <Route component={HomePage} />
       </Switch>
     </MuiPickersUtilsProvider>
