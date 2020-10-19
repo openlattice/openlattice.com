@@ -9,9 +9,9 @@ import { ProductIntroSection } from '../components';
 import { ChronicleProductShot } from '../../../assets/images/chronicle';
 import { OpenLatticeIcon } from '../../../assets/svg/icons';
 
-const INTRO_HEADER = `Manage participants, data
-collection, and compliance for
-your human-centered research study`;
+const INTRO_HEADER = `Manage participants and data
+collection for human-centered
+research studies`;
 
 const INTRO_SUBHEADER = 'Chronicle gives your research team new options to run multiple phases of your study.'
   + ' Chronicle includes an optional participant mobile app, a flexible dashboard to see and manage participation'
