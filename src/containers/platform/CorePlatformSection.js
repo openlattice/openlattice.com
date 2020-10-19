@@ -7,8 +7,6 @@ import React from 'react';
 import styled from 'styled-components';
 
 import {
-  CORE_PLATFORM_FEATURES_HEADER,
-  CORE_PLATFORM_FEATURES_SUBHEADER,
   DATA_EXPLORATION_HEADER,
   DATA_EXPLORATION_SUBHEADER,
   DATA_INTEGRATION_HEADER,
@@ -77,11 +75,10 @@ const Tile = styled(InfoTile)`
 
 const CorePlatformSection = () => (
   <PageSection>
-    <SectionContent maxWidth={{ sm: 528 }}>
-      <Header as="h2">{CORE_PLATFORM_FEATURES_HEADER}</Header>
-      <SubHeader as="h5">{CORE_PLATFORM_FEATURES_SUBHEADER}</SubHeader>
+    <SectionContent margin="0 0 100px 0" maxWidth={{ sm: 528 }}>
+      <Header as="h2">Platform Features</Header>
     </SectionContent>
-    <SectionContent>
+    <SectionContent margin="0">
       <TileGrid>
         <Tile withBorder>
           <DBSyncCircleIcon width="50" />

@@ -17,7 +17,7 @@ import { Routes } from '../../core/router';
 import { AboutPage } from '../about';
 import { GovernmentPage } from '../government';
 import { HomePage } from '../home';
-import { PlatformPage } from '../platform';
+import { PlatformGovernmentPage, PlatformResearchPage } from '../platform';
 import { PrivacyPolicyPage } from '../privacy';
 import { ProductsPage } from '../products';
 import { CAREProductPage } from '../products/care';
@@ -40,10 +40,11 @@ const AppContainer = () => (
         <Route exact path={Routes.CARE} component={CAREProductPage} />
         <Route exact path={Routes.PCM} component={PCMProductPage} />
         <Route exact strict path={Routes.PRODUCTS} component={ProductsPage} />
-        <Route exact path={Routes.PLATFORM} component={PlatformPage} />
         <Route exact path={Routes.ABOUT} component={AboutPage} />
         <Route exact path={Routes.GOVERNMENT} component={GovernmentPage} />
         <Route exact path={Routes.RESEARCH} component={ResearchPage} />
+        <Route exact path={Routes.PLATFORM_GOVERNMENT} component={PlatformGovernmentPage} />
+        <Route exact path={Routes.PLATFORM_RESEARCH} component={PlatformResearchPage} />
         <Route exact path={Routes.WORKING_WITH_US_GOVERNMENT} component={WorkingWithUsGovernmentPage} />
         <Route exact path={Routes.WORKING_WITH_US_RESEARCH} component={WorkingWithUsResearchPage} />
         <Route component={HomePage} />
