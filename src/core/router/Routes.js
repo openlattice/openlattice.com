@@ -17,8 +17,10 @@ export const PRIVACY_POLICY :string = '/privacy';
 
 const ROOT :'/' = '/';
 const GOVERNMENT :'/government' = '/government';
+const RESEARCH :'/research' = '/research';
 
 export {
   GOVERNMENT,
+  RESEARCH,
   ROOT,
 };

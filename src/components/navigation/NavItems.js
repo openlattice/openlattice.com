@@ -90,6 +90,9 @@ const NavItems = ({ inDrawer } :Props) => {
         <NavLink to={Routes.GOVERNMENT}>
           <NavItem>Government</NavItem>
         </NavLink>
+        <NavLink to={Routes.RESEARCH}>
+          <NavItem>Research</NavItem>
+        </NavLink>
         <NavLink to={Routes.WORKING_WITH_US}>
           <NavItem>Working with us</NavItem>
         </NavLink>

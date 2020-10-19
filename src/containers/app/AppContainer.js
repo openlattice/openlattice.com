@@ -24,6 +24,7 @@ import { CAREProductPage } from '../products/care';
 import { ChronicleProductPage } from '../products/chronicle';
 import { PCMProductPage } from '../products/pcm';
 import { ResearchHubProductPage } from '../products/research-hub';
+import { ResearchPage } from '../research';
 import { TermsOfServicePage } from '../terms';
 import { WorkingWithUsPage } from '../workingwithus';
 
@@ -43,6 +44,7 @@ const AppContainer = () => (
         <Route exact path={Routes.WORKING_WITH_US} component={WorkingWithUsPage} />
         <Route exact path={Routes.ABOUT} component={AboutPage} />
         <Route exact path={Routes.GOVERNMENT} component={GovernmentPage} />
+        <Route exact path={Routes.RESEARCH} component={ResearchPage} />
         <Route component={HomePage} />
       </Switch>
     </MuiPickersUtilsProvider>
