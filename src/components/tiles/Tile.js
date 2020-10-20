@@ -2,8 +2,9 @@
  * @flow
  */
 
-import styled from 'styled-components';
 import type { ComponentType } from 'react';
+
+import styled from 'styled-components';
 
 const Tile :ComponentType<{|
   align ?:{|
