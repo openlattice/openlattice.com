@@ -12,49 +12,17 @@ import PageSection from './PageSection';
 import SectionContent from './SectionContent';
 
 import { NEUTRALS } from '../../core/style/Colors';
-import { MEDIA_QUERY_MD, MEDIA_QUERY_SM } from '../../core/style/Sizes';
+import { MEDIA_QUERY_MD } from '../../core/style/Sizes';
+import { Tile } from '../tiles';
+import { Typography } from '../typography';
 
-const QuoteWrapper = styled.div`
-  align-items: center;
+const QuoteTile = styled(Tile)`
   color: white;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
   margin: 0 48px;
 
   @media only screen and (max-width: ${MEDIA_QUERY_MD}px) {
     margin: 0 32px;
   }
-`;
-
-const Quote = styled.div`
-  font-size: 32px;
-  margin-bottom: 80px;
-  text-align: center;
-
-  @media only screen and (max-width: ${MEDIA_QUERY_MD}px) {
-    font-size: 24px;
-    margin-bottom: 40px;
-  }
-
-  @media only screen and (max-width: ${MEDIA_QUERY_SM}px) {
-    font-size: 16px;
-  }
-`;
-
-const Name = styled.div`
-  font-size: 18px;
-  font-weight: 600;
-  text-align: center;
-
-  @media only screen and (max-width: 575px) {
-    font-size: 14px;
-  }
-`;
-
-const Org = styled(Name)`
-  font-weight: normal;
-  text-align: center;
 `;
 
 const ButtonCircle = styled.div`
@@ -119,13 +87,13 @@ const QuotesSection = ({ quotes } :{ quotes :Object[] }) => {
             </ButtonCircle>
           )
         }
-        <QuoteWrapper>
-          <Quote>{quotes[index].QUOTE}</Quote>
+        <QuoteTile align={{ h: 'center' }} gap={80}>
+          <Typography textAlign="center" variant="h3">{quotes[index].QUOTE}</Typography>
           <div>
-            <Name>{quotes[index].NAME}</Name>
-            <Org>{quotes[index].ORG}</Org>
+            <Typography variant="body2">{quotes[index].NAME}</Typography>
+            <Typography variant="body2">{quotes[index].ORG}</Typography>
           </div>
-        </QuoteWrapper>
+        </QuoteTile>
         {
           quotes.length > 1 && (
             <ButtonCircle aria-label="arrow-right-button" arrowRight onClick={moveForward}>
