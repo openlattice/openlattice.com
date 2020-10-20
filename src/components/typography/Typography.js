@@ -76,6 +76,7 @@ const Typography = ({
   component ?:string;
   fontWeight ?:100 | 200 | 300 | 400 | 500 | 600 | 700 | 800 | 900;
   maxWidth ?:{|
+    xs ?:number;
     sm ?:number;
     md ?:number;
     lg ?:number;
