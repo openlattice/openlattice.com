@@ -4,72 +4,59 @@
 
 import React from 'react';
 
-import styled from 'styled-components';
-import { withStyles } from '@material-ui/core/styles';
-import { Typography as LUKTypography } from 'lattice-ui-kit';
+import styled, { css } from 'styled-components';
+import { Typography as MUITypography } from '@material-ui/core';
+import { withTheme } from '@material-ui/core/styles';
 
-const styles = {
-  h1: {
-    fontSize: '3.5rem', // 56px
-    fontWeight: 700,
-    letterSpacing: '0em',
-    lineHeight: 1.5,
-  },
-  h2: {
-    fontSize: '2.25rem', // 36px
-    fontWeight: 600,
-    letterSpacing: '0em',
-    lineHeight: 1.5,
-  },
-  h3: {
-    fontSize: '2rem', // 32px
-    fontWeight: 500,
-    letterSpacing: '0em',
-    lineHeight: 1.5,
-  },
-  h4: {
-    fontSize: '1.75rem', // 28px
-    fontWeight: 500,
-    letterSpacing: '0em',
-    lineHeight: 1.5,
-  },
-  h5: {
-    fontSize: '1.5rem', // 24px
-    fontWeight: 500,
-    letterSpacing: '0em',
-    lineHeight: 1.5,
-  },
-  h6: {
-    fontSize: '1.25rem', // 20px
-    fontWeight: 500,
-    letterSpacing: '0em',
-    lineHeight: 1.5,
-  },
-  body1: {
-    fontSize: '1rem', // 16px
-    fontWeight: 400,
-    letterSpacing: '0em',
-    lineHeight: 1.5,
-  },
-  body2: {
-    fontSize: '1.125rem', // 18px
-    fontWeight: 400,
-    letterSpacing: '0em',
-    lineHeight: 1.5,
-  },
-  underline: {
-    textDecoration: 'underline',
-  },
-  uppercase: {
-    textTransform: 'uppercase',
-  },
+const getMaxWidthStyles = ({ $maxWidth, theme }) => {
+
+  if ($maxWidth && theme) {
+
+    let lgMaxWidth;
+    if ($maxWidth && $maxWidth.lg) {
+      lgMaxWidth = `${$maxWidth.lg}px`;
+    }
+
+    let mdMaxWidth = lgMaxWidth;
+    if ($maxWidth && $maxWidth.md) {
+      mdMaxWidth = `${$maxWidth.md}px`;
+    }
+
+    let smMaxWidth = mdMaxWidth;
+    if ($maxWidth && $maxWidth.sm) {
+      smMaxWidth = `${$maxWidth.sm}px`;
+    }
+
+    let xsMaxWidth = smMaxWidth;
+    if ($maxWidth && $maxWidth.xs) {
+      xsMaxWidth = `${$maxWidth.xs}px`;
+    }
+
+    return css`
+      ${theme.breakpoints.up('xs')} {
+        max-width: ${xsMaxWidth};
+      }
+      ${theme.breakpoints.up('sm')} {
+        max-width: ${smMaxWidth};
+      }
+      ${theme.breakpoints.up('md')} {
+        max-width: ${mdMaxWidth};
+      }
+      ${theme.breakpoints.up('lg')} {
+        max-width: ${lgMaxWidth};
+      }
+    `;
+  }
+
+  return null;
 };
 
-const OLTypography = withStyles(styles)(LUKTypography);
-const StyledTypography = styled(OLTypography)`
-  color: ${({ color }) => color};
-  font-weight: ${({ fontWeight }) => (fontWeight || undefined)};
-  max-width: ${({ maxwidth }) => (maxwidth ? `${maxwidth}px` : undefined)};
+const StyledTypography = styled(MUITypography)`
+  color: ${({ $color }) => $color};
+  font-weight: ${({ $fontWeight }) => ($fontWeight || undefined)};
+  text-decoration: ${({ $underline }) => ($underline ? 'underline' : undefined)};
+  text-transform: ${({ $uppercase }) => ($uppercase ? 'uppercase' : undefined)};
+  ${getMaxWidthStyles}
 `;
 
 const Typography = ({
@@ -80,6 +67,8 @@ const Typography = ({
   fontWeight,
   maxWidth,
   textAlign,
+  underline,
+  uppercase,
   variant,
 } :{|
   children :any;
@@ -87,19 +76,25 @@ const Typography = ({
   color ?:string;
   component ?:string;
   fontWeight ?:100 | 200 | 300 | 400 | 500 | 600 | 700 | 800 | 900;
-  maxWidth ?:number;
+  maxWidth ?:{|
+    sm ?:number;
+    md ?:number;
+    lg ?:number;
+  |};
   textAlign ?:'left' | 'center' | 'right';
-  variant ?:'h1' | 'h2' | 'h3' | 'h4' | 'h5' | 'h6' | 'body1' | 'body2' | 'tag' | 'underline';
+  underline ?:boolean;
+  uppercase ?:boolean;
+  variant ?:'h1' | 'h2' | 'h3' | 'h4' | 'h5' | 'h6' | 'body1' | 'body2';
 |}) => (
-  // NOTE: "maxwidth" to avoid this error:
-  //   React does not recognize the `maxWidth` prop on a DOM element
   <StyledTypography
+      $color={color}
+      $fontWeight={fontWeight}
+      $maxWidth={maxWidth}
+      $underline={underline}
+      $uppercase={uppercase}
       align={textAlign}
       className={className}
-      color={color}
       component={component}
-      fontWeight={fontWeight}
-      maxwidth={maxWidth}
       variant={variant}>
     {children}
   </StyledTypography>
@@ -112,7 +107,9 @@ Typography.defaultProps = {
   fontWeight: undefined,
   maxWidth: undefined,
   textAlign: undefined,
+  underline: false,
+  uppercase: false,
   variant: undefined,
 };
 
-export default Typography;
+export default withTheme(Typography);

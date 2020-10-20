@@ -35,13 +35,15 @@ const HomePage = () => (
   <>
     <ScrollToTop />
     <PageSection bgImage={StatueOfLibertyPNG}>
-      <SectionContent align={{ h: 'end' }} margin="20vh 0">
-        <Tile align={{ h: 'end' }} maxWidth={500}>
-          <Typography textAlign="right" variant="h1">
+      <SectionContent align={{ h: 'end' }} margin={{ b: '25vh', t: '25vh' }}>
+        <Tile align={{ h: 'end' }}>
+          <Typography maxWidth={{ xs: 300, sm: 400, md: 500 }} textAlign="right" variant="h1">
             {'With liberty and justice '}
-            <Typography variant="underline">for all.</Typography>
+            <Typography component="span" underline variant="h1">
+              for all.
+            </Typography>
           </Typography>
-          <Typography textAlign="right" variant="h6">
+          <Typography maxWidth={{ sm: 250, md: 500 }} textAlign="right" variant="h6">
             Data tools for those who serve the public.
           </Typography>
           <SolidButton onClick={openBeacon}>Chat with us</SolidButton>
@@ -50,13 +52,13 @@ const HomePage = () => (
     </PageSection>
     <PageSection>
       <SectionContent>
-        <Typography maxWidth={1000} textAlign="center" variant="h1">
+        <Typography maxWidth={{ lg: 1000 }} textAlign="center" variant="h1">
           Get the right data to the right people at the right time
         </Typography>
       </SectionContent>
     </PageSection>
     <PageSection>
-      <SectionContent>
+      <SectionContent margin={{ t: 0 }}>
         <FeatureGrid>
           <Tile>
             <Tile gap={16}>
