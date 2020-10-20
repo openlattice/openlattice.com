@@ -7,8 +7,8 @@ import React from 'react';
 import { Typography } from 'lattice-ui-kit';
 
 import FooterSection from '../../footer/FooterSection';
-import { ReferralsFeatureShot1 } from '../../../assets/images/referrals';
-import { OpenLatticeCircleIcon } from '../../../assets/svg/circle-icons';
+import { SteppingUpFeatureShot1 } from '../../../assets/images/stepping-up';
+import { SteppingUpIcon } from '../../../assets/svg/icons';
 import {
   Categories,
   FeatureGrid,
@@ -22,28 +22,30 @@ import {
 import { openBeacon } from '../../../utils/Utils';
 import { BasicProductIntroSection } from '../components';
 
-const ReferralsProductPage = () => (
+const SteppingUpProductPage = () => (
   <>
     <ScrollToTop />
     <BasicProductIntroSection />
     <PageSection>
       <SectionContent margin="0 0 100px 0">
-        <FeatureGrid>
+        <FeatureGrid reverseOrderOnWrap>
+          <GraphicShot withBorder>
+            <SteppingUpFeatureShot1 />
+          </GraphicShot>
           <InfoTile>
-            <OpenLatticeCircleIcon width={48} />
-            <Typography variant="h3">Referrals</Typography>
+            <SteppingUpIcon width={48} />
+            <Typography variant="h3">Stepping Up Dashboard</Typography>
             <Categories>
-              <span>HEALTH</span>
+              <span>BEHAVIORAL HEALTH</span>
+              <span>{' · '}</span>
+              <span>RESEARCH</span>
             </Categories>
             <Typography variant="body1">
-              Enable service providers to manage their own inbound and outbound referrals, as well as wait-time and
-              other customer service-focused analytics.
+              Visualize and link data from across silos to see how different subsets of individuals affected by mental
+              illness interact across social services.
             </Typography>
             <LearnMoreButton onClick={openBeacon} radius={5}>Schedule a call to learn more</LearnMoreButton>
           </InfoTile>
-          <GraphicShot withBorder>
-            <ReferralsFeatureShot1 />
-          </GraphicShot>
         </FeatureGrid>
       </SectionContent>
     </PageSection>
@@ -51,4 +53,4 @@ const ReferralsProductPage = () => (
   </>
 );
 
-export default ReferralsProductPage;
+export default SteppingUpProductPage;
