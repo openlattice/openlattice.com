@@ -4,8 +4,7 @@
 
 import React from 'react';
 
-import styled from 'styled-components';
-import { Colors, Typography } from 'lattice-ui-kit';
+import { Colors } from 'lattice-ui-kit';
 
 import ComplianceAndSecuritySection from './ComplianceAndSecuritySection';
 import CorePlatformSection from './CorePlatformSection';
@@ -17,67 +16,66 @@ import { PlatformLayersGraphic } from '../../assets/svg/graphics';
 import {
   ContentGrid,
   GraphicShot,
-  Header,
-  InfoTile,
   PageSection,
   ScrollToTop,
   SectionContent,
   SolidButton,
-  SubHeader,
+  Tile,
+  Typography,
 } from '../../components';
 import { openBeacon } from '../../utils/Utils';
 
 const { NEUTRAL } = Colors;
 
-// TODO: kill InfoTile, replace with grid-based Tile
-const Tile = styled.div`
-  display: grid;
-  grid-gap: ${({ gap }) => (gap ? `${gap}px` : '24px')};
-`;
-
 const PlatformResearchPage = () => (
   <>
     <ScrollToTop />
     <PageSection bgColor={NEUTRAL.N50}>
-      <SectionContent margin="20vh 0" maxWidth={{ sm: 450, lg: 700 }}>
-        <Header>The Modern OpenLattice Platform</Header>
-        <SubHeader>Finally, an easier way to run research studies.</SubHeader>
+      <SectionContent margin={{ b: '25vh', t: '25vh' }}>
+        <Tile align={{ h: 'center' }}>
+          <Typography textAlign="center" variant="h1">
+            The Modern OpenLattice Platform
+          </Typography>
+          <Typography textAlign="center" maxWidth={{ lg: 800 }} variant="h6">
+            Finally, an easier way to run research studies.
+          </Typography>
+        </Tile>
       </SectionContent>
     </PageSection>
     <PlatformOverviewSection />
     <PageSection>
-      <SectionContent>
+      <SectionContent margin={{ b: 0, t: 0 }}>
         <ContentGrid align={{ v: 'start' }}>
-          <InfoTile>
+          <Tile align={{ h: 'center' }}>
             <BarsCircleIcon />
-            <Typography gutterBottom variant="h2">
+            <Typography textAlign="center" variant="h5">
               You want to collaborate on research studies.
             </Typography>
-            <Typography variant="body1">
+            <Typography textAlign="center" variant="body1">
               You know this will mean your research team can leverage more expertise, access more data, run more
               analyses, draw more conclusions at tighter intervals, and impact broader populations.
             </Typography>
-          </InfoTile>
-          <InfoTile>
+          </Tile>
+          <Tile align={{ h: 'center' }}>
             <QuestionCircleIcon />
-            <Typography gutterBottom variant="h2">
+            <Typography maxWidth={{ lg: 300 }} textAlign="center" variant="h5">
               But, how do you get past the data sharing complications?
             </Typography>
-            <Typography variant="body1">
+            <Typography textAlign="center" variant="body1">
               Other methods of data sharing often don’t even work. When they do, they’re tedious to manage. You end up
               spending too much of your time jumping through privacy and compliance hoops.
             </Typography>
-          </InfoTile>
-          <InfoTile>
+          </Tile>
+          <Tile align={{ h: 'center' }}>
             <LockCircleIcon />
-            <Typography gutterBottom variant="h2">
+            <Typography maxWidth={{ lg: 300 }} textAlign="center" variant="h5">
               Simplify data collaboration with one platform.
             </Typography>
-            <Typography variant="body1">
+            <Typography textAlign="center" variant="body1">
               With OpenLattice, researchers can securely and easily share and access data across organizational
               boundaries. This means you can now smoothly collaborate where  previously difficult or impossible.
             </Typography>
-          </InfoTile>
+          </Tile>
         </ContentGrid>
       </SectionContent>
       <SectionContent>
@@ -86,13 +84,13 @@ const PlatformResearchPage = () => (
     </PageSection>
     <PageSection>
       <SectionContent>
-        <ContentGrid>
+        <ContentGrid align={{ h: 'start' }}>
           <Tile>
-            <Typography variant="h1">
+            <Typography maxWidth={{ lg: 450 }} variant="h2">
               Built from the ground up to meet complex requirements
             </Typography>
-            <Typography variant="body1">
-              Meeting security and compliance requirements is difficult. The OpenLattice Platform takes care of it for
+            <Typography maxWidth={{ lg: 450 }} variant="body2">
+              Meeting security and compliance requirements is difficult. The OpenLattice platform takes care of it for
               you.
             </Typography>
             <div>

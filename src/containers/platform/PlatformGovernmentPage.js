@@ -4,8 +4,7 @@
 
 import React from 'react';
 
-import styled from 'styled-components';
-import { Colors, Typography } from 'lattice-ui-kit';
+import { Colors } from 'lattice-ui-kit';
 
 import ComplianceAndSecuritySection from './ComplianceAndSecuritySection';
 import CorePlatformSection from './CorePlatformSection';
@@ -17,68 +16,67 @@ import { PlatformLayersGraphic } from '../../assets/svg/graphics';
 import {
   ContentGrid,
   GraphicShot,
-  Header,
-  InfoTile,
   PageSection,
   ScrollToTop,
   SectionContent,
   SolidButton,
-  SubHeader,
+  Tile,
+  Typography,
 } from '../../components';
 import { openBeacon } from '../../utils/Utils';
 
 const { NEUTRAL } = Colors;
 
-// TODO: kill InfoTile, replace with grid-based Tile
-const Tile = styled.div`
-  display: grid;
-  grid-gap: ${({ gap }) => (gap ? `${gap}px` : '24px')};
-`;
-
 const PlatformGovernmentPage = () => (
   <>
     <ScrollToTop />
     <PageSection bgColor={NEUTRAL.N50}>
-      <SectionContent margin="20vh 0" maxWidth={{ sm: 450, lg: 700 }}>
-        <Header>The Modern OpenLattice Platform</Header>
-        <SubHeader>Finally, a safe and easy way to get actionable insights to public servants.</SubHeader>
+      <SectionContent margin={{ b: '25vh', t: '25vh' }}>
+        <Tile align={{ h: 'center' }}>
+          <Typography textAlign="center" variant="h1">
+            The Modern OpenLattice Platform
+          </Typography>
+          <Typography textAlign="center" maxWidth={{ lg: 800 }} variant="h6">
+            Finally, a safe and easy way to get actionable insights to public servants.
+          </Typography>
+        </Tile>
       </SectionContent>
     </PageSection>
     <PlatformOverviewSection />
     <PageSection>
-      <SectionContent>
+      <SectionContent margin={{ b: 0, t: 0 }}>
         <ContentGrid align={{ v: 'start' }}>
-          <InfoTile>
+          <Tile align={{ h: 'center' }}>
             <BarsCircleIcon />
-            <Typography gutterBottom variant="h2">
+            <Typography textAlign="center" variant="h5">
               You want to make more data-driven decisions.
             </Typography>
-            <Typography variant="body1">
+            <Typography textAlign="center" variant="body1">
               You know this will mean more effective and efficient services, more informed policy, and stronger
               communities.
             </Typography>
-          </InfoTile>
-          <InfoTile>
+          </Tile>
+          <Tile align={{ h: 'center' }}>
             <QuestionCircleIcon />
-            <Typography gutterBottom variant="h2">
+            <Typography maxWidth={{ lg: 300 }} textAlign="center" variant="h5">
               But it’s so complex, where do you start?
             </Typography>
-            <Typography variant="body1">
+            <Typography textAlign="center" variant="body1">
               Departments use different systems in different ways.  How do you connect your systems and people, without
               overloading them with information they don’t need, all while keeping public data safe and planning for the
               future?
             </Typography>
-          </InfoTile>
-          <InfoTile>
+          </Tile>
+          <Tile align={{ h: 'center' }}>
             <LockCircleIcon />
-            <Typography gutterBottom variant="h2">
+            <Typography maxWidth={{ lg: 300 }} textAlign="center" variant="h5">
               Simplify safe data integration with one platform.
             </Typography>
-            <Typography variant="body1">
+            <Typography textAlign="center" variant="body1">
               OpenLattice provides a modern, scalable platform that gives jurisdictions full control over their data,
               and the flexibility to work with any systems and data partners while meeting top security standards.
             </Typography>
-          </InfoTile>
+          </Tile>
         </ContentGrid>
       </SectionContent>
       <SectionContent>
@@ -87,12 +85,12 @@ const PlatformGovernmentPage = () => (
     </PageSection>
     <PageSection>
       <SectionContent>
-        <ContentGrid>
+        <ContentGrid align={{ h: 'start' }}>
           <Tile>
-            <Typography variant="h1">
+            <Typography maxWidth={{ lg: 450 }} variant="h2">
               Built from the ground up to meet complex requirements
             </Typography>
-            <Typography variant="body1">
+            <Typography maxWidth={{ lg: 450 }} variant="body2">
               Meeting security and compliance requirements is difficult. The OpenLattice platform takes care of it for
               you.
             </Typography>
