@@ -129,14 +129,9 @@ const FooterSection = () => (
         </section>
         <section>
           <Header>Products</Header>
-          <InternalLink to={Routes.PRODUCTS}>All products</InternalLink>
-          <InternalLink to={Routes.CARE}>Care</InternalLink>
-          <InternalLink to={Routes.PCM}>Pretrial Case Management</InternalLink>
-          <HeaderWithTag>
-            <InternalLink to={Routes.RESEARCH_HUB}>Research Hub</InternalLink>
-            <Tag tagType="beta">BETA</Tag>
-          </HeaderWithTag>
-          <InternalLink to={Routes.PRODUCTS}>Other products</InternalLink>
+          <InternalLink to={Routes.PRODUCTS_CARE}>Care</InternalLink>
+          <InternalLink to={Routes.PRODUCTS_PCM}>Pretrial Case Management</InternalLink>
+          <InternalLink to={Routes.PRODUCTS_CHRONICLE}>Chronicle</InternalLink>
         </section>
         <section>
           <Header>Support</Header>

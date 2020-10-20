@@ -5,8 +5,6 @@
 import React from 'react';
 
 import styled from 'styled-components';
-import { faArrowRight } from '@fortawesome/pro-regular-svg-icons';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 import NavLink from './NavLink';
 
@@ -43,17 +41,12 @@ const ProductNavItem = styled.div`
   }
 `;
 
-const ProductOverviewNavItem = styled(ProductNavItem)`
-  font-weight: 600;
-  padding: 16px 32px;
-`;
-
-const Divider = styled.div`
-  background-color: ${NEUTRALS.GRAY_09};
-  height: 1px;
-  margin: 16px 0;
-  width: 100%;
-`;
+// const Divider = styled.div`
+//   background-color: ${NEUTRALS.GRAY_09};
+//   height: 1px;
+//   margin: 16px 0;
+//   width: 100%;
+// `;
 
 type Props = {
   inPortal ?:boolean;
@@ -61,20 +54,7 @@ type Props = {
 
 const ProductNavItems = ({ inPortal } :Props) => (
   <>
-    {
-      inPortal && (
-        <>
-          <NavLink to={Routes.PRODUCTS}>
-            <ProductOverviewNavItem inPortal={inPortal}>
-              <span>Product Overview</span>
-              <FontAwesomeIcon icon={faArrowRight} style={{ marginLeft: '8px' }} />
-            </ProductOverviewNavItem>
-          </NavLink>
-          <Divider />
-        </>
-      )
-    }
-    <NavLink to={Routes.CARE}>
+    <NavLink to={Routes.PRODUCTS_CARE}>
       <ProductNavItem inPortal={inPortal}>
         <CAREIcon width={inPortal ? 36 : 20} />
         <div className="product-name-blurb-wrapper">
@@ -83,7 +63,7 @@ const ProductNavItems = ({ inPortal } :Props) => (
         </div>
       </ProductNavItem>
     </NavLink>
-    <NavLink to={Routes.PCM}>
+    <NavLink to={Routes.PRODUCTS_PCM}>
       <ProductNavItem inPortal={inPortal}>
         <PCMIcon width={inPortal ? 36 : 20} />
         <div className="product-name-blurb-wrapper">
@@ -92,21 +72,12 @@ const ProductNavItems = ({ inPortal } :Props) => (
         </div>
       </ProductNavItem>
     </NavLink>
-    <NavLink to={Routes.CHRONICLE}>
+    <NavLink to={Routes.PRODUCTS_CHRONICLE}>
       <ProductNavItem inPortal={inPortal}>
         <OpenLatticeCircleIcon width={inPortal ? 36 : 20} />
         <div className="product-name-blurb-wrapper">
           <span className="product-name">Chronicle</span>
           <span className="product-blurb">Collaborative human-centered research tool</span>
-        </div>
-      </ProductNavItem>
-    </NavLink>
-    <NavLink to={Routes.RESEARCH_HUB}>
-      <ProductNavItem inPortal={inPortal}>
-        <OpenLatticeCircleIcon width={inPortal ? 36 : 20} />
-        <div className="product-name-blurb-wrapper">
-          <span className="product-name">Research Hub</span>
-          <span className="product-blurb">Cloud-based Management Information System</span>
         </div>
       </ProductNavItem>
     </NavLink>

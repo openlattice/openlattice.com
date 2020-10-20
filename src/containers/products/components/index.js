@@ -2,6 +2,7 @@
  * @flow
  */
 
+export { default as BasicProductIntroSection } from './BasicProductIntroSection';
 export { default as ProductFeaturesSectionContent } from './ProductFeaturesSectionContent';
 export { default as ProductIntroSection } from './ProductIntroSection';
 export { default as ProductShot } from './ProductShot';

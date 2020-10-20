@@ -3,7 +3,6 @@
  */
 
 import React from 'react';
-import type { Node } from 'react';
 
 import ProductIntroSectionContent from './ProductIntroSectionContent';
 import ProductShot from './ProductShot';
@@ -15,9 +14,9 @@ import { NEUTRALS } from '../../../core/style/Colors';
 type Props = {
   introHeader :string;
   introSubHeader :string;
-  productIcon :Node;
+  productIcon :any;
   productName :string;
-  productShot :Node;
+  productShot :any;
 };
 
 const ProductIntroSection = ({
