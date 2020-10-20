@@ -69,15 +69,15 @@ const HomePage = () => (
                 Collect and connect all the data you need
               </Typography>
             </Tile>
-            <Typography variant="body2">
+            <Typography maxWidth={{ lg: 480 }} variant="body2">
               Connect any and all systems, teams, departments, jurisdictions, and researchers and feed the data into
               one secure, modern, easy-to-use system that links it all together for you.
             </Typography>
-            <Typography variant="body2">
+            <Typography maxWidth={{ lg: 480 }} variant="body2">
               Optionally, collect data through OpenLattice Apps, built to help you achieve specific goals.
             </Typography>
             <Tile gap={32}>
-              <Typography variant="body2">
+              <Typography maxWidth={{ lg: 480 }} variant="body2">
                 OpenLattice makes sure the data is properly protected and compliant, so you can focus on the actionable
                 insights that come from integrated data.
               </Typography>
@@ -99,18 +99,18 @@ const HomePage = () => (
               <Typography color={PURPLE.P300} fontWeight={700} variant="body2">
                 RIGHT PEOPLE
               </Typography>
-              <Typography variant="h2">
+              <Typography maxWidth={{ lg: 400 }} variant="h2">
                 Put the data in the hands of people who need it
               </Typography>
             </Tile>
-            <Typography variant="body2">
+            <Typography maxWidth={{ lg: 480 }} variant="body2">
               Set access to data according to fine-grained permissions and roles.
             </Typography>
-            <Typography variant="body2">
+            <Typography maxWidth={{ lg: 480 }} variant="body2">
               See who accessed what data and when.
             </Typography>
             <Tile gap={32}>
-              <Typography variant="body2">
+              <Typography maxWidth={{ lg: 480 }} variant="body2">
                 OpenLattice makes sure only those who should have access to certain data actually do.
               </Typography>
               <SolidButton onClick={openBeacon}>Get a Demo</SolidButton>
@@ -129,14 +129,14 @@ const HomePage = () => (
                 Get notified of key information instantly
               </Typography>
             </Tile>
-            <Typography variant="body2">
+            <Typography maxWidth={{ lg: 480 }} variant="body2">
               Notify others that need to see the information you’re seeing and work with you or take over a case.
             </Typography>
-            <Typography variant="body2">
+            <Typography maxWidth={{ lg: 480 }} variant="body2">
               Automate notifications upon certain triggers or scenarios, or when critical information arises.
             </Typography>
             <Tile gap={32}>
-              <Typography variant="body2">
+              <Typography maxWidth={{ lg: 480 }} variant="body2">
                 OpenLattice makes sure it’s easy to pass information to others and understand information being sent
                 to you.
               </Typography>
