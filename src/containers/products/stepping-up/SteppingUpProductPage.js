@@ -7,8 +7,8 @@ import React from 'react';
 import { Typography } from 'lattice-ui-kit';
 
 import FooterSection from '../../footer/FooterSection';
-import { CWPFeatureShot1 } from '../../../assets/images/cwp';
-import { CWPIcon } from '../../../assets/svg/icons';
+import { SteppingUpFeatureShot1 } from '../../../assets/images/stepping-up';
+import { SteppingUpIcon } from '../../../assets/svg/icons';
 import {
   Categories,
   FeatureGrid,
@@ -22,7 +22,7 @@ import {
 import { openBeacon } from '../../../utils/Utils';
 import { BasicProductIntroSection } from '../components';
 
-const CWPProductPage = () => (
+const SteppingUpProductPage = () => (
   <>
     <ScrollToTop />
     <BasicProductIntroSection />
@@ -30,17 +30,19 @@ const CWPProductPage = () => (
       <SectionContent margin="0 0 100px 0">
         <FeatureGrid reverseOrderOnWrap>
           <GraphicShot withBorder>
-            <CWPFeatureShot1 />
+            <SteppingUpFeatureShot1 />
           </GraphicShot>
           <InfoTile>
-            <CWPIcon width={48} />
-            <Typography variant="h3">Community Work Program</Typography>
+            <SteppingUpIcon width={48} />
+            <Typography variant="h3">Stepping Up Dashboard</Typography>
             <Categories>
-              <span>JUSTICE</span>
+              <span>BEHAVIORAL HEALTH</span>
+              <span>{' · '}</span>
+              <span>RESEARCH</span>
             </Categories>
             <Typography variant="body1">
-              A data driven tool for your jurisdiction to manage participation and completion of alternative
-              sentences to community services.
+              Visualize and link data from across silos to see how different subsets of individuals affected by mental
+              illness interact across social services.
             </Typography>
             <LearnMoreButton onClick={openBeacon} radius={5}>Schedule a call to learn more</LearnMoreButton>
           </InfoTile>
@@ -51,4 +53,4 @@ const CWPProductPage = () => (
   </>
 );
 
-export default CWPProductPage;
+export default SteppingUpProductPage;

@@ -7,8 +7,8 @@ import React from 'react';
 import { Typography } from 'lattice-ui-kit';
 
 import FooterSection from '../../footer/FooterSection';
-import { CWPFeatureShot1 } from '../../../assets/images/cwp';
-import { CWPIcon } from '../../../assets/svg/icons';
+import { ReferralsFeatureShot1 } from '../../../assets/images/referrals';
+import { OpenLatticeCircleIcon } from '../../../assets/svg/circle-icons';
 import {
   Categories,
   FeatureGrid,
@@ -22,28 +22,28 @@ import {
 import { openBeacon } from '../../../utils/Utils';
 import { BasicProductIntroSection } from '../components';
 
-const CWPProductPage = () => (
+const ReferralsProductPage = () => (
   <>
     <ScrollToTop />
     <BasicProductIntroSection />
     <PageSection>
       <SectionContent margin="0 0 100px 0">
-        <FeatureGrid reverseOrderOnWrap>
-          <GraphicShot withBorder>
-            <CWPFeatureShot1 />
-          </GraphicShot>
+        <FeatureGrid>
           <InfoTile>
-            <CWPIcon width={48} />
-            <Typography variant="h3">Community Work Program</Typography>
+            <OpenLatticeCircleIcon width={48} />
+            <Typography variant="h3">Referrals</Typography>
             <Categories>
-              <span>JUSTICE</span>
+              <span>HEALTH</span>
             </Categories>
             <Typography variant="body1">
-              A data driven tool for your jurisdiction to manage participation and completion of alternative
-              sentences to community services.
+              Enable service providers to manage their own inbound and outbound referrals, as well as wait-time and
+              other customer service-focused analytics.
             </Typography>
             <LearnMoreButton onClick={openBeacon} radius={5}>Schedule a call to learn more</LearnMoreButton>
           </InfoTile>
+          <GraphicShot withBorder>
+            <ReferralsFeatureShot1 />
+          </GraphicShot>
         </FeatureGrid>
       </SectionContent>
     </PageSection>
@@ -51,4 +51,4 @@ const CWPProductPage = () => (
   </>
 );
 
-export default CWPProductPage;
+export default ReferralsProductPage;

@@ -24,6 +24,8 @@ import { CAREProductPage } from '../products/care';
 import { ChronicleProductPage } from '../products/chronicle';
 import { CWPProductPage } from '../products/cwp';
 import { PCMProductPage } from '../products/pcm';
+import { ReferralsProductPage } from '../products/referrals';
+import { SteppingUpProductPage } from '../products/stepping-up';
 import { ResearchPage } from '../research';
 import { TermsOfServicePage } from '../terms';
 import { WorkingWithUsGovernmentPage, WorkingWithUsResearchPage } from '../workingwithus';
@@ -43,6 +45,8 @@ const AppContainer = () => (
         <Route exact path={Routes.PRODUCTS_CHRONICLE} component={ChronicleProductPage} />
         <Route exact path={Routes.PRODUCTS_CWP} component={CWPProductPage} />
         <Route exact path={Routes.PRODUCTS_PCM} component={PCMProductPage} />
+        <Route exact path={Routes.PRODUCTS_REFERRALS} component={ReferralsProductPage} />
+        <Route exact path={Routes.PRODUCTS_STEPPING_UP} component={SteppingUpProductPage} />
         <Route exact path={Routes.RESEARCH} component={ResearchPage} />
         <Route exact path={Routes.TERMS_OF_SERVICE} component={TermsOfServicePage} />
         <Route exact path={Routes.WORKING_WITH_US_GOVERNMENT} component={WorkingWithUsGovernmentPage} />
