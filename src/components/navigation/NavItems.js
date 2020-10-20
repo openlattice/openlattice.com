@@ -100,44 +100,34 @@ const NavItems = ({ inDrawer } :Props) => {
           <NavItem>Research</NavItem>
         </NavLink>
         {
-          inDrawer
-            ? (
-              <NavLink to="#">
-                <NavItem>Products</NavItem>
-              </NavLink>
-            )
-            : (
-              <NavItem onClick={toggleProductsPortal}>
-                <span>Products</span>
-                <FontAwesomeIcon icon={faChevronDown} style={{ marginLeft: '8px' }} />
-              </NavItem>
-            )
+          !inDrawer && (
+            <NavItem onClick={toggleProductsPortal}>
+              <span>Products</span>
+              <FontAwesomeIcon icon={faChevronDown} style={{ marginLeft: '8px' }} />
+            </NavItem>
+          )
         }
         {
-          inDrawer && <ProductNavItems />
+          inDrawer && (
+            <ProductNavItems />
+          )
         }
         {
-          inDrawer
-            ? (
-              <NavLink to="#">
-                <NavItem>Working with Us</NavItem>
-              </NavLink>
-            )
-            : (
-              <NavItem onClick={toggleWorkingWithUsPortal}>
-                <span>Working with Us</span>
-                <FontAwesomeIcon icon={faChevronDown} style={{ marginLeft: '8px' }} />
-              </NavItem>
-            )
+          !inDrawer && (
+            <NavItem onClick={toggleWorkingWithUsPortal}>
+              <span>Working with Us</span>
+              <FontAwesomeIcon icon={faChevronDown} style={{ marginLeft: '8px' }} />
+            </NavItem>
+          )
         }
         {
           inDrawer && (
             <>
               <NavLink to={Routes.WORKING_WITH_US_GOVERNMENT}>
-                <NavItem inDrawer>Government</NavItem>
+                <NavItem>Working with Us - Government</NavItem>
               </NavLink>
               <NavLink to={Routes.WORKING_WITH_US_RESEARCH}>
-                <NavItem inDrawer>Research</NavItem>
+                <NavItem>Working with Us - Research</NavItem>
               </NavLink>
             </>
           )
