@@ -19,6 +19,7 @@ import { GovernmentPage } from '../government';
 import { HomePage } from '../home';
 import { PlatformGovernmentPage, PlatformResearchPage } from '../platform';
 import { PrivacyPolicyPage } from '../privacy';
+import { AstrometricsProductPage } from '../products/astrometrics';
 import { CAREProductPage } from '../products/care';
 import { ChronicleProductPage } from '../products/chronicle';
 import { PCMProductPage } from '../products/pcm';
@@ -36,6 +37,7 @@ const AppContainer = () => (
         <Route exact path={Routes.PLATFORM_GOVERNMENT} component={PlatformGovernmentPage} />
         <Route exact path={Routes.PLATFORM_RESEARCH} component={PlatformResearchPage} />
         <Route exact path={Routes.PRIVACY_POLICY} component={PrivacyPolicyPage} />
+        <Route exact path={Routes.PRODUCTS_ASTROMETRICS} component={AstrometricsProductPage} />
         <Route exact path={Routes.PRODUCTS_CARE} component={CAREProductPage} />
         <Route exact path={Routes.PRODUCTS_CHRONICLE} component={ChronicleProductPage} />
         <Route exact path={Routes.PRODUCTS_PCM} component={PCMProductPage} />
