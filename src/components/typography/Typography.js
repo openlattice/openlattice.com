@@ -6,7 +6,6 @@ import React from 'react';
 
 import styled, { css } from 'styled-components';
 import { Typography as MUITypography } from '@material-ui/core';
-import { withTheme } from '@material-ui/core/styles';
 
 const getMaxWidthStyles = ({ $maxWidth, theme }) => {
 
@@ -112,4 +111,4 @@ Typography.defaultProps = {
   variant: undefined,
 };
 
-export default withTheme(Typography);
+export default Typography;
