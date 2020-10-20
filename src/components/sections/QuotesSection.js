@@ -90,8 +90,8 @@ const QuotesSection = ({ quotes } :{ quotes :Object[] }) => {
         <QuoteTile align={{ h: 'center' }} gap={80}>
           <Typography textAlign="center" variant="h3">{quotes[index].QUOTE}</Typography>
           <div>
-            <Typography variant="body2">{quotes[index].NAME}</Typography>
-            <Typography variant="body2">{quotes[index].ORG}</Typography>
+            <Typography textAlign="center" variant="body2">{quotes[index].NAME}</Typography>
+            <Typography textAlign="center" variant="body2">{quotes[index].ORG}</Typography>
           </div>
         </QuoteTile>
         {

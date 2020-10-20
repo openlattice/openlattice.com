@@ -6,23 +6,6 @@ import React from 'react';
 
 import { Colors } from 'lattice-ui-kit';
 
-import {
-  COLLABORATE,
-  CONNECT_INTO_PLATFORM,
-  COST_EFFECTIVE,
-  DISCOVER,
-  GET_COMPLETE_INFO,
-  GET_TIMELY_INFO,
-  HAVE_A_GOAL,
-  MODERN_PLATFORM,
-  RECEIVE_NOTIFICATIONS,
-  SEE_SHARE_INFO,
-  SHARE_INFO_SECURELY,
-  WHAT_DATA,
-  WHAT_UP_TO_DATE_INFO,
-  WHERE_YOU_LOOKING,
-  WHO_NEEDS_INFO,
-} from './constants/language';
 import { QUOTES } from './constants/quotes';
 
 import FooterSection from '../footer/FooterSection';
@@ -36,31 +19,34 @@ import {
 import {
   FeatureGrid,
   GraphicShot,
-  Header,
-  InfoTile,
   PageSection,
   QuotesSection,
   ScrollToTop,
   SectionContent,
   SolidButton,
-  SubHeader,
+  Tile,
+  Typography,
 } from '../../components';
 import { openBeacon } from '../../utils/Utils';
 
 const { NEUTRAL } = Colors;
 
-const PAGE_SUB_HEADER = 'The OpenLattice data integration platform gives jurisdictions the flexibility to work with'
-  + ' any systems, departments, jurisdictions, and even researchers of choice, and full control over how to use data'
-  + ' to achieve goals.';
-
 const GovernmentPage = () => (
   <>
     <ScrollToTop />
     <PageSection bgColor={NEUTRAL.N50}>
-      <SectionContent margin="20vh 0" maxWidth={{ sm: 450, lg: 700 }}>
-        <Header>Modern. Safe. Flexible.</Header>
-        <SubHeader>{PAGE_SUB_HEADER}</SubHeader>
-        <SolidButton onClick={openBeacon}>Chat with us</SolidButton>
+      <SectionContent margin={{ b: '25vh', t: '25vh' }}>
+        <Tile align={{ h: 'center' }}>
+          <Typography textAlign="center" variant="h1">
+            Modern. Safe. Flexible.
+          </Typography>
+          <Typography textAlign="center" maxWidth={{ lg: 800 }} variant="h6">
+            The OpenLattice data integration platform gives jurisdictions the flexibility to work with any systems,
+            departments, jurisdictions, and even researchers of choice, and full control over how to use data to
+            achieve goals.
+          </Typography>
+          <SolidButton onClick={openBeacon}>Chat with us</SolidButton>
+        </Tile>
       </SectionContent>
     </PageSection>
     <PageSection>
@@ -69,29 +55,44 @@ const GovernmentPage = () => (
           <GraphicShot>
             <PlatformStackGraphic />
           </GraphicShot>
-          <InfoTile align="left">
-            <Header as="h2" color={NEUTRAL.N800}>{MODERN_PLATFORM}</Header>
-            <SubHeader as="h5" color={NEUTRAL.N700}>{CONNECT_INTO_PLATFORM}</SubHeader>
-            <SubHeader as="h5" color={NEUTRAL.N700}>{HAVE_A_GOAL}</SubHeader>
+          <Tile>
+            <Typography variant="h2">
+              A modern, powerful data integration platform
+            </Typography>
+            <Typography maxWidth={{ lg: 480 }} variant="body2">
+              Connect all of your data collection, analysis, and visualization systems into one powerful platform.
+            </Typography>
+            <Typography maxWidth={{ lg: 480 }} variant="body2">
+              Have a specific goal in mind?  Want to build apps and tools to help you achieve those goals, but need a
+              secure, flexible, scalable data backend?  Through Open APIs, you can build apps and tools on the
+              platform. Check out the apps jurisdictions have commissioned to achieve specific goals.
+            </Typography>
             <SolidButton onClick={openBeacon}>Chat with a Team Member</SolidButton>
-          </InfoTile>
+          </Tile>
         </FeatureGrid>
       </SectionContent>
     </PageSection>
     <PageSection>
       <SectionContent>
-        <Header color={NEUTRAL.N800}>Get more from your data</Header>
+        <Typography>Get more from your data</Typography>
       </SectionContent>
     </PageSection>
     <PageSection>
       <SectionContent>
         <FeatureGrid>
-          <InfoTile align="left">
-            <Header as="h2" color={NEUTRAL.N800}>{GET_COMPLETE_INFO}</Header>
-            <SubHeader as="h5" color={NEUTRAL.N700}>{SEE_SHARE_INFO}</SubHeader>
-            <SubHeader as="h5" color={NEUTRAL.N700}>{WHAT_DATA}</SubHeader>
+          <Tile>
+            <Typography variant="h2">
+              Get more complete information
+            </Typography>
+            <Typography maxWidth={{ lg: 480 }} variant="body2">
+              See and share the best available information at any level: from the point of interaction with an
+              individual to the protocol and policy decisions that affect entire populations.
+            </Typography>
+            <Typography maxWidth={{ lg: 480 }} variant="body2">
+              What data would help your jurisdiction meet its goals?
+            </Typography>
             <SolidButton onClick={openBeacon}>Request a Demo</SolidButton>
-          </InfoTile>
+          </Tile>
           <GraphicShot>
             <JaneSmithDataGraphic />
           </GraphicShot>
@@ -102,22 +103,36 @@ const GovernmentPage = () => (
           <GraphicShot>
             <PermissionsGraphic />
           </GraphicShot>
-          <InfoTile align="left">
-            <Header as="h2" color={NEUTRAL.N800}>{SHARE_INFO_SECURELY}</Header>
-            <SubHeader as="h5" color={NEUTRAL.N700}>{COLLABORATE}</SubHeader>
-            <SubHeader as="h5" color={NEUTRAL.N700}>{WHO_NEEDS_INFO}</SubHeader>
+          <Tile>
+            <Typography maxWidth={{ lg: 420 }} variant="h2">
+              Get a more secure way to share information
+            </Typography>
+            <Typography maxWidth={{ lg: 480 }} variant="body2">
+              Collaborate using the safest technology so that you can easily meet any compliance requirements and
+              ensure the privacy of the public you serve.
+            </Typography>
+            <Typography maxWidth={{ lg: 480 }} variant="body2">
+              Who do you need to securely receive information from or send it to?
+            </Typography>
             <SolidButton onClick={openBeacon}>Request a Demo</SolidButton>
-          </InfoTile>
+          </Tile>
         </FeatureGrid>
       </SectionContent>
       <SectionContent>
         <FeatureGrid>
-          <InfoTile align="left">
-            <Header as="h2" color={NEUTRAL.N800}>{GET_TIMELY_INFO}</Header>
-            <SubHeader as="h5" color={NEUTRAL.N700}>{RECEIVE_NOTIFICATIONS}</SubHeader>
-            <SubHeader as="h5" color={NEUTRAL.N700}>{WHAT_UP_TO_DATE_INFO}</SubHeader>
+          <Tile>
+            <Typography maxWidth={{ lg: 420 }} variant="h2">
+              Get more timely actionable information
+            </Typography>
+            <Typography maxWidth={{ lg: 480 }} variant="body2">
+              Receive notifications when data you should see becomes available. Send one-tap or automatic notifications
+              to others who need the information you’ve come across.
+            </Typography>
+            <Typography maxWidth={{ lg: 480 }} variant="body2">
+              What up-to-the-minute information would you like to receive?
+            </Typography>
             <SolidButton onClick={openBeacon}>Request Pricing</SolidButton>
-          </InfoTile>
+          </Tile>
           <GraphicShot>
             <NotificationsGraphic />
           </GraphicShot>
@@ -128,21 +143,34 @@ const GovernmentPage = () => (
           <GraphicShot>
             <CostChartGraphic />
           </GraphicShot>
-          <InfoTile align="left">
-            <Header as="h2" color={NEUTRAL.N800}>{COST_EFFECTIVE}</Header>
-            <SubHeader as="h5" color={NEUTRAL.N700}>{DISCOVER}</SubHeader>
-            <SubHeader as="h5" color={NEUTRAL.N700}>{WHERE_YOU_LOOKING}</SubHeader>
+          <Tile>
+            <Typography variant="h2">
+              Get a more cost effective way to meet your goals
+            </Typography>
+            <Typography maxWidth={{ lg: 480 }} variant="body2">
+              Discover ways to be more efficient and improve outcomes for individuals.  Meanwhile, leverage and extend
+              the life of your jurisdiction’s existing systems without replacing tools or creating workflows.
+            </Typography>
+            <Typography maxWidth={{ lg: 480 }} variant="body2">
+              Where are you looking to be more effective, more efficient, or both?
+            </Typography>
             <SolidButton onClick={openBeacon}>Request Pricing</SolidButton>
-          </InfoTile>
+          </Tile>
         </FeatureGrid>
       </SectionContent>
     </PageSection>
     <QuotesSection quotes={QUOTES} />
     <PageSection>
-      <SectionContent margin="20vh 0">
-        <Header>Get a demo</Header>
-        <SubHeader>Find out how OpenLattice can help your jurisdiction.</SubHeader>
-        <SolidButton onClick={openBeacon}>Request a Demo</SolidButton>
+      <SectionContent margin={{ b: '20vh', t: '20vh' }}>
+        <Tile align={{ h: 'center' }}>
+          <Typography component="h2" variant="h1">
+            Get a demo
+          </Typography>
+          <Typography variant="h6">
+            Find out how OpenLattice can help your jurisdiction.
+          </Typography>
+          <SolidButton onClick={openBeacon}>Request a Demo</SolidButton>
+        </Tile>
       </SectionContent>
     </PageSection>
     <FooterSection />
