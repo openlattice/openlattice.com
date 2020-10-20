@@ -29,6 +29,9 @@ const PRODUCTS_CARE :'/products/care' = `${PRODUCTS}/care`;
 const PRODUCTS_CHRONICLE :'/products/chronicle' = `${PRODUCTS}/chronicle`;
 
 // $FlowFixMe - ignoring flow because I prefer the code hints to show the value
+const PRODUCTS_CWP :'/products/community-work-program' = `${PRODUCTS}/community-work-program`;
+
+// $FlowFixMe - ignoring flow because I prefer the code hints to show the value
 const PRODUCTS_PCM :'/products/pretrial-case-management' = `${PRODUCTS}/pretrial-case-management`;
 
 // $FlowFixMe - ignoring flow because I prefer the code hints to show the value
@@ -56,6 +59,7 @@ export {
   PRODUCTS_ASTROMETRICS,
   PRODUCTS_CARE,
   PRODUCTS_CHRONICLE,
+  PRODUCTS_CWP,
   PRODUCTS_PCM,
   PRODUCTS_REFERRALS,
   PRODUCTS_RESEARCH_HUB,

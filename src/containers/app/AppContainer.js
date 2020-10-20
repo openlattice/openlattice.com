@@ -22,6 +22,7 @@ import { PrivacyPolicyPage } from '../privacy';
 import { AstrometricsProductPage } from '../products/astrometrics';
 import { CAREProductPage } from '../products/care';
 import { ChronicleProductPage } from '../products/chronicle';
+import { CWPProductPage } from '../products/cwp';
 import { PCMProductPage } from '../products/pcm';
 import { ResearchPage } from '../research';
 import { TermsOfServicePage } from '../terms';
@@ -40,6 +41,7 @@ const AppContainer = () => (
         <Route exact path={Routes.PRODUCTS_ASTROMETRICS} component={AstrometricsProductPage} />
         <Route exact path={Routes.PRODUCTS_CARE} component={CAREProductPage} />
         <Route exact path={Routes.PRODUCTS_CHRONICLE} component={ChronicleProductPage} />
+        <Route exact path={Routes.PRODUCTS_CWP} component={CWPProductPage} />
         <Route exact path={Routes.PRODUCTS_PCM} component={PCMProductPage} />
         <Route exact path={Routes.RESEARCH} component={ResearchPage} />
         <Route exact path={Routes.TERMS_OF_SERVICE} component={TermsOfServicePage} />
