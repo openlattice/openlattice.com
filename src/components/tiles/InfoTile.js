@@ -3,7 +3,6 @@
  */
 
 import React from 'react';
-import type { Node } from 'react';
 
 import styled, { css } from 'styled-components';
 
@@ -12,7 +11,7 @@ import { MEDIA_QUERY_LG, MEDIA_QUERY_MD, MEDIA_QUERY_SM } from '../../core/style
 
 type Props = {
   align ?:string;
-  children :Node;
+  children :any;
   className ?:string;
   maxWidth ?:{|
     sm ?:number;
