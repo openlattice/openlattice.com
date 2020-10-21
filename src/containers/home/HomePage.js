@@ -151,6 +151,11 @@ const HomePage = () => (
     </PageSection>
     <QuotesSection quotes={QUOTES} />
     <OurCustomersSection />
+    <PageSection>
+      <SectionContent margin={{ b: 100, t: 0 }}>
+        <SolidButton onClick={openBeacon}>Get a Demo</SolidButton>
+      </SectionContent>
+    </PageSection>
     <FooterSection />
   </>
 );

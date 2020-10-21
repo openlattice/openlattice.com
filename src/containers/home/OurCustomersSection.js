@@ -99,7 +99,7 @@ const Customer = styled.div`
 `;
 
 const OurCustomersSection = () => (
-  <PageSection bgColor={NEUTRAL.N00}>
+  <PageSection>
     <SectionContent>
       <MapSection>
         <Tile gap={16}>
