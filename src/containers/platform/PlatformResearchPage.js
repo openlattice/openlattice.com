@@ -34,7 +34,7 @@ const PlatformResearchPage = () => (
       <SectionContent margin={{ b: '25vh', t: '25vh' }}>
         <Tile align={{ h: 'center' }}>
           <Typography textAlign="center" variant="h1">
-            The Modern OpenLattice Platform
+            The OpenLattice Platform
           </Typography>
           <Typography textAlign="center" maxWidth={{ lg: 800 }} variant="h6">
             Finally, an easier way to run research studies.

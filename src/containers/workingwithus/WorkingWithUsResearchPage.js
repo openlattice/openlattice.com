@@ -143,7 +143,11 @@ const WorkingWithUsResearchPage = () => (
             or dig deeper on our model for project teams, timelines, data sharing agreements, and integrations.
           </Typography>
           <ButtonsGrid>
-            <SolidButton onClick={openBeacon}>Learn More</SolidButton>
+            <a href="https://help.openlattice.com/article/96-our-implementation-plan">
+              <SolidButton>
+                Learn More
+              </SolidButton>
+            </a>
             <SolidButton onClick={openBeacon}>Contact Us</SolidButton>
           </ButtonsGrid>
         </Tile>
