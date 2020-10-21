@@ -35,12 +35,15 @@ const getMaxWidthStyles = ({ $maxWidth, theme }) => {
       ${theme.breakpoints.up('xs')} {
         max-width: ${xsMaxWidth};
       }
+
       ${theme.breakpoints.up('sm')} {
         max-width: ${smMaxWidth};
       }
+
       ${theme.breakpoints.up('md')} {
         max-width: ${mdMaxWidth};
       }
+
       ${theme.breakpoints.up('lg')} {
         max-width: ${lgMaxWidth};
       }
