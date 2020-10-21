@@ -4,6 +4,11 @@
 
 import { createMuiTheme, responsiveFontSizes } from '@material-ui/core/styles';
 
+const commonStyles = {
+  letterSpacing: '0em',
+  lineHeight: 1.5
+};
+
 const theme = createMuiTheme({
   breakpoints: {
     values: {
@@ -19,50 +24,42 @@ const theme = createMuiTheme({
     h1: {
       fontSize: '3.5rem', // 56px
       fontWeight: 700,
-      letterSpacing: '0em',
-      lineHeight: 1.5,
+      ...commonStyles,
     },
     h2: {
       fontSize: '2.25rem', // 36px
       fontWeight: 600,
-      letterSpacing: '0em',
-      lineHeight: 1.5,
+      ...commonStyles,
     },
     h3: {
       fontSize: '2rem', // 32px
       fontWeight: 500,
-      letterSpacing: '0em',
-      lineHeight: 1.5,
+      ...commonStyles,
     },
     h4: {
       fontSize: '1.75rem', // 28px
       fontWeight: 500,
-      letterSpacing: '0em',
-      lineHeight: 1.5,
+      ...commonStyles,
     },
     h5: {
       fontSize: '1.5rem', // 24px
       fontWeight: 500,
-      letterSpacing: '0em',
-      lineHeight: 1.5,
+      ...commonStyles,
     },
     h6: {
       fontSize: '1.25rem', // 20px
       fontWeight: 500,
-      letterSpacing: '0em',
-      lineHeight: 1.5,
+      ...commonStyles,
     },
     body1: {
       fontSize: '1rem', // 16px
       fontWeight: 400,
-      letterSpacing: '0em',
-      lineHeight: 1.5,
+      ...commonStyles,
     },
     body2: {
       fontSize: '1.125rem', // 18px
       fontWeight: 400,
-      letterSpacing: '0em',
-      lineHeight: 1.5,
+      ...commonStyles,
     },
   },
 });
