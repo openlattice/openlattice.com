@@ -4,62 +4,74 @@
 
 import React from 'react';
 
-import {
-  ANALYZE_COLLABORATE_HEADER,
-  ANALYZE_COLLABORATE_SUBHEADER,
-  INTEGRATE_AND_SHARE_DATA_HEADER,
-  INTEGRATE_AND_SHARE_DATA_SUBHEADER,
-  INTEGRATE_DATA_HEADER,
-  INTEGRATE_DATA_SUBHEADER,
-  MANAGE_PARTICIPANTS_HEADER,
-  MANAGE_PARTICIPANTS_SUBHEADER,
-  REVIEW_STUDY_DATA_HEADER,
-  REVIEW_STUDY_DATA_SUBHEADER,
-  STREAMLINE_HEADER,
-  STREAMLINE_SUBHEADER,
-} from './constants/language';
-
 import { ChronicleFeatureShot1, ChronicleFeatureShot2, ChronicleFeatureShot3 } from '../../../assets/images/chronicle';
 import { BarsCircleIcon, MergeArrowCircleIcon, UserCircleIcon } from '../../../assets/svg/circle-icons';
 import {
   ContentGrid,
   FeatureGrid,
   GraphicShot,
-  Header,
-  InfoTile,
   PageSection,
   SectionContent,
-  SubHeader,
+  Tile,
+  Typography,
 } from '../../../components';
 import { ProductFeaturesSectionContent } from '../components';
 
 const ChronicleFeaturesSection = () => (
   <PageSection>
     <ProductFeaturesSectionContent>
-      <ContentGrid align={{ v: 'start' }}>
-        <InfoTile align="left">
+      <ContentGrid align={{ h: 'start', v: 'start' }}>
+        <Tile>
           <UserCircleIcon />
-          <Header as="h3">{MANAGE_PARTICIPANTS_HEADER}</Header>
-          <SubHeader as="h6">{MANAGE_PARTICIPANTS_SUBHEADER}</SubHeader>
-        </InfoTile>
-        <InfoTile align="left">
+          <Typography textAlign="center" variant="h5">
+            Manage Participants
+          </Typography>
+          <div>
+            <Typography variant="body1">
+              Enroll participants
+            </Typography>
+            <Typography variant="body1">
+              Manage participant consent
+            </Typography>
+            <Typography variant="body1">
+              Monitor continued compliance with study protocol
+            </Typography>
+          </div>
+        </Tile>
+        <Tile>
           <MergeArrowCircleIcon />
-          <Header as="h3">{INTEGRATE_DATA_HEADER}</Header>
-          <SubHeader as="h6">{INTEGRATE_DATA_SUBHEADER}</SubHeader>
-        </InfoTile>
-        <InfoTile align="left">
+          <Typography textAlign="center" variant="h5">
+            Integrate Data
+          </Typography>
+          <Typography variant="body1">
+            Integrate data from multiple sources including 3rd party sensors. Collect data from participants through a
+            participant mobile app
+          </Typography>
+        </Tile>
+        <Tile>
           <BarsCircleIcon />
-          <Header as="h3">{ANALYZE_COLLABORATE_HEADER}</Header>
-          <SubHeader as="h6">{ANALYZE_COLLABORATE_SUBHEADER}</SubHeader>
-        </InfoTile>
+          <Typography textAlign="center" variant="h5">
+            Analyze & Collaborate
+          </Typography>
+          <Typography variant="body1">
+            Manage roles and permissions for researchers. Data collected for studies managed in Chronicle can be shared
+            through ResearchHub.
+          </Typography>
+        </Tile>
       </ContentGrid>
     </ProductFeaturesSectionContent>
     <SectionContent>
       <FeatureGrid>
-        <InfoTile align="left">
-          <Header as="h2">{STREAMLINE_HEADER}</Header>
-          <SubHeader as="h5">{STREAMLINE_SUBHEADER}</SubHeader>
-        </InfoTile>
+        <Tile>
+          <Typography maxWidth={{ lg: 480 }} variant="h2">
+            Streamline data collection and communication with participants through the Chronicle mobile app
+          </Typography>
+          <Typography maxWidth={{ lg: 480 }} variant="body2">
+            Chronicle includes an optional companion mobile application for Android devices. Through this app,
+            researchers can securely collect information for media usage studies and utilize push notifications for
+            point-in-time surveys.
+          </Typography>
+        </Tile>
         <GraphicShot withBorder>
           <ChronicleFeatureShot1 />
         </GraphicShot>
@@ -70,18 +82,28 @@ const ChronicleFeaturesSection = () => (
         <GraphicShot withBorder>
           <ChronicleFeatureShot2 />
         </GraphicShot>
-        <InfoTile align="left">
-          <Header as="h2">{REVIEW_STUDY_DATA_HEADER}</Header>
-          <SubHeader as="h5">{REVIEW_STUDY_DATA_SUBHEADER}</SubHeader>
-        </InfoTile>
+        <Tile>
+          <Typography variant="h2">
+            Review study data
+          </Typography>
+          <Typography maxWidth={{ lg: 480 }} variant="body2">
+            Data is collected in a standardized format so that it can be viewed in a clean, simple, and intuitive way
+            on our Chronicle Dashboard or exported to a preferred statistical tool.
+          </Typography>
+        </Tile>
       </FeatureGrid>
     </SectionContent>
     <SectionContent>
       <FeatureGrid>
-        <InfoTile align="left">
-          <Header as="h2">{INTEGRATE_AND_SHARE_DATA_HEADER}</Header>
-          <SubHeader as="h5">{INTEGRATE_AND_SHARE_DATA_SUBHEADER}</SubHeader>
-        </InfoTile>
+        <Tile>
+          <Typography variant="h2">
+            Integrate and share data
+          </Typography>
+          <Typography maxWidth={{ lg: 480 }} variant="body2">
+            Integrate multiple data streams for an individual, and securely share all or select data with other
+            researchers via ResearchHub.
+          </Typography>
+        </Tile>
         <GraphicShot withBorder>
           <ChronicleFeatureShot3 />
         </GraphicShot>
