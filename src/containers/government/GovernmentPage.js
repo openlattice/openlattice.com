@@ -74,7 +74,9 @@ const GovernmentPage = () => (
     </PageSection>
     <PageSection>
       <SectionContent>
-        <Typography>Get more from your data</Typography>
+        <Typography component="h2" variant="h1">
+          Get more from your data
+        </Typography>
       </SectionContent>
     </PageSection>
     <PageSection>
