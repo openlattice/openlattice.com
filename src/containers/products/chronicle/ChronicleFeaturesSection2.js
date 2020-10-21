@@ -5,19 +5,11 @@
 import React from 'react';
 
 import {
-  ENSURE_DATA_QUALITY_HEADER,
-  ENSURE_DATA_QUALITY_SUBHEADER,
-  SAVE_TIME_HEADER,
-  SAVE_TIME_SUBHEADER,
-} from './constants/language';
-
-import {
   ContentGrid,
-  Header,
-  InfoTile,
   PageSection,
   SectionContent,
-  SubHeader,
+  Tile,
+  Typography,
 } from '../../../components';
 import { NEUTRALS } from '../../../core/style/Colors';
 
@@ -25,14 +17,25 @@ const ChronicleFeaturesSection2 = () => (
   <PageSection bgColor={NEUTRALS.GRAY_05}>
     <SectionContent>
       <ContentGrid align={{ v: 'start' }}>
-        <InfoTile align="left">
-          <Header as="h2">{ENSURE_DATA_QUALITY_HEADER}</Header>
-          <SubHeader as="h5">{ENSURE_DATA_QUALITY_SUBHEADER}</SubHeader>
-        </InfoTile>
-        <InfoTile align="left">
-          <Header as="h2">{SAVE_TIME_HEADER}</Header>
-          <SubHeader as="h5">{SAVE_TIME_SUBHEADER}</SubHeader>
-        </InfoTile>
+        <Tile>
+          <Typography variant="h2">
+            Ensure data quality with comprehensive participant status
+          </Typography>
+          <Typography maxWidth={{ lg: 480 }} variant="body2">
+            See a list of all study participants, along with their consent date and drop-out date, if applicable. Use
+            this information to ensure data quality and identify any participation issues in real-time.
+          </Typography>
+        </Tile>
+        <Tile>
+          <Typography variant="h2">
+            Save time with automated compliance documentation
+          </Typography>
+          <Typography maxWidth={{ lg: 480 }} variant="body2">
+            Chronicle collects and stores important information around enrollment, consent, and participation.
+            A record gets automatically tabulated in a PDF that research teams can send directly to compliance and
+            enforcement boards.
+          </Typography>
+        </Tile>
       </ContentGrid>
     </SectionContent>
   </PageSection>
