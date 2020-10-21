@@ -27,7 +27,7 @@ const SteppingUpProductPage = () => (
     <ScrollToTop />
     <BasicProductIntroSection />
     <PageSection>
-      <SectionContent margin="0 0 100px 0">
+      <SectionContent margin={{ t: 0, b: 100 }}>
         <FeatureGrid reverseOrderOnWrap>
           <GraphicShot withBorder>
             <SteppingUpFeatureShot1 />

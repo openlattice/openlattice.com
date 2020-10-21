@@ -27,7 +27,7 @@ const AstrometricsProductPage = () => (
     <ScrollToTop />
     <BasicProductIntroSection />
     <PageSection>
-      <SectionContent margin="0 0 100px 0">
+      <SectionContent margin={{ t: 0, b: 100 }}>
         <FeatureGrid>
           <InfoTile>
             <AstrometricsIcon width={48} />
