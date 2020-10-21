@@ -3,7 +3,6 @@
  */
 
 import React from 'react';
-import type { Node } from 'react';
 
 import styled from 'styled-components';
 import { NavLink } from 'react-router-dom';
@@ -19,7 +18,7 @@ const OutlineButtonNavLink = styled(NavLink).attrs({
 const LEARN_MORE :'Learn more' = 'Learn more';
 
 type Props = {
-  children :Node;
+  children :any;
   className ?:string;
   href ?:string;
   onClick :() => void;

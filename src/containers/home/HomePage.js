@@ -4,24 +4,9 @@
 
 import React from 'react';
 
-import styled from 'styled-components';
 import { Colors } from 'lattice-ui-kit';
 
 import OurCustomersSection from './OurCustomersSection';
-import {
-  AUTOMATE_NOTIFICATIONS,
-  COLLECT_AND_CONNECT,
-  COLLECT_DATA_VIA_APPS,
-  CONNECT_ALL_THE_THINGS,
-  GET_NOTIFIED,
-  NOTIFY_OTHERS,
-  OL_EASY_INFO,
-  OL_ENSURES_ACCESS,
-  OL_PROTECTS_DATA,
-  PUT_DATA_RIGHT_PEOPLE,
-  SEE_ACCESS,
-  SET_ACCESS,
-} from './constants/language';
 import { QUOTES } from './constants/quotes';
 
 import FooterSection from '../footer/FooterSection';
@@ -34,60 +19,71 @@ import {
 import {
   FeatureGrid,
   GraphicShot,
-  Header,
-  InfoTile,
   PageSection,
   QuotesSection,
   ScrollToTop,
   SectionContent,
   SolidButton,
-  SubHeader,
+  Tile,
+  Typography,
 } from '../../components';
 import { openBeacon } from '../../utils/Utils';
 
 const { PURPLE } = Colors;
 
-const PurpleText = styled.span`
-  color: ${PURPLE.P300};
-  font-size: 18px;
-  font-weight: 600;
-  text-transform: uppercase;
-`;
-
-const Underline = styled.span`
-  text-decoration: underline;
-`;
-
 const HomePage = () => (
   <>
     <ScrollToTop />
     <PageSection bgImage={StatueOfLibertyPNG}>
-      <SectionContent align={{ h: 'end' }} margin="20vh 0">
-        <Header>With liberty and</Header>
-        <Header>
-          {'justice '}
-          <Underline>for all.</Underline>
-        </Header>
-        <SubHeader>Data tools for those who serve the public.</SubHeader>
-        <SolidButton onClick={openBeacon}>Chat with us</SolidButton>
+      <SectionContent align={{ h: 'end' }} margin={{ b: '25vh', t: '25vh' }}>
+        <Tile align={{ h: 'end' }}>
+          <Typography maxWidth={{ xs: 300, sm: 400, md: 500 }} textAlign="right" variant="h1">
+            {'With liberty and justice '}
+            <Typography component="span" underline variant="h1">
+              for all.
+            </Typography>
+          </Typography>
+          <Typography maxWidth={{ sm: 250, md: 500 }} textAlign="right" variant="h6">
+            Data tools for those who serve the public.
+          </Typography>
+          <SolidButton onClick={openBeacon}>Chat with us</SolidButton>
+        </Tile>
       </SectionContent>
     </PageSection>
     <PageSection>
       <SectionContent>
-        <Header>Get the right data to the right people at the right time</Header>
+        <Typography maxWidth={{ lg: 1000 }} textAlign="center" variant="h1">
+          Get the right data to the right people at the right time
+        </Typography>
       </SectionContent>
     </PageSection>
     <PageSection>
-      <SectionContent>
+      <SectionContent margin={{ t: 0 }}>
         <FeatureGrid>
-          <InfoTile align="left">
-            <PurpleText>RIGHT DATA</PurpleText>
-            <Header as="h2">{COLLECT_AND_CONNECT}</Header>
-            <SubHeader as="h5">{CONNECT_ALL_THE_THINGS}</SubHeader>
-            <SubHeader as="h5">{COLLECT_DATA_VIA_APPS}</SubHeader>
-            <SubHeader as="h5">{OL_PROTECTS_DATA}</SubHeader>
-            <SolidButton onClick={openBeacon}>Get a Demo</SolidButton>
-          </InfoTile>
+          <Tile>
+            <Tile gap={16}>
+              <Typography color={PURPLE.P300} fontWeight={700} variant="body2">
+                RIGHT DATA
+              </Typography>
+              <Typography variant="h2">
+                Collect and connect all the data you need
+              </Typography>
+            </Tile>
+            <Typography maxWidth={{ lg: 480 }} variant="body2">
+              Connect any and all systems, teams, departments, jurisdictions, and researchers and feed the data into
+              one secure, modern, easy-to-use system that links it all together for you.
+            </Typography>
+            <Typography maxWidth={{ lg: 480 }} variant="body2">
+              Optionally, collect data through OpenLattice Apps, built to help you achieve specific goals.
+            </Typography>
+            <Tile gap={32}>
+              <Typography maxWidth={{ lg: 480 }} variant="body2">
+                OpenLattice makes sure the data is properly protected and compliant, so you can focus on the actionable
+                insights that come from integrated data.
+              </Typography>
+              <SolidButton onClick={openBeacon}>Get a Demo</SolidButton>
+            </Tile>
+          </Tile>
           <GraphicShot>
             <RightDataGraphic />
           </GraphicShot>
@@ -98,26 +94,55 @@ const HomePage = () => (
           <GraphicShot>
             <RightPeopleGraphic />
           </GraphicShot>
-          <InfoTile align="left">
-            <PurpleText>RIGHT PEOPLE</PurpleText>
-            <Header as="h2">{PUT_DATA_RIGHT_PEOPLE}</Header>
-            <SubHeader as="h5">{SET_ACCESS}</SubHeader>
-            <SubHeader as="h5">{SEE_ACCESS}</SubHeader>
-            <SubHeader as="h5">{OL_ENSURES_ACCESS}</SubHeader>
-            <SolidButton onClick={openBeacon}>Get a Demo</SolidButton>
-          </InfoTile>
+          <Tile>
+            <Tile gap={16}>
+              <Typography color={PURPLE.P300} fontWeight={700} variant="body2">
+                RIGHT PEOPLE
+              </Typography>
+              <Typography maxWidth={{ lg: 400 }} variant="h2">
+                Put the data in the hands of people who need it
+              </Typography>
+            </Tile>
+            <Typography maxWidth={{ lg: 480 }} variant="body2">
+              Set access to data according to fine-grained permissions and roles.
+            </Typography>
+            <Typography maxWidth={{ lg: 480 }} variant="body2">
+              See who accessed what data and when.
+            </Typography>
+            <Tile gap={32}>
+              <Typography maxWidth={{ lg: 480 }} variant="body2">
+                OpenLattice makes sure only those who should have access to certain data actually do.
+              </Typography>
+              <SolidButton onClick={openBeacon}>Get a Demo</SolidButton>
+            </Tile>
+          </Tile>
         </FeatureGrid>
       </SectionContent>
       <SectionContent>
         <FeatureGrid>
-          <InfoTile align="left">
-            <PurpleText>RIGHT TIME</PurpleText>
-            <Header as="h2">{GET_NOTIFIED}</Header>
-            <SubHeader as="h5">{NOTIFY_OTHERS}</SubHeader>
-            <SubHeader as="h5">{AUTOMATE_NOTIFICATIONS}</SubHeader>
-            <SubHeader as="h5">{OL_EASY_INFO}</SubHeader>
-            <SolidButton onClick={openBeacon}>Get a Demo</SolidButton>
-          </InfoTile>
+          <Tile>
+            <Tile gap={16}>
+              <Typography color={PURPLE.P300} fontWeight={700} variant="body2">
+                RIGHT TIME
+              </Typography>
+              <Typography variant="h2">
+                Get notified of key information instantly
+              </Typography>
+            </Tile>
+            <Typography maxWidth={{ lg: 480 }} variant="body2">
+              Notify others that need to see the information you’re seeing and work with you or take over a case.
+            </Typography>
+            <Typography maxWidth={{ lg: 480 }} variant="body2">
+              Automate notifications upon certain triggers or scenarios, or when critical information arises.
+            </Typography>
+            <Tile gap={32}>
+              <Typography maxWidth={{ lg: 480 }} variant="body2">
+                OpenLattice makes sure it’s easy to pass information to others and understand information being sent
+                to you.
+              </Typography>
+              <SolidButton onClick={openBeacon}>Get a Demo</SolidButton>
+            </Tile>
+          </Tile>
           <GraphicShot>
             <RightTimeGraphic />
           </GraphicShot>

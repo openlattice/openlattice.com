@@ -20,7 +20,7 @@ const PurpleNavLink = styled(NavLink)`
 `;
 
 type Props = {
-  children :Node;
+  children :any;
   className ?:string;
   href ?:string;
   to ?:string;

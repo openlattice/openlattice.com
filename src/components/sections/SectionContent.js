@@ -2,6 +2,8 @@
  * @flow
  */
 
+import type { ComponentType } from 'react';
+
 import styled, { css } from 'styled-components';
 
 import {
@@ -12,11 +14,14 @@ import {
 } from '../../core/style/Sizes';
 
 type Props = {
-  align ?:{
+  align ?:{|
     h ?:'start' | 'center' | 'end';
     v ?:'start' | 'center' | 'end';
-  };
-  margin ?:string;
+  |};
+  margin ?:{|
+    b ?:number | string;
+    t ?:number | string;
+  |};
   maxWidth ?:{|
     sm ?:number;
     md ?:number;
@@ -26,13 +31,13 @@ type Props = {
 };
 
 const getComputedStyles = ({
-  align = {},
-  margin,
+  align = { h: 'center', v: 'center' },
+  margin = { b: 100, t: 100 },
   maxWidth,
   vertical = true,
 } :Props) => {
 
-  let alignVertical = 'center';
+  let alignVertical = align.v;
   if (align.v === 'start') {
     alignVertical = 'flex-start';
   }
@@ -40,7 +45,7 @@ const getComputedStyles = ({
     alignVertical = 'flex-end';
   }
 
-  let alignHorizontal = 'center';
+  let alignHorizontal = align.h;
   if (align.h === 'start') {
     alignHorizontal = 'flex-start';
   }
@@ -51,9 +56,14 @@ const getComputedStyles = ({
   const alignItems = vertical ? alignHorizontal : alignVertical;
   const justifyContent = vertical ? alignVertical : alignHorizontal;
 
-  let finalMargin = '100px 0';
-  if (margin) {
-    finalMargin = margin;
+  let marginBottom = margin.b;
+  if (typeof margin.b === 'number') {
+    marginBottom = `${margin.b}px`;
+  }
+
+  let marginTop = margin.t;
+  if (typeof margin.t === 'number') {
+    marginTop = `${margin.t}px`;
   }
 
   let smMaxWidth;
@@ -74,7 +84,10 @@ const getComputedStyles = ({
   return css`
     align-items: ${alignItems};
     justify-content: ${justifyContent};
-    margin: ${finalMargin};
+    margin-bottom: ${marginBottom};
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: ${marginTop};
 
     @media only screen and (min-width: ${MEDIA_QUERY_SM}px) {
       max-width: ${smMaxWidth};
@@ -90,7 +103,7 @@ const getComputedStyles = ({
   `;
 };
 
-const SectionContent = styled.div`
+const SectionContent :ComponentType<Props> = styled.div`
   display: flex;
   flex-direction: ${({ vertical }) => (vertical === false ? 'row' : 'column')};
   max-width: ${CONTENT_WIDTH}px;

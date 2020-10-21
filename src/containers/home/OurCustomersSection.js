@@ -5,16 +5,23 @@
 import React from 'react';
 
 import styled from 'styled-components';
+import { Colors } from 'lattice-ui-kit';
 
 import { CUSTOMERS } from './constants/customers';
 
 import { OurCustomersMapGraphic } from '../../assets/svg/graphics';
-import { PageSection, SectionContent } from '../../components';
-import { NEUTRALS } from '../../core/style/Colors';
+import {
+  PageSection,
+  SectionContent,
+  Tile,
+  Typography,
+} from '../../components';
 import { MEDIA_QUERY_LG, MEDIA_QUERY_MD, MEDIA_QUERY_SM } from '../../core/style/Sizes';
 
+const { NEUTRAL } = Colors;
+
 const CitizensImpacted = styled.div`
-  color: ${NEUTRALS.GRAY_06};
+  color: ${NEUTRAL.N700};
   font-size: 36px;
   font-weight: 600;
   line-height: 130%;
@@ -27,17 +34,6 @@ const CitizensImpacted = styled.div`
   @media only screen and (min-width: ${MEDIA_QUERY_MD}px) {
     font-size: 64px;
   }
-`;
-
-const CitizensImpactedHeader = styled.div`
-  color: ${NEUTRALS.GRAY_07};
-  font-size: 14px;
-  font-weight: 500;
-  letter-spacing: 0.1em;
-  line-height: 150%;
-  margin-bottom: 16px;
-  text-align: left;
-  text-transform: uppercase;
 `;
 
 const MapSection = styled.div`
@@ -73,7 +69,7 @@ const Map = styled.div`
 
 const MapFootnote = styled.div`
   align-self: flex-end;
-  color: ${NEUTRALS.GRAY_08};
+  color: ${NEUTRAL.N500};
   font-size: 12px;
   line-height: 150%;
   margin-top: 24.2px;
@@ -91,9 +87,6 @@ const CustomersGrid = styled.div`
 `;
 
 const Customer = styled.div`
-  color: ${NEUTRALS.GRAY_07};
-  font-size: 16px;
-  font-weight: 500;
   white-space: nowrap;
 
   @media only screen and (min-width: ${MEDIA_QUERY_SM}px) {
@@ -106,13 +99,13 @@ const Customer = styled.div`
 `;
 
 const OurCustomersSection = () => (
-  <PageSection bgColor={NEUTRALS.GRAY_05}>
+  <PageSection bgColor={NEUTRAL.N00}>
     <SectionContent>
       <MapSection>
-        <div>
-          <CitizensImpactedHeader>Citizens impacted</CitizensImpactedHeader>
+        <Tile gap={16}>
+          <Typography color={NEUTRAL.N700} uppercase variant="body1">Citizens impacted</Typography>
           <CitizensImpacted>13,329,315</CitizensImpacted>
-        </div>
+        </Tile>
         <Map>
           <OurCustomersMapGraphic />
           <MapFootnote>Number of customers in each area</MapFootnote>
@@ -121,7 +114,11 @@ const OurCustomersSection = () => (
       <CustomersGrid>
         {
           CUSTOMERS.map((customer :string) => (
-            <Customer key={customer}>{customer}</Customer>
+            <Customer key={customer}>
+              <Typography color={NEUTRAL.N700} fontWeight={500} variant="body1">
+                {customer}
+              </Typography>
+            </Customer>
           ))
         }
       </CustomersGrid>

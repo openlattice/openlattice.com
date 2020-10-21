@@ -3,7 +3,6 @@
  */
 
 import React from 'react';
-import type { Node } from 'react';
 
 import styled, { css } from 'styled-components';
 
@@ -51,7 +50,7 @@ const PageSectionInnerWrapper = styled.div`
 type Props = {
   bgColor :string;
   bgImage :any;
-  children :Node;
+  children :any;
   className ?:string;
 };
 

@@ -23,7 +23,7 @@ const OL_IS_FOUNDED = 'OpenLattice is founded on the ideal that government tools
 const BasicProductIntroSection = () => (
   <>
     <PageSection bgColor={NEUTRAL.N00}>
-      <SectionContent margin="20vh 0" maxWidth={{ lg: 700 }}>
+      <SectionContent margin={{ b: '25vh', t: '25vh' }} maxWidth={{ lg: 700 }}>
         <Header color={NEUTRAL.N800}>
           Solve modern problems with modern solutions
         </Header>

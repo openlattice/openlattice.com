@@ -2,8 +2,6 @@
  * @flow
  */
 
-import type { Node } from 'react';
-
 import styled, { css } from 'styled-components';
 
 import {
@@ -16,7 +14,7 @@ type Props = {
     h ?:'start' | 'center' | 'end';
     v ?:'start' | 'center' | 'end';
   };
-  children :Node;
+  children :any;
   gridGap ?:number;
   reverseOrderOnWrap ?:boolean;
 };
