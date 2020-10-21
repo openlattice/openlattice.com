@@ -18,8 +18,8 @@ const JUSTIN_LOOSE = {
 };
 
 const QUOTES = [
-  DAVID_SCHWINDT,
   JUSTIN_LOOSE,
+  DAVID_SCHWINDT,
 ];
 
 export {
