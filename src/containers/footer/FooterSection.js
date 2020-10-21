@@ -5,23 +5,20 @@
 import React from 'react';
 
 import styled, { css } from 'styled-components';
+import { Colors } from 'lattice-ui-kit';
 import { NavLink } from 'react-router-dom';
 
 import OpenLatticeIconSVG from '../../assets/svg/icons/ol-icon-gray.svg';
 import * as Routes from '../../core/router/Routes';
-import { PageSection, SectionContent, Tag } from '../../components';
-import { NEUTRALS } from '../../core/style/Colors';
-import { MEDIA_QUERY_MD, MEDIA_QUERY_SM } from '../../core/style/Sizes';
+import {
+  PageSection,
+  SectionContent,
+  Tag,
+  Typography,
+} from '../../components';
+import { MEDIA_QUERY_MD } from '../../core/style/Sizes';
 
-const Header = styled.div`
-  color: white;
-  font-size: 20px;
-  font-weight: 600;
-
-  @media only screen and (max-width: ${MEDIA_QUERY_SM}px) {
-    font-size: 18px;
-  }
-`;
+const { NEUTRAL } = Colors;
 
 const HeaderWithTag = styled.div`
   align-items: center;
@@ -34,13 +31,8 @@ const HeaderWithTag = styled.div`
 `;
 
 const linkStyles = css`
-  color: ${NEUTRALS.GRAY_12};
-  font-size: 16px;
+  color: ${NEUTRAL.N400};
   text-decoration: none;
-
-  @media only screen and (max-width: ${MEDIA_QUERY_SM}px) {
-    font-size: 14px;
-  }
 `;
 
 const InternalLink = styled(NavLink)`
@@ -53,12 +45,12 @@ const ExternalLink = styled.a`
 
 const FakeLink = styled.div`
   ${linkStyles}
-  color: ${NEUTRALS.GRAY_13};
+  color: ${NEUTRAL.N700};
 `;
 
 const Copyright = styled.div`
   align-items: center;
-  border-top: 1px solid ${NEUTRALS.GRAY_14};
+  border-top: 1px solid ${NEUTRAL.N800};
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -102,25 +94,47 @@ const FooterGrid = styled.div`
 `;
 
 const FooterSection = () => (
-  <PageSection bgColor={NEUTRALS.GRAY_11}>
+  <PageSection bgColor={NEUTRAL.N900}>
     <SectionContent>
       <FooterGrid>
         <section>
-          <Header>Company</Header>
-          <InternalLink to={Routes.ROOT}>Home</InternalLink>
+          <Typography color="white" variant="h6">Company</Typography>
+          <InternalLink to={Routes.ROOT}>
+            <Typography variant="body1">
+              Home
+            </Typography>
+          </InternalLink>
           <InternalLink to={Routes.ABOUT}>About</InternalLink>
           <ExternalLink href="https://jobs.lever.co/openlattice" rel="noreferrer" target="_blank">Jobs</ExternalLink>
           <ExternalLink href="https://medium.com/openlattice" rel="noreferrer" target="_blank">Blog</ExternalLink>
         </section>
         <section>
           <section>
-            <Header>Platform</Header>
-            <InternalLink to={Routes.PLATFORM}>Platform overview</InternalLink>
-            <InternalLink to={Routes.WORKING_WITH_US}>Working with us</InternalLink>
+            <Typography color="white" variant="h6">Platform</Typography>
+            <InternalLink to={Routes.PLATFORM_GOVERNMENT}>
+              <Typography variant="body1">
+                Platform - Government
+              </Typography>
+            </InternalLink>
+            <InternalLink to={Routes.PLATFORM_RESEARCH}>
+              <Typography variant="body1">
+                Platform - Research
+              </Typography>
+            </InternalLink>
+            <InternalLink to={Routes.WORKING_WITH_US_GOVERNMENT}>
+              <Typography variant="body1">
+                Working with Us - Government
+              </Typography>
+            </InternalLink>
+            <InternalLink to={Routes.WORKING_WITH_US_RESEARCH}>
+              <Typography variant="body1">
+                Working with Us - Government
+              </Typography>
+            </InternalLink>
           </section>
           <section style={{ marginTop: '48px' }}>
             <HeaderWithTag>
-              <Header>Partners</Header>
+              <Typography color="white" variant="h6">Partners</Typography>
               <Tag tagType="comingSoon">Coming soon</Tag>
             </HeaderWithTag>
             <FakeLink>Technology partners</FakeLink>
@@ -128,28 +142,45 @@ const FooterSection = () => (
           </section>
         </section>
         <section>
-          <Header>Products</Header>
-          <InternalLink to={Routes.PRODUCTS}>All products</InternalLink>
-          <InternalLink to={Routes.CARE}>Care</InternalLink>
-          <InternalLink to={Routes.PCM}>Pretrial Case Management</InternalLink>
-          <HeaderWithTag>
-            <InternalLink to={Routes.RESEARCH_HUB}>Research Hub</InternalLink>
-            <Tag tagType="beta">BETA</Tag>
-          </HeaderWithTag>
-          <InternalLink to={Routes.PRODUCTS}>Other products</InternalLink>
+          <Typography color="white" variant="h6">Products</Typography>
+          <InternalLink to={Routes.PRODUCTS_CARE}>
+            <Typography variant="body1">
+              Care
+            </Typography>
+          </InternalLink>
+          <InternalLink to={Routes.PRODUCTS_PCM}>
+            <Typography variant="body1">
+              Pretrial Case Management
+            </Typography>
+          </InternalLink>
+          <InternalLink to={Routes.PRODUCTS_CHRONICLE}>
+            <Typography variant="body1">
+              Chronicle
+            </Typography>
+          </InternalLink>
         </section>
         <section>
-          <Header>Support</Header>
+          <Typography color="white" variant="h6">Support</Typography>
           <ExternalLink href="https://help.openlattice.com" rel="noreferrer" target="_blank">Help Center</ExternalLink>
-          <InternalLink to={Routes.TERMS_OF_SERVICE}>Terms of Service</InternalLink>
-          <InternalLink to={Routes.PRIVACY_POLICY}>Privacy Policy</InternalLink>
+          <InternalLink to={Routes.TERMS_OF_SERVICE}>
+            <Typography variant="body1">
+              Terms of Service
+            </Typography>
+          </InternalLink>
+          <InternalLink to={Routes.PRIVACY_POLICY}>
+            <Typography variant="body1">
+              Privacy Policy
+            </Typography>
+          </InternalLink>
         </section>
       </FooterGrid>
     </SectionContent>
-    <SectionContent margin="0">
+    <SectionContent margin={{ b: 0, t: 0 }}>
       <Copyright>
         <img src={OpenLatticeIconSVG} alt="" />
-        <span>© 2020 OpenLattice, Inc. All rights reserved.</span>
+        <Typography color={NEUTRAL.N400} variant="body1">
+          © 2020 OpenLattice, Inc. All rights reserved.
+        </Typography>
       </Copyright>
     </SectionContent>
   </PageSection>

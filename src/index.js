@@ -6,6 +6,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 
 import { ConnectedRouter } from 'connected-react-router/immutable';
+import { Colors } from 'lattice-ui-kit';
 import { normalize } from 'polished';
 import { Provider } from 'react-redux';
 import { Route } from 'react-router';
@@ -15,7 +16,8 @@ import AppContainer from './containers/app/AppContainer';
 import initializeReduxStore from './core/redux/ReduxStore';
 import initializeRouterHistory from './core/router/RouterHistory';
 import * as Routes from './core/router/Routes';
-import { NEUTRALS } from './core/style/Colors';
+
+const { NEUTRAL } = Colors;
 
 /* eslint-disable */
 const NormalizeCSS = createGlobalStyle`
@@ -32,8 +34,8 @@ const GlobalStyle = createGlobalStyle`
   html,
   body {
     background-color: white;
-    color: ${NEUTRALS.GRAY_03};
-    font-family: 'Inter', sans-serif;
+    color: ${NEUTRAL.N800};
+    font-family: 'Inter', 'Arial', sans-serif;
     height: 100%;
     line-height: 1.5;
     width: 100%;

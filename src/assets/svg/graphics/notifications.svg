@@ -1,0 +1,28 @@
+<svg width="528" height="503" viewBox="0 0 528 503" fill="none" xmlns="http://www.w3.org/2000/svg">
+<circle cx="263.5" cy="251.5" r="251.5" fill="url(#paint0_radial)"/>
+<rect x="0.673469" y="252.673" width="526.653" height="204.653" rx="6.06122" fill="white" stroke="#E1E1EB" stroke-width="1.34694"/>
+<text fill="#56565A" xml:space="preserve" style="white-space: pre" font-family="Inter" font-size="18.8571" letter-spacing="0px"><tspan x="40" y="359.509">New document added to your case.</tspan></text>
+<path d="M40 386C40 384.343 41.3431 383 43 383H489C490.657 383 492 384.343 492 386V420C492 421.657 490.657 423 489 423H43C41.3431 423 40 421.657 40 420V386Z" fill="#6D49FE"/>
+<text fill="white" xml:space="preserve" style="white-space: pre" font-family="Inter" font-size="16" font-weight="600" letter-spacing="0px"><tspan x="204.352" y="408.818">View Full Profile</tspan></text>
+<path d="M473.792 299.792L481.5 307.5M481.5 307.5L473.792 315.208M481.5 307.5L489.208 315.208M481.5 307.5L489.208 299.792" stroke="#A7A7AC" stroke-width="3"/>
+<path d="M1 257C1 255.343 2.34315 254 4 254V456C2.34315 456 1 454.657 1 453V257Z" fill="#6D49FE"/>
+<rect x="0.673469" y="252.673" width="526.653" height="204.653" rx="6.06122" stroke="#E1E1EB" stroke-width="1.34694"/>
+<rect x="36" y="285" width="40" height="40" rx="20" fill="#F2F2F4"/>
+<text fill="#56565A" xml:space="preserve" style="white-space: pre" font-family="Inter" font-size="18.8571" font-weight="600" letter-spacing="0px"><tspan x="92" y="312.357">Notification</tspan></text>
+<rect x="0.673469" y="72.6735" width="526.653" height="161.653" rx="6.06122" fill="white" stroke="#E1E1EB" stroke-width="1.34694"/>
+<rect x="36" y="100" width="40" height="40" rx="20" fill="#F2F2F4"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M57.3856 110.212C56.8541 109.231 55.4463 109.231 54.9148 110.212L45.781 127.071C45.2738 128.007 45.9516 129.145 47.0164 129.145H65.284C66.3488 129.145 67.0266 128.007 66.5194 127.071L57.3856 110.212ZM55.5685 122.64H57.3627L57.4837 116.864H55.4518L55.5685 122.64ZM57.4232 123.508H55.5123V125.525H57.4232V123.508Z" fill="#717175"/>
+<text fill="#56565A" xml:space="preserve" style="white-space: pre" font-family="Inter" font-size="18.8571" letter-spacing="0px"><tspan x="36" y="175.357">Reported disturbance at 1st Ave. and Main St.  </tspan><tspan x="36" y="198.357">De-escalation services requested.</tspan></text>
+<path d="M473.792 115.792L481.5 123.5M481.5 123.5L473.792 131.208M481.5 123.5L489.208 131.208M481.5 123.5L489.208 115.792" stroke="#A7A7AC" stroke-width="3"/>
+<path d="M1 77C1 75.3431 2.34315 74 4 74V233C2.34315 233 1 231.657 1 230V77Z" fill="#6D49FE"/>
+<rect x="0.673469" y="72.6735" width="526.653" height="161.653" rx="6.06122" stroke="#E1E1EB" stroke-width="1.34694"/>
+<text fill="#56565A" xml:space="preserve" style="white-space: pre" font-family="Inter" font-size="18.8571" font-weight="600" letter-spacing="0px"><tspan x="92" y="125.357">Alert</tspan></text>
+<path d="M55.5104 295.708C52.1449 295.708 49.4167 298.486 49.4167 301.913L49.4167 307.083L48.0625 310.875H62.9583L61.6042 307.083V301.913C61.6042 298.486 58.8759 295.708 55.5104 295.708Z" fill="#717175" stroke="#717175" stroke-width="1.35417"/>
+<path d="M57.1916 312.816C56.9265 313.508 56.2673 313.989 55.5103 313.989C54.7534 313.989 54.0942 313.508 53.8291 312.816H57.1916Z" stroke="#717175" stroke-width="1.35417"/>
+<defs>
+<radialGradient id="paint0_radial" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(263.5 251.5) rotate(90) scale(251.5)">
+<stop stop-color="#E2E0EB" stop-opacity="0.7"/>
+<stop offset="1" stop-color="#E2E0EB" stop-opacity="0"/>
+</radialGradient>
+</defs>
+</svg>

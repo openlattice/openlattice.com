@@ -6,8 +6,8 @@ describe('routes', () => {
     expect(Routes.ROOT).toEqual('/');
   });
 
-  test('should export the correct LOGIN path', () => {
-    expect(Routes.LOGIN).toEqual('/login');
+  test('should export the correct ORGS path', () => {
+    expect(Routes.GOVERNMENT).toEqual('/government');
   });
 
 });

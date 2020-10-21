@@ -1,0 +1,66 @@
+<svg width="511" height="427" viewBox="0 0 511 427" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M388.5 292L292 196" stroke="#A7A7AC" stroke-width="0.25"/>
+<path d="M388 292L292 388.5" stroke="#A7A7AC" stroke-width="0.25"/>
+<path d="M388 97L196 4" stroke="#A7A7AC" stroke-width="0.25"/>
+<path d="M4.5 4.5L101 100" stroke="#A7A7AC" stroke-width="0.25"/>
+<path d="M4 196L100 292" stroke="#A7A7AC" stroke-width="0.25"/>
+<path d="M5 388L100.5 292.5" stroke="#A7A7AC" stroke-width="0.25"/>
+<path d="M100.5 292L196 4L292 388L100.5 100L292 196L100.5 292Z" stroke="#A7A7AC" stroke-width="0.25"/>
+<circle opacity="0.8" cx="4" cy="4" r="4" fill="#D9D9DC"/>
+<circle opacity="0.8" cx="100" cy="4" r="4" fill="#D9D9DC"/>
+<circle opacity="0.8" cx="196" cy="4" r="4" fill="#D9D9DC"/>
+<circle opacity="0.8" cx="292" cy="4" r="4" fill="#D9D9DC"/>
+<circle opacity="0.8" cx="292" cy="100" r="4" fill="#D9D9DC"/>
+<circle opacity="0.8" cx="292" cy="196" r="4" fill="#D9D9DC"/>
+<circle opacity="0.8" cx="292" cy="292" r="4" fill="#D9D9DC"/>
+<circle opacity="0.8" cx="196" cy="196" r="4" fill="#D9D9DC"/>
+<circle opacity="0.8" cx="388" cy="4" r="4" fill="#D9D9DC"/>
+<circle opacity="0.8" cx="388" cy="97" r="4" fill="#D9D9DC"/>
+<circle opacity="0.8" cx="388" cy="196" r="4" fill="#D9D9DC"/>
+<circle opacity="0.8" cx="388" cy="292" r="4" fill="#D9D9DC"/>
+<circle opacity="0.8" cx="4" cy="100" r="4" fill="#D9D9DC"/>
+<circle opacity="0.8" cx="100" cy="100" r="4" fill="#D9D9DC"/>
+<circle opacity="0.8" cx="196" cy="100" r="4" fill="#D9D9DC"/>
+<circle opacity="0.8" cx="100" cy="100" r="4" fill="#D9D9DC"/>
+<circle opacity="0.8" cx="100" cy="196" r="4" fill="#D9D9DC"/>
+<circle opacity="0.8" cx="100" cy="292" r="4" fill="#D9D9DC"/>
+<circle opacity="0.8" cx="196" cy="292" r="4" fill="#D9D9DC"/>
+<circle opacity="0.8" cx="4" cy="388" r="4" fill="#D9D9DC"/>
+<circle opacity="0.8" cx="4" cy="292" r="4" fill="#D9D9DC"/>
+<circle opacity="0.8" cx="4" cy="196" r="4" fill="#D9D9DC"/>
+<circle opacity="0.8" cx="100" cy="388" r="4" fill="#D9D9DC"/>
+<circle opacity="0.8" cx="196" cy="388" r="4" fill="#D9D9DC"/>
+<circle opacity="0.8" cx="292" cy="388" r="4" fill="#D9D9DC"/>
+<circle opacity="0.8" cx="388" cy="388" r="4" fill="#D9D9DC"/>
+<circle opacity="0.8" cx="4" cy="100" r="4" fill="#D9D9DC"/>
+<circle cx="100" cy="100" r="4" fill="#FF859D"/>
+<rect x="110" y="110" width="95" height="29" rx="1" fill="#FADBE1"/>
+<text fill="#FF6A87" xml:space="preserve" style="white-space: pre" font-family="Inter" font-size="14" font-weight="600" letter-spacing="0em"><tspan x="120" y="129.591">Healthcare</tspan></text>
+<circle cx="196" cy="4" r="4" fill="#2C80EE"/>
+<rect x="206" y="14" width="124" height="29" rx="1" fill="#E9F2FF"/>
+<text fill="#2C80EE" xml:space="preserve" style="white-space: pre" font-family="Inter" font-size="14" font-weight="600" letter-spacing="0em"><tspan x="216" y="33.5909">Social Services</tspan></text>
+<circle cx="292" cy="196" r="4" fill="#45C095"/>
+<rect x="302" y="206" width="70" height="29" rx="1" fill="#D1ECE2"/>
+<text fill="#45C095" xml:space="preserve" style="white-space: pre" font-family="Inter" font-size="14" font-weight="600" letter-spacing="0em"><tspan x="312" y="225.591">Justice</tspan></text>
+<circle cx="388" cy="292" r="4" fill="#8B8B90"/>
+<rect x="398" y="302" width="113" height="29" rx="1" fill="#F2F2F4"/>
+<text fill="#8B8B90" xml:space="preserve" style="white-space: pre" font-family="Inter" font-size="14" font-weight="600" letter-spacing="0em"><tspan x="408" y="321.591">Spreadsheets</tspan></text>
+<circle cx="4" cy="196" r="4" fill="#8B8B90"/>
+<rect x="14" y="206" width="50" height="29" rx="1" fill="#F2F2F4"/>
+<text fill="#8B8B90" xml:space="preserve" style="white-space: pre" font-family="Inter" font-size="14" font-weight="600" letter-spacing="0em"><tspan x="24" y="225.591">JMS</tspan></text>
+<circle cx="4" cy="388" r="4" fill="#8B8B90"/>
+<rect x="14" y="398" width="53" height="29" rx="1" fill="#F2F2F4"/>
+<text fill="#8B8B90" xml:space="preserve" style="white-space: pre" font-family="Inter" font-size="14" font-weight="600" letter-spacing="0em"><tspan x="24" y="417.591">CMS</tspan></text>
+<circle cx="4" cy="4" r="4" fill="#8B8B90"/>
+<rect x="14" y="14" width="49" height="29" rx="1" fill="#F2F2F4"/>
+<text fill="#8B8B90" xml:space="preserve" style="white-space: pre" font-family="Inter" font-size="14" font-weight="600" letter-spacing="0em"><tspan x="24" y="33.5909">EHR</tspan></text>
+<circle cx="388" cy="97" r="4" fill="#8B8B90"/>
+<rect x="398" y="107" width="58" height="29" rx="1" fill="#F2F2F4"/>
+<text fill="#8B8B90" xml:space="preserve" style="white-space: pre" font-family="Inter" font-size="14" font-weight="600" letter-spacing="0em"><tspan x="408" y="126.591">HMIS</tspan></text>
+<rect x="110" y="302" width="110" height="29" rx="1" fill="#DBD6FF"/>
+<text fill="#7860FF" xml:space="preserve" style="white-space: pre" font-family="Inter" font-size="14" font-weight="600" letter-spacing="0em"><tspan x="120" y="321.591">Public Safety</tspan></text>
+<circle cx="100" cy="292" r="4" fill="#5D4FFF"/>
+<circle cx="292" cy="388" r="4" fill="#FF9C72"/>
+<rect x="302" y="398" width="151" height="29" rx="1" fill="#FFD2BF"/>
+<text fill="#FF8450" xml:space="preserve" style="white-space: pre" font-family="Inter" font-size="14" font-weight="600" letter-spacing="0em"><tspan x="312" y="417.591">Scientific Research</tspan></text>
+</svg>

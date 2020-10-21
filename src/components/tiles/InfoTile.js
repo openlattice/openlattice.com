@@ -3,7 +3,6 @@
  */
 
 import React from 'react';
-import type { Node } from 'react';
 
 import styled, { css } from 'styled-components';
 
@@ -12,7 +11,7 @@ import { MEDIA_QUERY_LG, MEDIA_QUERY_MD, MEDIA_QUERY_SM } from '../../core/style
 
 type Props = {
   align ?:string;
-  children :Node;
+  children :any;
   className ?:string;
   maxWidth ?:{|
     sm ?:number;
@@ -25,8 +24,10 @@ type Props = {
 const getComputedStyles = ({ align, maxWidth, withBorder } :Props) => {
 
   let alignItems = 'center';
-  if (align === 'left') {
+  let textAlign = 'center';
+  if (align === 'left' || align === 'start') {
     alignItems = 'flex-start';
+    textAlign = 'left';
   }
 
   let border;
@@ -59,6 +60,15 @@ const getComputedStyles = ({ align, maxWidth, withBorder } :Props) => {
     border-radius: ${borderRadius};
     padding: ${padding};
 
+    > h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+      text-align: ${textAlign};
+    }
+
     @media only screen and (min-width: ${MEDIA_QUERY_SM}px) {
       max-width: ${smMaxWidth};
     }
@@ -86,15 +96,6 @@ const InfoTileWrapper = styled.div`
   > img,
   svg {
     margin-bottom: 24px;
-  }
-
-  > h1,
-  h2,
-  h3,
-  h4,
-  h5,
-  h6 {
-    text-align: ${({ align }) => align};
   }
 `;
 

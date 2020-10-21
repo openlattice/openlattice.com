@@ -7,17 +7,6 @@ import React from 'react';
 import styled from 'styled-components';
 
 import {
-  CFR_TEXT,
-  CJIS_TEXT,
-  CLOUD_TEXT,
-  ENCRYPTION_TEXT,
-  FERPA_TEXT,
-  GDPR_TEXT,
-  HIPAA_TEXT,
-  LOGIN_TEXT,
-} from './constants/language';
-
-import {
   CFRLogo,
   CJISLogo,
   FERPALogo,
@@ -34,9 +23,12 @@ import {
   InfoTile,
   PageSection,
   SectionContent,
+  SolidButton,
+  Typography,
 } from '../../components';
 import { NEUTRALS } from '../../core/style/Colors';
 import { MEDIA_QUERY_MD, MEDIA_QUERY_SM } from '../../core/style/Sizes';
+import { openBeacon } from '../../utils/Utils';
 
 const TileGrid = styled(ContentGrid)`
   @media only screen and (min-width: ${MEDIA_QUERY_SM}px) {
@@ -90,71 +82,116 @@ const InfoTile2 = styled(InfoTile)`
 
 const ComplianceAndSecuritySection = () => (
   <PageSection>
-    <SectionContent>
+    <SectionContent margin={{ b: 0, t: 0 }}>
       <SeparationHeader>Compliance</SeparationHeader>
       <TileGrid>
         <InfoTile2 align="left">
           <CJISLogo width="96" />
           <div>
-            <h4>CJIS</h4>
-            <span>{CJIS_TEXT}</span>
+            <Typography variant="h6">
+              CJIS
+            </Typography>
+            <Typography variant="body1">
+              Compliant with FBI’s Criminal Justice Information Services (CJIS) security policy to protect sensitive
+              information like fingerprints and criminal backgrounds.
+            </Typography>
           </div>
         </InfoTile2>
         <InfoTile2 align="left">
           <GDPRLogo width="96" />
           <div>
-            <h4>GDPR</h4>
-            <span>{GDPR_TEXT}</span>
+            <Typography variant="h6">
+              GDPR
+            </Typography>
+            <Typography variant="body1">
+              Compliant with the EU’s General Data Protection Regulation to protect data and privacy in the European
+              Union and European Economic Area.
+            </Typography>
           </div>
         </InfoTile2>
         <InfoTile2 align="left">
           <HIPAALogo width="96" />
           <div>
-            <h4>HIPAA</h4>
-            <span>{HIPAA_TEXT}</span>
+            <Typography variant="h6">
+              HIPAA
+            </Typography>
+            <Typography variant="body1">
+              Compliant with Health Insurance Portability and Accountability Act to protect patients’ medical
+              records and relevant information from various care providers.
+            </Typography>
           </div>
         </InfoTile2>
         <InfoTile2 align="left">
           <CFRLogo width="96" />
           <div>
-            <h4>42 CFR Part 2</h4>
-            <span>{CFR_TEXT}</span>
+            <Typography variant="h6">
+              42 CFR Part 2
+            </Typography>
+            <Typography variant="body1">
+              Compliant with 42 CFR Part 2 to protect the privacy of substance use disorder patient records by
+              prohibiting unauthorized disclosures of patient records.
+            </Typography>
           </div>
         </InfoTile2>
         <InfoTile2 align="left">
           <FERPALogo width="96" />
           <div>
-            <h4>FERPA</h4>
-            <span>{FERPA_TEXT}</span>
+            <Typography variant="h6">
+              FERPA
+            </Typography>
+            <Typography variant="body1">
+              Compliant with Family Educational Rights and Privacy Act to protect privacy of educational information
+              and records being accessed by public entities.
+            </Typography>
           </div>
         </InfoTile2>
       </TileGrid>
     </SectionContent>
     <SectionContent>
+      <SolidButton onClick={openBeacon}>Learn More</SolidButton>
+    </SectionContent>
+    <SectionContent margin={{ b: 0, t: 0 }}>
       <SeparationHeader>Security</SeparationHeader>
       <TileGrid>
         <InfoTile2 align="left">
           <SecureDataLogo width="96" />
           <div>
-            <h4>Encryption at rest and in transit</h4>
-            <span>{ENCRYPTION_TEXT}</span>
+            <Typography variant="h6">
+              Encryption at rest and in transit
+            </Typography>
+            <Typography variant="body1">
+              Your data is securely managed at every stage of implementation in accordance with industry best practices.
+            </Typography>
           </div>
         </InfoTile2>
         <InfoTile2 align="left">
           <SecureLoginLogo width="96" />
           <div>
-            <h4>Secure login</h4>
-            <span>{LOGIN_TEXT}</span>
+            <Typography variant="h6">
+              Secure login
+            </Typography>
+            <Typography variant="body1">
+              Link your authentication protocols through a single sign-on integration eliminating the need for another
+              password or use our natively supported authentication.
+            </Typography>
           </div>
         </InfoTile2>
         <InfoTile2 align="left">
           <SecureCloudLogo width="96" />
           <div>
-            <h4>Secure cloud storage</h4>
-            <span>{CLOUD_TEXT}</span>
+            <Typography variant="h6">
+              Secure cloud storage
+            </Typography>
+            <Typography variant="body1">
+              Your data is securely stored in AWS cloud storage which is more reliable, scalable, and secure than
+              traditional on-premises storage systms.
+            </Typography>
           </div>
         </InfoTile2>
       </TileGrid>
+    </SectionContent>
+    <SectionContent>
+      <SolidButton onClick={openBeacon}>Learn More</SolidButton>
     </SectionContent>
   </PageSection>
 );

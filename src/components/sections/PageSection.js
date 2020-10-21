@@ -3,20 +3,35 @@
  */
 
 import React from 'react';
-import type { Node } from 'react';
 
-import styled from 'styled-components';
+import styled, { css } from 'styled-components';
 
 import { CONTENT_WIDTH, PAGE_PADDING } from '../../core/style/Sizes';
 
+const getComputedStyles = ({ bgColor, bgImage }) => {
+
+  let bg;
+  let bgSize;
+  if (bgImage) {
+    bg = `url(${bgImage}) no-repeat center center`;
+    bgSize = 'cover';
+  }
+
+  return css`
+    background: ${bg};
+    background-color: ${bgColor || 'white'};
+    background-size: ${bgSize};
+  `;
+};
+
 const PageSectionOuterWrapper = styled.section`
   align-items: center;
-  background-color: ${({ bgColor }) => (bgColor || 'white')};
   display: flex;
   flex-direction: column;
   flex: 0 0 auto;
   justify-content: center;
   position: relative;
+  ${getComputedStyles}
 `;
 
 const PageSectionInnerWrapper = styled.div`
@@ -33,17 +48,19 @@ const PageSectionInnerWrapper = styled.div`
 `;
 
 type Props = {
-  bgColor ?:string;
-  children :Node;
+  bgColor :string;
+  bgImage :any;
+  children :any;
   className ?:string;
 };
 
 const PageSection = ({
   bgColor,
+  bgImage,
   children,
   className,
 } :Props) => (
-  <PageSectionOuterWrapper bgColor={bgColor} className={className}>
+  <PageSectionOuterWrapper bgColor={bgColor} bgImage={bgImage} className={className}>
     <PageSectionInnerWrapper>
       {children}
     </PageSectionInnerWrapper>
@@ -52,6 +69,7 @@ const PageSection = ({
 
 PageSection.defaultProps = {
   bgColor: 'white',
+  bgImage: undefined,
   className: undefined,
 };
 
