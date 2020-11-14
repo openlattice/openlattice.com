@@ -7,7 +7,7 @@ import React from 'react';
 import styled from 'styled-components';
 
 import TeamGrid from './components/TeamGrid';
-import { BOARD_MEMBERS, TEAM_MEMBERS } from './constants';
+import { TEAM_MEMBERS } from './constants';
 
 import {
   Header,
@@ -25,12 +25,6 @@ const TEAM_STATEMENT = 'The OpenLattice team brings together a diverse group of 
 
 const TeamSection = () => (
   <PageSection>
-    <SectionContentNoMargin>
-      <Header as="h2">Our board</Header>
-    </SectionContentNoMargin>
-    <SectionContent>
-      <TeamGrid members={BOARD_MEMBERS} />
-    </SectionContent>
     <SectionContentNoMargin maxWidth={{ sm: 528, md: 720 }}>
       <Header as="h2">Our team</Header>
       <SubHeader align="left" as="h5">{TEAM_STATEMENT}</SubHeader>
