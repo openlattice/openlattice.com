@@ -69,11 +69,11 @@ const PortalOuterWrapper = styled.div`
 const PortalInnerWrapper = styled.div`
   background-color: white;
   box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
-  min-width: 400px;
+  min-width: ${(props) => (props.portal === PRODUCTS ? '300px' : '200px')};
   padding: 16px 0;
   position: absolute;
   top: 70px;
-  right: 100px;
+  right: ${(props) => (props.portal === PRODUCTS ? '270px' : '260px')};
 `;
 
 type Props = {
