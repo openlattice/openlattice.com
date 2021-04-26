@@ -19,6 +19,9 @@ import { MEDIA_QUERY_LG } from '../../core/style/Sizes';
 import { openBeacon } from '../../utils/Utils';
 import { OutlineButton } from '../controls';
 
+const PRODUCTS :'PRODUCTS' = 'PRODUCTS';
+const WORKING_WITH_US :'WORKING_WITH_US' = 'WORKING_WITH_US';
+
 const NavItemsWrapper = styled.div`
   align-items: ${({ inDrawer }) => (inDrawer ? 'stretch' : 'center')};
   color: ${({ inDrawer }) => (inDrawer ? NEUTRALS.GRAY_07 : NEUTRALS.GRAY_08)};
@@ -143,7 +146,7 @@ const NavItems = ({ inDrawer } :Props) => {
         isProductsPortalOpen && (
           <Portal>
             <PortalOuterWrapper onClick={toggleProductsPortal}>
-              <PortalInnerWrapper>
+              <PortalInnerWrapper portal={PRODUCTS}>
                 <ProductNavItems inPortal />
               </PortalInnerWrapper>
             </PortalOuterWrapper>
@@ -154,7 +157,7 @@ const NavItems = ({ inDrawer } :Props) => {
         isWorkingWithUsPortalOpen && (
           <Portal>
             <PortalOuterWrapper onClick={toggleWorkingWithUsPortal}>
-              <PortalInnerWrapper>
+              <PortalInnerWrapper portal={WORKING_WITH_US}>
                 <NavItemsWrapper inDrawer>
                   <NavLink to={Routes.WORKING_WITH_US_GOVERNMENT}>
                     <NavItem>Government</NavItem>
