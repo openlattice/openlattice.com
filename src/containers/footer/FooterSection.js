@@ -128,7 +128,7 @@ const FooterSection = () => (
             </InternalLink>
             <InternalLink to={Routes.WORKING_WITH_US_RESEARCH}>
               <Typography variant="body1">
-                Working with Us - Government
+                Working with Us - Research
               </Typography>
             </InternalLink>
           </section>

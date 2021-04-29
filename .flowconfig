@@ -21,4 +21,9 @@
 ./src/types.js.flow
 
 [options]
+esproposal.optional_chaining=enable
+react.runtime=automatic
 types_first=false
+
+[untyped]
+<PROJECT_ROOT>/node_modules/lattice-ui-kit
