@@ -19,6 +19,9 @@ import { MEDIA_QUERY_LG } from '../../core/style/Sizes';
 import { openBeacon } from '../../utils/Utils';
 import { OutlineButton } from '../controls';
 
+const PRODUCTS :'PRODUCTS' = 'PRODUCTS';
+const WORKING_WITH_US :'WORKING_WITH_US' = 'WORKING_WITH_US';
+
 const NavItemsWrapper = styled.div`
   align-items: ${({ inDrawer }) => (inDrawer ? 'stretch' : 'center')};
   color: ${({ inDrawer }) => (inDrawer ? NEUTRALS.GRAY_07 : NEUTRALS.GRAY_08)};
@@ -66,11 +69,11 @@ const PortalOuterWrapper = styled.div`
 const PortalInnerWrapper = styled.div`
   background-color: white;
   box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
-  min-width: 400px;
+  min-width: ${(props) => (props.portal === PRODUCTS ? '300px' : '200px')};
   padding: 16px 0;
   position: absolute;
   top: 70px;
-  right: 100px;
+  right: ${(props) => (props.portal === PRODUCTS ? '270px' : '260px')};
 `;
 
 type Props = {
@@ -143,7 +146,7 @@ const NavItems = ({ inDrawer } :Props) => {
         isProductsPortalOpen && (
           <Portal>
             <PortalOuterWrapper onClick={toggleProductsPortal}>
-              <PortalInnerWrapper>
+              <PortalInnerWrapper portal={PRODUCTS}>
                 <ProductNavItems inPortal />
               </PortalInnerWrapper>
             </PortalOuterWrapper>
@@ -154,7 +157,7 @@ const NavItems = ({ inDrawer } :Props) => {
         isWorkingWithUsPortalOpen && (
           <Portal>
             <PortalOuterWrapper onClick={toggleWorkingWithUsPortal}>
-              <PortalInnerWrapper>
+              <PortalInnerWrapper portal={WORKING_WITH_US}>
                 <NavItemsWrapper inDrawer>
                   <NavLink to={Routes.WORKING_WITH_US_GOVERNMENT}>
                     <NavItem>Government</NavItem>
