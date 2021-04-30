@@ -18,8 +18,7 @@ import LinkSVG from './link.svg';
 import LockSVG from './lock.svg';
 import LogsSVG from './logs.svg';
 import MergeSVG from './merge.svg';
-import OpenLatticeSVG from './ol-icon.svg';
-import PlatformStackSVG from './platform-stack.svg';
+import OpenLatticeSVG from './ol-circle-icon.svg';
 import PointerSVG from './pointer.svg';
 import QuestionSVG from './question.svg';
 import SearchSVG from './search.svg';
@@ -119,12 +118,6 @@ const OpenLatticeCircleIcon = styled.img.attrs(({ width }) => ({
   width: width || 64,
 }))``;
 
-const PlatformStackCircleIcon = styled.img.attrs(({ width }) => ({
-  alt: 'platform-stack-circle-icon',
-  src: PlatformStackSVG,
-  width: width || 64,
-}))``;
-
 const PointerCircleIcon = styled.img.attrs(({ width }) => ({
   alt: 'pointer-circle-icon',
   src: PointerSVG,
@@ -189,7 +182,6 @@ export {
   LogsCircleIcon,
   MergeArrowCircleIcon,
   OpenLatticeCircleIcon,
-  PlatformStackCircleIcon,
   PointerCircleIcon,
   QuestionCircleIcon,
   SearchCircleIcon,
