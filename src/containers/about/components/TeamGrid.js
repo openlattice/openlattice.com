@@ -105,7 +105,7 @@ type Props = {
 };
 
 const TeamGrid = ({ members } :Props) => (
-  <MemberGrid members={members.length}>
+  <MemberGrid align={{ v: 'start' }} members={members.length}>
     {
       members.map((teamMember :TeamMemberType) => (
         <TeamMember key={teamMember.NAME}>
