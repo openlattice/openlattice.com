@@ -154,16 +154,6 @@ const ProductNavItems = ({ inPortal } :Props) => (
         </div>
       </ProductNavItem>
     </NavLink>
-    <NavLink to={Routes.PRODUCTS_REFERRALS}>
-      <ProductNavItem inPortal={inPortal}>
-        <OpenLatticeCircleIcon width={inPortal ? 36 : 20} />
-        <div className="product-name-blurb-wrapper">
-          <Typography component="span" variant="body1">
-            Referrals
-          </Typography>
-        </div>
-      </ProductNavItem>
-    </NavLink>
     <NavLink to={Routes.PRODUCTS_STEPPING_UP}>
       <ProductNavItem inPortal={inPortal}>
         <SteppingUpIcon width={inPortal ? 36 : 20} />
