@@ -186,6 +186,23 @@ const NavItems = ({ inDrawer } :Props) => {
           </Portal>
         )
       }
+      {
+        isResourcesPortalOpen && (
+          <Portal>
+            <PortalOuterWrapper onClick={toggleResourcesPortal}>
+              <PortalInnerWrapper portal={RESOURCES}>
+                <NavItemsWrapper inDrawer>
+                  <NavItem>
+                    <ExternalLink href="https://help.openlattice.com" rel="noreferrer" target="_blank">
+                      Help Center
+                    </ExternalLink>
+                  </NavItem>
+                </NavItemsWrapper>
+              </PortalInnerWrapper>
+            </PortalOuterWrapper>
+          </Portal>
+        )
+      }
     </>
   );
 };
