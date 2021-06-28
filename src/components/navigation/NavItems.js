@@ -73,7 +73,8 @@ const PortalOuterWrapper = styled.div`
 const PortalInnerWrapper = styled.div`
   background-color: white;
   box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
-  min-width: ${(props) => {
+  min-width:
+    ${(props) => {
     if (props.portal === PRODUCTS) {
       return '300px';
     }
@@ -85,7 +86,8 @@ const PortalInnerWrapper = styled.div`
   padding: 16px 0;
   position: absolute;
   top: 70px;
-  right: ${(props) => {
+  right:
+    ${(props) => {
     if (props.portal === PRODUCTS) {
       return '410px';
     }
