@@ -7,7 +7,7 @@ import React, { useState } from 'react';
 import styled from 'styled-components';
 import { faChevronDown } from '@fortawesome/pro-light-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { Portal } from 'lattice-ui-kit';
+import { Colors, Portal } from 'lattice-ui-kit';
 
 import NavItem from './NavItem';
 import NavLink from './NavLink';
@@ -18,6 +18,8 @@ import { NEUTRALS } from '../../core/style/Colors';
 import { MEDIA_QUERY_LG } from '../../core/style/Sizes';
 import { openBeacon } from '../../utils/Utils';
 import { OutlineButton } from '../controls';
+
+const { NEUTRAL } = Colors;
 
 const PRODUCTS :'PRODUCTS' = 'PRODUCTS';
 const RESOURCES :'RESOURCES' = 'RESOURCES';
@@ -71,11 +73,32 @@ const PortalOuterWrapper = styled.div`
 const PortalInnerWrapper = styled.div`
   background-color: white;
   box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
-  min-width: ${(props) => (props.portal === PRODUCTS ? '300px' : '200px')};
+  min-width: ${(props) => {
+    if (props.portal === PRODUCTS) {
+      return '300px';
+    }
+    if (props.portal === RESOURCES) {
+      return '200px';
+    }
+    return '200px';
+  }};
   padding: 16px 0;
   position: absolute;
   top: 70px;
-  right: ${(props) => (props.portal === PRODUCTS ? '270px' : '260px')};
+  right: ${(props) => {
+    if (props.portal === PRODUCTS) {
+      return '410px';
+    }
+    if (props.portal === RESOURCES) {
+      return '140px';
+    }
+    return '400px';
+  }};
+`;
+
+const ExternalLink = styled.a`
+  color: ${NEUTRAL.N400};
+  text-decoration: none;
 `;
 
 type Props = {
