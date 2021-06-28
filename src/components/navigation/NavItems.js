@@ -20,6 +20,7 @@ import { openBeacon } from '../../utils/Utils';
 import { OutlineButton } from '../controls';
 
 const PRODUCTS :'PRODUCTS' = 'PRODUCTS';
+const RESOURCES :'RESOURCES' = 'RESOURCES';
 const WORKING_WITH_US :'WORKING_WITH_US' = 'WORKING_WITH_US';
 
 const NavItemsWrapper = styled.div`
@@ -84,10 +85,15 @@ type Props = {
 const NavItems = ({ inDrawer } :Props) => {
 
   const [isProductsPortalOpen, setIsProductsPortalOpen] = useState(false);
+  const [isResourcesPortalOpen, setIsResourcesPortalOpen] = useState(false);
   const [isWorkingWithUsPortalOpen, setIsWorkingWithUsPortalOpen] = useState(false);
 
   const toggleProductsPortal = () => {
     setIsProductsPortalOpen(!isProductsPortalOpen);
+  };
+
+  const toggleResourcesPortal = () => {
+    setIsResourcesPortalOpen(!isResourcesPortalOpen);
   };
 
   const toggleWorkingWithUsPortal = () => {
@@ -139,6 +145,14 @@ const NavItems = ({ inDrawer } :Props) => {
         <NavLink to={Routes.ABOUT}>
           <NavItem>About</NavItem>
         </NavLink>
+        {
+          !inDrawer && (
+            <NavItem onClick={toggleResourcesPortal}>
+              <span>Resources</span>
+              <FontAwesomeIcon icon={faChevronDown} style={{ marginLeft: '8px' }} />
+            </NavItem>
+          )
+        }
         <OutlineButton color="primary" onClick={openBeacon}>
           Request a Demo
         </OutlineButton>
