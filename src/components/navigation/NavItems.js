@@ -7,7 +7,7 @@ import React, { useState } from 'react';
 import styled from 'styled-components';
 import { faChevronDown } from '@fortawesome/pro-light-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { Portal } from 'lattice-ui-kit';
+import { Colors, Portal } from 'lattice-ui-kit';
 
 import NavItem from './NavItem';
 import NavLink from './NavLink';
@@ -19,7 +19,10 @@ import { MEDIA_QUERY_LG } from '../../core/style/Sizes';
 import { openBeacon } from '../../utils/Utils';
 import { OutlineButton } from '../controls';
 
+const { NEUTRAL } = Colors;
+
 const PRODUCTS :'PRODUCTS' = 'PRODUCTS';
+const RESOURCES :'RESOURCES' = 'RESOURCES';
 const WORKING_WITH_US :'WORKING_WITH_US' = 'WORKING_WITH_US';
 
 const NavItemsWrapper = styled.div`
@@ -58,9 +61,10 @@ const NavItemsWrapper = styled.div`
 `;
 
 const PortalOuterWrapper = styled.div`
-  position: fixed;
+  -webkit-overflow-scrolling: touch;
   height: 100%;
   overflow: scroll;
+  position: fixed;
   right: 0;
   top: 0;
   width: 100%;
@@ -74,7 +78,21 @@ const PortalInnerWrapper = styled.div`
   padding: 16px 0;
   position: absolute;
   top: 70px;
-  right: ${(props) => (props.portal === PRODUCTS ? '270px' : '260px')};
+  right:
+    ${(props) => {
+    if (props.portal === PRODUCTS) {
+      return '410px';
+    }
+    if (props.portal === RESOURCES) {
+      return '140px';
+    }
+    return '400px';
+  }};
+`;
+
+const ExternalLink = styled.a`
+  color: ${NEUTRAL.N400};
+  text-decoration: none;
 `;
 
 type Props = {
@@ -84,10 +102,15 @@ type Props = {
 const NavItems = ({ inDrawer } :Props) => {
 
   const [isProductsPortalOpen, setIsProductsPortalOpen] = useState(false);
+  const [isResourcesPortalOpen, setIsResourcesPortalOpen] = useState(false);
   const [isWorkingWithUsPortalOpen, setIsWorkingWithUsPortalOpen] = useState(false);
 
   const toggleProductsPortal = () => {
     setIsProductsPortalOpen(!isProductsPortalOpen);
+  };
+
+  const toggleResourcesPortal = () => {
+    setIsResourcesPortalOpen(!isResourcesPortalOpen);
   };
 
   const toggleWorkingWithUsPortal = () => {
@@ -139,6 +162,14 @@ const NavItems = ({ inDrawer } :Props) => {
         <NavLink to={Routes.ABOUT}>
           <NavItem>About</NavItem>
         </NavLink>
+        {
+          !inDrawer && (
+            <NavItem onClick={toggleResourcesPortal}>
+              <span>Resources</span>
+              <FontAwesomeIcon icon={faChevronDown} style={{ marginLeft: '8px' }} />
+            </NavItem>
+          )
+        }
         <OutlineButton color="primary" onClick={openBeacon}>
           Request a Demo
         </OutlineButton>
@@ -166,6 +197,23 @@ const NavItems = ({ inDrawer } :Props) => {
                   <NavLink to={Routes.WORKING_WITH_US_RESEARCH}>
                     <NavItem>Research</NavItem>
                   </NavLink>
+                </NavItemsWrapper>
+              </PortalInnerWrapper>
+            </PortalOuterWrapper>
+          </Portal>
+        )
+      }
+      {
+        isResourcesPortalOpen && (
+          <Portal>
+            <PortalOuterWrapper onClick={toggleResourcesPortal}>
+              <PortalInnerWrapper portal={RESOURCES}>
+                <NavItemsWrapper inDrawer>
+                  <NavItem>
+                    <ExternalLink href="https://help.openlattice.com" rel="noreferrer" target="_blank">
+                      Help Center
+                    </ExternalLink>
+                  </NavItem>
                 </NavItemsWrapper>
               </PortalInnerWrapper>
             </PortalOuterWrapper>
