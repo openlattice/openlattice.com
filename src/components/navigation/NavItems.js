@@ -61,9 +61,10 @@ const NavItemsWrapper = styled.div`
 `;
 
 const PortalOuterWrapper = styled.div`
-  position: fixed;
+  -webkit-overflow-scrolling: touch;
   height: 100%;
   overflow: scroll;
+  position: fixed;
   right: 0;
   top: 0;
   width: 100%;
