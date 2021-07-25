@@ -19,7 +19,7 @@ import { Routes } from '../../core/router';
 import { NEUTRALS } from '../../core/style/Colors';
 import { MEDIA_QUERY_MD, PAGE_PADDING } from '../../core/style/Sizes';
 
-const DRAWER_BREAKPOINT = 960;
+const DRAWER_BREAKPOINT = 1200;
 
 const getComputedStyles = ({ isNavFixed }) => {
 

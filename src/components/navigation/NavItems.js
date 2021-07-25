@@ -55,7 +55,7 @@ const NavItemsWrapper = styled.div`
     margin-right: ${({ inDrawer }) => (inDrawer ? 0 : '30px')};
 
     @media only screen and (min-width: ${MEDIA_QUERY_LG}px) {
-      margin-right: ${({ inDrawer }) => (inDrawer ? 0 : '40px')};
+      margin-right: ${({ inDrawer }) => (inDrawer ? 0 : '38px')};
     }
   }
 `;
