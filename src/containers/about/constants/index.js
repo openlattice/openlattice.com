@@ -5,17 +5,15 @@
 import React from 'react';
 
 import {
+  AlfoncePhoto,
   BlakePhoto,
   BrandonPhoto,
-  DrewPhoto,
   GiuliaPhoto,
   HristoPhoto,
   JoePhoto,
-  KatherinePhoto,
   KimPhoto,
   MandyPhoto,
   MatthewPhoto,
-  ShireenPhoto,
   SolomonPhoto,
   ToddPhoto,
 } from '../../../assets/team';
@@ -23,8 +21,14 @@ import {
 // repeat roles
 const ACCOUNT :string = 'Account Executive';
 // const DATA_SCIENTIST :string = 'Data Scientist';
-const DESIGNER :string = 'Product Designer';
-const FRONTEND :string = 'Frontend Software Engineer';
+// const DESIGNER :string = 'Product Designer';
+const SOFTWARE_ENGINEER :string = 'Software Engineer';
+
+const ALFONCE :TeamMemberType = {
+  NAME: 'Alfonce Nzioka',
+  ROLE: SOFTWARE_ENGINEER,
+  PHOTO: <AlfoncePhoto />,
+};
 
 const BLAKE :TeamMemberType = {
   NAME: 'Blake Freitas',
@@ -38,15 +42,9 @@ const BRANDON :TeamMemberType = {
   PHOTO: <BrandonPhoto />,
 };
 
-const DREW :TeamMemberType = {
-  NAME: 'Drew Bailey',
-  ROLE: 'Senior Software Engineer',
-  PHOTO: <DrewPhoto />,
-};
-
 const GIULIA :TeamMemberType = {
   NAME: 'Giulia Campana',
-  ROLE: FRONTEND,
+  ROLE: SOFTWARE_ENGINEER,
   PHOTO: <GiuliaPhoto />,
 };
 
@@ -61,13 +59,6 @@ const JOE :TeamMemberType = {
   NAME: 'Joe Savino',
   ROLE: 'Operations Manager',
   PHOTO: <JoePhoto />,
-};
-
-const KATHERINE :TeamMemberType = {
-  COFOUNDER: true,
-  NAME: 'Katherine Bernstein',
-  ROLE: 'Software Engineer',
-  PHOTO: <KatherinePhoto />,
 };
 
 const KIM :TeamMemberType = {
@@ -89,28 +80,21 @@ const MATTHEW :TeamMemberType = {
   PHOTO: <MatthewPhoto />,
 };
 
-const SHIREEN :TeamMemberType = {
-  NAME: 'Shireen Aziz',
-  ROLE: DESIGNER,
-  PHOTO: <ShireenPhoto />,
-};
-
 const SOLOMON :TeamMemberType = {
   NAME: 'Solomon Tang',
-  ROLE: FRONTEND,
+  ROLE: SOFTWARE_ENGINEER,
   PHOTO: <SolomonPhoto />,
 };
 
 const TODD :TeamMemberType = {
   NAME: 'Todd Bergman',
-  ROLE: FRONTEND,
+  ROLE: SOFTWARE_ENGINEER,
   PHOTO: <ToddPhoto />,
 };
 
 const TEAM_MEMBERS :TeamMemberType[] = [
   MATTHEW,
   HRISTO,
-  KATHERINE,
   KIM,
   BRANDON,
   JOE,
@@ -118,9 +102,8 @@ const TEAM_MEMBERS :TeamMemberType[] = [
   TODD,
   GIULIA,
   BLAKE,
-  DREW,
-  SHIREEN,
   MANDY,
+  ALFONCE,
 ];
 
 // const MATTHEW_BOARD :TeamMemberType = {
