@@ -10,7 +10,7 @@ import OurCustomersSection from './OurCustomersSection';
 import { QUOTES } from './constants/quotes';
 
 import FooterSection from '../footer/FooterSection';
-import { StatueOfLibertyPNG } from '../../assets/images/home';
+import { StatueOfLibertyJPG } from '../../assets/images/home';
 import {
   RightDataGraphic,
   RightPeopleGraphic,
@@ -34,7 +34,7 @@ const { PURPLE } = Colors;
 const HomePage = () => (
   <>
     <ScrollToTop />
-    <PageSection bgImage={StatueOfLibertyPNG}>
+    <PageSection bgImage={StatueOfLibertyJPG}>
       <SectionContent align={{ h: 'end' }} margin={{ b: '25vh', t: '25vh' }}>
         <Tile align={{ h: 'end' }}>
           <Typography maxWidth={{ xs: 300, sm: 400, md: 500 }} textAlign="right" variant="h1">
