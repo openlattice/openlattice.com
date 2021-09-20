@@ -25,23 +25,12 @@ const PRODUCTS :'PRODUCTS' = 'PRODUCTS';
 const RESOURCES :'RESOURCES' = 'RESOURCES';
 const WORKING_WITH_US :'WORKING_WITH_US' = 'WORKING_WITH_US';
 
-const StyledFragment = styled(Fragment)`
-  height: auto;
-  min-height: 100%;
-  overflow: scroll;
-`;
-
 const NavItemsWrapper = styled.div`
   align-items: ${({ inDrawer }) => (inDrawer ? 'stretch' : 'center')};
   color: ${({ inDrawer }) => (inDrawer ? NEUTRALS.GRAY_07 : NEUTRALS.GRAY_08)};
   display: flex;
   flex-direction: ${({ inDrawer }) => (inDrawer ? 'column' : 'row')};
   margin: ${({ inDrawer }) => (inDrawer ? '8px 0' : 0)};
-  /* overflow-y: scroll; */
-  /* position: relative; */
-  -webkit-overflow-scrolling: touch;
-  scroll-behavior: smooth;
-  max-height: 100%;
 
   ${NavItem} {
     color: ${({ inDrawer }) => (inDrawer ? NEUTRALS.GRAY_07 : NEUTRALS.GRAY_08)};
@@ -74,7 +63,7 @@ const NavItemsWrapper = styled.div`
 const PortalOuterWrapper = styled.div`
   -webkit-overflow-scrolling: touch;
   height: 100%;
-  overflow-y: visible;
+  overflow-y: scroll;
   position: fixed;
   right: 0;
   scroll-behavior: smooth;
@@ -130,7 +119,7 @@ const NavItems = ({ inDrawer } :Props) => {
   };
 
   return (
-    <StyledFragment>
+    <>
       <NavItemsWrapper inDrawer={inDrawer}>
         <NavLink to={Routes.GOVERNMENT}>
           <NavItem>Government</NavItem>
@@ -232,7 +221,7 @@ const NavItems = ({ inDrawer } :Props) => {
           </Portal>
         )
       }
-    </StyledFragment>
+    </>
   );
 };
 
