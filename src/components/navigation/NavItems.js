@@ -2,7 +2,7 @@
  * @flow
  */
 
-import React, { Fragment, useState } from 'react';
+import React, { useState } from 'react';
 
 import styled from 'styled-components';
 import { faChevronDown } from '@fortawesome/pro-light-svg-icons';
