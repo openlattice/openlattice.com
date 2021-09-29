@@ -4,46 +4,46 @@
 
 import styled from 'styled-components';
 
-import BlakePNG from './blake.png';
-import BrandonPNG from './brandon.png';
-import DrewPNG from './drew.png';
-import GiuliaPNG from './giulia.png';
-import HristoPNG from './hristo.png';
-import JoePNG from './joe.png';
-import KatherineJPG from './katherine.jpg';
-import KimPNG from './kim.png';
-import MandyPNG from './mandy.png';
-import MatthewPNG from './matthew.png';
-import ShireenPNG from './shireen.png';
-import SolomonPNG from './solomon.png';
-import ToddPNG from './todd.png';
+import AlfonceJPG from './alfonce.jpg';
+import BlakeJPG from './blake.jpg';
+import BrandonJPG from './brandon.jpg';
+import GiuliaJPG from './giulia.jpg';
+import HristoJPG from './hristo.jpg';
+import JoeJPG from './joe.jpg';
+import KimJPG from './kim.jpg';
+import MandyJPG from './mandy.jpg';
+import MatthewJPG from './matthew.jpg';
+import RekaJPG from './reka.jpg';
+import SolomonJPG from './solomon.jpg';
+import ToddJPG from './todd.jpg';
+import YueJPG from './yue.jpg';
 
-const BlakePhoto = styled.img.attrs({ src: BlakePNG })``;
-const BrandonPhoto = styled.img.attrs({ src: BrandonPNG })``;
-const DrewPhoto = styled.img.attrs({ src: DrewPNG })``;
-const GiuliaPhoto = styled.img.attrs({ src: GiuliaPNG })``;
-const HristoPhoto = styled.img.attrs({ src: HristoPNG })``;
-const JoePhoto = styled.img.attrs({ src: JoePNG })``;
-const KatherinePhoto = styled.img.attrs({ src: KatherineJPG })``;
-const KimPhoto = styled.img.attrs({ src: KimPNG })``;
-const MandyPhoto = styled.img.attrs({ src: MandyPNG })``;
-const MatthewPhoto = styled.img.attrs({ src: MatthewPNG })``;
-const ShireenPhoto = styled.img.attrs({ src: ShireenPNG })``;
-const SolomonPhoto = styled.img.attrs({ src: SolomonPNG })``;
-const ToddPhoto = styled.img.attrs({ src: ToddPNG })``;
+const AlfoncePhoto = styled.img.attrs({ src: AlfonceJPG })``;
+const BlakePhoto = styled.img.attrs({ src: BlakeJPG })``;
+const BrandonPhoto = styled.img.attrs({ src: BrandonJPG })``;
+const GiuliaPhoto = styled.img.attrs({ src: GiuliaJPG })``;
+const HristoPhoto = styled.img.attrs({ src: HristoJPG })``;
+const JoePhoto = styled.img.attrs({ src: JoeJPG })``;
+const KimPhoto = styled.img.attrs({ src: KimJPG })``;
+const MandyPhoto = styled.img.attrs({ src: MandyJPG })``;
+const MatthewPhoto = styled.img.attrs({ src: MatthewJPG })``;
+const RekaPhoto = styled.img.attrs({ src: RekaJPG })``;
+const SolomonPhoto = styled.img.attrs({ src: SolomonJPG })``;
+const ToddPhoto = styled.img.attrs({ src: ToddJPG })``;
+const YuePhoto = styled.img.attrs({ src: YueJPG })``;
 
 export {
+  AlfoncePhoto,
   BlakePhoto,
   BrandonPhoto,
-  DrewPhoto,
   GiuliaPhoto,
   HristoPhoto,
   JoePhoto,
-  KatherinePhoto,
   KimPhoto,
   MandyPhoto,
   MatthewPhoto,
-  ShireenPhoto,
+  RekaPhoto,
   SolomonPhoto,
   ToddPhoto,
+  YuePhoto,
 };

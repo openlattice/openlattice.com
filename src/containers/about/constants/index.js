@@ -5,48 +5,48 @@
 import React from 'react';
 
 import {
+  AlfoncePhoto,
   BlakePhoto,
   BrandonPhoto,
-  DrewPhoto,
   GiuliaPhoto,
   HristoPhoto,
   JoePhoto,
-  KatherinePhoto,
   KimPhoto,
   MandyPhoto,
   MatthewPhoto,
-  ShireenPhoto,
+  RekaPhoto,
   SolomonPhoto,
   ToddPhoto,
+  YuePhoto,
 } from '../../../assets/team';
 
 // repeat roles
 const ACCOUNT :string = 'Account Executive';
-// const DATA_SCIENTIST :string = 'Data Scientist';
-const DESIGNER :string = 'Product Designer';
-const FRONTEND :string = 'Frontend Software Engineer';
+const DATA_SCIENTIST :string = 'Data Scientist';
+// const DESIGNER :string = 'Product Designer';
+const SOFTWARE_ENGINEER :string = 'Software Engineer';
+
+const ALFONCE :TeamMemberType = {
+  NAME: 'Alfonce Nzioka',
+  ROLE: SOFTWARE_ENGINEER,
+  PHOTO: <AlfoncePhoto />,
+};
 
 const BLAKE :TeamMemberType = {
   NAME: 'Blake Freitas',
-  ROLE: 'Customer Success Engineer',
+  ROLE: 'Product Management Lead',
   PHOTO: <BlakePhoto />,
 };
 
 const BRANDON :TeamMemberType = {
   NAME: 'Brandon Wright',
-  ROLE: 'Customer Success Manager',
+  ROLE: 'Product Manager',
   PHOTO: <BrandonPhoto />,
-};
-
-const DREW :TeamMemberType = {
-  NAME: 'Drew Bailey',
-  ROLE: 'Senior Software Engineer',
-  PHOTO: <DrewPhoto />,
 };
 
 const GIULIA :TeamMemberType = {
   NAME: 'Giulia Campana',
-  ROLE: FRONTEND,
+  ROLE: SOFTWARE_ENGINEER,
   PHOTO: <GiuliaPhoto />,
 };
 
@@ -61,13 +61,6 @@ const JOE :TeamMemberType = {
   NAME: 'Joe Savino',
   ROLE: 'Operations Manager',
   PHOTO: <JoePhoto />,
-};
-
-const KATHERINE :TeamMemberType = {
-  COFOUNDER: true,
-  NAME: 'Katherine Bernstein',
-  ROLE: 'Software Engineer',
-  PHOTO: <KatherinePhoto />,
 };
 
 const KIM :TeamMemberType = {
@@ -89,28 +82,33 @@ const MATTHEW :TeamMemberType = {
   PHOTO: <MatthewPhoto />,
 };
 
-const SHIREEN :TeamMemberType = {
-  NAME: 'Shireen Aziz',
-  ROLE: DESIGNER,
-  PHOTO: <ShireenPhoto />,
+const REKA :TeamMemberType = {
+  NAME: 'Réka Halmai',
+  ROLE: 'Data Scientist Intern',
+  PHOTO: <RekaPhoto />,
 };
 
 const SOLOMON :TeamMemberType = {
   NAME: 'Solomon Tang',
-  ROLE: FRONTEND,
+  ROLE: SOFTWARE_ENGINEER,
   PHOTO: <SolomonPhoto />,
 };
 
 const TODD :TeamMemberType = {
   NAME: 'Todd Bergman',
-  ROLE: FRONTEND,
+  ROLE: SOFTWARE_ENGINEER,
   PHOTO: <ToddPhoto />,
+};
+
+const YUE :TeamMemberType = {
+  NAME: 'Yue Li',
+  ROLE: DATA_SCIENTIST,
+  PHOTO: <YuePhoto />,
 };
 
 const TEAM_MEMBERS :TeamMemberType[] = [
   MATTHEW,
   HRISTO,
-  KATHERINE,
   KIM,
   BRANDON,
   JOE,
@@ -118,9 +116,10 @@ const TEAM_MEMBERS :TeamMemberType[] = [
   TODD,
   GIULIA,
   BLAKE,
-  DREW,
-  SHIREEN,
   MANDY,
+  ALFONCE,
+  YUE,
+  REKA,
 ];
 
 // const MATTHEW_BOARD :TeamMemberType = {
