@@ -66,7 +66,6 @@ const PortalOuterWrapper = styled.div`
   overflow-y: scroll;
   position: fixed;
   right: 0;
-  scroll-behavior: smooth;
   top: 0;
   width: 100%;
   z-index: 1000;
