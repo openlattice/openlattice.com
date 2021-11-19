@@ -10,25 +10,10 @@ import { NavLink } from 'react-router-dom';
 
 import OpenLatticeIconSVG from '../../assets/svg/icons/ol-icon-gray.svg';
 import * as Routes from '../../core/router/Routes';
-import {
-  PageSection,
-  SectionContent,
-  Tag,
-  Typography,
-} from '../../components';
+import { PageSection, SectionContent, Typography } from '../../components';
 import { MEDIA_QUERY_MD } from '../../core/style/Sizes';
 
 const { NEUTRAL } = Colors;
-
-const HeaderWithTag = styled.div`
-  align-items: center;
-  display: flex;
-  justify-content: center;
-
-  @media only screen and (min-width: 550px) {
-    justify-content: flex-start;
-  }
-`;
 
 const linkStyles = css`
   color: ${NEUTRAL.N400};
@@ -41,11 +26,6 @@ const InternalLink = styled(NavLink)`
 
 const ExternalLink = styled.a`
   ${linkStyles}
-`;
-
-const FakeLink = styled.div`
-  ${linkStyles}
-  color: ${NEUTRAL.N700};
 `;
 
 const Copyright = styled.div`
@@ -109,50 +89,7 @@ const FooterSection = () => (
           <ExternalLink href="https://medium.com/openlattice" rel="noreferrer" target="_blank">Blog</ExternalLink>
         </section>
         <section>
-          <section>
-            <Typography color="white" variant="h6">Platform</Typography>
-            <InternalLink to={Routes.PLATFORM_GOVERNMENT}>
-              <Typography variant="body1">
-                Platform - Government
-              </Typography>
-            </InternalLink>
-            <InternalLink to={Routes.PLATFORM_RESEARCH}>
-              <Typography variant="body1">
-                Platform - Research
-              </Typography>
-            </InternalLink>
-            <InternalLink to={Routes.WORKING_WITH_US_GOVERNMENT}>
-              <Typography variant="body1">
-                Working with Us - Government
-              </Typography>
-            </InternalLink>
-            <InternalLink to={Routes.WORKING_WITH_US_RESEARCH}>
-              <Typography variant="body1">
-                Working with Us - Research
-              </Typography>
-            </InternalLink>
-          </section>
-          <section style={{ marginTop: '48px' }}>
-            <HeaderWithTag>
-              <Typography color="white" variant="h6">Partners</Typography>
-              <Tag tagType="comingSoon">Coming soon</Tag>
-            </HeaderWithTag>
-            <FakeLink>Technology partners</FakeLink>
-            <FakeLink>Community Partners</FakeLink>
-          </section>
-        </section>
-        <section>
           <Typography color="white" variant="h6">Products</Typography>
-          <InternalLink to={Routes.PRODUCTS_CARE}>
-            <Typography variant="body1">
-              Care
-            </Typography>
-          </InternalLink>
-          <InternalLink to={Routes.PRODUCTS_PCM}>
-            <Typography variant="body1">
-              Pretrial Case Management
-            </Typography>
-          </InternalLink>
           <InternalLink to={Routes.PRODUCTS_CHRONICLE}>
             <Typography variant="body1">
               Chronicle
@@ -179,7 +116,7 @@ const FooterSection = () => (
       <Copyright>
         <img src={OpenLatticeIconSVG} alt="" />
         <Typography color={NEUTRAL.N400} variant="body1">
-          © 2020 OpenLattice, Inc. All rights reserved.
+          © 2021 OpenLattice, Inc. All rights reserved.
         </Typography>
       </Copyright>
     </SectionContent>
