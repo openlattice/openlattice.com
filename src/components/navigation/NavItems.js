@@ -2,28 +2,18 @@
  * @flow
  */
 
-import React, { useState } from 'react';
+import React from 'react';
 
 import styled from 'styled-components';
-import { faChevronDown } from '@fortawesome/pro-light-svg-icons';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { Colors, Portal } from 'lattice-ui-kit';
 
 import NavItem from './NavItem';
 import NavLink from './NavLink';
-import ProductNavItems from './ProductNavItems';
 
 import { Routes } from '../../core/router';
 import { NEUTRALS } from '../../core/style/Colors';
 import { MEDIA_QUERY_LG } from '../../core/style/Sizes';
 import { openBeacon } from '../../utils/Utils';
 import { OutlineButton } from '../controls';
-
-const { NEUTRAL } = Colors;
-
-const PRODUCTS :'PRODUCTS' = 'PRODUCTS';
-const RESOURCES :'RESOURCES' = 'RESOURCES';
-const WORKING_WITH_US :'WORKING_WITH_US' = 'WORKING_WITH_US';
 
 const NavItemsWrapper = styled.div`
   align-items: ${({ inDrawer }) => (inDrawer ? 'stretch' : 'center')};
@@ -60,169 +50,25 @@ const NavItemsWrapper = styled.div`
   }
 `;
 
-const PortalOuterWrapper = styled.div`
-  -webkit-overflow-scrolling: touch;
-  height: 100%;
-  overflow-y: scroll;
-  position: fixed;
-  right: 0;
-  top: 0;
-  width: 100%;
-  z-index: 1000;
-`;
-
-const PortalInnerWrapper = styled.div`
-  background-color: white;
-  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
-  min-width: ${(props) => (props.portal === PRODUCTS ? '300px' : '200px')};
-  padding: 16px 0;
-  position: absolute;
-  top: 70px;
-  right:
-    ${(props) => {
-    if (props.portal === PRODUCTS) {
-      return '410px';
-    }
-    if (props.portal === RESOURCES) {
-      return '140px';
-    }
-    return '400px';
-  }};
-`;
-
-const ExternalLink = styled.a`
-  color: ${NEUTRAL.N400};
-  text-decoration: none;
-`;
-
 type Props = {
   inDrawer ?:boolean;
 };
 
-const NavItems = ({ inDrawer } :Props) => {
-
-  const [isProductsPortalOpen, setIsProductsPortalOpen] = useState(false);
-  const [isResourcesPortalOpen, setIsResourcesPortalOpen] = useState(false);
-  const [isWorkingWithUsPortalOpen, setIsWorkingWithUsPortalOpen] = useState(false);
-
-  const toggleProductsPortal = () => {
-    setIsProductsPortalOpen(!isProductsPortalOpen);
-  };
-
-  const toggleResourcesPortal = () => {
-    setIsResourcesPortalOpen(!isResourcesPortalOpen);
-  };
-
-  const toggleWorkingWithUsPortal = () => {
-    setIsWorkingWithUsPortalOpen(!isWorkingWithUsPortalOpen);
-  };
-
-  return (
-    <>
-      <NavItemsWrapper inDrawer={inDrawer}>
-        <NavLink to={Routes.GOVERNMENT}>
-          <NavItem>Government</NavItem>
-        </NavLink>
-        <NavLink to={Routes.RESEARCH}>
-          <NavItem>Research</NavItem>
-        </NavLink>
-        {
-          !inDrawer && (
-            <NavItem onClick={toggleProductsPortal}>
-              <span>Products</span>
-              <FontAwesomeIcon icon={faChevronDown} style={{ marginLeft: '8px' }} />
-            </NavItem>
-          )
-        }
-        {
-          inDrawer && (
-            <ProductNavItems />
-          )
-        }
-        {
-          !inDrawer && (
-            <NavItem onClick={toggleWorkingWithUsPortal}>
-              <span>Working with Us</span>
-              <FontAwesomeIcon icon={faChevronDown} style={{ marginLeft: '8px' }} />
-            </NavItem>
-          )
-        }
-        {
-          inDrawer && (
-            <>
-              <NavLink to={Routes.WORKING_WITH_US_GOVERNMENT}>
-                <NavItem>Working with Us - Government</NavItem>
-              </NavLink>
-              <NavLink to={Routes.WORKING_WITH_US_RESEARCH}>
-                <NavItem>Working with Us - Research</NavItem>
-              </NavLink>
-            </>
-          )
-        }
-        <NavLink to={Routes.ABOUT}>
-          <NavItem>About</NavItem>
-        </NavLink>
-        {
-          !inDrawer && (
-            <NavItem onClick={toggleResourcesPortal}>
-              <span>Resources</span>
-              <FontAwesomeIcon icon={faChevronDown} style={{ marginLeft: '8px' }} />
-            </NavItem>
-          )
-        }
-        <OutlineButton color="primary" onClick={openBeacon}>
-          Request a Demo
-        </OutlineButton>
-      </NavItemsWrapper>
-      {
-        isProductsPortalOpen && (
-          <Portal>
-            <PortalOuterWrapper onClick={toggleProductsPortal}>
-              <PortalInnerWrapper portal={PRODUCTS}>
-                <ProductNavItems inPortal />
-              </PortalInnerWrapper>
-            </PortalOuterWrapper>
-          </Portal>
-        )
-      }
-      {
-        isWorkingWithUsPortalOpen && (
-          <Portal>
-            <PortalOuterWrapper onClick={toggleWorkingWithUsPortal}>
-              <PortalInnerWrapper portal={WORKING_WITH_US}>
-                <NavItemsWrapper inDrawer>
-                  <NavLink to={Routes.WORKING_WITH_US_GOVERNMENT}>
-                    <NavItem>Government</NavItem>
-                  </NavLink>
-                  <NavLink to={Routes.WORKING_WITH_US_RESEARCH}>
-                    <NavItem>Research</NavItem>
-                  </NavLink>
-                </NavItemsWrapper>
-              </PortalInnerWrapper>
-            </PortalOuterWrapper>
-          </Portal>
-        )
-      }
-      {
-        isResourcesPortalOpen && (
-          <Portal>
-            <PortalOuterWrapper onClick={toggleResourcesPortal}>
-              <PortalInnerWrapper portal={RESOURCES}>
-                <NavItemsWrapper inDrawer>
-                  <NavItem>
-                    <ExternalLink href="https://help.openlattice.com" rel="noreferrer" target="_blank">
-                      Help Center
-                    </ExternalLink>
-                  </NavItem>
-                </NavItemsWrapper>
-              </PortalInnerWrapper>
-            </PortalOuterWrapper>
-          </Portal>
-        )
-      }
-    </>
-  );
-};
+const NavItems = ({ inDrawer } :Props) => (
+  <>
+    <NavItemsWrapper inDrawer={inDrawer}>
+      <NavLink to={Routes.PRODUCTS_CHRONICLE}>
+        <NavItem>Chronicle</NavItem>
+      </NavLink>
+      <NavLink to={Routes.ABOUT}>
+        <NavItem>About Us</NavItem>
+      </NavLink>
+      <OutlineButton color="primary" onClick={openBeacon}>
+        Get Started
+      </OutlineButton>
+    </NavItemsWrapper>
+  </>
+);
 
 NavItems.defaultProps = {
   inDrawer: false,
