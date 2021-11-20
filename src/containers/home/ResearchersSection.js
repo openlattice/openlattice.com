@@ -9,21 +9,15 @@ import styled from 'styled-components';
 import {
   BCMLogo,
   BYULogo,
-  CFRLogo,
-  CJISLogo,
-  FERPALogo,
   GeorgetownLogo,
-  HIPAALogo,
   MichiganLogo,
   RuhrLogo,
-  SainteAnneLogo,
   UCDenverLogo,
   USCLogo,
   WisconsinLogo,
 } from '../../assets/logos';
 import {
   ContentGrid,
-  FeatureGrid,
   PageSection,
   SectionContent,
   Tile,
