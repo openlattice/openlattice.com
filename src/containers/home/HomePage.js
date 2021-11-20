@@ -88,7 +88,7 @@ const HomePage = () => (
     </PageSection>
     <PageSection>
       <SectionContent>
-        <FeatureGrid reverseOrderOnWrap>
+        <FeatureGrid>
           <Tile>
             <Typography maxWidth={{ lg: 576 }} variant="h2">
               Collect, Analyze and Advance Your Research with Chronicle.
