@@ -38,7 +38,7 @@
     "immutable": "4.0.0-rc.10",
     "lattice-ui-kit": "~0.46.1",
     "lodash": "~4.17.21",
-    "loglevel": "~1.7.0",
+    "loglevel": "~1.8.0",
     "polished": "~4.1.2",
     "react": "~16.14.0",
     "react-dom": "~16.14.0",
