@@ -2,24 +2,22 @@
  * @flow
  */
 
-const DAVID_QUOTE = '“Using the data and tools available in our existing system, it took 40-60 hours to manually'
-  + ' identify the top 26 high-utilizers of police services. With the same data in OpenLattice, we can identify the'
-  + ' top 100 or more with the click of a button.”';
-const DAVID_SCHWINDT = {
-  NAME: 'David Schwindt',
-  ORG: 'Iowa City PD',
-  QUOTE: DAVID_QUOTE,
-};
+const JENNY_QUOTE = '“Chronicle’s time use diary feature allows us to collect data'
+  + ' with a level of confidence that self-reporting methods just'
+  + ' can\'t provide. Being able to ask questions in the moment, while'
+  + ' participants are actively engaged on their mobile devices,'
+  + ' means we can develop a much deeper understanding of how'
+  + ' families use media, which helps improve findings and leads to'
+  + ' actionable insights.”';
 
-const JUSTIN_LOOSE = {
-  NAME: 'Justin Loose',
-  ORG: 'Berks County',
-  QUOTE: '“This tool is already starting to transform the way we think about process and program improvement.”',
+const JENNY_RADESKY = {
+  NAME: 'Jenny Radesky',
+  ORG: 'University of MIchigan Medical School ',
+  QUOTE: JENNY_QUOTE,
 };
 
 const QUOTES = [
-  JUSTIN_LOOSE,
-  DAVID_SCHWINDT,
+  JENNY_RADESKY
 ];
 
 export {
