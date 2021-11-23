@@ -69,7 +69,7 @@ const HomePage = () => (
     <ScrollToTop />
     <PageSection bgColor={NEUTRAL.N50}>
       <SectionContent>
-        <FeatureGrid reverseOrderOnWrap>
+        <FeatureGrid>
           <Tile>
             <Typography variant="h1">
               Modern tools for modern research.
