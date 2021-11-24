@@ -95,7 +95,7 @@ const HomePage = () => (
           <Tile>
             <Typography maxWidth={{ lg: 528 }} variant="body2">
               Enroll participants, collect consent, track protocol compliance, compensate participants, and
-              integrate passive passive sensing, experience sampling, surveys and other data sources for
+              integrate passive sensing, experience sampling, surveys and other data sources for
               analysis in one secure platform.
             </Typography>
           </Tile>
