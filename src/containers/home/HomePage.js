@@ -13,7 +13,7 @@ import ResearchersSection from './ResearchersSection';
 import { QUOTES } from './constants/quotes';
 
 import FooterSection from '../footer/FooterSection';
-import { LaptopImg } from '../../assets/images/home';
+import { LaptopImg, PhoneImg } from '../../assets/images/home';
 import {
   CloudSecureCircleIcon,
   DBSyncCircleIcon,
@@ -81,7 +81,7 @@ const HomePage = () => (
             <SolidButton onClick={openBeacon}>Learn more</SolidButton>
           </Tile>
           <GraphicShot>
-            <PlatformStackGraphic />
+            <PhoneImg />
           </GraphicShot>
         </FeatureGrid>
       </SectionContent>
