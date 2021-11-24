@@ -59,10 +59,9 @@ const TileGrid = styled(ContentGrid)`
 const ResearchersSection = () => (
   <PageSection>
     <SectionContent>
-      <Typography textAlign="center" variant="h2">
+      <Typography gutterBottom textAlign="center" variant="h2">
         We’re working with Researchers at:
       </Typography>
-
       <TileGrid>
         <Tile align={{ v: 'center' }}>
           <MichiganLogo />
