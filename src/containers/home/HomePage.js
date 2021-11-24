@@ -13,15 +13,14 @@ import ResearchersSection from './ResearchersSection';
 import { QUOTES } from './constants/quotes';
 
 import FooterSection from '../footer/FooterSection';
-import { LaptopImg } from '../../assets/images/home';
+import { LaptopImg, PhoneImg } from '../../assets/images/home';
 import {
-  CloudSecureCircleIcon,
-  DBSyncCircleIcon,
-  DotGridCircleIcon,
-  LinkCircleIcon,
-  SearchCircleIcon,
+  PurpleCheckCircleIcon,
+  PurpleCycleCircleIcon,
+  PurpleLinkCircleIcon,
+  PurpleMergeCircleIcon,
+  PurpleSearchCircleIcon,
 } from '../../assets/svg/circle-icons';
-import { PlatformStackGraphic } from '../../assets/svg/graphics';
 import {
   ContentGrid,
   FeatureGrid,
@@ -69,19 +68,18 @@ const HomePage = () => (
     <ScrollToTop />
     <PageSection bgColor={NEUTRAL.N50}>
       <SectionContent>
-        <FeatureGrid reverseOrderOnWrap>
+        <FeatureGrid>
           <Tile>
-            <Typography variant="h1">
-              Modern tools for modern research.
+            <Typography maxWidth={{ lg: 565 }} variant="h1">
+              The end-to-end platform for behavioral research
             </Typography>
             <Typography maxWidth={{ lg: 480 }} variant="body2">
-              Bridge the gap between data collection and analysis and expand your research possiblities with Chronicle’s
-              streamlined workflows and integrations.
+              Spend less time on administration and more time on science.
             </Typography>
             <SolidButton onClick={openBeacon}>Learn more</SolidButton>
           </Tile>
           <GraphicShot>
-            <PlatformStackGraphic />
+            <PhoneImg />
           </GraphicShot>
         </FeatureGrid>
       </SectionContent>
@@ -90,17 +88,15 @@ const HomePage = () => (
       <SectionContent>
         <FeatureGrid>
           <Tile>
-            <Typography maxWidth={{ lg: 576 }} variant="h2">
-              Collect, Analyze and Advance Your Research with Chronicle.
+            <Typography maxWidth={{ lg: 576 }} textAlign="center" variant="h2">
+              Streamline your research study with Chronicle
             </Typography>
           </Tile>
           <Tile>
             <Typography maxWidth={{ lg: 528 }} variant="body2">
-              We’re creating new ways for academic researchers to collect, analyze and advance their research with
-              Chronicle - a modern  Study Management tool that expands research capabilities. Chronicle enables
-              researchers and primary investigators to better understand participant behavior and unlocks new insights
-              with mobile functionality, ecological momentary assessment features, and customizable study management
-              workflows.
+              Enroll participants, collect consent, track protocol compliance, compensate participants, and
+              integrate passive sensing, experience sampling, surveys and other data sources for
+              analysis in one secure platform.
             </Typography>
           </Tile>
         </FeatureGrid>
@@ -108,51 +104,50 @@ const HomePage = () => (
       <SectionContent margin={{ b: 0, t: 100 }}>
         <TileGrid>
           <Tile align={{ h: 'start' }}>
-            <DBSyncCircleIcon width="50" />
+            <PurpleSearchCircleIcon width="50" />
             <Typography textAlign="left" variant="h6">
-              Discover More
+              Manage Participants
             </Typography>
             <Typography textAlign="left" variant="body1">
-              Enable participants to share data through a simple mobile application and access new streams of
-              information, such as time use diaries and 3rd party sensors.
+              Enroll, collect consent, track protocol compliance, and easily compensate participants in your study.
             </Typography>
             <LearnMoreButton href={PRODUCTS_CHRONICLE} />
           </Tile>
           <Tile align={{ h: 'start' }}>
-            <LinkCircleIcon width="50" />
+            <PurpleCycleCircleIcon width="50" />
             <Typography textAlign="left" variant="h6">
-              Real-time Insights
+              Integrated Data Collection
             </Typography>
             <Typography textAlign="left" variant="body1">
-              {`Advance your research using our ecological momentary assessment features to measure participant's
-              behaviors and experiences in real-time.`}
+              Bring all your data together in one place whether you are using our survey and passive sensing tools or
+              third-party solutions for ecological momentary assessment or experience sampling.
             </Typography>
             <LearnMoreButton href={PRODUCTS_CHRONICLE} />
           </Tile>
           <Tile align={{ h: 'start' }}>
-            <CloudSecureCircleIcon width="50" />
+            <PurpleMergeCircleIcon width="50" />
             <Typography textAlign="left" variant="h6">
-              Simplified Study Management
+              Automated Reporting
             </Typography>
             <Typography textAlign="left" variant="body1">
-              Streamline participant enrollment and participation with study management features and researcher
-              roles and permissions.
+              Researcher dashboard automatically notifies you of any irregularities in data collections and lets you
+              easily generate reports for oversight bodies such as IRBs and to comply with 45 CFR Part 46.
             </Typography>
             <LearnMoreButton href={PRODUCTS_CHRONICLE} />
           </Tile>
           <Tile align={{ h: 'start' }}>
-            <SearchCircleIcon width="50" />
+            <PurpleCheckCircleIcon width="50" />
             <Typography textAlign="left" variant="h6">
-              Improved Accuracy
+              Secure Platform
             </Typography>
             <Typography textAlign="left" variant="body1">
-              Standardized data collection that can be viewed in a clean, simple, and intuitive way on our Chronicle
-              Dashboard or exported to a preferred statistical tool to increase study confidence.
+              Our platform meets standards for GDPR, HIPAA, 42 CFR Part 2, CJIS, FERPA, and has successfully completed
+              SOC2 Type II with CSA Star mappings for all 5 categories.
             </Typography>
             <LearnMoreButton href={PRODUCTS_CHRONICLE} />
           </Tile>
           <Tile align={{ h: 'start' }}>
-            <DotGridCircleIcon width="50" />
+            <PurpleLinkCircleIcon width="50" />
             <Typography textAlign="left" variant="h6">
               Access to Experts
             </Typography>
