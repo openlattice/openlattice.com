@@ -20,7 +20,7 @@ const LaptopImg = styled.img.attrs({
 })``;
 
 const PhoneImg = styled.img.attrs({
-  alt: 'laptop',
+  alt: 'phone',
   src: PhonePNG,
 })``;
 
