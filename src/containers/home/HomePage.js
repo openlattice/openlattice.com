@@ -19,6 +19,11 @@ import {
   DBSyncCircleIcon,
   DotGridCircleIcon,
   LinkCircleIcon,
+  PurpleCheckCircleIcon,
+  PurpleCycleCircleIcon,
+  PurpleLinkCircleIcon,
+  PurpleMergeCircleIcon,
+  PurpleSearchCircleIcon,
   SearchCircleIcon,
 } from '../../assets/svg/circle-icons';
 import {
@@ -104,7 +109,7 @@ const HomePage = () => (
       <SectionContent margin={{ b: 0, t: 100 }}>
         <TileGrid>
           <Tile align={{ h: 'start' }}>
-            <DBSyncCircleIcon width="50" />
+            <PurpleSearchCircleIcon width="50" />
             <Typography textAlign="left" variant="h6">
               Manage Participants
             </Typography>
@@ -114,7 +119,7 @@ const HomePage = () => (
             <LearnMoreButton href={PRODUCTS_CHRONICLE} />
           </Tile>
           <Tile align={{ h: 'start' }}>
-            <LinkCircleIcon width="50" />
+            <PurpleCycleCircleIcon width="50" />
             <Typography textAlign="left" variant="h6">
               Integrated Data Collection
             </Typography>
@@ -125,7 +130,7 @@ const HomePage = () => (
             <LearnMoreButton href={PRODUCTS_CHRONICLE} />
           </Tile>
           <Tile align={{ h: 'start' }}>
-            <CloudSecureCircleIcon width="50" />
+            <PurpleMergeCircleIcon width="50" />
             <Typography textAlign="left" variant="h6">
               Automated Reporting
             </Typography>
@@ -136,7 +141,7 @@ const HomePage = () => (
             <LearnMoreButton href={PRODUCTS_CHRONICLE} />
           </Tile>
           <Tile align={{ h: 'start' }}>
-            <SearchCircleIcon width="50" />
+            <PurpleCheckCircleIcon width="50" />
             <Typography textAlign="left" variant="h6">
               Secure Platform
             </Typography>
@@ -147,7 +152,7 @@ const HomePage = () => (
             <LearnMoreButton href={PRODUCTS_CHRONICLE} />
           </Tile>
           <Tile align={{ h: 'start' }}>
-            <DotGridCircleIcon width="50" />
+            <PurpleLinkCircleIcon width="50" />
             <Typography textAlign="left" variant="h6">
               Access to Experts
             </Typography>
