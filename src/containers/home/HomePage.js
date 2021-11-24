@@ -15,16 +15,11 @@ import { QUOTES } from './constants/quotes';
 import FooterSection from '../footer/FooterSection';
 import { LaptopImg, PhoneImg } from '../../assets/images/home';
 import {
-  CloudSecureCircleIcon,
-  DBSyncCircleIcon,
-  DotGridCircleIcon,
-  LinkCircleIcon,
   PurpleCheckCircleIcon,
   PurpleCycleCircleIcon,
   PurpleLinkCircleIcon,
   PurpleMergeCircleIcon,
   PurpleSearchCircleIcon,
-  SearchCircleIcon,
 } from '../../assets/svg/circle-icons';
 import {
   ContentGrid,
