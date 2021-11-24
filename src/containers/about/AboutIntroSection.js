@@ -16,9 +16,8 @@ const SectionContentExtraMargin = styled(SectionContent)`
   }
 `;
 
-const INTRO_HEADER = `We believe core societal institutions
-should have modern data infrastructure
-to better serve citizens
+const INTRO_HEADER = `We believe in the power of research
+in solving society's toughest challenges.
 `;
 
 const AboutIntroSection = () => (
