@@ -25,14 +25,14 @@ const HowItWorksSection = () => (
             How It Works
           </Typography>
           <Typography maxWidth={{ lg: 480 }} variant="body2">
-            OpenLattice develops software tools for primary investigators who work with human subjects to help them
-            push the boundaries of their research in complex and important cognitive, developmental, behavioral
-            and mental health areas.
+            OpenLattice develops software tools for primary investigators who work with human subjects. Our software is
+            thoughtfully designed to help you push the boundaries of your research in complex and important cognitive,
+            developmental, behavioral and mental health areas.
           </Typography>
           <Typography maxWidth={{ lg: 480 }} variant="body2">
-            The Chronicle app supports researchers through study management, advanced data collection capabilities,
-            including real-time data monitoring and mobile device application usage information, study management,
-            and access to a team of data science experts.
+            Chronicle supports researchers from start to finish by providing end-to-end study management and advanced
+            data collection capabilities, including real-time data monitoring and mobile device application usage
+            information. Plus, you get access to our team of data science experts to help you along the way.
           </Typography>
           <Typography color={NEUTRAL.N400} fontWeight={600} maxWidth={{ lg: 420 }} uppercase variant="body1">
             Step 1
@@ -42,8 +42,8 @@ const HowItWorksSection = () => (
           </Typography>
           <Typography maxWidth={{ lg: 480 }} variant="body2">
             Simply set up an account, enroll participants and start collecting data. It’s that simple. Chronicle is
-            designed to allow you to manage participant enrollment, consent, and study engagement and
-            compensation in one application.
+            designed to allow you to manage participant enrollment, consent, and study engagement and compensation
+            in one application.
           </Typography>
           <Typography color={NEUTRAL.N400} fontWeight={600} maxWidth={{ lg: 420 }} uppercase variant="body1">
             Step 2
@@ -53,9 +53,9 @@ const HowItWorksSection = () => (
           </Typography>
           <Typography maxWidth={{ lg: 480 }} variant="body2">
             {`Once enrolled, your participants can consent to sharing a wide range of data points directly through the
-            app. The app’s live data stream features help researchers ensure data quality all the way through the
-            collection phase and with Chronicle’s time-use diary, ecological momentary assessment, and mobile
-            features your data collection possibilities just expanded.`}
+              Chronicle mobile app. The app’s live data stream features help researchers ensure data quality all the
+              way through the collection phase and with Chronicle’s time-use diary, ecological momentary assessment,
+              and mobile features your data collection possibilities just expanded. `}
           </Typography>
         </Tile>
         <Tile>
@@ -77,9 +77,10 @@ const HowItWorksSection = () => (
             Analyze
           </Typography>
           <Typography maxWidth={{ lg: 480 }} variant="body2">
-            Chronicle makes analyzing your data easy. Seemlessly connect to the database through Jupyterhub and you
-            will be able to run scripts to view the data directly in R, Python, Juila, and other common notebooks.
-            You also have the option to securely download your data and begin analysis in a tool of your choice.
+            Chronicle makes analyzing your data easy. Seamlessly connect to the database through Jupyterhub and
+            you will be able to run scripts to view the data directly in R, Python, Juila, and other common
+            notebooks. You also have the option to securely download your data and begin analysis in a tool of
+            your choice.
           </Typography>
           <Typography maxWidth={{ lg: 480 }} variant="body2">
             Not sure the best place to start? Simply connect with our team of data science experts for an analysis
