@@ -33,13 +33,13 @@ const ALFONCE :TeamMemberType = {
 
 const BLAKE :TeamMemberType = {
   NAME: 'Blake Freitas',
-  ROLE: 'Product Management Lead',
+  ROLE: 'Product Manager',
   PHOTO: <BlakePhoto />,
 };
 
 const BRANDON :TeamMemberType = {
   NAME: 'Brandon Wright',
-  ROLE: 'Product Manager',
+  ROLE: 'Product Management Lead',
   PHOTO: <BrandonPhoto />,
 };
 
