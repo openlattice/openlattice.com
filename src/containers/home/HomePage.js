@@ -111,7 +111,7 @@ const HomePage = () => (
             <Typography textAlign="left" variant="body1">
               Enroll, collect consent, track protocol compliance, and easily compensate participants in your study.
             </Typography>
-            <LearnMoreButton href={PRODUCTS_CHRONICLE} />
+            <LearnMoreButton to={PRODUCTS_CHRONICLE} />
           </Tile>
           <Tile align={{ h: 'start' }}>
             <PurpleCycleCircleIcon width="50" />
@@ -122,7 +122,7 @@ const HomePage = () => (
               Bring all your data together in one place whether you are using our survey and passive sensing tools or
               third-party solutions for ecological momentary assessment or experience sampling.
             </Typography>
-            <LearnMoreButton href={PRODUCTS_CHRONICLE} />
+            <LearnMoreButton to={PRODUCTS_CHRONICLE} />
           </Tile>
           <Tile align={{ h: 'start' }}>
             <PurpleMergeCircleIcon width="50" />
@@ -133,7 +133,7 @@ const HomePage = () => (
               Researcher dashboard automatically notifies you of any irregularities in data collections and lets you
               easily generate reports for oversight bodies such as IRBs and to comply with 45 CFR Part 46.
             </Typography>
-            <LearnMoreButton href={PRODUCTS_CHRONICLE} />
+            <LearnMoreButton to={PRODUCTS_CHRONICLE} />
           </Tile>
           <Tile align={{ h: 'start' }}>
             <PurpleCheckCircleIcon width="50" />
@@ -144,7 +144,7 @@ const HomePage = () => (
               Our platform meets standards for GDPR, HIPAA, 42 CFR Part 2, CJIS, FERPA, and has successfully completed
               SOC2 Type II with CSA Star mappings for all 5 categories.
             </Typography>
-            <LearnMoreButton href={PRODUCTS_CHRONICLE} />
+            <LearnMoreButton to={PRODUCTS_CHRONICLE} />
           </Tile>
           <Tile align={{ h: 'start' }}>
             <PurpleLinkCircleIcon width="50" />
@@ -154,7 +154,7 @@ const HomePage = () => (
             <Typography textAlign="left" variant="body1">
               Connect with a team of data science experts to help clean, integrate and analyze your results.
             </Typography>
-            <LearnMoreButton href={PRODUCTS_CHRONICLE} />
+            <LearnMoreButton to={PRODUCTS_CHRONICLE} />
           </Tile>
         </TileGrid>
       </SectionContent>
