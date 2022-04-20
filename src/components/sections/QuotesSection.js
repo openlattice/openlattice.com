@@ -7,18 +7,17 @@ import React, { useState } from 'react';
 import styled from 'styled-components';
 import { faChevronLeft, faChevronRight } from '@fortawesome/pro-regular-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { Colors } from 'lattice-ui-kit';
 
 import PageSection from './PageSection';
 import SectionContent from './SectionContent';
 
+import { NEUTRALS } from '../../core/style/Colors';
 import { MEDIA_QUERY_MD } from '../../core/style/Sizes';
 import { Tile } from '../tiles';
 import { Typography } from '../typography';
 
-const { NEUTRAL } = Colors;
-
 const QuoteTile = styled(Tile)`
+  color: white;
   margin: 0 48px;
 
   @media only screen and (max-width: ${MEDIA_QUERY_MD}px) {
@@ -79,7 +78,7 @@ const QuotesSection = ({ quotes } :{ quotes :Object[] }) => {
   };
 
   return (
-    <PageSection bgColor={NEUTRAL.N100}>
+    <PageSection bgColor={NEUTRALS.GRAY_16}>
       <SectionContent vertical={false}>
         {
           quotes.length > 1 && (
