@@ -67,7 +67,6 @@ const Typography = ({
   color,
   component,
   fontWeight,
-  gutterBottom,
   maxWidth,
   textAlign,
   underline,
@@ -79,7 +78,6 @@ const Typography = ({
   color ?:string;
   component ?:string;
   fontWeight ?:100 | 200 | 300 | 400 | 500 | 600 | 700 | 800 | 900;
-  gutterBottom ?:boolean;
   maxWidth ?:{|
     xs ?:number;
     sm ?:number;
@@ -100,7 +98,6 @@ const Typography = ({
       align={textAlign}
       className={className}
       component={component}
-      gutterBottom={gutterBottom}
       variant={variant}>
     {children}
   </StyledTypography>
@@ -111,7 +108,6 @@ Typography.defaultProps = {
   color: undefined,
   component: undefined,
   fontWeight: undefined,
-  gutterBottom: undefined,
   maxWidth: undefined,
   textAlign: undefined,
   underline: false,

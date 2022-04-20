@@ -11,7 +11,10 @@ import {
   SubHeader,
 } from '../../components';
 
-const MISSION_STATEMENT = 'Our mission is to work with core societal institutions to improve human outcomes.';
+const MISSION_STATEMENT = 'We set out to build a secure, scalable cloud-based data platform that empowers civil'
+  + ' servants, researchers, and policy-makers to work together on society\'s toughest challenges. Our solutions'
+  + ' help organizations use technology to drive positive change in tackling recidivism, homelessness, mass'
+  + ' incarceration, and other key societal welfare issues.';
 
 const MissionSection = () => (
   <PageSection>

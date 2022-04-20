@@ -17,6 +17,7 @@ import {
   RekaPhoto,
   SolomonPhoto,
   ToddPhoto,
+  YuePhoto,
 } from '../../../assets/team';
 
 // repeat roles
@@ -33,13 +34,13 @@ const ALFONCE :TeamMemberType = {
 
 const BLAKE :TeamMemberType = {
   NAME: 'Blake Freitas',
-  ROLE: 'Product Manager',
+  ROLE: 'Product Management Lead',
   PHOTO: <BlakePhoto />,
 };
 
 const BRANDON :TeamMemberType = {
   NAME: 'Brandon Wright',
-  ROLE: 'Product Management Lead',
+  ROLE: 'Product Manager',
   PHOTO: <BrandonPhoto />,
 };
 
@@ -83,7 +84,7 @@ const MATTHEW :TeamMemberType = {
 
 const REKA :TeamMemberType = {
   NAME: 'Réka Halmai',
-  ROLE: DATA_SCIENTIST,
+  ROLE: 'Data Scientist Intern',
   PHOTO: <RekaPhoto />,
 };
 
@@ -99,6 +100,12 @@ const TODD :TeamMemberType = {
   PHOTO: <ToddPhoto />,
 };
 
+const YUE :TeamMemberType = {
+  NAME: 'Yue Li',
+  ROLE: DATA_SCIENTIST,
+  PHOTO: <YuePhoto />,
+};
+
 const TEAM_MEMBERS :TeamMemberType[] = [
   MATTHEW,
   HRISTO,
@@ -111,6 +118,7 @@ const TEAM_MEMBERS :TeamMemberType[] = [
   BLAKE,
   MANDY,
   ALFONCE,
+  YUE,
   REKA,
 ];
 

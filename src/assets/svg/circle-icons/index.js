@@ -20,11 +20,6 @@ import LogsSVG from './logs.svg';
 import MergeSVG from './merge.svg';
 import OpenLatticeSVG from './ol-circle-icon.svg';
 import PointerSVG from './pointer.svg';
-import PurpleCheckSVG from './purple-check.svg';
-import PurpleCycleSVG from './purple-cycle.svg';
-import PurpleLinkSVG from './purple-link.svg';
-import PurpleMergeSVG from './purple-merge.svg';
-import PurpleSearchSVG from './purple-search.svg';
 import QuestionSVG from './question.svg';
 import SearchSVG from './search.svg';
 import SelectSVG from './select.svg';
@@ -123,36 +118,6 @@ const OpenLatticeCircleIcon = styled.img.attrs(({ width }) => ({
   width: width || 64,
 }))``;
 
-const PurpleCheckCircleIcon = styled.img.attrs(({ width }) => ({
-  alt: 'purple-check-circle-icon',
-  src: PurpleCheckSVG,
-  width: width || 64,
-}))``;
-
-const PurpleCycleCircleIcon = styled.img.attrs(({ width }) => ({
-  alt: 'purple-cycle-circle-icon',
-  src: PurpleCycleSVG,
-  width: width || 64,
-}))``;
-
-const PurpleLinkCircleIcon = styled.img.attrs(({ width }) => ({
-  alt: 'purple-link-circle-icon',
-  src: PurpleLinkSVG,
-  width: width || 64,
-}))``;
-
-const PurpleMergeCircleIcon = styled.img.attrs(({ width }) => ({
-  alt: 'purple-merge-circle-icon',
-  src: PurpleMergeSVG,
-  width: width || 64,
-}))``;
-
-const PurpleSearchCircleIcon = styled.img.attrs(({ width }) => ({
-  alt: 'purple-search-circle-icon',
-  src: PurpleSearchSVG,
-  width: width || 64,
-}))``;
-
 const PointerCircleIcon = styled.img.attrs(({ width }) => ({
   alt: 'pointer-circle-icon',
   src: PointerSVG,
@@ -217,11 +182,6 @@ export {
   LogsCircleIcon,
   MergeArrowCircleIcon,
   OpenLatticeCircleIcon,
-  PurpleCheckCircleIcon,
-  PurpleCycleCircleIcon,
-  PurpleLinkCircleIcon,
-  PurpleMergeCircleIcon,
-  PurpleSearchCircleIcon,
   PointerCircleIcon,
   QuestionCircleIcon,
   SearchCircleIcon,
