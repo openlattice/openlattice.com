@@ -84,7 +84,7 @@ const MATTHEW :TeamMemberType = {
 
 const REKA :TeamMemberType = {
   NAME: 'Réka Halmai',
-  ROLE: DATA_SCIENTIST,
+  ROLE: 'Data Scientist Intern',
   PHOTO: <RekaPhoto />,
 };
 
