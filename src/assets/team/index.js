@@ -16,6 +16,7 @@ import MatthewJPG from './matthew.jpg';
 import RekaJPG from './reka.jpg';
 import SolomonJPG from './solomon.jpg';
 import ToddJPG from './todd.jpg';
+import YueJPG from './yue.jpg';
 
 const AlfoncePhoto = styled.img.attrs({ src: AlfonceJPG })``;
 const BlakePhoto = styled.img.attrs({ src: BlakeJPG })``;
@@ -29,6 +30,7 @@ const MatthewPhoto = styled.img.attrs({ src: MatthewJPG })``;
 const RekaPhoto = styled.img.attrs({ src: RekaJPG })``;
 const SolomonPhoto = styled.img.attrs({ src: SolomonJPG })``;
 const ToddPhoto = styled.img.attrs({ src: ToddJPG })``;
+const YuePhoto = styled.img.attrs({ src: YueJPG })``;
 
 export {
   AlfoncePhoto,
@@ -43,4 +45,5 @@ export {
   RekaPhoto,
   SolomonPhoto,
   ToddPhoto,
+  YuePhoto,
 };

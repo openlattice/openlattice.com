@@ -4,20 +4,20 @@
 
 import styled from 'styled-components';
 
-import BCMLogoPNG from './research-logos/baylor-college-of-medicine.svg';
-import BYULogoPNG from './research-logos/BYU.svg';
+import BCMLogoPNG from './research-logos/Baylor-College-of-Medicine.png';
+import BYULogoPNG from './research-logos/BYU.png';
 import CFRLogoPNG from './42cfrp2.png';
 import CJISLogoPNG from './cjis.png';
 import FERPALogoPNG from './ferpa.png';
-import GeorgetownLogoPNG from './research-logos/Georgetown.png';
+import GeorgetownLogoPNG from './research-logos/Georgetown-University.png';
 import HIPAALogoPNG from './hipaa.png';
-import MichiganLogoPNG from './research-logos/michigan.png';
+import MichiganLogoPNG from './research-logos/University-of-Michigan.png';
 import RuhrLogoPNG from './research-logos/Ruhr.png';
 import SainteAnneLogoPNG from './research-logos/Universite-Sainte-Anne.png';
 import Soc2LogoPNG from './soc2.png';
-import UCDenverLogoPNG from './research-logos/CU-Denver.svg';
-import USCLogoPNG from './research-logos/UofSC.png';
-import WisconsinLogoPNG from './research-logos/uw-madison.svg';
+import UCDenverLogoPNG from './research-logos/UC-Denver.png';
+import USCLogoPNG from './research-logos/U-of-South-Carolina.png';
+import WisconsinLogoPNG from './research-logos/University-of-Wisconsin-Madison.png';
 
 const CFRLogo = styled.img.attrs(({ width }) => ({
   alt: 'cfr-logo',

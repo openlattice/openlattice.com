@@ -12,7 +12,7 @@ const JENNY_QUOTE = '“Chronicle’s time use diary feature allows us to collec
 
 const JENNY_RADESKY = {
   NAME: 'Jenny Radesky',
-  ORG: 'University of Michigan Medical School ',
+  ORG: 'University of MIchigan Medical School ',
   QUOTE: JENNY_QUOTE,
 };
 

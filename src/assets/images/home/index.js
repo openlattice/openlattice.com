@@ -6,7 +6,6 @@ import styled from 'styled-components';
 
 import DataSecurityAndCompliancePNG from './data-security-and-compliance.png';
 import LaptopPNG from './laptop.png';
-import PhonePNG from './phone.png';
 import StatueOfLibertyJPG from './statue-of-liberty.jpg';
 
 const DataSecurityAndComplianceImg = styled.img.attrs({
@@ -19,14 +18,8 @@ const LaptopImg = styled.img.attrs({
   src: LaptopPNG,
 })``;
 
-const PhoneImg = styled.img.attrs({
-  alt: 'phone',
-  src: PhonePNG,
-})``;
-
 export {
   DataSecurityAndComplianceImg,
   LaptopImg,
-  PhoneImg,
   StatueOfLibertyJPG,
 };

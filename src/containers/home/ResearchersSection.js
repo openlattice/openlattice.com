@@ -26,6 +26,7 @@ import {
 import { MEDIA_QUERY_MD, MEDIA_QUERY_SM } from '../../core/style/Sizes';
 
 const TileGrid = styled(ContentGrid)`
+  align-items: stretch;
   grid-template-columns: 1fr;
 
   @media only screen and (min-width: ${MEDIA_QUERY_SM}px) {
@@ -34,11 +35,7 @@ const TileGrid = styled(ContentGrid)`
 
   ${Tile} {
     /* NOTE: 328px is very carfully chosen and is tightly coupled with the media query */
-    max-width: 328px;
-
-    @media only screen and (min-width: ${MEDIA_QUERY_SM}px) {
-      max-width: 300px;
-    }
+    max-width: 384px;
 
     @media (min-width: ${MEDIA_QUERY_MD}px) {
       &:nth-child(even) {
@@ -49,17 +46,13 @@ const TileGrid = styled(ContentGrid)`
         margin: 0 0 0 auto;
       }
     }
-
-    > img {
-      max-width: 100%;
-    }
   }
 `;
 
 const ResearchersSection = () => (
   <PageSection>
     <SectionContent>
-      <Typography gutterBottom textAlign="center" variant="h2">
+      <Typography textAlign="center" variant="h2">
         We’re working with Researchers at:
       </Typography>
       <TileGrid>
@@ -72,6 +65,16 @@ const ResearchersSection = () => (
         <Tile align={{ v: 'center' }}>
           <WisconsinLogo />
         </Tile>
+      </TileGrid>
+      <TileGrid>
+        <Tile align={{ v: 'center' }}>
+          <USCLogo />
+        </Tile>
+        <Tile align={{ v: 'center' }}>
+          <UCDenverLogo />
+        </Tile>
+      </TileGrid>
+      <TileGrid>
         <Tile align={{ v: 'center' }}>
           <BYULogo />
         </Tile>
@@ -80,12 +83,6 @@ const ResearchersSection = () => (
         </Tile>
         <Tile align={{ v: 'center' }}>
           <RuhrLogo />
-        </Tile>
-        <Tile align={{ v: 'center' }}>
-          <USCLogo />
-        </Tile>
-        <Tile align={{ v: 'center' }}>
-          <UCDenverLogo />
         </Tile>
       </TileGrid>
     </SectionContent>

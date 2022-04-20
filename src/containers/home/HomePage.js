@@ -13,14 +13,15 @@ import ResearchersSection from './ResearchersSection';
 import { QUOTES } from './constants/quotes';
 
 import FooterSection from '../footer/FooterSection';
-import { LaptopImg, PhoneImg } from '../../assets/images/home';
+import { LaptopImg } from '../../assets/images/home';
 import {
-  PurpleCheckCircleIcon,
-  PurpleCycleCircleIcon,
-  PurpleLinkCircleIcon,
-  PurpleMergeCircleIcon,
-  PurpleSearchCircleIcon,
+  CloudSecureCircleIcon,
+  DBSyncCircleIcon,
+  DotGridCircleIcon,
+  LinkCircleIcon,
+  SearchCircleIcon,
 } from '../../assets/svg/circle-icons';
+import { PlatformStackGraphic } from '../../assets/svg/graphics';
 import {
   ContentGrid,
   FeatureGrid,
@@ -68,18 +69,19 @@ const HomePage = () => (
     <ScrollToTop />
     <PageSection bgColor={NEUTRAL.N50}>
       <SectionContent>
-        <FeatureGrid>
+        <FeatureGrid reverseOrderOnWrap>
           <Tile>
-            <Typography maxWidth={{ lg: 565 }} variant="h1">
-              The end-to-end platform for behavioral research
+            <Typography variant="h1">
+              Modern tools for modern research.
             </Typography>
             <Typography maxWidth={{ lg: 480 }} variant="body2">
-              Spend less time on administration and more time on science.
+              Bridge the gap between data collection and analysis and expand your research possiblities with Chronicle’s
+              streamlined workflows and integrations.
             </Typography>
             <SolidButton onClick={openBeacon}>Learn more</SolidButton>
           </Tile>
           <GraphicShot>
-            <PhoneImg />
+            <PlatformStackGraphic />
           </GraphicShot>
         </FeatureGrid>
       </SectionContent>
@@ -88,15 +90,17 @@ const HomePage = () => (
       <SectionContent>
         <FeatureGrid>
           <Tile>
-            <Typography maxWidth={{ lg: 576 }} textAlign="center" variant="h2">
-              Streamline your research study with Chronicle
+            <Typography maxWidth={{ lg: 576 }} variant="h2">
+              Collect, Analyze and Advance Your Research with Chronicle.
             </Typography>
           </Tile>
           <Tile>
             <Typography maxWidth={{ lg: 528 }} variant="body2">
-              Enroll participants, collect consent, track protocol compliance, compensate participants, and
-              integrate passive sensing, experience sampling, surveys and other data sources for
-              analysis in one secure platform.
+              We’re creating new ways for academic researchers to collect, analyze and advance their research with
+              Chronicle - a modern  Study Management tool that expands research capabilities. Chronicle enables
+              researchers and primary investigators to better understand participant behavior and unlocks new insights
+              with mobile functionality, ecological momentary assessment features, and customizable study management
+              workflows.
             </Typography>
           </Tile>
         </FeatureGrid>
@@ -104,50 +108,51 @@ const HomePage = () => (
       <SectionContent margin={{ b: 0, t: 100 }}>
         <TileGrid>
           <Tile align={{ h: 'start' }}>
-            <PurpleSearchCircleIcon width="50" />
+            <DBSyncCircleIcon width="50" />
             <Typography textAlign="left" variant="h6">
-              Manage Participants
+              Discover More
             </Typography>
             <Typography textAlign="left" variant="body1">
-              Enroll, collect consent, track protocol compliance, and easily compensate participants in your study.
+              Enable participants to share data through a simple mobile application and access new streams of
+              information, such as time use diaries and 3rd party sensors.
             </Typography>
             <LearnMoreButton to={PRODUCTS_CHRONICLE} />
           </Tile>
           <Tile align={{ h: 'start' }}>
-            <PurpleCycleCircleIcon width="50" />
+            <LinkCircleIcon width="50" />
             <Typography textAlign="left" variant="h6">
-              Integrated Data Collection
+              Real-time Insights
             </Typography>
             <Typography textAlign="left" variant="body1">
-              Bring all your data together in one place whether you are using our survey and passive sensing tools or
-              third-party solutions for ecological momentary assessment or experience sampling.
+              {`Advance your research using our ecological momentary assessment features to measure participant's
+              behaviors and experiences in real-time.`}
             </Typography>
             <LearnMoreButton to={PRODUCTS_CHRONICLE} />
           </Tile>
           <Tile align={{ h: 'start' }}>
-            <PurpleMergeCircleIcon width="50" />
+            <CloudSecureCircleIcon width="50" />
             <Typography textAlign="left" variant="h6">
-              Automated Reporting
+              Simplified Study Management
             </Typography>
             <Typography textAlign="left" variant="body1">
-              Researcher dashboard automatically notifies you of any irregularities in data collections and lets you
-              easily generate reports for oversight bodies such as IRBs and to comply with 45 CFR Part 46.
+              Streamline participant enrollment and participation with study management features and researcher
+              roles and permissions.
             </Typography>
             <LearnMoreButton to={PRODUCTS_CHRONICLE} />
           </Tile>
           <Tile align={{ h: 'start' }}>
-            <PurpleCheckCircleIcon width="50" />
+            <SearchCircleIcon width="50" />
             <Typography textAlign="left" variant="h6">
-              Secure Platform
+              Improved Accuracy
             </Typography>
             <Typography textAlign="left" variant="body1">
-              Our platform meets standards for GDPR, HIPAA, 42 CFR Part 2, CJIS, FERPA, and has successfully completed
-              SOC2 Type II with CSA Star mappings for all 5 categories.
+              Standardized data collection that can be viewed in a clean, simple, and intuitive way on our Chronicle
+              Dashboard or exported to a preferred statistical tool to increase study confidence.
             </Typography>
             <LearnMoreButton to={PRODUCTS_CHRONICLE} />
           </Tile>
           <Tile align={{ h: 'start' }}>
-            <PurpleLinkCircleIcon width="50" />
+            <DotGridCircleIcon width="50" />
             <Typography textAlign="left" variant="h6">
               Access to Experts
             </Typography>
