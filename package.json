@@ -36,7 +36,7 @@
     "connected-react-router": "~6.9.0",
     "history": "~4.10.0",
     "immutable": "4.0.0-rc.10",
-    "lattice-ui-kit": "~0.46.1",
+    "lattice-ui-kit": "~0.47.0",
     "lodash": "~4.17.21",
     "loglevel": "~1.7.0",
     "polished": "~4.1.2",
