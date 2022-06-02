@@ -23,11 +23,9 @@ import {
   QuotesSection,
   ScrollToTop,
   SectionContent,
-  SolidButton,
   Tile,
   Typography,
 } from '../../components';
-import { openBeacon } from '../../utils/Utils';
 
 const { PURPLE } = Colors;
 
