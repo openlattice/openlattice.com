@@ -16,7 +16,6 @@ import ProductNavItems from './ProductNavItems';
 import { Routes } from '../../core/router';
 import { NEUTRALS } from '../../core/style/Colors';
 import { MEDIA_QUERY_LG } from '../../core/style/Sizes';
-import { openBeacon } from '../../utils/Utils';
 import { OutlineButton } from '../controls';
 
 const { NEUTRAL } = Colors;
