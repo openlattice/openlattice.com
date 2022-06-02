@@ -23,11 +23,9 @@ import {
   QuotesSection,
   ScrollToTop,
   SectionContent,
-  SolidButton,
   Tile,
   Typography,
 } from '../../components';
-import { openBeacon } from '../../utils/Utils';
 
 const { PURPLE } = Colors;
 
@@ -46,7 +44,6 @@ const HomePage = () => (
           <Typography maxWidth={{ sm: 250, md: 500 }} textAlign="right" variant="h6">
             Data tools for those who serve the public.
           </Typography>
-          <SolidButton onClick={openBeacon}>Chat with us</SolidButton>
         </Tile>
       </SectionContent>
     </PageSection>
@@ -81,7 +78,6 @@ const HomePage = () => (
                 OpenLattice makes sure the data is properly protected and compliant, so you can focus on the actionable
                 insights that come from integrated data.
               </Typography>
-              <SolidButton onClick={openBeacon}>Get a Demo</SolidButton>
             </Tile>
           </Tile>
           <GraphicShot>
@@ -113,7 +109,6 @@ const HomePage = () => (
               <Typography maxWidth={{ lg: 480 }} variant="body2">
                 OpenLattice makes sure only those who should have access to certain data actually do.
               </Typography>
-              <SolidButton onClick={openBeacon}>Get a Demo</SolidButton>
             </Tile>
           </Tile>
         </FeatureGrid>
@@ -140,7 +135,6 @@ const HomePage = () => (
                 OpenLattice makes sure it’s easy to pass information to others and understand information being sent
                 to you.
               </Typography>
-              <SolidButton onClick={openBeacon}>Get a Demo</SolidButton>
             </Tile>
           </Tile>
           <GraphicShot>
@@ -151,11 +145,6 @@ const HomePage = () => (
     </PageSection>
     <QuotesSection quotes={QUOTES} />
     <OurCustomersSection />
-    <PageSection>
-      <SectionContent margin={{ b: 100, t: 0 }}>
-        <SolidButton onClick={openBeacon}>Get a Demo</SolidButton>
-      </SectionContent>
-    </PageSection>
     <FooterSection />
   </>
 );

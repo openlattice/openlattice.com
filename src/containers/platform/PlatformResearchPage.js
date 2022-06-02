@@ -93,9 +93,6 @@ const PlatformResearchPage = () => (
               Meeting security and compliance requirements is difficult. The OpenLattice platform takes care of it for
               you.
             </Typography>
-            <div>
-              <SolidButton onClick={openBeacon}>Chat with a Team Member</SolidButton>
-            </div>
           </Tile>
           <GraphicShot>
             <PlatformLayersGraphic />
