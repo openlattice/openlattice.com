@@ -126,9 +126,6 @@ const WorkingWithUsResearchPage = () => (
             What’s your next research undertaking?  A pilot study, a larger-scale study, or replicating a study?
             Let OpenLattice help you easily pivot or expand your collaborative studies.
           </Typography>
-          <div>
-            <SolidButton onClick={openBeacon}>Chat with a Team Member</SolidButton>
-          </div>
         </Tile>
       </ProcessSection>
     </PageSection>

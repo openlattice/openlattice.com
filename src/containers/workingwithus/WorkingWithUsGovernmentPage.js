@@ -136,9 +136,6 @@ const WorkingWithUsGovernmentPage = () => (
             You’ve accomplished your goal--Congratulations!  Time to showcase. When you’ve got solid numbers to show
             your progress, people can better understand, support, and fund your critical initiatives.
           </Typography>
-          <div>
-            <SolidButton onClick={openBeacon}>Chat with a Team Member</SolidButton>
-          </div>
         </Tile>
       </ProcessSection>
     </PageSection>

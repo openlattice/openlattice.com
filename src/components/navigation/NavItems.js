@@ -170,9 +170,6 @@ const NavItems = ({ inDrawer } :Props) => {
             </NavItem>
           )
         }
-        <OutlineButton color="primary" onClick={openBeacon}>
-          Request a Demo
-        </OutlineButton>
       </NavItemsWrapper>
       {
         isProductsPortalOpen && (

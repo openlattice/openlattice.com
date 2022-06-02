@@ -45,7 +45,6 @@ const GovernmentPage = () => (
             departments, jurisdictions, and even researchers of choice, and full control over how to use data to
             achieve goals.
           </Typography>
-          <SolidButton onClick={openBeacon}>Chat with us</SolidButton>
         </Tile>
       </SectionContent>
     </PageSection>
@@ -67,7 +66,6 @@ const GovernmentPage = () => (
               secure, flexible, scalable data backend?  Through Open APIs, you can build apps and tools on the
               platform. Check out the apps jurisdictions have commissioned to achieve specific goals.
             </Typography>
-            <SolidButton onClick={openBeacon}>Chat with a Team Member</SolidButton>
           </Tile>
         </FeatureGrid>
       </SectionContent>
@@ -93,7 +91,6 @@ const GovernmentPage = () => (
             <Typography maxWidth={{ lg: 480 }} variant="body2">
               What data would help your jurisdiction meet its goals?
             </Typography>
-            <SolidButton onClick={openBeacon}>Request a Demo</SolidButton>
           </Tile>
           <GraphicShot>
             <JaneSmithDataGraphic />
@@ -116,7 +113,6 @@ const GovernmentPage = () => (
             <Typography maxWidth={{ lg: 480 }} variant="body2">
               Who do you need to securely receive information from or send it to?
             </Typography>
-            <SolidButton onClick={openBeacon}>Request a Demo</SolidButton>
           </Tile>
         </FeatureGrid>
       </SectionContent>
@@ -162,19 +158,6 @@ const GovernmentPage = () => (
       </SectionContent>
     </PageSection>
     <QuotesSection quotes={QUOTES} />
-    <PageSection>
-      <SectionContent margin={{ b: '20vh', t: '20vh' }}>
-        <Tile align={{ h: 'center' }}>
-          <Typography component="h2" variant="h1">
-            Get a demo
-          </Typography>
-          <Typography variant="h6">
-            Find out how OpenLattice can help your jurisdiction.
-          </Typography>
-          <SolidButton onClick={openBeacon}>Request a Demo</SolidButton>
-        </Tile>
-      </SectionContent>
-    </PageSection>
     <FooterSection />
   </>
 );

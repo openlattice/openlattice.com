@@ -35,7 +35,6 @@ const Container = () => (
             Get the data you need when you need it, collaborate on research, and spend more of your time on the fun
             stuff.
           </Typography>
-          <SolidButton onClick={openBeacon}>Request a Demo</SolidButton>
         </Tile>
       </SectionContent>
     </PageSection>
@@ -142,9 +141,6 @@ const Container = () => (
           </Tile>
         </FeatureGrid>
       </SectionContent>
-      <SectionContent>
-        <SolidButton onClick={openBeacon}>Request a Demo</SolidButton>
-      </SectionContent>
     </PageSection>
     <PageSection bgColor={NEUTRAL.N50}>
       <SectionContent margin={{ b: '15vh', t: '15vh' }}>
@@ -157,19 +153,6 @@ const Container = () => (
             labs, or with governments. This means you can now smoothly collaborate where it was previously difficult or
             impossible.
           </Typography>
-        </Tile>
-      </SectionContent>
-    </PageSection>
-    <PageSection>
-      <SectionContent margin={{ b: '20vh', t: '20vh' }}>
-        <Tile align={{ h: 'center' }}>
-          <Typography component="h2" textAlign="center" variant="h1">
-            Get a demo
-          </Typography>
-          <Typography textAlign="center" variant="h6">
-            Find out how OpenLattice can help your research studies.
-          </Typography>
-          <SolidButton onClick={openBeacon}>Request a Demo</SolidButton>
         </Tile>
       </SectionContent>
     </PageSection>
